@@ -1,0 +1,21 @@
+{
+  "name": "avtocod/specs",
+  "description": "Specifications repository",
+  "keywords": ["specs", "specifications", "avtocod"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Avtocod",
+      "homepage": "https://github.com/avtocod"
+    }
+  ],
+  "require": {},
+  "support": {
+    "issues": "https://github.com/avtocod/specs/issues",
+    "source": "https://github.com/avtocod/specs"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

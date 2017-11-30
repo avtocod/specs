@@ -1,0 +1,443 @@
+{
+  "identifiers": {
+    "_comment": "Идентификаторы",
+    "vehicle": {
+      "_comment": "Идентификаторы ТС",
+      "vin": "Z94CB41AAGR323020",
+      "reg_num": "М289АС750",
+      "sts": null,
+      "pts": null,
+      "body": null,
+      "chassis": null
+    }
+  },
+
+  "tech_data": {
+    "_comment": "Характеристики ТС",
+    "manufacturer": {
+      "name": null
+    },
+    "brand": {
+      "_comment": "Марка",
+      "name": {
+        "original": "KIA RIO",
+        "rus": "КИА РИО"
+      }
+    },
+    "model": {
+      "_comment": "Модель",
+      "name": {
+        "original": null
+      }
+    },
+    "type": {
+      "_comment": "Тип (Вид) ТС",
+      "name": null
+    },
+    "body": {
+      "_comment": "Кузов",
+      "number": "Z94СВ41ААGR323020",
+      "color": {
+        "name": "серый темный",
+        "type": "СЕРЫЙ ТЕМНЫЙ"
+      }
+    },
+    "year": 2015,
+    "chassis": {
+      "_comment": "Шасси",
+      "number": "Z94CB41AAGR323020"
+    },
+    "engine": {
+      "_comment": "Двигатель",
+      "fuel": {
+        "type": "Бензиновый"
+      },
+      "number": "FW471898",
+      "volume": 1396,
+      "power": {
+        "hp": 107,
+        "kw": 79
+      }
+    },
+    "weight": {
+      "_comment": "Масса",
+      "netto": 1160,
+      "max": null
+    },
+    "transmission": {
+      "_comment": "Трансмиссия",
+      "type": null
+    },
+    "drive": {
+      "_comment": "Привод",
+      "type": null
+    },
+    "wheel": {
+      "_comment": "Рулевое колесо",
+      "position": "LEFT"
+    }
+  },
+
+  "additional_info": {
+    "_comment": "Дополнительная информация",
+    "vehicle": {
+      "owner": {
+        "type": "PERSON",
+        "geo": {
+          "country": "РОССИЙСКАЯ ФЕДЕРАЦИЯ",
+          "region": "Кировская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      "sts": {
+        "date": {
+          "receive": "2015-08-12"
+        }
+      },
+      "passport": {
+        "date": {
+          "receive": "2015-08-12"
+        },
+        "number": "47ОК939196",
+        "org": {
+          "name": "ООО \"ХЕНДЭ МОТОР МАНУФАКТУРИНГ РУС\""
+        }
+      },
+      "notes": [
+        "04\\09\\2015 ПОСТАВЛ.НА УЧЕТ ПО ДОК. ДОГОВОР СОВЕРШ. В ПРОСТОЙ ПИСЬМЕННОЙ ФОРМЕ 4\\263\\КР ОТ 31\\08\\2015 ЦВЕТ ПО ПТС ТЕМНО-СЕРЫЙ\n"
+      ]
+    },
+    "identifiers": {
+      "vin": {
+        "checksum_validated": null
+      }
+    }
+  },
+
+  "diagnostic_cards": {
+    "_comment": "Диагностические карты",
+    "items": [],
+    "count": 0
+  },
+
+  "ownership": {
+    "_comment": "История владения",
+    "history": {
+      "items": [],
+      "count": 0
+    }
+  },
+
+  "registration_actions": {
+    "_comment": "Регистрационные действия",
+    "items": [
+      {
+        "date": {
+          "start": null,
+          "end": "2015-09-04"
+        },
+        "reg_num": "М289АС750",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "первичная регистрация",
+        "geo": {
+          "country": null,
+          "region": "Кировская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": "2015-09-04",
+          "end": "2015-09-04"
+        },
+        "reg_num": null,
+        "owner": {
+          "type": "NONE"
+        },
+        "type": "первичная регистрация",
+        "geo": {
+          "country": "Россия",
+          "region": "Московская область, КИРОВО-ЧЕПЕЦКИЙ Р-Н",
+          "city": "КИРОВО-ЧЕПЕЦК",
+          "street": null,
+          "house": null
+        }
+      }
+    ],
+    "count": 2
+  },
+
+  "insurance": {
+    "_comment": "Страхование",
+    "osago": {
+      "_comment": "ОСАГО",
+      "items": [
+        {
+          "number": "0908581956",
+          "insurer": {
+            "name": "СОГЛАСИЕ"
+          },
+          "date": {
+            "start": "2017-05-23"
+          },
+          "restrictions": {
+            "type": null
+          },
+          "policy": {
+            "series": "ЕЕЕ",
+            "number": "257288322"
+          }
+        }
+      ],
+      "count": 1
+    }
+  },
+
+  "calculate": {
+    "_comment": "Калькуляторы",
+    "tax": {
+      "moscow": {
+        "yearly": {
+          "amount": null
+        }
+      },
+      "regions": {
+        "yearly": {
+          "amount": null
+        }
+      }
+    },
+    "osago": {
+      "price": {
+        "current": {
+          "region": {
+            "name": null
+          },
+          "city": {
+            "name": null
+          },
+          "yearly": {
+            "amount": null
+          }
+        },
+        "moscow": {
+          "yearly": {
+            "amount": null
+          }
+        },
+        "regions": {
+          "yearly": {
+            "amount": null
+          }
+        }
+      }
+    }
+  },
+
+  "accidents": {
+    "_comment": "Инциденты",
+    "history": {
+      "_comment": "История ДТП",
+      "items": [],
+      "count": 0
+    }
+  },
+
+  "stealings": {
+    "_comment": "Проверка на угон",
+    "items": [],
+    "count": 0
+  },
+
+  "utilizations": {
+    "_comment": "Утилизация",
+    "items": [],
+    "count": 0
+  },
+
+  "restrictions": {
+    "_comment": "Ограничения",
+    "registration_actions": {
+      "_comment": "Ограничения на рег. действия",
+      "items": [
+        {
+          "date": {
+            "added": "2016-12-29",
+            "start": null,
+            "end": null
+          },
+          "vehicle": {
+            "year": null,
+            "model": {
+              "name": null
+            }
+          },
+          "initiator": {
+            "name": null,
+            "region": {
+              "name": "Кировская область"
+            }
+          },
+          "restrict": {
+            "type": null,
+            "reason": null,
+            "number": "43#SP0262357"
+          }
+        },
+        {
+          "date": {
+            "event": "2017-04-05"
+          },
+          "vehicle": {
+            "year": null,
+            "model": {
+              "name": null
+            }
+          },
+          "initiator": {
+            "name": null,
+            "region": {
+              "name": "Кировская область"
+            }
+          },
+          "restrict": {
+            "type": null,
+            "reason": null,
+            "number": "43#SP0262357"
+          }
+        }
+      ],
+      "count": 2
+    }
+  },
+
+  "pledges": {
+    "_comment": "Обременения на ТС",
+    "items": [
+      {
+        "date": {
+          "event": "2015-09-02"
+        },
+        "number": "2015-000-891550-099",
+        "pledgors": [
+          {
+            "name": "Гладышев Серафим Васильевич",
+            "type": "PERSON",
+            "dob": "1962-01-13"
+          }
+        ],
+        "pledgees": [
+          {
+            "name": "Открытое акционерное общество \"Плюс Банк\"",
+            "type": "LEGAL",
+            "dob": null
+          }
+        ],
+        "data": []
+      }
+    ],
+    "count": 1
+  },
+
+  "customs": {
+    "history": {
+      "_comment": "История по таможне",
+      "items": [],
+      "count": 0
+    }
+
+  },
+
+  "leasings": {
+    "_comment": "Лизинг",
+    "items": [],
+    "count": 0
+  },
+
+  "taxi": {
+    "_comment": "Такси",
+    "items": [],
+    "count": 0
+  },
+
+  "fines": {
+    "_comment": "Штрафы",
+    "items": [],
+    "count": 0
+  },
+
+  "reg_nums": {
+    "_comment": "ГРЗ номера",
+    "items": [
+      {
+        "number": "М289АС750"
+      }
+    ],
+    "count": 1
+  },
+
+  "mileages": {
+    "_comment": "Пробеги",
+    "items": [],
+    "count": 0
+  },
+
+  "car_price": {
+    "_comment": "Цены автомобиля",
+    "items": [
+      {
+        "date": {
+          "release": "2017-05-23"
+        },
+        "amount": 464370,
+        "model": {
+          "name": "Rio III Рестайлинг"
+        },
+        "modification": {
+          "name": "1.4 MT (107 л.с.)"
+        },
+        "engine": {
+          "volume": 1400
+        },
+        "year": 2015
+      },
+      {
+        "date": {
+          "release": "2017-05-23"
+        },
+        "amount": 434565,
+        "model": {
+          "name": "Rio III"
+        },
+        "modification": {
+          "name": "1.4 MT (107 л.с.)"
+        },
+        "engine": {
+          "volume": 1400
+        },
+        "year": 2015
+      }
+    ],
+    "count": 2
+  },
+
+  "carfax": {
+    "check": {
+      "exists": false,
+      "records": {
+        "count": 0
+      },
+      "vehicle": {
+        "model": {
+          "name": null
+        }
+      }
+    }
+  }
+}

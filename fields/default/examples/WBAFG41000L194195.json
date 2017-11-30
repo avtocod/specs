@@ -1,0 +1,1010 @@
+{
+  "identifiers": {
+    "_comment": "Идентификаторы",
+    "vehicle": {
+      "_comment": "Идентификаторы ТС",
+      "vin": "WBAFG41000L194195",
+      "reg_num": "Е932РО73",
+      "sts": null,
+      "pts": null,
+      "body": null,
+      "chassis": null
+    }
+  },
+
+  "tech_data": {
+    "_comment": "Характеристики ТС",
+    "manufacturer": {
+      "name": null
+    },
+    "brand": {
+      "_comment": "Марка",
+      "name": {
+        "original": "BMW X6",
+        "rus": "БМВ Х6"
+      }
+    },
+    "model": {
+      "_comment": "Модель",
+      "name": {
+        "original": null
+      }
+    },
+    "type": {
+      "_comment": "Тип (Вид) ТС",
+      "name": null
+    },
+    "body": {
+      "_comment": "Кузов",
+      "number": "WВАFG41000L194195",
+      "color": {
+        "name": "серо-зеленый",
+        "type": "СЕРО-ЗЕЛЕНЫЙ"
+      }
+    },
+    "year": 2008,
+    "chassis": {
+      "_comment": "Шасси",
+      "number": "WBAFG41000L194195"
+    },
+    "engine": {
+      "_comment": "Двигатель",
+      "fuel": {
+        "type": "Бензиновый"
+      },
+      "number": "06016833",
+      "model": {
+        "name": "N54B30A"
+      },
+      "volume": 2979,
+      "power": {
+        "hp": 305,
+        "kw": 225
+      }
+    },
+    "weight": {
+      "_comment": "Масса",
+      "netto": 2145,
+      "max": null
+    },
+    "transmission": {
+      "_comment": "Трансмиссия",
+      "type": null
+    },
+    "drive": {
+      "_comment": "Привод",
+      "type": null
+    },
+    "wheel": {
+      "_comment": "Рулевое колесо",
+      "position": "LEFT"
+    }
+  },
+
+  "additional_info": {
+    "_comment": "Дополнительная информация",
+    "vehicle": {
+      "category": {
+        "code": "B",
+        "description": null
+      },
+      "owner": {
+        "type": "PERSON",
+        "geo": {
+          "country": "РОССИЙСКАЯ ФЕДЕРАЦИЯ",
+          "region": "Краснодарский край",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      "sts": {
+        "date": {
+          "receive": "2008-08-17"
+        }
+      },
+      "passport": {
+        "date": {
+          "receive": "2008-08-17"
+        },
+        "number": "77УВ652802",
+        "org": {
+          "name": "ЦАТ"
+        }
+      },
+      "notes": [
+        "341 ЭККЛАСС 4 УНИВЕРСАЛ ГНИВЦ 107482526"
+      ]
+    },
+    "identifiers": {
+      "vin": {
+        "checksum_validated": null
+      }
+    }
+  },
+
+  "diagnostic_cards": {
+    "_comment": "Диагностические карты",
+    "items": [
+      {
+        "date": {
+          "from": "2013-08-29",
+          "to": "2015-08-29"
+        },
+        "doc": {
+          "serial": null,
+          "number": "201308291209037142812",
+          "type": "Диагностическая карта"
+        },
+        "reg_num": "О999КМ163"
+      },
+      {
+        "date": {
+          "from": "2015-05-13",
+          "to": "2016-05-13"
+        },
+        "doc": {
+          "serial": null,
+          "number": "201505131214094444247",
+          "type": "Диагностическая карта"
+        },
+        "reg_num": "Е185МУ73"
+      },
+      {
+        "date": {
+          "from": "2016-04-18",
+          "to": "2017-04-18"
+        },
+        "doc": {
+          "serial": null,
+          "number": "201604181025133945500",
+          "type": "Диагностическая карта"
+        },
+        "reg_num": "Е185МУ73"
+      },
+      {
+        "date": {
+          "from": "2017-03-24",
+          "to": "2018-03-25"
+        },
+        "doc": {
+          "serial": null,
+          "number": "002070291700300",
+          "type": "Диагностическая карта"
+        },
+        "reg_num": "Е185МУ73"
+      }
+    ],
+    "count": 4
+  },
+
+  "ownership": {
+    "_comment": "История владения",
+    "history": {
+      "items": [
+        {
+          "date": {
+            "start": "2008-09-26",
+            "end": "2011-08-17"
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        },
+        {
+          "date": {
+            "start": "2011-08-26",
+            "end": "2015-02-19"
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        },
+        {
+          "date": {
+            "start": "2015-02-24",
+            "end": "2015-11-16"
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        },
+        {
+          "date": {
+            "start": "2015-11-16",
+            "end": "2015-12-08"
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        },
+        {
+          "date": {
+            "start": "2015-12-08",
+            "end": "2016-04-19"
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        },
+        {
+          "date": {
+            "start": "2016-04-19",
+            "end": "2017-03-18"
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        },
+        {
+          "date": {
+            "start": "2017-03-18",
+            "end": "2017-05-04"
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        },
+        {
+          "date": {
+            "start": "2017-05-04",
+            "end": null
+          },
+          "owner": {
+            "type": "PERSON"
+          }
+        }
+      ],
+      "count": 8
+    }
+  },
+
+  "registration_actions": {
+    "_comment": "Регистрационные действия",
+    "items": [
+      {
+        "date": {
+          "start": null,
+          "end": "2008-09-26"
+        },
+        "reg_num": "О447ОС93",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "регистрация тс, ввезенных из-за пределов российской федерации",
+        "geo": {
+          "country": null,
+          "region": "Краснодарский край",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2011-08-17"
+        },
+        "reg_num": "ЕМ494Н93",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "в связи с прекращением права собственности (отчуждение, конфискация тс)",
+        "geo": {
+          "country": null,
+          "region": "Краснодарский край",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2011-08-26"
+        },
+        "reg_num": "О999КМ163",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "регистрация снятых с учета",
+        "geo": {
+          "country": null,
+          "region": "Самарская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2014-11-14"
+        },
+        "reg_num": "У565ОУ163",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "замена государственного регистрационного знака",
+        "geo": {
+          "country": null,
+          "region": "Самарская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-02-19"
+        },
+        "reg_num": "У565ОУ163",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "коррекция иных реквизитов",
+        "geo": {
+          "country": null,
+          "region": "Самарская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-02-19"
+        },
+        "reg_num": "У565ОУ163",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": null,
+        "geo": {
+          "country": null,
+          "region": "Самарская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-02-24"
+        },
+        "reg_num": "У565ОУ163",
+        "owner": {
+          "type": "NONE"
+        },
+        "type": "по сделкам в произв.форме с сохранением грз",
+        "geo": {
+          "country": "Россия",
+          "region": "Приволжский, Ульяновская　область",
+          "city": "УЛЬЯНОВСК　Г.　БЕЛЫЙ　КЛЮЧ",
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-02-24"
+        },
+        "reg_num": "Е185МУ73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "по сделкам в произв.форме с заменой грз",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-05-13"
+        },
+        "reg_num": "Е185МУ73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "выдача дубликата регистрационного документа",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-05-13"
+        },
+        "reg_num": "Е185МУ73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "выдача дубликата регистрационного документа",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-05-13"
+        },
+        "reg_num": null,
+        "owner": {
+          "type": "NONE"
+        },
+        "type": "замена государственного регистрационного знака",
+        "geo": {
+          "country": "Россия",
+          "region": "Приволжский, Ульяновская　область",
+          "city": "УЛЬЯНОВСК　Г.　БЕЛЫЙ　КЛЮЧ",
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-11-16"
+        },
+        "reg_num": "Е185МУ73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "по сделкам в произв.форме с сохранением грз",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2015-12-08"
+        },
+        "reg_num": "Е185МУ73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "по сделкам в произв.форме с сохранением грз",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": "2015-05-13",
+          "end": "2016-04-19"
+        },
+        "reg_num": null,
+        "owner": {
+          "type": "NONE"
+        },
+        "type": "по сделкам в произв.форме с сохранением грз",
+        "geo": {
+          "country": "Россия",
+          "region": "Ульяновская область",
+          "city": "УЛЬЯНОВСК Г. БЕЛЫЙ КЛЮЧ",
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2016-04-19"
+        },
+        "reg_num": "Е932РО73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "по сделкам в произв.форме с заменой грз",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2016-04-19"
+        },
+        "reg_num": null,
+        "owner": {
+          "type": "NONE"
+        },
+        "type": "по сделкам в произв.форме с сохранением грз",
+        "geo": {
+          "country": "Россия",
+          "region": "Приволжский, Ульяновская область",
+          "city": "УЛЬЯНОВСК　Г.　БЕЛЫЙ　КЛЮЧ",
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2017-03-18"
+        },
+        "reg_num": "Е932РО73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "по сделкам в произв.форме с сохранением грз",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      },
+      {
+        "date": {
+          "start": null,
+          "end": "2017-05-04"
+        },
+        "reg_num": "Е932РО73",
+        "owner": {
+          "type": "PERSON"
+        },
+        "type": "по сделкам в произв.форме с сохранением грз",
+        "geo": {
+          "country": null,
+          "region": "Ульяновская область",
+          "city": null,
+          "street": null,
+          "house": null
+        }
+      }
+    ],
+    "count": 18
+  },
+
+  "insurance": {
+    "_comment": "Страхование",
+    "osago": {
+      "_comment": "ОСАГО",
+      "items": [
+        {
+          "number": "0729214649",
+          "insurer": {
+            "name": "ПОВОЛЖСКИЙ СТРАХОВОЙ АЛЬЯНС"
+          },
+          "date": {
+            "start": "2017-05-24"
+          },
+          "restrictions": {
+            "type": "С ограничениями"
+          },
+          "policy": {
+            "series": "ЕЕЕ",
+            "number": "281306586"
+          }
+        }
+      ],
+      "count": 1
+    }
+  },
+
+  "calculate": {
+    "_comment": "Калькуляторы",
+    "tax": {
+      "moscow": {
+        "yearly": {
+          "amount": null
+        }
+      },
+      "regions": {
+        "yearly": {
+          "amount": null
+        }
+      }
+    },
+    "osago": {
+      "price": {
+        "current": {
+          "region": {
+            "name": null
+          },
+          "city": {
+            "name": null
+          },
+          "yearly": {
+            "amount": null
+          }
+        },
+        "moscow": {
+          "yearly": {
+            "amount": null
+          }
+        },
+        "regions": {
+          "yearly": {
+            "amount": null
+          }
+        }
+      }
+    }
+  },
+
+  "accidents": {
+    "_comment": "Инциденты",
+    "history": {
+      "_comment": "История ДТП",
+      "items": [
+        {
+          "number": "730004535",
+          "accident": {
+            "_comment": "Происшествие",
+            "date": "2016-03-14 00:00"
+          },
+          "type": "Столкновение",
+          "state": "Повреждено",
+          "vehicle": {
+            "brand": {
+              "name": null
+            },
+            "model": {
+              "name": null
+            },
+            "year": null
+          },
+          "geo": {
+            "country": null,
+            "region": "Ульяновская область",
+            "city": null,
+            "street": null,
+            "house": null
+          },
+          "damage": {
+            "points": ["02", "03"]
+          }
+        }
+      ],
+      "count": 1
+    }
+
+  },
+
+  "stealings": {
+    "_comment": "Проверка на угон",
+    "items": [],
+    "count": 0
+  },
+
+  "utilizations": {
+    "_comment": "Утилизация",
+    "items": [],
+    "count": 0
+  },
+
+  "restrictions": {
+    "_comment": "Ограничения",
+    "registration_actions": {
+      "_comment": "Ограничения на рег. действия",
+      "items": [
+        {
+          "date": {
+            "added": null,
+            "start": null,
+            "end": null
+          },
+          "vehicle": {
+            "year": null,
+            "model": {
+              "name": null
+            }
+          },
+          "initiator": {
+            "name": null,
+            "region": {
+              "name": null
+            }
+          },
+          "restrict": {
+            "type": null,
+            "reason": null,
+            "number": null
+          }
+        }
+      ],
+      "count": 1
+    }
+  },
+
+  "pledges": {
+    "_comment": "Обременения на ТС",
+    "items": [
+      {
+        "date": {
+          "event": null
+        },
+        "number": null,
+        "pledgors": [
+          {
+            "name": null,
+            "type": null,
+            "dob": null
+          }
+        ],
+        "pledgees": [
+          {
+            "name": null,
+            "type": null,
+            "dob": null
+          }
+        ],
+        "data": [null]
+      }
+    ],
+    "count": 1
+  },
+
+  "customs": {
+    "history": {
+      "_comment": "История по таможне",
+      "items": [
+        {
+          "date": {
+            "event": "2008-08-17"
+          },
+          "document": {
+            "name": null,
+            "number": null
+          },
+          "org": {
+            "name": null
+          },
+          "color": {
+            "name": null
+          },
+          "tax": {
+            "amount": null
+          },
+          "price": {
+            "amount": 1540746
+          },
+          "mileage": 0,
+          "ecology": {
+            "type": null
+          },
+          "specification": {
+            "type": null
+          },
+          "owner": {
+            "type": "NONE",
+            "value": null
+          },
+          "country": {
+            "from": {
+              "name": "СОЕДИНЕННЫЕ ШТАТЫ"
+            },
+            "to": {
+              "name": null
+            }
+          }
+        }
+      ],
+      "count": 1
+    }
+  },
+
+  "leasings": {
+    "_comment": "Лизинг",
+    "items": [
+      {
+        "date": {
+          "event": null
+        },
+        "tin": null,
+        "company": {
+          "name": null
+        }
+      }
+    ],
+    "count": 1
+  },
+
+  "taxi": {
+    "_comment": "Такси",
+    "items": [
+      {
+        "date": {
+          "start": null,
+          "end": null
+        },
+        "license": {
+          "number": null
+        },
+        "company": {
+          "name": null
+        },
+        "ogrn": null,
+        "tin": null,
+        "vehicle": {
+          "brand": {
+            "name": null
+          },
+          "model": {
+            "name": null
+          },
+          "reg_num": null,
+          "year": null
+        },
+        "permit": {
+          "number": null
+        },
+        "city": {
+          "name": null
+        }
+      }
+    ],
+    "count": 1
+  },
+
+  "fines": {
+    "_comment": "Штрафы",
+    "items": [
+      {
+        "date": {
+          "event": "2017-07-11 00:00:00"
+        },
+        "description": "УИН 18810136170711036250 от 2017-07-11 на 1000.00 руб.",
+        "amount": {
+          "value": 1000.00,
+          "total": 1000.00
+        },
+        "vendor": {
+          "name": "Имя поставщика ограничения"
+        },
+        "discount": {
+          "percent": 50,
+          "date": {
+            "end": "2017-07-26 00:00:00"
+          }
+        },
+        "is_paid": false,
+        "wire": {
+          "user": {
+            "name": "УФК по РО (ГУ МВД России по РО)",
+            "tin": "6164049013",
+            "kpp": "616401001"
+          },
+          "bank": {
+            "account": {
+              "number": "40101810400000010002"
+            },
+            "name": "Отделение Ростов г. Ростов-на-Дону",
+            "bik": "046015001"
+          },
+          "payment": {
+            "purpose": "ШТРАФ ПО АДМИНИСТРАТИВНОМУ ПРАВОНАРУШЕНИЮ ПОСТАНОВЛЕНИЕ №18810161170706026237"
+          },
+          "kbk": "18811630020016000140",
+          "okato": "60701000"
+        }
+      }
+    ],
+    "count": 1
+  },
+
+  "reg_nums": {
+    "_comment": "ГРЗ номера",
+    "items": [
+      {
+        "number": "Е932РО73"
+      },
+      {
+        "number": "Е185МУ73"
+      },
+      {
+        "number": "У565ОУ163"
+      },
+      {
+        "number": "О999КМ163"
+      },
+      {
+        "number": "О447ОС93"
+      }
+    ],
+    "count": 5
+  },
+
+  "mileages": {
+    "_comment": "Пробеги",
+    "items": [
+      {
+        "date": {
+          "event": "2013-08-29"
+        },
+        "mileage": 109000
+      },
+      {
+        "date": {
+          "event": "2017-03-24"
+        },
+        "mileage": 150000
+      },
+      {
+        "date": {
+          "event": "2016-04-18"
+        },
+        "mileage": 181000
+      },
+      {
+        "date": {
+          "event": "2015-05-13"
+        },
+        "mileage": 65000
+      }
+    ],
+    "count": 4
+  },
+
+  "car_price": {
+    "_comment": "Цены автомобиля",
+    "items": [
+      {
+        "date": {
+          "release": "2017-05-24"
+        },
+        "amount": 1510998,
+        "model": {
+          "name": "X6 I (E71)"
+        },
+        "modification": {
+          "name": "35i 3.0 AT (306 л.с.) 4WD"
+        },
+        "engine": {
+          "volume": 3000
+        },
+        "year": 2008
+      }
+    ],
+    "count": 1
+  },
+
+  "carfax": {
+    "check": {
+      "exists": false,
+      "records": {
+        "count": 0
+      },
+      "vehicle": {
+        "model": {
+          "name": null
+        }
+      }
+    }
+  }
+}

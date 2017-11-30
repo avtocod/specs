@@ -1,4 +1,12 @@
+<p align="center">
+  <img alt="laravel" src="https://avatars1.githubusercontent.com/u/32733112?s=70&v=4" width="70" height="70" />
+</p>
+
 ## Спецификации и документация по проекту `avtocod`
+
+![Packagist](https://img.shields.io/packagist/v/avtocod/specs.svg?style=flat&maxAge=30)
+![GitHub issues](https://img.shields.io/github/issues/avtocod/specs.svg?style=flat&maxAge=30)
+[![License](https://img.shields.io/packagist/l/avtocod/specs.svg)]()
 
 ---------
 

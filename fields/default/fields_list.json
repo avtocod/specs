@@ -1,802 +1,1095 @@
 {
-  "identifiers.vehicle.vin": {
-    "path": "identifiers.vehicle.vin",
-    "description": "Идентификатор ТС: VIN",
-    "types": ["string"]
-  },
-  "identifiers.vehicle.reg_num": {
-    "path": "identifiers.vehicle.reg_num",
-    "description": "Идентификатор ТС: ГРЗ",
-    "types": ["string"]
-  },
-  "identifiers.vehicle.sts": {
-    "path": "identifiers.vehicle.sts",
-    "description": "Идентификатор ТС: СТС",
-    "types": ["string"]
-  },
-  "identifiers.vehicle.pts": {
-    "path": "identifiers.vehicle.pts",
-    "description": "Идентификатор ТС: ПТС",
-    "types": ["string"]
-  },
-  "identifiers.vehicle.body": {
-    "path": "identifiers.vehicle.body",
-    "description": "Идентификатор ТС: Номер кузова",
-    "types": ["string"]
-  },
-  "identifiers.vehicle.chassis": {
-    "path": "identifiers.vehicle.chassis",
-    "description": "Идентификатор ТС: Номер шасси",
-    "types": ["string"]
-  },
-
-  "tech_data.manufacturer.name": {
-    "path": "tech_data.manufacturer.name",
-    "description": "Характеристики ТС: Производитель",
-    "types": ["string"]
-  },
-  "tech_data.brand.name.original": {
-    "path": "tech_data.brand.name.original",
-    "description": "Характеристики ТС: Марка",
-    "types": ["string"]
-  },
-  "tech_data.brand.name.rus": {
-    "path": "tech_data.brand.name.rus",
-    "description": "Характеристики ТС: Марка (по-русски)",
-    "types": ["string"]
-  },
-  "tech_data.model.name.original": {
-    "path": "tech_data.model.name.original",
-    "description": "Характеристики ТС: Модель",
-    "types": ["string"]
-  },
-  "tech_data.type.name": {
-    "path": "tech_data.type.name",
-    "description": "Характеристики ТС: Тип (Вид) ТС",
-    "types": ["string"]
-  },
-  "tech_data.body.number": {
-    "path": "tech_data.body.number",
-    "description": "Характеристики ТС: Номер Кузова",
-    "types": ["string"]
-  },
-  "tech_data.body.color.name": {
-    "path": "tech_data.body.color.name",
-    "description": "Характеристики ТС: Цвет",
-    "types": ["string"]
-  },
-  "tech_data.body.color.type": {
-    "path": "tech_data.body.color.type",
-    "description": "Характеристики ТС: Тип цвета",
-    "types": ["string"]
-  },
-  "tech_data.year": {
-    "path": "tech_data.year",
-    "description": "Характеристики ТС: Год выпуска",
-    "types": ["integer"]
-  },
-  "tech_data.chassis.number": {
-    "path": "tech_data.chassis.number",
-    "description": "Характеристики ТС: Номер шасси",
-    "types": ["string"]
-  },
-  "tech_data.engine.fuel.type": {
-    "path": "tech_data.engine.fuel.type",
-    "description": "Характеристики ТС: Тип топлива",
-    "types": ["string"]
-  },
-  "tech_data.engine.number": {
-    "path": "tech_data.engine.number",
-    "description": "Характеристики ТС: Номер двигателя",
-    "types": ["string"]
-  },
-  "tech_data.engine.model.name": {
-    "path": "tech_data.engine.model.name",
-    "description": "Характеристики ТС: Модель двигателя",
-    "types": ["string"]
-  },
-  "tech_data.engine.volume": {
-    "path": "tech_data.engine.volume",
-    "description": "Характеристики ТС: Объем двигателя",
-    "types": ["number"]
-  },
-  "tech_data.engine.power.hp": {
-    "path": "tech_data.engine.power.hp",
-    "description": "Характеристики ТС: Мощность в ЛС",
-    "types": ["number"]
-  },
-  "tech_data.engine.power.kw": {
-    "path": "tech_data.engine.power.kw",
-    "description": "Характеристики ТС: Мощность в кВ",
-    "types": ["number"]
-  },
-  "tech_data.weight.netto": {
-    "path": "tech_data.weight.netto",
-    "description": "Характеристики ТС: Масса без нагрузки",
-    "types": ["integer"]
-  },
-  "tech_data.weight.max": {
-    "path": "tech_data.weight.max",
-    "description": "Характеристики ТС: Разрешенная макс. масса",
-    "types": ["integer"]
-  },
-  "tech_data.transmission.type": {
-    "path": "tech_data.transmission.type",
-    "description": "Характеристики ТС: Трансмиссия",
-    "types": ["string"]
-  },
-  "tech_data.drive.type": {
-    "path": "tech_data.drive.type",
-    "description": "Характеристики ТС: Тип привода",
-    "types": ["string"]
-  },
-  "tech_data.wheel.position": {
-    "path": "tech_data.wheel.position",
-    "description": "Характеристики ТС: Расположение руля",
-    "types": ["string"]
-  },
-
-  "additional_info.vehicle.category.code": {
-    "path": "additional_info.vehicle.category.code",
-    "description": "Дополнительная информация: Код категории ТС",
-    "types": ["string"]
-  },
-  "additional_info.vehicle.category.description": {
-    "path": "additional_info.vehicle.category.description",
-    "description": "Дополнительная информация: Описание категории ТС",
-    "types": ["string"]
-  },
-  "additional_info.vehicle.owner.type": {
-    "path": "additional_info.vehicle.owner.type",
-    "description": "Дополнительная информация: Тип владельца (техники)",
-    "types": ["string"]
-  },
-  "additional_info.vehicle.owner.geo": {
-    "path": "additional_info.vehicle.owner.geo",
-    "description": "Дополнительная информация: Гео-данные владельца (техники)",
-    "types": ["object"]
-  },
-  "additional_info.vehicle.sts.date.receive": {
-    "path": "additional_info.vehicle.sts.date.receive",
-    "description": "Дополнительная информация: Дата выдачи СТС",
-    "types": ["string"]
-  },
-  "additional_info.vehicle.passport.date.receive": {
-    "path": "additional_info.vehicle.passport.date.receive",
-    "description": "Дополнительная информация: Дата выдачи паспорта ТС (техники)",
-    "types": ["string"]
-  },
-  "additional_info.vehicle.passport.number": {
-    "path": "additional_info.vehicle.passport.number",
-    "description": "Дополнительная информация: Номер паспорта ТС (техники)",
-    "types": ["string"]
-  },
-  "additional_info.vehicle.passport.org.name": {
-    "path": "additional_info.vehicle.passport.org.name",
-    "description": "Дополнительная информация: Кто выдал паспорт ТС (техники)",
-    "types": ["string"]
-  },
-  "additional_info.vehicle.notes": {
-    "path": "additional_info.vehicle.notes",
-    "description": "Дополнительная информация: Заметки по ТС (техники)",
-    "types": ["array"]
-  },
-  "additional_info.identifiers.vin.checksum_validated": {
-    "path": "additional_info.identifiers.vin.checksum_validated",
-    "description": "Дополнительная информация: Проверка контрольного символа VIN",
-    "types": ["boolean"]
-  },
-
-  "diagnostic_cards.date.from": {
-    "path": "diagnostic_cards.items.date.from",
-    "description": "Диагностические карты: Дата начала",
-    "types": ["string"]
-  },
-  "diagnostic_cards.date.to": {
-    "path": "diagnostic_cards.items.date.to",
-    "description": "Диагностические карты: Дата ПО",
-    "types": ["string"]
-  },
-  "diagnostic_cards.doc.serial": {
-    "path": "diagnostic_cards.items.doc.serial",
-    "description": "Диагностические карты: Серия документа",
-    "types": ["string"]
-  },
-  "diagnostic_cards.doc.number": {
-    "path": "diagnostic_cards.items.doc.number",
-    "description": "Диагностические карты: Номер документа",
-    "types": ["string"]
-  },
-  "diagnostic_cards.doc.type": {
-    "path": "diagnostic_cards.items.doc.type",
-    "description": "Диагностические карты: Тип документа",
-    "types": ["string"]
-  },
-  "diagnostic_cards.reg_num": {
-    "path": "diagnostic_cards.items.reg_num",
-    "description": "Диагностические карты: ГРЗ знак",
-    "types": ["string"]
-  },
-
-  "ownership.history.date.start": {
-    "path": "ownership.history.items.date.start",
-    "description": "История владения: Дата начала владения",
-    "types": ["string"]
-  },
-  "ownership.history.date.end": {
-    "path": "ownership.history.items.date.end",
-    "description": "История владения: Дата окончания владения",
-    "types": ["string"]
-  },
-  "ownership.history.owner.type": {
-    "path": "ownership.history.items.owner.type",
-    "description": "История владения: Тип владельца",
-    "types": ["string"]
-  },
-
-  "registration_actions.date.start": {
-    "path": "registration_actions.items.date.start",
-    "description": "Регистрационные действия: Дата начала рег. действия",
-    "types": ["string"]
-  },
-  "registration_actions.date.end": {
-    "path": "registration_actions.items.date.end",
-    "description": "Регистрационные действия: Дата окончания рег. действия",
-    "types": ["string"]
-  },
-  "registration_actions.reg_num": {
-    "path": "registration_actions.items.reg_num",
-    "description": "Регистрационные действия: ГРЗ знак",
-    "types": ["string"]
-  },
-  "registration_actions.owner.type": {
-    "path": "registration_actions.items.owner.type",
-    "description": "Регистрационные действия: Тип владельца",
-    "types": ["string"]
-  },
-  "registration_actions.type": {
-    "path": "registration_actions.items.type",
-    "description": "Регистрационные действия: Тип операции",
-    "types": ["string"]
-  },
-  "registration_actions.geo": {
-    "path": "registration_actions.items.geo",
-    "description": "Регистрационные действия: Гео-данные действия",
-    "types": ["object"]
-  },
-  "insurance.osago.number": {
-    "path": "insurance.osago.items.number",
-    "description": "ОСАГО: Номер договора",
-    "types": ["string"]
-  },
-  "insurance.osago.insurer.name": {
-    "path": "insurance.osago.items.insurer.name",
-    "description": "ОСАГО: Страховщик",
-    "types": ["string"]
-  },
-  "insurance.osago.date.start": {
-    "path": "insurance.osago.items.date.start",
-    "description": "ОСАГО: Срок",
-    "types": ["string"]
-  },
-  "insurance.osago.restrictions.type": {
-    "path": "insurance.osago.items.restrictions.type",
-    "description": "ОСАГО: Ограничения",
-    "types": ["string"]
-  },
-  "insurance.osago.policy.series": {
-    "path": "insurance.osago.items.policy.series",
-    "description": "ОСАГО: Серия полиса",
-    "types": ["string"]
-  },
-  "insurance.osago.policy.number": {
-    "path": "insurance.osago.items.policy.number",
-    "description": "ОСАГО: Номер полиса",
-    "types": ["string"]
-  },
-
-  "calculate.tax.moscow.yearly.amount": {
-    "path": "calculate.tax.moscow.yearly.amount",
-    "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
-    "types": ["number"]
-  },
-  "calculate.tax.regions.yearly.amount": {
-    "path": "calculate.tax.regions.yearly.amount",
-    "description": "Калькулятор налога: Сумма налога за 12 месяцев (для регионов)",
-    "types": ["number"]
-  },
-
-  "calculate.osago.price.current.region.name": {
-    "path": "calculate.osago.price.current.region.name",
-    "description": "Калькулятор ОСАГО: Имя региона регистрации ТС (автоматически определенный)",
-    "types": ["number"]
-  },
-  "calculate.osago.price.current.city.name": {
-    "path": "calculate.osago.price.current.city.name",
-    "description": "Калькулятор ОСАГО: Имя города регистрации ТС (автоматически определенный)",
-    "types": ["number"]
-  },
-  "calculate.osago.price.current.yearly.amount": {
-    "path": "calculate.osago.price.current.yearly.amount",
-    "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для автоматически определенного региона регистрации ТС)",
-    "types": ["number"]
-  },
-  "calculate.osago.price.moscow.yearly.amount": {
-    "path": "calculate.osago.price.moscow.yearly.amount",
-    "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Москвы)",
-    "types": ["number"]
-  },
-  "calculate.osago.price.moscow_region.yearly.amount": {
-    "path": "calculate.osago.price.moscow_region.yearly.amount",
-    "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Московской Области)",
-    "types": ["number"]
-  },
-
-  "accidents.history.number": {
-    "path": "accidents.history.items.number",
-    "description": "История ДТП: Номер происшествия",
-    "types": ["string"]
-  },
-  "accidents.history.accident.date": {
-    "path": "accidents.history.items.accident.date",
-    "description": "История ДТП: Дата происшествия",
-    "types": ["string"]
-  },
-  "accidents.history.type": {
-    "path": "accidents.history.items.type",
-    "description": "История ДТП: Тип происшествия",
-    "types": ["string"]
-  },
-  "accidents.history.state": {
-    "path": "accidents.history.items.state",
-    "description": "История ДТП: Статус ТС",
-    "types": ["string"]
-  },
-  "accidents.history.vehicle.brand.name": {
-    "path": "accidents.history.items.vehicle.brand.name",
-    "description": "История ДТП: Марка ТС",
-    "types": ["string"]
-  },
-  "accidents.history.vehicle.model.name": {
-    "path": "accidents.history.items.vehicle.model.name",
-    "description": "История ДТП: Модель ТС",
-    "types": ["string"]
-  },
-  "accidents.history.vehicle.year": {
-    "path": "accidents.history.items.vehicle.year",
-    "description": "История ДТП: Год выпуска ТС",
-    "types": ["string"]
-  },
-  "accidents.history.geo": {
-    "path": "accidents.history.items.geo",
-    "description": "История ДТП: Гео-данные действия",
-    "types": ["object"]
-  },
-  "accidents.history.damage.points": {
-    "path": "accidents.history.items.damage.points",
-    "description": "История ДТП: Места повреждений",
-    "types": ["array"]
-  },
-
-  "stealings.date.stealing": {
-    "path": "stealings.items.date.stealing",
-    "description": "Проверка на угон: Дата угона",
-    "types": ["string"]
-  },
-  "stealings.geo": {
-    "path": "stealings.items.geo",
-    "description": "Проверка на угон: Данные о месте угона",
-    "types": ["object"]
-  },
-
-  "utilizations.date.utilization": {
-    "path": "utilizations.items.date.utilization",
-    "description": "Утилизация: Дата утилизации",
-    "types": ["string"]
-  },
-  "utilizations.org.name": {
-    "path": "utilizations.items.org.name",
-    "description": "Утилизация: Имя организации",
-    "types": ["string"]
-  },
-  "utilizations.country.name": {
-    "path": "utilizations.items.country.name",
-    "description": "Утилизация: Имя страны",
-    "types": ["string"]
-  },
-
-  "restrictions.registration_actions.date.added": {
-    "path": "restrictions.registration_actions.items.date.added",
-    "description": "Ограничения на рег. действия: Дата добавления данных об ограничении в реестр",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.date.start": {
-    "path": "restrictions.registration_actions.items.date.start",
-    "description": "Ограничения на рег. действия: Дата наложения ограничения",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.date.end": {
-    "path": "restrictions.registration_actions.items.date.end",
-    "description": "Ограничения на рег. действия: Дата окончания действия ограничения",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.vehicle.year": {
-    "path": "restrictions.registration_actions.items.vehicle.year",
-    "description": "Ограничения на рег. действия: Год выпуска ТС",
-    "types": ["integer"]
-  },
-  "restrictions.registration_actions.vehicle.model.name": {
-    "path": "restrictions.registration_actions.items.vehicle.model.name",
-    "description": "Ограничения на рег. действия: Марка (модель) ТС",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.initiator.name": {
-    "path": "restrictions.registration_actions.items.initiator.name",
-    "description": "Ограничения на рег. действия: Кем наложено ограничение",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.initiator.region.name": {
-    "path": "restrictions.registration_actions.items.initiator.region.name",
-    "description": "Ограничения на рег. действия: Регион инициатора ограничения",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.restrict.type": {
-    "path": "restrictions.registration_actions.items.restrict.type",
-    "description": "Ограничения на рег. действия: Вид ограничения",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.restrict.reason": {
-    "path": "restrictions.registration_actions.items.restrict.reason",
-    "description": "Ограничения на рег. действия: Основания ограничения",
-    "types": ["string"]
-  },
-  "restrictions.registration_actions.restrict.number": {
-    "path": "restrictions.registration_actions.items.restrict.number",
-    "description": "Ограничения на рег. действия: Номер документа",
-    "types": ["string"]
-  },
-
-  "pledges.date.event": {
-    "path": "pledges.items.date.event",
-    "description": "Обременения на ТС: Дата",
-    "types": ["string"]
-  },
-  "pledges.number": {
-    "path": "pledges.items.number",
-    "description": "Обременения на ТС: Номер",
-    "types": ["string"]
-  },
-  "pledges.pledgors.name": {
-    "path": "pledges.items.pledgors.name",
-    "description": "Обременения на ТС: Залогодатель (имя)",
-    "types": ["string"]
-  },
-  "pledges.pledgors.type": {
-    "path": "pledges.items.pledgors.type",
-    "description": "Обременения на ТС: Залогодатель (тип)",
-    "types": ["string"]
-  },
-  "pledges.pledgors.dob": {
-    "path": "pledges.items.pledgors.dob",
-    "description": "Обременения на ТС: Залогодатель (dob)",
-    "types": ["string"]
-  },
-  "pledges.pledgees.name": {
-    "path": "pledges.items.pledgees.name",
-    "description": "Обременения на ТС: Залогодержатель (имя)",
-    "types": ["string"]
-  },
-  "pledges.pledgees.type": {
-    "path": "pledges.items.pledgees.type",
-    "description": "Обременения на ТС: Залогодержатель (тип)",
-    "types": ["string"]
-  },
-  "pledges.pledgees.dob": {
-    "path": "pledges.items.pledgees.dob",
-    "description": "Обременения на ТС: Залогодержатель (dob)",
-    "types": ["string"]
-  },
-  "pledges.data": {
-    "path": "pledges.items.data",
-    "description": "Обременения на ТС: Данные",
-    "types": ["string", "array"]
-  },
-
-  "customs.history.date.event": {
-    "path": "customs.history.items.date.event",
-    "description": "История по таможне: Дата",
-    "types": ["string"]
-  },
-  "customs.history.document.name": {
-    "path": "customs.history.items.document.name",
-    "description": "История по таможне: Имя документа",
-    "types": ["string"]
-  },
-  "customs.history.document.number": {
-    "path": "customs.history.items.document.number",
-    "description": "История по таможне: Номер документа (декларации)",
-    "types": ["string"]
-  },
-  "customs.history.org.name": {
-    "path": "customs.history.items.org.name",
-    "description": "История по таможне: Имя организации",
-    "types": ["string"]
-  },
-  "customs.history.color.name": {
-    "path": "customs.history.items.color.name",
-    "description": "История по таможне: Цвет",
-    "types": ["string"]
-  },
-  "customs.history.tax.amount": {
-    "path": "customs.history.items.tax.amount",
-    "description": "История по таможне: Пошлина",
-    "types": ["integer"]
-  },
-  "customs.history.price.amount": {
-    "path": "customs.history.items.price.amount",
-    "description": "История по таможне: Стоимость",
-    "types": ["integer"]
-  },
-  "customs.history.mileage": {
-    "path": "customs.history.items.mileage",
-    "description": "История по таможне: Пробег",
-    "types": ["integer"]
-  },
-  "customs.history.ecology.type": {
-    "path": "customs.history.items.ecology.type",
-    "description": "История по таможне: Экология",
-    "types": ["string"]
-  },
-  "customs.history.specification.type": {
-    "path": "customs.history.items.specification.type",
-    "description": "История по таможне: Спецификация",
-    "types": ["string"]
-  },
-  "customs.history.owner.type": {
-    "path": "customs.history.items.owner.type",
-    "description": "История по таможне: Тип владельца",
-    "types": ["string"]
-  },
-  "customs.history.owner.value": {
-    "path": "customs.history.items.owner.value",
-    "description": "История по таможне: Владелец",
-    "types": ["string"]
-  },
-  "customs.history.country.from.name": {
-    "path": "customs.history.items.country.from.name",
-    "description": "История по таможне: Из страны (имя страны)",
-    "types": ["string"]
-  },
-  "customs.history.country.to.name": {
-    "path": "customs.history.items.country.to.name",
-    "description": "История по таможне: В страну (имя страны)",
-    "types": ["string"]
-  },
-  
-  "leasings.tin": {
-    "path": "leasings.items.tin",
-    "description": "Лизинг: ИНН (Taxpayer identification number)",
-    "types": ["string"]
-  },
-  "leasings.company.name": {
-    "path": "leasings.items.company.name",
-    "description": "Лизинг: Наименование компании",
-    "types": ["string"]
-  },
-  "leasings.date.event": {
-    "path": "leasings.items.date.event",
-    "description": "Лизинг: Дата",
-    "types": ["string"]
-  },
-
-  "taxi.history.date.start": {
-    "path": "taxi.history.items.date.start",
-    "description": "Такси: Дата начала эксплуатации ТС в качестве такси",
-    "types": ["string"]
-  },
-  "taxi.history.date.end": {
-    "path": "taxi.history.items.date.end",
-    "description": "Такси: Дата окончания эксплуатации ТС в качестве такси",
-    "types": ["string"]
-  },
-  "taxi.history.license.number": {
-    "path": "taxi.history.items.license.number",
-    "description": "Такси: Регистрационный номер разрешения",
-    "types": ["string"]
-  },
-  "taxi.history.company.name": {
-    "path": "taxi.history.items.company.name",
-    "description": "Такси: Наименование компании или ИП (перевозчика)",
-    "types": ["string"]
-  },
-  "taxi.history.ogrn": {
-    "path": "taxi.history.items.ogrn",
-    "description": "Такси: ОГРН / ОГРНИП",
-    "types": ["string"]
-  },
-  "taxi.history.tin": {
-    "path": "taxi.history.items.tin",
-    "description": "Такси: ИНН (Taxpayer identification number)",
-    "types": ["string"]
-  },
-  "taxi.history.vehicle.brand.name": {
-    "path": "taxi.history.items.vehicle.brand.name",
-    "description": "Такси: Марка автомобиля",
-    "types": ["string"]
-  },
-  "taxi.history.vehicle.model.name": {
-    "path": "taxi.history.items.vehicle.model.name",
-    "description": "Такси: Модель автомобиля",
-    "types": ["string"]
-  },
-  "taxi.history.vehicle.reg_num": {
-    "path": "taxi.history.items.vehicle.reg_num",
-    "description": "Такси: Государственный регистрационный знак",
-    "types": ["string"]
-  },
-  "taxi.history.vehicle.year": {
-    "path": "taxi.history.items.vehicle.year",
-    "description": "Такси: Год выпуска автомобиля",
-    "types": ["integer"]
-  },
-  "taxi.history.permit.number": {
-    "path": "taxi.history.items.permit.number",
-    "description": "Такси: Серия и номер бланка разрешения",
-    "types": ["string"]
-  },
-  "taxi.history.city.name": {
-    "path": "taxi.history.items.city.name",
-    "description": "Такси: Город регистрации",
-    "types": ["string"]
-  },
-
-  "fines.date.event": {
-    "path": "fines.items.date.event",
-    "description": "Штрафы: Дата",
-    "types": ["string"]
-  },
-  "fines.description": {
-    "path": "fines.items.description",
-    "description": "Штрафы: Короткое описание штрафа",
-    "types": ["string"]
-  },
-  "fines.vendor.name": {
-    "path": "fines.items.vendor.name",
-    "description": "Штрафы: Наименование поставщика",
-    "types": ["string"]
-  },
-  "fines.amount.value": {
-    "path": "fines.items.amount.value",
-    "description": "Штрафы: Сумма штрафа",
-    "types": ["number"]
-  },
-  "fines.amount.total": {
-    "path": "fines.items.amount.total",
-    "description": "Штрафы: Общая сумма начисления",
-    "types": ["number"]
-  },
-  "fines.discount.percent": {
-    "path": "fines.items.discount.percent",
-    "description": "Штрафы: Размер скидки в %",
-    "types": ["number"]
-  },
-  "fines.discount.date.end": {
-    "path": "fines.items.discount.date.end",
-    "description": "Штрафы: Дата действия скидки по оплате",
-    "types": ["string"]
-  },
-  "fines.is_paid": {
-    "path": "fines.items.is_paid",
-    "description": "Штрафы: Штраф не оплачен (false) / оплачен (true)",
-    "types": ["string"]
-  },
-  "fines.wire.user.name": {
-    "path": "fines.items.wire.user.name",
-    "description": "Штрафы: Наименование получателя платежа",
-    "types": ["string"]
-  },
-  "fines.wire.user.tin": {
-    "path": "fines.items.wire.user.tin",
-    "description": "Штрафы: ИНН получателя",
-    "types": ["string"]
-  },
-  "fines.wire.user.kpp": {
-    "path": "fines.items.wire.user.kpp",
-    "description": "Штрафы: КПП получателя",
-    "types": ["string"]
-  },
-  "fines.wire.bank.account.number": {
-    "path": "fines.items.wire.bank.account.number",
-    "description": "Штрафы: Номер счета получателя платежа",
-    "types": ["string"]
-  },
-  "fines.wire.bank.name": {
-    "path": "fines.items.wire.bank.name",
-    "description": "Штрафы: Наименование банка получателя платежа",
-    "types": ["string"]
-  },
-  "fines.wire.bank.bik": {
-    "path": "fines.items.wire.bank.bik",
-    "description": "Штрафы: БИК банка получателя платежа",
-    "types": ["string"]
-  },
-  "fines.wire.payment.purpose": {
-    "path": "fines.items.wire.payment.purpose",
-    "description": "Штрафы: Назначение платежа",
-    "types": ["string"]
-  },
-  "fines.wire.kbk": {
-    "path": "fines.items.wire.kbk",
-    "description": "Штрафы: КБК",
-    "types": ["string"]
-  },
-  "fines.wire.okato": {
-    "path": "fines.items.wire.okato",
-    "description": "Штрафы: ОКТМО (ОКАТО)",
-    "types": ["string"]
-  },
-
-  "reg_nums.number": {
-    "path": "reg_nums.items.number",
-    "description": "ГРЗ номера: Все ГРЗ номера, что были замечены за авто",
-    "types": ["string"]
-  },
-
-  "mileages.date.event": {
-    "path": "mileages.items.date.event",
-    "description": "Пробеги: Дата фиксирования пробега",
-    "types": ["string"]
-  },
-  "mileages.mileage": {
-    "path": "mileages.items.mileage",
-    "description": "Пробеги: Значение пробега",
-    "types": ["integer"]
-  },
-
-  "car_price.date.release": {
-    "path": "car_price.items.date.release",
-    "description": "car_price: Дата выпуска автомобиля",
-    "types": ["string"]
-  },
-  "car_price.amount": {
-    "path": "car_price.items.amount",
-    "description": "car_price: Стоимость автомобиля",
-    "types": ["integer"]
-  },
-  "car_price.model.name": {
-    "path": "car_price.items.model.name",
-    "description": "car_price: Модель автомобиля",
-    "types": ["string"]
-  },
-  "car_price.modification.name": {
-    "path": "car_price.items.modification.name",
-    "description": "car_price: Модификация автомобиля",
-    "types": ["string"]
-  },
-  "car_price.engine.volume": {
-    "path": "car_price.items.engine.volume",
-    "description": "car_price: Объем двигателя",
-    "types": ["integer"]
-  },
-  "car_price.year": {
-    "path": "car_price.items.year",
-    "description": "car_price: Год выпуска",
-    "types": ["integer"]
-  },
-
-  "carfax.check.exists": {
-    "path": "carfax.check.exists",
-    "description": "CarFax: Существуют ли данные у сервиса CarFax?",
-    "types": ["boolean"]
-  },
-  "carfax.check.records.count": {
-    "path": "carfax.check.records.count",
-    "description": "CarFax: Количество найденных записей",
-    "types": ["integer"]
-  },
-  "carfax.check.vehicle.model.name": {
-    "path": "carfax.check.vehicle.model.name",
-    "description": "CarFax: Имя модели ТС",
-    "types": ["string"]
-  }
+    "identifiers.vehicle.vin": {
+        "path": "identifiers.vehicle.vin",
+        "description": "Идентификатор ТС: VIN",
+        "types": [
+            "string"
+        ]
+    },
+    "identifiers.vehicle.reg_num": {
+        "path": "identifiers.vehicle.reg_num",
+        "description": "Идентификатор ТС: ГРЗ",
+        "types": [
+            "string"
+        ]
+    },
+    "identifiers.vehicle.sts": {
+        "path": "identifiers.vehicle.sts",
+        "description": "Идентификатор ТС: СТС",
+        "types": [
+            "string"
+        ]
+    },
+    "identifiers.vehicle.pts": {
+        "path": "identifiers.vehicle.pts",
+        "description": "Идентификатор ТС: ПТС",
+        "types": [
+            "string"
+        ]
+    },
+    "identifiers.vehicle.body": {
+        "path": "identifiers.vehicle.body",
+        "description": "Идентификатор ТС: Номер кузова",
+        "types": [
+            "string"
+        ]
+    },
+    "identifiers.vehicle.chassis": {
+        "path": "identifiers.vehicle.chassis",
+        "description": "Идентификатор ТС: Номер шасси",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.manufacturer.name": {
+        "path": "tech_data.manufacturer.name",
+        "description": "Характеристики ТС: Производитель",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.brand.name.original": {
+        "path": "tech_data.brand.name.original",
+        "description": "Характеристики ТС: Марка",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.brand.name.rus": {
+        "path": "tech_data.brand.name.rus",
+        "description": "Характеристики ТС: Марка (по-русски)",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.model.name.original": {
+        "path": "tech_data.model.name.original",
+        "description": "Характеристики ТС: Модель",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.type.name": {
+        "path": "tech_data.type.name",
+        "description": "Характеристики ТС: Тип (Вид) ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.body.number": {
+        "path": "tech_data.body.number",
+        "description": "Характеристики ТС: Номер Кузова",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.body.color.name": {
+        "path": "tech_data.body.color.name",
+        "description": "Характеристики ТС: Цвет",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.body.color.type": {
+        "path": "tech_data.body.color.type",
+        "description": "Характеристики ТС: Тип цвета",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.year": {
+        "path": "tech_data.year",
+        "description": "Характеристики ТС: Год выпуска",
+        "types": [
+            "integer"
+        ]
+    },
+    "tech_data.chassis.number": {
+        "path": "tech_data.chassis.number",
+        "description": "Характеристики ТС: Номер шасси",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.engine.fuel.type": {
+        "path": "tech_data.engine.fuel.type",
+        "description": "Характеристики ТС: Тип топлива",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.engine.number": {
+        "path": "tech_data.engine.number",
+        "description": "Характеристики ТС: Номер двигателя",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.engine.model.name": {
+        "path": "tech_data.engine.model.name",
+        "description": "Характеристики ТС: Модель двигателя",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.engine.volume": {
+        "path": "tech_data.engine.volume",
+        "description": "Характеристики ТС: Объем двигателя",
+        "types": [
+            "number"
+        ]
+    },
+    "tech_data.engine.power.hp": {
+        "path": "tech_data.engine.power.hp",
+        "description": "Характеристики ТС: Мощность в ЛС",
+        "types": [
+            "number"
+        ]
+    },
+    "tech_data.engine.power.kw": {
+        "path": "tech_data.engine.power.kw",
+        "description": "Характеристики ТС: Мощность в кВ",
+        "types": [
+            "number"
+        ]
+    },
+    "tech_data.weight.netto": {
+        "path": "tech_data.weight.netto",
+        "description": "Характеристики ТС: Масса без нагрузки",
+        "types": [
+            "integer"
+        ]
+    },
+    "tech_data.weight.max": {
+        "path": "tech_data.weight.max",
+        "description": "Характеристики ТС: Разрешенная макс. масса",
+        "types": [
+            "integer"
+        ]
+    },
+    "tech_data.transmission.type": {
+        "path": "tech_data.transmission.type",
+        "description": "Характеристики ТС: Трансмиссия",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.drive.type": {
+        "path": "tech_data.drive.type",
+        "description": "Характеристики ТС: Тип привода",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.wheel.position": {
+        "path": "tech_data.wheel.position",
+        "description": "Характеристики ТС: Расположение руля",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.category.code": {
+        "path": "additional_info.vehicle.category.code",
+        "description": "Дополнительная информация: Код категории ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.category.description": {
+        "path": "additional_info.vehicle.category.description",
+        "description": "Дополнительная информация: Описание категории ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.owner.type": {
+        "path": "additional_info.vehicle.owner.type",
+        "description": "Дополнительная информация: Тип владельца (техники)",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.owner.geo": {
+        "path": "additional_info.vehicle.owner.geo",
+        "description": "Дополнительная информация: Гео-данные владельца (техники)",
+        "types": [
+            "object"
+        ]
+    },
+    "additional_info.vehicle.sts.date.receive": {
+        "path": "additional_info.vehicle.sts.date.receive",
+        "description": "Дополнительная информация: Дата выдачи СТС",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.passport.date.receive": {
+        "path": "additional_info.vehicle.passport.date.receive",
+        "description": "Дополнительная информация: Дата выдачи паспорта ТС (техники)",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.passport.number": {
+        "path": "additional_info.vehicle.passport.number",
+        "description": "Дополнительная информация: Номер паспорта ТС (техники)",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.passport.org.name": {
+        "path": "additional_info.vehicle.passport.org.name",
+        "description": "Дополнительная информация: Кто выдал паспорт ТС (техники)",
+        "types": [
+            "string"
+        ]
+    },
+    "additional_info.vehicle.notes": {
+        "path": "additional_info.vehicle.notes",
+        "description": "Дополнительная информация: Заметки по ТС (техники)",
+        "types": [
+            "array"
+        ]
+    },
+    "additional_info.identifiers.vin.checksum_validated": {
+        "path": "additional_info.identifiers.vin.checksum_validated",
+        "description": "Дополнительная информация: Проверка контрольного символа VIN",
+        "types": [
+            "boolean"
+        ]
+    },
+    "diagnostic_cards.date.from": {
+        "path": "diagnostic_cards.items.date.from",
+        "description": "Диагностические карты: Дата начала",
+        "types": [
+            "string"
+        ]
+    },
+    "diagnostic_cards.date.to": {
+        "path": "diagnostic_cards.items.date.to",
+        "description": "Диагностические карты: Дата ПО",
+        "types": [
+            "string"
+        ]
+    },
+    "diagnostic_cards.doc.serial": {
+        "path": "diagnostic_cards.items.doc.serial",
+        "description": "Диагностические карты: Серия документа",
+        "types": [
+            "string"
+        ]
+    },
+    "diagnostic_cards.doc.number": {
+        "path": "diagnostic_cards.items.doc.number",
+        "description": "Диагностические карты: Номер документа",
+        "types": [
+            "string"
+        ]
+    },
+    "diagnostic_cards.doc.type": {
+        "path": "diagnostic_cards.items.doc.type",
+        "description": "Диагностические карты: Тип документа",
+        "types": [
+            "string"
+        ]
+    },
+    "diagnostic_cards.reg_num": {
+        "path": "diagnostic_cards.items.reg_num",
+        "description": "Диагностические карты: ГРЗ знак",
+        "types": [
+            "string"
+        ]
+    },
+    "ownership.history.date.start": {
+        "path": "ownership.history.items.date.start",
+        "description": "История владения: Дата начала владения",
+        "types": [
+            "string"
+        ]
+    },
+    "ownership.history.date.end": {
+        "path": "ownership.history.items.date.end",
+        "description": "История владения: Дата окончания владения",
+        "types": [
+            "string"
+        ]
+    },
+    "ownership.history.owner.type": {
+        "path": "ownership.history.items.owner.type",
+        "description": "История владения: Тип владельца",
+        "types": [
+            "string"
+        ]
+    },
+    "registration_actions.date.start": {
+        "path": "registration_actions.items.date.start",
+        "description": "Регистрационные действия: Дата начала рег. действия",
+        "types": [
+            "string"
+        ]
+    },
+    "registration_actions.date.end": {
+        "path": "registration_actions.items.date.end",
+        "description": "Регистрационные действия: Дата окончания рег. действия",
+        "types": [
+            "string"
+        ]
+    },
+    "registration_actions.reg_num": {
+        "path": "registration_actions.items.reg_num",
+        "description": "Регистрационные действия: ГРЗ знак",
+        "types": [
+            "string"
+        ]
+    },
+    "registration_actions.owner.type": {
+        "path": "registration_actions.items.owner.type",
+        "description": "Регистрационные действия: Тип владельца",
+        "types": [
+            "string"
+        ]
+    },
+    "registration_actions.type": {
+        "path": "registration_actions.items.type",
+        "description": "Регистрационные действия: Тип операции",
+        "types": [
+            "string"
+        ]
+    },
+    "registration_actions.geo": {
+        "path": "registration_actions.items.geo",
+        "description": "Регистрационные действия: Гео-данные действия",
+        "types": [
+            "object"
+        ]
+    },
+    "insurance.osago.number": {
+        "path": "insurance.osago.items.number",
+        "description": "ОСАГО: Номер договора",
+        "types": [
+            "string"
+        ]
+    },
+    "insurance.osago.insurer.name": {
+        "path": "insurance.osago.items.insurer.name",
+        "description": "ОСАГО: Страховщик",
+        "types": [
+            "string"
+        ]
+    },
+    "insurance.osago.date.start": {
+        "path": "insurance.osago.items.date.start",
+        "description": "ОСАГО: Срок",
+        "types": [
+            "string"
+        ]
+    },
+    "insurance.osago.restrictions.type": {
+        "path": "insurance.osago.items.restrictions.type",
+        "description": "ОСАГО: Ограничения",
+        "types": [
+            "string"
+        ]
+    },
+    "insurance.osago.policy.series": {
+        "path": "insurance.osago.items.policy.series",
+        "description": "ОСАГО: Серия полиса",
+        "types": [
+            "string"
+        ]
+    },
+    "insurance.osago.policy.number": {
+        "path": "insurance.osago.items.policy.number",
+        "description": "ОСАГО: Номер полиса",
+        "types": [
+            "string"
+        ]
+    },
+    "calculate.tax.moscow.yearly.amount": {
+        "path": "calculate.tax.moscow.yearly.amount",
+        "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
+        "types": [
+            "number"
+        ]
+    },
+    "calculate.tax.regions.yearly.amount": {
+        "path": "calculate.tax.regions.yearly.amount",
+        "description": "Калькулятор налога: Сумма налога за 12 месяцев (для регионов)",
+        "types": [
+            "number"
+        ]
+    },
+    "calculate.osago.price.current.region.name": {
+        "path": "calculate.osago.price.current.region.name",
+        "description": "Калькулятор ОСАГО: Имя региона регистрации ТС (автоматически определенный)",
+        "types": [
+            "number"
+        ]
+    },
+    "calculate.osago.price.current.city.name": {
+        "path": "calculate.osago.price.current.city.name",
+        "description": "Калькулятор ОСАГО: Имя города регистрации ТС (автоматически определенный)",
+        "types": [
+            "number"
+        ]
+    },
+    "calculate.osago.price.current.yearly.amount": {
+        "path": "calculate.osago.price.current.yearly.amount",
+        "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для автоматически определенного региона регистрации ТС)",
+        "types": [
+            "number"
+        ]
+    },
+    "calculate.osago.price.moscow.yearly.amount": {
+        "path": "calculate.osago.price.moscow.yearly.amount",
+        "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Москвы)",
+        "types": [
+            "number"
+        ]
+    },
+    "calculate.osago.price.moscow_region.yearly.amount": {
+        "path": "calculate.osago.price.moscow_region.yearly.amount",
+        "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Московской Области)",
+        "types": [
+            "number"
+        ]
+    },
+    "accidents.history.number": {
+        "path": "accidents.history.items.number",
+        "description": "История ДТП: Номер происшествия",
+        "types": [
+            "string"
+        ]
+    },
+    "accidents.history.accident.date": {
+        "path": "accidents.history.items.accident.date",
+        "description": "История ДТП: Дата происшествия",
+        "types": [
+            "string"
+        ]
+    },
+    "accidents.history.type": {
+        "path": "accidents.history.items.type",
+        "description": "История ДТП: Тип происшествия",
+        "types": [
+            "string"
+        ]
+    },
+    "accidents.history.state": {
+        "path": "accidents.history.items.state",
+        "description": "История ДТП: Статус ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "accidents.history.vehicle.brand.name": {
+        "path": "accidents.history.items.vehicle.brand.name",
+        "description": "История ДТП: Марка ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "accidents.history.vehicle.model.name": {
+        "path": "accidents.history.items.vehicle.model.name",
+        "description": "История ДТП: Модель ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "accidents.history.vehicle.year": {
+        "path": "accidents.history.items.vehicle.year",
+        "description": "История ДТП: Год выпуска ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "accidents.history.geo": {
+        "path": "accidents.history.items.geo",
+        "description": "История ДТП: Гео-данные действия",
+        "types": [
+            "object"
+        ]
+    },
+    "accidents.history.damage.points": {
+        "path": "accidents.history.items.damage.points",
+        "description": "История ДТП: Места повреждений",
+        "types": [
+            "array"
+        ]
+    },
+    "stealings.date.stealing": {
+        "path": "stealings.items.date.stealing",
+        "description": "Проверка на угон: Дата угона",
+        "types": [
+            "string"
+        ]
+    },
+    "stealings.geo": {
+        "path": "stealings.items.geo",
+        "description": "Проверка на угон: Данные о месте угона",
+        "types": [
+            "object"
+        ]
+    },
+    "utilizations.date.utilization": {
+        "path": "utilizations.items.date.utilization",
+        "description": "Утилизация: Дата утилизации",
+        "types": [
+            "string"
+        ]
+    },
+    "utilizations.org.name": {
+        "path": "utilizations.items.org.name",
+        "description": "Утилизация: Имя организации",
+        "types": [
+            "string"
+        ]
+    },
+    "utilizations.country.name": {
+        "path": "utilizations.items.country.name",
+        "description": "Утилизация: Имя страны",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.date.added": {
+        "path": "restrictions.registration_actions.items.date.added",
+        "description": "Ограничения на рег. действия: Дата добавления данных об ограничении в реестр",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.date.start": {
+        "path": "restrictions.registration_actions.items.date.start",
+        "description": "Ограничения на рег. действия: Дата наложения ограничения",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.date.end": {
+        "path": "restrictions.registration_actions.items.date.end",
+        "description": "Ограничения на рег. действия: Дата окончания действия ограничения",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.vehicle.year": {
+        "path": "restrictions.registration_actions.items.vehicle.year",
+        "description": "Ограничения на рег. действия: Год выпуска ТС",
+        "types": [
+            "integer"
+        ]
+    },
+    "restrictions.registration_actions.vehicle.model.name": {
+        "path": "restrictions.registration_actions.items.vehicle.model.name",
+        "description": "Ограничения на рег. действия: Марка (модель) ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.initiator.name": {
+        "path": "restrictions.registration_actions.items.initiator.name",
+        "description": "Ограничения на рег. действия: Кем наложено ограничение",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.initiator.region.name": {
+        "path": "restrictions.registration_actions.items.initiator.region.name",
+        "description": "Ограничения на рег. действия: Регион инициатора ограничения",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.restrict.type": {
+        "path": "restrictions.registration_actions.items.restrict.type",
+        "description": "Ограничения на рег. действия: Вид ограничения",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.restrict.reason": {
+        "path": "restrictions.registration_actions.items.restrict.reason",
+        "description": "Ограничения на рег. действия: Основания ограничения",
+        "types": [
+            "string"
+        ]
+    },
+    "restrictions.registration_actions.restrict.number": {
+        "path": "restrictions.registration_actions.items.restrict.number",
+        "description": "Ограничения на рег. действия: Номер документа",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.date.event": {
+        "path": "pledges.items.date.event",
+        "description": "Обременения на ТС: Дата",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.number": {
+        "path": "pledges.items.number",
+        "description": "Обременения на ТС: Номер",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.pledgors.name": {
+        "path": "pledges.items.pledgors.name",
+        "description": "Обременения на ТС: Залогодатель (имя)",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.pledgors.type": {
+        "path": "pledges.items.pledgors.type",
+        "description": "Обременения на ТС: Залогодатель (тип)",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.pledgors.dob": {
+        "path": "pledges.items.pledgors.dob",
+        "description": "Обременения на ТС: Залогодатель (dob)",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.pledgees.name": {
+        "path": "pledges.items.pledgees.name",
+        "description": "Обременения на ТС: Залогодержатель (имя)",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.pledgees.type": {
+        "path": "pledges.items.pledgees.type",
+        "description": "Обременения на ТС: Залогодержатель (тип)",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.pledgees.dob": {
+        "path": "pledges.items.pledgees.dob",
+        "description": "Обременения на ТС: Залогодержатель (dob)",
+        "types": [
+            "string"
+        ]
+    },
+    "pledges.data": {
+        "path": "pledges.items.data",
+        "description": "Обременения на ТС: Данные",
+        "types": [
+            "string",
+            "array"
+        ]
+    },
+    "customs.history.date.event": {
+        "path": "customs.history.items.date.event",
+        "description": "История по таможне: Дата",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.document.name": {
+        "path": "customs.history.items.document.name",
+        "description": "История по таможне: Имя документа",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.document.number": {
+        "path": "customs.history.items.document.number",
+        "description": "История по таможне: Номер документа (декларации)",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.org.name": {
+        "path": "customs.history.items.org.name",
+        "description": "История по таможне: Имя организации",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.color.name": {
+        "path": "customs.history.items.color.name",
+        "description": "История по таможне: Цвет",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.tax.amount": {
+        "path": "customs.history.items.tax.amount",
+        "description": "История по таможне: Пошлина",
+        "types": [
+            "integer"
+        ]
+    },
+    "customs.history.price.amount": {
+        "path": "customs.history.items.price.amount",
+        "description": "История по таможне: Стоимость",
+        "types": [
+            "integer"
+        ]
+    },
+    "customs.history.mileage": {
+        "path": "customs.history.items.mileage",
+        "description": "История по таможне: Пробег",
+        "types": [
+            "integer"
+        ]
+    },
+    "customs.history.ecology.type": {
+        "path": "customs.history.items.ecology.type",
+        "description": "История по таможне: Экология",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.specification.type": {
+        "path": "customs.history.items.specification.type",
+        "description": "История по таможне: Спецификация",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.owner.type": {
+        "path": "customs.history.items.owner.type",
+        "description": "История по таможне: Тип владельца",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.owner.value": {
+        "path": "customs.history.items.owner.value",
+        "description": "История по таможне: Владелец",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.country.from.name": {
+        "path": "customs.history.items.country.from.name",
+        "description": "История по таможне: Из страны (имя страны)",
+        "types": [
+            "string"
+        ]
+    },
+    "customs.history.country.to.name": {
+        "path": "customs.history.items.country.to.name",
+        "description": "История по таможне: В страну (имя страны)",
+        "types": [
+            "string"
+        ]
+    },
+    "leasings.tin": {
+        "path": "leasings.items.tin",
+        "description": "Лизинг: ИНН (Taxpayer identification number)",
+        "types": [
+            "string"
+        ]
+    },
+    "leasings.company.name": {
+        "path": "leasings.items.company.name",
+        "description": "Лизинг: Наименование компании",
+        "types": [
+            "string"
+        ]
+    },
+    "leasings.date.event": {
+        "path": "leasings.items.date.event",
+        "description": "Лизинг: Дата",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.date.start": {
+        "path": "taxi.history.items.date.start",
+        "description": "Такси: Дата начала эксплуатации ТС в качестве такси",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.date.end": {
+        "path": "taxi.history.items.date.end",
+        "description": "Такси: Дата окончания эксплуатации ТС в качестве такси",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.license.number": {
+        "path": "taxi.history.items.license.number",
+        "description": "Такси: Регистрационный номер разрешения",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.company.name": {
+        "path": "taxi.history.items.company.name",
+        "description": "Такси: Наименование компании или ИП (перевозчика)",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.ogrn": {
+        "path": "taxi.history.items.ogrn",
+        "description": "Такси: ОГРН / ОГРНИП",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.tin": {
+        "path": "taxi.history.items.tin",
+        "description": "Такси: ИНН (Taxpayer identification number)",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.vehicle.brand.name": {
+        "path": "taxi.history.items.vehicle.brand.name",
+        "description": "Такси: Марка автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.vehicle.model.name": {
+        "path": "taxi.history.items.vehicle.model.name",
+        "description": "Такси: Модель автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.vehicle.reg_num": {
+        "path": "taxi.history.items.vehicle.reg_num",
+        "description": "Такси: Государственный регистрационный знак",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.vehicle.year": {
+        "path": "taxi.history.items.vehicle.year",
+        "description": "Такси: Год выпуска автомобиля",
+        "types": [
+            "integer"
+        ]
+    },
+    "taxi.history.permit.number": {
+        "path": "taxi.history.items.permit.number",
+        "description": "Такси: Серия и номер бланка разрешения",
+        "types": [
+            "string"
+        ]
+    },
+    "taxi.history.city.name": {
+        "path": "taxi.history.items.city.name",
+        "description": "Такси: Город регистрации",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.date.event": {
+        "path": "fines.items.date.event",
+        "description": "Штрафы: Дата",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.description": {
+        "path": "fines.items.description",
+        "description": "Штрафы: Короткое описание штрафа",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.vendor.name": {
+        "path": "fines.items.vendor.name",
+        "description": "Штрафы: Наименование поставщика",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.amount.value": {
+        "path": "fines.items.amount.value",
+        "description": "Штрафы: Сумма штрафа",
+        "types": [
+            "number"
+        ]
+    },
+    "fines.amount.total": {
+        "path": "fines.items.amount.total",
+        "description": "Штрафы: Общая сумма начисления",
+        "types": [
+            "number"
+        ]
+    },
+    "fines.discount.percent": {
+        "path": "fines.items.discount.percent",
+        "description": "Штрафы: Размер скидки в %",
+        "types": [
+            "number"
+        ]
+    },
+    "fines.discount.date.end": {
+        "path": "fines.items.discount.date.end",
+        "description": "Штрафы: Дата действия скидки по оплате",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.is_paid": {
+        "path": "fines.items.is_paid",
+        "description": "Штрафы: Штраф не оплачен (false) / оплачен (true)",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.user.name": {
+        "path": "fines.items.wire.user.name",
+        "description": "Штрафы: Наименование получателя платежа",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.user.tin": {
+        "path": "fines.items.wire.user.tin",
+        "description": "Штрафы: ИНН получателя",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.user.kpp": {
+        "path": "fines.items.wire.user.kpp",
+        "description": "Штрафы: КПП получателя",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.bank.account.number": {
+        "path": "fines.items.wire.bank.account.number",
+        "description": "Штрафы: Номер счета получателя платежа",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.bank.name": {
+        "path": "fines.items.wire.bank.name",
+        "description": "Штрафы: Наименование банка получателя платежа",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.bank.bik": {
+        "path": "fines.items.wire.bank.bik",
+        "description": "Штрафы: БИК банка получателя платежа",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.payment.purpose": {
+        "path": "fines.items.wire.payment.purpose",
+        "description": "Штрафы: Назначение платежа",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.kbk": {
+        "path": "fines.items.wire.kbk",
+        "description": "Штрафы: КБК",
+        "types": [
+            "string"
+        ]
+    },
+    "fines.wire.okato": {
+        "path": "fines.items.wire.okato",
+        "description": "Штрафы: ОКТМО (ОКАТО)",
+        "types": [
+            "string"
+        ]
+    },
+    "reg_nums.number": {
+        "path": "reg_nums.items.number",
+        "description": "ГРЗ номера: Все ГРЗ номера, что были замечены за авто",
+        "types": [
+            "string"
+        ]
+    },
+    "mileages.date.event": {
+        "path": "mileages.items.date.event",
+        "description": "Пробеги: Дата фиксирования пробега",
+        "types": [
+            "string"
+        ]
+    },
+    "mileages.mileage": {
+        "path": "mileages.items.mileage",
+        "description": "Пробеги: Значение пробега",
+        "types": [
+            "integer"
+        ]
+    },
+    "car_price.date.release": {
+        "path": "car_price.items.date.release",
+        "description": "car_price: Дата выпуска автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "car_price.amount": {
+        "path": "car_price.items.amount",
+        "description": "car_price: Стоимость автомобиля",
+        "types": [
+            "integer"
+        ]
+    },
+    "car_price.model.name": {
+        "path": "car_price.items.model.name",
+        "description": "car_price: Модель автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "car_price.modification.name": {
+        "path": "car_price.items.modification.name",
+        "description": "car_price: Модификация автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "car_price.engine.volume": {
+        "path": "car_price.items.engine.volume",
+        "description": "car_price: Объем двигателя",
+        "types": [
+            "integer"
+        ]
+    },
+    "car_price.year": {
+        "path": "car_price.items.year",
+        "description": "car_price: Год выпуска",
+        "types": [
+            "integer"
+        ]
+    },
+    "carfax.check.exists": {
+        "path": "carfax.check.exists",
+        "description": "CarFax: Существуют ли данные у сервиса CarFax?",
+        "types": [
+            "boolean"
+        ]
+    },
+    "carfax.check.records.count": {
+        "path": "carfax.check.records.count",
+        "description": "CarFax: Количество найденных записей",
+        "types": [
+            "integer"
+        ]
+    },
+    "carfax.check.vehicle.model.name": {
+        "path": "carfax.check.vehicle.model.name",
+        "description": "CarFax: Имя модели ТС",
+        "types": [
+            "string"
+        ]
+    }
 }

@@ -1,38 +1,38 @@
 {
-  "identifiers": {
-    "types": [
-      {
-        "key": "AUTODETECT",
-        "description": "Обозначает необходимость в автоматическом определении типа"
-      },
-      {
-        "key": "VIN",
-        "description": "VIN-код"
-      },
-      {
-        "key": "GRZ",
-        "description": "Регистрационный (ГРЗ) знак"
-      },
-      {
-        "key": "STS",
-        "description": "Код СТС (Номер свидетельства о регистрации ТС)"
-      },
-      {
-        "key": "PTS",
-        "description": "Код ПТС (паспорт транспортного средства)"
-      },
-      {
-        "key": "CHASSIS",
-        "description": "Номер шасси"
-      },
-      {
-        "key": "BODY",
-        "description": "Номер кузова"
-      },
-      {
-        "key": "NONE",
-        "description": "Тип идентификатора не существует"
-      }
-    ]
-  }
+    "identifiers": {
+        "types": [
+            {
+                "key": "AUTODETECT",
+                "description": "Обозначает необходимость в автоматическом определении типа"
+            },
+            {
+                "key": "VIN",
+                "description": "VIN-код"
+            },
+            {
+                "key": "GRZ",
+                "description": "Регистрационный (ГРЗ) знак"
+            },
+            {
+                "key": "STS",
+                "description": "Код СТС (Номер свидетельства о регистрации ТС)"
+            },
+            {
+                "key": "PTS",
+                "description": "Код ПТС (паспорт транспортного средства)"
+            },
+            {
+                "key": "CHASSIS",
+                "description": "Номер шасси"
+            },
+            {
+                "key": "BODY",
+                "description": "Номер кузова"
+            },
+            {
+                "key": "NONE",
+                "description": "Тип идентификатора не существует"
+            }
+        ]
+    }
 }

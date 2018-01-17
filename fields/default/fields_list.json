@@ -467,32 +467,32 @@
     "types": ["string"]
   },
   "pledges.pledgors.name": {
-    "path": "pledges.items.pledgors[].name",
+    "path": "pledges.items.pledgors.name",
     "description": "Обременения на ТС: Залогодатель (имя)",
     "types": ["string"]
   },
   "pledges.pledgors.type": {
-    "path": "pledges.items.pledgors[].type",
+    "path": "pledges.items.pledgors.type",
     "description": "Обременения на ТС: Залогодатель (тип)",
     "types": ["string"]
   },
   "pledges.pledgors.dob": {
-    "path": "pledges.items.pledgors[].dob",
+    "path": "pledges.items.pledgors.dob",
     "description": "Обременения на ТС: Залогодатель (dob)",
     "types": ["string"]
   },
   "pledges.pledgees.name": {
-    "path": "pledges.items.pledgees[].name",
+    "path": "pledges.items.pledgees.name",
     "description": "Обременения на ТС: Залогодержатель (имя)",
     "types": ["string"]
   },
   "pledges.pledgees.type": {
-    "path": "pledges.items.pledgees[].type",
+    "path": "pledges.items.pledgees.type",
     "description": "Обременения на ТС: Залогодержатель (тип)",
     "types": ["string"]
   },
   "pledges.pledgees.dob": {
-    "path": "pledges.items.pledgees[].dob",
+    "path": "pledges.items.pledgees.dob",
     "description": "Обременения на ТС: Залогодержатель (dob)",
     "types": ["string"]
   },

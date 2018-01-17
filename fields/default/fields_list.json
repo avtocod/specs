@@ -98,17 +98,17 @@
   "tech_data.engine.volume": {
     "path": "tech_data.engine.volume",
     "description": "Характеристики ТС: Объем двигателя",
-    "types": ["integer"]
+    "types": ["number"]
   },
   "tech_data.engine.power.hp": {
     "path": "tech_data.engine.power.hp",
     "description": "Характеристики ТС: Мощность в ЛС",
-    "types": ["integer"]
+    "types": ["number"]
   },
   "tech_data.engine.power.kw": {
     "path": "tech_data.engine.power.kw",
     "description": "Характеристики ТС: Мощность в кВ",
-    "types": ["integer"]
+    "types": ["number"]
   },
   "tech_data.weight.netto": {
     "path": "tech_data.weight.netto",
@@ -127,7 +127,7 @@
   },
   "tech_data.drive.type": {
     "path": "tech_data.drive.type",
-    "description": "Характеристики ТС: Тип привода (нет в таблице калькулятора) !!!",
+    "description": "Характеристики ТС: Тип привода",
     "types": ["string"]
   },
   "tech_data.wheel.position": {
@@ -246,7 +246,7 @@
   },
   "registration_actions.reg_num": {
     "path": "registration_actions.items.reg_num",
-    "description": "Регистрационные действия: ГРЗ знак (нет в таблице калькулятора) !!!",
+    "description": "Регистрационные действия: ГРЗ знак",
     "types": ["string"]
   },
   "registration_actions.owner.type": {
@@ -286,50 +286,50 @@
   },
   "insurance.osago.policy.series": {
     "path": "insurance.osago.items.policy.series",
-    "description": "ОСАГО: Серия полиса (нет в таблице калькулятора) !!!",
+    "description": "ОСАГО: Серия полиса",
     "types": ["string"]
   },
   "insurance.osago.policy.number": {
     "path": "insurance.osago.items.policy.number",
-    "description": "ОСАГО: Номер полиса (нет в таблице калькулятора) !!!",
+    "description": "ОСАГО: Номер полиса",
     "types": ["string"]
   },
 
   "calculate.tax.moscow.yearly.amount": {
     "path": "calculate.tax.moscow.yearly.amount",
     "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
-    "types": ["float"]
+    "types": ["number"]
   },
   "calculate.tax.regions.yearly.amount": {
     "path": "calculate.tax.regions.yearly.amount",
     "description": "Калькулятор налога: Сумма налога за 12 месяцев (для регионов)",
-    "types": ["float"]
+    "types": ["number"]
   },
 
   "calculate.osago.price.current.region.name": {
     "path": "calculate.osago.price.current.region.name",
     "description": "Калькулятор ОСАГО: Имя региона регистрации ТС (автоматически определенный)",
-    "types": ["float"]
+    "types": ["number"]
   },
   "calculate.osago.price.current.city.name": {
     "path": "calculate.osago.price.current.city.name",
     "description": "Калькулятор ОСАГО: Имя города регистрации ТС (автоматически определенный)",
-    "types": ["float"]
+    "types": ["number"]
   },
   "calculate.osago.price.current.yearly.amount": {
     "path": "calculate.osago.price.current.yearly.amount",
     "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для автоматически определенного региона регистрации ТС)",
-    "types": ["float"]
+    "types": ["number"]
   },
   "calculate.osago.price.moscow.yearly.amount": {
     "path": "calculate.osago.price.moscow.yearly.amount",
     "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Москвы)",
-    "types": ["float"]
+    "types": ["number"]
   },
   "calculate.osago.price.moscow_region.yearly.amount": {
     "path": "calculate.osago.price.moscow_region.yearly.amount",
     "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Московской Области)",
-    "types": ["float"]
+    "types": ["number"]
   },
 
   "accidents.history.number": {
@@ -369,7 +369,7 @@
   },
   "accidents.history.geo": {
     "path": "accidents.history.items.geo",
-    "description": "История ДТП: Гео-данные действия (ранее назывался 'Регион') !!!",
+    "description": "История ДТП: Гео-данные действия",
     "types": ["object"]
   },
   "accidents.history.damage.points": {
@@ -385,7 +385,7 @@
   },
   "stealings.geo": {
     "path": "stealings.items.geo",
-    "description": "Проверка на угон: Данные о месте угона (ранее назывался 'Страна угона') !!!",
+    "description": "Проверка на угон: Данные о месте угона",
     "types": ["object"]
   },
 
@@ -818,17 +818,17 @@
   "fines.amount.value": {
     "path": "fines.items.amount.value",
     "description": "Штрафы: Сумма штрафа",
-    "types": ["float"]
+    "types": ["number"]
   },
   "fines.amount.total": {
     "path": "fines.items.amount.total",
     "description": "Штрафы: Общая сумма начисления",
-    "types": ["float"]
+    "types": ["number"]
   },
   "fines.discount.percent": {
     "path": "fines.items.discount.percent",
     "description": "Штрафы: Размер скидки в %",
-    "types": ["integer"]
+    "types": ["number"]
   },
   "fines.discount.date.end": {
     "path": "fines.items.discount.date.end",
@@ -888,7 +888,7 @@
 
   "reg_nums.number": {
     "path": "reg_nums.items.number",
-    "description": "ГРЗ номера: Все ГРЗ номера, что были замечены за авто (нет в таблице калькулятора) !!!",
+    "description": "ГРЗ номера: Все ГРЗ номера, что были замечены за авто",
     "types": ["string"]
   },
 
@@ -905,32 +905,32 @@
 
   "car_price.date.release": {
     "path": "car_price.items.date.release",
-    "description": "car_price: Дата выпуска автомобиля (нет в таблице калькулятора) !!!",
+    "description": "car_price: Дата выпуска автомобиля",
     "types": ["string"]
   },
   "car_price.amount": {
     "path": "car_price.items.amount",
-    "description": "car_price: Стоимость автомобиля (нет в таблице калькулятора) !!!",
+    "description": "car_price: Стоимость автомобиля",
     "types": ["integer"]
   },
   "car_price.model.name": {
     "path": "car_price.items.model.name",
-    "description": "car_price: Модель автомобиля (нет в таблице калькулятора) !!!",
+    "description": "car_price: Модель автомобиля",
     "types": ["string"]
   },
   "car_price.modification.name": {
     "path": "car_price.items.modification.name",
-    "description": "car_price: Модификация автомобиля (нет в таблице калькулятора) !!!",
+    "description": "car_price: Модификация автомобиля",
     "types": ["string"]
   },
   "car_price.engine.volume": {
     "path": "car_price.items.engine.volume",
-    "description": "car_price: Объем двигателя (нет в таблице калькулятора) !!!",
+    "description": "car_price: Объем двигателя",
     "types": ["integer"]
   },
   "car_price.year": {
     "path": "car_price.items.year",
-    "description": "car_price: Год выпуска (нет в таблице калькулятора) !!!",
+    "description": "car_price: Год выпуска",
     "types": ["integer"]
   },
 

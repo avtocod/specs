@@ -10,7 +10,9 @@ cache:
     - $HOME/.composer/cache
 
 notifications:
-  slack: avto-dev:111ajC3vtVLKFkP04MzWbdtg
+  slack:
+    rooms:
+      - avto-dev:111ajC3vtVLKFkP04MzWbdtg
     on_success: never
   email:
     on_success: never

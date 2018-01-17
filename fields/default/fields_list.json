@@ -501,10 +501,85 @@
     "description": "Обременения на ТС: Данные",
     "types": ["string", "array"]
   },
-
+  
+  "customs.history.vehicle.name.original": {
+	"path": "customs.history.items.vehicle.name.original",
+	"description": "Название модели",
+	"types": ["string"]
+  },
+  "customs.history.vehicle.vin": {
+    "path": "customs.history.items.vehicle.vin",
+	"description": "Vin автомобиля",
+	"types": ["string"]
+  },
+  "customs.history.vehicle.engine.name.original": {
+    "path": "customs.history.items.vehicle.engine.name.original",
+	"description": "Оригинальное название модели двигателя",
+	"types": ["string"]
+  },
+  "customs.history.vehicle.engine.volume": {
+    "path": "customs.history.items.vehicle.engine.volume",
+	"description": "Объем двигателя",
+	"types": ["number"]
+  },
+  "customs.history.vehicle.engine.power.kwt": {
+    "path": "customs.history.items.vehicle.engine.power.kwt",
+	"description": "Мощность двигателя в kwt",
+	"types": ["number"]
+  },
+  "customs.history.vehicle.engine.power.ls": {
+    "path": "customs.history.items.vehicle.engine.power.ls",
+	"description": "Мощность двигателя в лощадиных силах (ls)",
+	"types": ["number"]
+  },
+  "customs.history.vehicle.engine.speed.max": {
+    "path": "customs.history.items.vehicle.engine.speed.max",
+	"description": "Маскимальная скорость двигателя",
+	"types": ["number"]
+  },
+  "customs.history.vehicle.body.number": {
+    "path": "customs.history.items.vehicle.body.number",
+	"description": "Номер кузова",
+	"types": ["string"]
+  },
+  "customs.history.vehicle.body.number_seats.all": {
+    "path": "customs.history.vehicle.body.number_seats.all",
+	"description": "Количество мест в авто, общее",
+	"types": ["int"]
+  },
+  "customs.history.vehicle.body.number_seats.without_driver": {
+    "path": "customs.history.vehicle.body.number_seats.without_driver",
+	"description": "Количество мест в авто, без водителя",
+	"types": ["int"]
+  },
+  "customs.history.vehicle.chassis": {
+    "path": "customs.history.items.vehicle.chassis",
+	"description": "Номер шасси",
+	"types": ["string"]
+  },
+  "customs.history.vehicle.issue_date.year": {
+    "path": "customs.history.items.vehicle.issue_date.year",
+	"description": "Год выпуска",
+	"types": ["int"]
+  },
+  "customs.history.vehicle.issue_date.month": {
+    "path": "customs.history.items.vehicle.issue_date.month",
+	"description": "Месяц выпуска",
+	"types": ["int"]
+  },
+  "customs.history.vehicle.issue_date.day": {
+    "path": "customs.history.items.vehicle.issue_date.day",
+	"description": "День выпуска",
+	"types": ["int"]
+  },
   "customs.history.date.event": {
     "path": "customs.history.items.date.event",
     "description": "История по таможне: Дата",
+    "types": ["string"]
+  },
+  "customs.history.date.filled": {
+    "path": "customs.history.items.date.filled",
+    "description": "История по таможне: Дата заполнения",
     "types": ["string"]
   },
   "customs.history.document.name": {
@@ -514,8 +589,58 @@
   },
   "customs.history.document.number": {
     "path": "customs.history.items.document.number",
-    "description": "История по таможне: Номер документа",
+    "description": "История по таможне: Номер документа (декларации)",
     "types": ["string"]
+  },
+  "customs.history.document.position": {
+    "path": "customs.history.items.document.position",
+    "description": "История по таможне: Позиция в декларации",
+    "types": ["int"]
+  },
+  "customs.history.document.type": {
+	"path": "customs.history.items.document.type",
+	"description": "Тип документа(декларации)",
+	"types": ["string"]
+  },
+  "customs.history.document.formalization.code": {
+	"path": "customs.history.items.document.formalization.code",
+	"description": "Код оформления",
+	"types": ["string"]
+  },
+  "customs.history.document.formalization.description": {
+    "path": "customs.history.items.document.formalization.description",
+	"description": "Описание кода оформления",
+	"types": ["string"]
+  },
+  "customs.history.regims.current.code": {
+	"path": "customs.history.items.regims.current.code",
+	"description": "История по таможне: Код таможенного режима",
+	"types": ["string"]
+  },
+  "customs.history.regims.current.description": {
+	"path": "customs.history.items.regims.current.description",
+	"description": "История по таможне: Описание кода таможенного режима",
+	"types": ["string"]
+  },
+  "customs.history.regims.previous.code": {
+	"path": "customs.history.items.regims.previous.code",
+	"description": "История по таможне: Код предшествующего таможенного режима",
+	"types": ["string"]
+  },
+  "customs.history.regims.previous.description": {
+	"path": "customs.history.items.regims.previous.description",
+	"description": "История по таможне: Описание кода предшествующего таможенного режима",
+	"types": ["string"]
+  },
+  "customs.history.regims.movement.code": {
+	"path": "customs.history.items.regims.movement.code",
+	"description": "История по таможне: Код особенностей перемещения",
+	"types": ["string"]
+  },
+  "customs.history.regims.movement.description": {
+	"path": "customs.history.items.regims.movement.description",
+	"description": "История по таможне: Описание кода особенностей перемещения",
+	"types": ["string"]
   },
   "customs.history.org.name": {
     "path": "customs.history.items.org.name",
@@ -552,6 +677,11 @@
     "description": "История по таможне: Спецификация",
     "types": ["string"]
   },
+  "customs.history.specification.raw": {
+    "path": "customs.history.items.specification.raw",
+    "description": "История по таможне: Спецификация (описание продукта одной строкой)",
+    "types": ["string"]
+  },
   "customs.history.owner.type": {
     "path": "customs.history.items.owner.type",
     "description": "История по таможне: Тип владельца",
@@ -567,12 +697,32 @@
     "description": "История по таможне: Из страны (имя страны)",
     "types": ["string"]
   },
+  "customs.history.country.from.code": {
+    "path": "customs.history.items.country.from.code",
+    "description": "История по таможне: Из страны (код страны)",
+    "types": ["string"]
+  },
   "customs.history.country.to.name": {
     "path": "customs.history.items.country.to.name",
     "description": "История по таможне: В страну (имя страны)",
     "types": ["string"]
   },
-
+  "customs.history.in_customs.code": {
+    "path": "customs.history.items.in_customs.code",
+	"description": "Код таможни внутри страны",
+	"types": ["string"]
+  },
+  "customs.history.in_customs.name": {
+    "path": "customs.history.items.in_customs.name",
+	"description": "Название таможни внутри страны",
+	"types": ["string"]
+  },
+  "customs.history.in_customs.address": {
+    "path": "customs.history.items.in_customs.address",
+	"description": "Адрес таможни внутри страны",
+	"types": ["string"]
+  },
+  
   "leasings.tin": {
     "path": "leasings.items.tin",
     "description": "Лизинг: ИНН (Taxpayer identification number)",

@@ -1,0 +1,94 @@
+{
+  "customs": {
+    "history": {
+	  "items": [
+	    "vehicle": {
+		  "name": {
+		    "original": "HONDA FREED SPIKE"
+		  },
+		  "issue_date": {
+		    "year": 2010,
+			"month": 12,
+			"day": 6
+		  },
+		  "vin": "WVWZZZ3CZHE129672",
+		  "body": {
+		    "number": "WVWZZZ3CZHE129672",
+			"number_seats": {
+			 "all": 5,
+			 "without_driver": 4
+			}
+		  },
+		  "engine": {
+		    "name": {
+			  "original": "L15A"
+			},
+			"volume": 140.5,
+			"power": {
+			  "kwt": 140,
+			  "ls": 90
+			},
+			"speed": {
+			  "max": 300
+			}
+		  },
+		  "chassis": "WVWZZZ3CZHE129672"
+		},
+	    "date": {
+		  "event": "2015-09-04",
+		  "filled": "2015-09-04"
+		},
+		"document": {
+		  "number": "10012190/011116/0015214",
+		  "position": 1,
+		  "type": "ПТД",
+		  "formalization": {
+		    "code": "10",
+			"description": "описание"
+		  }
+		},
+		"regims": {
+		  "current": {
+		    "code": "40",
+			"description": "ТАМОЖЕННЫЙ СКЛАД (ДО 01.2007)"
+		  },
+		  "previous": {
+		    "code": "31",
+			"description": "РЕЭКСПОРТ (С 01.2007)"
+		  },
+		  "movement": {
+		    "code": "74",
+			"description": "ТАМОЖЕННЫЙ СКЛАД (ДО 01.2007)"
+		  }
+		},
+		"color": {
+		  "name": "красный"
+		},
+		"price": {
+		  "amount": 796026.0
+		},
+		"mileage": 150000,
+		"ecology": {
+		  "type": "ЕВРО4"
+		},
+		"specification": {
+		  "raw": "АВТОМОБИЛЬ ЦИСТЕРНА(ДЛЯ НЕФТЕПРОДУКТОВ)МАЗ-5334,1988Г.ВЫП.,ДВИГ.ЯМЗ236М-8806943(МОЩН.180Л.С.),ШАССИ 106668 -1 ШТ.,ЦВЕТ КАБИНЫ СИНИЙ"
+		},
+		"country": {
+		  "from": {
+		    "name": "РЕСПУБЛИКА МОЛДОВА",
+			"code": "498"
+		  },
+		  "to": {
+		    "name": "Россия"
+		  }
+		},
+		"in_customs": {
+		  "code": "10001020",
+		  "name": "Т/П АЭРОПОРТ ВНУКОВО (ГРУЗОВОЙ)",
+		  "address": "РОССИЯ / МОСКВА / АЭРОПОРТ ВНУКОВО, ДОМ 1,СТРОЕНИЕ 19 |УПРАВЛЕНИЕ: ФТС РОССИИ |ТАМОЖНЯ: ВНУКОВСКАЯ"
+		}
+	  ]
+	}
+  }
+}

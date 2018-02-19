@@ -1,12 +1,14 @@
 <p align="center">
-  <img alt="laravel" src="https://avatars1.githubusercontent.com/u/32733112?s=70&v=4" width="70" height="70" />
+  <img alt="avtocod" src="https://avatars1.githubusercontent.com/u/32733112?s=70&v=4" width="70" height="70" />
 </p>
 
 ## Спецификации и документация по проекту `avtocod`
 
 [![Version][badge_version]][link_packagist]
 [![Build Status][badge_build_status]][link_build_status]
+[![Issues][badge_issues]][link_issues]
 [![License][badge_license]][link_license]
+[![Downloads count][badge_downloads_count]][link_packagist]
 
 #### Глоссарий
 
@@ -41,7 +43,7 @@
 Для установки выполните в терминале следующую команду:
 
 ```shell
-$ composer require avtocod/specs "1.*"
+$ composer require avtocod/specs "^1.1.2"
 ```
 
 > Для этого необходим установленный `composer`. Для его установки перейдите по [данной ссылке][getcomposer].
@@ -68,8 +70,11 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 
 [badge_version]:https://img.shields.io/packagist/v/avtocod/specs.svg?style=flat&maxAge=5
 [badge_license]:https://img.shields.io/packagist/l/avtocod/specs.svg
-[badge_build_status]:https://travis-ci.org/avtocod/specs.svg?branch=master
+[badge_build_status]:https://scrutinizer-ci.com/g/avtocod/specs/badges/build.png?b=master
+[badge_downloads_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?style=flat&maxAge=30
+[badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=flat&maxAge=30
 [link_packagist]:https://packagist.org/packages/avtocod/specs
 [link_license]:https://github.com/avtocod/specs/blob/master/LICENSE
-[link_build_status]:https://travis-ci.org/avtocod/specs
+[link_build_status]:https://scrutinizer-ci.com/g/avtocod/specs/build-status/master
+[link_issues]:https://github.com/avtocod/specs/issues
 [getcomposer]:https://getcomposer.org/download/

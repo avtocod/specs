@@ -34,7 +34,8 @@
         }
     },
     "scripts": {
-        "test": "./vendor/bin/phpunit --no-coverage --configuration ./sdk/php/phpunit.xml"
+        "test": "./vendor/bin/phpunit --no-coverage --configuration ./sdk/php/phpunit.xml",
+        "test-cover": "./vendor/bin/phpunit --configuration ./sdk/php/phpunit.xml"
     },
     "support": {
         "issues": "https://github.com/avtocod/specs/issues",

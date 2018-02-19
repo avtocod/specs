@@ -25,9 +25,9 @@ build:
       tests:
         override:
           -
-            command: 'vendor/bin/phpunit --coverage-clover=clover-file'
+            command: 'composer test-cover'
             coverage:
-              file: 'clover-file'
+              file: './sdk/php/coverage/clover.xml'
               format: 'clover'
 
     php70:
@@ -36,9 +36,9 @@ build:
       tests:
         override:
           -
-            command: 'vendor/bin/phpunit --coverage-clover=clover-file'
+            command: 'composer test-cover'
             coverage:
-              file: 'clover-file'
+              file: './sdk/php/coverage/clover.xml'
               format: 'clover'
 
     php71:
@@ -47,9 +47,9 @@ build:
       tests:
         override:
           -
-            command: 'vendor/bin/phpunit --coverage-clover=clover-file'
+            command: 'composer test-cover'
             coverage:
-              file: 'clover-file'
+              file: './sdk/php/coverage/clover.xml'
               format: 'clover'
 
     php72:
@@ -58,7 +58,7 @@ build:
       tests:
         override:
           -
-            command: 'vendor/bin/phpunit --coverage-clover=clover-file'
+            command: 'composer test-cover'
             coverage:
-              file: 'clover-file'
+              file: './sdk/php/coverage/clover.xml'
               format: 'clover'

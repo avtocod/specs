@@ -250,6 +250,13 @@
         "items": [],
         "count": 0
     },
+    "images": {
+        "photos": {
+            "_comment": "Фотографии ТС",
+            "items": [],
+            "count": 0
+        }
+    },
     "restrictions": {
         "_comment": "Ограничения",
         "registration_actions": {
@@ -353,15 +360,6 @@
         "_comment": "Штрафы",
         "items": [],
         "count": 0
-    },
-    "reg_nums": {
-        "_comment": "ГРЗ номера",
-        "items": [
-            {
-                "number": "М289АС750"
-            }
-        ],
-        "count": 1
     },
     "mileages": {
         "_comment": "Пробеги",

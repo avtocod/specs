@@ -280,7 +280,7 @@
                     }
                 }
             ],
-            "count": null
+            "count": 1
         }
     },
     "stealings": {
@@ -299,7 +299,7 @@
                 }
             }
         ],
-        "count": null
+        "count": 1
     },
     "utilizations": {
         "_comment": "Утилизация",
@@ -316,7 +316,29 @@
                 }
             }
         ],
-        "count": null
+        "count": 1
+    },
+    "images": {
+        "photos": {
+            "_comment": "Фотографии ТС",
+            "items": [
+                {
+                    "vehicle": {
+                        "brand": {
+                            "name": null
+                        },
+                        "model": {
+                            "name": null
+                        }
+                    },
+                    "date": {
+                        "issued": null
+                    },
+                    "uri": null
+                }
+            ],
+            "count": 1
+        }
     },
     "restrictions": {
         "_comment": "Ограничения",
@@ -346,7 +368,7 @@
                     }
                 }
             ],
-            "count": null
+            "count": 1
         }
     },
     "pledges": {
@@ -376,7 +398,7 @@
                 ]
             }
         ],
-        "count": null
+        "count": 1
     },
     "customs": {
         "history": {
@@ -423,7 +445,7 @@
                     }
                 }
             ],
-            "count": null
+            "count": 1
         }
     },
     "leasings": {
@@ -439,7 +461,7 @@
                 }
             }
         ],
-        "count": null
+        "count": 1
     },
     "taxi": {
         "_comment": "Такси",
@@ -475,7 +497,7 @@
                 }
             }
         ],
-        "count": null
+        "count": 1
     },
     "fines": {
         "_comment": "Штрафы",
@@ -520,16 +542,7 @@
                 }
             }
         ],
-        "count": null
-    },
-    "reg_nums": {
-        "_comment": "ГРЗ номера",
-        "items": [
-            {
-                "number": null
-            }
-        ],
-        "count": null
+        "count": 1
     },
     "mileages": {
         "_comment": "Пробеги",
@@ -541,7 +554,7 @@
                 "mileage": null
             }
         ],
-        "count": null
+        "count": 1
     },
     "car_price": {
         "_comment": "Цены автомобиля",
@@ -563,7 +576,7 @@
                 "year": null
             }
         ],
-        "count": null
+        "count": 1
     },
     "carfax": {
         "check": {

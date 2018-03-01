@@ -318,6 +318,28 @@
         ],
         "count": null
     },
+    "images": {
+        "photos": {
+            "_comment": "Фотографии ТС",
+            "items": [
+                {
+                    "vehicle": {
+                        "brand": {
+                            "name": null
+                        },
+                        "model": {
+                            "name": null
+                        }
+                    },
+                    "date": {
+                        "issued": null
+                    },
+                    "uri": null
+                }
+            ],
+            "count": null
+        }
+    },
     "restrictions": {
         "_comment": "Ограничения",
         "registration_actions": {
@@ -520,15 +542,6 @@
                     "kbk": null,
                     "okato": null
                 }
-            }
-        ],
-        "count": null
-    },
-    "reg_nums": {
-        "_comment": "ГРЗ номера",
-        "items": [
-            {
-                "number": null
             }
         ],
         "count": null

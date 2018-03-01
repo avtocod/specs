@@ -699,6 +699,42 @@
         "items": [],
         "count": 0
     },
+    "images": {
+        "photos": {
+            "_comment": "Фотографии ТС",
+            "items": [
+                {
+                    "vehicle": {
+                        "brand": {
+                            "name": "VAZ (Lada)"
+                        },
+                        "model": {
+                            "name": "2109"
+                        }
+                    },
+                    "date": {
+                        "issued": "2013-11-16 19:40:44"
+                    },
+                    "uri": "http:\/\/img02.avto-nomer.ru\/131116\/o\/ru4004948.jpg"
+                },
+                {
+                    "vehicle": {
+                        "brand": {
+                            "name": "VAZ (Lada)"
+                        },
+                        "model": {
+                            "name": "2109"
+                        }
+                    },
+                    "date": {
+                        "issued": "2013-07-24 06:58:56"
+                    },
+                    "uri": "http:\/\/img02.avto-nomer.ru\/130724\/o\/ru3715504.jpg"
+                }
+            ],
+            "count": 2
+        }
+    },
     "restrictions": {
         "_comment": "Ограничения",
         "registration_actions": {
@@ -904,27 +940,6 @@
             }
         ],
         "count": 1
-    },
-    "reg_nums": {
-        "_comment": "ГРЗ номера",
-        "items": [
-            {
-                "number": "Е932РО73"
-            },
-            {
-                "number": "Е185МУ73"
-            },
-            {
-                "number": "У565ОУ163"
-            },
-            {
-                "number": "О999КМ163"
-            },
-            {
-                "number": "О447ОС93"
-            }
-        ],
-        "count": 5
     },
     "mileages": {
         "_comment": "Пробеги",

@@ -1008,13 +1008,6 @@
             "string"
         ]
     },
-    "reg_nums.number": {
-        "path": "reg_nums.items.number",
-        "description": "ГРЗ номера: Все ГРЗ номера, что были замечены за авто",
-        "types": [
-            "string"
-        ]
-    },
     "mileages.date.event": {
         "path": "mileages.items.date.event",
         "description": "Пробеги: Дата фиксирования пробега",
@@ -1027,6 +1020,34 @@
         "description": "Пробеги: Значение пробега",
         "types": [
             "integer"
+        ]
+    },
+    "images.photos.vehicle.brand.name": {
+        "path": "images.photos.items.vehicle.brand.name",
+        "description": "Фотография ТС: Значение марки (бренда) ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "images.photos.vehicle.model.name": {
+        "path": "images.photos.items.vehicle.model.name",
+        "description": "Фотография ТС: Значение модели ТС",
+        "types": [
+            "string"
+        ]
+    },
+    "images.photos.date.issued": {
+        "path": "images.photos.items.date.issued",
+        "description": "Фотография ТС: Дата фиксации изображения",
+        "types": [
+            "string"
+        ]
+    },
+    "images.photos.uri": {
+        "path": "images.photos.items.uri",
+        "description": "Фотография ТС: URI фотографии ТС",
+        "types": [
+            "string"
         ]
     },
     "car_price.date.release": {

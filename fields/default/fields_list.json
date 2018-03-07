@@ -419,6 +419,13 @@
             "number"
         ]
     },
+    "calculate.osago.coefficients.regional.value": {
+        "path": "calculate.osago.coefficients.regional.value",
+        "description": "Калькулятор ОСАГО: Региональный коэффициент ОСАГО",
+        "types": [
+            "number"
+        ]
+    },
     "calculate.osago.price.current.region.name": {
         "path": "calculate.osago.price.current.region.name",
         "description": "Калькулятор ОСАГО: Имя региона регистрации ТС (автоматически определенный)",

@@ -48,6 +48,13 @@
             "string"
         ]
     },
+    "tech_data.brand.id": {
+        "path": "tech_data.brand.id",
+        "description": "Характеристики ТС: Уникальный идентификатор марки",
+        "types": [
+            "string"
+        ]
+    },	
     "tech_data.brand.name.original": {
         "path": "tech_data.brand.name.original",
         "description": "Характеристики ТС: Марка",
@@ -55,6 +62,13 @@
             "string"
         ]
     },
+    "tech_data.brand.name.normalized": {
+        "path": "tech_data.brand.name.normalized",
+        "description": "Характеристики ТС: Нормализованное значение марки",
+        "types": [
+            "string"
+        ]
+    },	
     "tech_data.brand.name.rus": {
         "path": "tech_data.brand.name.rus",
         "description": "Характеристики ТС: Марка (по-русски)",
@@ -62,6 +76,13 @@
             "string"
         ]
     },
+    "tech_data.model.id": {
+        "path": "tech_data.model.id",
+        "description": "Характеристики ТС: Уникальный идентификатор модель",
+        "types": [
+            "string"
+        ]
+    },	
     "tech_data.model.name.original": {
         "path": "tech_data.model.name.original",
         "description": "Характеристики ТС: Модель",
@@ -69,6 +90,13 @@
             "string"
         ]
     },
+    "tech_data.model.name.normalized": {
+        "path": "tech_data.model.name.normalized",
+        "description": "Характеристики ТС: Нормализованное значение модели",
+        "types": [
+            "string"
+        ]
+    },	
     "tech_data.type.name": {
         "path": "tech_data.type.name",
         "description": "Характеристики ТС: Тип (Вид) ТС",

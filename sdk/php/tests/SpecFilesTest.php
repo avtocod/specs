@@ -2,10 +2,10 @@
 
 namespace Avtocod\Specifications\Tests;
 
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-use RecursiveRegexIterator;
 use RegexIterator;
+use RecursiveRegexIterator;
+use RecursiveIteratorIterator;
+use RecursiveDirectoryIterator;
 
 /**
  * Class SpecFilesTest.
@@ -83,13 +83,13 @@ class SpecFilesTest extends AbstractTestCase
             foreach ($result as $file_path) {
                 // Skip excluded directory
                 foreach ($exclude_directories as $exclude_directory_path) {
-                    if (strpos($file_path, $exclude_directory_path) === 0) {
+                    if (mb_strpos($file_path, $exclude_directory_path) === 0) {
                         continue 2;
                     }
                 }
 
                 $this->assertJson(file_get_contents($file_path), $file_path);
-                ++$counter;
+                $counter++;
             }
         }
 

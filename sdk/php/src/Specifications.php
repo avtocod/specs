@@ -39,9 +39,10 @@ class Specifications
     /**
      * Возвращает спецификацию по филдам в соответствии с группой.
      *
-     * @throws Exception
      *
      * @param string $group_name
+     *
+     * @throws Exception
      *
      * @return array[]
      */
@@ -55,9 +56,10 @@ class Specifications
     /**
      * Возвращает спецификацию по идентификаторам в соответствии с группой.
      *
-     * @throws Exception
      *
      * @param string $group_name
+     *
+     * @throws Exception
      *
      * @return array[]
      */
@@ -71,9 +73,10 @@ class Specifications
     /**
      * Возвращает спецификацию по источникам в соответствии с группой.
      *
-     * @throws Exception
      *
      * @param string $group_name
+     *
+     * @throws Exception
      *
      * @return array[]
      */

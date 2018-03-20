@@ -88,7 +88,7 @@ class SpecFilesTest extends AbstractTestCase
                     }
                 }
 
-                $this->assertJson(file_get_contents($file_path));
+                $this->assertJson(file_get_contents($file_path), $file_path);
                 ++$counter;
             }
         }

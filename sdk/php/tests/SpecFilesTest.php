@@ -68,11 +68,13 @@ class SpecFilesTest extends AbstractTestCase
     {
         $root = $this->getRootDirPath();
 
-        $exclude_directories = array_map('realpath', [
+        $exclude_directories = array_filter(array_map('realpath', [
             $root . '/vendor',
             $root . '/tests',
             $root . '/.git',
-        ]);
+        ]), function ($s) {
+            return is_string($s);
+        });
 
         $directory = new RecursiveDirectoryIterator(realpath($root));
         $iterator  = new RecursiveIteratorIterator($directory);

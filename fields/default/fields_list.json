@@ -48,9 +48,23 @@
             "string"
         ]
     },
+    "tech_data.brand.id": {
+        "path": "tech_data.brand.id",
+        "description": "Характеристики ТС: Уникальный идентификатор марки",
+        "types": [
+            "string"
+        ]
+    },
     "tech_data.brand.name.original": {
         "path": "tech_data.brand.name.original",
         "description": "Характеристики ТС: Марка",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.brand.name.normalized": {
+        "path": "tech_data.brand.name.normalized",
+        "description": "Характеристики ТС: Нормализованное значение марки",
         "types": [
             "string"
         ]
@@ -62,9 +76,23 @@
             "string"
         ]
     },
+    "tech_data.model.id": {
+        "path": "tech_data.model.id",
+        "description": "Характеристики ТС: Уникальный идентификатор модель",
+        "types": [
+            "string"
+        ]
+    },
     "tech_data.model.name.original": {
         "path": "tech_data.model.name.original",
         "description": "Характеристики ТС: Модель",
+        "types": [
+            "string"
+        ]
+    },
+    "tech_data.model.name.normalized": {
+        "path": "tech_data.model.name.normalized",
+        "description": "Характеристики ТС: Нормализованное значение модели",
         "types": [
             "string"
         ]

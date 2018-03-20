@@ -18,15 +18,19 @@
         },
         "brand": {
             "_comment": "Марка",
+            "id": null,
             "name": {
                 "original": null,
+                "normalized": null,
                 "rus": null
             }
         },
         "model": {
             "_comment": "Модель",
+            "id": null,
             "name": {
-                "original": null
+                "original": null,
+                "normalized": null
             }
         },
         "type": {

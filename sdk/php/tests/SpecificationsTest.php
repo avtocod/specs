@@ -2,8 +2,8 @@
 
 namespace Avtocod\Specifications\Tests;
 
-use Avtocod\Specifications\Specifications;
 use Exception;
+use Avtocod\Specifications\Specifications;
 
 /**
  * Class SpecificationsTest.
@@ -23,6 +23,16 @@ class SpecificationsTest extends AbstractTestCase
         parent::setUp();
 
         $this->instance = new Specifications;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function tearDown()
+    {
+        unset($this->instance);
+
+        parent::tearDown();
     }
 
     /**
@@ -137,15 +147,5 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectException(Exception::class);
 
         $this->instance->getSourcesSpecification('foo bar');
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    protected function tearDown()
-    {
-        unset($this->instance);
-
-        parent::tearDown();
     }
 }

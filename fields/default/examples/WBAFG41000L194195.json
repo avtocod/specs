@@ -744,933 +744,936 @@
             "count": 2
         }
     },
-    "repairs_history": {
-        "_comment": "Ремонтные работы, связанные с ТС",
-        "items": [
-            {
-                "_id": 489023854,
-                "number": {
-                    "calculation": "N\/A",
-                    "claim": "9999999"
+    "repairs": {
+        "_comment": "Ремонтные работы",
+        "history": {
+            "_comment": "Ремонтные работы, связанные с ТС",
+            "items": [
+                {
+                    "_id": 489023854,
+                    "number": {
+                        "calculation": "N\/A",
+                        "claim": "9999999"
+                    },
+                    "date": {
+                        "calculation": "2012-08-19"
+                    },
+                    "mileage": null,
+                    "cost": {
+                        "total": 80743,
+                        "labour": 13875,
+                        "parts": 54805,
+                        "paint": 12063
+                    },
+                    "car": {
+                        "manufacturer": "BMW [V] [R] [01]",
+                        "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
+                        "sub_model": "X6 xDrive 35i"
+                    },
+                    "insurer": {
+                        "name": null
+                    },
+                    "assessor": {
+                        "name": null
+                    },
+                    "task_process": null,
+                    "repairer": {
+                        "type": "Bodyshop",
+                        "description": "Unknown"
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": "ЛОБОВОЕ СТЕКЛО - ЗАМЕНИТЬ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ДОПОЛНИТЕЛЬНЫЕ РАБОТЫ С ДАТЧ СВЕТА\/ДОЖДЯ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "БЛОК\/И УПР-Я (БЕЗ CAS) ПРОГРАММИРОВАТЬ\/",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКА КРЫШИ - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛАДКА КРЫШИ ПР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "СИДЕНЬЕ П Л  - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "СИДЕНЬЕ П ПР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКУ АНТЕННЫ НА КРЫШЕ С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ЦЕНТРАЛЬНАЯ КОНСОЛЬ  - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ЛОБ СТЕКЛО ТОНИР51 31 7 179 743",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ГЕРМЕТИК ЛОБ СТЕКЛО83 19 0 444 141",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДОПОЛНИТ ГЕРМЕТИК П83 19 0 444 144",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ГЕРМЕТИК83 19 9 407 777",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛОСМОТРИ ПО ЧАСТ",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДЕМПФЕР СТЕКЛА ВЕТР51 31 1 925 433",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ШИЛЬДИК ПОДУШ БЕЗОП71 21 2 122 334",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 13 7 192 768",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 177 029",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 064 098",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ПОПЕРЕЧИНА ВЕТР СТЕК51 31 7 186 167",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ИЗОЛЯЦИЯ ОБТЕКАТ51 48 9 143 684",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦ ЛОБ СТЕКЛА51 31 7 179 737",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДАТЧИК ДОЖДЯ\/ОСВЕЩ61 35 9 254 025",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "НАРУЖН. ПАНЕЛЬ КРЫШИОТРЕМОНТИРОВАТЬ",
+                                "repair": {
+                                    "method": "I",
+                                    "description": "Ремонт"
+                                }
+                            },
+                            {
+                                "name": "ПАНЕЛЬ КРЫШ БЕЗ РАМЫОКРАСИТЬ СТУПЕНЬ 3",
+                                "repair": {
+                                    "method": "LI",
+                                    "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
+                                }
+                            }
+                        ],
+                        "count": 27
+                    }
                 },
-                "date": {
-                    "calculation": "2012-08-19"
+                {
+                    "_id": 1251052030,
+                    "number": {
+                        "calculation": "N\/A",
+                        "claim": "82401"
+                    },
+                    "date": {
+                        "calculation": "2012-09-11"
+                    },
+                    "mileage": null,
+                    "cost": {
+                        "total": 75603,
+                        "labour": 10200,
+                        "parts": 59703,
+                        "paint": 5700
+                    },
+                    "car": {
+                        "manufacturer": "BMW [V] [R] [01]",
+                        "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
+                        "sub_model": "X6 xDrive 35i"
+                    },
+                    "insurer": {
+                        "name": null
+                    },
+                    "assessor": {
+                        "name": null
+                    },
+                    "task_process": null,
+                    "repairer": {
+                        "type": "Bodyshop",
+                        "description": "Unknown"
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛАДКУ ЛЕВ ВЕТРОВОГО СТЕКЛА ЗАМЕНИТЬ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛАДКУ ПРАВ ВЕТРОВОГО СТЕКЛА ЗАМЕНИТЬ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ЛОБОВОЕ СТЕКЛО - ЗАМЕНИТЬ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ДОПОЛНИТЕЛЬНЫЕ РАБОТЫ С ДАТЧ СВЕТА\/ДОЖДЯ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "БЛОК\/И УПР-Я (БЕЗ CAS) ПРОГРАММИРОВАТЬ\/",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКА КРЫШИ - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛАДКА КРЫШИ ПР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "СИДЕНЬЕ П Л  - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "СИДЕНЬЕ П ПР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКУ АНТЕННЫ НА КРЫШЕ С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ЦЕНТРАЛЬНАЯ КОНСОЛЬ  - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ЛОБ СТЕКЛО ТОНИР51 31 7 179 743",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ГЕРМЕТИК ЛОБ СТЕКЛО83 19 0 444 141",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДОПОЛНИТ ГЕРМЕТИК П83 19 0 444 144",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ГЕРМЕТИК83 19 9 407 777",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛОСМОТРИ ПО ЧАСТ",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДЕМПФЕР СТЕКЛА ВЕТР51 31 1 925 433",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ШИЛЬДИК ПОДУШ БЕЗОП71 21 2 122 334",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 13 7 192 768",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 177 029",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 064 098",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ПОПЕРЕЧИНА ВЕТР СТЕК51 31 7 186 167",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ИЗОЛЯЦИЯ ОБТЕКАТ51 48 9 143 684",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦ ЛОБ СТЕКЛА51 31 7 179 737",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ПЛАНКА А-СТОЙКА Л51 31 7 250 403",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ПЛАНКА А-СТОЙКА ПР51 31 7 250 404",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДАТЧИК ДОЖДЯ\/ОСВЕЩ61 35 9 254 025",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "НАРУЖН. ПАНЕЛЬ КРЫШИОТРЕМОНТИРОВАТЬ",
+                                "repair": {
+                                    "method": "I",
+                                    "description": "Ремонт"
+                                }
+                            },
+                            {
+                                "name": "ПЛАНКА А-СТОЙКА ЛОКРАСИТЬ СТУПЕНЬ 2",
+                                "repair": {
+                                    "method": "LE",
+                                    "description": "Окраска новой детали"
+                                }
+                            },
+                            {
+                                "name": "ПЛАНКА А-СТОЙКА ПРОКРАСИТЬ СТУПЕНЬ 2",
+                                "repair": {
+                                    "method": "LE",
+                                    "description": "Окраска новой детали"
+                                }
+                            },
+                            {
+                                "name": "ПАНЕЛЬ КРЫШ БЕЗ РАМЫОКРАСИТЬ СТУПЕНЬ 3",
+                                "repair": {
+                                    "method": "LI",
+                                    "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
+                                }
+                            }
+                        ],
+                        "count": 33
+                    }
                 },
-                "mileage": null,
-                "cost": {
-                    "total": 80743,
-                    "labour": 13875,
-                    "parts": 54805,
-                    "paint": 12063
+                {
+                    "_id": 1560698434,
+                    "number": {
+                        "calculation": "N\/A",
+                        "claim": "25586\/12"
+                    },
+                    "date": {
+                        "calculation": "2012-09-16"
+                    },
+                    "mileage": null,
+                    "cost": {
+                        "total": 89470,
+                        "labour": 9600,
+                        "parts": 74620,
+                        "paint": 5250
+                    },
+                    "car": {
+                        "manufacturer": "BMW [V] [R] [01]",
+                        "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
+                        "sub_model": "X6 xDrive 35i"
+                    },
+                    "insurer": {
+                        "name": "ВТБ-Страхование СК ООО"
+                    },
+                    "assessor": {
+                        "name": null
+                    },
+                    "task_process": null,
+                    "repairer": {
+                        "type": null,
+                        "description": "Unknown"
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": "ЛОБОВОЕ СТЕКЛО - ЗАМЕНИТЬ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ДОПОЛНИТЕЛЬНЫЕ РАБОТЫ С ДАТЧ СВЕТА\/ДОЖДЯ",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "БЛОК\/И УПР-Я (БЕЗ CAS) ПРОГРАММИРОВАТЬ\/",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКА КРЫШИ - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛАДКА КРЫШИ ПР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "СИДЕНЬЕ П Л  - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "СИДЕНЬЕ П ПР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКУ АНТЕННЫ НА КРЫШЕ С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ЦЕНТРАЛЬНАЯ КОНСОЛЬ  - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ЛОБ СТЕКЛО ТОНИР51 31 7 179 743",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ГЕРМЕТИК ЛОБ СТЕКЛО83 19 0 444 141",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДОПОЛНИТ ГЕРМЕТИК П83 19 0 444 144",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ГЕРМЕТИК83 19 9 407 777",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛОСМОТРИ ПО ЧАСТ",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДЕМПФЕР СТЕКЛА ВЕТР51 31 1 925 433",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ШИЛЬДИК ПОДУШ БЕЗОП71 21 2 122 334",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 13 7 192 768",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 177 029",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 064 098",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ПОПЕРЕЧИНА ВЕТР СТЕК51 31 7 186 167",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ИЗОЛЯЦИЯ ОБТЕКАТ51 48 9 143 684",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦ ЛОБ СТЕКЛА51 31 7 179 737",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ДАТЧИК ДОЖДЯ\/ОСВЕЩ61 35 9 254 025",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "РЕМК-Т ОБШИВКИ КРЫШИСМОТРИ ПО ЧАСТ",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "КЛЕЙ K5B КРЫШИ83 19 2 157 298",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ОЧИСТИТЕЛЬ R1 КРЫША83 19 2 211 217",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ЗАКЛЕПКА N4 КРЫША83 19 2 158 080",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "БОЛТ EMV КРЫШИ83 19 0 301 639",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "НАРУЖН. ПАНЕЛЬ КРЫШИОТРЕМОНТИРОВАТЬ",
+                                "repair": {
+                                    "method": "I",
+                                    "description": "Ремонт"
+                                }
+                            },
+                            {
+                                "name": "ПАНЕЛЬ КРЫШ БЕЗ РАМЫОКРАСИТЬ СТУПЕНЬ 3",
+                                "repair": {
+                                    "method": "LI",
+                                    "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
+                                }
+                            }
+                        ],
+                        "count": 32
+                    }
                 },
-                "car": {
-                    "manufacturer": "BMW [V] [R] [01]",
-                    "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
-                    "sub_model": "X6 xDrive 35i"
-                },
-                "insurer": {
-                    "name": null
-                },
-                "assessor": {
-                    "name": null
-                },
-                "task_process": null,
-                "repairer": {
-                    "type": "Bodyshop",
-                    "description": "Unknown"
-                },
-                "details": {
-                    "items": [
-                        {
-                            "name": "ЛОБОВОЕ СТЕКЛО - ЗАМЕНИТЬ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
+                {
+                    "_id": 1688053427,
+                    "number": {
+                        "calculation": "43128",
+                        "claim": "43128"
+                    },
+                    "date": {
+                        "calculation": "2013-06-14"
+                    },
+                    "mileage": null,
+                    "cost": {
+                        "total": 16658,
+                        "labour": 3734,
+                        "parts": 8924,
+                        "paint": 4000
+                    },
+                    "car": {
+                        "manufacturer": "BMW [V] [R] [01]",
+                        "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
+                        "sub_model": "X6 xDrive 35i"
+                    },
+                    "insurer": {
+                        "name": null
+                    },
+                    "assessor": {
+                        "name": null
+                    },
+                    "task_process": null,
+                    "repairer": {
+                        "type": "Garage",
+                        "description": "СТО"
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": "ОБЛИЦОВКА АРКИ КРЫЛА З Л С\/У",
+                                "repair": {
+                                    "method": "20",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКА ПОРОГА Л - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "БОКОВОЕ СТЕКЛО З Л - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "БАМПЕР З - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "КОЖУХ КОЛЕСНОЙ АРКИ З Л - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ФОНАРЬ З НАР Л - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ФОНАРЬ З НАР ПР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБЛИЦОВКА АРКИ КОЛЕСА З Л - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ШТОРКА НЕПРОЗР - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБИВКА D-СТОЙКИ В Л С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ВЕНТИЛЯЦИОННАЯ ОТДУШИНА З Л - С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "ОБШИВ С-СТОЙКИ Л НИЖ С\/У",
+                                "repair": {
+                                    "method": "30",
+                                    "description": "Unknown"
+                                }
+                            },
+                            {
+                                "name": "НАКЛ АРКИ КОЛЕСА З Л51 77 7 176 329",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "ГЕРМЕТИК БОК СТЕКЛО83 19 0 444 141",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            },
+                            {
+                                "name": "БОКОВИНА З ЛОТРЕМОНТИРОВАТЬ",
+                                "repair": {
+                                    "method": "I",
+                                    "description": "Ремонт"
+                                }
+                            },
+                            {
+                                "name": "БОКОВИНА З ЛОКРАСИТЬ ЭТАП 3",
+                                "repair": {
+                                    "method": "LI",
+                                    "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
+                                }
                             }
-                        },
-                        {
-                            "name": "ДОПОЛНИТЕЛЬНЫЕ РАБОТЫ С ДАТЧ СВЕТА\/ДОЖДЯ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "БЛОК\/И УПР-Я (БЕЗ CAS) ПРОГРАММИРОВАТЬ\/",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКА КРЫШИ - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛАДКА КРЫШИ ПР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "СИДЕНЬЕ П Л  - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "СИДЕНЬЕ П ПР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКУ АНТЕННЫ НА КРЫШЕ С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ЦЕНТРАЛЬНАЯ КОНСОЛЬ  - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ЛОБ СТЕКЛО ТОНИР51 31 7 179 743",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ГЕРМЕТИК ЛОБ СТЕКЛО83 19 0 444 141",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДОПОЛНИТ ГЕРМЕТИК П83 19 0 444 144",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ГЕРМЕТИК83 19 9 407 777",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛОСМОТРИ ПО ЧАСТ",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДЕМПФЕР СТЕКЛА ВЕТР51 31 1 925 433",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ШИЛЬДИК ПОДУШ БЕЗОП71 21 2 122 334",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 13 7 192 768",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 177 029",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 064 098",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ПОПЕРЕЧИНА ВЕТР СТЕК51 31 7 186 167",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ИЗОЛЯЦИЯ ОБТЕКАТ51 48 9 143 684",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦ ЛОБ СТЕКЛА51 31 7 179 737",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДАТЧИК ДОЖДЯ\/ОСВЕЩ61 35 9 254 025",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "НАРУЖН. ПАНЕЛЬ КРЫШИОТРЕМОНТИРОВАТЬ",
-                            "repair": {
-                                "method": "I",
-                                "description": "Ремонт"
-                            }
-                        },
-                        {
-                            "name": "ПАНЕЛЬ КРЫШ БЕЗ РАМЫОКРАСИТЬ СТУПЕНЬ 3",
-                            "repair": {
-                                "method": "LI",
-                                "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
-                            }
-                        }
-                    ],
-                    "count": 27
+                        ],
+                        "count": 18
+                    }
                 }
-            },
-            {
-                "_id": 1251052030,
-                "number": {
-                    "calculation": "N\/A",
-                    "claim": "82401"
-                },
-                "date": {
-                    "calculation": "2012-09-11"
-                },
-                "mileage": null,
-                "cost": {
-                    "total": 75603,
-                    "labour": 10200,
-                    "parts": 59703,
-                    "paint": 5700
-                },
-                "car": {
-                    "manufacturer": "BMW [V] [R] [01]",
-                    "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
-                    "sub_model": "X6 xDrive 35i"
-                },
-                "insurer": {
-                    "name": null
-                },
-                "assessor": {
-                    "name": null
-                },
-                "task_process": null,
-                "repairer": {
-                    "type": "Bodyshop",
-                    "description": "Unknown"
-                },
-                "details": {
-                    "items": [
-                        {
-                            "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛАДКУ ЛЕВ ВЕТРОВОГО СТЕКЛА ЗАМЕНИТЬ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛАДКУ ПРАВ ВЕТРОВОГО СТЕКЛА ЗАМЕНИТЬ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ЛОБОВОЕ СТЕКЛО - ЗАМЕНИТЬ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ДОПОЛНИТЕЛЬНЫЕ РАБОТЫ С ДАТЧ СВЕТА\/ДОЖДЯ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "БЛОК\/И УПР-Я (БЕЗ CAS) ПРОГРАММИРОВАТЬ\/",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКА КРЫШИ - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛАДКА КРЫШИ ПР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "СИДЕНЬЕ П Л  - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "СИДЕНЬЕ П ПР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКУ АНТЕННЫ НА КРЫШЕ С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ЦЕНТРАЛЬНАЯ КОНСОЛЬ  - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ЛОБ СТЕКЛО ТОНИР51 31 7 179 743",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ГЕРМЕТИК ЛОБ СТЕКЛО83 19 0 444 141",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДОПОЛНИТ ГЕРМЕТИК П83 19 0 444 144",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ГЕРМЕТИК83 19 9 407 777",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛОСМОТРИ ПО ЧАСТ",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДЕМПФЕР СТЕКЛА ВЕТР51 31 1 925 433",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ШИЛЬДИК ПОДУШ БЕЗОП71 21 2 122 334",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 13 7 192 768",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 177 029",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 064 098",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ПОПЕРЕЧИНА ВЕТР СТЕК51 31 7 186 167",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ИЗОЛЯЦИЯ ОБТЕКАТ51 48 9 143 684",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦ ЛОБ СТЕКЛА51 31 7 179 737",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ПЛАНКА А-СТОЙКА Л51 31 7 250 403",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ПЛАНКА А-СТОЙКА ПР51 31 7 250 404",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДАТЧИК ДОЖДЯ\/ОСВЕЩ61 35 9 254 025",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "НАРУЖН. ПАНЕЛЬ КРЫШИОТРЕМОНТИРОВАТЬ",
-                            "repair": {
-                                "method": "I",
-                                "description": "Ремонт"
-                            }
-                        },
-                        {
-                            "name": "ПЛАНКА А-СТОЙКА ЛОКРАСИТЬ СТУПЕНЬ 2",
-                            "repair": {
-                                "method": "LE",
-                                "description": "Окраска новой детали"
-                            }
-                        },
-                        {
-                            "name": "ПЛАНКА А-СТОЙКА ПРОКРАСИТЬ СТУПЕНЬ 2",
-                            "repair": {
-                                "method": "LE",
-                                "description": "Окраска новой детали"
-                            }
-                        },
-                        {
-                            "name": "ПАНЕЛЬ КРЫШ БЕЗ РАМЫОКРАСИТЬ СТУПЕНЬ 3",
-                            "repair": {
-                                "method": "LI",
-                                "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
-                            }
-                        }
-                    ],
-                    "count": 33
-                }
-            },
-            {
-                "_id": 1560698434,
-                "number": {
-                    "calculation": "N\/A",
-                    "claim": "25586\/12"
-                },
-                "date": {
-                    "calculation": "2012-09-16"
-                },
-                "mileage": null,
-                "cost": {
-                    "total": 89470,
-                    "labour": 9600,
-                    "parts": 74620,
-                    "paint": 5250
-                },
-                "car": {
-                    "manufacturer": "BMW [V] [R] [01]",
-                    "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
-                    "sub_model": "X6 xDrive 35i"
-                },
-                "insurer": {
-                    "name": "ВТБ-Страхование СК ООО"
-                },
-                "assessor": {
-                    "name": null
-                },
-                "task_process": null,
-                "repairer": {
-                    "type": null,
-                    "description": "Unknown"
-                },
-                "details": {
-                    "items": [
-                        {
-                            "name": "ЛОБОВОЕ СТЕКЛО - ЗАМЕНИТЬ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ДОПОЛНИТЕЛЬНЫЕ РАБОТЫ С ДАТЧ СВЕТА\/ДОЖДЯ",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "БЛОК\/И УПР-Я (БЕЗ CAS) ПРОГРАММИРОВАТЬ\/",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКА КРЫШИ - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛАДКА КРЫШИ ПР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "СИДЕНЬЕ П Л  - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "СИДЕНЬЕ П ПР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКУ АНТЕННЫ НА КРЫШЕ С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ЦЕНТРАЛЬНАЯ КОНСОЛЬ  - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ЛОБ СТЕКЛО ТОНИР51 31 7 179 743",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ГЕРМЕТИК ЛОБ СТЕКЛО83 19 0 444 141",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДОПОЛНИТ ГЕРМЕТИК П83 19 0 444 144",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ГЕРМЕТИК83 19 9 407 777",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛОСМОТРИ ПО ЧАСТ",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДЕМПФЕР СТЕКЛА ВЕТР51 31 1 925 433",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ШИЛЬДИК ПОДУШ БЕЗОП71 21 2 122 334",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 13 7 192 768",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 177 029",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАЖИМ ВЕТР СТЕКЛО51 31 7 064 098",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ПОПЕРЕЧИНА ВЕТР СТЕК51 31 7 186 167",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ИЗОЛЯЦИЯ ОБТЕКАТ51 48 9 143 684",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦ ЛОБ СТЕКЛА51 31 7 179 737",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ДАТЧИК ДОЖДЯ\/ОСВЕЩ61 35 9 254 025",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "РЕМК-Т ОБШИВКИ КРЫШИСМОТРИ ПО ЧАСТ",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "КЛЕЙ K5B КРЫШИ83 19 2 157 298",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ОЧИСТИТЕЛЬ R1 КРЫША83 19 2 211 217",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ЗАКЛЕПКА N4 КРЫША83 19 2 158 080",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "БОЛТ EMV КРЫШИ83 19 0 301 639",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "НАРУЖН. ПАНЕЛЬ КРЫШИОТРЕМОНТИРОВАТЬ",
-                            "repair": {
-                                "method": "I",
-                                "description": "Ремонт"
-                            }
-                        },
-                        {
-                            "name": "ПАНЕЛЬ КРЫШ БЕЗ РАМЫОКРАСИТЬ СТУПЕНЬ 3",
-                            "repair": {
-                                "method": "LI",
-                                "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
-                            }
-                        }
-                    ],
-                    "count": 32
-                }
-            },
-            {
-                "_id": 1688053427,
-                "number": {
-                    "calculation": "43128",
-                    "claim": "43128"
-                },
-                "date": {
-                    "calculation": "2013-06-14"
-                },
-                "mileage": null,
-                "cost": {
-                    "total": 16658,
-                    "labour": 3734,
-                    "parts": 8924,
-                    "paint": 4000
-                },
-                "car": {
-                    "manufacturer": "BMW [V] [R] [01]",
-                    "model": "X6 (E71) 01\/08- [V] [M] [S] [E] [47]",
-                    "sub_model": "X6 xDrive 35i"
-                },
-                "insurer": {
-                    "name": null
-                },
-                "assessor": {
-                    "name": null
-                },
-                "task_process": null,
-                "repairer": {
-                    "type": "Garage",
-                    "description": "СТО"
-                },
-                "details": {
-                    "items": [
-                        {
-                            "name": "ОБЛИЦОВКА АРКИ КРЫЛА З Л С\/У",
-                            "repair": {
-                                "method": "20",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАДБАВКА ВРЕМЕНИ К ОСНОВНОЙ РАБОТЕ",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКА ПОРОГА Л - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "БОКОВОЕ СТЕКЛО З Л - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "БАМПЕР З - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "КОЖУХ КОЛЕСНОЙ АРКИ З Л - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ФОНАРЬ З НАР Л - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ФОНАРЬ З НАР ПР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБЛИЦОВКА АРКИ КОЛЕСА З Л - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ШТОРКА НЕПРОЗР - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБИВКА D-СТОЙКИ В Л С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ВЕНТИЛЯЦИОННАЯ ОТДУШИНА З Л - С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛ  КРЫШИ ЛЕВ-С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "ОБШИВ С-СТОЙКИ Л НИЖ С\/У",
-                            "repair": {
-                                "method": "30",
-                                "description": "Unknown"
-                            }
-                        },
-                        {
-                            "name": "НАКЛ АРКИ КОЛЕСА З Л51 77 7 176 329",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "ГЕРМЕТИК БОК СТЕКЛО83 19 0 444 141",
-                            "repair": {
-                                "method": "E",
-                                "description": "Замена"
-                            }
-                        },
-                        {
-                            "name": "БОКОВИНА З ЛОТРЕМОНТИРОВАТЬ",
-                            "repair": {
-                                "method": "I",
-                                "description": "Ремонт"
-                            }
-                        },
-                        {
-                            "name": "БОКОВИНА З ЛОКРАСИТЬ ЭТАП 3",
-                            "repair": {
-                                "method": "LI",
-                                "description": "Окраска ремонтная (площадь повреждения детали &lt;20-50%)"
-                            }
-                        }
-                    ],
-                    "count": 18
-                }
-            }
-        ],
-        "count": 4
+            ],
+            "count": 4
+        }
     },
     "restrictions": {
         "_comment": "Ограничения",

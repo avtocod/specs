@@ -349,6 +349,59 @@
             "count": null
         }
     },
+    "repairs": {
+        "_comment": "Ремонтные работы",
+        "history": {
+            "_comment": "Ремонтные работы, связанные с ТС",
+            "items": [
+                {
+                    "_id": null,
+                    "number": {
+                        "calculation": null,
+                        "claim": null
+                    },
+                    "date": {
+                        "calculation": null
+                    },
+                    "mileage": null,
+                    "cost": {
+                        "total": null,
+                        "labour": null,
+                        "parts": null,
+                        "paint": null
+                    },
+                    "car": {
+                        "manufacturer": null,
+                        "model": null,
+                        "sub_model": null
+                    },
+                    "insurer": {
+                        "name": null
+                    },
+                    "assessor": {
+                        "name": null
+                    },
+                    "task_process": null,
+                    "repairer": {
+                        "type": null,
+                        "description": null
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": null,
+                                "repair": {
+                                    "method": null,
+                                    "description": null
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "count": null
+        }
+    },
     "restrictions": {
         "_comment": "Ограничения",
         "registration_actions": {

@@ -1147,5 +1147,145 @@
         "types": [
             "string"
         ]
+    },
+    "repairs.history.number.calculation": {
+        "path": "repairs.history.items.number.calculation",
+        "description": "Номер расчёта ремонтных работ",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.number.claim": {
+        "path": "repairs.history.items.number.claim",
+        "description": "Номер дела ремонтных работ",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.date.calculation": {
+        "path": "repairs.history.items.date.calculation",
+        "description": "Дата расчета стоимости ремонтных работ",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.mileage": {
+        "path": "repairs.history.items.mileage",
+        "description": "Пробег",
+        "types": [
+            "integer"
+        ]
+    },
+    "repairs.history.cost.total": {
+        "path": "repairs.history.items.cost.total",
+        "description": "Итоговая стоимость ремонтных работ",
+        "types": [
+            "integer"
+        ]
+    },
+    "repairs.history.cost.labour": {
+        "path": "repairs.history.items.cost.labour",
+        "description": "Стоимость выполнения ремонтных работ",
+        "types": [
+            "integer"
+        ]
+    },
+    "repairs.history.cost.parts": {
+        "path": "repairs.history.items.cost.parts",
+        "description": "Стоимость запчастей",
+        "types": [
+            "integer"
+        ]
+    },
+    "repairs.history.cost.paint": {
+        "path": "repairs.history.items.cost.paint",
+        "description": "Стоимость покраски",
+        "types": [
+            "integer"
+        ]
+    },
+    "repairs.history.car.manufacturer": {
+        "path": "repairs.history.items.car.manufacturer",
+        "description": "Производитель автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.car.model": {
+        "path": "repairs.history.items.car.model",
+        "description": "Модель автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.car.sub_model": {
+        "path": "repairs.history.items.car.sub_model",
+        "description": "Покаление автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.insurer.name": {
+        "path": "repairs.history.items.insurer.name",
+        "description": "Название страховой компании",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.assessor.name": {
+        "path": "repairs.history.items.insurer.name",
+        "description": "Название компании оценщика",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.task_process": {
+        "path": "repairs.history.items.task_process",
+        "description": "В каком процессе был выполнен расчёт? KASKO, OSAGO",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.repairer.type": {
+        "path": "repairs.history.items.repairer.type",
+        "description": "Тип клиента, работавшего с делом",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.repairer.description": {
+        "path": "repairs.history.items.repairer.description",
+        "description": "Описание клиента, работавшего с делом",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.details.name": {
+        "path": "repairs.history.items.details.items.name",
+        "description": "Наименование ремонтных работ",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.details.repair.method": {
+        "path": "repairs.history.items.details.items.repair.method",
+        "description": "Код ремонтных работ",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.details.repair.description": {
+        "path": "repairs.history.items.details.items.repair.description",
+        "description": "Описание ремонтных работ",
+        "types": [
+            "string"
+        ]
+    },
+    "repairs.history.details.count": {
+        "path": "repairs.history.items.details.count",
+        "description": "Колличество позиций в списке работ",
+        "types": [
+            "integer"
+        ]
     }
 }

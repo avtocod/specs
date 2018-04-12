@@ -1248,14 +1248,14 @@
     },
     "repairs.history.repairer.type": {
         "path": "repairs.history.items.repairer.type",
-        "description": "Тип клиента, работавшего с делом",
+        "description": "Тип клиента, работавшего с делом. Garage, Insurance, Assessor",
         "types": [
             "string"
         ]
     },
     "repairs.history.repairer.description": {
         "path": "repairs.history.items.repairer.description",
-        "description": "Описание клиента, работавшего с делом",
+        "description": "Описание клиента, работавшего с делом. СТО, Страховая компания, Оценщик",
         "types": [
             "string"
         ]

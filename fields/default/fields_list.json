@@ -377,6 +377,13 @@
             "string"
         ]
     },
+    "registration_actions.owner.org.name": {
+        "path": "registration_actions.owner.org.name",
+        "description": "Регистрационные действия: Наименование предприятия-владельца",
+        "types": [
+            "string"
+        ]
+    },
     "registration_actions.type": {
         "path": "registration_actions.items.type",
         "description": "Регистрационные действия: Тип операции",

@@ -798,6 +798,13 @@
             "string"
         ]
     },
+    "customs.history.specification.raw": {
+        "path": "customs.history.items.specification.raw",
+        "description": "История по таможне: Спецификация, сырая строка",
+        "types": [
+            "string"
+        ]
+    },
     "customs.history.owner.type": {
         "path": "customs.history.items.owner.type",
         "description": "История по таможне: Тип владельца",

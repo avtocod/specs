@@ -321,6 +321,13 @@
             "string"
         ]
     },
+    "diagnostic_cards.inspection.place": {
+        "path": "diagnostic_cards.items.inspection.place",
+        "description": "Диагностические карты: Место прохождения проверки",
+        "types": [
+            "string"
+        ]
+    },
     "diagnostic_cards.reg_num": {
         "path": "diagnostic_cards.items.reg_num",
         "description": "Диагностические карты: ГРЗ знак",

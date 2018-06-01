@@ -671,6 +671,13 @@
             "string"
         ]
     },
+    "restrictions.registration_actions.has_restrictions": {
+        "path": "restrictions.registration_actions.has_restrictions",
+        "description": "Ограничения на рег. действия: Имеются ли ограничения на рег. действия?",
+        "types": [
+            "boolean"
+        ]
+    },
     "pledges.date.event": {
         "path": "pledges.items.date.event",
         "description": "Обременения на ТС: Дата",

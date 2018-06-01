@@ -601,6 +601,13 @@
             "string"
         ]
     },
+    "utilizations.was_utilized": {
+        "path": "utilizations.was_utilized",
+        "description": "Утилизация: Было ли ТС утилизировано?",
+        "types": [
+            "boolean"
+        ]
+    },
     "restrictions.registration_actions.date.added": {
         "path": "restrictions.registration_actions.items.date.added",
         "description": "Ограничения на рег. действия: Дата добавления данных об ограничении в реестр",

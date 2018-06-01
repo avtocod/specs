@@ -532,40 +532,43 @@
         "count": null
     },
     "taxi": {
-        "_comment": "Такси",
-        "items": [
-            {
-                "date": {
-                    "start": null,
-                    "end": null
-                },
-                "license": {
-                    "number": null
-                },
-                "company": {
-                    "name": null
-                },
-                "ogrn": null,
-                "tin": null,
-                "vehicle": {
-                    "brand": {
+        "history": {
+            "_comment": "Такси",
+            "items": [
+                {
+                    "date": {
+                        "start": null,
+                        "end": null
+                    },
+                    "license": {
+                        "number": null
+                    },
+                    "company": {
                         "name": null
                     },
-                    "model": {
-                        "name": null
+                    "ogrn": null,
+                    "tin": null,
+                    "vehicle": {
+                        "brand": {
+                            "name": null
+                        },
+                        "model": {
+                            "name": null
+                        },
+                        "reg_num": null,
+                        "year": null
                     },
-                    "reg_num": null,
-                    "year": null
-                },
-                "permit": {
-                    "number": null
-                },
-                "city": {
-                    "name": null
+                    "permit": {
+                        "number": null
+                    },
+                    "city": {
+                        "name": null
+                    }
                 }
-            }
-        ],
-        "count": null
+            ],
+            "count": null
+        },
+        "used_in_taxi": null
     },
     "fines": {
         "_comment": "Штрафы",

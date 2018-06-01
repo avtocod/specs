@@ -1337,9 +1337,12 @@
         "count": 0
     },
     "taxi": {
-        "_comment": "Такси",
-        "items": [],
-        "count": 0
+        "history": {
+            "_comment": "Такси",
+            "items": [],
+            "count": 0
+        },
+        "used_in_taxi": false
     },
     "fines": {
         "_comment": "Штрафы",

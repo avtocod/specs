@@ -945,6 +945,13 @@
             "string"
         ]
     },
+    "taxi.used_in_taxi": {
+        "path": "taxi.used_in_taxi",
+        "description": "Такси: Использовалось ли ТС в качестве такси?",
+        "types": [
+            "boolean"
+        ]
+    },
     "fines.date.event": {
         "path": "fines.items.date.event",
         "description": "Штрафы: Дата",

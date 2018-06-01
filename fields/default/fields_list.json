@@ -580,6 +580,13 @@
             "object"
         ]
     },
+    "stealings.is_wanted": {
+        "path": "stealings.is_wanted",
+        "description": "Проверка на угон: ТС находится в розыске?",
+        "types": [
+            "boolean"
+        ]
+    },
     "utilizations.date.utilization": {
         "path": "utilizations.items.date.utilization",
         "description": "Утилизация: Дата утилизации",

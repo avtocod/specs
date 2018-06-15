@@ -321,6 +321,13 @@
             "string"
         ]
     },
+    "diagnostic_cards.inspection.place": {
+        "path": "diagnostic_cards.items.inspection.place",
+        "description": "Диагностические карты: Место прохождения проверки",
+        "types": [
+            "string"
+        ]
+    },
     "diagnostic_cards.reg_num": {
         "path": "diagnostic_cards.items.reg_num",
         "description": "Диагностические карты: ГРЗ знак",
@@ -573,6 +580,13 @@
             "object"
         ]
     },
+    "stealings.is_wanted": {
+        "path": "stealings.is_wanted",
+        "description": "Проверка на угон: ТС находится в розыске?",
+        "types": [
+            "boolean"
+        ]
+    },
     "utilizations.date.utilization": {
         "path": "utilizations.items.date.utilization",
         "description": "Утилизация: Дата утилизации",
@@ -592,6 +606,13 @@
         "description": "Утилизация: Имя страны",
         "types": [
             "string"
+        ]
+    },
+    "utilizations.was_utilized": {
+        "path": "utilizations.was_utilized",
+        "description": "Утилизация: Было ли ТС утилизировано?",
+        "types": [
+            "boolean"
         ]
     },
     "restrictions.registration_actions.date.added": {
@@ -662,6 +683,13 @@
         "description": "Ограничения на рег. действия: Номер документа",
         "types": [
             "string"
+        ]
+    },
+    "restrictions.registration_actions.has_restrictions": {
+        "path": "restrictions.registration_actions.has_restrictions",
+        "description": "Ограничения на рег. действия: Имеются ли ограничения на рег. действия?",
+        "types": [
+            "boolean"
         ]
     },
     "pledges.date.event": {
@@ -936,6 +964,13 @@
         "description": "Такси: Город регистрации",
         "types": [
             "string"
+        ]
+    },
+    "taxi.used_in_taxi": {
+        "path": "taxi.used_in_taxi",
+        "description": "Такси: Использовалось ли ТС в качестве такси?",
+        "types": [
+            "boolean"
         ]
     },
     "fines.date.event": {

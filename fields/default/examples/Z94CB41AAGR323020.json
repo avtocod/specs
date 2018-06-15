@@ -252,11 +252,13 @@
     "stealings": {
         "_comment": "Проверка на угон",
         "items": [],
+        "is_wanted": false,
         "count": 0
     },
     "utilizations": {
         "_comment": "Утилизация",
         "items": [],
+        "was_utilized": false,
         "count": 0
     },
     "images": {
@@ -1293,6 +1295,7 @@
                     }
                 }
             ],
+            "has_restrictions": true,
             "count": 2
         }
     },
@@ -1336,9 +1339,12 @@
         "count": 0
     },
     "taxi": {
-        "_comment": "Такси",
-        "items": [],
-        "count": 0
+        "history": {
+            "_comment": "Такси",
+            "items": [],
+            "count": 0
+        },
+        "used_in_taxi": false
     },
     "fines": {
         "_comment": "Штрафы",

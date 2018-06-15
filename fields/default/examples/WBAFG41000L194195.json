@@ -137,6 +137,9 @@
                     "number": "201308291209037142812",
                     "type": "Диагностическая карта"
                 },
+                "inspection": {
+                    "place": "г. Москва/Общество с ограниченной ответственностью \" АВТОЖЕНЕРАЛЬ\""
+                },
                 "reg_num": "О999КМ163"
             },
             {
@@ -148,6 +151,9 @@
                     "serial": null,
                     "number": "201505131214094444247",
                     "type": "Диагностическая карта"
+                },
+                "inspection": {
+                    "place": "г. Москва/ЗелАО ПГТО (Панфилова, 28б)"
                 },
                 "reg_num": "Е185МУ73"
             },
@@ -161,6 +167,9 @@
                     "number": "201604181025133945500",
                     "type": "Диагностическая карта"
                 },
+                "inspection": {
+                    "place": "г. Москва/ОРР МОГТОРЭР № 1 (Лобненская, д. 20)"
+                },
                 "reg_num": "Е185МУ73"
             },
             {
@@ -172,6 +181,9 @@
                     "serial": null,
                     "number": "002070291700300",
                     "type": "Диагностическая карта"
+                },
+                "inspection": {
+                    "place": "г. Москва/ОРР МОГТОРЭР № 1 (Лобненская, д. 20)"
                 },
                 "reg_num": "Е185МУ73"
             }
@@ -701,11 +713,13 @@
     "stealings": {
         "_comment": "Проверка на угон",
         "items": [],
+        "is_wanted": false,
         "count": 0
     },
     "utilizations": {
         "_comment": "Утилизация",
         "items": [],
+        "was_utilized": false,
         "count": 0
     },
     "images": {
@@ -1705,6 +1719,7 @@
                     }
                 }
             ],
+            "has_restrictions": false,
             "count": 1
         }
     },
@@ -1802,40 +1817,43 @@
         "count": 1
     },
     "taxi": {
-        "_comment": "Такси",
-        "items": [
-            {
-                "date": {
-                    "start": null,
-                    "end": null
-                },
-                "license": {
-                    "number": null
-                },
-                "company": {
-                    "name": null
-                },
-                "ogrn": null,
-                "tin": null,
-                "vehicle": {
-                    "brand": {
+        "history": {
+            "_comment": "Такси",
+            "items": [
+                {
+                    "date": {
+                        "start": null,
+                        "end": null
+                    },
+                    "license": {
+                        "number": null
+                    },
+                    "company": {
                         "name": null
                     },
-                    "model": {
-                        "name": null
+                    "ogrn": null,
+                    "tin": null,
+                    "vehicle": {
+                        "brand": {
+                            "name": null
+                        },
+                        "model": {
+                            "name": null
+                        },
+                        "reg_num": null,
+                        "year": null
                     },
-                    "reg_num": null,
-                    "year": null
-                },
-                "permit": {
-                    "number": null
-                },
-                "city": {
-                    "name": null
+                    "permit": {
+                        "number": null
+                    },
+                    "city": {
+                        "name": null
+                    }
                 }
-            }
-        ],
-        "count": 1
+            ],
+            "count": 1
+        },
+        "used_in_taxi": true
     },
     "fines": {
         "_comment": "Штрафы",

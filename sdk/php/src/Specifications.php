@@ -5,9 +5,7 @@ namespace Avtocod\Specifications;
 use Exception;
 
 /**
- * Class Specifications.
- *
- * Класс, упрощающий доступ к файлам спецификаций.
+ * @deprecated No longer supported. Please, update this package up to v2.
  */
 class Specifications
 {
@@ -22,10 +20,17 @@ class Specifications
      * @param string|null $additional_path
      *
      * @return string
+     *               
+     * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getRootDirectoryPath($additional_path = null)
     {
         static $root = null;
+
+        trigger_error(
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            E_USER_DEPRECATED
+        );
 
         $root = is_null($root)
             ? realpath(__DIR__ . '/../../..')
@@ -39,15 +44,21 @@ class Specifications
     /**
      * Возвращает спецификацию по филдам в соответствии с группой.
      *
-     *
      * @param string $group_name
      *
      * @throws Exception
      *
      * @return array[]
+     *                
+     * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getFieldsSpecification($group_name = self::GROUP_NAME_DEFAULT)
     {
+        trigger_error(
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            E_USER_DEPRECATED
+        );
+
         return static::getJsonFileAsArray(
             static::getRootDirectoryPath(sprintf('/fields/%s/fields_list.json', $group_name))
         );
@@ -56,15 +67,21 @@ class Specifications
     /**
      * Возвращает спецификацию по идентификаторам в соответствии с группой.
      *
-     *
      * @param string $group_name
      *
      * @throws Exception
      *
      * @return array[]
+     *                
+     * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getIdentifiersSpecification($group_name = self::GROUP_NAME_DEFAULT)
     {
+        trigger_error(
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            E_USER_DEPRECATED
+        );
+
         return static::getJsonFileAsArray(
             static::getRootDirectoryPath(sprintf('/identifiers/%s/identifiers_types_list.json', $group_name))
         );
@@ -73,15 +90,21 @@ class Specifications
     /**
      * Возвращает спецификацию по источникам в соответствии с группой.
      *
-     *
      * @param string $group_name
      *
      * @throws Exception
      *
      * @return array[]
+     *                
+     * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getSourcesSpecification($group_name = self::GROUP_NAME_DEFAULT)
     {
+        trigger_error(
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            E_USER_DEPRECATED
+        );
+
         return static::getJsonFileAsArray(
             static::getRootDirectoryPath(sprintf('/sources/%s/sources_list.json', $group_name))
         );
@@ -95,6 +118,8 @@ class Specifications
      * @throws Exception
      *
      * @return array
+     *              
+     * @deprecated No longer supported. Please, update this package up to v2.
      */
     protected static function getJsonFileAsArray($file_path)
     {

@@ -6,8 +6,8 @@ use ArrayAccess;
 use ArrayIterator;
 use LogicException;
 use IteratorAggregate;
-use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
+use Illuminate\Contracts\Support\Arrayable;
 
 abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, IteratorAggregate
 {
@@ -20,13 +20,6 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     {
         $this->configure($raw_data);
     }
-
-    /**
-     * Configure itself.
-     *
-     * @param mixed|null $raw_data
-     */
-    abstract protected function configure($raw_data);
 
     /**
      * {@inheritdoc}
@@ -81,4 +74,11 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     {
         throw new LogicException('Changing are not allowed');
     }
+
+    /**
+     * Configure itself.
+     *
+     * @param mixed|null $raw_data
+     */
+    abstract protected function configure($raw_data);
 }

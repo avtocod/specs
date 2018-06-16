@@ -3,8 +3,8 @@
 namespace Avtocod\Specifications\Tests\Structures;
 
 use LogicException;
-use Avtocod\Specifications\Structures\AbstractStructure;
 use Avtocod\Specifications\Tests\AbstractTestCase;
+use Avtocod\Specifications\Structures\AbstractStructure;
 
 abstract class AbstractStructureTestCase extends AbstractTestCase
 {
@@ -56,13 +56,12 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
     {
         $this->assertInstanceOf(\ArrayIterator::class, $this->instance->getIterator());
 
-
         foreach (\array_keys($this->instance->toArray()) as $array_key) {
-            $found = false;
+            $found        = false;
             $loop_counter = 0;
 
             foreach ($this->instance as $key => $value) {
-                ++$loop_counter;
+                $loop_counter++;
 
                 if ($key === $array_key) {
                     $found = true;
@@ -88,6 +87,13 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
     }
 
     /**
+     * Test self-configuration method.
+     *
+     * @return void
+     */
+    abstract public function testConfigure();
+
+    /**
      * Tested instance factory.
      *
      * @param mixed ...$arguments
@@ -95,11 +101,4 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
      * @return mixed
      */
     abstract protected function factory(...$arguments);
-
-    /**
-     * Test self-configuration method.
-     *
-     * @return void
-     */
-    abstract public function testConfigure();
 }

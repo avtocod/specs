@@ -13,16 +13,6 @@ class FieldTest extends AbstractStructureTestCase
 
     /**
      * {@inheritdoc}
-     *
-     * @return Field
-     */
-    protected function factory(...$arguments)
-    {
-        return new Field(...$arguments);
-    }
-
-    /**
-     * {@inheritdoc}
      */
     public function testConfigure()
     {
@@ -117,5 +107,15 @@ class FieldTest extends AbstractStructureTestCase
             'path' => null,
         ]);
         $this->assertEquals([], $this->instance->getPathParts());
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return Field
+     */
+    protected function factory(...$arguments)
+    {
+        return new Field(...$arguments);
     }
 }

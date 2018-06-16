@@ -2,12 +2,12 @@
 
 namespace Avtocod\Specifications\Tests;
 
-use Avtocod\Specifications\Specifications;
-use Avtocod\Specifications\Structures\Field;
-use Avtocod\Specifications\Structures\IdentifierType;
-use Avtocod\Specifications\Structures\Source;
 use Exception;
 use Illuminate\Support\Collection;
+use Avtocod\Specifications\Specifications;
+use Avtocod\Specifications\Structures\Field;
+use Avtocod\Specifications\Structures\Source;
+use Avtocod\Specifications\Structures\IdentifierType;
 
 class SpecificationsTest extends AbstractTestCase
 {

@@ -40,36 +40,6 @@ class Field extends AbstractStructure
     /**
      * {@inheritdoc}
      */
-    protected function configure($raw_data)
-    {
-        if (\is_array($raw_data) || $raw_data instanceof Traversable) {
-            foreach ($raw_data as $key => $value) {
-                switch ($key) {
-                    case 'path':
-                        $this->path = $value === null
-                            ? null
-                            : (string) $value;
-                        break;
-
-                    case 'description':
-                        $this->description = $value === null
-                            ? null
-                            : (string) $value;
-                        break;
-
-                    case 'types':
-                        $this->types = $value === null
-                            ? null
-                            : (array) $value;
-                        break;
-                }
-            }
-        }
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function toArray()
     {
         return [
@@ -137,5 +107,35 @@ class Field extends AbstractStructure
     public function isNested()
     {
         return $this->nestingDepth() > 0;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function configure($raw_data)
+    {
+        if (\is_array($raw_data) || $raw_data instanceof Traversable) {
+            foreach ($raw_data as $key => $value) {
+                switch ($key) {
+                    case 'path':
+                        $this->path = $value === null
+                            ? null
+                            : (string) $value;
+                        break;
+
+                    case 'description':
+                        $this->description = $value === null
+                            ? null
+                            : (string) $value;
+                        break;
+
+                    case 'types':
+                        $this->types = $value === null
+                            ? null
+                            : (array) $value;
+                        break;
+                }
+            }
+        }
     }
 }

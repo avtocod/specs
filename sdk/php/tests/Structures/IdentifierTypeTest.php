@@ -13,16 +13,6 @@ class IdentifierTypeTest extends AbstractStructureTestCase
 
     /**
      * {@inheritdoc}
-     *
-     * @return IdentifierType
-     */
-    protected function factory(...$arguments)
-    {
-        return new IdentifierType(...$arguments);
-    }
-
-    /**
-     * {@inheritdoc}
      */
     public function testConfigure()
     {
@@ -64,5 +54,15 @@ class IdentifierTypeTest extends AbstractStructureTestCase
         $this->assertEquals($type, $this->instance['type']);
 
         $this->assertFalse(isset($this->instance['bar']));
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return IdentifierType
+     */
+    protected function factory(...$arguments)
+    {
+        return new IdentifierType(...$arguments);
     }
 }

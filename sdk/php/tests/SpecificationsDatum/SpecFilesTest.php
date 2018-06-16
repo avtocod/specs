@@ -2,13 +2,13 @@
 
 namespace Avtocod\Specifications\Tests\SpecificationsDatum;
 
+use RegexIterator;
+use Illuminate\Support\Arr;
+use RecursiveRegexIterator;
+use RecursiveIteratorIterator;
+use RecursiveDirectoryIterator;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Tests\AbstractTestCase;
-use Illuminate\Support\Arr;
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-use RecursiveRegexIterator;
-use RegexIterator;
 
 class SpecFilesTest extends AbstractTestCase
 {

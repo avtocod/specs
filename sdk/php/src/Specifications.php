@@ -2,11 +2,11 @@
 
 namespace Avtocod\Specifications;
 
-use Avtocod\Specifications\Structures\Field;
-use Avtocod\Specifications\Structures\IdentifierType;
-use Avtocod\Specifications\Structures\Source;
 use Exception;
 use Illuminate\Support\Collection;
+use Avtocod\Specifications\Structures\Field;
+use Avtocod\Specifications\Structures\Source;
+use Avtocod\Specifications\Structures\IdentifierType;
 
 class Specifications
 {
@@ -59,7 +59,7 @@ class Specifications
     }
 
     /**
-     * Get report example
+     * Get report example.
      *
      * @param string|null $group_name
      * @param string      $name

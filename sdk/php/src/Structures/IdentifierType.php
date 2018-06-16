@@ -23,30 +23,6 @@ class IdentifierType extends AbstractStructure
     /**
      * {@inheritdoc}
      */
-    protected function configure($raw_data)
-    {
-        if (\is_array($raw_data) || $raw_data instanceof Traversable) {
-            foreach ($raw_data as $key => $value) {
-                switch ($key) {
-                    case 'type':
-                        $this->type = $value === null
-                            ? null
-                            : (string) $value;
-                        break;
-
-                    case 'description':
-                        $this->description = $value === null
-                            ? null
-                            : (string) $value;
-                        break;
-                }
-            }
-        }
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function toArray()
     {
         return [
@@ -73,5 +49,29 @@ class IdentifierType extends AbstractStructure
     public function getType()
     {
         return $this->type;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function configure($raw_data)
+    {
+        if (\is_array($raw_data) || $raw_data instanceof Traversable) {
+            foreach ($raw_data as $key => $value) {
+                switch ($key) {
+                    case 'type':
+                        $this->type = $value === null
+                            ? null
+                            : (string) $value;
+                        break;
+
+                    case 'description':
+                        $this->description = $value === null
+                            ? null
+                            : (string) $value;
+                        break;
+                }
+            }
+        }
     }
 }

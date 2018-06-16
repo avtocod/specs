@@ -13,16 +13,6 @@ class SourceTest extends AbstractStructureTestCase
 
     /**
      * {@inheritdoc}
-     *
-     * @return Source
-     */
-    protected function factory(...$arguments)
-    {
-        return new Source(...$arguments);
-    }
-
-    /**
-     * {@inheritdoc}
      */
     public function testConfigure()
     {
@@ -64,5 +54,15 @@ class SourceTest extends AbstractStructureTestCase
         $this->assertEquals($name, $this->instance['name']);
 
         $this->assertFalse(isset($this->instance['bar']));
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return Source
+     */
+    protected function factory(...$arguments)
+    {
+        return new Source(...$arguments);
     }
 }

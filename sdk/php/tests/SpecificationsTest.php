@@ -2,12 +2,13 @@
 
 namespace Avtocod\Specifications\Tests;
 
-use Exception;
 use Avtocod\Specifications\Specifications;
+use Avtocod\Specifications\Structures\Field;
+use Avtocod\Specifications\Structures\IdentifierType;
+use Avtocod\Specifications\Structures\Source;
+use Exception;
+use Illuminate\Support\Collection;
 
-/**
- * Class SpecificationsTest.
- */
 class SpecificationsTest extends AbstractTestCase
 {
     /**
@@ -26,17 +27,7 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * {@inheritdoc}
-     */
-    protected function tearDown()
-    {
-        unset($this->instance);
-
-        parent::tearDown();
-    }
-
-    /**
-     * Тест констант.
+     * Test constants.
      *
      * @return void
      */
@@ -46,106 +37,206 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Тест метода, возвращающего базовый путь к директории спецификаций.
+     * Test `getRootDirectoryPath()` method.
      *
      * @return void
      */
     public function testGetRootDirectoryPath()
     {
-        $this->assertEquals($this->instance->getRootDirectoryPath(), $root = $this->getRootDirPath());
-        $this->assertEquals($this->instance->getRootDirectoryPath('foo'), $root . DIRECTORY_SEPARATOR . 'foo');
-        $this->assertEquals($this->instance->getRootDirectoryPath(' /foo'), $root . DIRECTORY_SEPARATOR . 'foo');
-        $this->assertEquals($this->instance->getRootDirectoryPath(new \stdClass), $root);
-        $this->assertEquals($this->instance->getRootDirectoryPath([]), $root);
+        $instance = $this->instance; // PHP 5.6
+
+        $this->assertEquals($instance::getRootDirectoryPath(), $root = $this->getRootDirPath());
+        $this->assertEquals($instance::getRootDirectoryPath('foo'), $root . DIRECTORY_SEPARATOR . 'foo');
+        $this->assertEquals($instance::getRootDirectoryPath(' /foo'), $root . DIRECTORY_SEPARATOR . 'foo');
     }
 
     /**
-     * Тест метода, возвращающего филды спецификации.
+     * Test `getFieldsSpecification()` method.
      *
      * @return void
      */
     public function testGetFieldsSpecification()
     {
-        $this->assertEquals(
-            json_decode(
-                file_get_contents($this->instance->getRootDirectoryPath(
+        $instance = $this->instance; // PHP 5.6
+
+        foreach (['default', null] as $group_name) {
+            $result = $instance::getFieldsSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+
+            foreach ($result as $item) {
+                $this->assertInstanceOf(Field::class, $item);
+            }
+
+            $raw = \json_decode(
+                \file_get_contents($instance::getRootDirectoryPath(
                     '/fields/default/fields_list.json'
                 )),
                 true
-            ),
-            $this->instance->getFieldsSpecification('default')
-        );
+            );
+
+            $this->assertCount(count($raw), $result);
+
+            foreach ($raw as $field_name => $field_data) {
+                $this->assertEquals($field_data['path'], $result[$field_name]->getPath());
+                $this->assertEquals($field_data['description'], $result[$field_name]->getDescription());
+                $this->assertEquals($field_data['types'], $result[$field_name]->getTypes());
+            }
+        }
     }
 
     /**
-     * Тест метода, возвращающего филды спецификации, с передачей ему не существующей группы.
+     * Test `getFieldsSpecification()` method exception throwing.
      *
      * @return void
      */
     public function testGetFieldsSpecificationWithInvalidGroupName()
     {
         $this->expectException(Exception::class);
+        $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
-        $this->instance->getFieldsSpecification('foo bar');
+        $instance = $this->instance; // PHP 5.6
+
+        $instance::getFieldsSpecification('foo bar');
     }
 
     /**
-     * Тест метода, возвращающего ипецификации по идентификаторам.
+     * Test `getReportExample()` method.
      *
      * @return void
      */
-    public function testGetIdentifiersSpecification()
+    public function testGetReportExample()
     {
-        $this->assertEquals(
-            json_decode(
-                file_get_contents($this->instance->getRootDirectoryPath(
-                    '/identifiers/default/identifiers_types_list.json'
-                )),
-                true
-            ),
-            $this->instance->getIdentifiersSpecification('default')
-        );
+        $instance = $this->instance; // PHP 5.6
+
+        foreach (['default', null] as $group_name) {
+            foreach (['full', 'empty'] as $name) {
+                $result = $instance::getReportExample($group_name, $name);
+                $this->assertInternalType('array', $result);
+
+                $raw = \json_decode(
+                    \file_get_contents($instance::getRootDirectoryPath(
+                        "/fields/default/examples/{$name}.json"
+                    )),
+                    true
+                );
+
+                $this->assertEquals($result, $raw);
+            }
+        }
     }
 
     /**
-     * Тест метода, возвращающего ипецификации по идентификаторам, с передачей ему не существующей группы.
+     * Test `getFieldsSpecification()` method exception throwing.
      *
      * @return void
      */
-    public function testGetIdentifiersSpecificationWithInvalidGroupName()
+    public function testGetReportExampleWithInvalidGroupName()
     {
         $this->expectException(Exception::class);
+        $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
-        $this->instance->getIdentifiersSpecification('foo bar');
+        $instance = $this->instance; // PHP 5.6
+
+        $instance::getReportExample('foo bar');
     }
 
     /**
-     * Тест метода, возвращающего ипецификации по источникам.
+     * Test `getIdentifierTypesSpecification()` method.
+     *
+     * @return void
+     */
+    public function testGetIdentifierTypesSpecification()
+    {
+        $instance = $this->instance; // PHP 5.6
+
+        foreach (['default', null] as $group_name) {
+            $result = $instance::getIdentifierTypesSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+
+            foreach ($result as $item) {
+                $this->assertInstanceOf(IdentifierType::class, $item);
+            }
+
+            $raw = \json_decode(
+                \file_get_contents($instance::getRootDirectoryPath(
+                    '/identifiers/default/types_list.json'
+                )),
+                true
+            );
+
+            $this->assertCount(count($raw), $result);
+
+            foreach ($raw as $identifier_data) {
+                $identifier_type = $identifier_data['type'];
+
+                $this->assertEquals($identifier_data['description'], $result[$identifier_type]->getDescription());
+                $this->assertEquals($identifier_data['type'], $result[$identifier_type]->getType());
+            }
+        }
+    }
+
+    /**
+     * Test `getIdentifierTypesSpecification()` method exception throwing.
+     *
+     * @return void
+     */
+    public function testGetIdentifierTypesSpecificationWithInvalidGroupName()
+    {
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessageRegExp('~file.+was not found~i');
+
+        $instance = $this->instance; // PHP 5.6
+
+        $instance::getIdentifierTypesSpecification('foo bar');
+    }
+
+    /**
+     * Test `getSourcesSpecification()` method.
      *
      * @return void
      */
     public function testGetSourcesSpecification()
     {
-        $this->assertEquals(
-            json_decode(
-                file_get_contents($this->instance->getRootDirectoryPath(
+        $instance = $this->instance; // PHP 5.6
+
+        foreach (['default', null] as $group_name) {
+            $result = $instance::getSourcesSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+
+            foreach ($result as $item) {
+                $this->assertInstanceOf(Source::class, $item);
+            }
+
+            $raw = \json_decode(
+                \file_get_contents($instance::getRootDirectoryPath(
                     '/sources/default/sources_list.json'
                 )),
                 true
-            ),
-            $this->instance->getSourcesSpecification('default')
-        );
+            );
+
+            $this->assertCount(count($raw), $result);
+
+            foreach ($raw as $source_data) {
+                $source_name = $source_data['name'];
+
+                $this->assertEquals($source_data['name'], $result[$source_name]->getName());
+                $this->assertEquals($source_data['description'], $result[$source_name]->getDescription());
+            }
+        }
     }
 
     /**
-     * Тест метода, возвращающего ипецификации по источникам, с передачей ему не существующей группы.
+     * Test `getSourcesSpecification()` method exception throwing.
      *
      * @return void
      */
     public function testGetSourcesSpecificationWithInvalidGroupName()
     {
         $this->expectException(Exception::class);
+        $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
-        $this->instance->getSourcesSpecification('foo bar');
+        $instance = $this->instance; // PHP 5.6
+
+        $instance::getSourcesSpecification('foo bar');
     }
 }

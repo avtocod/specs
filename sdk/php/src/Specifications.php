@@ -20,7 +20,7 @@ class Specifications
      * @param string|null $additional_path
      *
      * @return string
-     *               
+     *
      * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getRootDirectoryPath($additional_path = null)
@@ -28,7 +28,7 @@ class Specifications
         static $root = null;
 
         trigger_error(
-            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2', __METHOD__),
             E_USER_DEPRECATED
         );
 
@@ -49,13 +49,13 @@ class Specifications
      * @throws Exception
      *
      * @return array[]
-     *                
+     *
      * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getFieldsSpecification($group_name = self::GROUP_NAME_DEFAULT)
     {
         trigger_error(
-            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2', __METHOD__),
             E_USER_DEPRECATED
         );
 
@@ -72,13 +72,13 @@ class Specifications
      * @throws Exception
      *
      * @return array[]
-     *                
+     *
      * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getIdentifiersSpecification($group_name = self::GROUP_NAME_DEFAULT)
     {
         trigger_error(
-            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2', __METHOD__),
             E_USER_DEPRECATED
         );
 
@@ -95,13 +95,13 @@ class Specifications
      * @throws Exception
      *
      * @return array[]
-     *                
+     *
      * @deprecated No longer supported. Please, update this package up to v2.
      */
     public static function getSourcesSpecification($group_name = self::GROUP_NAME_DEFAULT)
     {
         trigger_error(
-            sprintf('Method [%s] is deprecated. Please, update this package up to v2',__METHOD__),
+            sprintf('Method [%s] is deprecated. Please, update this package up to v2', __METHOD__),
             E_USER_DEPRECATED
         );
 
@@ -118,7 +118,7 @@ class Specifications
      * @throws Exception
      *
      * @return array
-     *              
+     *
      * @deprecated No longer supported. Please, update this package up to v2.
      */
     protected static function getJsonFileAsArray($file_path)

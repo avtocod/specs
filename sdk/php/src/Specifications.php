@@ -3,21 +3,20 @@
 namespace Avtocod\Specifications;
 
 use Exception;
+use Illuminate\Support\Collection;
+use Avtocod\Specifications\Structures\Field;
+use Avtocod\Specifications\Structures\Source;
+use Avtocod\Specifications\Structures\IdentifierType;
 
-/**
- * Class Specifications.
- *
- * Класс, упрощающий доступ к файлам спецификаций.
- */
 class Specifications
 {
     /**
-     * Имя группы "по умолчанию".
+     * Default specification group name.
      */
     const GROUP_NAME_DEFAULT = 'default';
 
     /**
-     * Возвращает путь к корневой директории спецификаций.
+     * Get the specifications root directory path.
      *
      * @param string|null $additional_path
      *
@@ -25,70 +24,115 @@ class Specifications
      */
     public static function getRootDirectoryPath($additional_path = null)
     {
-        static $root = null;
+        $root = dirname(dirname(dirname(__DIR__))); // `dirname()` reason - https://git.io/vhXvr
 
-        $root = is_null($root)
-            ? realpath(__DIR__ . '/../../..')
-            : $root;
-
-        return is_string($additional_path) && ! empty($additional_path)
+        return $additional_path !== null
             ? $root . DIRECTORY_SEPARATOR . ltrim((string) $additional_path, ' \\/')
             : $root;
     }
 
     /**
-     * Возвращает спецификацию по филдам в соответствии с группой.
+     * Get fields specification as collection of typed objects.
      *
-     *
-     * @param string $group_name
+     * @param string|null $group_name
      *
      * @throws Exception
      *
-     * @return array[]
+     * @return Collection|Field[]
      */
-    public static function getFieldsSpecification($group_name = self::GROUP_NAME_DEFAULT)
+    public static function getFieldsSpecification($group_name = null)
     {
+        $group_name = $group_name === null
+            ? self::GROUP_NAME_DEFAULT
+            : $group_name;
+
+        $result = new Collection;
+        $input  = static::getJsonFileAsArray(
+            static::getRootDirectoryPath("/fields/{$group_name}/fields_list.json")
+        );
+
+        foreach ($input as $field_data) {
+            $result->push(new Field($field_data));
+        }
+
+        return $result;
+    }
+
+    /**
+     * Get report example.
+     *
+     * @param string|null $group_name
+     * @param string      $name
+     *
+     * @return array
+     */
+    public static function getReportExample($group_name = null, $name = 'full')
+    {
+        $group_name = $group_name === null
+            ? self::GROUP_NAME_DEFAULT
+            : $group_name;
+
         return static::getJsonFileAsArray(
-            static::getRootDirectoryPath(sprintf('/fields/%s/fields_list.json', $group_name))
+            static::getRootDirectoryPath("/fields/{$group_name}/examples/{$name}.json")
         );
     }
 
     /**
-     * Возвращает спецификацию по идентификаторам в соответствии с группой.
+     * Get identifier types specification an collection of typed objects.
      *
-     *
-     * @param string $group_name
-     *
-     * @throws Exception
-     *
-     * @return array[]
-     */
-    public static function getIdentifiersSpecification($group_name = self::GROUP_NAME_DEFAULT)
-    {
-        return static::getJsonFileAsArray(
-            static::getRootDirectoryPath(sprintf('/identifiers/%s/identifiers_types_list.json', $group_name))
-        );
-    }
-
-    /**
-     * Возвращает спецификацию по источникам в соответствии с группой.
-     *
-     *
-     * @param string $group_name
+     * @param string|null $group_name
      *
      * @throws Exception
      *
-     * @return array[]
+     * @return Collection|IdentifierType[]
      */
-    public static function getSourcesSpecification($group_name = self::GROUP_NAME_DEFAULT)
+    public static function getIdentifierTypesSpecification($group_name = null)
     {
-        return static::getJsonFileAsArray(
-            static::getRootDirectoryPath(sprintf('/sources/%s/sources_list.json', $group_name))
+        $group_name = $group_name === null
+            ? self::GROUP_NAME_DEFAULT
+            : $group_name;
+
+        $result = new Collection;
+        $input  = static::getJsonFileAsArray(
+            static::getRootDirectoryPath("/identifiers/{$group_name}/types_list.json")
         );
+
+        foreach ($input as $source_data) {
+            $result->put($source_data['type'], new IdentifierType($source_data));
+        }
+
+        return $result;
     }
 
     /**
-     * Возвращает контент json файла в виде php-массива.
+     * Get sources specification an collection of typed objects.
+     *
+     * @param string|null $group_name
+     *
+     * @throws Exception
+     *
+     * @return Collection|Source[]
+     */
+    public static function getSourcesSpecification($group_name = null)
+    {
+        $group_name = $group_name === null
+            ? self::GROUP_NAME_DEFAULT
+            : $group_name;
+
+        $result = new Collection;
+        $input  = static::getJsonFileAsArray(
+            static::getRootDirectoryPath("/sources/{$group_name}/sources_list.json")
+        );
+
+        foreach ($input as $source_data) {
+            $result->put($source_data['name'], new Source($source_data));
+        }
+
+        return $result;
+    }
+
+    /**
+     * Get json-file content as an array.
      *
      * @param string $file_path
      *
@@ -98,14 +142,16 @@ class Specifications
      */
     protected static function getJsonFileAsArray($file_path)
     {
-        if (! file_exists($file_path)) {
-            throw new Exception(sprintf('File "%s" was not found', $file_path));
+        if (! \file_exists($file_path)) {
+            throw new Exception("File [{$file_path}] was not found");
         }
 
-        $result = json_decode(file_get_contents($file_path), true);
+        $result = \json_decode(file_get_contents($file_path), true);
 
-        if (! is_array($result) || json_last_error() !== JSON_ERROR_NONE) {
-            throw new Exception(sprintf('Cannot parse json file: "%s"', $file_path));
+        if (! \is_array($result) || \json_last_error() !== JSON_ERROR_NONE) {
+            // @codeCoverageIgnoreStart
+            throw new Exception("Cannot parse json file: [{$file_path}]");
+            // @codeCoverageIgnoreEnd
         }
 
         return $result;

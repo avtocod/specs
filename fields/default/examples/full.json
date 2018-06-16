@@ -1,0 +1,693 @@
+{
+    "identifiers": {
+        "vehicle": {
+            "vin": "C5KY36SZRBD974789",
+            "reg_num": "А332АВ177",
+            "sts": "3104847107",
+            "pts": "36КС619977",
+            "body": "KCA275-9673180",
+            "chassis": "LFPVBM6819793"
+        }
+    },
+    "tech_data": {
+        "manufacturer": {
+            "name": "N\/A"
+        },
+        "brand": {
+            "id": null,
+            "name": {
+                "original": "OPEL MONTEREY",
+                "rus": "Opel",
+                "normalized": null
+            }
+        },
+        "model": {
+            "id": null,
+            "name": {
+                "original": "Monterey",
+                "normalized": null
+            }
+        },
+        "type": {
+            "name": "Седан"
+        },
+        "body": {
+            "number": "KCA275-9673180",
+            "color": {
+                "name": "Светло Зеленый",
+                "type": "Зеленый"
+            }
+        },
+        "year": 2018,
+        "chassis": {
+            "number": "LFPVBM6819793"
+        },
+        "engine": {
+            "fuel": {
+                "type": "Дизельный"
+            },
+            "number": "A 30038",
+            "model": {
+                "name": "R4T9186"
+            },
+            "volume": 2792.1,
+            "power": {
+                "hp": 176.9,
+                "kw": 288.95
+            }
+        },
+        "weight": {
+            "netto": 2590,
+            "max": 3440
+        },
+        "transmission": {
+            "type": "AUTOMATIC"
+        },
+        "drive": {
+            "type": "Полноприводной"
+        },
+        "wheel": {
+            "position": "LEFT"
+        }
+    },
+    "additional_info": {
+        "vehicle": {
+            "category": {
+                "code": "TM",
+                "description": "Трамваи"
+            },
+            "owner": {
+                "type": "LEGAL",
+                "geo": {
+                    "country": null,
+                    "region": "Пензенская",
+                    "city": "Пушкино",
+                    "street": null,
+                    "house": null
+                }
+            },
+            "passport": {
+                "date": {
+                    "receive": "2018-08-05 00:00:00"
+                },
+                "number": "8047307033",
+                "org": {
+                    "name": "ОАО СервисКазань"
+                }
+            },
+            "sts": {
+                "date": {
+                    "receive": "2021-08-05 00:00:00"
+                }
+            },
+            "notes": [
+                "ЛЕГКОВОЙ КОМБИ (ХЭТЧБЕК)",
+                "10.12.2017 ИЗМ. ВЛАДЕЛЬЦА ПО ДКП № БН ОТ 07.22.2017 - ДОГОВОР, СОВЕРШЕННЫЙ В ПРОСТОЙ ПИСЬМЕННОЙ ФОРМЕ ",
+                "12.24.2017 ИЗМ. ВЛАДЕЛЬЦА ПО ДКП № БН ОТ 03.12.2018 -"
+            ]
+        },
+        "identifiers": {
+            "vin": {
+                "checksum_validated": true
+            }
+        }
+    },
+    "registration_actions": {
+        "items": [
+            {
+                "date": {
+                    "start": "2015-05-15 00:00:00",
+                    "end": "2015-12-15 00:00:00"
+                },
+                "reg_num": "А332АВ177",
+                "owner": {
+                    "type": "PERSONLEGAL",
+                    "org": {
+                        "name": "ООО ОблМотор"
+                    }
+                },
+                "type": "Учет нарушений ПДД",
+                "geo": {
+                    "country": "Россия",
+                    "region": "Архангельская",
+                    "city": "Домодедово",
+                    "street": "Сталина",
+                    "house": "08"
+                }
+            }
+        ],
+        "count": 1
+    },
+    "repairs": {
+        "history": {
+            "items": [
+                {
+                    "number": {
+                        "calculation": "084\/08\/617",
+                        "claim": "ХAY1E37S50167"
+                    },
+                    "date": {
+                        "calculation": "2010-12-17"
+                    },
+                    "mileage": 54900,
+                    "cost": {
+                        "total": 395280,
+                        "labour": 45910,
+                        "parts": 339670,
+                        "paint": 9700
+                    },
+                    "car": {
+                        "manufacturer": "OPEL [V] [61] [R]",
+                        "model": "MONTEREY [V] [XA] [S] [36] [M]",
+                        "sub_model": "Monterey"
+                    },
+                    "insurer": {
+                        "name": "Ресо-Гарантия"
+                    },
+                    "assessor": {
+                        "name": "ООО АвтоАсбоцемент"
+                    },
+                    "task_process": "KASKO",
+                    "repairer": {
+                        "type": "Assessor",
+                        "description": "Оценщик"
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": "Запасная часть для частичной замены",
+                                "repair": {
+                                    "method": "TE",
+                                    "description": "Запасная часть для частичной замены"
+                                }
+                            },
+                            {
+                                "name": "Ремонт",
+                                "repair": {
+                                    "method": "I",
+                                    "description": "Ремонт"
+                                }
+                            },
+                            {
+                                "name": "Антикоррозийная обработка",
+                                "repair": {
+                                    "method": "H",
+                                    "description": "Антикоррозийная обработка"
+                                }
+                            },
+                            {
+                                "name": "Окраска новой детали K1G\/PUR (ступень AZT окраски пластиковой детали)",
+                                "repair": {
+                                    "method": "LE4",
+                                    "description": "Окраска новой детали K1G\/PUR (ступень AZT окраски пластиковой детали)"
+                                }
+                            },
+                            {
+                                "name": "Окраска новой детали K1N (ступень AZT окраски пластиковой детали)",
+                                "repair": {
+                                    "method": "LE2",
+                                    "description": "Окраска новой детали K1N (ступень AZT окраски пластиковой детали)"
+                                }
+                            },
+                            {
+                                "name": "Окраска новой детали K1G (ступень AZT окраски пластиковой детали)",
+                                "repair": {
+                                    "method": "LE3",
+                                    "description": "Окраска новой детали K1G (ступень AZT окраски пластиковой детали)"
+                                }
+                            },
+                            {
+                                "name": "Окраска новой детали K1N (ступень AZT окраски пластиковой детали)",
+                                "repair": {
+                                    "method": "LE2",
+                                    "description": "Окраска новой детали K1N (ступень AZT окраски пластиковой детали)"
+                                }
+                            },
+                            {
+                                "name": "Замена",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            }
+                        ],
+                        "count": 8
+                    }
+                }
+            ],
+            "count": 1
+        }
+    },
+    "carfax": {
+        "check": {
+            "exists": false,
+            "records": {
+                "count": 10
+            },
+            "vehicle": {
+                "model": {
+                    "name": "Opel Monterey"
+                }
+            }
+        }
+    },
+    "calculate": {
+        "tax": {
+            "moscow": {
+                "yearly": {
+                    "amount": 12800
+                }
+            },
+            "regions": {
+                "yearly": {
+                    "amount": 12800
+                }
+            }
+        },
+        "osago": {
+            "coefficients": {
+                "regional": {
+                    "value": 65.31
+                }
+            },
+            "price": {
+                "current": {
+                    "region": {
+                        "name": "Владимирская"
+                    },
+                    "city": {
+                        "name": "Шатура"
+                    },
+                    "yearly": {
+                        "amount": 7800,
+                        "min": 6400,
+                        "max": 9200
+                    }
+                },
+                "moscow": {
+                    "yearly": {
+                        "amount": 12800,
+                        "min": 10700,
+                        "max": 14900
+                    }
+                },
+                "moscow_region": {
+                    "yearly": {
+                        "amount": 12000,
+                        "min": 9400,
+                        "max": 14600
+                    }
+                }
+            }
+        }
+    },
+    "car_price": {
+        "items": [
+            {
+                "date": {
+                    "release": null
+                },
+                "amount": 709200,
+                "model": {
+                    "name": "EX"
+                },
+                "modification": {
+                    "name": "I Restyling"
+                },
+                "engine": {
+                    "volume": 2704.9
+                },
+                "year": 2018
+            }
+        ],
+        "count": 1
+    },
+    "fines": {
+        "items": [
+            {
+                "date": {
+                    "event": "2018-05-23 00:00:00"
+                },
+                "description": "УИН 18810161753886424481 от 2018-05-23 на 4200.00 руб.",
+                "vendor": {
+                    "name": "ОДД ГИБДД ГУ МВД России, Новгородская область"
+                },
+                "amount": {
+                    "value": 4200.0,
+                    "total": 4200.0
+                },
+                "discount": {
+                    "percent": 50.0,
+                    "date": {
+                        "end": "2018-06-23 00:00:00"
+                    }
+                },
+                "is_paid": true,
+                "wire": {
+                    "user": {
+                        "name": "УФК по ИО (ГУ МВД России по Новгородская область, л\/с 04475979720)",
+                        "tin": "0592311114",
+                        "kpp": "059201001"
+                    },
+                    "bank": {
+                        "account": {
+                            "number": "40101810151650010005"
+                        },
+                        "name": "Отделение г. Зарайск",
+                        "bik": "049750005"
+                    },
+                    "payment": {
+                        "purpose": "ШТРАФ ПО АДМИНИСТРАТИВНОМУ ПРАВОНАРУШЕНИЮ ПОСТАНОВЛЕНИЕ №18810161753886424481"
+                    },
+                    "kbk": "18811630020016000140",
+                    "okato": "78691068"
+                }
+            }
+        ],
+        "count": 1
+    },
+    "leasings": {
+        "items": [
+            {
+                "date": {
+                    "event": "2017-11-22 00:00:00"
+                },
+                "company": {
+                    "name": "ОАО ТекстильРыбБухСнос"
+                },
+                "tin": "6297557802"
+            }
+        ],
+        "count": 1
+    },
+    "customs": {
+        "history": {
+            "items": [
+                {
+                    "date": {
+                        "event": "2016-04-05 00:00:00"
+                    },
+                    "document": {
+                        "name": "Таможенная выписка",
+                        "number": "50302382\/017119\/0003860"
+                    },
+                    "org": {
+                        "name": "ТАМОЖЕННОЕ УПРАВЛЕНИЕ"
+                    },
+                    "color": {
+                        "name": "фуксия"
+                    },
+                    "tax": {
+                        "amount": 45690
+                    },
+                    "price": {
+                        "amount": 117400
+                    },
+                    "mileage": 120,
+                    "ecology": {
+                        "type": "ЕВРО 0"
+                    },
+                    "specification": {
+                        "type": "Honda CR-X",
+                        "raw": "ЛЕГ.А\\\/М HONDA CR-X 3OZ53\/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
+                    },
+                    "owner": {
+                        "type": "LEGAL",
+                        "value": "ЗАО ВекторРечПив"
+                    },
+                    "country": {
+                        "from": {
+                            "name": "Тайланд"
+                        },
+                        "to": {
+                            "name": "RU"
+                        }
+                    }
+                }
+            ],
+            "count": 1
+        }
+    },
+    "taxi": {
+        "history": {
+            "items": [
+                {
+                    "date": {
+                        "start": "2016-03-24 00:00:00",
+                        "end": "2017-03-24 00:00:00"
+                    },
+                    "license": {
+                        "number": "19704"
+                    },
+                    "company": {
+                        "name": "ООО ИнжЖелДорЖелДорСбыт"
+                    },
+                    "ogrn": "1877354634195",
+                    "tin": "1363519987",
+                    "vehicle": {
+                        "brand": {
+                            "name": "Opel"
+                        },
+                        "model": {
+                            "name": "Monterey"
+                        },
+                        "reg_num": "А332АВ177",
+                        "year": 1988
+                    },
+                    "permit": {
+                        "number": "67656"
+                    },
+                    "city": {
+                        "name": "Павловский Посад"
+                    }
+                }
+            ],
+            "count": 1
+        },
+        "used_in_taxi": true
+    },
+    "pledges": {
+        "items": [
+            {
+                "date": {
+                    "event": "2013-05-30 00:00:00"
+                },
+                "number": "2013-001-406288-623\/241",
+                "pledgors": [
+                    {
+                        "name": "Евгения Сергеевна Дроздова",
+                        "type": "PERSON",
+                        "dob": "1983-08-31"
+                    }
+                ],
+                "pledgees": [
+                    {
+                        "name": "ЗАО ГлавЭлектро",
+                        "type": "LEGAL",
+                        "dob": null
+                    }
+                ],
+                "type": "Возникновение",
+                "in_pledge": true,
+                "data": null
+            }
+        ],
+        "count": 1
+    },
+    "insurance": {
+        "osago": {
+            "items": [
+                {
+                    "number": "33264901",
+                    "insurer": {
+                        "name": "Ресо-Гарантия"
+                    },
+                    "date": {
+                        "start": "2014-07-07 00:00:00",
+                        "end": "2015-07-07 00:00:00"
+                    },
+                    "restrictions": {
+                        "type": "WITHOUT RESTRICTIONS"
+                    },
+                    "policy": {
+                        "series": "ЕЕЕ",
+                        "number": "0018891420"
+                    }
+                }
+            ],
+            "count": 1
+        }
+    },
+    "accidents": {
+        "history": {
+            "items": [
+                {
+                    "number": "000043057",
+                    "accident": {
+                        "date": "1978-02-14 05:24:00"
+                    },
+                    "type": "Наезд на стоящее ТС",
+                    "state": "Неизвестно",
+                    "damage": {
+                        "points": [
+                            1,
+                            2
+                        ]
+                    },
+                    "vehicle": {
+                        "brand": {
+                            "name": "Opel"
+                        },
+                        "model": {
+                            "name": "MONTEREY"
+                        },
+                        "year": 2004
+                    },
+                    "geo": {
+                        "country": null,
+                        "region": "Воронежская",
+                        "city": "Домодедово",
+                        "street": null,
+                        "house": null
+                    }
+                }
+            ],
+            "count": 1
+        }
+    },
+    "restrictions": {
+        "registration_actions": {
+            "items": [
+                {
+                    "date": {
+                        "added": "2015-07-13 00:00:00",
+                        "start": "2015-07-13 00:00:00",
+                        "end": "2016-07-13 00:00:00"
+                    },
+                    "vehicle": {
+                        "year": 2018,
+                        "model": {
+                            "name": "OPEL MONTEREY"
+                        }
+                    },
+                    "initiator": {
+                        "name": "Судебные Органы",
+                        "region": {
+                            "name": "Брянская"
+                        }
+                    },
+                    "restrict": {
+                        "type": "Запрет на регистрационные действия",
+                        "reason": "Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015",
+                        "number": "90129308-0060"
+                    }
+                }
+            ],
+            "count": 1,
+            "has_restrictions": true
+        }
+    },
+    "stealings": {
+        "count": 1,
+        "is_wanted": true,
+        "items": [
+            {
+                "date": {
+                    "stealing": "2014-02-06 00:00:00"
+                },
+                "geo": {
+                    "country": null,
+                    "region": "Калужская",
+                    "city": null,
+                    "street": null,
+                    "house": null
+                }
+            }
+        ]
+    },
+    "ownership": {
+        "history": {
+            "items": [
+                {
+                    "date": {
+                        "start": "2010-02-07 00:00:00",
+                        "end": "2011-04-07 00:00:00"
+                    },
+                    "owner": {
+                        "type": "PERSON"
+                    }
+                }
+            ],
+            "count": 1
+        }
+    },
+    "mileages": {
+        "items": [
+            {
+                "date": {
+                    "event": "2009-07-10 00:00:00"
+                },
+                "mileage": 391500
+            }
+        ],
+        "count": 1
+    },
+    "diagnostic_cards": {
+        "items": [
+            {
+                "date": {
+                    "from": "2009-10-09 00:00:00",
+                    "to": "2010-10-10 00:00:00"
+                },
+                "doc": {
+                    "serial": "34ER9",
+                    "number": "20143727125845619300",
+                    "type": "Диагностическая карта"
+                },
+                "inspection": {
+                    "place": "ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
+                },
+                "reg_num": "А332АВ177"
+            }
+        ],
+        "count": 1
+    },
+    "utilizations": {
+        "items": [
+            {
+                "date": {
+                    "utilization": "2013-06-20 00:00:00"
+                },
+                "org": {
+                    "name": "ООО Компания БашкирОблВосток"
+                },
+                "country": {
+                    "name": "Египет"
+                }
+            }
+        ],
+        "was_utilized": true,
+        "count": 1
+    },
+    "images": {
+        "photos": {
+            "items": [
+                {
+                    "vehicle": {
+                        "brand": {
+                            "name": "OPEL"
+                        },
+                        "model": {
+                            "name": "MONTEREY"
+                        }
+                    },
+                    "date": {
+                        "issued": "2017-06-17 22:14:41"
+                    },
+                    "uri": "https:\/\/lorempixel.com\/1024\/740\/transport\/?73445"
+                }
+            ],
+            "count": 1
+        }
+    }
+}

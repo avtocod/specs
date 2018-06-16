@@ -4,10 +4,10 @@
 
 ## Публичные спецификации проекта "Автокод"
 
-[![Version][badge_version]][link_packagist]
-[![Build Status][badge_build_status]][link_build_status]
-[![Issues][badge_issues]][link_issues]
-[![Downloads count][badge_downloads_count]][link_packagist]
+![Release version][badge_release_version]
+![Release date][badge_release_date]
+![Commits since latest release][badge_commits_since_release]
+![Releases downloads count][badge_releases_dl_count]
 
 Данный репозиторий содержит публичные спецификации, связанные с проектом "Автокод".
 
@@ -71,6 +71,11 @@
 
 #### PHP SDK
 
+[![Build Status][badge_build_status]][link_build_status]
+[![Version][badge_packagist_version]][link_packagist]
+![Required PHP version][badge_php_version]
+[![Downloads count][badge_packagist_dl_count]][link_packagist]
+
 Для установки выполните в терминале следующую команду:
 
 ```shell
@@ -95,10 +100,15 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 
 Если у вас возникли какие-либо проблемы при работе с данным репозиторием, пожалуйста, создайте соответствующий `issue` [перейдя по данной ссылке][link_create_issue].
 
-[badge_version]:https://img.shields.io/packagist/v/avtocod/specs.svg?style=flat&maxAge=5
+[badge_release_version]:https://img.shields.io/github/release/avtocod/specs.svg?style=for-the-badge&maxAge=5
+[badge_release_date]:https://img.shields.io/github/release-date/avtocod/specs.svg?style=for-the-badge&maxAge=5
+[badge_commits_since_release]:https://img.shields.io/github/commits-since/avtocod/specs/latest.svg?style=for-the-badge&maxAge=5
+[badge_packagist_version]:https://img.shields.io/packagist/v/avtocod/specs.svg?style=flat-square&maxAge=5
+[badge_php_version]:https://img.shields.io/packagist/php-v/avtocod/specs.svg?style=flat-square&maxAge=5
 [badge_build_status]:https://scrutinizer-ci.com/g/avtocod/specs/badges/build.png?b=master
-[badge_downloads_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?style=flat&maxAge=30
-[badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=flat&maxAge=30
+[badge_packagist_dl_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?style=flat-square&maxAge=30
+[badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=for-the-badge&maxAge=30
+[badge_releases_dl_count]:https://img.shields.io/github/downloads/avtocod/specs/total.svg?style=for-the-badge&maxAge=30
 [link_packagist]:https://packagist.org/packages/avtocod/specs
 [link_build_status]:https://scrutinizer-ci.com/g/avtocod/specs/build-status/master
 [link_issues]:https://github.com/avtocod/specs/issues

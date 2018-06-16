@@ -12,6 +12,8 @@
 - Field with path `customs.history.items[].specification.raw`
 - Report example `./fields/default/examples/full.json`
 - Report example `./fields/default/examples/empty.json`
+- Source `base.moscow`
+- Source `customs.base`
 
 ### Changed
 
@@ -46,11 +48,9 @@
 
 - File `./CODE_OF_CONDUCT.md`
 - File `./CONTRIBUTING.md`
-- File `./LICENSE`
 - File `./.styleci.yml` (configuration transferred into `styleci.io`)
 - Fields **names**
 - Report example `./fields/default/examples/blank.json`
 - Report example `./fields/default/examples/WBAFG41000L194195.json`
 - Report example `./fields/default/examples/Z94CB41AAGR323020.json`
 - Report example `./fields/default/examples/A1111111111111111.json`
-

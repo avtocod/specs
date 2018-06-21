@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.0.x
+
+### Added
+
+- Repository issues templates
+- Repository PR template
+
 ## v2.0.0
 
 ### Added

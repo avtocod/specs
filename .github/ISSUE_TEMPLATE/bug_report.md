@@ -1,17 +1,39 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: Ошибка в работе SDK
+about: Создать отчёт от ошибке в работе SDK
 
 ---
 
-## Describe the bug
-A clear and concise description of what the bug is.
+## Опишите ошибку
 
-### Expected behavior
-A clear and concise description of what you expected to happen.
+> Краткое и однозначное описание того, что за ошибка произошла.
 
-### Screenshots
-If applicable, add screenshots to help explain your problem.
+### Ожидаемое поведение:
 
-### Additional context
-Add any other context about the problem here.
+> Опишите то, что вы желали получить.
+
+### Актуальное поведение:
+
+> То, что произошло на самом деле.
+
+### Воспроизведение ошибки:
+
+> Приведите пример кода, воспроизводящий ошибку:
+>
+> ```php
+> $some = new \stdClass();
+> echo $some;
+>
+> PHP Catchable fatal error:  Object of class stdClass could not be converted to string in Command line code on line 2
+> PHP Stack trace:
+> PHP   1. {main}() Command line code:0
+> ```
+
+## Системная информация
+
+ - Версия (версии) PHP: [e.g. `7.2.6`]
+ - Версия (версии) SDK: [e.g. `1.0.1`]
+
+## Дополнительная информация
+
+> Произвольная дополнительная информация.

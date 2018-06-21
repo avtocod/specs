@@ -1,17 +1,13 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: Запрос на дополнительный функционал SDK
+about: Предложить новый функционал для SDK
 
 ---
 
-## Is your feature request related to a problem? Please describe.
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Описание предлагаемого функционала
 
-### Describe the solution you'd like
-A clear and concise description of what you want to happen.
+> Опишите функционал, который вы бы хотели видеть. Например: я хотел бы что бы появилась возможность [...]
 
-### Describe alternatives you've considered
-A clear and concise description of any alternative solutions or features you've considered.
+## Дополнительная информация
 
-### Additional context
-Add any other context or screenshots about the feature request here.
+> Произвольная дополнительная информация.

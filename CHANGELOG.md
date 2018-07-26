@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.2.0
+
+### Added
+
+- Field with path `accidents.insurance.items[].date.event`
+- Field with path `accidents.insurance.items[].insurer.type`
+- Field with path `accidents.insurance.items[].accident.description`
+- Field with path `accidents.insurance.items[].damage.value`
+
 ## v2.1.0
 
 ### Added

@@ -497,6 +497,25 @@
                 }
             ],
             "count": 1
+        },
+        "insurance": {
+            "items": [
+                {
+                    "date": {
+                        "event": null
+                    },
+                    "insurer": {
+                        "type": null
+                    },
+                    "accident": {
+                        "description": null
+                    },
+                    "damage": {
+                        "value": null
+                    }
+                }
+            ],
+            "count": 1
         }
     },
     "restrictions": {

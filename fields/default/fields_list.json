@@ -707,6 +707,20 @@
         ]
     },
     {
+        "path": "pledges.items[].type",
+        "description": "Обременения на ТС: Тип события (возникновение, исключение, прочее)",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "pledges.items[].in_pledge",
+        "description": "Обременения на ТС: Состояние залога",
+        "types": [
+            "boolean"
+        ]
+    },
+    {
         "path": "pledges.items[].pledgors[].name",
         "description": "Обременения на ТС: Залогодатель (имя)",
         "types": [

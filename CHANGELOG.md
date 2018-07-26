@@ -1,9 +1,11 @@
 # Changelog
 
-## v2.0.x
+## v2.1.0
 
 ### Added
 
+- Field with path `pledges.items[].type` [#9]
+- Field with path `pledges.items[].in_pledge` [#9]
 - Repository issues templates
 - Repository PR template
 
@@ -61,3 +63,5 @@
 - Report example `./fields/default/examples/WBAFG41000L194195.json`
 - Report example `./fields/default/examples/Z94CB41AAGR323020.json`
 - Report example `./fields/default/examples/A1111111111111111.json`
+
+[#9]:https://github.com/avtocod/specs/issues/9

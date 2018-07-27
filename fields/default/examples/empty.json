@@ -476,6 +476,7 @@
                     "type": null,
                     "state": null,
                     "damage": {
+                        "raw": null,
                         "points": null
                     },
                     "vehicle": {
@@ -493,6 +494,25 @@
                         "city": null,
                         "street": null,
                         "house": null
+                    }
+                }
+            ],
+            "count": 1
+        },
+        "insurance": {
+            "items": [
+                {
+                    "date": {
+                        "event": null
+                    },
+                    "insurer": {
+                        "type": null
+                    },
+                    "accident": {
+                        "description": null
+                    },
+                    "damage": {
+                        "raw": null
                     }
                 }
             ],

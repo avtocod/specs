@@ -567,6 +567,41 @@
         ]
     },
     {
+        "path": "accidents.history.items[].damage.raw",
+        "description": "История ДТП: Описание повреждений в не нормализованном виде",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].date.event",
+        "description": "История повреждений из страховых компаний: Дата происшествия",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].insurer.type",
+        "description": "История повреждений из страховых компаний: Тип страхования (ОСАГО, КАСКО)",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].accident.description",
+        "description": "История повреждений из страховых компаний: Тип происшествия",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].damage.raw",
+        "description": "История повреждений из страховых компаний: Размер повреждения или описание",
+        "types": [
+            "string"
+        ]
+    },
+    {
         "path": "stealings.items[].date.stealing",
         "description": "Проверка на угон: Дата угона",
         "types": [

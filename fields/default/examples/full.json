@@ -570,9 +570,23 @@
                     "damage": {
                         "raw": "<10% от страховой суммы"
                     }
+                },
+                {
+                    "date": {
+                        "event": "2014-03-04 18:00:00"
+                    },
+                    "insurer": {
+                        "type": "ОСАГО"
+                    },
+                    "accident": {
+                        "description": "Страховой случай"
+                    },
+                    "damage": {
+                        "raw": "Бампер передний"
+                    }
                 }
             ],
-            "count": 1
+            "count": 2
         }
     },
     "restrictions": {

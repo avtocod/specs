@@ -7,7 +7,7 @@
 - Field with path `accidents.insurance.items[].date.event`
 - Field with path `accidents.insurance.items[].insurer.type`
 - Field with path `accidents.insurance.items[].accident.description`
-- Field with path `accidents.insurance.items[].damage.value`
+- Field with path `accidents.insurance.items[].damage.raw`
 - Field with path `accidents.history.items[].damage.raw`
 
 ## v2.1.0

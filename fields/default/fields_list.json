@@ -595,8 +595,8 @@
         ]
     },
     {
-        "path": "accidents.insurance.items[].damage.value",
-        "description": "История повреждений из страховых компаний: Размер повреждения",
+        "path": "accidents.insurance.items[].damage.raw",
+        "description": "История повреждений из страховых компаний: Размер повреждения или описание",
         "types": [
             "string"
         ]

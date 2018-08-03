@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.3.0
+
+### Added
+
+- Field with path `accidents.history.items[].org.name` [#12]
+
 ## v2.2.0
 
 ### Added
@@ -74,4 +80,5 @@
 - Report example `./fields/default/examples/Z94CB41AAGR323020.json`
 - Report example `./fields/default/examples/A1111111111111111.json`
 
+[#12]:https://github.com/avtocod/specs/issues/12
 [#9]:https://github.com/avtocod/specs/issues/9

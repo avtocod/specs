@@ -532,6 +532,13 @@
         ]
     },
     {
+        "path": "accidents.history.items[].org.name",
+        "description": "История ДТП: Организация, которая провела регистрацию ДТП",
+        "types": [
+            "string"
+        ]
+    },
+    {
         "path": "accidents.history.items[].vehicle.brand.name",
         "description": "История ДТП: Марка ТС",
         "types": [

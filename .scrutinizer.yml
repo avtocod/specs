@@ -44,7 +44,7 @@ build:
         override:
           - composer update --no-interaction --prefer-lowest
 
-    php70:
+    php56:
       environment:
         php: 5.6
 

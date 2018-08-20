@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.4.0
+
+### Added
+
+- Field with path `fines.items[].article.code`
+- Field with path `fines.items[].article.description`
+
 ## v2.3.0
 
 ### Added

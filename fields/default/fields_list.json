@@ -1037,15 +1037,29 @@
         ]
     },
     {
+        "path": "fines.items[].article.code",
+        "description": "Штрафы: Статья правонарушения",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "fines.items[].article.description",
+        "description": "Штрафы: Описание статьи правонарушения",
+        "types": [
+            "string"
+        ]
+    },
+    {
         "path": "fines.items[].description",
-        "description": "Штрафы: Короткое описание штрафа",
+        "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном виде)",
         "types": [
             "string"
         ]
     },
     {
         "path": "fines.items[].vendor.name",
-        "description": "Штрафы: Наименование поставщика",
+        "description": "Штрафы: Наименование поставщика (наименование подразделения ГИБДД)",
         "types": [
             "string"
         ]

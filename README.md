@@ -79,7 +79,7 @@
 Для установки выполните в терминале следующую команду:
 
 ```shell
-$ composer require avtocod/specs "^2.0"
+$ composer require avtocod/specs "^2.4"
 ```
 
 > Для этого необходим установленный `composer`. Для его установки перейдите по [данной ссылке][getcomposer].

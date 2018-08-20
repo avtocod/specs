@@ -1038,21 +1038,21 @@
     },
     {
         "path": "fines.items[].article.code",
-        "description": "Штрафы: Дата",
-        "types": [
-            "string"
-        ]
-    },
-    {
-        "path": "fines.items[].article.description",
         "description": "Штрафы: Статья правонарушения",
         "types": [
             "string"
         ]
     },
     {
-        "path": "fines.items[].description",
+        "path": "fines.items[].article.description",
         "description": "Штрафы: Описание статьи правонарушения",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "fines.items[].description",
+        "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном виде)",
         "types": [
             "string"
         ]

@@ -926,7 +926,14 @@
     },
     {
         "path": "leasings.items[].company.name",
-        "description": "Лизинг: Наименование компании",
+        "description": "Лизинг: Наименование компании-лизингополучателя",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessor.company.name",
+        "description": "Лизинг: Наименование компании-лизингодателя",
         "types": [
             "string"
         ]
@@ -936,6 +943,13 @@
         "description": "Лизинг: Дата",
         "types": [
             "string"
+        ]
+    },
+    {
+        "path": "leasings.used_in_leasing",
+        "description": "Лизинг: Факт приобретения ТС в лизинг",
+        "types": [
+            "boolean"
         ]
     },
     {

@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.5.0
+
+### Added
+
+- Field with path `leasings.items[].lessor.company.name`
+- Field with path `leasings.used_in_leasing`
+
 ## v2.4.0
 
 ### Added

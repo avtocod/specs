@@ -4,6 +4,23 @@
 
 ### Added
 
+- Field with path `taxi.history.items[].license.issued`
+- Field with path `taxi.history.items[].license.status`
+- Field with path `taxi.history.items[].company.address`
+- Field with path `taxi.history.items[].number_plate.is_yellow`
+- Field with path `taxi.history.items[].vehicle.brand.normalized`
+- Field with path `taxi.history.items[].vehicle.model.normalized`
+- Field with path `taxi.history.items[].vehicle.color`
+- Field with path `taxi.history.items[].vehicle.sts.number`
+- Field with path `taxi.history.items[].vehicle.sts.date.receive`
+- Field with path `taxi.history.items[].region.code`
+- Field with path `taxi.history.items[].cancel.reason`
+- Field with path `taxi.history.items[].cancel.note`
+
+## v2.5.0
+
+### Added
+
 - Field with path `leasings.items[].lessor.company.name`
 - Field with path `leasings.used_in_leasing`
 

@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.7.0
+
+### Added
+
+- Field with path `tech_data.brand.logotype.uri`
+- Field with path `insurance.osago.items[].date.end`
+- Field with path `calculate.osago.price.current.yearly.min`
+- Field with path `calculate.osago.price.current.yearly.max`
+- Field with path `calculate.osago.price.moscow.yearly.min`
+- Field with path `calculate.osago.price.moscow.yearly.max`
+- Field with path `calculate.osago.price.moscow_region.yearly.min`
+- Field with path `calculate.osago.price.moscow_region.yearly.max`
+
 ## v2.6.0
 
 ### Added

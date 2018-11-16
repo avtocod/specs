@@ -77,6 +77,13 @@
         ]
     },
     {
+        "path": "tech_data.brand.logotype.uri",
+        "description": "Характеристики ТС: URI логотипа марки ТС",
+        "types": [
+            "string"
+        ]
+    },
+    {
         "path": "tech_data.model.id",
         "description": "Характеристики ТС: Уникальный идентификатор модель",
         "types": [
@@ -421,7 +428,14 @@
     },
     {
         "path": "insurance.osago.items[].date.start",
-        "description": "ОСАГО: Срок",
+        "description": "ОСАГО: Дата начала",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].date.end",
+        "description": "ОСАГО: Дата окончания",
         "types": [
             "string"
         ]
@@ -490,6 +504,20 @@
         ]
     },
     {
+        "path": "calculate.osago.price.current.yearly.min",
+        "description": "Калькулятор ОСАГО: Мин сумма ОСАГО для регионов",
+        "types": [
+            "integer"
+        ]
+    },
+    {
+        "path": "calculate.osago.price.current.yearly.max",
+        "description": "Калькулятор ОСАГО: Макс сумма ОСАГО для регионов",
+        "types": [
+            "integer"
+        ]
+    },
+    {
         "path": "calculate.osago.price.moscow.yearly.amount",
         "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Москвы)",
         "types": [
@@ -497,8 +525,36 @@
         ]
     },
     {
+        "path": "calculate.osago.price.moscow.yearly.min",
+        "description": "Калькулятор ОСАГО: Минимальная стоимость ОСАГО 12 мес. (для Москвы)",
+        "types": [
+            "integer"
+        ]
+    },
+    {
+        "path": "calculate.osago.price.moscow.yearly.max",
+        "description": "Калькулятор ОСАГО: Максимальная стоимость ОСАГО 12 мес. (для Москвы)",
+        "types": [
+            "integer"
+        ]
+    },
+    {
         "path": "calculate.osago.price.moscow_region.yearly.amount",
         "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Московской Области)",
+        "types": [
+            "integer"
+        ]
+    },
+    {
+        "path": "calculate.osago.price.moscow_region.yearly.min",
+        "description": "Калькулятор ОСАГО: Мин ОСАГО 12 мес. (для Московской Области)",
+        "types": [
+            "integer"
+        ]
+    },
+    {
+        "path": "calculate.osago.price.moscow_region.yearly.max",
+        "description": "Калькулятор ОСАГО: Макс стоимость ОСАГО 12 мес. (для Московской Области)",
         "types": [
             "integer"
         ]

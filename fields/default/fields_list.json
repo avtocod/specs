@@ -974,8 +974,29 @@
         ]
     },
     {
+        "path": "taxi.history.items[].license.issued",
+        "description": "Такси: Дата выдачи разрешения",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].license.status",
+        "description": "Такси: Статус разрешения (ACTIVE, SUSPENDED, ANNULLED, TERMINATED, UNDEFINED)",
+        "types": [
+            "string"
+        ]
+    },
+    {
         "path": "taxi.history.items[].company.name",
         "description": "Такси: Наименование компании или ИП (перевозчика)",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].company.address",
+        "description": "Такси: Адрес компании или ИП (перевозчика)",
         "types": [
             "string"
         ]
@@ -995,6 +1016,13 @@
         ]
     },
     {
+        "path": "taxi.history.items[].number_plate.is_yellow",
+        "description": "Такси: Желтый ли номерной знак?",
+        "types": [
+            "boolean"
+        ]
+    },
+    {
         "path": "taxi.history.items[].vehicle.brand.name",
         "description": "Такси: Марка автомобиля",
         "types": [
@@ -1002,8 +1030,29 @@
         ]
     },
     {
+        "path": "taxi.history.items[].vehicle.brand.normalized",
+        "description": "Такси: Нормализованное значение марки автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    {
         "path": "taxi.history.items[].vehicle.model.name",
         "description": "Такси: Модель автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].vehicle.model.normalized",
+        "description": "Такси: Нормализованное значение модели автомобиля",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].vehicle.color",
+        "description": "Такси: Цвет автомобиля",
         "types": [
             "string"
         ]
@@ -1020,6 +1069,41 @@
         "description": "Такси: Год выпуска автомобиля",
         "types": [
             "integer"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].vehicle.sts.number",
+        "description": "Такси: Номер СТС (свидетельства регистрации ТС)",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].vehicle.sts.date.receive",
+        "description": "Такси: Дата получения СТС (свидетельства регистрации ТС)",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].region.code",
+        "description": "Такси: Код региона выдачи разрешения",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].cancel.reason",
+        "description": "Такси: Причина отзыва лицензии",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "taxi.history.items[].cancel.note",
+        "description": "Такси: Заметка об отзыве лицензии",
+        "types": [
+            "string"
         ]
     },
     {

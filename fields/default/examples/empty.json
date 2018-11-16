@@ -394,22 +394,44 @@
                         "end": null
                     },
                     "license": {
-                        "number": null
+                        "number": null,
+                        "issued": null,
+                        "status": null
                     },
                     "company": {
-                        "name": null
+                        "name": null,
+                        "address": null
                     },
                     "ogrn": null,
                     "tin": null,
+                    "number_plate": {
+                        "is_yellow": null
+                    },
                     "vehicle": {
                         "brand": {
-                            "name": null
+                            "name": null,
+                            "normalized": null
                         },
                         "model": {
-                            "name": null
+                            "name": null,
+                            "normalized": null
                         },
+                        "color": null,
                         "reg_num": null,
-                        "year": null
+                        "year": null,
+                        "sts": {
+                            "number": null,
+                            "date": {
+                                "receive": null
+                            }
+                        }
+                    },
+                    "region": {
+                        "code": null
+                    },
+                    "cancel": {
+                        "reason": null,
+                        "note": null
                     },
                     "permit": {
                         "number": null

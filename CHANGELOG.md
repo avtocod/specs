@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.8.0
+
+### Added
+
+- Field with path `accidents.has_accidents`
+- Field with path `fines.has_fines`
+
+
 ## v2.7.0
 
 ### Added

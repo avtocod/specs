@@ -371,6 +371,7 @@
                 }
             }
         ],
+        "has_fines": true,
         "count": 1
     },
     "leasings": {
@@ -625,7 +626,8 @@
                 }
             ],
             "count": 2
-        }
+        },
+        "has_accidents": true
     },
     "restrictions": {
         "registration_actions": {

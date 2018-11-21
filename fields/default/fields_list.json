@@ -665,6 +665,13 @@
         ]
     },
     {
+        "path": "accidents.has_accidents",
+        "description": "История ДТП: факт истории ДТП или повреждений из страховых компаний",
+        "types": [
+            "boolean"
+        ]
+    },
+    {
         "path": "stealings.items[].date.stealing",
         "description": "Проверка на угон: Дата угона",
         "types": [
@@ -1314,6 +1321,13 @@
         "description": "Штрафы: ОКТМО (ОКАТО)",
         "types": [
             "string"
+        ]
+    },
+    {
+        "path": "fines.has_fines",
+        "description": "Штрафы: есть ли у ТС штрафы",
+        "types": [
+            "boolean"
         ]
     },
     {

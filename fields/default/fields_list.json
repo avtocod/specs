@@ -294,6 +294,13 @@
         ]
     },
     {
+        "path": "additional_info.vehicle.modifications.was_modificated",
+        "description": "Дополнительная информация: Были ли изменения в конструкции ТС",
+        "types": [
+            "boolean"
+        ]
+    },
+    {
         "path": "diagnostic_cards.items[].date.from",
         "description": "Диагностические карты: Дата начала",
         "types": [

@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.9.0
+
+### Added
+
+- Field with path `additional_info.modifications.was_modificated`
+
 ## v2.8.0
 
 ### Added

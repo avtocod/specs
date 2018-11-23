@@ -1,18 +1,16 @@
 # Changelog
 
-## v2.10.0
-
-### Added
-
-- Field with path `registration_actions.items[].identifiers.pts`
-- Field with path `registration_actions.items[].identifiers.sts`
-- Field with path `additional_info.vehicle.passport.has_dublicate`
-
 ## v2.9.0
 
 ### Added
 
-- Field with path `additional_info.vehicle.modifications.was_modificated`
+- Field with path `additional_info.vehicle.modifications.was_modificated` [#25]
+- Field with path `registration_actions.items[].identifiers.pts` [#27]
+- Field with path `registration_actions.items[].identifiers.sts` [#27]
+- Field with path `additional_info.vehicle.passport.has_dublicate` [#27]
+
+[#25]:https://github.com/avtocod/specs/issues/25
+[#27]:https://github.com/avtocod/specs/issues/27
 
 ## v2.8.0
 

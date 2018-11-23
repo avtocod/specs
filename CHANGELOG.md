@@ -1,10 +1,18 @@
 # Changelog
 
+## v2.10.0
+
+### Added
+
+- Field with path `registration_actions.items[].identifiers.pts`
+- Field with path `registration_actions.items[].identifiers.sts`
+- Field with path `additional_info.vehicle.passport.has_dublicate`
+
 ## v2.9.0
 
 ### Added
 
-- Field with path `additional_info.modifications.was_modificated`
+- Field with path `additional_info.vehicle.modifications.was_modificated`
 
 ## v2.8.0
 

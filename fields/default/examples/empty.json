@@ -93,6 +93,7 @@
                 "date": {
                     "receive": null
                 },
+                "has_dublicate": null,
                 "number": null,
                 "org": {
                     "name": null
@@ -102,6 +103,9 @@
                 "date": {
                     "receive": null
                 }
+            },
+            "modifications": {
+                "was_modificated": null
             },
             "notes": null
         },
@@ -119,6 +123,10 @@
                     "end": null
                 },
                 "reg_num": null,
+                "identifiers": {
+                    "pts": null,
+                    "sts": null
+                },
                 "owner": {
                     "type": null,
                     "org": {

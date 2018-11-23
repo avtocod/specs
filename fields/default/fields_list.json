@@ -266,6 +266,13 @@
         ]
     },
     {
+        "path": "additional_info.vehicle.passport.has_dublicate",
+        "description": "Дополнительная информация: Была ли замена ПТС?",
+        "types": [
+            "boolean"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.passport.number",
         "description": "Дополнительная информация: Номер паспорта ТС (техники)",
         "types": [
@@ -289,6 +296,13 @@
     {
         "path": "additional_info.identifiers.vin.checksum_validated",
         "description": "Дополнительная информация: Проверка контрольного символа VIN",
+        "types": [
+            "boolean"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.modifications.was_modificated",
+        "description": "Дополнительная информация: Были ли изменения в конструкции ТС",
         "types": [
             "boolean"
         ]
@@ -380,6 +394,20 @@
     {
         "path": "registration_actions.items[].reg_num",
         "description": "Регистрационные действия: ГРЗ знак",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].identifiers.pts",
+        "description": "Регистрационные действия: Номер ПТС (паспорт ТС)",
+        "types": [
+            "string"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].identifiers.sts",
+        "description": "Регистрационные действия: Номер СТС (свидетельства регистрации ТС)",
         "types": [
             "string"
         ]

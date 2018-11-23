@@ -93,6 +93,7 @@
                 "date": {
                     "receive": "2018-08-05 00:00:00"
                 },
+                "has_dublicate": false,
                 "number": "8047307033",
                 "org": {
                     "name": "ОАО СервисКазань"
@@ -126,6 +127,10 @@
                     "end": "2015-12-15 00:00:00"
                 },
                 "reg_num": "А332АВ177",
+                "identifiers": {
+                    "pts": "10ЕС040762",
+                    "sts": "24ХТ429962"
+                },
                 "owner": {
                     "type": "PERSONLEGAL",
                     "org": {

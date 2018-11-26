@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.10.0
+
+### Added
+
+- Vehicle marks specifications
+- Vehicle models specifications
+- **PHP SDK** object `VehicleMark`
+- **PHP SDK** object `VehicleModel`
+- **PHP SDK** method `getVehicleMarksSpecification`
+- **PHP SDK** method `getVehicleModelsSpecification`
+
 ## v2.9.0
 
 ### Added

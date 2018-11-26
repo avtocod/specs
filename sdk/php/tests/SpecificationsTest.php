@@ -7,6 +7,8 @@ use Illuminate\Support\Collection;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;
+use Avtocod\Specifications\Structures\VehicleMark;
+use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
 
 class SpecificationsTest extends AbstractTestCase
@@ -221,6 +223,77 @@ class SpecificationsTest extends AbstractTestCase
 
                 $this->assertEquals($source_data['name'], $result[$source_name]->getName());
                 $this->assertEquals($source_data['description'], $result[$source_name]->getDescription());
+            }
+        }
+    }
+
+    /**
+     * Test `getVehicleMarksSpecification()` method.
+     *
+     * @return void
+     */
+    public function testGetVehiclesMarksSpecification()
+    {
+        $instance = $this->instance; // PHP 5.6
+
+        foreach (['default', null] as $group_name) {
+            $result = $instance::getVehicleMarksSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+
+            foreach ($result as $item) {
+                $this->assertInstanceOf(VehicleMark::class, $item);
+            }
+
+            $raw = \json_decode(
+                \file_get_contents($instance::getRootDirectoryPath(
+                    '/vehicles/default/marks.json'
+                )),
+                true
+            );
+
+            $this->assertCount(count($raw), $result);
+
+            foreach ($raw as $source_data) {
+                $mark_id = $source_data['id'];
+
+                $this->assertEquals($source_data['id'], $result[$mark_id]->getId());
+                $this->assertEquals($source_data['name'], $result[$mark_id]->getName());
+            }
+        }
+    }
+
+    /**
+     * Test `getVehicleModelsSpecification()` method.
+     *
+     * @return void
+     */
+    public function testGetVehicleModelsSpecification()
+    {
+        $instance = $this->instance; // PHP 5.6
+
+        foreach (['default', null] as $group_name) {
+            $result = $instance::getVehicleModelsSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+
+            foreach ($result as $item) {
+                $this->assertInstanceOf(VehicleModel::class, $item);
+            }
+
+            $raw = \json_decode(
+                \file_get_contents($instance::getRootDirectoryPath(
+                    '/vehicles/default/models.json'
+                )),
+                true
+            );
+
+            $this->assertCount(count($raw), $result);
+
+            foreach ($raw as $source_data) {
+                $mark_id = $source_data['id'];
+
+                $this->assertEquals($source_data['id'], $result[$mark_id]->getId());
+                $this->assertEquals($source_data['name'], $result[$mark_id]->getName());
+                $this->assertEquals($source_data['mark_id'], $result[$mark_id]->getMarkId());
             }
         }
     }

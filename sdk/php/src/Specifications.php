@@ -6,6 +6,8 @@ use Exception;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;
+use Avtocod\Specifications\Structures\VehicleMark;
+use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
 
 class Specifications
@@ -78,7 +80,7 @@ class Specifications
     }
 
     /**
-     * Get identifier types specification an collection of typed objects.
+     * Get identifier types specification as collection of typed objects.
      *
      * @param string|null $group_name
      *
@@ -105,7 +107,7 @@ class Specifications
     }
 
     /**
-     * Get sources specification an collection of typed objects.
+     * Get sources specification as collection of typed objects.
      *
      * @param string|null $group_name
      *
@@ -126,6 +128,60 @@ class Specifications
 
         foreach ($input as $source_data) {
             $result->put($source_data['name'], new Source($source_data));
+        }
+
+        return $result;
+    }
+
+    /**
+     * Get vehicle marks specification as collection of typed objects.
+     *
+     * @param string|null $group_name
+     *
+     * @throws Exception
+     *
+     * @return Collection|VehicleMark[]
+     */
+    public static function getVehicleMarksSpecification($group_name = null)
+    {
+        $group_name = $group_name === null
+            ? self::GROUP_NAME_DEFAULT
+            : $group_name;
+
+        $result = new Collection;
+        $input  = static::getJsonFileAsArray(
+            static::getRootDirectoryPath("/vehicles/{$group_name}/marks.json")
+        );
+
+        foreach ($input as $source_data) {
+            $result->put($source_data['id'], new VehicleMark($source_data));
+        }
+
+        return $result;
+    }
+
+    /**
+     * Get vehicle models specification as collection of typed objects.
+     *
+     * @param string|null $group_name
+     *
+     * @throws Exception
+     *
+     * @return Collection|VehicleModel[]
+     */
+    public static function getVehicleModelsSpecification($group_name = null)
+    {
+        $group_name = $group_name === null
+            ? self::GROUP_NAME_DEFAULT
+            : $group_name;
+
+        $result = new Collection;
+        $input  = static::getJsonFileAsArray(
+            static::getRootDirectoryPath("/vehicles/{$group_name}/models.json")
+        );
+
+        foreach ($input as $source_data) {
+            $result->put($source_data['id'], new VehicleModel($source_data));
         }
 
         return $result;

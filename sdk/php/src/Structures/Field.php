@@ -38,6 +38,13 @@ class Field extends AbstractStructure
     protected $types = [];
 
     /**
+     * Possible sources.
+     *
+     * @var string[]|array
+     */
+    protected $fillable_by = [];
+
+    /**
      * {@inheritdoc}
      */
     public function toArray()
@@ -46,6 +53,7 @@ class Field extends AbstractStructure
             'path'        => $this->path,
             'description' => $this->description,
             'types'       => $this->types,
+            'fillable_by' => $this->fillable_by,
         ];
     }
 
@@ -90,6 +98,14 @@ class Field extends AbstractStructure
     }
 
     /**
+     * Get possible sources.
+     */
+    public function getFillableBy()
+    {
+        return $this->fillable_by;
+    }
+
+    /**
      * Get field nesting depth.
      *
      * @return int
@@ -131,6 +147,12 @@ class Field extends AbstractStructure
 
                     case 'types':
                         $this->types = $value === null
+                            ? null
+                            : (array) $value;
+                        break;
+
+                    case 'fillable_by':
+                        $this->fillable_by = $value === null
                             ? null
                             : (array) $value;
                         break;

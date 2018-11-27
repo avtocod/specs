@@ -62,7 +62,8 @@ class SpecificationsTest extends AbstractTestCase
         $instance = $this->instance; // PHP 5.6
 
         foreach (['default', null] as $group_name) {
-            $result = $instance::getFieldsSpecification($group_name);
+            $result  = $instance::getFieldsSpecification($group_name);
+            $sources = $instance::getSourcesSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -82,6 +83,13 @@ class SpecificationsTest extends AbstractTestCase
                 $this->assertEquals($field_data['path'], $result[$field_name]->getPath());
                 $this->assertEquals($field_data['description'], $result[$field_name]->getDescription());
                 $this->assertEquals($field_data['types'], $result[$field_name]->getTypes());
+                // If field has 'fillable_by' sources, we must check that sources are in our spec
+                if (isset($field_data['fillable_by'])) {
+                    $this->assertEquals($field_data['fillable_by'], $result[$field_name]->getFillableBy());
+                    foreach ($field_data['fillable_by'] as $source) {
+                        $this->assertTrue($sources->contains('name', $source));
+                    }
+                }
             }
         }
     }

@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.11.0
+
+### Added
+
+- Add `fillable_by` field for fields specification. This version includes sources that we could find out with responces stubs. May be incompleted.
+- Add `references.base` source.
+- Add `tech.base` source.
+- Add `pledge.house` source.
+- Add `av.taxi` source.
+- Add `taxi.registry` source.
+
 ## v2.10.0
 
 ### Added

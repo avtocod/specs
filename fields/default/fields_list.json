@@ -64,14 +64,16 @@
         "description": "Идентификатор ТС: Номер шасси",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "tech_data.manufacturer.name",
         "description": "Характеристики ТС: Производитель",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "tech_data.brand.id",
@@ -114,7 +116,8 @@
         "description": "Характеристики ТС: Марка (по-русски)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "tech_data.brand.logotype.uri",
@@ -231,7 +234,8 @@
         "description": "Характеристики ТС: Номер шасси",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "tech_data.engine.fuel.type",
@@ -424,7 +428,8 @@
         "description": "Дополнительная информация: Гео-данные владельца (техники)",
         "types": [
             "object"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.sts.date.receive",
@@ -488,7 +493,8 @@
         "description": "Дополнительная информация: Заметки по ТС (техники)",
         "types": [
             "array"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "additional_info.identifiers.vin.checksum_validated",
@@ -505,7 +511,8 @@
         "description": "Дополнительная информация: Были ли изменения в конструкции ТС",
         "types": [
             "boolean"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "diagnostic_cards.items[].date.from",
@@ -723,7 +730,8 @@
         "description": "Регистрационные действия: Гео-данные действия",
         "types": [
             "object"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "insurance.osago.items[].number",
@@ -800,14 +808,16 @@
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
         "types": [
             "integer"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "calculate.tax.regions.yearly.amount",
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для регионов)",
         "types": [
             "integer"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "calculate.osago.coefficients.regional.value",
@@ -1019,21 +1029,24 @@
         "description": "История ДТП: Гео-данные действия",
         "types": [
             "object"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "accidents.history.items[].damage.points",
         "description": "История ДТП: Места повреждений",
         "types": [
             "array"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "accidents.history.items[].damage.raw",
         "description": "История ДТП: Описание повреждений в не нормализованном виде",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "accidents.insurance.items[].date.event",
@@ -1070,7 +1083,8 @@
         "description": "История повреждений из страховых компаний: Размер повреждения или описание",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "accidents.has_accidents",
@@ -1098,7 +1112,8 @@
         "description": "Проверка на угон: Данные о месте угона",
         "types": [
             "object"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "stealings.is_wanted",
@@ -1126,14 +1141,16 @@
         "description": "Утилизация: Имя организации",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "utilizations.items[].country.name",
         "description": "Утилизация: Имя страны",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "utilizations.was_utilized",
@@ -1171,7 +1188,8 @@
         "description": "Ограничения на рег. действия: Дата окончания действия ограничения",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "restrictions.registration_actions.items[].vehicle.year",
@@ -1302,42 +1320,48 @@
         "description": "Обременения на ТС: Залогодатель (имя)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "pledges.items[].pledgors[].type",
         "description": "Обременения на ТС: Залогодатель (тип)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "pledges.items[].pledgors[].dob",
         "description": "Обременения на ТС: Залогодатель (dob)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "pledges.items[].pledgees[].name",
         "description": "Обременения на ТС: Залогодержатель (имя)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "pledges.items[].pledgees[].type",
         "description": "Обременения на ТС: Залогодержатель (тип)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "pledges.items[].pledgees[].dob",
         "description": "Обременения на ТС: Залогодержатель (dob)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "pledges.items[].data",
@@ -1345,7 +1369,8 @@
         "types": [
             "string",
             "array"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].date.event",
@@ -1364,7 +1389,8 @@
         "description": "История по таможне: Имя документа",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].document.number",
@@ -1403,7 +1429,8 @@
         "description": "История по таможне: Пошлина",
         "types": [
             "integer"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].price.amount",
@@ -1473,7 +1500,8 @@
         "description": "История по таможне: Владелец",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].country.from.name",
@@ -1561,8 +1589,7 @@
         "fillable_by": [
             "av.taxi",
             "base.taxi",
-            "base.tech",
-            "taxi.registry"
+            "base.tech"
         ]
     },
     {
@@ -1573,8 +1600,7 @@
         ],
         "fillable_by": [
             "av.taxi",
-            "base.tech",
-            "taxi.registry"
+            "base.tech"
         ]
     },
     {
@@ -1584,8 +1610,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1595,7 +1620,7 @@
             "string"
         ],
         "fillable_by": [
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1605,7 +1630,7 @@
             "string"
         ],
         "fillable_by": [
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1617,8 +1642,7 @@
         "fillable_by": [
             "av.taxi",
             "base.taxi",
-            "base.tech",
-            "taxi.registry"
+            "base.tech"
         ]
     },
     {
@@ -1626,7 +1650,8 @@
         "description": "Такси: Адрес компании или ИП (перевозчика)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "taxi.history.items[].ogrn",
@@ -1635,8 +1660,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1647,7 +1671,7 @@
         ],
         "fillable_by": [
             "base.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1655,7 +1679,8 @@
         "description": "Такси: Желтый ли номерной знак?",
         "types": [
             "boolean"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "taxi.history.items[].vehicle.brand.name",
@@ -1664,8 +1689,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1675,7 +1699,7 @@
             "string"
         ],
         "fillable_by": [
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1685,8 +1709,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1696,7 +1719,7 @@
             "string"
         ],
         "fillable_by": [
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1704,7 +1727,8 @@
         "description": "Такси: Цвет автомобиля",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "taxi.history.items[].vehicle.reg_num",
@@ -1713,8 +1737,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1724,8 +1747,7 @@
             "integer"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1735,7 +1757,7 @@
             "string"
         ],
         "fillable_by": [
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1745,7 +1767,7 @@
             "string"
         ],
         "fillable_by": [
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1755,7 +1777,7 @@
             "string"
         ],
         "fillable_by": [
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1763,14 +1785,16 @@
         "description": "Такси: Причина отзыва лицензии",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "taxi.history.items[].cancel.note",
         "description": "Такси: Заметка об отзыве лицензии",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "taxi.history.items[].permit.number",
@@ -1779,8 +1803,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -1790,8 +1813,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "taxi.registry"
+            "av.taxi"
         ]
     },
     {
@@ -2080,7 +2102,8 @@
         "description": "car_price: Дата выпуска автомобиля",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "car_price.items[].amount",

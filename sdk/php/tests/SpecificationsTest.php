@@ -91,7 +91,7 @@ class SpecificationsTest extends AbstractTestCase
                     "{$path} has no 'fillable_by' attribute"
                 );
 
-                $this->assertInternalType(IsType::TYPE_ARRAY, $fillable_by);
+                $this->assertInternalType('array', $fillable_by);
 
                 // @todo: uncomment below after review
                 // $this->assertNotEmpty($fillable_by, "Path {$path} has empty 'fillable_by' attribute");

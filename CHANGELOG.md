@@ -4,12 +4,13 @@
 
 ### Added
 
-- Add `fillable_by` field for fields specification. This version includes sources that we could find out with responces stubs. May be incompleted.
-- Add `references.base` source.
-- Add `tech.base` source.
-- Add `pledge.house` source.
-- Add `av.taxi` source.
-- Add `taxi.registry` source.
+- `fillable_by` field for fields specification [#34]
+- Source `references.base`
+- Source `tech.base`
+- Source `pledge.house`
+- Source `av.taxi`
+
+[#34]:https://github.com/avtocod/specs/issues/34
 
 ## v2.10.0
 

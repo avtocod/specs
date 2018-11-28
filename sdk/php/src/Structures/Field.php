@@ -99,6 +99,8 @@ class Field extends AbstractStructure
 
     /**
      * Get possible sources.
+     *
+     * @return array|string[]
      */
     public function getFillableBy()
     {

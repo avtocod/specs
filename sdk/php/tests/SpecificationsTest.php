@@ -4,6 +4,7 @@ namespace Avtocod\Specifications\Tests;
 
 use Exception;
 use Illuminate\Support\Collection;
+use PHPUnit\Framework\Constraint\IsType;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;
@@ -64,6 +65,7 @@ class SpecificationsTest extends AbstractTestCase
         foreach (['default', null] as $group_name) {
             $result  = $instance::getFieldsSpecification($group_name);
             $sources = $instance::getSourcesSpecification($group_name);
+
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -77,18 +79,25 @@ class SpecificationsTest extends AbstractTestCase
                 true
             );
 
-            $this->assertCount(count($raw), $result);
+            $this->assertCount(\count($raw), $result);
 
-            foreach ($raw as $field_name => $field_data) {
-                $this->assertEquals($field_data['path'], $result[$field_name]->getPath());
-                $this->assertEquals($field_data['description'], $result[$field_name]->getDescription());
-                $this->assertEquals($field_data['types'], $result[$field_name]->getTypes());
-                // If field has 'fillable_by' sources, we must check that sources are in our spec
-                if (isset($field_data['fillable_by'])) {
-                    $this->assertEquals($field_data['fillable_by'], $result[$field_name]->getFillableBy());
-                    foreach ($field_data['fillable_by'] as $source) {
-                        $this->assertTrue($sources->contains('name', $source));
-                    }
+            foreach ($raw as $i => $field_data) {
+                $this->assertEquals($path = $field_data['path'], $result[$i]->getPath());
+                $this->assertEquals($field_data['description'], $result[$i]->getDescription());
+                $this->assertEquals($field_data['types'], $result[$i]->getTypes());
+                $this->assertEquals(
+                    $fillable_by = $field_data['fillable_by'],
+                    $result[$i]->getFillableBy(),
+                    "{$path} has no 'fillable_by' attribute"
+                );
+
+                $this->assertInternalType(IsType::TYPE_ARRAY, $fillable_by);
+
+                // @todo: uncomment below after review
+                // $this->assertNotEmpty($fillable_by, "Path {$path} has empty 'fillable_by' attribute");
+
+                foreach ($fillable_by as $source) {
+                    $this->assertTrue($sources->contains('name', $source));
                 }
             }
         }

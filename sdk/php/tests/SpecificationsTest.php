@@ -4,7 +4,6 @@ namespace Avtocod\Specifications\Tests;
 
 use Exception;
 use Illuminate\Support\Collection;
-use PHPUnit\Framework\Constraint\IsType;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;

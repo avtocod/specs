@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Avtocod\Specifications\Structures;
 
@@ -132,7 +132,7 @@ class Field extends AbstractStructure
                         break;
 
                     case 'types':
-                        /** @var string[]|null $value */
+                        /* @var string[]|null $value */
                         $value === null
                             ? null
                             : \array_filter((array) $value, '\is_string');

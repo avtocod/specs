@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Avtocod\Specifications\Structures;
 
 use Traversable;
@@ -23,7 +25,7 @@ class IdentifierType extends AbstractStructure
     /**
      * {@inheritdoc}
      */
-    public function toArray()
+    public function toArray(): array
     {
         return [
             'type'        => $this->type,

@@ -1,14 +1,19 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Avtocod\Specifications;
 
 use Exception;
+use InvalidArgumentException;
+use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
+use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
 class Specifications
 {
@@ -24,12 +29,12 @@ class Specifications
      *
      * @return string
      */
-    public static function getRootDirectoryPath($additional_path = null)
+    public static function getRootDirectoryPath(string $additional_path = null): string
     {
-        $root = dirname(dirname(dirname(__DIR__))); // `dirname()` reason - https://git.io/vhXvr
+        $root = \dirname(\dirname(\dirname(__DIR__))); // `dirname()` reason - https://git.io/vhXvr
 
         return $additional_path !== null
-            ? $root . DIRECTORY_SEPARATOR . ltrim((string) $additional_path, ' \\/')
+            ? $root . DIRECTORY_SEPARATOR . ltrim($additional_path, ' \\/')
             : $root;
     }
 
@@ -42,11 +47,9 @@ class Specifications
      *
      * @return Collection|Field[]
      */
-    public static function getFieldsSpecification($group_name = null)
+    public static function getFieldsSpecification(string $group_name = null): Collection
     {
-        $group_name = $group_name === null
-            ? self::GROUP_NAME_DEFAULT
-            : $group_name;
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
         $input  = static::getJsonFileAsArray(
@@ -68,11 +71,9 @@ class Specifications
      *
      * @return array
      */
-    public static function getReportExample($group_name = null, $name = 'full')
+    public static function getReportExample(string $group_name = null, string $name = 'full'): array
     {
-        $group_name = $group_name === null
-            ? self::GROUP_NAME_DEFAULT
-            : $group_name;
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         return static::getJsonFileAsArray(
             static::getRootDirectoryPath("/fields/{$group_name}/examples/{$name}.json")
@@ -88,11 +89,9 @@ class Specifications
      *
      * @return Collection|IdentifierType[]
      */
-    public static function getIdentifierTypesSpecification($group_name = null)
+    public static function getIdentifierTypesSpecification(string $group_name = null): Collection
     {
-        $group_name = $group_name === null
-            ? self::GROUP_NAME_DEFAULT
-            : $group_name;
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
         $input  = static::getJsonFileAsArray(
@@ -115,11 +114,9 @@ class Specifications
      *
      * @return Collection|Source[]
      */
-    public static function getSourcesSpecification($group_name = null)
+    public static function getSourcesSpecification(string $group_name = null): Collection
     {
-        $group_name = $group_name === null
-            ? self::GROUP_NAME_DEFAULT
-            : $group_name;
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
         $input  = static::getJsonFileAsArray(
@@ -142,11 +139,9 @@ class Specifications
      *
      * @return Collection|VehicleMark[]
      */
-    public static function getVehicleMarksSpecification($group_name = null)
+    public static function getVehicleMarksSpecification(string $group_name = null): Collection
     {
-        $group_name = $group_name === null
-            ? self::GROUP_NAME_DEFAULT
-            : $group_name;
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
         $input  = static::getJsonFileAsArray(
@@ -169,11 +164,9 @@ class Specifications
      *
      * @return Collection|VehicleModel[]
      */
-    public static function getVehicleModelsSpecification($group_name = null)
+    public static function getVehicleModelsSpecification(string $group_name = null): Collection
     {
-        $group_name = $group_name === null
-            ? self::GROUP_NAME_DEFAULT
-            : $group_name;
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
         $input  = static::getJsonFileAsArray(
@@ -192,24 +185,17 @@ class Specifications
      *
      * @param string $file_path
      *
-     * @throws Exception
+     * @throws InvalidArgumentException
+     * @throws JsonEncodeDecodeException
      *
      * @return array
      */
-    protected static function getJsonFileAsArray($file_path)
+    protected static function getJsonFileAsArray(string $file_path): array
     {
-        if (! \file_exists($file_path)) {
-            throw new Exception("File [{$file_path}] was not found");
+        if (! \is_file($file_path)) {
+            throw new \InvalidArgumentException("File [{$file_path}] was not found");
         }
 
-        $result = \json_decode(file_get_contents($file_path), true);
-
-        if (! \is_array($result) || \json_last_error() !== JSON_ERROR_NONE) {
-            // @codeCoverageIgnoreStart
-            throw new Exception("Cannot parse json file: [{$file_path}]");
-            // @codeCoverageIgnoreEnd
-        }
-
-        return $result;
+        return (array) Json::decode((string) \file_get_contents($file_path), true);
     }
 }

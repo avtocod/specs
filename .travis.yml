@@ -25,6 +25,7 @@ install:
 - if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --no-suggest --prefer-stable --prefer-lowest; fi
 
 script:
+- composer phpstan
 - if [[ $coverage = 'true' ]]; then composer test-cover; else composer test; fi
 
 after_success:
@@ -32,11 +33,6 @@ after_success:
 
 matrix:
   include:
-  - php: 5.6
-    env: setup=lowest
-  - php: 5.6
-    env: setup=stable
-
   - php: 7.0
     env: coverage=true
   - php: 7.0

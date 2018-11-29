@@ -25,7 +25,6 @@ install:
 - if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --no-suggest --prefer-stable --prefer-lowest; fi
 
 script:
-- composer phpstan
 - if [[ $coverage = 'true' ]]; then composer test-cover; else composer test; fi
 
 after_success:

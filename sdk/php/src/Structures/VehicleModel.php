@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Avtocod\Specifications\Structures;
 
 use Traversable;
@@ -30,7 +32,7 @@ class VehicleModel extends AbstractStructure
     /**
      * {@inheritdoc}
      */
-    public function toArray()
+    public function toArray(): array
     {
         return [
             'name'    => $this->name,

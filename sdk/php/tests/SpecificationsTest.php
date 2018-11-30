@@ -58,7 +58,7 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetFieldsSpecification()
     {
         foreach (['default', null] as $group_name) {
-            $result = $this->instance::getFieldsSpecification($group_name);
+            $result  = $this->instance::getFieldsSpecification($group_name);
             $sources = $this->instance::getSourcesSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 

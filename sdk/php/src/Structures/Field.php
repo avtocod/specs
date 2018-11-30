@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Avtocod\Specifications\Structures;
 
 use Traversable;
@@ -33,14 +35,14 @@ class Field extends AbstractStructure
     /**
      * Possible data types.
      *
-     * @var string[]|array
+     * @var string[]|null
      */
-    protected $types = [];
+    protected $types;
 
     /**
      * {@inheritdoc}
      */
-    public function toArray()
+    public function toArray(): array
     {
         return [
             'path'        => $this->path,
@@ -74,15 +76,15 @@ class Field extends AbstractStructure
      *
      * @return string[]|array
      */
-    public function getPathParts()
+    public function getPathParts(): array
     {
-        return \array_values(\array_filter(\explode(static::PATH_DELIMITER, $this->path)));
+        return \array_values(\array_filter(\explode(static::PATH_DELIMITER, (string) $this->path)));
     }
 
     /**
      * Get possible data types.
      *
-     * @return array|string[]
+     * @return string[]|null
      */
     public function getTypes()
     {
@@ -94,9 +96,9 @@ class Field extends AbstractStructure
      *
      * @return int
      */
-    public function nestingDepth()
+    public function nestingDepth(): int
     {
-        return \mb_substr_count($this->path, static::NESTING_SIGNATURE);
+        return \mb_substr_count((string) $this->path, static::NESTING_SIGNATURE);
     }
 
     /**
@@ -104,7 +106,7 @@ class Field extends AbstractStructure
      *
      * @return bool
      */
-    public function isNested()
+    public function isNested(): bool
     {
         return $this->nestingDepth() > 0;
     }
@@ -130,9 +132,12 @@ class Field extends AbstractStructure
                         break;
 
                     case 'types':
-                        $this->types = $value === null
+                        /* @var string[]|null $value */
+                        $value === null
                             ? null
-                            : (array) $value;
+                            : \array_filter((array) $value, '\is_string');
+
+                        $this->types = $value;
                         break;
                 }
             }

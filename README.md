@@ -78,6 +78,7 @@
 #### PHP SDK
 
 [![Build Status][badge_build_status]][link_build_status]
+[![Coverage][badge_coverage]][link_coverage]
 [![Version][badge_packagist_version]][link_packagist]
 ![Required PHP version][badge_php_version]
 [![Downloads count][badge_packagist_dl_count]][link_packagist]
@@ -109,16 +110,18 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [badge_release_version]:https://img.shields.io/github/release/avtocod/specs.svg?style=for-the-badge&maxAge=5
 [badge_release_date]:https://img.shields.io/github/release-date/avtocod/specs.svg?style=for-the-badge&maxAge=5
 [badge_commits_since_release]:https://img.shields.io/github/commits-since/avtocod/specs/latest.svg?style=for-the-badge&maxAge=5
-[badge_packagist_version]:https://img.shields.io/packagist/v/avtocod/specs.svg?style=flat-square&maxAge=5
-[badge_php_version]:https://img.shields.io/packagist/php-v/avtocod/specs.svg?style=flat-square&maxAge=5
-[badge_build_status]:https://img.shields.io/scrutinizer/build/g/avtocod/specs.svg?style=flat-square&maxAge=120&logo=scrutinizer
-[badge_packagist_dl_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?style=flat-square&maxAge=30
+[badge_packagist_version]:https://img.shields.io/packagist/v/avtocod/specs.svg?maxAge=5
+[badge_php_version]:https://img.shields.io/packagist/php-v/avtocod/specs.svg?maxAge=5
+[badge_build_status]:https://travis-ci.org/avtocod/specs.svg?branch=master
+[badge_packagist_dl_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?maxAge=30
 [badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=for-the-badge&maxAge=30
 [badge_releases_dl_count]:https://img.shields.io/github/downloads/avtocod/specs/total.svg?style=for-the-badge&maxAge=30
+[badge_coverage]:https://img.shields.io/codecov/c/github/avtocod/specs/master.svg?maxAge=5
 [link_packagist]:https://packagist.org/packages/avtocod/specs
-[link_build_status]:https://scrutinizer-ci.com/g/avtocod/specs/build-status/master
+[link_build_status]:https://travis-ci.org/avtocod/specs
 [link_issues]:https://github.com/avtocod/specs/issues
 [link_create_issue]:https://github.com/avtocod/specs/issues/new/choose
+[link_coverage]:https://codecov.io/gh/avtocod/specs
 [getcomposer]:https://getcomposer.org/download/
 [git_tagging]:https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [watch_repo]:https://github.com/avtocod/specs/subscription

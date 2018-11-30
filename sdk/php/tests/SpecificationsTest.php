@@ -45,11 +45,9 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetRootDirectoryPath()
     {
-        $instance = $this->instance; // PHP 5.6
-
-        $this->assertEquals($instance::getRootDirectoryPath(), $root = $this->getRootDirPath());
-        $this->assertEquals($instance::getRootDirectoryPath('foo'), $root . DIRECTORY_SEPARATOR . 'foo');
-        $this->assertEquals($instance::getRootDirectoryPath(' /foo'), $root . DIRECTORY_SEPARATOR . 'foo');
+        $this->assertEquals($this->instance::getRootDirectoryPath(), $root = $this->getRootDirPath());
+        $this->assertEquals($this->instance::getRootDirectoryPath('foo'), $root . DIRECTORY_SEPARATOR . 'foo');
+        $this->assertEquals($this->instance::getRootDirectoryPath(' /foo'), $root . DIRECTORY_SEPARATOR . 'foo');
     }
 
     /**
@@ -59,12 +57,9 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetFieldsSpecification()
     {
-        $instance = $this->instance; // PHP 5.6
-
         foreach (['default', null] as $group_name) {
-            $result  = $instance::getFieldsSpecification($group_name);
-            $sources = $instance::getSourcesSpecification($group_name);
-
+            $result = $this->instance::getFieldsSpecification($group_name);
+            $sources = $this->instance::getSourcesSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -72,7 +67,7 @@ class SpecificationsTest extends AbstractTestCase
             }
 
             $raw = \json_decode(
-                \file_get_contents($instance::getRootDirectoryPath(
+                \file_get_contents($this->instance::getRootDirectoryPath(
                     '/fields/default/fields_list.json'
                 )),
                 true
@@ -112,9 +107,7 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
-        $instance = $this->instance; // PHP 5.6
-
-        $instance::getFieldsSpecification('foo bar');
+        $this->instance::getFieldsSpecification('foo bar');
     }
 
     /**
@@ -124,15 +117,13 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetReportExample()
     {
-        $instance = $this->instance; // PHP 5.6
-
         foreach (['default', null] as $group_name) {
             foreach (['full', 'empty'] as $name) {
-                $result = $instance::getReportExample($group_name, $name);
+                $result = $this->instance::getReportExample($group_name, $name);
                 $this->assertInternalType('array', $result);
 
                 $raw = \json_decode(
-                    \file_get_contents($instance::getRootDirectoryPath(
+                    \file_get_contents($this->instance::getRootDirectoryPath(
                         "/fields/default/examples/{$name}.json"
                     )),
                     true
@@ -153,9 +144,7 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
-        $instance = $this->instance; // PHP 5.6
-
-        $instance::getReportExample('foo bar');
+        $this->instance::getReportExample('foo bar');
     }
 
     /**
@@ -165,10 +154,8 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetIdentifierTypesSpecification()
     {
-        $instance = $this->instance; // PHP 5.6
-
         foreach (['default', null] as $group_name) {
-            $result = $instance::getIdentifierTypesSpecification($group_name);
+            $result = $this->instance::getIdentifierTypesSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -176,13 +163,13 @@ class SpecificationsTest extends AbstractTestCase
             }
 
             $raw = \json_decode(
-                \file_get_contents($instance::getRootDirectoryPath(
+                \file_get_contents($this->instance::getRootDirectoryPath(
                     '/identifiers/default/types_list.json'
                 )),
                 true
             );
 
-            $this->assertCount(count($raw), $result);
+            $this->assertCount(\count($raw), $result);
 
             foreach ($raw as $identifier_data) {
                 $identifier_type = $identifier_data['type'];
@@ -203,9 +190,7 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
-        $instance = $this->instance; // PHP 5.6
-
-        $instance::getIdentifierTypesSpecification('foo bar');
+        $this->instance::getIdentifierTypesSpecification('foo bar');
     }
 
     /**
@@ -215,10 +200,8 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetSourcesSpecification()
     {
-        $instance = $this->instance; // PHP 5.6
-
         foreach (['default', null] as $group_name) {
-            $result = $instance::getSourcesSpecification($group_name);
+            $result = $this->instance::getSourcesSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -226,13 +209,13 @@ class SpecificationsTest extends AbstractTestCase
             }
 
             $raw = \json_decode(
-                \file_get_contents($instance::getRootDirectoryPath(
+                \file_get_contents($this->instance::getRootDirectoryPath(
                     '/sources/default/sources_list.json'
                 )),
                 true
             );
 
-            $this->assertCount(count($raw), $result);
+            $this->assertCount(\count($raw), $result);
 
             foreach ($raw as $source_data) {
                 $source_name = $source_data['name'];
@@ -250,10 +233,8 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetVehiclesMarksSpecification()
     {
-        $instance = $this->instance; // PHP 5.6
-
         foreach (['default', null] as $group_name) {
-            $result = $instance::getVehicleMarksSpecification($group_name);
+            $result = $this->instance::getVehicleMarksSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -261,7 +242,7 @@ class SpecificationsTest extends AbstractTestCase
             }
 
             $raw = \json_decode(
-                \file_get_contents($instance::getRootDirectoryPath(
+                \file_get_contents($this->instance::getRootDirectoryPath(
                     '/vehicles/default/marks.json'
                 )),
                 true
@@ -285,10 +266,8 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetVehicleModelsSpecification()
     {
-        $instance = $this->instance; // PHP 5.6
-
         foreach (['default', null] as $group_name) {
-            $result = $instance::getVehicleModelsSpecification($group_name);
+            $result = $this->instance::getVehicleModelsSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -296,7 +275,7 @@ class SpecificationsTest extends AbstractTestCase
             }
 
             $raw = \json_decode(
-                \file_get_contents($instance::getRootDirectoryPath(
+                \file_get_contents($this->instance::getRootDirectoryPath(
                     '/vehicles/default/models.json'
                 )),
                 true
@@ -324,8 +303,6 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
-        $instance = $this->instance; // PHP 5.6
-
-        $instance::getSourcesSpecification('foo bar');
+        $this->instance::getSourcesSpecification('foo bar');
     }
 }

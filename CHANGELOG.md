@@ -1,16 +1,29 @@
 # Changelog
 
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
+
 ## v2.11.0
+
+### Changed
+
+- Migrate to the [Travis CI][travis-ci]
+- **PHP SDK** minimal PHP version now is 7.0 _([version 5.6 is not supported since 31 Dec 2018][php-supported-versions])_
+- **PHP SDK** code a little bit refactored for PHP version 7.0
 
 ### Added
 
 - `fillable_by` field for fields specification [#34]
-- Source `references.base`
 - Source `tech.base`
-- Source `pledge.house`
+- Source `references.base`
 - Source `av.taxi`
+- Source `pledge.house`
+- **PHP SDK** Static code analyzer `phpstan` installed as `dev` dependency
 
 [#34]:https://github.com/avtocod/specs/issues/34
+[php-supported-versions]:http://php.net/supported-versions.php
+[travis-ci]:https://travis-ci.org/avtocod/specs
 
 ## v2.10.0
 
@@ -166,5 +179,7 @@
 - Report example `./fields/default/examples/Z94CB41AAGR323020.json`
 - Report example `./fields/default/examples/A1111111111111111.json`
 
+[keepachangelog]:https://keepachangelog.com/en/1.0.0/
+[semver]:https://semver.org/spec/v2.0.0.html
 [#12]:https://github.com/avtocod/specs/issues/12
 [#9]:https://github.com/avtocod/specs/issues/9

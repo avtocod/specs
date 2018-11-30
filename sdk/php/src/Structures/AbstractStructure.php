@@ -1,13 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Avtocod\Specifications\Structures;
 
 use ArrayAccess;
 use ArrayIterator;
 use LogicException;
 use IteratorAggregate;
+use Tarampampam\Wrappers\Json;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Arrayable;
+use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
 abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, IteratorAggregate
 {
@@ -23,18 +27,20 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
 
     /**
      * {@inheritdoc}
+     *
+     * @throws JsonEncodeDecodeException
      */
-    public function toJson($options = 0)
+    public function toJson($options = 0): string
     {
-        return \json_encode($this->toArray(), $options);
+        return Json::encode($this->toArray(), $options);
     }
 
     /**
      * Get an iterator for the items.
      *
-     * @return \ArrayIterator
+     * @return ArrayIterator
      */
-    public function getIterator()
+    public function getIterator(): ArrayIterator
     {
         return new ArrayIterator($this->toArray());
     }
@@ -42,9 +48,9 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     /**
      * {@inheritdoc}
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
-        return (bool) \property_exists($this, $offset);
+        return \property_exists($this, $offset);
     }
 
     /**

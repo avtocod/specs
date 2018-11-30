@@ -34,14 +34,10 @@ after_success:
 matrix:
   include:
   - php: 7.0
-    env: coverage=true
-  - php: 7.0
     env: setup=lowest
   - php: 7.0
     env: setup=stable
 
-  - php: 7.1
-    env: coverage=true
   - php: 7.1
     env: setup=lowest
   - php: 7.1

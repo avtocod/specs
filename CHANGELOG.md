@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v2.12.0
+
+### Added 
+
+- Field with path `repairs.history.items[].assessor.name` [#37]
+
+### Fixed
+
+- Field with path `repairs.history.items[].insurer.name` has a duplicate, one instance has been deleted [#37]
+
+[#37]:https://github.com/avtocod/specs/issues/37
+
 ## v2.11.0
 
 ### Changed

@@ -8,11 +8,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added 
 
-- Field with path `repairs.history.items[].assessor.name`
+- Field with path `repairs.history.items[].assessor.name` [#37]
 
 ### Fixed
 
-- Field with path `repairs.history.items[].insurer.name` has a duplicate, one instance has been deleted.
+- Field with path `repairs.history.items[].insurer.name` has a duplicate, one instance has been deleted [#37]
+
+[#37]:https://github.com/avtocod/specs/issues/37
 
 ## v2.11.0
 

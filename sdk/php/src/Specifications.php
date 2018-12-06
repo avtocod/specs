@@ -31,7 +31,7 @@ class Specifications
      */
     public static function getRootDirectoryPath(string $additional_path = null): string
     {
-        $root = \dirname(\dirname(\dirname(__DIR__))); // `dirname()` reason - https://git.io/vhXvr
+        $root = \dirname(__DIR__, 3);
 
         return $additional_path !== null
             ? $root . DIRECTORY_SEPARATOR . ltrim($additional_path, ' \\/')

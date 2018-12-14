@@ -106,8 +106,12 @@ class SpecificationsTest extends AbstractTestCase
                     $this->assertNotEmpty($fillable_by, "Path {$path} has empty 'fillable_by' attribute");
                 }
 
+                $fillable_sources = [];
+
                 foreach ($fillable_by as $source) {
                     $this->assertTrue($sources->contains('name', $source), "Path [{$path}] contains invalid source [{$source}]");
+                    $this->assertNotContains($source, $fillable_sources, "Path [{$path}] contains source duplicate: {$source}");
+                    $fillable_sources[] = $source;
                 }
 
                 $this->assertNotContains($path, $patches, "Fields specification contains field duplicate: {$path}");

@@ -8,8 +8,11 @@
         "fillable_by": [
             "base",
             "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "gibdd.eaisto",
             "base.tech",
-            "gibdd.eaisto"
+            "tech.ext"
         ]
     },
     {
@@ -21,7 +24,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.tech",
             "gibdd.eaisto"
         ]
     },
@@ -43,9 +45,7 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "base.ext",
-            "gibdd.eaisto",
             "gibdd.history"
         ]
     },
@@ -56,7 +56,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.eaisto"
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -65,7 +66,11 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
+        ]
     },
     {
         "path": "tech_data.manufacturer.name",
@@ -94,11 +99,10 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
+            "gibdd.history",
             "base.taxi",
-            "base.tech",
-            "gibdd.eaisto",
-            "gibdd.history"
+            "customs.base",
+            "gibdd.eaisto"
         ]
     },
     {
@@ -146,8 +150,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.eaisto",
-            "gibdd.history"
+            "gibdd.history",
+            "gibdd.eaisto"
         ]
     },
     {
@@ -169,8 +173,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
-            "base.tech",
             "gibdd.history"
         ]
     },
@@ -183,8 +185,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
-            "gibdd.history"
+            "gibdd.history",
+            "base.taxi"
         ]
     },
     {
@@ -196,8 +198,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
-            "base.tech",
             "gibdd.history"
         ]
     },
@@ -221,11 +221,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
-            "base.taxi",
-            "base.tech",
-            "customs.base",
             "gibdd.eaisto",
+            "base.taxi",
             "gibdd.history"
         ]
     },
@@ -235,7 +232,11 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
+        ]
     },
     {
         "path": "tech_data.engine.fuel.type",
@@ -256,10 +257,8 @@
             "string"
         ],
         "fillable_by": [
-            "base",
-            "base.ext",
             "base.taxi",
-            "base.tech"
+            "base.ext"
         ]
     },
     {
@@ -269,9 +268,7 @@
             "string"
         ],
         "fillable_by": [
-            "base",
-            "base.ext",
-            "customs.base"
+            "base.ext"
         ]
     },
     {
@@ -283,11 +280,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
-            "base.taxi",
-            "base.tech",
-            "customs.base",
-            "gibdd.history"
+            "gibdd.history",
+            "base.taxi"
         ]
     },
     {
@@ -299,10 +293,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
-            "base.taxi",
-            "base.tech",
-            "gibdd.history"
+            "gibdd.history",
+            "base.taxi"
         ]
     },
     {
@@ -314,8 +306,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
-            "base.tech",
             "gibdd.history"
         ]
     },
@@ -328,9 +318,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
-            "base.tech",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "base.taxi"
         ]
     },
     {
@@ -342,10 +331,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
-            "base.taxi",
-            "base.tech",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "base.taxi"
         ]
     },
     {
@@ -354,9 +341,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "base.tech"
-        ]
+        "fillable_by": []
     },
     {
         "path": "tech_data.drive.type",
@@ -378,8 +363,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
-            "base.tech"
+            "base.taxi"
         ]
     },
     {
@@ -391,9 +375,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
             "base.taxi",
-            "base.tech",
             "gibdd.eaisto"
         ]
     },
@@ -406,9 +388,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.moscow",
             "base.taxi",
-            "base.tech",
             "gibdd.eaisto"
         ]
     },
@@ -429,7 +409,10 @@
         "types": [
             "object"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
     },
     {
         "path": "additional_info.vehicle.sts.date.receive",
@@ -438,7 +421,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "base.ext"
         ]
     },
@@ -449,7 +431,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "base.ext"
         ]
     },
@@ -460,7 +441,6 @@
             "boolean"
         ],
         "fillable_by": [
-            "base",
             "base.ext"
         ]
     },
@@ -471,9 +451,8 @@
             "string"
         ],
         "fillable_by": [
-            "base",
-            "base.ext",
-            "gibdd.history"
+            "gibdd.history",
+            "base.ext"
         ]
     },
     {
@@ -483,9 +462,8 @@
             "string"
         ],
         "fillable_by": [
-            "base",
-            "base.ext",
-            "gibdd.history"
+            "gibdd.history",
+            "base.ext"
         ]
     },
     {
@@ -494,7 +472,9 @@
         "types": [
             "array"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base.ext"
+        ]
     },
     {
         "path": "additional_info.identifiers.vin.checksum_validated",
@@ -512,7 +492,10 @@
         "types": [
             "boolean"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
     },
     {
         "path": "diagnostic_cards.items[].date.from",
@@ -521,9 +504,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
             "gibdd.eaisto",
-            "tech.base",
             "tech.ext"
         ]
     },
@@ -534,9 +515,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
             "gibdd.eaisto",
-            "tech.base",
             "tech.ext"
         ]
     },
@@ -547,6 +526,7 @@
             "string"
         ],
         "fillable_by": [
+            "gibdd.eaisto",
             "tech.ext"
         ]
     },
@@ -557,9 +537,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
             "gibdd.eaisto",
-            "tech.base",
             "tech.ext"
         ]
     },
@@ -571,7 +549,6 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.base",
             "tech.ext"
         ]
     },
@@ -582,7 +559,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow"
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
@@ -593,7 +571,6 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.base",
             "tech.ext"
         ]
     },
@@ -604,7 +581,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
             "gibdd.history"
         ]
     },
@@ -615,7 +591,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
             "gibdd.history"
         ]
     },
@@ -626,7 +601,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
             "gibdd.history"
         ]
     },
@@ -651,8 +625,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
-            "base.tech"
+            "base.taxi"
         ]
     },
     {
@@ -673,7 +646,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "base.ext"
         ]
     },
@@ -697,8 +669,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
-            "base.tech"
+            "base.taxi"
         ]
     },
     {
@@ -708,8 +679,8 @@
             "string"
         ],
         "fillable_by": [
-            "base",
-            "base.ext"
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -719,10 +690,9 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "base.ext",
-            "base.taxi",
-            "base.tech"
+            "base",
+            "base.taxi"
         ]
     },
     {
@@ -731,7 +701,11 @@
         "types": [
             "object"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
+        ]
     },
     {
         "path": "insurance.osago.items[].number",
@@ -760,7 +734,6 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base"
         ]
     },
     {
@@ -770,7 +743,6 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base"
         ]
     },
     {
@@ -957,8 +929,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
-            "base.tech",
             "gibdd.dtp"
         ]
     },
@@ -969,8 +939,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
-            "base.tech",
             "gibdd.dtp"
         ]
     },
@@ -1030,7 +998,9 @@
         "types": [
             "object"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "gibdd.dtp"
+        ]
     },
     {
         "path": "accidents.history.items[].damage.points",
@@ -1038,7 +1008,9 @@
         "types": [
             "array"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "gibdd.dtp"
+        ]
     },
     {
         "path": "accidents.history.items[].damage.raw",
@@ -1046,7 +1018,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base.moscow"
+        ]
     },
     {
         "path": "accidents.insurance.items[].date.event",
@@ -1084,7 +1058,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "base.moscow"
+        ]
     },
     {
         "path": "accidents.has_accidents",
@@ -1093,8 +1069,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "base.moscow",
-            "base.tech"
+            "gibdd.dtp",
+            "base.moscow"
         ]
     },
     {
@@ -1113,7 +1089,9 @@
         "types": [
             "object"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "gibdd.wanted"
+        ]
     },
     {
         "path": "stealings.is_wanted",
@@ -1122,7 +1100,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "base.moscow"
+            "gibdd.wanted",
+            "base.taxi"
         ]
     },
     {
@@ -1159,7 +1138,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "base.moscow",
+            "base",
+            "base.ext",
             "base.taxi"
         ]
     },
@@ -1189,7 +1169,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "gibdd.restrict"
+        ]
     },
     {
         "path": "restrictions.registration_actions.items[].vehicle.year",
@@ -1268,7 +1250,7 @@
             "boolean"
         ],
         "fillable_by": [
-            "base.moscow"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1321,7 +1303,10 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
     },
     {
         "path": "pledges.items[].pledgors[].type",
@@ -1329,7 +1314,10 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
     },
     {
         "path": "pledges.items[].pledgors[].dob",
@@ -1337,7 +1325,10 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
     },
     {
         "path": "pledges.items[].pledgees[].name",
@@ -1345,7 +1336,10 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
     },
     {
         "path": "pledges.items[].pledgees[].type",
@@ -1353,7 +1347,10 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
     },
     {
         "path": "pledges.items[].pledgees[].dob",
@@ -1361,7 +1358,10 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
     },
     {
         "path": "pledges.items[].data",
@@ -1370,7 +1370,10 @@
             "string",
             "array"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
     },
     {
         "path": "customs.history.items[].date.event",
@@ -1379,9 +1382,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi",
-            "base.tech",
-            "customs.base"
+            "customs.base",
+            "base.tech"
         ]
     },
     {
@@ -1390,7 +1392,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "customs.base"
+        ]
     },
     {
         "path": "customs.history.items[].document.number",
@@ -1399,7 +1403,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi",
             "customs.base"
         ]
     },
@@ -1410,7 +1413,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi",
             "customs.base"
         ]
     },
@@ -1421,7 +1423,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi"
+            "customs.base"
         ]
     },
     {
@@ -1430,7 +1432,9 @@
         "types": [
             "integer"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "customs.base"
+        ]
     },
     {
         "path": "customs.history.items[].price.amount",
@@ -1439,9 +1443,8 @@
             "integer"
         ],
         "fillable_by": [
-            "base.taxi",
-            "base.tech",
-            "customs.base"
+            "customs.base",
+            "base.tech"
         ]
     },
     {
@@ -1451,7 +1454,8 @@
             "integer"
         ],
         "fillable_by": [
-            "customs.base"
+            "customs.base",
+            "base.tech"
         ]
     },
     {
@@ -1461,7 +1465,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi",
             "customs.base"
         ]
     },
@@ -1472,6 +1475,7 @@
             "string"
         ],
         "fillable_by": [
+            "customs.base",
             "base.tech"
         ]
     },
@@ -1492,7 +1496,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi"
+            "customs.base"
         ]
     },
     {
@@ -1501,7 +1505,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "customs.base"
+        ]
     },
     {
         "path": "customs.history.items[].country.from.name",
@@ -1510,9 +1516,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi",
-            "base.tech",
-            "customs.base"
+            "customs.base",
+            "base.tech"
         ]
     },
     {
@@ -1522,7 +1527,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi"
+            "customs.base"
         ]
     },
     {
@@ -1532,7 +1537,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi"
+            "base.ext"
         ]
     },
     {
@@ -1542,9 +1547,7 @@
             "string"
         ],
         "fillable_by": [
-            "base",
-            "base.ext",
-            "base.taxi"
+            "base.ext"
         ]
     },
     {
@@ -1554,7 +1557,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "base.ext"
         ]
     },
@@ -1565,9 +1567,7 @@
             "string"
         ],
         "fillable_by": [
-            "base",
-            "base.ext",
-            "base.taxi"
+            "base.ext"
         ]
     },
     {
@@ -1577,6 +1577,7 @@
             "boolean"
         ],
         "fillable_by": [
+            "base.ext",
             "base.taxi"
         ]
     },
@@ -1587,9 +1588,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "base.taxi",
-            "base.tech"
+            "av.taxi"
         ]
     },
     {
@@ -1599,8 +1598,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "base.tech"
+            "av.taxi"
         ]
     },
     {
@@ -1640,9 +1638,7 @@
             "string"
         ],
         "fillable_by": [
-            "av.taxi",
-            "base.taxi",
-            "base.tech"
+            "av.taxi"
         ]
     },
     {
@@ -1651,7 +1647,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "av.taxi"
+        ]
     },
     {
         "path": "taxi.history.items[].ogrn",
@@ -1670,7 +1668,6 @@
             "string"
         ],
         "fillable_by": [
-            "base.taxi",
             "av.taxi"
         ]
     },
@@ -1680,7 +1677,9 @@
         "types": [
             "boolean"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "av.taxi"
+        ]
     },
     {
         "path": "taxi.history.items[].vehicle.brand.name",
@@ -1728,7 +1727,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "av.taxi"
+        ]
     },
     {
         "path": "taxi.history.items[].vehicle.reg_num",
@@ -1786,7 +1787,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "av.taxi"
+        ]
     },
     {
         "path": "taxi.history.items[].cancel.note",
@@ -1794,7 +1797,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "av.taxi"
+        ]
     },
     {
         "path": "taxi.history.items[].permit.number",
@@ -1824,9 +1829,7 @@
         ],
         "fillable_by": [
             "av.taxi",
-            "base.moscow",
-            "base.taxi",
-            "base.tech"
+            "base.taxi"
         ]
     },
     {
@@ -2036,11 +2039,10 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow",
-            "base.taxi",
-            "base.tech",
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "base.taxi",
+            "base.tech"
         ]
     },
     {
@@ -2050,11 +2052,10 @@
             "integer"
         ],
         "fillable_by": [
-            "base.moscow",
-            "base.taxi",
-            "base.tech",
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "base.taxi",
+            "base.tech"
         ]
     },
     {
@@ -2103,7 +2104,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "carprice"
+        ]
     },
     {
         "path": "car_price.items[].amount",
@@ -2112,7 +2115,6 @@
             "integer"
         ],
         "fillable_by": [
-            "base.moscow",
             "carprice"
         ]
     },

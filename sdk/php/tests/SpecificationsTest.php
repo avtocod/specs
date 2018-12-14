@@ -57,6 +57,18 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetFieldsSpecification()
     {
+        $fillable_by_should_be_empty_for = [
+            'tech_data.manufacturer.name',
+            'tech_data.brand.name.rus',
+            'tech_data.transmission.type',
+            'insurance.osago.items[].date.start',
+            'insurance.osago.items[].date.end',
+            'calculate.tax.moscow.yearly.amount',
+            'calculate.tax.regions.yearly.amount',
+            'utilizations.items[].org.name',
+            'utilizations.items[].country.name',
+        ];
+
         foreach (['default', null] as $group_name) {
             $result  = $this->instance::getFieldsSpecification($group_name);
             $sources = $this->instance::getSourcesSpecification($group_name);
@@ -88,11 +100,14 @@ class SpecificationsTest extends AbstractTestCase
 
                 $this->assertInternalType('array', $fillable_by);
 
-                // @todo: uncomment below after review
-                // $this->assertNotEmpty($fillable_by, "Path {$path} has empty 'fillable_by' attribute");
+                if (\in_array($path, $fillable_by_should_be_empty_for, true)) {
+                    $this->assertEmpty($fillable_by, "Path {$path} should have empty 'fillable_by' attribute");
+                } else {
+                    $this->assertNotEmpty($fillable_by, "Path {$path} has empty 'fillable_by' attribute");
+                }
 
                 foreach ($fillable_by as $source) {
-                    $this->assertTrue($sources->contains('name', $source));
+                    $this->assertTrue($sources->contains('name', $source), "Path [{$path}] contains invalid source [{$source}]");
                 }
 
                 $this->assertNotContains($path, $patches, "Fields specification contains field duplicate: {$path}");

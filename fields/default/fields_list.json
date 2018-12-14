@@ -2307,7 +2307,7 @@
         ]
     },
     {
-        "path": "repairs.history.items[].insurer.name",
+        "path": "repairs.history.items[].assessor.name",
         "description": "Название компании оценщика",
         "types": [
             "string"

@@ -74,6 +74,7 @@ class SpecificationsTest extends AbstractTestCase
             );
 
             $this->assertCount(\count($raw), $result);
+            $patches = [];
 
             foreach ($raw as $i => $field_data) {
                 $this->assertEquals($path = $field_data['path'], $result[$i]->getPath());
@@ -93,6 +94,9 @@ class SpecificationsTest extends AbstractTestCase
                 foreach ($fillable_by as $source) {
                     $this->assertTrue($sources->contains('name', $source));
                 }
+
+                $this->assertNotContains($path, $patches, "Fields specification contains field duplicate: {$path}");
+                $patches[] = $path;
             }
         }
     }
@@ -170,12 +174,15 @@ class SpecificationsTest extends AbstractTestCase
             );
 
             $this->assertCount(\count($raw), $result);
+            $types = [];
 
             foreach ($raw as $identifier_data) {
-                $identifier_type = $identifier_data['type'];
+                $type = $identifier_data['type'];
 
-                $this->assertEquals($identifier_data['description'], $result[$identifier_type]->getDescription());
-                $this->assertEquals($identifier_data['type'], $result[$identifier_type]->getType());
+                $this->assertEquals($identifier_data['description'], $result[$type]->getDescription());
+                $this->assertEquals($identifier_data['type'], $result[$type]->getType());
+                $this->assertNotContains($type, $types, "Identifier type contains duplicate: {$type}");
+                $types[] = $type;
             }
         }
     }
@@ -216,12 +223,15 @@ class SpecificationsTest extends AbstractTestCase
             );
 
             $this->assertCount(\count($raw), $result);
+            $names = [];
 
             foreach ($raw as $source_data) {
-                $source_name = $source_data['name'];
+                $name = $source_data['name'];
 
-                $this->assertEquals($source_data['name'], $result[$source_name]->getName());
-                $this->assertEquals($source_data['description'], $result[$source_name]->getDescription());
+                $this->assertEquals($source_data['name'], $result[$name]->getName());
+                $this->assertEquals($source_data['description'], $result[$name]->getDescription());
+                $this->assertNotContains($name, $names, "Sources names contains duplicate: {$name}");
+                $names[] = $name;
             }
         }
     }
@@ -249,12 +259,15 @@ class SpecificationsTest extends AbstractTestCase
             );
 
             $this->assertCount(count($raw), $result);
+            $mark_ids = [];
 
             foreach ($raw as $source_data) {
                 $mark_id = $source_data['id'];
 
                 $this->assertEquals($source_data['id'], $result[$mark_id]->getId());
                 $this->assertEquals($source_data['name'], $result[$mark_id]->getName());
+                $this->assertNotContains($mark_id, $mark_ids, "Mark ID contains duplicate: {$mark_id}");
+                $mark_ids[] = $mark_id;
             }
         }
     }
@@ -282,13 +295,16 @@ class SpecificationsTest extends AbstractTestCase
             );
 
             $this->assertCount(count($raw), $result);
+            $model_ids = [];
 
             foreach ($raw as $source_data) {
-                $mark_id = $source_data['id'];
+                $model_id = $source_data['id'];
 
-                $this->assertEquals($source_data['id'], $result[$mark_id]->getId());
-                $this->assertEquals($source_data['name'], $result[$mark_id]->getName());
-                $this->assertEquals($source_data['mark_id'], $result[$mark_id]->getMarkId());
+                $this->assertEquals($source_data['id'], $result[$model_id]->getId());
+                $this->assertEquals($source_data['name'], $result[$model_id]->getName());
+                $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
+                $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
+                $model_ids[] = $model_id;
             }
         }
     }

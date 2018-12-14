@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## [Unreleased]
+
+### Added
+
+- `fillable_by` field for fields specification [#34]
+- Source `tech.base`
+- Source `references.base`
+- Source `av.taxi`
+- Source `pledge.house`
+
+[#34]:https://github.com/avtocod/specs/issues/34
+
+## v2.12.0
+
+### Added 
+
+- Field with path `repairs.history.items[].assessor.name` [#37]
+
+### Fixed
+
+- Field with path `repairs.history.items[].insurer.name` has a duplicate, one instance has been deleted [#37]
+
+[#37]:https://github.com/avtocod/specs/issues/37
+
 ## v2.11.0
 
 ### Changed
@@ -14,14 +38,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- `fillable_by` field for fields specification [#34]
-- Source `tech.base`
-- Source `references.base`
-- Source `av.taxi`
-- Source `pledge.house`
 - **PHP SDK** Static code analyzer `phpstan` installed as `dev` dependency
 
-[#34]:https://github.com/avtocod/specs/issues/34
 [php-supported-versions]:http://php.net/supported-versions.php
 [travis-ci]:https://travis-ci.org/avtocod/specs
 

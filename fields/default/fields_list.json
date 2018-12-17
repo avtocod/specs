@@ -1,7 +1,7 @@
 [
     {
         "path": "identifiers.vehicle.vin",
-        "description": "Идентификатор ТС: VIN",
+        "description": "Идентификатор ТС: VIN код",
         "types": [
             "string"
         ],
@@ -17,7 +17,7 @@
     },
     {
         "path": "identifiers.vehicle.reg_num",
-        "description": "Идентификатор ТС: ГРЗ",
+        "description": "Идентификатор ТС: Государственный регистрационный знак (ГРЗ)",
         "types": [
             "string"
         ],
@@ -29,7 +29,7 @@
     },
     {
         "path": "identifiers.vehicle.sts",
-        "description": "Идентификатор ТС: СТС",
+        "description": "Идентификатор ТС: Номер СТС (свидетельства регистрации ТС)",
         "types": [
             "string"
         ],
@@ -40,7 +40,7 @@
     },
     {
         "path": "identifiers.vehicle.pts",
-        "description": "Идентификатор ТС: ПТС",
+        "description": "Идентификатор ТС: Номер ПТС (паспорт ТС)",
         "types": [
             "string"
         ],
@@ -74,7 +74,7 @@
     },
     {
         "path": "tech_data.manufacturer.name",
-        "description": "Характеристики ТС: Производитель",
+        "description": "Характеристики ТС: Наименование производителя",
         "types": [
             "string"
         ],
@@ -125,7 +125,7 @@
     },
     {
         "path": "tech_data.brand.logotype.uri",
-        "description": "Характеристики ТС: URI логотипа марки ТС",
+        "description": "Характеристики ТС: URI изображения логотипа марки",
         "types": [
             "string"
         ],
@@ -135,7 +135,7 @@
     },
     {
         "path": "tech_data.model.id",
-        "description": "Характеристики ТС: Уникальный идентификатор модель",
+        "description": "Характеристики ТС: Уникальный идентификатор модели",
         "types": [
             "string"
         ],
@@ -166,7 +166,7 @@
     },
     {
         "path": "tech_data.type.name",
-        "description": "Характеристики ТС: Тип (Вид) ТС",
+        "description": "Характеристики ТС: Тип кузова ТС [Седан, Универсал, ...]",
         "types": [
             "string"
         ],
@@ -191,7 +191,7 @@
     },
     {
         "path": "tech_data.body.color.name",
-        "description": "Характеристики ТС: Цвет",
+        "description": "Характеристики ТС: Цвет кузова",
         "types": [
             "string"
         ],
@@ -203,7 +203,7 @@
     },
     {
         "path": "tech_data.body.color.type",
-        "description": "Характеристики ТС: Тип цвета",
+        "description": "Характеристики ТС: Тип цвета кузова",
         "types": [
             "string"
         ],
@@ -240,7 +240,7 @@
     },
     {
         "path": "tech_data.engine.fuel.type",
-        "description": "Характеристики ТС: Тип топлива",
+        "description": "Характеристики ТС: Тип топлива [Бензиновый, Дизельный, Прочее]",
         "types": [
             "string"
         ],
@@ -337,7 +337,7 @@
     },
     {
         "path": "tech_data.transmission.type",
-        "description": "Характеристики ТС: Трансмиссия",
+        "description": "Характеристики ТС: Тип трансмиссии [AUTOMATIC, MANUAL, ROBOT, VARIABLE, UNKNOWN]",
         "types": [
             "string"
         ],
@@ -345,7 +345,7 @@
     },
     {
         "path": "tech_data.drive.type",
-        "description": "Характеристики ТС: Тип привода",
+        "description": "Характеристики ТС: Тип привода [Заднеприводной, Переднеприводной, Полноприводной, Иные]",
         "types": [
             "string"
         ],
@@ -356,7 +356,7 @@
     },
     {
         "path": "tech_data.wheel.position",
-        "description": "Характеристики ТС: Расположение руля",
+        "description": "Характеристики ТС: Расположение руля [LEFT, RIGHT, UNKNOWN]",
         "types": [
             "string"
         ],
@@ -368,7 +368,7 @@
     },
     {
         "path": "additional_info.vehicle.category.code",
-        "description": "Дополнительная информация: Код категории ТС",
+        "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
         "types": [
             "string"
         ],
@@ -394,7 +394,7 @@
     },
     {
         "path": "additional_info.vehicle.owner.type",
-        "description": "Дополнительная информация: Тип владельца (техники)",
+        "description": "Дополнительная информация: Тип владельца (техники) [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
         ],
@@ -426,7 +426,7 @@
     },
     {
         "path": "additional_info.vehicle.passport.date.receive",
-        "description": "Дополнительная информация: Дата выдачи паспорта ТС (техники)",
+        "description": "Дополнительная информация: Дата выдачи паспорта ТС",
         "types": [
             "string"
         ],
@@ -478,7 +478,7 @@
     },
     {
         "path": "additional_info.identifiers.vin.checksum_validated",
-        "description": "Дополнительная информация: Проверка контрольного символа VIN",
+        "description": "Дополнительная информация: Пройдена ли проверка контрольного символа VIN?",
         "types": [
             "boolean"
         ],
@@ -488,7 +488,7 @@
     },
     {
         "path": "additional_info.vehicle.modifications.was_modificated",
-        "description": "Дополнительная информация: Были ли изменения в конструкции ТС",
+        "description": "Дополнительная информация: Были ли изменения в конструкции ТС?",
         "types": [
             "boolean"
         ],
@@ -499,7 +499,7 @@
     },
     {
         "path": "diagnostic_cards.items[].date.from",
-        "description": "Диагностические карты: Дата начала",
+        "description": "Диагностические карты: Дата начала действия",
         "types": [
             "string"
         ],
@@ -510,7 +510,7 @@
     },
     {
         "path": "diagnostic_cards.items[].date.to",
-        "description": "Диагностические карты: Дата ПО",
+        "description": "Диагностические карты: Дата окончания действия",
         "types": [
             "string"
         ],
@@ -565,7 +565,7 @@
     },
     {
         "path": "diagnostic_cards.items[].reg_num",
-        "description": "Диагностические карты: ГРЗ знак",
+        "description": "Диагностические карты: Государственный регистрационный знак",
         "types": [
             "string"
         ],
@@ -596,7 +596,7 @@
     },
     {
         "path": "ownership.history.items[].owner.type",
-        "description": "История владения: Тип владельца",
+        "description": "История владения: Тип владельца [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
         ],
@@ -630,7 +630,7 @@
     },
     {
         "path": "registration_actions.items[].reg_num",
-        "description": "Регистрационные действия: ГРЗ знак",
+        "description": "Регистрационные действия: Государственный регистрационный знак",
         "types": [
             "string"
         ],
@@ -662,7 +662,7 @@
     },
     {
         "path": "registration_actions.items[].owner.type",
-        "description": "Регистрационные действия: Тип владельца",
+        "description": "Регистрационные действия: Тип владельца [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
         ],
@@ -719,7 +719,7 @@
     },
     {
         "path": "insurance.osago.items[].insurer.name",
-        "description": "ОСАГО: Страховщик",
+        "description": "ОСАГО: Наименование страховщика",
         "types": [
             "string"
         ],
@@ -729,7 +729,7 @@
     },
     {
         "path": "insurance.osago.items[].date.start",
-        "description": "ОСАГО: Дата начала",
+        "description": "ОСАГО: Дата начала действия полиса",
         "types": [
             "string"
         ],
@@ -738,7 +738,7 @@
     },
     {
         "path": "insurance.osago.items[].date.end",
-        "description": "ОСАГО: Дата окончания",
+        "description": "ОСАГО: Дата окончания действия полиса",
         "types": [
             "string"
         ],
@@ -834,7 +834,7 @@
     },
     {
         "path": "calculate.osago.price.current.yearly.min",
-        "description": "Калькулятор ОСАГО: Мин сумма ОСАГО для регионов",
+        "description": "Калькулятор ОСАГО: Минимальная стоимость ОСАГО для регионов",
         "types": [
             "integer"
         ],
@@ -844,7 +844,7 @@
     },
     {
         "path": "calculate.osago.price.current.yearly.max",
-        "description": "Калькулятор ОСАГО: Макс сумма ОСАГО для регионов",
+        "description": "Калькулятор ОСАГО: Максимальная стоимость ОСАГО для регионов",
         "types": [
             "integer"
         ],
@@ -934,7 +934,7 @@
     },
     {
         "path": "accidents.history.items[].type",
-        "description": "История ДТП: Тип происшествия",
+        "description": "История ДТП: Тип происшествия [Столкновение, Наезд на стоящее ТС, ...]",
         "types": [
             "string"
         ],
@@ -944,7 +944,7 @@
     },
     {
         "path": "accidents.history.items[].state",
-        "description": "История ДТП: Статус ТС",
+        "description": "История ДТП: Статус ТС [Повреждено, ...]",
         "types": [
             "string"
         ],
@@ -1004,7 +1004,7 @@
     },
     {
         "path": "accidents.history.items[].damage.points",
-        "description": "История ДТП: Места повреждений",
+        "description": "История ДТП: Места повреждений (коды мест повреждений ТС)",
         "types": [
             "array"
         ],
@@ -1014,7 +1014,7 @@
     },
     {
         "path": "accidents.history.items[].damage.raw",
-        "description": "История ДТП: Описание повреждений в не нормализованном виде",
+        "description": "История ДТП: Описание повреждений в не-нормализованном виде",
         "types": [
             "string"
         ],
@@ -1034,7 +1034,7 @@
     },
     {
         "path": "accidents.insurance.items[].insurer.type",
-        "description": "История повреждений из страховых компаний: Тип страхования (ОСАГО, КАСКО)",
+        "description": "История повреждений из страховых компаний: Тип страхования [ОСАГО, КАСКО, ...]",
         "types": [
             "string"
         ],
@@ -1125,7 +1125,7 @@
     },
     {
         "path": "utilizations.items[].country.name",
-        "description": "Утилизация: Имя страны",
+        "description": "Утилизация: Наименование страны",
         "types": [
             "string"
         ],
@@ -1277,7 +1277,7 @@
     },
     {
         "path": "pledges.items[].type",
-        "description": "Обременения на ТС: Тип события (возникновение, исключение, прочее)",
+        "description": "Обременения на ТС: Тип события [Возникновение, Исключение, ...]",
         "types": [
             "string"
         ],
@@ -1310,7 +1310,7 @@
     },
     {
         "path": "pledges.items[].pledgors[].type",
-        "description": "Обременения на ТС: Залогодатель (тип)",
+        "description": "Обременения на ТС: Тип залогодателя [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
         ],
@@ -1321,7 +1321,7 @@
     },
     {
         "path": "pledges.items[].pledgors[].dob",
-        "description": "Обременения на ТС: Залогодатель (dob)",
+        "description": "Обременения на ТС: Дата рождения залогодателя",
         "types": [
             "string"
         ],
@@ -1332,7 +1332,7 @@
     },
     {
         "path": "pledges.items[].pledgees[].name",
-        "description": "Обременения на ТС: Залогодержатель (имя)",
+        "description": "Обременения на ТС: Имя залогодержателя",
         "types": [
             "string"
         ],
@@ -1343,7 +1343,7 @@
     },
     {
         "path": "pledges.items[].pledgees[].type",
-        "description": "Обременения на ТС: Залогодержатель (тип)",
+        "description": "Обременения на ТС: Тип залогодержателя [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
         ],
@@ -1354,7 +1354,7 @@
     },
     {
         "path": "pledges.items[].pledgees[].dob",
-        "description": "Обременения на ТС: Залогодержатель (dob)",
+        "description": "Обременения на ТС: Дата рождения залогодержателя",
         "types": [
             "string"
         ],
@@ -1365,7 +1365,7 @@
     },
     {
         "path": "pledges.items[].data",
-        "description": "Обременения на ТС: Данные",
+        "description": "Обременения на ТС: Дополнительные данные",
         "types": [
             "string",
             "array"
@@ -1377,7 +1377,7 @@
     },
     {
         "path": "customs.history.items[].date.event",
-        "description": "История по таможне: Дата",
+        "description": "История по таможне: Дата прохождения таможни",
         "types": [
             "string"
         ],
@@ -1428,7 +1428,7 @@
     },
     {
         "path": "customs.history.items[].tax.amount",
-        "description": "История по таможне: Пошлина",
+        "description": "История по таможне: Сумма пошлины",
         "types": [
             "integer"
         ],
@@ -1532,7 +1532,7 @@
     },
     {
         "path": "leasings.items[].tin",
-        "description": "Лизинг: ИНН (Taxpayer identification number)",
+        "description": "Лизинг: Номер ИНН компании-лизингополучателя",
         "types": [
             "string"
         ],
@@ -1562,7 +1562,7 @@
     },
     {
         "path": "leasings.items[].date.event",
-        "description": "Лизинг: Дата",
+        "description": "Лизинг: Дата получения лизинга",
         "types": [
             "string"
         ],
@@ -1623,7 +1623,7 @@
     },
     {
         "path": "taxi.history.items[].license.status",
-        "description": "Такси: Статус разрешения (ACTIVE, SUSPENDED, ANNULLED, TERMINATED, UNDEFINED)",
+        "description": "Такси: Статус разрешения [ACTIVE, SUSPENDED, ANNULLED, TERMINATED, UNDEFINED]",
         "types": [
             "string"
         ],
@@ -1653,7 +1653,7 @@
     },
     {
         "path": "taxi.history.items[].ogrn",
-        "description": "Такси: ОГРН / ОГРНИП",
+        "description": "Такси: ОГРН или ОГРНИП",
         "types": [
             "string"
         ],
@@ -1663,7 +1663,7 @@
     },
     {
         "path": "taxi.history.items[].tin",
-        "description": "Такси: ИНН (Taxpayer identification number)",
+        "description": "Такси: ИНН компании или ИП (перевозчика)",
         "types": [
             "string"
         ],
@@ -1834,7 +1834,7 @@
     },
     {
         "path": "fines.items[].date.event",
-        "description": "Штрафы: Дата",
+        "description": "Штрафы: Дата регистрации штрафа",
         "types": [
             "string"
         ],
@@ -1864,7 +1864,7 @@
     },
     {
         "path": "fines.items[].description",
-        "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном виде)",
+        "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном формате)",
         "types": [
             "string"
         ],
@@ -1924,7 +1924,7 @@
     },
     {
         "path": "fines.items[].is_paid",
-        "description": "Штрафы: Штраф не оплачен (false) / оплачен (true)",
+        "description": "Штрафы: Оплачен ли штраф?",
         "types": [
             "boolean"
         ],
@@ -1944,7 +1944,7 @@
     },
     {
         "path": "fines.items[].wire.user.tin",
-        "description": "Штрафы: ИНН получателя",
+        "description": "Штрафы: ИНН получателя платежа",
         "types": [
             "string"
         ],
@@ -1954,7 +1954,7 @@
     },
     {
         "path": "fines.items[].wire.user.kpp",
-        "description": "Штрафы: КПП получателя",
+        "description": "Штрафы: КПП получателя платежа",
         "types": [
             "string"
         ],
@@ -2024,7 +2024,7 @@
     },
     {
         "path": "fines.has_fines",
-        "description": "Штрафы: Наличие штрафов по транспортному средству",
+        "description": "Штрафы: Имеются ли штрафы на транспортное средство?",
         "types": [
             "boolean"
         ],
@@ -2060,7 +2060,7 @@
     },
     {
         "path": "images.photos.items[].vehicle.brand.name",
-        "description": "Фотография ТС: Значение марки (бренда) ТС",
+        "description": "Фотографии ТС: Значение марки (бренда) ТС",
         "types": [
             "string"
         ],
@@ -2070,7 +2070,7 @@
     },
     {
         "path": "images.photos.items[].vehicle.model.name",
-        "description": "Фотография ТС: Значение модели ТС",
+        "description": "Фотографии ТС: Значение модели ТС",
         "types": [
             "string"
         ],
@@ -2080,7 +2080,7 @@
     },
     {
         "path": "images.photos.items[].date.issued",
-        "description": "Фотография ТС: Дата фиксации изображения",
+        "description": "Фотографии ТС: Дата фиксации изображения",
         "types": [
             "string"
         ],
@@ -2090,7 +2090,7 @@
     },
     {
         "path": "images.photos.items[].uri",
-        "description": "Фотография ТС: URI фотографии ТС",
+        "description": "Фотографии ТС: URI фотографии ТС",
         "types": [
             "string"
         ],
@@ -2100,7 +2100,7 @@
     },
     {
         "path": "car_price.items[].date.release",
-        "description": "car_price: Дата выпуска автомобиля",
+        "description": "Стоимость ТС: Дата выпуска автомобиля",
         "types": [
             "string"
         ],
@@ -2110,7 +2110,7 @@
     },
     {
         "path": "car_price.items[].amount",
-        "description": "car_price: Стоимость автомобиля",
+        "description": "Стоимость ТС: Стоимость автомобиля",
         "types": [
             "integer"
         ],
@@ -2120,7 +2120,7 @@
     },
     {
         "path": "car_price.items[].model.name",
-        "description": "car_price: Модель автомобиля",
+        "description": "Стоимость ТС: Модель автомобиля",
         "types": [
             "string"
         ],
@@ -2130,7 +2130,7 @@
     },
     {
         "path": "car_price.items[].modification.name",
-        "description": "car_price: Модификация автомобиля",
+        "description": "Стоимость ТС: Модификация автомобиля",
         "types": [
             "string"
         ],
@@ -2140,7 +2140,7 @@
     },
     {
         "path": "car_price.items[].engine.volume",
-        "description": "car_price: Объем двигателя",
+        "description": "Стоимость ТС: Объем двигателя",
         "types": [
             "float"
         ],
@@ -2150,7 +2150,7 @@
     },
     {
         "path": "car_price.items[].year",
-        "description": "car_price: Год выпуска",
+        "description": "Стоимость ТС: Год выпуска",
         "types": [
             "integer"
         ],
@@ -2190,7 +2190,7 @@
     },
     {
         "path": "repairs.history.items[].number.calculation",
-        "description": "Номер расчёта ремонтных работ",
+        "description": "Ремонтные работы: Номер расчёта ремонтных работ",
         "types": [
             "string"
         ],
@@ -2200,7 +2200,7 @@
     },
     {
         "path": "repairs.history.items[].number.claim",
-        "description": "Номер дела ремонтных работ",
+        "description": "Ремонтные работы: Номер дела ремонтных работ",
         "types": [
             "string"
         ],
@@ -2210,7 +2210,7 @@
     },
     {
         "path": "repairs.history.items[].date.calculation",
-        "description": "Дата расчета стоимости ремонтных работ",
+        "description": "Ремонтные работы: Дата расчета стоимости ремонтных работ",
         "types": [
             "string"
         ],
@@ -2220,7 +2220,7 @@
     },
     {
         "path": "repairs.history.items[].mileage",
-        "description": "Пробег",
+        "description": "Ремонтные работы: Пробег",
         "types": [
             "integer"
         ],
@@ -2230,7 +2230,7 @@
     },
     {
         "path": "repairs.history.items[].cost.total",
-        "description": "Итоговая стоимость ремонтных работ",
+        "description": "Ремонтные работы: Итоговая стоимость ремонтных работ",
         "types": [
             "integer"
         ],
@@ -2240,7 +2240,7 @@
     },
     {
         "path": "repairs.history.items[].cost.labour",
-        "description": "Стоимость выполнения ремонтных работ",
+        "description": "Ремонтные работы: Стоимость выполнения ремонтных работ",
         "types": [
             "integer"
         ],
@@ -2250,7 +2250,7 @@
     },
     {
         "path": "repairs.history.items[].cost.parts",
-        "description": "Стоимость запчастей",
+        "description": "Ремонтные работы: Стоимость запчастей",
         "types": [
             "integer"
         ],
@@ -2260,7 +2260,7 @@
     },
     {
         "path": "repairs.history.items[].cost.paint",
-        "description": "Стоимость покраски",
+        "description": "Ремонтные работы: Стоимость покраски",
         "types": [
             "integer"
         ],
@@ -2270,7 +2270,7 @@
     },
     {
         "path": "repairs.history.items[].car.manufacturer",
-        "description": "Производитель автомобиля",
+        "description": "Ремонтные работы: Производитель автомобиля",
         "types": [
             "string"
         ],
@@ -2280,7 +2280,7 @@
     },
     {
         "path": "repairs.history.items[].car.model",
-        "description": "Модель автомобиля",
+        "description": "Ремонтные работы: Модель автомобиля",
         "types": [
             "string"
         ],
@@ -2290,7 +2290,7 @@
     },
     {
         "path": "repairs.history.items[].car.sub_model",
-        "description": "Покаление автомобиля",
+        "description": "Ремонтные работы: Поколение автомобиля",
         "types": [
             "string"
         ],
@@ -2300,7 +2300,7 @@
     },
     {
         "path": "repairs.history.items[].insurer.name",
-        "description": "Название страховой компании",
+        "description": "Ремонтные работы: Название страховой компании",
         "types": [
             "string"
         ],
@@ -2310,7 +2310,7 @@
     },
     {
         "path": "repairs.history.items[].assessor.name",
-        "description": "Название компании оценщика",
+        "description": "Ремонтные работы: Название компании оценщика",
         "types": [
             "string"
         ],
@@ -2320,7 +2320,7 @@
     },
     {
         "path": "repairs.history.items[].task_process",
-        "description": "В каком процессе был выполнен расчёт? KASKO, OSAGO",
+        "description": "Ремонтные работы: В каком процессе был выполнен расчёт [KASKO, OSAGO]",
         "types": [
             "string"
         ],
@@ -2330,7 +2330,7 @@
     },
     {
         "path": "repairs.history.items[].repairer.type",
-        "description": "Тип клиента, работавшего с делом. Garage, Insurance, Assessor",
+        "description": "Ремонтные работы: Тип клиента, работавшего с делом. Garage, Insurance, Assessor",
         "types": [
             "string"
         ],
@@ -2340,7 +2340,7 @@
     },
     {
         "path": "repairs.history.items[].repairer.description",
-        "description": "Описание клиента, работавшего с делом. СТО, Страховая компания, Оценщик",
+        "description": "Ремонтные работы: Описание клиента, работавшего с делом. СТО, Страховая компания, Оценщик",
         "types": [
             "string"
         ],
@@ -2350,7 +2350,7 @@
     },
     {
         "path": "repairs.history.items[].details.items[].name",
-        "description": "Наименование ремонтных работ",
+        "description": "Ремонтные работы: Наименование ремонтных работ",
         "types": [
             "string"
         ],
@@ -2360,7 +2360,7 @@
     },
     {
         "path": "repairs.history.items[].details.items[].repair.method",
-        "description": "Код ремонтных работ",
+        "description": "Ремонтные работы: Код ремонтных работ",
         "types": [
             "string"
         ],
@@ -2370,7 +2370,7 @@
     },
     {
         "path": "repairs.history.items[].details.items[].repair.description",
-        "description": "Описание ремонтных работ",
+        "description": "Ремонтные работы: Описание ремонтных работ",
         "types": [
             "string"
         ],
@@ -2380,7 +2380,7 @@
     },
     {
         "path": "repairs.history.items[].details.count",
-        "description": "Количество позиций в списке работ",
+        "description": "Ремонтные работы: Количество позиций в списке работ",
         "types": [
             "integer"
         ],

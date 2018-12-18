@@ -1,30 +1,52 @@
 [
     {
         "path": "identifiers.vehicle.vin",
-        "description": "Идентификатор ТС: VIN",
+        "description": "Идентификатор ТС: VIN код",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "gibdd.eaisto",
+            "base.tech",
+            "tech.ext"
         ]
     },
     {
         "path": "identifiers.vehicle.reg_num",
-        "description": "Идентификатор ТС: ГРЗ",
+        "description": "Идентификатор ТС: Государственный регистрационный знак (ГРЗ)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.eaisto"
         ]
     },
     {
         "path": "identifiers.vehicle.sts",
-        "description": "Идентификатор ТС: СТС",
+        "description": "Идентификатор ТС: Номер СТС (свидетельства регистрации ТС)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
         "path": "identifiers.vehicle.pts",
-        "description": "Идентификатор ТС: ПТС",
+        "description": "Идентификатор ТС: Номер ПТС (паспорт ТС)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext",
+            "gibdd.history"
         ]
     },
     {
@@ -32,6 +54,10 @@
         "description": "Идентификатор ТС: Номер кузова",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -39,20 +65,29 @@
         "description": "Идентификатор ТС: Номер шасси",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
         "path": "tech_data.manufacturer.name",
-        "description": "Характеристики ТС: Производитель",
+        "description": "Характеристики ТС: Наименование производителя",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "tech_data.brand.id",
         "description": "Характеристики ТС: Уникальный идентификатор марки",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "references.base"
         ]
     },
     {
@@ -60,6 +95,14 @@
         "description": "Характеристики ТС: Марка",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "customs.base",
+            "gibdd.eaisto"
         ]
     },
     {
@@ -67,6 +110,9 @@
         "description": "Характеристики ТС: Нормализованное значение марки",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "references.base"
         ]
     },
     {
@@ -74,20 +120,27 @@
         "description": "Характеристики ТС: Марка (по-русски)",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "tech_data.brand.logotype.uri",
-        "description": "Характеристики ТС: URI логотипа марки ТС",
+        "description": "Характеристики ТС: URI изображения логотипа марки",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "references.base"
         ]
     },
     {
         "path": "tech_data.model.id",
-        "description": "Характеристики ТС: Уникальный идентификатор модель",
+        "description": "Характеристики ТС: Уникальный идентификатор модели",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "references.base"
         ]
     },
     {
@@ -95,6 +148,10 @@
         "description": "Характеристики ТС: Модель",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.history",
+            "gibdd.eaisto"
         ]
     },
     {
@@ -102,13 +159,21 @@
         "description": "Характеристики ТС: Нормализованное значение модели",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "references.base"
         ]
     },
     {
         "path": "tech_data.type.name",
-        "description": "Характеристики ТС: Тип (Вид) ТС",
+        "description": "Характеристики ТС: Тип кузова ТС [Седан, Универсал, ...]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history"
         ]
     },
     {
@@ -116,20 +181,35 @@
         "description": "Характеристики ТС: Номер Кузова",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi"
         ]
     },
     {
         "path": "tech_data.body.color.name",
-        "description": "Характеристики ТС: Цвет",
+        "description": "Характеристики ТС: Цвет кузова",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history"
         ]
     },
     {
         "path": "tech_data.body.color.type",
-        "description": "Характеристики ТС: Тип цвета",
+        "description": "Характеристики ТС: Тип цвета кузова",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -137,6 +217,13 @@
         "description": "Характеристики ТС: Год выпуска",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.eaisto",
+            "base.taxi",
+            "gibdd.history"
         ]
     },
     {
@@ -144,13 +231,23 @@
         "description": "Характеристики ТС: Номер шасси",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
         "path": "tech_data.engine.fuel.type",
-        "description": "Характеристики ТС: Тип топлива",
+        "description": "Характеристики ТС: Тип топлива [Бензиновый, Дизельный, Прочее]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "customs.base"
         ]
     },
     {
@@ -158,6 +255,10 @@
         "description": "Характеристики ТС: Номер двигателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.taxi",
+            "base.ext"
         ]
     },
     {
@@ -165,6 +266,9 @@
         "description": "Характеристики ТС: Модель двигателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
@@ -172,6 +276,12 @@
         "description": "Характеристики ТС: Объем двигателя",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi"
         ]
     },
     {
@@ -179,6 +289,12 @@
         "description": "Характеристики ТС: Мощность в ЛС",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi"
         ]
     },
     {
@@ -186,6 +302,11 @@
         "description": "Характеристики ТС: Мощность в кВ",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history"
         ]
     },
     {
@@ -193,6 +314,12 @@
         "description": "Характеристики ТС: Масса без нагрузки",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.eaisto",
+            "base.taxi"
         ]
     },
     {
@@ -200,34 +327,56 @@
         "description": "Характеристики ТС: Разрешенная макс. масса",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.eaisto",
+            "base.taxi"
         ]
     },
     {
         "path": "tech_data.transmission.type",
-        "description": "Характеристики ТС: Трансмиссия",
+        "description": "Характеристики ТС: Тип трансмиссии [AUTOMATIC, MANUAL, ROBOT, VARIABLE, UNKNOWN]",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "tech_data.drive.type",
-        "description": "Характеристики ТС: Тип привода",
+        "description": "Характеристики ТС: Тип привода [Заднеприводной, Переднеприводной, Полноприводной, Иные]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
         "path": "tech_data.wheel.position",
-        "description": "Характеристики ТС: Расположение руля",
+        "description": "Характеристики ТС: Расположение руля [LEFT, RIGHT, UNKNOWN]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
         "path": "additional_info.vehicle.category.code",
-        "description": "Дополнительная информация: Код категории ТС",
+        "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi",
+            "gibdd.eaisto"
         ]
     },
     {
@@ -235,13 +384,23 @@
         "description": "Дополнительная информация: Описание категории ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi",
+            "gibdd.eaisto"
         ]
     },
     {
         "path": "additional_info.vehicle.owner.type",
-        "description": "Дополнительная информация: Тип владельца (техники)",
+        "description": "Дополнительная информация: Тип владельца (техники) [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -249,6 +408,10 @@
         "description": "Дополнительная информация: Гео-данные владельца (техники)",
         "types": [
             "object"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -256,13 +419,19 @@
         "description": "Дополнительная информация: Дата выдачи СТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
         "path": "additional_info.vehicle.passport.date.receive",
-        "description": "Дополнительная информация: Дата выдачи паспорта ТС (техники)",
+        "description": "Дополнительная информация: Дата выдачи паспорта ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
@@ -270,55 +439,84 @@
         "description": "Дополнительная информация: Была ли замена ПТС?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
         "path": "additional_info.vehicle.passport.number",
-        "description": "Дополнительная информация: Номер паспорта ТС (техники)",
+        "description": "Дополнительная информация: Номер паспорта ТС (ПТС)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.history",
+            "base.ext"
         ]
     },
     {
         "path": "additional_info.vehicle.passport.org.name",
-        "description": "Дополнительная информация: Кто выдал паспорт ТС (техники)",
+        "description": "Дополнительная информация: Кто выдал паспорт ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.history",
+            "base.ext"
         ]
     },
     {
         "path": "additional_info.vehicle.notes",
-        "description": "Дополнительная информация: Заметки по ТС (техники)",
+        "description": "Дополнительная информация: Заметки по ТС",
         "types": [
             "array"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
         "path": "additional_info.identifiers.vin.checksum_validated",
-        "description": "Дополнительная информация: Проверка контрольного символа VIN",
+        "description": "Дополнительная информация: Пройдена ли проверка контрольного символа VIN?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "base.tech"
         ]
     },
     {
         "path": "additional_info.vehicle.modifications.was_modificated",
-        "description": "Дополнительная информация: Были ли изменения в конструкции ТС",
+        "description": "Дополнительная информация: Были ли изменения в конструкции ТС?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
         "path": "diagnostic_cards.items[].date.from",
-        "description": "Диагностические карты: Дата начала",
+        "description": "Диагностические карты: Дата начала действия диагностической карты",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
         "path": "diagnostic_cards.items[].date.to",
-        "description": "Диагностические карты: Дата ПО",
+        "description": "Диагностические карты: Дата окончания действия диагностической карты",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
@@ -326,6 +524,10 @@
         "description": "Диагностические карты: Серия документа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
@@ -333,6 +535,10 @@
         "description": "Диагностические карты: Номер документа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
@@ -340,6 +546,10 @@
         "description": "Диагностические карты: Тип документа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
@@ -347,13 +557,21 @@
         "description": "Диагностические карты: Место прохождения проверки",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
         "path": "diagnostic_cards.items[].reg_num",
-        "description": "Диагностические карты: ГРЗ знак",
+        "description": "Диагностические карты: Государственный регистрационный знак",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
         ]
     },
     {
@@ -361,6 +579,9 @@
         "description": "История владения: Дата начала владения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.history"
         ]
     },
     {
@@ -368,13 +589,19 @@
         "description": "История владения: Дата окончания владения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.history"
         ]
     },
     {
         "path": "ownership.history.items[].owner.type",
-        "description": "История владения: Тип владельца",
+        "description": "История владения: Тип владельца [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.history"
         ]
     },
     {
@@ -382,6 +609,11 @@
         "description": "Регистрационные действия: Дата начала рег. действия",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -389,13 +621,22 @@
         "description": "Регистрационные действия: Дата окончания рег. действия",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
         "path": "registration_actions.items[].reg_num",
-        "description": "Регистрационные действия: ГРЗ знак",
+        "description": "Регистрационные действия: Государственный регистрационный знак",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -403,6 +644,9 @@
         "description": "Регистрационные действия: Номер ПТС (паспорт ТС)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
@@ -410,13 +654,22 @@
         "description": "Регистрационные действия: Номер СТС (свидетельства регистрации ТС)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
         "path": "registration_actions.items[].owner.type",
-        "description": "Регистрационные действия: Тип владельца",
+        "description": "Регистрационные действия: Тип владельца [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -424,6 +677,10 @@
         "description": "Регистрационные действия: Наименование предприятия-владельца",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -431,13 +688,23 @@
         "description": "Регистрационные действия: Тип операции",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext",
+            "base",
+            "base.taxi"
         ]
     },
     {
         "path": "registration_actions.items[].geo",
-        "description": "Регистрационные действия: Гео-данные действия",
+        "description": "Регистрационные действия: Гео-данные места совершения рег. действия",
         "types": [
             "object"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -445,27 +712,37 @@
         "description": "ОСАГО: Номер договора",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base"
         ]
     },
     {
         "path": "insurance.osago.items[].insurer.name",
-        "description": "ОСАГО: Страховщик",
+        "description": "ОСАГО: Наименование страховщика",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base"
         ]
     },
     {
         "path": "insurance.osago.items[].date.start",
-        "description": "ОСАГО: Дата начала",
+        "description": "ОСАГО: Дата начала действия полиса",
         "types": [
             "string"
+        ],
+        "fillable_by": [
         ]
     },
     {
         "path": "insurance.osago.items[].date.end",
-        "description": "ОСАГО: Дата окончания",
+        "description": "ОСАГО: Дата окончания действия полиса",
         "types": [
             "string"
+        ],
+        "fillable_by": [
         ]
     },
     {
@@ -473,6 +750,9 @@
         "description": "ОСАГО: Ограничения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base"
         ]
     },
     {
@@ -480,6 +760,9 @@
         "description": "ОСАГО: Серия полиса",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base"
         ]
     },
     {
@@ -487,6 +770,9 @@
         "description": "ОСАГО: Номер полиса",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base"
         ]
     },
     {
@@ -494,20 +780,26 @@
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
         "types": [
             "integer"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "calculate.tax.regions.yearly.amount",
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для регионов)",
         "types": [
             "integer"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "calculate.osago.coefficients.regional.value",
         "description": "Калькулятор ОСАГО: Региональный коэффициент ОСАГО",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -515,6 +807,9 @@
         "description": "Калькулятор ОСАГО: Имя региона регистрации ТС (автоматически определенный)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -522,6 +817,9 @@
         "description": "Калькулятор ОСАГО: Имя города регистрации ТС (автоматически определенный)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -529,20 +827,29 @@
         "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для автоматически определенного региона регистрации ТС)",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
         "path": "calculate.osago.price.current.yearly.min",
-        "description": "Калькулятор ОСАГО: Мин сумма ОСАГО для регионов",
+        "description": "Калькулятор ОСАГО: Минимальная стоимость ОСАГО для регионов",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
         "path": "calculate.osago.price.current.yearly.max",
-        "description": "Калькулятор ОСАГО: Макс сумма ОСАГО для регионов",
+        "description": "Калькулятор ОСАГО: Максимальная стоимость ОСАГО для регионов",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -550,6 +857,9 @@
         "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Москвы)",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -557,6 +867,9 @@
         "description": "Калькулятор ОСАГО: Минимальная стоимость ОСАГО 12 мес. (для Москвы)",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -564,6 +877,9 @@
         "description": "Калькулятор ОСАГО: Максимальная стоимость ОСАГО 12 мес. (для Москвы)",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -571,6 +887,9 @@
         "description": "Калькулятор ОСАГО: Приблизительная стоимость ОСАГО за 12 месяцев (для Московской Области)",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -578,6 +897,9 @@
         "description": "Калькулятор ОСАГО: Мин ОСАГО 12 мес. (для Московской Области)",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -585,6 +907,9 @@
         "description": "Калькулятор ОСАГО: Макс стоимость ОСАГО 12 мес. (для Московской Области)",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "calc.osago"
         ]
     },
     {
@@ -592,6 +917,9 @@
         "description": "История ДТП: Номер происшествия",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
@@ -599,20 +927,29 @@
         "description": "История ДТП: Дата происшествия",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
         "path": "accidents.history.items[].type",
-        "description": "История ДТП: Тип происшествия",
+        "description": "История ДТП: Тип происшествия [Столкновение, Наезд на стоящее ТС, ...]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
         "path": "accidents.history.items[].state",
-        "description": "История ДТП: Статус ТС",
+        "description": "История ДТП: Статус ТС [Повреждено, ...]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
@@ -620,6 +957,9 @@
         "description": "История ДТП: Организация, которая провела регистрацию ДТП",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.moscow"
         ]
     },
     {
@@ -627,6 +967,9 @@
         "description": "История ДТП: Марка ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
@@ -634,6 +977,9 @@
         "description": "История ДТП: Модель ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
@@ -641,27 +987,39 @@
         "description": "История ДТП: Год выпуска ТС",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
         "path": "accidents.history.items[].geo",
-        "description": "История ДТП: Гео-данные действия",
+        "description": "История ДТП: Гео-данные места ДТП",
         "types": [
             "object"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
         "path": "accidents.history.items[].damage.points",
-        "description": "История ДТП: Места повреждений",
+        "description": "История ДТП: Места повреждений (коды мест повреждений ТС)",
         "types": [
             "array"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
         "path": "accidents.history.items[].damage.raw",
-        "description": "История ДТП: Описание повреждений в не нормализованном виде",
+        "description": "История ДТП: Описание повреждений в не-нормализованном виде",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.moscow"
         ]
     },
     {
@@ -669,13 +1027,19 @@
         "description": "История повреждений из страховых компаний: Дата происшествия",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.moscow"
         ]
     },
     {
         "path": "accidents.insurance.items[].insurer.type",
-        "description": "История повреждений из страховых компаний: Тип страхования (ОСАГО, КАСКО)",
+        "description": "История повреждений из страховых компаний: Тип страхования [ОСАГО, КАСКО, ...]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.moscow"
         ]
     },
     {
@@ -683,6 +1047,9 @@
         "description": "История повреждений из страховых компаний: Тип происшествия",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.moscow"
         ]
     },
     {
@@ -690,6 +1057,9 @@
         "description": "История повреждений из страховых компаний: Размер повреждения или описание",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.moscow"
         ]
     },
     {
@@ -697,6 +1067,10 @@
         "description": "История ДТП: Наличие у ТС ДТП по данным ГИБДД и страховых компаний",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "gibdd.dtp",
+            "base.moscow"
         ]
     },
     {
@@ -704,6 +1078,9 @@
         "description": "Проверка на угон: Дата угона",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.wanted"
         ]
     },
     {
@@ -711,6 +1088,9 @@
         "description": "Проверка на угон: Данные о месте угона",
         "types": [
             "object"
+        ],
+        "fillable_by": [
+            "gibdd.wanted"
         ]
     },
     {
@@ -718,6 +1098,10 @@
         "description": "Проверка на угон: ТС находится в розыске?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "base.taxi"
         ]
     },
     {
@@ -725,27 +1109,38 @@
         "description": "Утилизация: Дата утилизации",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
         "path": "utilizations.items[].org.name",
-        "description": "Утилизация: Имя организации",
+        "description": "Утилизация: Наименование организации осуществившей утилизацию",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "utilizations.items[].country.name",
-        "description": "Утилизация: Имя страны",
+        "description": "Утилизация: Наименование страны",
         "types": [
             "string"
-        ]
+        ],
+        "fillable_by": []
     },
     {
         "path": "utilizations.was_utilized",
         "description": "Утилизация: Было ли ТС утилизировано?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -753,13 +1148,19 @@
         "description": "Ограничения на рег. действия: Дата добавления данных об ограничении в реестр",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
         "path": "restrictions.registration_actions.items[].date.start",
-        "description": "Ограничения на рег. действия: Дата наложения ограничения",
+        "description": "Ограничения на рег. действия: Дата начала действия ограничения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
@@ -767,6 +1168,9 @@
         "description": "Ограничения на рег. действия: Дата окончания действия ограничения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
@@ -774,6 +1178,9 @@
         "description": "Ограничения на рег. действия: Год выпуска ТС",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
@@ -781,13 +1188,19 @@
         "description": "Ограничения на рег. действия: Марка (модель) ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
         "path": "restrictions.registration_actions.items[].initiator.name",
-        "description": "Ограничения на рег. действия: Кем наложено ограничение",
+        "description": "Ограничения на рег. действия: Наименование организации наложившей ограничение",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
@@ -795,6 +1208,9 @@
         "description": "Ограничения на рег. действия: Регион инициатора ограничения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
@@ -802,20 +1218,29 @@
         "description": "Ограничения на рег. действия: Вид ограничения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
         "path": "restrictions.registration_actions.items[].restrict.reason",
-        "description": "Ограничения на рег. действия: Основания ограничения",
+        "description": "Ограничения на рег. действия: Основания для наложения ограничения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
         "path": "restrictions.registration_actions.items[].restrict.number",
-        "description": "Ограничения на рег. действия: Номер документа",
+        "description": "Ограничения на рег. действия: Номер документа устанавливающего ограничения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
@@ -823,34 +1248,53 @@
         "description": "Ограничения на рег. действия: Имеются ли ограничения на рег. действия?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
         ]
     },
     {
         "path": "pledges.items[].date.event",
-        "description": "Обременения на ТС: Дата",
+        "description": "Обременения на ТС: Дата наложения обременения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].number",
-        "description": "Обременения на ТС: Номер",
+        "description": "Обременения на ТС: Номер документа устанавливающего обременение",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].type",
-        "description": "Обременения на ТС: Тип события (возникновение, исключение, прочее)",
+        "description": "Обременения на ТС: Тип события [Возникновение, Исключение, ...]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].in_pledge",
-        "description": "Обременения на ТС: Состояние залога",
+        "description": "Обременения на ТС: Находится ли ТС в залоге?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
@@ -858,63 +1302,98 @@
         "description": "Обременения на ТС: Залогодатель (имя)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].pledgors[].type",
-        "description": "Обременения на ТС: Залогодатель (тип)",
+        "description": "Обременения на ТС: Тип залогодателя [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].pledgors[].dob",
-        "description": "Обременения на ТС: Залогодатель (dob)",
+        "description": "Обременения на ТС: Дата рождения залогодателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].pledgees[].name",
-        "description": "Обременения на ТС: Залогодержатель (имя)",
+        "description": "Обременения на ТС: Имя залогодержателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].pledgees[].type",
-        "description": "Обременения на ТС: Залогодержатель (тип)",
+        "description": "Обременения на ТС: Тип залогодержателя [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].pledgees[].dob",
-        "description": "Обременения на ТС: Залогодержатель (dob)",
+        "description": "Обременения на ТС: Дата рождения залогодержателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "pledges.items[].data",
-        "description": "Обременения на ТС: Данные",
+        "description": "Обременения на ТС: Дополнительные данные о залоге",
         "types": [
             "string",
             "array"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
         ]
     },
     {
         "path": "customs.history.items[].date.event",
-        "description": "История по таможне: Дата",
+        "description": "История по таможне: Дата получения таможенной декларации",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base",
+            "base.tech"
         ]
     },
     {
         "path": "customs.history.items[].document.name",
-        "description": "История по таможне: Имя документа",
+        "description": "История по таможне: Наименование документа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
@@ -922,48 +1401,71 @@
         "description": "История по таможне: Номер документа (декларации)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "customs.history.items[].org.name",
-        "description": "История по таможне: Имя организации",
+        "description": "История по таможне: Наименование организации",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "customs.history.items[].color.name",
-        "description": "История по таможне: Цвет",
+        "description": "История по таможне: Цвет ТС в таможенной декларации",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "customs.history.items[].tax.amount",
-        "description": "История по таможне: Пошлина",
+        "description": "История по таможне: Сумма таможенной пошлины",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "customs.history.items[].price.amount",
-        "description": "История по таможне: Стоимость",
+        "description": "История по таможне: Декларируемая тоимость ТС",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "customs.base",
+            "base.tech"
         ]
     },
     {
         "path": "customs.history.items[].mileage",
-        "description": "История по таможне: Пробег",
+        "description": "История по таможне: Пробег в таможенной декларации",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "customs.base",
+            "base.tech"
         ]
     },
     {
         "path": "customs.history.items[].ecology.type",
-        "description": "История по таможне: Экология",
+        "description": "История по таможне: Экологичесская норма ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
@@ -971,6 +1473,10 @@
         "description": "История по таможне: Спецификация",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base",
+            "base.tech"
         ]
     },
     {
@@ -978,41 +1484,60 @@
         "description": "История по таможне: Спецификация, сырая строка",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "customs.history.items[].owner.type",
-        "description": "История по таможне: Тип владельца",
+        "description": "История по таможне: Тип владельца ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "customs.history.items[].owner.value",
-        "description": "История по таможне: Владелец",
+        "description": "История по таможне: Владелец ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "customs.history.items[].country.from.name",
-        "description": "История по таможне: Из страны (имя страны)",
+        "description": "История по таможне: Наименование страны экспортера",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base",
+            "base.tech"
         ]
     },
     {
         "path": "customs.history.items[].country.to.name",
-        "description": "История по таможне: В страну (имя страны)",
+        "description": "История по таможне: Наименование страны импортера",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {
         "path": "leasings.items[].tin",
-        "description": "Лизинг: ИНН (Taxpayer identification number)",
+        "description": "Лизинг: Номер ИНН компании-лизингополучателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
@@ -1020,6 +1545,9 @@
         "description": "Лизинг: Наименование компании-лизингополучателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
@@ -1027,20 +1555,30 @@
         "description": "Лизинг: Наименование компании-лизингодателя",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
         "path": "leasings.items[].date.event",
-        "description": "Лизинг: Дата",
+        "description": "Лизинг: Дата получения лизинга",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "base.ext"
         ]
     },
     {
         "path": "leasings.used_in_leasing",
-        "description": "Лизинг: Факт приобретения ТС в лизинг",
+        "description": "Лизинг: Приобреталось ли ТС в лизинг?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -1048,6 +1586,9 @@
         "description": "Такси: Дата начала эксплуатации ТС в качестве такси",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1055,6 +1596,9 @@
         "description": "Такси: Дата окончания эксплуатации ТС в качестве такси",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1062,6 +1606,9 @@
         "description": "Такси: Регистрационный номер разрешения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1069,48 +1616,69 @@
         "description": "Такси: Дата выдачи разрешения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
         "path": "taxi.history.items[].license.status",
-        "description": "Такси: Статус разрешения (ACTIVE, SUSPENDED, ANNULLED, TERMINATED, UNDEFINED)",
+        "description": "Такси: Статус разрешения [ACTIVE, SUSPENDED, ANNULLED, TERMINATED, UNDEFINED]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
         "path": "taxi.history.items[].company.name",
-        "description": "Такси: Наименование компании или ИП (перевозчика)",
+        "description": "Такси: Наименование компании или ИП перевозчика",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
         "path": "taxi.history.items[].company.address",
-        "description": "Такси: Адрес компании или ИП (перевозчика)",
+        "description": "Такси: Адрес компании или ИП перевозчика",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
         "path": "taxi.history.items[].ogrn",
-        "description": "Такси: ОГРН / ОГРНИП",
+        "description": "Такси: ОГРН или ОГРНИП компании перевозчика",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
         "path": "taxi.history.items[].tin",
-        "description": "Такси: ИНН (Taxpayer identification number)",
+        "description": "Такси: ИНН компании или ИП перевозчика",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
         "path": "taxi.history.items[].number_plate.is_yellow",
-        "description": "Такси: Желтый ли номерной знак?",
+        "description": "Такси: Является ли номерной знак желтым (формат ГРЗ)?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1118,6 +1686,9 @@
         "description": "Такси: Марка автомобиля",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1125,6 +1696,9 @@
         "description": "Такси: Нормализованное значение марки автомобиля",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1132,6 +1706,9 @@
         "description": "Такси: Модель автомобиля",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1139,6 +1716,9 @@
         "description": "Такси: Нормализованное значение модели автомобиля",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1146,6 +1726,9 @@
         "description": "Такси: Цвет автомобиля",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1153,6 +1736,9 @@
         "description": "Такси: Государственный регистрационный знак",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1160,6 +1746,9 @@
         "description": "Такси: Год выпуска автомобиля",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1167,6 +1756,9 @@
         "description": "Такси: Номер СТС (свидетельства регистрации ТС)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1174,13 +1766,19 @@
         "description": "Такси: Дата получения СТС (свидетельства регистрации ТС)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
         "path": "taxi.history.items[].region.code",
-        "description": "Такси: Код региона выдачи разрешения",
+        "description": "Такси: Код региона выдачи лицензии",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1188,6 +1786,9 @@
         "description": "Такси: Причина отзыва лицензии",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1195,6 +1796,9 @@
         "description": "Такси: Заметка об отзыве лицензии",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1202,6 +1806,9 @@
         "description": "Такси: Серия и номер бланка разрешения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1209,6 +1816,9 @@
         "description": "Такси: Город регистрации",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
         ]
     },
     {
@@ -1216,13 +1826,20 @@
         "description": "Такси: Использовалось ли ТС в качестве такси?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "av.taxi",
+            "base.taxi"
         ]
     },
     {
         "path": "fines.items[].date.event",
-        "description": "Штрафы: Дата",
+        "description": "Штрафы: Дата инициации штрафа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1230,6 +1847,9 @@
         "description": "Штрафы: Статья правонарушения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1237,20 +1857,29 @@
         "description": "Штрафы: Описание статьи правонарушения",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
         "path": "fines.items[].description",
-        "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном виде)",
+        "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном формате)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
         "path": "fines.items[].vendor.name",
-        "description": "Штрафы: Наименование поставщика (наименование подразделения ГИБДД)",
+        "description": "Штрафы: Наименование организации наложившей штраф (наименование подразделения ГИБДД)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1258,6 +1887,9 @@
         "description": "Штрафы: Сумма штрафа",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1265,6 +1897,9 @@
         "description": "Штрафы: Общая сумма начисления",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1272,6 +1907,9 @@
         "description": "Штрафы: Размер скидки в %",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1279,13 +1917,19 @@
         "description": "Штрафы: Дата действия скидки по оплате",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
         "path": "fines.items[].is_paid",
-        "description": "Штрафы: Штраф не оплачен (false) / оплачен (true)",
+        "description": "Штрафы: Оплачен ли штраф?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1293,20 +1937,29 @@
         "description": "Штрафы: Наименование получателя платежа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
         "path": "fines.items[].wire.user.tin",
-        "description": "Штрафы: ИНН получателя",
+        "description": "Штрафы: ИНН получателя платежа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
         "path": "fines.items[].wire.user.kpp",
-        "description": "Штрафы: КПП получателя",
+        "description": "Штрафы: КПП получателя платежа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1314,6 +1967,9 @@
         "description": "Штрафы: Номер счета получателя платежа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1321,6 +1977,9 @@
         "description": "Штрафы: Наименование банка получателя платежа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1328,6 +1987,9 @@
         "description": "Штрафы: БИК банка получателя платежа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1335,6 +1997,9 @@
         "description": "Штрафы: Назначение платежа",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1342,6 +2007,9 @@
         "description": "Штрафы: КБК",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1349,13 +2017,19 @@
         "description": "Штрафы: ОКТМО (ОКАТО)",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
         "path": "fines.has_fines",
-        "description": "Штрафы: Наличие штрафов по транспортному средству",
+        "description": "Штрафы: Имеются ли штрафы на транспортное средство?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {
@@ -1363,6 +2037,12 @@
         "description": "Пробеги: Дата фиксирования пробега",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext",
+            "base.taxi",
+            "base.tech"
         ]
     },
     {
@@ -1370,76 +2050,112 @@
         "description": "Пробеги: Значение пробега",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext",
+            "base.taxi",
+            "base.tech"
         ]
     },
     {
         "path": "images.photos.items[].vehicle.brand.name",
-        "description": "Фотография ТС: Значение марки (бренда) ТС",
+        "description": "Фотографии ТС: Наименование марки (бренда) ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "images.avtonomer"
         ]
     },
     {
         "path": "images.photos.items[].vehicle.model.name",
-        "description": "Фотография ТС: Значение модели ТС",
+        "description": "Фотографии ТС: Наименование модели ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "images.avtonomer"
         ]
     },
     {
         "path": "images.photos.items[].date.issued",
-        "description": "Фотография ТС: Дата фиксации изображения",
+        "description": "Фотографии ТС: Дата фото фиксации",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "images.avtonomer"
         ]
     },
     {
         "path": "images.photos.items[].uri",
-        "description": "Фотография ТС: URI фотографии ТС",
+        "description": "Фотографии ТС: URI фотографии ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "images.avtonomer"
         ]
     },
     {
         "path": "car_price.items[].date.release",
-        "description": "car_price: Дата выпуска автомобиля",
+        "description": "Стоимость ТС: Дата выпуска ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "carprice"
         ]
     },
     {
         "path": "car_price.items[].amount",
-        "description": "car_price: Стоимость автомобиля",
+        "description": "Стоимость ТС: Стоимость ТС",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "carprice"
         ]
     },
     {
         "path": "car_price.items[].model.name",
-        "description": "car_price: Модель автомобиля",
+        "description": "Стоимость ТС: Модель ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "carprice"
         ]
     },
     {
         "path": "car_price.items[].modification.name",
-        "description": "car_price: Модификация автомобиля",
+        "description": "Стоимость ТС: Модификация ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "carprice"
         ]
     },
     {
         "path": "car_price.items[].engine.volume",
-        "description": "car_price: Объем двигателя",
+        "description": "Стоимость ТС: Объем двигателя ТС",
         "types": [
             "float"
+        ],
+        "fillable_by": [
+            "carprice"
         ]
     },
     {
         "path": "car_price.items[].year",
-        "description": "car_price: Год выпуска",
+        "description": "Стоимость ТС: Год выпуска ТС",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "carprice"
         ]
     },
     {
@@ -1447,6 +2163,9 @@
         "description": "CarFax: Существуют ли данные у сервиса CarFax?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "carfax.check"
         ]
     },
     {
@@ -1454,153 +2173,219 @@
         "description": "CarFax: Количество найденных записей",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "carfax.check"
         ]
     },
     {
         "path": "carfax.check.vehicle.model.name",
-        "description": "CarFax: Имя модели ТС",
+        "description": "CarFax: Наименование модели ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "carfax.check"
         ]
     },
     {
         "path": "repairs.history.items[].number.calculation",
-        "description": "Номер расчёта ремонтных работ",
+        "description": "Ремонтные работы: Номер документа расчёта ремонтных работ",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].number.claim",
-        "description": "Номер дела ремонтных работ",
+        "description": "Ремонтные работы: Номер дела ремонтных работ",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].date.calculation",
-        "description": "Дата расчета стоимости ремонтных работ",
+        "description": "Ремонтные работы: Дата расчета стоимости ремонтных работ",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].mileage",
-        "description": "Пробег",
+        "description": "Ремонтные работы: Пробег на момент проведения ремонтных работ",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].cost.total",
-        "description": "Итоговая стоимость ремонтных работ",
+        "description": "Ремонтные работы: Итоговая стоимость ремонтных работ",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].cost.labour",
-        "description": "Стоимость выполнения ремонтных работ",
+        "description": "Ремонтные работы: Стоимость выполнения ремонтных работ",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].cost.parts",
-        "description": "Стоимость запчастей",
+        "description": "Ремонтные работы: Стоимость запчастей",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].cost.paint",
-        "description": "Стоимость покраски",
+        "description": "Ремонтные работы: Стоимость покраски",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].car.manufacturer",
-        "description": "Производитель автомобиля",
+        "description": "Ремонтные работы: Производитель ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].car.model",
-        "description": "Модель автомобиля",
+        "description": "Ремонтные работы: Модель ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].car.sub_model",
-        "description": "Покаление автомобиля",
+        "description": "Ремонтные работы: Поколение ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].insurer.name",
-        "description": "Название страховой компании",
+        "description": "Ремонтные работы: Название страховой компании",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].assessor.name",
-        "description": "Название компании оценщика",
+        "description": "Ремонтные работы: Название компании оценщика",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].task_process",
-        "description": "В каком процессе был выполнен расчёт? KASKO, OSAGO",
+        "description": "Ремонтные работы: В каком процессе был выполнен расчёт [KASKO, OSAGO]",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].repairer.type",
-        "description": "Тип клиента, работавшего с делом. Garage, Insurance, Assessor",
+        "description": "Ремонтные работы: Тип клиента, работавшего с делом. Garage, Insurance, Assessor",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].repairer.description",
-        "description": "Описание клиента, работавшего с делом. СТО, Страховая компания, Оценщик",
+        "description": "Ремонтные работы: Описание клиента, работавшего с делом. СТО, Страховая компания, Оценщик",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].details.items[].name",
-        "description": "Наименование ремонтных работ",
+        "description": "Ремонтные работы: Наименование ремонтных работ",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].details.items[].repair.method",
-        "description": "Код ремонтных работ",
+        "description": "Ремонтные работы: Код ремонтных работ",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].details.items[].repair.description",
-        "description": "Описание ремонтных работ",
+        "description": "Ремонтные работы: Описание ремонтных работ",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     },
     {
         "path": "repairs.history.items[].details.count",
-        "description": "Количество позиций в списке работ",
+        "description": "Ремонтные работы: Количество позиций в списке работ",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "repairs.history"
         ]
     }
 ]

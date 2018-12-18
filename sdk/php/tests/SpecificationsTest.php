@@ -57,8 +57,21 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetFieldsSpecification()
     {
+        $fillable_by_should_be_empty_for = [
+            'tech_data.manufacturer.name',
+            'tech_data.brand.name.rus',
+            'tech_data.transmission.type',
+            'insurance.osago.items[].date.start',
+            'insurance.osago.items[].date.end',
+            'calculate.tax.moscow.yearly.amount',
+            'calculate.tax.regions.yearly.amount',
+            'utilizations.items[].org.name',
+            'utilizations.items[].country.name',
+        ];
+
         foreach (['default', null] as $group_name) {
-            $result = $this->instance::getFieldsSpecification($group_name);
+            $result  = $this->instance::getFieldsSpecification($group_name);
+            $sources = $this->instance::getSourcesSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
@@ -75,10 +88,32 @@ class SpecificationsTest extends AbstractTestCase
             $this->assertCount(\count($raw), $result);
             $patches = [];
 
-            foreach ($raw as $field_name => $field_data) {
-                $this->assertEquals($path = $field_data['path'], $result[$field_name]->getPath());
-                $this->assertEquals($field_data['description'], $result[$field_name]->getDescription());
-                $this->assertEquals($field_data['types'], $result[$field_name]->getTypes());
+            foreach ($raw as $i => $field_data) {
+                $this->assertEquals($path = $field_data['path'], $result[$i]->getPath());
+                $this->assertEquals($field_data['description'], $result[$i]->getDescription());
+                $this->assertEquals($field_data['types'], $result[$i]->getTypes());
+                $this->assertEquals(
+                    $fillable_by = $field_data['fillable_by'],
+                    $result[$i]->getFillableBy(),
+                    "{$path} has no 'fillable_by' attribute"
+                );
+
+                $this->assertInternalType('array', $fillable_by);
+
+                if (\in_array($path, $fillable_by_should_be_empty_for, true)) {
+                    $this->assertEmpty($fillable_by, "Path {$path} should have empty 'fillable_by' attribute");
+                } else {
+                    $this->assertNotEmpty($fillable_by, "Path {$path} has empty 'fillable_by' attribute");
+                }
+
+                $fillable_sources = [];
+
+                foreach ($fillable_by as $source) {
+                    $this->assertTrue($sources->contains('name', $source), "Path [{$path}] contains invalid source [{$source}]");
+                    $this->assertNotContains($source, $fillable_sources, "Path [{$path}] contains source duplicate: {$source}");
+                    $fillable_sources[] = $source;
+                }
+
                 $this->assertNotContains($path, $patches, "Fields specification contains field duplicate: {$path}");
                 $patches[] = $path;
             }

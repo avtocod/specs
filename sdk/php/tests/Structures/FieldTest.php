@@ -20,11 +20,13 @@ class FieldTest extends AbstractStructureTestCase
             'path'        => $path = 'some path',
             'description' => $description = 'some description',
             'types'       => $types = ['some', 'types'],
+            'fillable_by' => $fillable_by = ['some.source', 'another.source'],
         ]);
 
         $this->assertEquals($path, $this->instance->getPath());
         $this->assertEquals($description, $this->instance->getDescription());
         $this->assertEquals($types, $this->instance->getTypes());
+        $this->assertEquals($fillable_by, $this->instance->getFillableBy());
 
         $this->assertEquals($input, $this->instance->toArray());
     }
@@ -38,11 +40,13 @@ class FieldTest extends AbstractStructureTestCase
             'path'        => null,
             'description' => null,
             'types'       => null,
+            'fillable_by' => null,
         ]);
 
         $this->assertNull($this->instance->getPath());
         $this->assertNull($this->instance->getDescription());
         $this->assertNull($this->instance->getTypes());
+        $this->assertNull($this->instance->getFillableBy());
     }
 
     /**

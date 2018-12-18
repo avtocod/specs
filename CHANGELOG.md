@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v2.13.0
+
+### Added
+
+- `fillable_by` field for fields specification [#34]
+- Source `tech.base`
+- Source `references.base`
+- Source `av.taxi`
+- Source `pledge.house`
+
+[#34]:https://github.com/avtocod/specs/issues/34
+
 ## v2.12.0
 
 ### Added 

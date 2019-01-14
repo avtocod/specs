@@ -720,7 +720,60 @@
         "registration_actions": {
             "type": "object",
             "description": "Регистрационные действия",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "properties": {
+                                    "start": {
+                                        "description" : "Дата начала рег. действия",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2015-05-15 00:00:00"],
+                                        "fillable_by": [
+                                            "base",
+                                            "base.ext",
+                                            "base.taxi"
+                                        ]
+                                    },
+                                    "end": {
+                                        "description" : "Дата окончания рег. действия",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2015-05-15 00:00:00"],
+                                        "fillable_by": [
+                                            "base",
+                                            "base.ext",
+                                            "base.taxi"
+                                        ]
+                                    }
+                                }
+                            },
+                            "reg_num": {
+                                "description": "Государственный регистрационный знак",
+                                "oneOf": [
+                                    { "type": "null" }, { "$ref": "#/definitions/grz_code" }
+                                ],
+                                "examples": ["А332АВ177"],
+                                "fillable_by": [
+                                    "base",
+                                    "base.ext"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description" : "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "repairs": {
@@ -744,13 +797,37 @@
         "car_price": {
             "type": "object",
             "description": "Стоимость ТС",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "fines": {
             "type": "object",
             "description": "Штрафы",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "leasings": {
@@ -762,7 +839,19 @@
         "customs": {
             "type": "object",
             "description": "Данные по таможне",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "taxi": {
@@ -774,7 +863,19 @@
         "pledges": {
             "type": "object",
             "description": "Обременения на ТС",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "insurance": {
@@ -798,7 +899,19 @@
         "stealings": {
             "type": "object",
             "description": "Проверка на угон",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "ownership": {
@@ -810,19 +923,55 @@
         "mileages": {
             "type": "object",
             "description": "Пробеги",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "diagnostic_cards": {
             "type": "object",
             "description": "Диагностические карты",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "utilizations": {
             "type": "object",
             "description": "Утилизация",
-            "properties": {}
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer"
+                }
+            }
         },
 
         "images": {

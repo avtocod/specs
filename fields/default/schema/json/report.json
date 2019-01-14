@@ -1,0 +1,274 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Report",
+    "description": "Vehicle information",
+
+    "definitions": {
+        "vin_code": {
+            "type": "string",
+            "pattern": "[0-9ABCDEFGHJKLMNPRSTUVWXYZ]+",
+            "minLength": 17,
+            "maxLength": 17
+        },
+        "grz_code": {
+            "type": "string",
+            "pattern": "[0-9АВЕКМНОРСТУХ]+",
+            "minLength": 6,
+            "maxLength": 9
+        },
+        "sts_code": {
+            "type": "string",
+            "pattern": "[0-9А-ЯЁ ]+",
+            "minLength": 10,
+            "maxLength": 12
+        },
+        "pts_code": {
+            "type": "string",
+            "pattern": "[0-9А-ЯЁ ]+",
+            "minLength": 10,
+            "maxLength": 12
+        },
+        "body_code": {
+            "type": "string",
+            "pattern": "[0-9A-ZА-ЯЁ\\- ]+",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "chassis_code": {
+            "type": "string",
+            "pattern": "[0-9A-ZА-ЯЁ\\- ]+",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "brand_unique_id": {
+            "type": "string",
+            "pattern": "[0-9A-Z_]+",
+            "minLength": 4,
+            "maxLength": 128
+        },
+        "model_unique_id": {
+            "type": "string",
+            "pattern": "[0-9A-Z_]+",
+            "minLength": 4,
+            "maxLength": 128
+        }
+    },
+
+    "type": "object",
+
+    "properties": {
+        "identifiers": {
+            "type": "object",
+            "properties": {
+                "vehicle": {
+                    "type": "object",
+                    "description" : "Идентификаторы ТС",
+                    "properties": {
+                        "vin": {
+                            "description" : "VIN код",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/vin_code" }
+                            ],
+                            "examples": ["C5KY36SZRBD974789"],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "gibdd.eaisto",
+                                "base.tech",
+                                "tech.ext"
+                            ]
+                        },
+                        "reg_num": {
+                            "description" : "Государственный регистрационный знак (ГРЗ)",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/grz_code" }
+                            ],
+                            "examples": ["А332АВ177"],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.eaisto"
+                            ]
+                        },
+                        "sts": {
+                            "description" : "Номер СТС (свидетельства регистрации ТС)",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/sts_code" }
+                            ],
+                            "examples": ["3104847107"],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
+                        },
+                        "pts": {
+                            "description" : "Номер ПТС (паспорт ТС)",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/pts_code" }
+                            ],
+                            "examples": ["36КС619977"],
+                            "fillable_by": [
+                                "base.ext",
+                                "gibdd.history"
+                            ]
+                        },
+                        "body": {
+                            "description" : "Номер кузова",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/body_code" }
+                            ],
+                            "examples": ["KCA275-9673180"],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
+                        },
+                        "chassis": {
+                            "description" : "Номер шасси",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/chassis_code" }
+                            ],
+                            "examples": ["LFPVBM6819793"],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "tech_data": {
+            "type": "object",
+            "description" : "Характеристики ТС",
+            "properties": {
+                "manufacturer": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description" : "Наименование производителя",
+                            "type": ["string", "null"],
+                            "examples": ["N\/A"],
+                            "fillable_by": []
+                        }
+                    }
+                },
+                "brand": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "description" : "Уникальный идентификатор марки",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/brand_unique_id" }
+                            ],
+                            "examples": ["ID_MARK_OPEL"],
+                            "fillable_by": [
+                                "references.base"
+                            ]
+                        },
+                        "name": {
+                            "type": "object",
+                            "properties": {
+                                "original": {
+                                    "description" : "Марка",
+                                    "type": ["string", "null"],
+                                    "examples": ["OPEL MONTEREY"],
+                                    "fillable_by": [
+                                        "base",
+                                        "base.ext",
+                                        "gibdd.history",
+                                        "base.taxi",
+                                        "customs.base",
+                                        "gibdd.eaisto"
+                                    ]
+                                },
+                                "rus": {
+                                    "description" : "Марка (по-русски)",
+                                    "type": ["string", "null"],
+                                    "examples": ["Opel"],
+                                    "fillable_by": []
+                                },
+                                "normalized": {
+                                    "description" : "Нормализованное значение марки",
+                                    "type": ["string", "null"],
+                                    "examples": ["Opel"],
+                                    "fillable_by": [
+                                        "references.base"
+                                    ]
+                                }
+                            }
+                        },
+                        "logotype": {
+                            "type": "object",
+                            "properties": {
+                                "uri": {
+                                    "description" : "URI изображения логотипа марки",
+                                    "type": ["string", "null"],
+                                    "examples": ["https:\/\/vl.imgix.net\/img\/opel-logo.png"],
+                                    "fillable_by": [
+                                        "references.base"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "model": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "description" : "Уникальный идентификатор модели",
+                            "oneOf": [
+                                { "type": "null" }, { "$ref": "#/definitions/model_unique_id" }
+                            ],
+                            "examples": ["ID_MARK_OPEL_MODEL_MONTEREY"],
+                            "fillable_by": [
+                                "references.base"
+                            ]
+                        },
+                        "name": {
+                            "type": "object",
+                            "properties": {
+                                "original": {
+                                    "description" : "Модель",
+                                    "type": ["string", "null"],
+                                    "examples": ["Monterey"],
+                                    "fillable_by": [
+                                        "gibdd.history",
+                                        "gibdd.eaisto"
+                                    ]
+                                },
+                                "normalized": {
+                                    "description" : "Нормализованное значение модели",
+                                    "type": ["string", "null"],
+                                    "examples": ["Monterey"],
+                                    "fillable_by": [
+                                        "references.base"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "type": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description" : "Тип кузова ТС",
+                            "type": ["string", "null"],
+                            "examples": ["Седан", "Универсал"],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

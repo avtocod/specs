@@ -3,8 +3,9 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
-use Opis\JsonSchema\Validator;
 use Opis\JsonSchema\Schema;
+use Opis\JsonSchema\Validator;
+use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
@@ -12,7 +13,6 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
-use Tarampampam\Wrappers\Json;
 
 class SpecificationsTest extends AbstractTestCase
 {

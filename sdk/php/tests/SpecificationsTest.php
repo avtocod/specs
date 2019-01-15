@@ -5,7 +5,6 @@ namespace Avtocod\Specifications\Tests;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Opis\JsonSchema\Validator;
 use Opis\JsonSchema\Schema;
 use Opis\JsonSchema\Validator;
 use Tarampampam\Wrappers\Json;
@@ -106,6 +105,8 @@ class SpecificationsTest extends AbstractTestCase
             );
 
             foreach ($field->getFillableBy() as $source_name) {
+                $this->assertNotEmpty($schema_field_data['fillable_by'], "'fillable_by' in {$schema_path} is empty");
+
                 $this->assertContains(
                     $source_name,
                     $schema_field_data['fillable_by'],

@@ -1631,8 +1631,17 @@
                                             },
                                             "count": {
                                                 "description": "Количество позиций в списке работ",
-                                                "type": "integer",
-                                                "minimum": 0
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ],
+                                                "examples": [
+                                                    0,
+                                                    null
+                                                ]
                                             }
                                         }
                                     }

@@ -1993,9 +1993,272 @@
 
         "taxi": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Такси",
-            "properties": {}
+            "properties": {
+                "history": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "start": {
+                                                "description": "Дата начала эксплуатации ТС в качестве такси",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2016-03-24 00:00:00"],
+                                                "fillable_by": ["av.taxi"]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания эксплуатации ТС в качестве такси",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2017-03-24 00:00:00"],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    },
+                                    "license": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "number": {
+                                                "description": "Регистрационный номер разрешения",
+                                                "type": ["string", "null"],
+                                                "examples": ["19704"],
+                                                "fillable_by": ["av.taxi"]
+                                            },
+                                            "issued": {
+                                                "description": "Дата выдачи разрешения",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2016-03-24 00:00:00"],
+                                                "fillable_by": ["av.taxi"]
+                                            },
+                                            "status": {
+                                                "description": "Статус разрешения",
+                                                "type": ["string", "null"],
+                                                "enum": ["ACTIVE", "SUSPENDED", "ANNULLED", "TERMINATED", "UNDEFINED"],
+                                                "examples": ["ANNULLED"],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    },
+                                    "company": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование компании или ИП перевозчика",
+                                                "type": ["string", "null"],
+                                                "examples": ["ООО ИнжЖелДорЖелДорСбыт"],
+                                                "fillable_by": ["av.taxi"]
+                                            },
+                                            "address": {
+                                                "description": "Адрес компании или ИП перевозчика",
+                                                "type": ["string", "null"],
+                                                "examples": ["005302, Ленинградская область, город Волоколамск, пл. Балканская, 19"],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    },
+                                    "ogrn": {
+                                        "description": "ОГРН или ОГРНИП компании перевозчика",
+                                        "type": ["string", "null"],
+                                        "examples": ["1877354634195"],
+                                        "fillable_by": ["av.taxi"]
+                                    },
+                                    "tin": {
+                                        "description": "ИНН компании или ИП перевозчика",
+                                        "type": ["string", "null"],
+                                        "examples": ["1363519987"],
+                                        "fillable_by": ["av.taxi"]
+                                    },
+                                    "number_plate": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "is_yellow": {
+                                                "description": "Является ли номерной знак желтым (формат ГРЗ)?",
+                                                "type": ["boolean", "null"],
+                                                "examples": [true, null],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    },
+                                    "vehicle": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "brand": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Марка автомобиля",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["Опель"],
+                                                        "fillable_by": ["av.taxi"]
+                                                    },
+                                                    "normalized": {
+                                                        "description": "Нормализованное значение марки автомобиля",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["Opel"],
+                                                        "fillable_by": ["av.taxi"]
+                                                    }
+                                                }
+                                            },
+                                            "model": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Модель автомобиля",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["Монтарей"],
+                                                        "fillable_by": ["av.taxi"]
+                                                    },
+                                                    "normalized": {
+                                                        "description": "Нормализованное значение модели автомобиля",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["Monterey"],
+                                                        "fillable_by": ["av.taxi"]
+                                                    }
+                                                }
+                                            },
+                                            "color": {
+                                                "normalized": {
+                                                    "description": "Цвет автомобиля",
+                                                    "type": ["string", "null"],
+                                                    "examples": ["Фиолетовый"],
+                                                    "fillable_by": ["av.taxi"]
+                                                }
+                                            },
+                                            "reg_num": {
+                                                "description": "Государственный регистрационный знак",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/grz_code" }
+                                                ],
+                                                "examples": ["А332АВ177"],
+                                                "fillable_by": ["av.taxi"]
+                                            },
+                                            "year": {
+                                                "description": "Год выпуска автомобиля",
+                                                "type": ["integer", "null"],
+                                                "examples": [1988],
+                                                "minimum": 1800,
+                                                "fillable_by": ["av.taxi"]
+                                            },
+                                            "sts": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "number": {
+                                                        "description": "Номер СТС (свидетельства регистрации ТС)",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["24ХТ429962"],
+                                                        "fillable_by": ["av.taxi"]
+                                                    },
+                                                    "date": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "receive": {
+                                                                "description": "Дата получения СТС (свидетельства регистрации ТС)",
+                                                                "oneOf": [
+                                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                                ],
+                                                                "examples": ["2015-06-01 00:00:00"],
+                                                                "fillable_by": ["av.taxi"]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "region": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "code": {
+                                                "description": "Код региона выдачи лицензии",
+                                                "type": ["string", "null"],
+                                                "examples": ["77"],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    },
+                                    "cancel": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "reason": {
+                                                "description": "Причина отзыва лицензии",
+                                                "type": ["string", "null"],
+                                                "examples": ["Пр. №362 от 24.11.2016"],
+                                                "fillable_by": ["av.taxi"]
+                                            },
+                                            "note": {
+                                                "description": "Заметка об отзыве лицензии",
+                                                "type": ["string", "null"],
+                                                "examples": ["Действие разрешения аннулировано на основании личного заявления юридического лица, приказ Министерства дорожного хозяйства, транспорта и связи Магаданской области от 28 апреля 2016 года № 94"],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    },
+                                    "permit": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "number": {
+                                                "description": "Серия и номер бланка разрешения",
+                                                "type": ["string", "null"],
+                                                "examples": ["67656"],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    },
+                                    "city": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Город регистрации",
+                                                "type": ["string", "null"],
+                                                "examples": ["Павловский Посад"],
+                                                "fillable_by": ["av.taxi"]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "used_in_taxi": {
+                    "description": "Использовалось ли ТС в качестве такси?",
+                    "type": ["boolean", "null"],
+                    "examples": [true, null],
+                    "fillable_by": ["av.taxi", "base.taxi"]
+                }
+            }
         },
 
         "pledges": {

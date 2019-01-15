@@ -2885,27 +2885,108 @@
 
         "ownership": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "История владения",
-            "properties": {}
+            "properties": {
+                "history": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "start": {
+                                                "description": "Дата начала владения",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2010-02-07 00:00:00"],
+                                                "fillable_by": ["gibdd.history"]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания владения",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2011-04-07 00:00:00"],
+                                                "fillable_by": ["gibdd.history"]
+                                            }
+                                        }
+                                    },
+                                    "owner": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип владельца",
+                                                "type": ["string", "null"],
+                                                "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE", null],
+                                                "examples": ["LEGAL"],
+                                                "fillable_by": [
+                                                    "gibdd.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                }
+            }
         },
 
         "mileages": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Пробеги",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "event": {
+                                        "description": "Дата фиксирования пробега",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2009-07-10 00:00:00"],
+                                        "fillable_by": ["gibdd.eaisto", "tech.ext", "base.taxi", "base.tech"]
+                                    }
+                                }
+                            },
+                            "mileage": {
+                                "description": "Значение пробега",
+                                "type": ["integer", "null"],
+                                "examples": [391500],
+                                "minimum": 0,
+                                "fillable_by": ["gibdd.eaisto", "tech.ext", "base.taxi", "base.tech"]
+                            }
+                        }
                     }
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
                 }
             }
         },

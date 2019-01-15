@@ -411,7 +411,7 @@
                                 "type": {
                                     "description": "Тип топлива",
                                     "type": ["string", "null"],
-                                    "enum": ["Бензиновый", "Дизельный", "Прочее"],
+                                    "enum": ["Бензиновый", "Дизельный", "Прочее", null],
                                     "examples": ["Бензиновый"],
                                     "fillable_by": [
                                         "base",
@@ -525,7 +525,7 @@
                         "type": {
                             "description": "Тип трансмиссии",
                             "type": ["string", "null"],
-                            "enum": ["AUTOMATIC", "MANUAL", "ROBOT", "VARIABLE", "UNKNOWN"],
+                            "enum": ["AUTOMATIC", "MANUAL", "ROBOT", "VARIABLE", "UNKNOWN", null],
                             "examples": ["AUTOMATIC"],
                             "fillable_by": []
                         }
@@ -538,7 +538,7 @@
                         "type": {
                             "description": "Тип привода",
                             "type": ["string", "null"],
-                            "enum": ["Заднеприводной", "Переднеприводной", "Полноприводной", "Иные"],
+                            "enum": ["Заднеприводной", "Переднеприводной", "Полноприводной", "Иные", null],
                             "examples": ["Заднеприводной"],
                             "fillable_by": [
                                 "base",
@@ -554,7 +554,7 @@
                         "position": {
                             "description": "Расположение руля",
                             "type": ["string", "null"],
-                            "enum": ["LEFT", "RIGHT", "UNKNOWN"],
+                            "enum": ["LEFT", "RIGHT", "UNKNOWN", null],
                             "examples": ["RIGHT"],
                             "fillable_by": [
                                 "base",
@@ -583,7 +583,7 @@
                                 "code": {
                                     "description": "Код категории ТС",
                                     "type": ["string", "null"],
-                                    "enum": ["A", "A1", "B", "BE", "B1", "C", "CE", "C1", "C1E", "D", "DE", "D1", "D1E", "M", "TM", "TB"],
+                                    "enum": ["A", "A1", "B", "BE", "B1", "C", "CE", "C1", "C1E", "D", "DE", "D1", "D1E", "M", "TM", "TB", null],
                                     "examples": ["TM"],
                                     "fillable_by": [
                                         "base",
@@ -612,7 +612,7 @@
                                 "type": {
                                     "description": "Тип владельца (техники)",
                                     "type": ["string", "null"],
-                                    "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE"],
+                                    "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE", null],
                                     "examples": ["LEGAL"],
                                     "fillable_by": [
                                         "base",
@@ -725,8 +725,7 @@
                             }
                         },
                         "notes": {
-                            "type": "array",
-                            "uniqueItems": true,
+                            "type": ["array", "null"],
                             "description": "Заметки по ТС",
                             "items": {
                                 "type": "string"
@@ -767,7 +766,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -847,7 +845,7 @@
                                     "type": {
                                         "description": "Тип владельца",
                                         "type": ["string", "null"],
-                                        "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE"],
+                                        "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE", null],
                                         "examples": ["PERSONLEGAL"],
                                         "fillable_by": [
                                             "base",
@@ -916,7 +914,6 @@
                     "properties": {
                         "items": {
                             "type": "array",
-                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
                                 "additionalProperties": false,
@@ -1081,7 +1078,7 @@
                                     "task_process": {
                                         "description": "В каком процессе был выполнен расчёт",
                                         "type": ["string", "null"],
-                                        "enum": ["KASKO", "OSAGO"],
+                                        "enum": ["KASKO", "OSAGO", null],
                                         "examples": ["KASKO"],
                                         "fillable_by": [
                                             "repairs.history"
@@ -1094,7 +1091,7 @@
                                             "type": {
                                                 "description": "Тип клиента, работавшего с делом",
                                                 "type": ["string", "null"],
-                                                "enum": ["Garage", "Insurance", "Assessor"],
+                                                "enum": ["Garage", "Insurance", "Assessor", null],
                                                 "examples": ["Assessor"],
                                                 "fillable_by": [
                                                     "repairs.history"
@@ -1103,7 +1100,7 @@
                                             "description": {
                                                 "description": "Описание клиента, работавшего с делом",
                                                 "type": ["string", "null"],
-                                                "enum": ["СТО", "Страховая компания", "Оценщик"],
+                                                "enum": ["СТО", "Страховая компания", "Оценщик", null],
                                                 "examples": ["Оценщик"],
                                                 "fillable_by": [
                                                     "repairs.history"
@@ -1117,7 +1114,6 @@
                                         "properties": {
                                             "items": {
                                                 "type": "array",
-                                                "uniqueItems": true,
                                                 "items": {
                                                     "type": "object",
                                                     "additionalProperties": false,
@@ -1432,7 +1428,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -1518,7 +1513,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -1732,7 +1726,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -1815,7 +1808,6 @@
                     "properties": {
                         "items": {
                             "type": "array",
-                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
                                 "additionalProperties": false,
@@ -1943,7 +1935,7 @@
                                             "type": {
                                                 "description": "Тип владельца ТС",
                                                 "type": ["string", "null"],
-                                                "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE"],
+                                                "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE", null],
                                                 "examples": ["LEGAL"],
                                                 "fillable_by": ["customs.base"]
                                             },
@@ -2009,7 +2001,6 @@
                     "properties": {
                         "items": {
                             "type": "array",
-                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
                                 "additionalProperties": false,
@@ -2057,7 +2048,7 @@
                                             "status": {
                                                 "description": "Статус разрешения",
                                                 "type": ["string", "null"],
-                                                "enum": ["ACTIVE", "SUSPENDED", "ANNULLED", "TERMINATED", "UNDEFINED"],
+                                                "enum": ["ACTIVE", "SUSPENDED", "ANNULLED", "TERMINATED", "UNDEFINED", null],
                                                 "examples": ["ANNULLED"],
                                                 "fillable_by": ["av.taxi"]
                                             }
@@ -2276,7 +2267,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2318,7 +2308,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2346,7 +2335,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2367,7 +2355,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2388,7 +2375,6 @@
             "properties": {
                 "items": {
                     "type": "array",
-                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,

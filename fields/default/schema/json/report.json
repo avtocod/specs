@@ -2262,29 +2262,222 @@
 
         "pledges": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Обременения на ТС",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "event": {
+                                        "description": "Дата наложения обременения",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2013-05-30 00:00:00"],
+                                        "fillable_by": ["pledge", "pledge.house"]
+                                    }
+                                }
+                            },
+                            "number": {
+                                "description": "Номер документа устанавливающего обременение",
+                                "type": ["string", "null"],
+                                "examples": ["2013-001-406288-623\/241"],
+                                "fillable_by": ["pledge", "pledge.house"]
+                            },
+                            "pledgors": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Залогодатель (имя)",
+                                            "type": ["string", "null"],
+                                            "examples": ["Евгения Сергеевна Дроздова"],
+                                            "fillable_by": ["pledge", "pledge.house"]
+                                        },
+                                        "type": {
+                                            "description": "Тип залогодателя",
+                                            "type": ["string", "null"],
+                                            "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE", null],
+                                            "examples": ["PERSON"],
+                                            "fillable_by": ["pledge", "pledge.house"]
+                                        },
+                                        "dob": {
+                                            "description": "Дата рождения залогодателя",
+                                            "oneOf": [
+                                                { "type": "null" }, { "$ref": "#/definitions/date" }
+                                            ],
+                                            "examples": ["1983-08-31"],
+                                            "fillable_by": ["pledge", "pledge.house"]
+                                        }
+                                    }
+                                }
+                            },
+                            "pledgees": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Имя залогодержателя",
+                                            "type": ["string", "null"],
+                                            "examples": ["ЗАО ГлавЭлектро"],
+                                            "fillable_by": ["pledge", "pledge.house"]
+                                        },
+                                        "type": {
+                                            "description": "Тип залогодержателя",
+                                            "type": ["string", "null"],
+                                            "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE", null],
+                                            "examples": ["LEGAL"],
+                                            "fillable_by": ["pledge", "pledge.house"]
+                                        },
+                                        "dob": {
+                                            "description": "Дата рождения залогодержателя",
+                                            "oneOf": [
+                                                { "type": "null" }, { "$ref": "#/definitions/date" }
+                                            ],
+                                            "examples": [null],
+                                            "fillable_by": ["pledge", "pledge.house"]
+                                        }
+                                    }
+                                }
+                            },
+                            "type": {
+                                "description": "Тип события",
+                                "type": ["string", "null"],
+                                "examples": ["Возникновение", "Исключение"],
+                                "fillable_by": ["pledge", "pledge.house"]
+                            },
+                            "in_pledge": {
+                                "description": "Находится ли ТС в залоге?",
+                                "type": ["boolean", "null"],
+                                "examples": [true, null],
+                                "fillable_by": ["av.taxi", "base.taxi"]
+                            },
+                            "data": {
+                                "description": "Дополнительные данные о залоге",
+                                "type": ["array", "null"],
+                                "examples": [null, ["Данные не предоставлены"]],
+                                "fillable_by": ["av.taxi", "base.taxi"]
+                            }
+                        }
                     }
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
                 }
             }
         },
 
         "insurance": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Страхование",
-            "properties": {}
+            "properties": {
+                "osago": {
+                    "description": "ОСАГО",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "number": {
+                                        "description": "Номер договора",
+                                        "type": ["string", "null"],
+                                        "examples": ["33264901"],
+                                        "fillable_by": ["ramiosago.base"]
+                                    },
+                                    "insurer": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование страховщика",
+                                                "type": ["string", "null"],
+                                                "examples": ["Ресо-Гарантия"],
+                                                "fillable_by": ["ramiosago.base"]
+                                            }
+                                        }
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "start": {
+                                                "description": "Наименование страховщика",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2014-07-07 00:00:00"],
+                                                "fillable_by": ["ramiosago.base"]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания действия полиса",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2015-07-07 00:00:00"],
+                                                "fillable_by": ["ramiosago.base"]
+                                            }
+                                        }
+                                    },
+                                    "restrictions": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Ограничения",
+                                                "type": ["string", "null"],
+                                                "enum": ["WITHOUT RESTRICTIONS", "WITH RESTRICTIONS", "UNKNOWN", null],
+                                                "examples": ["WITHOUT RESTRICTIONS"],
+                                                "fillable_by": ["ramiosago.base"]
+                                            }
+                                        }
+                                    },
+                                    "policy": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "series": {
+                                                "description": "Серия полиса",
+                                                "type": ["string", "null"],
+                                                "examples": ["ЕЕЕ"],
+                                                "fillable_by": ["ramiosago.base"]
+                                            },
+                                            "number": {
+                                                "description": "Номер полиса",
+                                                "type": ["string", "null"],
+                                                "examples": ["0018891420"],
+                                                "fillable_by": ["ramiosago.base"]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                }
+            }
         },
 
         "accidents": {

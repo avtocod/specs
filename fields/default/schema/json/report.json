@@ -2697,9 +2697,139 @@
 
         "restrictions": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Ограничения",
-            "properties": {}
+            "properties": {
+                "registration_actions": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "added": {
+                                                "description": "Дата добавления данных об ограничении в реестр",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2015-07-13 00:00:00"],
+                                                "fillable_by": ["gibdd.restrict"]
+                                            },
+                                            "start": {
+                                                "description": "Дата начала действия ограничения",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2015-07-13 00:00:00"],
+                                                "fillable_by": ["gibdd.restrict"]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания действия ограничения",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2015-07-13 00:00:00"],
+                                                "fillable_by": ["gibdd.restrict"]
+                                            }
+                                        }
+                                    },
+                                    "vehicle": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "year": {
+                                                "description": "Год выпуска ТС",
+                                                "type": ["integer", "null"],
+                                                "minimum": 1800,
+                                                "examples": [2004],
+                                                "fillable_by": ["gibdd.restrict"]
+                                            },
+                                            "model": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Марка (модель) ТС",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["OPEL MONTEREY"],
+                                                        "fillable_by": ["base.restrict"]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "initiator": {
+                                        "type": "object",
+                                        "additionalProperties": true,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование организации наложившей ограничение",
+                                                "type": ["string", "null"],
+                                                "examples": ["Судебные Органы"],
+                                                "fillable_by": ["base.restrict"]
+                                            },
+                                            "region": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Регион инициатора ограничения",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["Брянская"],
+                                                        "fillable_by": ["base.restrict"]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "restrict": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Вид ограничения",
+                                                "type": ["string", "null"],
+                                                "examples": ["Запрет на регистрационные действия"],
+                                                "fillable_by": ["base.restrict"]
+                                            },
+                                            "reason": {
+                                                "description": "Основания для наложения ограничения",
+                                                "type": ["string", "null"],
+                                                "examples": ["Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015"],
+                                                "fillable_by": ["base.restrict"]
+                                            },
+                                            "number": {
+                                                "description": "Номер документа устанавливающего ограничения",
+                                                "type": ["string", "null"],
+                                                "examples": ["90129308-0060"],
+                                                "fillable_by": ["base.restrict"]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "has_restrictions": {
+                            "description": "Имеются ли ограничения на рег. действия?",
+                            "type": ["boolean", "null"],
+                            "examples": [true, null],
+                            "fillable_by": ["gibdd.restrict"]
+                        }
+                    }
+                }
+            }
         },
 
         "stealings": {

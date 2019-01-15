@@ -2482,9 +2482,217 @@
 
         "accidents": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "История ДТП",
-            "properties": {}
+            "properties": {
+                "history": {
+                    "description": "История ДТП",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "number": {
+                                        "description": "Номер происшествия",
+                                        "type": ["string", "null"],
+                                        "examples": ["000043057"],
+                                        "fillable_by": ["gibdd.dtp"]
+                                    },
+                                    "accident": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "date": {
+                                                "description": "Дата происшествия",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["1978-02-14 05:24:00"],
+                                                "fillable_by": ["gibdd.dtp"]
+                                            }
+                                        }
+                                    },
+                                    "type": {
+                                        "description": "Тип происшествия",
+                                        "type": ["string", "null"],
+                                        "examples": ["Столкновение", "Наезд на стоящее ТС"],
+                                        "fillable_by": ["gibdd.dtp"]
+                                    },
+                                    "state": {
+                                        "description": "Статус ТС",
+                                        "type": ["string", "null"],
+                                        "examples": ["Повреждено"],
+                                        "fillable_by": ["gibdd.dtp"]
+                                    },
+                                    "org": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Организация, которая провела регистрацию ДТП",
+                                                "type": ["string", "null"],
+                                                "examples": ["ОДД ГИБДД ГУ МВД России, Новгородская область"],
+                                                "fillable_by": ["gibdd.dtp"]
+                                            }
+                                        }
+                                    },
+                                    "damage": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "raw": {
+                                                "description": "Описание повреждений в не-нормализованном виде",
+                                                "type": ["string", "null"],
+                                                "examples": ["Перед справа, перед слева"],
+                                                "fillable_by": ["base.moscow"]
+                                            },
+                                            "points": {
+                                                "description": "Места повреждений (коды мест повреждений ТС)",
+                                                "oneOf": [
+                                                    { "type": "null" },
+                                                    { "type": "array", "minItems": 1, "items": { "type": "integer", "minimum": 0 }}
+                                                ],
+                                                "examples": [[1, 2], null],
+                                                "fillable_by": ["gibdd.dtp"]
+                                            }
+                                        }
+                                    },
+                                    "vehicle": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "brand": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Марка ТС",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["Opel"],
+                                                        "fillable_by": ["gibdd.dtp"]
+                                                    }
+                                                }
+                                            },
+                                            "model": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Модель ТС",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["MONTEREY"],
+                                                        "fillable_by": ["gibdd.dtp"]
+                                                    }
+                                                }
+                                            },
+                                            "year": {
+                                                "description": "Год выпуска ТС",
+                                                "type": ["integer", "null"],
+                                                "minimum": 1800,
+                                                "examples": [2004],
+                                                "fillable_by": ["gibdd.dtp"]
+                                            }
+                                        }
+                                    },
+                                    "geo": {
+                                        "description": "Гео-данные места ДТП",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/geo_raw_data" }
+                                        ],
+                                        "fillable_by": ["gibdd.dtp"]
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "insurance": {
+                    "description": "История повреждений из страховых компаний",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "event": {
+                                                "description": "Дата происшествия",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2010-02-10 18:00:00"],
+                                                "fillable_by": ["base.moscow"]
+                                            }
+                                        }
+                                    },
+                                    "insurer": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип страхования",
+                                                "type": ["string", "null"],
+                                                "examples": ["КАСКО", "ОСАГО"],
+                                                "fillable_by": ["base.moscow"]
+                                            }
+                                        }
+                                    },
+                                    "accident": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "description": {
+                                                "description": "Тип происшествия",
+                                                "type": ["string", "null"],
+                                                "examples": ["Дорожно-транспортное происшествие"],
+                                                "fillable_by": ["base.moscow"]
+                                            }
+                                        }
+                                    },
+                                    "damage": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "raw": {
+                                                "description": "Размер повреждения или описание",
+                                                "type": ["string", "null"],
+                                                "examples": ["<10% от страховой суммы"],
+                                                "fillable_by": ["base.moscow"]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "has_accidents": {
+                    "description": "Наличие у ТС ДТП по данным ГИБДД и страховых компаний",
+                    "type": ["boolean", "null"],
+                    "examples": [true, null],
+                    "fillable_by": ["gibdd.dtp", "base.moscow"]
+                }
+            }
         },
 
         "restrictions": {

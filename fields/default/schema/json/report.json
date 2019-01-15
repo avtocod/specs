@@ -726,6 +726,7 @@
                         },
                         "notes": {
                             "type": "array",
+                            "uniqueItems": true,
                             "description": "Заметки по ТС",
                             "items": {
                                 "type": "string"
@@ -766,6 +767,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -1115,6 +1117,7 @@
                                         "properties": {
                                             "items": {
                                                 "type": "array",
+                                                "uniqueItems": true,
                                                 "items": {
                                                     "type": "object",
                                                     "additionalProperties": false,
@@ -1429,6 +1432,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -1514,6 +1518,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -1727,6 +1732,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -1809,6 +1815,7 @@
                     "properties": {
                         "items": {
                             "type": "array",
+                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
                                 "additionalProperties": false,
@@ -2002,6 +2009,7 @@
                     "properties": {
                         "items": {
                             "type": "array",
+                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
                                 "additionalProperties": false,
@@ -2268,6 +2276,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2309,6 +2318,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2336,6 +2346,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2356,6 +2367,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,
@@ -2376,6 +2388,7 @@
             "properties": {
                 "items": {
                     "type": "array",
+                    "uniqueItems": true,
                     "items": {
                         "type": "object",
                         //"additionalProperties": false,

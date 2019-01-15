@@ -2,6 +2,7 @@
     "$schema": "https://json-schema.org/draft-07/schema#",
     "title": "Report",
     "description": "Vehicle information",
+    // REMOVE **COUNT** PROPERTIES
 
     "definitions": {
         "vin_code": {
@@ -1173,81 +1174,819 @@
 
         "carfax": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "CarFax",
-            "properties": {}
+            "properties": {
+                "check": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "exists": {
+                            "description": "Существуют ли данные у сервиса CarFax?",
+                            "type": ["boolean", "null"],
+                            "examples": [false],
+                            "fillable_by": [
+                                "carfax.check"
+                            ]
+                        },
+                        "records": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "count": {
+                                    "description": "Количество найденных записей",
+                                    "type": ["integer", "null"],
+                                    "examples": [1],
+                                    "fillable_by": [
+                                        "carfax.check"
+                                    ]
+                                }
+                            }
+                        },
+                        "vehicle": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "model": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Наименование модели ТС",
+                                            "type": ["string", "null"],
+                                            "examples": ["Opel Monterey"],
+                                            "fillable_by": [
+                                                "carfax.check"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         },
 
         "calculate": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Данные калькуляторов",
-            "properties": {}
+            "properties": {
+                "tax": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "moscow": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "yearly": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "amount": {
+                                            "description": "Сумма налога за 12 месяцев (для Москвы)",
+                                            "type": ["integer", "null"],
+                                            "examples": [12800],
+                                            "fillable_by": []
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "regions": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "yearly": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "amount": {
+                                            "description": "Сумма налога за 12 месяцев (для регионов)",
+                                            "type": ["integer", "null"],
+                                            "examples": [12800],
+                                            "fillable_by": []
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "osago": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "coefficients": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "regional": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "value": {
+                                            "description": "Региональный коэффициент ОСАГО",
+                                            "type": ["number", "null"],
+                                            "examples": [65.31],
+                                            "fillable_by": ["base", "base.ext"]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "price": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "current": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "region": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "name": {
+                                                    "description": "Имя региона регистрации ТС (автоматически определенный)",
+                                                    "type": ["string", "null"],
+                                                    "examples": ["Владимирская"],
+                                                    "fillable_by": ["calc.osago"]
+                                                }
+                                            }
+                                        },
+                                        "city": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "name": {
+                                                    "description": "Имя города регистрации ТС (автоматически определенный)",
+                                                    "type": ["string", "null"],
+                                                    "examples": ["Шатура"],
+                                                    "fillable_by": ["calc.osago"]
+                                                }
+                                            }
+                                        },
+                                        "yearly": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "amount": {
+                                                    "description": "Приблизительная стоимость ОСАГО за 12 месяцев (для автоматически определенного региона регистрации ТС)",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [7800],
+                                                    "fillable_by": ["calc.osago"]
+                                                },
+                                                "min": {
+                                                    "description": "Минимальная стоимость ОСАГО для регионов",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [6400],
+                                                    "fillable_by": ["calc.osago"]
+                                                },
+                                                "max": {
+                                                    "description": "Максимальная стоимость ОСАГО для регионов",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [9200],
+                                                    "fillable_by": ["calc.osago"]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "moscow": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "yearly": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "amount": {
+                                                    "description": "Приблизительная стоимость ОСАГО за 12 месяцев (для Москвы)",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [12800],
+                                                    "fillable_by": ["calc.osago"]
+                                                },
+                                                "min": {
+                                                    "description": "Минимальная стоимость ОСАГО за 12 мес. (для Москвы)",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [10700],
+                                                    "fillable_by": ["calc.osago"]
+                                                },
+                                                "max": {
+                                                    "description": "Максимальная стоимость ОСАГО за 12 мес. (для Москвы)",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [14900],
+                                                    "fillable_by": ["calc.osago"]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "moscow_region": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "yearly": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "amount": {
+                                                    "description": "Приблизительная стоимость ОСАГО за 12 месяцев (для Московской Области)",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [12000],
+                                                    "fillable_by": ["calc.osago"]
+                                                },
+                                                "min": {
+                                                    "description": "Минимальная стоимость ОСАГО за 12 мес. (для Московской Области)",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [9400],
+                                                    "fillable_by": ["calc.osago"]
+                                                },
+                                                "max": {
+                                                    "description": "Максимальная стоимость ОСАГО за 12 мес. (для Московской Области)",
+                                                    "type": ["integer", "null"],
+                                                    "examples": [14600],
+                                                    "fillable_by": ["calc.osago"]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         },
 
         "car_price": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Стоимость ТС",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "release": {
+                                        "description": "Дата выпуска ТС",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/date" }
+                                        ],
+                                        "examples": [null],
+                                        "fillable_by": ["carprice"]
+                                    }
+                                }
+                            },
+                            "amount": {
+                                "description": "Стоимость ТС",
+                                "type": ["integer", "null"],
+                                "examples": [709200],
+                                "minimum": 0,
+                                "fillable_by": ["carprice"]
+                            },
+                            "model": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Модель ТС",
+                                        "type": ["string", "null"],
+                                        "examples": ["EX"],
+                                        "fillable_by": ["carprice"]
+                                    }
+                                }
+                            },
+                            "modification": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Модификация ТС",
+                                        "type": ["string", "null"],
+                                        "examples": ["I Restyling"],
+                                        "fillable_by": ["carprice"]
+                                    }
+                                }
+                            },
+                            "engine": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "volume": {
+                                        "description": "Объем двигателя ТС",
+                                        "type": ["number", "null"],
+                                        "examples": [2704.9],
+                                        "fillable_by": ["carprice"]
+                                    }
+                                }
+                            },
+                            "year": {
+                                "description": "Год выпуска ТС",
+                                "type": ["number", "null"],
+                                "examples": [2018],
+                                "fillable_by": ["carprice"]
+                            }
+                        }
                     }
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
                 }
             }
         },
 
         "fines": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Штрафы",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "event": {
+                                        "description": "Дата инициации штрафа",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2018-05-23 00:00:00"],
+                                        "fillable_by": ["fines.base"]
+                                    }
+                                }
+                            },
+                            "article": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "code": {
+                                        "description": "Статья правонарушения",
+                                        "type": ["string", "null"],
+                                        "examples": ["12.9 Ч.2"],
+                                        "fillable_by": ["fines.base"]
+                                    },
+                                    "description": {
+                                        "description": "Описание статьи правонарушения",
+                                        "type": ["string", "null"],
+                                        "examples": ["Превышение установленной скорости движения транспортного средства на величину более 20, но не более 40 километров в час"],
+                                        "fillable_by": ["fines.base"]
+                                    }
+                                }
+                            },
+                            "description": {
+                                "description": "Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном формате)",
+                                "type": ["string", "null"],
+                                "examples": ["УИН 18810161753886424481 от 2018-05-23 на 4200.00 руб."],
+                                "fillable_by": ["fines.base"]
+                            },
+                            "vendor": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Наименование организации наложившей штраф (наименование подразделения ГИБДД)",
+                                        "type": ["string", "null"],
+                                        "examples": ["ОДД ГИБДД ГУ МВД России, Новгородская область"],
+                                        "fillable_by": ["fines.base"]
+                                    }
+                                }
+                            },
+                            "amount": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "value": {
+                                        "description": "Сумма штрафа",
+                                        "type": ["number", "null"],
+                                        "examples": [4200.0],
+                                        "fillable_by": ["fines.base"]
+                                    },
+                                    "total": {
+                                        "description": "Общая сумма начисления",
+                                        "type": ["number", "null"],
+                                        "examples": [4200.0],
+                                        "fillable_by": ["fines.base"]
+                                    }
+                                }
+                            },
+                            "discount": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "percent": {
+                                        "description": "Размер скидки в %",
+                                        "type": ["number", "null"],
+                                        "examples": [50.0],
+                                        "minimum": 0,
+                                        "fillable_by": ["fines.base"]
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "end": {
+                                                "description": "Дата действия скидки по оплате",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2018-06-23 00:00:00"],
+                                                "fillable_by": ["fines.base"]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "is_paid": {
+                                "description": "Оплачен ли штраф?",
+                                "type": ["boolean", "null"],
+                                "examples": [true],
+                                "fillable_by": ["fines.base"]
+                            },
+                            "wire": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "user": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование получателя платежа",
+                                                "type": ["string", "null"],
+                                                "examples": ["УФК по ИО (ГУ МВД России по Новгородская область, л\/с 04475979720)"],
+                                                "fillable_by": ["fines.base"]
+                                            },
+                                            "tin": {
+                                                "description": "ИНН получателя платежа",
+                                                "type": ["string", "null"],
+                                                "examples": ["0592311114"],
+                                                "fillable_by": ["fines.base"]
+                                            },
+                                            "kpp": {
+                                                "description": "КПП получателя платежа",
+                                                "type": ["string", "null"],
+                                                "examples": ["059201001"],
+                                                "fillable_by": ["fines.base"]
+                                            }
+                                        }
+                                    },
+                                    "bank": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "account": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "number": {
+                                                        "description": "Номер счета получателя платежа",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["40101810151650010005"],
+                                                        "fillable_by": ["fines.base"]
+                                                    }
+                                                }
+                                            },
+                                            "name": {
+                                                "description": "Наименование банка получателя платежа",
+                                                "type": ["string", "null"],
+                                                "examples": ["Отделение г. Зарайск"],
+                                                "fillable_by": ["fines.base"]
+                                            },
+                                            "bik": {
+                                                "description": "БИК банка получателя платежа",
+                                                "type": ["string", "null"],
+                                                "examples": ["049750005"],
+                                                "fillable_by": ["fines.base"]
+                                            }
+                                        }
+                                    },
+                                    "payment": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "purpose": {
+                                                "description": "Назначение платежа",
+                                                "type": ["string", "null"],
+                                                "examples": ["ШТРАФ ПО АДМИНИСТРАТИВНОМУ ПРАВОНАРУШЕНИЮ ПОСТАНОВЛЕНИЕ №18810161753886424481"],
+                                                "fillable_by": ["fines.base"]
+                                            }
+                                        }
+                                    },
+                                    "kbk": {
+                                        "description": "КБК",
+                                        "type": ["string", "null"],
+                                        "examples": ["18811630020016000140"],
+                                        "fillable_by": ["fines.base"]
+                                    },
+                                    "okato": {
+                                        "description": "ОКТМО (ОКАТО)",
+                                        "type": ["string", "null"],
+                                        "examples": ["78691068"],
+                                        "fillable_by": ["fines.base"]
+                                    }
+                                }
+                            }
+                        }
                     }
+                },
+                "has_fines": {
+                    "description": "Имеются ли штрафы на транспортное средство?",
+                    "type": ["boolean", "null"],
+                    "examples": [true, null],
+                    "fillable_by": ["fines.base"]
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
                 }
             }
         },
 
         "leasings": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Лизинг",
-            "properties": {}
-        },
-
-        "customs": {
-            "type": "object",
-            //"additionalProperties": false,
-            "description": "Данные по таможне",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "event": {
+                                        "description": "Дата получения лизинга",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2017-11-22 00:00:00"],
+                                        "fillable_by": ["base.ext"]
+                                    }
+                                }
+                            },
+                            "company": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Наименование компании-лизингополучателя",
+                                        "type": ["string", "null"],
+                                        "examples": ["ОАО ТекстильРыбБухСнос"],
+                                        "fillable_by": ["base.ext"]
+                                    }
+                                }
+                            },
+                            "lessor": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "company": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование компании-лизингодателя",
+                                                "type": ["string", "null"],
+                                                "examples": ["АО ВТБ ЛИЗИНГ"],
+                                                "fillable_by": ["base.ext"]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "tin": {
+                                "description": "Номер ИНН компании-лизингополучателя",
+                                "type": ["string", "null"],
+                                "examples": ["6297557802"],
+                                "fillable_by": ["base.ext"]
+                            }
+                        }
                     }
+                },
+                "used_in_leasing": {
+                    "description": "Приобреталось ли ТС в лизинг?",
+                    "type": ["boolean", "null"],
+                    "examples": [true, null],
+                    "fillable_by": ["base.ext", "base.taxi"]
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
+
+        "customs": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Данные по таможне",
+            "properties": {
+                "history": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "event": {
+                                                "description": "Дата получения таможенной декларации",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                                ],
+                                                "examples": ["2016-04-05 00:00:00"],
+                                                "fillable_by": ["customs.base", "base.tech"]
+                                            }
+                                        }
+                                    },
+                                    "document": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование документа",
+                                                "type": ["string", "null"],
+                                                "examples": ["Таможенная выписка"],
+                                                "fillable_by": ["customs.base"]
+                                            },
+                                            "number": {
+                                                "description": "Номер документа (декларации)",
+                                                "type": ["string", "null"],
+                                                "examples": ["50302382\/017119\/0003860"],
+                                                "fillable_by": ["customs.base"]
+                                            }
+                                        }
+                                    },
+                                    "org": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование организации",
+                                                "type": ["string", "null"],
+                                                "examples": ["ТАМОЖЕННОЕ УПРАВЛЕНИЕ"],
+                                                "fillable_by": ["customs.base"]
+                                            }
+                                        }
+                                    },
+                                    "color": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Цвет ТС в таможенной декларации",
+                                                "type": ["string", "null"],
+                                                "examples": ["фуксия"],
+                                                "fillable_by": ["customs.base"]
+                                            }
+                                        }
+                                    },
+                                    "tax": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "amount": {
+                                                "description": "Сумма таможенной пошлины",
+                                                "type": ["integer", "null"],
+                                                "examples": [45690],
+                                                "fillable_by": ["customs.base"]
+                                            }
+                                        }
+                                    },
+                                    "price": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "amount": {
+                                                "description": "Декларируемая стоимость ТС",
+                                                "type": ["integer", "null"],
+                                                "examples": [117400],
+                                                "fillable_by": ["customs.base", "base.tech"]
+                                            }
+                                        }
+                                    },
+                                    "mileage": {
+                                        "description": "Пробег в таможенной декларации",
+                                        "type": ["integer", "null"],
+                                        "examples": [120],
+                                        "fillable_by": ["customs.base", "base.tech"]
+                                    },
+                                    "ecology": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Экологическая норма ТС",
+                                                "type": ["string", "null"],
+                                                "examples": ["ЕВРО 0"],
+                                                "fillable_by": ["customs.base"]
+                                            }
+                                        }
+                                    },
+                                    "specification": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Спецификация",
+                                                "type": ["string", "null"],
+                                                "examples": ["Honda CR-X"],
+                                                "fillable_by": ["customs.base", "base.tech"]
+                                            },
+                                            "raw": {
+                                                "description": "Спецификация, сырая строка",
+                                                "type": ["string", "null"],
+                                                "examples": ["ЛЕГ.А\\\/М HONDA CR-X 3OZ53\/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."],
+                                                "fillable_by": ["customs.base"]
+                                            }
+                                        }
+                                    },
+                                    "owner": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип владельца ТС",
+                                                "type": ["string", "null"],
+                                                "enum": ["PERSON", "LEGAL", "PERSONLEGAL", "UNKNOWN", "NONE"],
+                                                "examples": ["LEGAL"],
+                                                "fillable_by": ["customs.base"]
+                                            },
+                                            "value": {
+                                                "description": "Тип владельца ТС",
+                                                "type": ["string", "null"],
+                                                "examples": ["ЗАО ВекторРечПив"],
+                                                "fillable_by": ["customs.base"]
+                                            }
+                                        }
+                                    },
+                                    "country": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "from": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Наименование страны экспортера",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["Тайланд"],
+                                                        "fillable_by": ["customs.base", "base.tech"]
+                                                    }
+                                                }
+                                            },
+                                            "to": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Наименование страны импортера",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["RU"],
+                                                        "fillable_by": ["customs.base"]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
                 }
             }
         },

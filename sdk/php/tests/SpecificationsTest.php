@@ -3,6 +3,8 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
+use Opis\JsonSchema\Validator;
+use Opis\JsonSchema\Schema;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
@@ -10,6 +12,7 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
+use Tarampampam\Wrappers\Json;
 
 class SpecificationsTest extends AbstractTestCase
 {
@@ -36,6 +39,27 @@ class SpecificationsTest extends AbstractTestCase
     public function testConstants()
     {
         $this->assertEquals('default', Specifications::GROUP_NAME_DEFAULT);
+    }
+
+    /**
+     * @group fast
+     *
+     * @return void
+     */
+    public function testFieldsSchemaUsingReportsExamplesValidation()
+    {
+        $validator     = new Validator;
+        $schema        = new Schema(Json::decode(Json::encode($this->instance::getFieldsSchema()), false));
+
+        $examples = [
+            $this->instance::getReportExample('default', 'full'),
+            $this->instance::getReportExample('default', 'empty'),
+        ];
+
+        foreach ($examples as $example) {
+            $result = $validator->schemaValidation(Json::decode(Json::encode($example), false), $schema);
+            $this->assertTrue($result->isValid());
+        }
     }
 
     /**

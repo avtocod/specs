@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Avtocod\Specifications;
 
 use Exception;
+use Opis\JsonSchema\Schema;
+use JsonSchema\SchemaStorage;
 use InvalidArgumentException;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
@@ -61,6 +63,23 @@ class Specifications
         }
 
         return $result;
+    }
+
+    /**
+     * Get report schema as an array.
+     *
+     * @param string|null $group_name
+     * @param string      $schema_format
+     *
+     * @return array
+     */
+    public static function getFieldsSchema(string $group_name = null, string $schema_format = 'json-schema'): array
+    {
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+
+        return static::getJsonFileAsArray(
+            static::getRootDirectoryPath("/fields/{$group_name}/schemas/{$schema_format}/fields.json")
+        );
     }
 
     /**

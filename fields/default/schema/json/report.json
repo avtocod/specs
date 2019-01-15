@@ -2993,49 +2993,230 @@
 
         "diagnostic_cards": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Диагностические карты",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "from": {
+                                        "description": "Дата начала действия диагностической карты",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2009-10-09 00:00:00"],
+                                        "fillable_by": ["gibdd.eaisto", "tech.ext"]
+                                    },
+                                    "to": {
+                                        "description": "Дата окончания действия диагностической карты",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2010-10-10 00:00:00"],
+                                        "fillable_by": ["gibdd.eaisto", "tech.ext"]
+                                    }
+                                }
+                            },
+                            "doc": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "serial": {
+                                        "description": "Серия документа",
+                                        "type": ["string", "null"],
+                                        "examples": ["34ER9"],
+                                        "fillable_by": ["gibdd.eaisto", "tech.ext"]
+                                    },
+                                    "number": {
+                                        "description": "Номер документа",
+                                        "type": ["string", "null"],
+                                        "examples": ["20143727125845619300"],
+                                        "fillable_by": ["gibdd.eaisto", "tech.ext"]
+                                    },
+                                    "type": {
+                                        "description": "Тип документа",
+                                        "type": ["string", "null"],
+                                        "examples": ["Диагностическая карта"],
+                                        "fillable_by": ["gibdd.eaisto", "tech.ext"]
+                                    }
+                                }
+                            },
+                            "inspection": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "place": {
+                                        "description": "Тип документа",
+                                        "type": ["string", "null"],
+                                        "examples": ["ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"],
+                                        "fillable_by": ["gibdd.eaisto", "tech.ext"]
+                                    }
+                                }
+                            },
+                            "reg_num": {
+                                "description": "Государственный регистрационный знак",
+                                "oneOf": [
+                                    { "type": "null" }, { "$ref": "#/definitions/grz_code" }
+                                ],
+                                "examples": ["А332АВ177"],
+                                "fillable_by": ["gibdd.eaisto", "tech.ext"]
+                            }
+                        }
                     }
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
                 }
             }
         },
 
         "utilizations": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Утилизация",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "utilization": {
+                                        "description": "Дата утилизации",
+                                        "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/datetime" }],
+                                        "examples": ["2013-06-20 00:00:00"],
+                                        "fillable_by": ["base","base.ext"]
+                                    }
+                                }
+                            },
+                            "org": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Наименование организации осуществившей утилизацию",
+                                        "type": ["string", "null"],
+                                        "examples": ["ООО Компания БашкирОблВосток"],
+                                        "fillable_by": []
+                                    }
+                                }
+                            },
+                            "country": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Наименование страны",
+                                        "type": ["string", "null"],
+                                        "examples": ["Египет"],
+                                        "fillable_by": []
+                                    }
+                                }
+                            }
+                        }
                     }
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "was_utilized": {
+                    "description": "Было ли ТС утилизировано?",
+                    "type": ["boolean", "null"],
+                    "examples": [true, null],
+                    "fillable_by": ["base", "base.ext", "base.taxi"]
                 }
             }
         },
 
         "images": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Фотографии ТС",
-            "properties": {}
+            "properties": {
+                "photos": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "vehicle": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "brand": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Наименование марки (бренда) ТС",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["OPEL"],
+                                                        "fillable_by": [ "images.avtonomer" ]
+                                                    }
+                                                }
+                                            },
+                                            "model": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Наименование модели ТС",
+                                                        "type": ["string", "null"],
+                                                        "examples": ["MONTEREY"],
+                                                        "fillable_by": [ "images.avtonomer" ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "issued": {
+                                                "description": "Дата фото фиксации",
+                                                "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/datetime" }],
+                                                "examples": ["2017-06-17 22:14:41"],
+                                                "fillable_by": ["images.avtonomer"]
+                                            }
+                                        }
+                                    },
+                                    "uri": {
+                                        "description": "URI фотографии ТС",
+                                        "type": ["string", "null"],
+                                        "examples": ["https://vl.imgix.net/img/opel-logo.png"],
+                                        "fillable_by": [ "images.avtonomer" ]
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                }
+            }
         }
     }
 }

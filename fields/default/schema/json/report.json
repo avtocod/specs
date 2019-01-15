@@ -54,6 +54,7 @@
         },
         "geo_raw_data": {
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "country": {
                     "type": ["string", "null"],
@@ -97,13 +98,16 @@
     },
 
     "type": "object",
+    "additionalProperties": false,
 
     "properties": {
         "identifiers": {
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "vehicle": {
                     "type": "object",
+                    "additionalProperties": false,
                     "description": "Идентификаторы ТС",
                     "properties": {
                         "vin": {
@@ -187,10 +191,12 @@
         },
         "tech_data": {
             "type": "object",
+            "additionalProperties": false,
             "description": "Характеристики ТС",
             "properties": {
                 "manufacturer": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "name": {
                             "description": "Наименование производителя",
@@ -202,6 +208,7 @@
                 },
                 "brand": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "id": {
                             "description": "Уникальный идентификатор марки",
@@ -215,6 +222,7 @@
                         },
                         "name": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "original": {
                                     "description": "Марка",
@@ -247,6 +255,7 @@
                         },
                         "logotype": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "uri": {
                                     "description": "URI изображения логотипа марки",
@@ -262,6 +271,7 @@
                 },
                 "model": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "id": {
                             "description": "Уникальный идентификатор модели",
@@ -275,6 +285,7 @@
                         },
                         "name": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "original": {
                                     "description": "Модель",
@@ -299,6 +310,7 @@
                 },
                 "type": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "name": {
                             "description": "Тип кузова ТС",
@@ -314,6 +326,7 @@
                 },
                 "body": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "number": {
                             "description": "Номер Кузова",
@@ -330,6 +343,7 @@
                         },
                         "color": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "name": {
                                     "description": "Цвет кузова",
@@ -369,6 +383,7 @@
                 },
                 "chassis": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "number": {
                             "description": "Номер шасси",
@@ -386,9 +401,11 @@
                 },
                 "engine": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "fuel": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "type": {
                                     "description": "Тип топлива",
@@ -414,6 +431,7 @@
                         },
                         "model": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "name": {
                                     "description": "Модель двигателя",
@@ -440,6 +458,7 @@
 
                         "power": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "hp": {
                                     "description": "Мощность в ЛС",
@@ -470,6 +489,7 @@
                 },
                 "weight": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "netto": {
                             "description": "Разрешенная макс. масса",
@@ -499,6 +519,7 @@
                 },
                 "transmission": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "description": "Тип трансмиссии",
@@ -511,6 +532,7 @@
                 },
                 "drive": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "type": {
                             "description": "Тип привода",
@@ -526,6 +548,7 @@
                 },
                 "wheel": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "position": {
                             "description": "Расположение руля",
@@ -545,13 +568,16 @@
 
         "additional_info": {
             "type": "object",
+            "additionalProperties": false,
             "description": "Дополнительная информация",
             "properties": {
                 "vehicle": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "category": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "code": {
                                     "description": "Код категории ТС",
@@ -580,6 +606,7 @@
                         },
                         "owner": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "type": {
                                     "description": "Тип владельца (техники)",
@@ -590,24 +617,26 @@
                                         "base",
                                         "base.ext"
                                     ]
+                                },
+                                "geo": {
+                                    "description": "Гео-данные владельца (техники)",
+                                    "oneOf": [
+                                        { "type": "null" }, { "$ref": "#/definitions/geo_raw_data" }
+                                    ],
+                                    "fillable_by": [
+                                        "base",
+                                        "base.ext"
+                                    ]
                                 }
-                            },
-                            "geo": {
-                                "description": "Гео-данные владельца (техники)",
-                                "oneOf": [
-                                    { "type": "null" }, { "$ref": "#/definitions/geo_raw_data" }
-                                ],
-                                "fillable_by": [
-                                    "base",
-                                    "base.ext"
-                                ]
                             }
                         },
                         "passport": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "date": {
                                     "type": "object",
+                                    "additionalProperties": false,
                                     "properties": {
                                         "receive": {
                                             "description": "Дата выдачи паспорта ТС",
@@ -642,6 +671,7 @@
                                 },
                                 "org": {
                                     "type": "object",
+                                    "additionalProperties": false,
                                     "properties": {
                                         "name": {
                                             "description": "Кто выдал паспорт ТС",
@@ -658,9 +688,11 @@
                         },
                         "sts": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "date": {
                                     "type": "object",
+                                    "additionalProperties": false,
                                     "properties": {
                                         "receive": {
                                             "description": "Дата выдачи СТС",
@@ -678,6 +710,7 @@
                         },
                         "modifications": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "was_modificated": {
                                     "description": "Были ли изменения в конструкции ТС?",
@@ -704,9 +737,11 @@
                 },
                 "identifiers": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "vin": {
                             "type": "object",
+                            "additionalProperties": false,
                             "properties": {
                                 "checksum_validated": {
                                     "description": "Пройдена ли проверка контрольного символа VIN?",
@@ -725,15 +760,18 @@
 
         "registration_actions": {
             "type": "object",
+            "additionalProperties": false,
             "description": "Регистрационные действия",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        "additionalProperties": false,
                         "properties": {
                             "date": {
                                 "type": "object",
+                                "additionalProperties": false,
                                 "properties": {
                                     "start": {
                                         "description": "Дата начала рег. действия",
@@ -774,6 +812,7 @@
                             },
                             "identifiers": {
                                 "type": "object",
+                                "additionalProperties": false,
                                 "properties": {
                                     "pts": {
                                         "description": "Номер ПТС (паспорт ТС)",
@@ -800,6 +839,7 @@
                             },
                             "owner": {
                                 "type": "object",
+                                "additionalProperties": false,
                                 "properties": {
                                     "type": {
                                         "description": "Тип владельца",
@@ -814,6 +854,7 @@
                                     },
                                     "org": {
                                         "type": "object",
+                                        "additionalProperties": false,
                                         "properties": {
                                             "name": {
                                                 "description": "Наименование предприятия-владельца",
@@ -854,117 +895,276 @@
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
                 }
             }
         },
 
         "repairs": {
             "type": "object",
+            "additionalProperties": false,
+
             "description": "Ремонтные работы",
             "properties": {
                 "history": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "items": {
                             "type": "array",
+                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
+                                "additionalProperties": false,
                                 "properties": {
                                     "number": {
                                         "type": "object",
+                                        "additionalProperties": false,
                                         "properties": {
                                             "calculation": {
                                                 "description": "Номер документа расчёта ремонтных работ",
-                                                "type": ["string", "null"],
-                                                "examples": ["084/08/617"],
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "084/08/617"
+                                                ],
                                                 "fillable_by": [
                                                     "repairs.history"
                                                 ]
                                             },
                                             "claim": {
                                                 "description": "Номер дела ремонтных работ",
-                                                "type": ["string", "null"],
-                                                "examples": ["ХAY1E37S50167"],
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ХAY1E37S50167"
+                                                ],
                                                 "fillable_by": [
                                                     "repairs.history"
                                                 ]
-                                            },
-                                            "date": {
-                                                "type": "object",
-                                                "properties": {
-                                                    "calculation": {
-                                                        "description": "Дата расчета стоимости ремонтных работ",
-                                                        "oneOf": [
-                                                            { "type": "null" }, { "$ref": "#/definitions/date" }
-                                                        ],
-                                                        "examples": ["2010-12-17"],
-                                                        "fillable_by": [
-                                                            "repairs.history"
-                                                        ]
-                                                    }
-                                                }
-                                            },
-                                            "mileage": {
-                                                "description": "Пробег на момент проведения ремонтных работ",
+                                            }
+                                        }
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "calculation": {
+                                                "description": "Дата расчета стоимости ремонтных работ",
+                                                "oneOf": [
+                                                    { "type": "null" }, { "$ref": "#/definitions/date" }
+                                                ],
+                                                "examples": ["2010-12-17"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "mileage": {
+                                        "description": "Пробег на момент проведения ремонтных работ",
+                                        "type": ["integer", "null"],
+                                        "minimum": 1,
+                                        "examples": [54900],
+                                        "fillable_by": [
+                                            "repairs.history"
+                                        ]
+                                    },
+                                    "cost": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "total": {
+                                                "description": "Итоговая стоимость ремонтных работ",
                                                 "type": ["integer", "null"],
-                                                "minimum": 1,
-                                                "examples": [54900],
+                                                "minimum": 0,
+                                                "examples": [395280],
                                                 "fillable_by": [
                                                     "repairs.history"
                                                 ]
                                             },
-                                            "cost": {
-                                                "type": "object",
-                                                "properties": {
-                                                    "total": {
-                                                        "description": "Итоговая стоимость ремонтных работ",
-                                                        "type": ["integer", "null"],
-                                                        "minimum": 0,
-                                                        "examples": [395280],
-                                                        "fillable_by": [
-                                                            "repairs.history"
-                                                        ]
-                                                    },
-                                                    "labour": {
-                                                        "description": "Стоимость выполнения ремонтных работ",
-                                                        "type": ["integer", "null"],
-                                                        "minimum": 0,
-                                                        "examples": [45910],
-                                                        "fillable_by": [
-                                                            "repairs.history"
-                                                        ]
-                                                    },
-                                                    "parts": {
-                                                        "description": "Стоимость запчастей",
-                                                        "type": ["integer", "null"],
-                                                        "minimum": 0,
-                                                        "examples": [339670],
-                                                        "fillable_by": [
-                                                            "repairs.history"
-                                                        ]
-                                                    },
-                                                    "paint": {
-                                                        "description": "Стоимость покраски",
-                                                        "type": ["integer", "null"],
-                                                        "minimum": 0,
-                                                        "examples": [9700],
-                                                        "fillable_by": [
-                                                            "repairs.history"
-                                                        ]
+                                            "labour": {
+                                                "description": "Стоимость выполнения ремонтных работ",
+                                                "type": ["integer", "null"],
+                                                "minimum": 0,
+                                                "examples": [45910],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            },
+                                            "parts": {
+                                                "description": "Стоимость запчастей",
+                                                "type": ["integer", "null"],
+                                                "minimum": 0,
+                                                "examples": [339670],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            },
+                                            "paint": {
+                                                "description": "Стоимость покраски",
+                                                "type": ["integer", "null"],
+                                                "minimum": 0,
+                                                "examples": [9700],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "car": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "manufacturer": {
+                                                "description": "Производитель ТС",
+                                                "type": ["string", "null"],
+                                                "examples": ["OPEL [V] [61] [R]"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            },
+                                            "model": {
+                                                "description": "Модель ТС",
+                                                "type": ["string", "null"],
+                                                "examples": ["MONTEREY [V] [XA] [S] [36] [M]"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            },
+                                            "sub_model": {
+                                                "description": "Поколение ТС",
+                                                "type": ["string", "null"],
+                                                "examples": ["Monterey"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "insurer": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Название страховой компании",
+                                                "type": ["string", "null"],
+                                                "examples": ["Ресо-Гарантия"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "assessor": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Название компании оценщика",
+                                                "type": ["string", "null"],
+                                                "examples": ["ООО АвтоАсбоцемент"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "task_process": {
+                                        "description": "В каком процессе был выполнен расчёт",
+                                        "type": ["string", "null"],
+                                        "enum": ["KASKO", "OSAGO"],
+                                        "examples": ["KASKO"],
+                                        "fillable_by": [
+                                            "repairs.history"
+                                        ]
+                                    },
+                                    "repairer": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип клиента, работавшего с делом",
+                                                "type": ["string", "null"],
+                                                "enum": ["Garage", "Insurance", "Assessor"],
+                                                "examples": ["Assessor"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            },
+                                            "description": {
+                                                "description": "Описание клиента, работавшего с делом",
+                                                "type": ["string", "null"],
+                                                "enum": ["СТО", "Страховая компания", "Оценщик"],
+                                                "examples": ["Оценщик"],
+                                                "fillable_by": [
+                                                    "repairs.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "details": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "items": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "name": {
+                                                            "description": "Наименование ремонтных работ",
+                                                            "type": ["string", "null"],
+                                                            "examples": ["Запасная часть для частичной замены"],
+                                                            "fillable_by": [
+                                                                "repairs.history"
+                                                            ]
+                                                        },
+                                                        "repair": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "method": {
+                                                                    "description": "Код ремонтных работ",
+                                                                    "type": ["string", "null"],
+                                                                    "examples": ["TE", "I", "H", "LE4"],
+                                                                    "fillable_by": [
+                                                                        "repairs.history"
+                                                                    ]
+                                                                },
+                                                                "description": {
+                                                                    "description": "Описание ремонтных работ",
+                                                                    "type": ["string", "null"],
+                                                                    "examples": ["Окраска новой детали K1N (ступень AZT окраски пластиковой детали)"],
+                                                                    "fillable_by": [
+                                                                        "repairs.history"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             },
-                                            "car": {
-                                                "type": "object",
-                                                "properties": {
-
-                                                }
+                                            "count": {
+                                                "description": "Количество вхождений",
+                                                "type": "integer",
+                                                "minimum": 0
                                             }
                                         }
                                     }
                                 }
                             }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
                         }
                     }
                 }
@@ -973,24 +1173,28 @@
 
         "carfax": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "CarFax",
             "properties": {}
         },
 
         "calculate": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Данные калькуляторов",
             "properties": {}
         },
 
         "car_price": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Стоимость ТС",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1003,12 +1207,14 @@
 
         "fines": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Штрафы",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1021,18 +1227,21 @@
 
         "leasings": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Лизинг",
             "properties": {}
         },
 
         "customs": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Данные по таможне",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1045,18 +1254,21 @@
 
         "taxi": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Такси",
             "properties": {}
         },
 
         "pledges": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Обременения на ТС",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1069,30 +1281,35 @@
 
         "insurance": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Страхование",
             "properties": {}
         },
 
         "accidents": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "История ДТП",
             "properties": {}
         },
 
         "restrictions": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Ограничения",
             "properties": {}
         },
 
         "stealings": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Проверка на угон",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1105,18 +1322,21 @@
 
         "ownership": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "История владения",
             "properties": {}
         },
 
         "mileages": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Пробеги",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1129,12 +1349,14 @@
 
         "diagnostic_cards": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Диагностические карты",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1147,12 +1369,14 @@
 
         "utilizations": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Утилизация",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
+                        //"additionalProperties": false,
                         "properties": {}
                     }
                 },
@@ -1165,6 +1389,7 @@
 
         "images": {
             "type": "object",
+            //"additionalProperties": false,
             "description": "Фотографии ТС",
             "properties": {}
         }

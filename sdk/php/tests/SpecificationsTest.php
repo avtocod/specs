@@ -3,6 +3,9 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Opis\JsonSchema\Validator;
 use Opis\JsonSchema\Schema;
 use Opis\JsonSchema\Validator;
 use Tarampampam\Wrappers\Json;
@@ -42,6 +45,8 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
+     * Test that fields schema is valid (using reports examples).
+     *
      * @group fast
      *
      * @return void
@@ -59,6 +64,54 @@ class SpecificationsTest extends AbstractTestCase
         foreach ($examples as $example) {
             $result = $validator->schemaValidation(Json::decode(Json::encode($example), false), $schema);
             $this->assertTrue($result->isValid());
+        }
+    }
+
+    /**
+     * Test that fields list and fields schema are same..
+     *
+     * @group fast
+     *
+     * @return void
+     */
+    public function testFieldsListAndSchemaAreSame()
+    {
+        $fields = $this->instance::getFieldsSpecification();
+        $schema = $this->instance::getFieldsSchema();
+
+        foreach ($fields as $field) {
+            $schema_path = [];
+
+            foreach ($field->getPathParts() as $path_part) {
+                $schema_path[] = 'properties';
+
+                if (Str::contains($path_part, Field::NESTING_SIGNATURE)) {
+                    $schema_path[] = \str_replace(Field::NESTING_SIGNATURE, '', $path_part);
+                    $schema_path[] = 'items';
+                } else {
+                    $schema_path[] = $path_part;
+                }
+            }
+
+            $schema_field_data = Arr::get($schema, $schema_path = \implode('.', $schema_path));
+
+//            dump($field->getPath(), $schema_path, $schema_field_data, $schema_field_data['description'], $field->getDescription());
+            $this->assertNotEmpty($schema_field_data);
+            $this->assertNotEmpty($schema_field_data['description'], "Schema field with path {$schema_path}.description should be not empty");
+
+            $this->assertContains(
+                $schema_field_data['description'],
+                $field->getDescription(),
+                "Schema should contains same 'description' for field with path {$field->getPath()} (from 'fields_list.json' file)"
+            );
+
+            foreach ($field->getFillableBy() as $source_name) {
+                $this->assertContains(
+                    $source_name,
+                    $schema_field_data['fillable_by'],
+                    "Schema should contains same 'fillable_by' for field with path {$field->getPath()} (from 'fields_list.json' file)"
+                );
+            }
         }
     }
 

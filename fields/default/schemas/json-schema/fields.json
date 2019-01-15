@@ -545,7 +545,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
-                                "gibdd.history"
+                                "base.taxi"
                             ]
                         }
                     }
@@ -677,7 +677,7 @@
                     "additionalProperties": false,
                     "properties": {
                         "netto": {
-                            "description": "Разрешенная макс. масса",
+                            "description": "Масса без нагрузки",
                             "type": [
                                 "integer",
                                 "null"
@@ -694,7 +694,7 @@
                             ]
                         },
                         "max": {
-                            "description": "Масса без нагрузки",
+                            "description": "Разрешенная макс. масса",
                             "type": [
                                 "integer",
                                 "null"
@@ -1630,7 +1630,7 @@
                                                 }
                                             },
                                             "count": {
-                                                "description": "Количество вхождений",
+                                                "description": "Количество позиций в списке работ",
                                                 "type": "integer",
                                                 "minimum": 0
                                             }
@@ -2847,7 +2847,7 @@
                                                 ]
                                             },
                                             "value": {
-                                                "description": "Тип владельца ТС",
+                                                "description": "Владелец ТС",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -3177,19 +3177,17 @@
                                                 }
                                             },
                                             "color": {
-                                                "normalized": {
-                                                    "description": "Цвет автомобиля",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ],
-                                                    "examples": [
-                                                        "Фиолетовый"
-                                                    ],
-                                                    "fillable_by": [
-                                                        "av.taxi"
-                                                    ]
-                                                }
+                                                "description": "Цвет автомобиля",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Фиолетовый"
+                                                ],
+                                                "fillable_by": [
+                                                    "av.taxi"
+                                                ]
                                             },
                                             "reg_num": {
                                                 "description": "Государственный регистрационный знак",
@@ -3583,8 +3581,8 @@
                                     null
                                 ],
                                 "fillable_by": [
-                                    "av.taxi",
-                                    "base.taxi"
+                                    "pledge",
+                                    "pledge.house"
                                 ]
                             },
                             "data": {
@@ -3600,8 +3598,8 @@
                                     ]
                                 ],
                                 "fillable_by": [
-                                    "av.taxi",
-                                    "base.taxi"
+                                    "pledge",
+                                    "pledge.house"
                                 ]
                             }
                         }
@@ -3667,7 +3665,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "start": {
-                                                "description": "Наименование страховщика",
+                                                "description": "Дата начала действия полиса",
                                                 "oneOf": [
                                                     {
                                                         "type": "null"
@@ -3864,7 +3862,7 @@
                                                     "ОДД ГИБДД ГУ МВД России, Новгородская область"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp"
+                                                    "base.moscow"
                                                 ]
                                             }
                                         }
@@ -4219,7 +4217,7 @@
                                                             "OPEL MONTEREY"
                                                         ],
                                                         "fillable_by": [
-                                                            "base.restrict"
+                                                            "gibdd.restrict"
                                                         ]
                                                     }
                                                 }
@@ -4240,7 +4238,7 @@
                                                     "Судебные Органы"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.restrict"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "region": {
@@ -4257,7 +4255,7 @@
                                                             "Брянская"
                                                         ],
                                                         "fillable_by": [
-                                                            "base.restrict"
+                                                            "gibdd.restrict"
                                                         ]
                                                     }
                                                 }
@@ -4278,7 +4276,7 @@
                                                     "Запрет на регистрационные действия"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.restrict"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "reason": {
@@ -4291,7 +4289,7 @@
                                                     "Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.restrict"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "number": {
@@ -4304,7 +4302,7 @@
                                                     "90129308-0060"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.restrict"
+                                                    "gibdd.restrict"
                                                 ]
                                             }
                                         }
@@ -4672,7 +4670,7 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "place": {
-                                        "description": "Тип документа",
+                                        "description": "Место прохождения проверки",
                                         "type": [
                                             "string",
                                             "null"

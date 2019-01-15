@@ -2834,20 +2834,51 @@
 
         "stealings": {
             "type": "object",
-            //"additionalProperties": false,
+            "additionalProperties": false,
             "description": "Проверка на угон",
             "properties": {
                 "items": {
                     "type": "array",
                     "items": {
                         "type": "object",
-                        //"additionalProperties": false,
-                        "properties": {}
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "stealing": {
+                                        "description": "Дата угона",
+                                        "oneOf": [
+                                            { "type": "null" }, { "$ref": "#/definitions/datetime" }
+                                        ],
+                                        "examples": ["2014-02-06 00:00:00"],
+                                        "fillable_by": ["gibdd.wanted"]
+                                    }
+                                }
+                            },
+                            "geo": {
+                                "description": "Данные о месте угона",
+                                "oneOf": [
+                                    { "type": "null" }, { "$ref": "#/definitions/geo_raw_data" }
+                                ],
+                                "fillable_by": [
+                                    "gibdd.wanted"
+                                ]
+                            }
+                        }
                     }
                 },
                 "count": {
                     "description": "Количество вхождений",
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "is_wanted": {
+                    "description": "ТС находится в розыске?",
+                    "type": ["boolean", "null"],
+                    "examples": [true, null],
+                    "fillable_by": ["gibdd.wanted", "base.taxi"]
                 }
             }
         },

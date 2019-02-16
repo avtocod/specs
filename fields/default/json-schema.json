@@ -1,0 +1,55 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/avtocod/specs/blob/master/fields/default/json-schema.json#",
+    "title": "Fields",
+    "description": "",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "path": {
+                "description": "Путь к данным в отчете в dot-нотации",
+                "type": "string",
+                "pattern": "[a-z0-9_\\.\\[\\]]+"
+            },
+            "description": {
+                "description": "Описание филда данных",
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "types": {
+                "description": "Возможные типы данных",
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "enum": [
+                        "string",
+                        "array",
+                        "boolean",
+                        "float",
+                        "integer",
+                        "object",
+                        "null"
+                    ]
+                }
+            },
+            "fillable_by": {
+                "description": "Имена источников, которые наполняют филд данными",
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "pattern": "[a-z0-9\\.\\-\\_]+"
+                }
+            }
+        },
+        "required": [
+            "path",
+            "description",
+            "types",
+            "fillable_by"
+        ]
+    }
+}

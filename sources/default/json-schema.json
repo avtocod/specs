@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/avtocod/specs/blob/master/sources/default/json-schema.json#",
+    "title": "Sources",
+    "description": "",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Имя источника данных",
+                "type": "string",
+                "pattern": "[a-z0-9\\.\\-\\_]+",
+                "minLength": 2,
+                "maxLength": 32
+            },
+            "description": {
+                "description": "Описание источника данных",
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "enabled": {
+                "description": "Возможно ли получать от источника данные",
+                "type": "boolean"
+            }
+        },
+        "required": [
+            "name",
+            "description",
+            "enabled"
+        ]
+    }
+}

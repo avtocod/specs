@@ -1,20 +1,19 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Avtocod\Specifications;
 
-use Exception;
-use Opis\JsonSchema\Schema;
-use InvalidArgumentException;
-use Tarampampam\Wrappers\Json;
-use Illuminate\Support\Collection;
 use Avtocod\Specifications\Structures\Field;
+use Avtocod\Specifications\Structures\IdentifierType;
 use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
-use Avtocod\Specifications\Structures\IdentifierType;
+use Exception;
+use Illuminate\Support\Collection;
+use InvalidArgumentException;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
+use Tarampampam\Wrappers\Json;
 
 class Specifications
 {
@@ -35,7 +34,7 @@ class Specifications
         $root = \dirname(__DIR__, 3);
 
         return $additional_path !== null
-            ? $root . DIRECTORY_SEPARATOR . ltrim($additional_path, ' \\/')
+            ? $root . DIRECTORY_SEPARATOR . \ltrim($additional_path, ' \\/')
             : $root;
     }
 
@@ -53,7 +52,7 @@ class Specifications
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
-        $input  = static::getJsonFileAsArray(
+        $input  = static::getJsonFileContent(
             static::getRootDirectoryPath("/fields/{$group_name}/fields_list.json")
         );
 
@@ -65,19 +64,19 @@ class Specifications
     }
 
     /**
-     * Get report schema as an array.
+     * Get fields json-schema.
      *
      * @param string|null $group_name
-     * @param string      $schema_format
+     * @param bool        $as_array
      *
-     * @return array
+     * @return object|array
      */
-    public static function getFieldsSchema(string $group_name = null, string $schema_format = 'json-schema'): array
+    public static function getFieldsJsonSchema(string $group_name = null, bool $as_array = false)
     {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
-        return static::getJsonFileAsArray(
-            static::getRootDirectoryPath("/fields/{$group_name}/schemas/{$schema_format}/fields.json")
+        return static::getJsonFileContent(
+            static::getRootDirectoryPath("/fields/{$group_name}/json-schema.json"), $as_array
         );
     }
 
@@ -85,16 +84,34 @@ class Specifications
      * Get report example.
      *
      * @param string|null $group_name
-     * @param string      $name
+     * @param string      $name Available values: `full` or `empty`
+     * @param bool        $as_array
      *
-     * @return array
+     * @return array|object
      */
-    public static function getReportExample(string $group_name = null, string $name = 'full'): array
+    public static function getReportExample(string $group_name = null, string $name = 'full', bool $as_array = true)
     {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
-        return static::getJsonFileAsArray(
-            static::getRootDirectoryPath("/fields/{$group_name}/examples/{$name}.json")
+        return static::getJsonFileContent(
+            static::getRootDirectoryPath("/reports/{$group_name}/examples/{$name}.json"), $as_array
+        );
+    }
+
+    /**
+     * Get report json-schema.
+     *
+     * @param string|null $group_name
+     * @param bool        $as_array
+     *
+     * @return object|array
+     */
+    public static function getReportJsonSchema(string $group_name = null, bool $as_array = false)
+    {
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+
+        return static::getJsonFileContent(
+            static::getRootDirectoryPath("/reports/{$group_name}/json-schema.json"), $as_array
         );
     }
 
@@ -112,7 +129,7 @@ class Specifications
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
-        $input  = static::getJsonFileAsArray(
+        $input  = static::getJsonFileContent(
             static::getRootDirectoryPath("/identifiers/{$group_name}/types_list.json")
         );
 
@@ -121,6 +138,23 @@ class Specifications
         }
 
         return $result;
+    }
+
+    /**
+     * Get identifier types json-schema.
+     *
+     * @param string|null $group_name
+     * @param bool        $as_array
+     *
+     * @return object|array
+     */
+    public static function getIdentifierTypesJsonSchema(string $group_name = null, bool $as_array = false)
+    {
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+
+        return static::getJsonFileContent(
+            static::getRootDirectoryPath("/identifiers/{$group_name}/json-schema.json"), $as_array
+        );
     }
 
     /**
@@ -137,7 +171,7 @@ class Specifications
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
-        $input  = static::getJsonFileAsArray(
+        $input  = static::getJsonFileContent(
             static::getRootDirectoryPath("/sources/{$group_name}/sources_list.json")
         );
 
@@ -146,6 +180,23 @@ class Specifications
         }
 
         return $result;
+    }
+
+    /**
+     * Get sources json-schema.
+     *
+     * @param string|null $group_name
+     * @param bool        $as_array
+     *
+     * @return object|array
+     */
+    public static function getSourcesJsonSchema(string $group_name = null, bool $as_array = false)
+    {
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+
+        return static::getJsonFileContent(
+            static::getRootDirectoryPath("/sources/{$group_name}/json-schema.json"), $as_array
+        );
     }
 
     /**
@@ -162,7 +213,7 @@ class Specifications
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
-        $input  = static::getJsonFileAsArray(
+        $input  = static::getJsonFileContent(
             static::getRootDirectoryPath("/vehicles/{$group_name}/marks.json")
         );
 
@@ -187,7 +238,7 @@ class Specifications
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
-        $input  = static::getJsonFileAsArray(
+        $input  = static::getJsonFileContent(
             static::getRootDirectoryPath("/vehicles/{$group_name}/models.json")
         );
 
@@ -202,18 +253,19 @@ class Specifications
      * Get json-file content as an array.
      *
      * @param string $file_path
+     * @param bool   $as_array
      *
      * @throws InvalidArgumentException
      * @throws JsonEncodeDecodeException
      *
-     * @return array
+     * @return array|object
      */
-    protected static function getJsonFileAsArray(string $file_path): array
+    protected static function getJsonFileContent(string $file_path, bool $as_array = true)
     {
         if (! \is_file($file_path)) {
             throw new \InvalidArgumentException("File [{$file_path}] was not found");
         }
 
-        return (array) Json::decode((string) \file_get_contents($file_path), true);
+        return Json::decode((string) \file_get_contents($file_path), $as_array);
     }
 }

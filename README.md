@@ -33,7 +33,7 @@
 >
 > Отчёт содержит набор данных о датах и местах прохождения технического осмотра ТС. Филды этих данных имеют вид `diagnostic_card.items[].date` и `diagnostic_card.items[].place` соответственно. Это означает, что `diagnostic_card.items[]` - это массив, элементами которого являются объекты, имеющие ключи `date` и `place`.
 
-**Описание всех филдов вы можете найти [в данном файле](./fields/default/fields_list.json)**.
+**Описание всех филдов** вы можете найти [в данном файле](./fields/default/fields_list.json), **[json-schema][json-schema] отчёта** располагается в [этом файле](./reports/default/json-schema.json).
 
 Примеры отчётов: [с данными](./reports/default/examples/full.json), [без данных](./reports/default/examples/empty.json).
 
@@ -125,5 +125,6 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [link_coverage]:https://codecov.io/gh/avtocod/specs
 [getcomposer]:https://getcomposer.org/download/
 [git_tagging]:https://git-scm.com/book/en/v2/Git-Basics-Tagging
+[json-schema]:https://json-schema.org
 [watch_repo]:https://github.com/avtocod/specs/subscription
 [semver]:https://semver.org/lang/ru/

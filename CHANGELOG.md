@@ -8,9 +8,32 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Removed
 
+- File `./fields/default/examples/blank.json`
+
 ### Added
 
+- Repository `Makefile`
+- File `./sources/default/json-schema.json` ([json-schema][json-schema] for `./sources/default/sources_list.json`)
+- File `./fields/default/json-schema.json` ([json-schema][json-schema] for `./fields/default/fields_list.json`)
+- File `./identifiers/default/json-schema.json` ([json-schema][json-schema] for `./identifiers/default/types_list.json`)
+- File `./reports/default/json-schema.json` ([json-schema][json-schema] for `./reports/default/examples/*.json`)
+- **PHP SDK** method `getFieldsJsonSchema`
+- **PHP SDK** method `getSourcesJsonSchema`
+- **PHP SDK** method `getIdentifierTypesJsonSchema`
+- **PHP SDK** method `getReportJsonSchema`
+
 ### Changed
+
+- Branch `v2` marked as outdated (and will no longer supported). Actual branch - `v3`
+- Unit tests now uses [json-schema][json-schema] validation
+- File `./fields/default/fields_list.json` contains small typo fixes
+- File `./fields/default/examples/empty.json` moved into directory `./reports/default/examples`
+- File `./fields/default/examples/full.json` moved into directory `./reports/default/examples`
+- Each source in `./sources/default/sources_list.json` now contains boolean property `enabled`. Sources `tech.base` and `base.taxi` marked as disabled
+- **PHP SDK** method `getReportExample` now accepts 3rd argument `bool $as_array = true` and can returns `array` or `object`
+- **PHP SDK** protected method `getJsonFileAsArray` renamed to `getJsonFileContent` and accepts 2nd argument `bool $as_array = true` and can returns `array` or `object`
+
+[json-schema]:https://json-schema.org
 
 ## v2.13.0
 

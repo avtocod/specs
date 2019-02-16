@@ -1,19 +1,19 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Avtocod\Specifications;
 
+use Exception;
+use InvalidArgumentException;
+use Tarampampam\Wrappers\Json;
+use Illuminate\Support\Collection;
 use Avtocod\Specifications\Structures\Field;
-use Avtocod\Specifications\Structures\IdentifierType;
 use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
-use Exception;
-use Illuminate\Support\Collection;
-use InvalidArgumentException;
+use Avtocod\Specifications\Structures\IdentifierType;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
-use Tarampampam\Wrappers\Json;
 
 class Specifications
 {
@@ -84,7 +84,7 @@ class Specifications
      * Get report example.
      *
      * @param string|null $group_name
-     * @param string      $name Available values: `full` or `empty`
+     * @param string      $name       Available values: `full` or `empty`
      * @param bool        $as_array
      *
      * @return array|object

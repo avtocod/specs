@@ -56,7 +56,7 @@ class Specifications
             static::getRootDirectoryPath("/fields/{$group_name}/fields_list.json")
         );
 
-        foreach ($input as $field_data) {
+        foreach ((array) $input as $field_data) {
             $result->push(new Field($field_data));
         }
 
@@ -133,7 +133,7 @@ class Specifications
             static::getRootDirectoryPath("/identifiers/{$group_name}/types_list.json")
         );
 
-        foreach ($input as $source_data) {
+        foreach ((array) $input as $source_data) {
             $result->put($source_data['type'], new IdentifierType($source_data));
         }
 
@@ -175,7 +175,7 @@ class Specifications
             static::getRootDirectoryPath("/sources/{$group_name}/sources_list.json")
         );
 
-        foreach ($input as $source_data) {
+        foreach ((array) $input as $source_data) {
             $result->put($source_data['name'], new Source($source_data));
         }
 
@@ -217,7 +217,7 @@ class Specifications
             static::getRootDirectoryPath("/vehicles/{$group_name}/marks.json")
         );
 
-        foreach ($input as $source_data) {
+        foreach ((array) $input as $source_data) {
             $result->put($source_data['id'], new VehicleMark($source_data));
         }
 
@@ -242,7 +242,7 @@ class Specifications
             static::getRootDirectoryPath("/vehicles/{$group_name}/models.json")
         );
 
-        foreach ($input as $source_data) {
+        foreach ((array) $input as $source_data) {
             $result->put($source_data['id'], new VehicleModel($source_data));
         }
 

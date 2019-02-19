@@ -1,112 +1,112 @@
 [
     {
         "name": "base.tech",
-        "description": null,
+        "description": "Базовая техническая информация о ТС и данные по таможне",
         "enabled": true
     },
     {
         "name": "base.moscow",
-        "description": null,
+        "description": "Комплексные данные по ТС эксплуатируемых в Москве и МО",
         "enabled": true
     },
     {
         "name": "carprice",
-        "description": null,
+        "description": "Данные о рыночной стоимости ТС",
         "enabled": true
     },
     {
         "name": "tech.ext",
-        "description": null,
+        "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
         "enabled": true
     },
     {
         "name": "gibdd.eaisto",
-        "description": null,
+        "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
         "enabled": true
     },
     {
         "name": "gibdd.dtp",
-        "description": null,
+        "description": "Данные о ДТП зарегистрированных в базе ГИБДД",
         "enabled": true
     },
     {
         "name": "gibdd.history",
-        "description": null,
+        "description": "Базовая техническая информация и данные о периодах владения ТС по данным ГИБДД",
         "enabled": true
     },
     {
         "name": "gibdd.restrict",
-        "description": null,
+        "description": "Данные о наличии ограничений на регистрационные действия ТС по данным ГИБДД",
         "enabled": true
     },
     {
         "name": "gibdd.wanted",
-        "description": null,
+        "description": "Данные о нахождении ТС в розыске по данным ГИБДД",
         "enabled": true
     },
     {
         "name": "fines.base",
-        "description": null,
+        "description": "Данные о штрафах, оформленных на ТС",
         "enabled": true
     },
     {
         "name": "calc.osago",
-        "description": null,
+        "description": "Данные о стоимости страховки ОСАГО",
         "enabled": true
     },
     {
         "name": "pledge",
-        "description": null,
+        "description": "Данные о нахождении ТС в залоге",
         "enabled": true
     },
     {
         "name": "ramiosago.base",
-        "description": null,
+        "description": "Данные о полисах ОСАГО, оформленных на ТС",
         "enabled": true
     },
     {
         "name": "base.taxi",
-        "description": null,
+        "description": "Базовая информация о ТС и признак использования в такси",
         "enabled": false
     },
     {
         "name": "base",
-        "description": null,
+        "description": "Базовая информация о ТС и данные регистрационных действий",
         "enabled": true
     },
     {
         "name": "base.ext",
-        "description": null,
+        "description": "Расширенная информация о ТС и расширенные данные регистрационных действий",
         "enabled": true
     },
     {
         "name": "carfax.check",
-        "description": null,
+        "description": "Наличие данных об отчете о ТС в сервисе CarFax",
         "enabled": true
     },
     {
         "name": "carfax.ext",
-        "description": null,
-        "enabled": true
+        "description": "Данных из отчета о ТС из сервиса CarFax",
+        "enabled": false
     },
     {
         "name": "customs.base",
-        "description": null,
+        "description": "Данные о ТС содержащиеся в таможенной декларации",
         "enabled": true
     },
     {
         "name": "images.avtonomer",
-        "description": null,
+        "description": "Фотографии ТС от \"Автономера\"",
         "enabled": true
     },
     {
         "name": "repairs.history",
-        "description": null,
+        "description": "Данные расчетов ремонтных работ",
         "enabled": true
     },
     {
         "name": "references.base",
-        "description": null,
+        "description": "Нормализатор значений марки и модели",
         "enabled": true
     },
     {
@@ -116,12 +116,12 @@
     },
     {
         "name": "pledge.house",
-        "description": null,
+        "description": "Данные о нахождении ТС в залоге (история залогов)",
         "enabled": true
     },
     {
         "name": "av.taxi",
-        "description": null,
+        "description": "История выданных разрешений на пассажирские перевозки",
         "enabled": true
     }
 ]

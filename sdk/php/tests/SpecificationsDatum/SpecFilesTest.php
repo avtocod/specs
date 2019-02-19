@@ -21,14 +21,18 @@ class SpecFilesTest extends AbstractTestCase
     {
         $root = $this->getRootDirPath();
 
-        $directories = \array_map('realpath', [
+        $directories = \array_map('\\realpath', [
             $root . '/fields',
             $root . '/fields/default',
-            $root . '/fields/default/examples',
+            $root . '/reports',
+            $root . '/reports/default',
+            $root . '/reports/default/examples',
             $root . '/identifiers',
             $root . '/identifiers/default',
             $root . '/sources',
             $root . '/sources/default',
+            $root . '/vehicles',
+            $root . '/vehicles/default',
         ]);
 
         foreach ($directories as $directory_path) {
@@ -46,12 +50,18 @@ class SpecFilesTest extends AbstractTestCase
     {
         $root = $this->getRootDirPath();
 
-        $files = array_map('realpath', [
+        $files = array_map('\\realpath', [
             $root . '/fields/default/fields_list.json',
-            $root . '/fields/default/examples/full.json',
-            $root . '/fields/default/examples/empty.json',
+            $root . '/fields/default/json-schema.json',
+            $root . '/reports/default/json-schema.json',
+            $root . '/reports/default/examples/full.json',
+            $root . '/reports/default/examples/empty.json',
+            $root . '/identifiers/default/json-schema.json',
             $root . '/identifiers/default/types_list.json',
+            $root . '/sources/default/json-schema.json',
             $root . '/sources/default/sources_list.json',
+            $root . '/vehicles/default/marks.json',
+            $root . '/vehicles/default/models.json',
         ]);
 
         foreach ($files as $file) {

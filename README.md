@@ -33,9 +33,9 @@
 >
 > Отчёт содержит набор данных о датах и местах прохождения технического осмотра ТС. Филды этих данных имеют вид `diagnostic_card.items[].date` и `diagnostic_card.items[].place` соответственно. Это означает, что `diagnostic_card.items[]` - это массив, элементами которого являются объекты, имеющие ключи `date` и `place`.
 
-**Описание всех филдов вы можете найти [в данном файле](./fields/default/fields_list.json)**.
+**Описание всех филдов** вы можете найти [в данном файле](./fields/default/fields_list.json), **[json-schema][json-schema] отчёта** располагается в [этом файле](./reports/default/json-schema.json).
 
-Примеры отчётов: [с данными](./fields/default/examples/full.json), [без данных](./fields/default/examples/empty.json).
+Примеры отчётов: [с данными](./reports/default/examples/full.json), [без данных](./reports/default/examples/empty.json).
 
 ### Типы идентификаторов
 
@@ -67,7 +67,8 @@
 На данный момент существуют 2 мажорные версии:
 
 - `v1` - устаревшая *(не поддерживается с 22 июня 2018 года)*;
-- `v2` - актуальная.
+- `v2` - устаревшая *(не поддерживается с 18 февраля 2019 года)*;
+- `v3` - актуальная.
 
 Для того, что бы получать уведомления об изменениях - **подпишитесь** на них, перейдя по **[этой ссылке][watch_repo]**.
 
@@ -85,8 +86,8 @@
 
 Для установки выполните в терминале следующую команду:
 
-```shell
-$ composer require avtocod/specs "^2.10"
+```bash
+$ composer require avtocod/specs "^3.0"
 ```
 
 > Для этого необходим установленный `composer`. Для его установки перейдите по [данной ссылке][getcomposer].
@@ -124,5 +125,6 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [link_coverage]:https://codecov.io/gh/avtocod/specs
 [getcomposer]:https://getcomposer.org/download/
 [git_tagging]:https://git-scm.com/book/en/v2/Git-Basics-Tagging
+[json-schema]:https://json-schema.org
 [watch_repo]:https://github.com/avtocod/specs/subscription
 [semver]:https://semver.org/lang/ru/

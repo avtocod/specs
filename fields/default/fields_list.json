@@ -57,7 +57,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.taxi"
         ]
     },
     {
@@ -864,7 +865,7 @@
     },
     {
         "path": "calculate.osago.price.moscow.yearly.min",
-        "description": "Калькулятор ОСАГО: Минимальная стоимость ОСАГО 12 мес. (для Москвы)",
+        "description": "Калькулятор ОСАГО: Минимальная стоимость ОСАГО за 12 мес. (для Москвы)",
         "types": [
             "integer"
         ],
@@ -874,7 +875,7 @@
     },
     {
         "path": "calculate.osago.price.moscow.yearly.max",
-        "description": "Калькулятор ОСАГО: Максимальная стоимость ОСАГО 12 мес. (для Москвы)",
+        "description": "Калькулятор ОСАГО: Максимальная стоимость ОСАГО за 12 мес. (для Москвы)",
         "types": [
             "integer"
         ],
@@ -894,7 +895,7 @@
     },
     {
         "path": "calculate.osago.price.moscow_region.yearly.min",
-        "description": "Калькулятор ОСАГО: Мин ОСАГО 12 мес. (для Московской Области)",
+        "description": "Калькулятор ОСАГО: Минимальная стоимость ОСАГО за 12 мес. (для Московской Области)",
         "types": [
             "integer"
         ],
@@ -904,7 +905,7 @@
     },
     {
         "path": "calculate.osago.price.moscow_region.yearly.max",
-        "description": "Калькулятор ОСАГО: Макс стоимость ОСАГО 12 мес. (для Московской Области)",
+        "description": "Калькулятор ОСАГО: Максимальная стоимость ОСАГО за 12 мес. (для Московской Области)",
         "types": [
             "integer"
         ],
@@ -1438,7 +1439,7 @@
     },
     {
         "path": "customs.history.items[].price.amount",
-        "description": "История по таможне: Декларируемая тоимость ТС",
+        "description": "История по таможне: Декларируемая стоимость ТС",
         "types": [
             "integer"
         ],
@@ -1460,7 +1461,7 @@
     },
     {
         "path": "customs.history.items[].ecology.type",
-        "description": "История по таможне: Экологичесская норма ТС",
+        "description": "История по таможне: Экологическая норма ТС",
         "types": [
             "string"
         ],

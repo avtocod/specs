@@ -23,7 +23,8 @@
     "require-dev": {
         "phpunit/phpunit": "~5.7.10 || ^6.4 || ~7.0",
         "symfony/var-dumper": "~3.2 || ^4.0",
-        "phpstan/phpstan": "~0.9 || ^0.10"
+        "phpstan/phpstan": "~0.9 || ^0.10",
+        "opis/json-schema": "^1.0"
     },
     "autoload": {
         "psr-4": {

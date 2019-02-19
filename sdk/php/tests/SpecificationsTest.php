@@ -3,6 +3,11 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Opis\JsonSchema\Schema;
+use Opis\JsonSchema\Validator;
+use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
@@ -19,13 +24,19 @@ class SpecificationsTest extends AbstractTestCase
     protected $instance;
 
     /**
+     * @var Validator
+     */
+    protected $validator;
+
+    /**
      * {@inheritdoc}
      */
     public function setUp()
     {
         parent::setUp();
 
-        $this->instance = new Specifications;
+        $this->validator = new Validator;
+        $this->instance  = new Specifications;
     }
 
     /**
@@ -39,8 +50,6 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getRootDirectoryPath()` method.
-     *
      * @return void
      */
     public function testGetRootDirectoryPath()
@@ -51,8 +60,6 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getFieldsSpecification()` method.
-     *
      * @return void
      */
     public function testGetFieldsSpecification()
@@ -78,11 +85,10 @@ class SpecificationsTest extends AbstractTestCase
                 $this->assertInstanceOf(Field::class, $item);
             }
 
-            $raw = \json_decode(
+            $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
                     '/fields/default/fields_list.json'
-                )),
-                true
+                ))
             );
 
             $this->assertCount(\count($raw), $result);
@@ -109,8 +115,10 @@ class SpecificationsTest extends AbstractTestCase
                 $fillable_sources = [];
 
                 foreach ($fillable_by as $source) {
-                    $this->assertTrue($sources->contains('name', $source), "Path [{$path}] contains invalid source [{$source}]");
-                    $this->assertNotContains($source, $fillable_sources, "Path [{$path}] contains source duplicate: {$source}");
+                    $this->assertTrue($sources->contains('name', $source),
+                        "Path [{$path}] contains invalid source [{$source}]");
+                    $this->assertNotContains($source, $fillable_sources,
+                        "Path [{$path}] contains source duplicate: {$source}");
                     $fillable_sources[] = $source;
                 }
 
@@ -121,21 +129,36 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getFieldsSpecification()` method exception throwing.
-     *
      * @return void
      */
-    public function testGetFieldsSpecificationWithInvalidGroupName()
+    public function testGetFieldsJsonSchema()
     {
-        $this->expectException(Exception::class);
-        $this->expectExceptionMessageRegExp('~file.+was not found~i');
+        foreach (['default', null] as $group_name) {
+            $this->assertInternalType('object', $as_object = $this->instance::getFieldsJsonSchema($group_name));
+            $this->assertInternalType('array', $this->instance::getFieldsJsonSchema($group_name, true));
 
-        $this->instance::getFieldsSpecification('foo bar');
+            $this->assertStringStartsWith(
+                'https://github.com/avtocod/specs/blob/master/fields/default/json-schema.json',
+                (new Schema($as_object))->id()
+            );
+        }
     }
 
     /**
-     * Test `getReportExample()` method.
-     *
+     * @return void
+     */
+    public function testFieldsJsonSchemaValidation()
+    {
+        $fields_raw = Json::decode(\file_get_contents(
+            $this->instance::getRootDirectoryPath('/fields/default/fields_list.json')
+        ), false);
+
+        $this->assertTrue($this->validator->schemaValidation(
+            $fields_raw, new Schema($this->instance::getFieldsJsonSchema('default'))
+        )->isValid());
+    }
+
+    /**
      * @return void
      */
     public function testGetReportExample()
@@ -145,11 +168,10 @@ class SpecificationsTest extends AbstractTestCase
                 $result = $this->instance::getReportExample($group_name, $name);
                 $this->assertInternalType('array', $result);
 
-                $raw = \json_decode(
+                $raw = Json::decode(
                     \file_get_contents($this->instance::getRootDirectoryPath(
-                        "/fields/default/examples/{$name}.json"
-                    )),
-                    true
+                        "/reports/default/examples/{$name}.json"
+                    ))
                 );
 
                 $this->assertEquals($result, $raw);
@@ -158,8 +180,6 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getFieldsSpecification()` method exception throwing.
-     *
      * @return void
      */
     public function testGetReportExampleWithInvalidGroupName()
@@ -171,8 +191,41 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getIdentifierTypesSpecification()` method.
-     *
+     * @return void
+     */
+    public function testGetReportJsonSchema()
+    {
+        foreach (['default', null] as $group_name) {
+            $this->assertInternalType('object', $as_object = $this->instance::getReportJsonSchema($group_name));
+            $this->assertInternalType('array', $this->instance::getReportJsonSchema($group_name, true));
+
+            $this->assertStringStartsWith(
+                'https://github.com/avtocod/specs/blob/master/reports/default/json-schema.json',
+                (new Schema($as_object))->id()
+            );
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testReportExamplesUsingSchemaValidator()
+    {
+        foreach (['default', null] as $group_name) {
+            foreach (['full', 'empty'] as $report_example_type) {
+                $report_example = $this->instance::getReportExample($group_name, $report_example_type, false);
+
+                $this->assertTrue(
+                    $this->validator->schemaValidation(
+                        $report_example,
+                        new Schema($this->instance::getReportJsonSchema($group_name))
+                    )->isValid()
+                );
+            }
+        }
+    }
+
+    /**
      * @return void
      */
     public function testGetIdentifierTypesSpecification()
@@ -185,11 +238,10 @@ class SpecificationsTest extends AbstractTestCase
                 $this->assertInstanceOf(IdentifierType::class, $item);
             }
 
-            $raw = \json_decode(
+            $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
                     '/identifiers/default/types_list.json'
-                )),
-                true
+                ))
             );
 
             $this->assertCount(\count($raw), $result);
@@ -220,8 +272,104 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getSourcesSpecification()` method.
-     *
+     * @return void
+     */
+    public function testGetIdentifierTypesJsonSchema()
+    {
+        foreach (['default', null] as $group_name) {
+            $this->assertInternalType(
+                'object',
+                $as_object = $this->instance::getIdentifierTypesJsonSchema($group_name)
+            );
+            $this->assertInternalType(
+                'array',
+                $this->instance::getIdentifierTypesJsonSchema($group_name, true)
+            );
+
+            $this->assertStringStartsWith(
+                'https://github.com/avtocod/specs/blob/master/identifiers/default/json-schema.json',
+                (new Schema($as_object))->id()
+            );
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testIdentifierTypesUsingSchemaValidator()
+    {
+        foreach (['default', null] as $group_name) {
+            $identifier_types = Json::decode(\file_get_contents($this->instance::getRootDirectoryPath(
+                '/identifiers/default/types_list.json'
+            )), false);
+
+            $this->assertTrue(
+                $this->validator->schemaValidation(
+                    $identifier_types,
+                    new Schema($this->instance::getIdentifierTypesJsonSchema($group_name))
+                )->isValid()
+            );
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testFieldsListAndReportSchemaAreSame()
+    {
+        $fields = $this->instance::getFieldsSpecification();
+        $schema = $this->instance::getReportJsonSchema(null, true);
+
+        foreach ($fields as $field) {
+            $schema_path = [];
+
+            foreach ($field->getPathParts() as $path_part) {
+                $schema_path[] = 'properties';
+
+                if (Str::contains($path_part, Field::NESTING_SIGNATURE)) {
+                    $schema_path[] = \str_replace(Field::NESTING_SIGNATURE, '', $path_part);
+                    $schema_path[] = 'items';
+                } else {
+                    $schema_path[] = $path_part;
+                }
+            }
+
+            $schema_field_data = Arr::get($schema, $schema_path = \implode('.', $schema_path));
+
+            $this->assertNotEmpty($schema_field_data);
+            $this->assertNotEmpty($schema_field_data['description'],
+                "Schema field with path {$schema_path}.description should be not empty");
+
+            $this->assertContains(
+                $schema_field_data['description'],
+                $field->getDescription(),
+                "Schema should contains same 'description' for field with path {$field->getPath()} (from 'fields_list.json' file)"
+            );
+
+            foreach ($field->getFillableBy() as $source_name) {
+                $this->assertNotEmpty($schema_field_data['fillable_by'], "'fillable_by' in {$schema_path} is empty");
+
+                $this->assertContains(
+                    $source_name,
+                    $schema_field_data['fillable_by'],
+                    "Schema should contains same 'fillable_by' for field with path {$field->getPath()} (from 'fields_list.json' file)"
+                );
+            }
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetFieldsSpecificationWithInvalidGroupName()
+    {
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessageRegExp('~file.+was not found~i');
+
+        $this->instance::getFieldsSpecification('foo bar');
+    }
+
+    /**
      * @return void
      */
     public function testGetSourcesSpecification()
@@ -234,11 +382,10 @@ class SpecificationsTest extends AbstractTestCase
                 $this->assertInstanceOf(Source::class, $item);
             }
 
-            $raw = \json_decode(
+            $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
                     '/sources/default/sources_list.json'
-                )),
-                true
+                ))
             );
 
             $this->assertCount(\count($raw), $result);
@@ -256,8 +403,47 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getVehicleMarksSpecification()` method.
-     *
+     * @return void
+     */
+    public function testGetSourcesJsonSchema()
+    {
+        foreach (['default', null] as $group_name) {
+            $this->assertInternalType(
+                'object',
+                $as_object = $this->instance::getSourcesJsonSchema($group_name)
+            );
+            $this->assertInternalType(
+                'array',
+                $this->instance::getSourcesJsonSchema($group_name, true)
+            );
+
+            $this->assertStringStartsWith(
+                'https://github.com/avtocod/specs/blob/master/sources/default/json-schema.json',
+                (new Schema($as_object))->id()
+            );
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testSourcesUsingSchemaValidator()
+    {
+        foreach (['default', null] as $group_name) {
+            $identifier_types = Json::decode(\file_get_contents($this->instance::getRootDirectoryPath(
+                '/sources/default/sources_list.json'
+            )), false);
+
+            $this->assertTrue(
+                $this->validator->schemaValidation(
+                    $identifier_types,
+                    new Schema($this->instance::getSourcesJsonSchema($group_name))
+                )->isValid()
+            );
+        }
+    }
+
+    /**
      * @return void
      */
     public function testGetVehiclesMarksSpecification()
@@ -270,11 +456,10 @@ class SpecificationsTest extends AbstractTestCase
                 $this->assertInstanceOf(VehicleMark::class, $item);
             }
 
-            $raw = \json_decode(
+            $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
                     '/vehicles/default/marks.json'
-                )),
-                true
+                ))
             );
 
             $this->assertCount(count($raw), $result);
@@ -292,8 +477,6 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getVehicleModelsSpecification()` method.
-     *
      * @return void
      */
     public function testGetVehicleModelsSpecification()
@@ -306,11 +489,10 @@ class SpecificationsTest extends AbstractTestCase
                 $this->assertInstanceOf(VehicleModel::class, $item);
             }
 
-            $raw = \json_decode(
+            $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
                     '/vehicles/default/models.json'
-                )),
-                true
+                ))
             );
 
             $this->assertCount(count($raw), $result);
@@ -329,8 +511,6 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * Test `getSourcesSpecification()` method exception throwing.
-     *
      * @return void
      */
     public function testGetSourcesSpecificationWithInvalidGroupName()

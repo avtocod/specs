@@ -6,6 +6,7 @@ namespace Avtocod\Specifications;
 
 use Exception;
 use InvalidArgumentException;
+use PackageVersions\Versions;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Structures\Field;
@@ -18,9 +19,32 @@ use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 class Specifications
 {
     /**
+     * Self package name.
+     */
+    const SELF_PACKAGE_NAME = 'avtocod/specs';
+
+    /**
      * Default specification group name.
      */
     const GROUP_NAME_DEFAULT = 'default';
+
+    /**
+     * Get current package version.
+     *
+     * @param bool $without_hash
+     *
+     * @return string
+     */
+    public static function version(bool $without_hash = true): string
+    {
+        $version = Versions::getVersion(self::SELF_PACKAGE_NAME);
+
+        if ($without_hash === true && \is_int($delimiter_position = \mb_strpos($version, '@'))) {
+            return \mb_substr($version, 0, (int) $delimiter_position);
+        }
+
+        return $version;
+    }
 
     /**
      * Get the specifications root directory path.
@@ -250,7 +274,7 @@ class Specifications
     }
 
     /**
-     * Get json-file content as an array.
+     * Get json-file content as an array or object.
      *
      * @param string $file_path
      * @param bool   $as_array

@@ -7,6 +7,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Opis\JsonSchema\Schema;
 use Opis\JsonSchema\Validator;
+use PackageVersions\Versions;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Specifications;
@@ -16,6 +17,9 @@ use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
 
+/**
+ * @coversDefaultClass \Avtocod\Specifications\Specifications
+ */
 class SpecificationsTest extends AbstractTestCase
 {
     /**
@@ -310,6 +314,21 @@ class SpecificationsTest extends AbstractTestCase
                 )->isValid()
             );
         }
+    }
+
+    /**
+     * @covers ::version
+     *
+     * @return void
+     */
+    public function testVersion()
+    {
+        $this->assertSame(
+            $version = Versions::getVersion($this->instance::SELF_PACKAGE_NAME),
+            $this->instance::version(false)
+        );
+
+        $this->assertSame(\mb_substr($version, 0, (int) \mb_strpos($version, '@')), $this->instance::version());
     }
 
     /**

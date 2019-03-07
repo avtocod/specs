@@ -4,6 +4,48 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.2.0
+
+### Added
+
+- Field with path `ads.history.items[].title`
+- Field with path `ads.history.items[].text`
+- Field with path `ads.history.items[].date.publish`
+- Field with path `ads.history.items[].seller.name`
+- Field with path `ads.history.items[].seller.phones`
+- Field with path `ads.history.items[].geo`
+- Field with path `ads.history.items[].price.value`
+- Field with path `ads.history.items[].photos.local`
+- Field with path `ads.history.items[].photos.board`
+- Field with path `ads.history.items[].photos.grz`
+- Field with path `ads.history.items[].is_sold`
+- Field with path `ads.history.items[].is_closed`
+- Field with path `ads.history.items[].vehicle.brand.name`
+- Field with path `ads.history.items[].vehicle.model.name`
+- Field with path `ads.history.items[].vehicle.identifiers.vin`
+- Field with path `ads.history.items[].vehicle.identifiers.chassis`
+- Field with path `ads.history.items[].vehicle.year`
+- Field with path `ads.history.items[].vehicle.condition`
+- Field with path `ads.history.items[].vehicle.wheel.position`
+- Field with path `ads.history.items[].vehicle.transmission.type`
+- Field with path `ads.history.items[].vehicle.drive.type`
+- Field with path `ads.history.items[].vehicle.passport.type`
+- Field with path `ads.history.items[].vehicle.doors.count`
+- Field with path `ads.history.items[].vehicle.owners.count`
+- Field with path `ads.history.items[].vehicle.engine.power.hp`
+- Field with path `ads.history.items[].vehicle.engine.volume`
+- Field with path `ads.history.items[].vehicle.engine.fuel.type`
+- Field with path `ads.history.items[].vehicle.body.type`
+- Field with path `ads.history.items[].vehicle.body.color.name`
+- Field with path `ads.history.items[].vehicle.mileage`
+- Field with path `ads.history.items[].vehicle.is_cleared`
+
+### Changed
+
+- [json-schema][json-schema] `./reports/default/json-schema.json` updated
+- `./reports/default/examples/empty.json` updated
+- `./reports/default/examples/full.json` updated
+
 ## v3.1.0
 
 ### Added

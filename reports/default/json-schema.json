@@ -4923,6 +4923,625 @@
                     }
                 }
             }
+        },
+        "ads": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "История объявлений",
+            "properties": {
+                "history": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "title": {
+                                        "description": "Заголовок объявления",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Opel Monterey, 2018"
+                                        ],
+                                        "fillable_by": [
+                                            "ads.base"
+                                        ]
+                                    },
+                                    "text": {
+                                        "description": "Текст объявления",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Продаю семейный автомобиль в отличном состоянии, вложений никаких не требует. Все работает без нареканий."
+                                        ],
+                                        "fillable_by": [
+                                            "ads.base"
+                                        ]
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "publish": {
+                                                "description": "Дата публикации объявления",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2019-01-14 11:57:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "seller": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Имя продавца ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Артём",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            },
+                                            "phones": {
+                                                "description": "Телефоны продавца ТС",
+                                                "type": [
+                                                    "array",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    [
+                                                        "+78005353535"
+                                                    ],
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "geo": {
+                                        "description": "Гео-данные места продажи ТС",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/geo_raw_data"
+                                            }
+                                        ],
+                                        "fillable_by": [
+                                            "ads.base"
+                                        ]
+                                    },
+                                    "price": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "value": {
+                                                "description": "Цена ТС в объявлении",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    117400
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "photos": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "local": {
+                                                "type": [
+                                                    "array",
+                                                    "null"
+                                                ],
+                                                "description": "Список URI до локальных фотографии ТС с объявления",
+                                                "items": {
+                                                    "type": "string"
+                                                },
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            },
+                                            "board": {
+                                                "type": [
+                                                    "array",
+                                                    "null"
+                                                ],
+                                                "description": "Список URI фотографии ТС с доски объявлений",
+                                                "items": {
+                                                    "type": "string"
+                                                },
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            },
+                                            "grz": {
+                                                "type": [
+                                                    "object",
+                                                    "null"
+                                                ],
+                                                "additionalProperties": false,
+                                                "patternProperties": {
+                                                    "^[0-9ABEKMHOPCTYX]+$": {
+                                                        "type": [
+                                                            "array",
+                                                            "null"
+                                                        ],
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "description": "Список ГРЗ c URI фотографии, на которых они распознаны",
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "is_sold": {
+                                        "description": "ТС было помечено как продано",
+                                        "type": [
+                                            "boolean",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            false,
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "ads.base"
+                                        ]
+                                    },
+                                    "is_closed": {
+                                        "description": "ТС было помечено как закрытое",
+                                        "type": [
+                                            "boolean",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            false,
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "ads.base"
+                                        ]
+                                    },
+                                    "vehicle": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "brand": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Наименование марки (бренда) ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Opel"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "model": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Модель ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Monterey"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "identifiers": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "vin": {
+                                                        "description": "VIN номер ТС",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "type": "string",
+                                                                "pattern": "[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\* ]+",
+                                                                "minLength": 17,
+                                                                "maxLength": 17
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "C5KY36SZ*BD****89"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    },
+                                                    "chassis": {
+                                                        "description": "Номер шасси",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "type": "string",
+                                                                "pattern": "[0-9A-ZА-ЯЁ\\-\\* ]+",
+                                                                "minLength": 7,
+                                                                "maxLength": 15
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "6****93"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "year": {
+                                                "description": "Год выпуска ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 1800,
+                                                "examples": [
+                                                    2018
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            },
+                                            "condition": {
+                                                "description": "Состояние ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Не битый"
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            },
+                                            "wheel": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "position": {
+                                                        "description": "Расположение руля",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "enum": [
+                                                            "LEFT",
+                                                            "RIGHT",
+                                                            "UNKNOWN",
+                                                            null
+                                                        ],
+                                                        "examples": [
+                                                            "RIGHT"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "transmission": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "type": {
+                                                        "description": "Тип трансмиссии",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "enum": [
+                                                            "AUTOMATIC",
+                                                            "MANUAL",
+                                                            "ROBOT",
+                                                            "VARIABLE",
+                                                            "UNKNOWN",
+                                                            null
+                                                        ],
+                                                        "examples": [
+                                                            "AUTOMATIC"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "drive": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "type": {
+                                                        "description": "Тип привода",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "enum": [
+                                                            "Передний",
+                                                            "Переднеприводной",
+                                                            "Переднеприводной",
+                                                            "Задний",
+                                                            "Заднеприводной",
+                                                            "Полный",
+                                                            "Полноприводной",
+                                                            "Иные",
+                                                            null
+                                                        ],
+                                                        "examples": [
+                                                            "Заднеприводной"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "passport": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "type": {
+                                                        "description": "Информация о паспорте ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Дубликат"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "doors": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "count": {
+                                                        "description": "Количество дверей у ТС",
+                                                        "type": [
+                                                            "integer",
+                                                            "null"
+                                                        ],
+                                                        "minimum": 1,
+                                                        "examples": [
+                                                            4,
+                                                            null
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "owners": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "count": {
+                                                        "description": "Количество владельцев ТС",
+                                                        "type": [
+                                                            "integer",
+                                                            "null"
+                                                        ],
+                                                        "minimum": 1,
+                                                        "examples": [
+                                                            2,
+                                                            null
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "engine": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "power": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "hp": {
+                                                                "description": "Мощность двигателя ТС (л.с)",
+                                                                "type": [
+                                                                    "number",
+                                                                    "null"
+                                                                ],
+                                                                "minimum": 1,
+                                                                "examples": [
+                                                                    176.9
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "ads.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "volume": {
+                                                        "description": "Объем двигателя",
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ],
+                                                        "minimum": 1,
+                                                        "examples": [
+                                                            2792.1
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    },
+                                                    "fuel": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "type": {
+                                                                "description": "Тип топлива",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "enum": [
+                                                                    "Бензиновый",
+                                                                    "Дизельный",
+                                                                    "Прочее",
+                                                                    null
+                                                                ],
+                                                                "examples": [
+                                                                    "Бензиновый"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "ads.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "body": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "type": {
+                                                        "description": "Тип кузова ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Седан",
+                                                            "Универсал"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ads.base"
+                                                        ]
+                                                    },
+                                                    "color": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Цвет кузова",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Светло Зеленый"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "ads.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "mileage": {
+                                                "description": "Пробег ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 1,
+                                                "examples": [
+                                                    79000
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            },
+                                            "is_cleared": {
+                                                "description": "Растаможено ли ТС",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false,
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.base"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                }
+            }
         }
     }
 }

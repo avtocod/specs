@@ -2100,6 +2100,316 @@
         ]
     },
     {
+        "path": "ads.history.items[].title",
+        "description": "История объявлений: Заголовок объявления",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].text",
+        "description": "История объявлений: Текст объявления",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].date.publish",
+        "description": "История объявлений: Дата публикации объявления",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].seller.name",
+        "description": "История объявлений: Имя продавца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].seller.phones",
+        "description": "История объявлений: Телефоны продавца ТС",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].geo",
+        "description": "История объявлений: Гео-данные места продажи ТС",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].price.value",
+        "description": "История объявлений: Цена ТС в объявлении",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].photos.local",
+        "description": "История объявлений: Список URI до локальных фотографии ТС с объявления",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].photos.board",
+        "description": "История объявлений: Список URI фотографии ТС с доски объявлений",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].photos.grz",
+        "description": "История объявлений: Список ГРЗ c URI фотографии, на которых они распознаны",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].is_sold",
+        "description": "История объявлений: ТС было помечено как продано",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].is_closed",
+        "description": "История объявлений: ТС было помечено как закрытое",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.brand.name",
+        "description": "История объявлений: Наименование марки (бренда) ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.model.name",
+        "description": "История объявлений: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.identifiers.vin",
+        "description": "История объявлений: VIN номер ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.identifiers.chassis",
+        "description": "История объявлений: Номер шасси",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.year",
+        "description": "История объявлений: Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.condition",
+        "description": "История объявлений: Состояние ТС [Не битый, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.wheel.position",
+        "description": "История объявлений: Расположение руля [LEFT, RIGHT, UNKNOWN]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.transmission.type",
+        "description": "История объявлений: Тип трансмиссии [AUTOMATIC, MANUAL, ROBOT, VARIABLE, UNKNOWN]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.drive.type",
+        "description": "История объявлений: Тип привода [Передний, Полный, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.passport.type",
+        "description": "История объявлений: Информация о паспорте ТС [Дубликат, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.doors.count",
+        "description": "История объявлений: Количество дверей у ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.owners.count",
+        "description": "История объявлений: Количество владельцев ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.engine.power.hp",
+        "description": "История объявлений: Мощность двигателя ТС (л.с)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.engine.volume",
+        "description": "История объявлений: Объем двигателя",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.engine.fuel.type",
+        "description": "История объявлений: Тип топлива [Бензиновый, Дизельный, Прочее]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.body.type",
+        "description": "История объявлений: Тип кузова ТС [Седан, Универсал, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.body.color.name",
+        "description": "История объявлений: Цвет кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.mileage",
+        "description": "История объявлений: Пробег ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.items[].vehicle.is_cleared",
+        "description": "История объявлений: Растаможено ли ТС",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ads.base"
+        ]
+    },
+    {
         "path": "car_price.items[].date.release",
         "description": "Стоимость ТС: Дата выпуска ТС",
         "types": [

@@ -771,5 +771,105 @@
             ],
             "count": 1
         }
+    },
+    "ads": {
+        "history": {
+            "items": [
+                {
+                    "title": "Opel Monterey, 2018",
+                    "text": "Продаю семейный автомобиль в отличном состоянии, вложений никаких не требует. Все работает без нареканий.",
+                    "date": {
+                        "publish": "2019-01-14 11:57:00"
+                    },
+                    "seller": {
+                        "name": "Артём",
+                        "phones": [
+                            "+78005353535"
+                        ]
+                    },
+                    "geo": {
+                        "country": "Россия",
+                        "region": null,
+                        "city": "Москва",
+                        "street": null,
+                        "house": null
+                    },
+                    "price": {
+                        "value": 450000
+                    },
+                    "photos": {
+                        "local": [
+                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73445",
+                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73441",
+                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73442"
+                        ],
+                        "board": [
+                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73243",
+                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73645",
+                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73347"
+                        ],
+                        "grz": {
+                            "X874CC64": [
+                                "https:\/\/lorempixel.com\/1024\/740\/transport\/?73443",
+                                "https:\/\/lorempixel.com\/1024\/740\/transport\/?73444",
+                                "https:\/\/lorempixel.com\/1024\/740\/transport\/?73754"
+                            ]
+                        }
+                    },
+                    "is_sold": false,
+                    "is_closed": false,
+                    "vehicle": {
+                        "brand": {
+                            "name": "Opel"
+                        },
+                        "model": {
+                            "name": "Monterey"
+                        },
+                        "identifiers": {
+                            "vin": "C5KY36SZ*BD****89",
+                            "chassis": "6****93"
+                        },
+                        "year": 2018,
+                        "condition": "Не битый",
+                        "wheel": {
+                            "position": "LEFT"
+                        },
+                        "transmission": {
+                            "type": "MANUAL"
+                        },
+                        "drive": {
+                            "type": "Передний"
+                        },
+                        "passport": {
+                            "type": "Дубликат"
+                        },
+                        "doors": {
+                            "count": 4
+                        },
+                        "owners": {
+                            "count": 2
+                        },
+                        "engine": {
+                            "power": {
+                                "hp": 176.3
+                            },
+                            "volume": 2793.2,
+                            "fuel": {
+                                "type": "Бензиновый"
+                            }
+                        },
+                        "body": {
+                            "type": "Седан",
+                            "color": {
+                                "name": "Серебряный"
+                            }
+                        },
+                        "mileage": 79000,
+                        "is_cleared": false
+                    }
+                }
+            ],
+            "count": 1
+        }
     }
 }

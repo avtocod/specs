@@ -701,5 +701,91 @@
             ],
             "count": 1
         }
+    },
+    "ads": {
+        "history": {
+            "items": [
+                {
+                    "title": null,
+                    "text": null,
+                    "date": {
+                        "publish": null
+                    },
+                    "seller": {
+                        "name": null,
+                        "phones": [
+                            null
+                        ]
+                    },
+                    "geo": {
+                        "country": null,
+                        "region": null,
+                        "city": null,
+                        "street": null,
+                        "house": null
+                    },
+                    "price": {
+                        "value": null
+                    },
+                    "photos": {
+                        "local": null,
+                        "board": null,
+                        "grz": null
+                    },
+                    "is_sold": null,
+                    "is_closed": null,
+                    "vehicle": {
+                        "brand": {
+                            "name": null
+                        },
+                        "model": {
+                            "name": null
+                        },
+                        "identifiers": {
+                            "vin": null,
+                            "chassis": null
+                        },
+                        "year": null,
+                        "condition": null,
+                        "wheel": {
+                            "position": null
+                        },
+                        "transmission": {
+                            "type": null
+                        },
+                        "drive": {
+                            "type": null
+                        },
+                        "passport": {
+                            "type": null
+                        },
+                        "doors": {
+                            "count": null
+                        },
+                        "owners": {
+                            "count": null
+                        },
+                        "engine": {
+                            "power": {
+                                "hp": null
+                            },
+                            "volume": null,
+                            "fuel": {
+                                "type": null
+                            }
+                        },
+                        "body": {
+                            "type": null,
+                            "color": {
+                                "name": null
+                            }
+                        },
+                        "mileage": null,
+                        "is_cleared": null
+                    }
+                }
+            ],
+            "count": 1
+        }
     }
 }

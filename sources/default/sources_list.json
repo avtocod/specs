@@ -123,5 +123,10 @@
         "name": "av.taxi",
         "description": "История выданных разрешений на пассажирские перевозки",
         "enabled": true
+    },
+    {
+        "name": "ads.base",
+        "description": "История объявлений о продажах ТС",
+        "enabled": true
     }
 ]

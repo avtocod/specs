@@ -40,6 +40,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `ads.history.items[].vehicle.mileage`
 - Field with path `ads.history.items[].vehicle.is_cleared`
 
+### Changed
+
+- [json-schema][json-schema] `./reports/default/json-schema.json` updated
+- `./reports/default/examples/empty.json` updated
+- `./reports/default/examples/full.json` updated
+
 ## v3.1.0
 
 ### Added

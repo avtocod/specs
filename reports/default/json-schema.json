@@ -5193,7 +5193,7 @@
                                                             },
                                                             {
                                                                 "type": "string",
-                                                                "pattern": "[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\* ]+",
+                                                                "pattern": "[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\*]+",
                                                                 "minLength": 17,
                                                                 "maxLength": 17
                                                             }

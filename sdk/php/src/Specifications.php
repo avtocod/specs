@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications;
 
-use Avtocod\Specifications\Structures\VehicleModelType;
 use Exception;
 use InvalidArgumentException;
 use PackageVersions\Versions;
@@ -15,6 +14,7 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
+use Avtocod\Specifications\Structures\VehicleModelType;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
 class Specifications

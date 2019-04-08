@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Avtocod\Specifications\Structures;
 
@@ -43,6 +43,19 @@ class VehicleModelType extends AbstractStructure
     }
 
     /**
+     * Get the instance as an array.
+     *
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            'name' => $this->name,
+            'id'   => $this->id,
+        ];
+    }
+
+    /**
      * Configure itself.
      *
      * @param mixed|null $raw_data
@@ -66,18 +79,5 @@ class VehicleModelType extends AbstractStructure
                 }
             }
         }
-    }
-
-    /**
-     * Get the instance as an array.
-     *
-     * @return array
-     */
-    public function toArray(): array
-    {
-        return [
-            'name' => $this->name,
-            'id'   => $this->id,
-        ];
     }
 }

@@ -2,7 +2,6 @@
 
 namespace Avtocod\Specifications\Tests;
 
-use Avtocod\Specifications\Structures\VehicleModelType;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -17,6 +16,7 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
+use Avtocod\Specifications\Structures\VehicleModelType;
 
 /**
  * @coversDefaultClass \Avtocod\Specifications\Specifications

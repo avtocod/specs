@@ -2,6 +2,7 @@
 
 namespace Avtocod\Specifications\Tests;
 
+use Avtocod\Specifications\Structures\VehicleModelType;
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -525,6 +526,39 @@ class SpecificationsTest extends AbstractTestCase
                 $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
                 $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
                 $model_ids[] = $model_id;
+            }
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleModelTypeSpecification()
+    {
+        foreach (['default', null] as $group_name) {
+            $result = $this->instance::getVehicleModelsTypesSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+
+            foreach ($result as $item) {
+                $this->assertInstanceOf(VehicleModelType::class, $item);
+            }
+
+            $raw = Json::decode(
+                \file_get_contents($this->instance::getRootDirectoryPath(
+                    '/vehicles/default/vehicle_types.json'
+                ))
+            );
+
+            $this->assertCount(count($raw), $result);
+            $model_type_ids = [];
+
+            foreach ($raw as $source_data) {
+                $model_id = $source_data['id'];
+
+                $this->assertEquals($source_data['id'], $result[$model_id]->getId());
+                $this->assertEquals($source_data['name'], $result[$model_id]->getName());
+                $this->assertNotContains($model_id, $model_type_ids, "Model type ID contains duplicate: {$model_id}");
+                $model_type_ids[] = $model_id;
             }
         }
     }

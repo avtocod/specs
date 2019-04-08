@@ -30,14 +30,22 @@ class VehicleModel extends AbstractStructure
     protected $mark_id;
 
     /**
+     * Vehicle type identifier.
+     *
+     * @var string|null
+     */
+    protected $vehicle_type;
+
+    /**
      * {@inheritdoc}
      */
     public function toArray(): array
     {
         return [
-            'name'    => $this->name,
-            'id'      => $this->id,
-            'mark_id' => $this->mark_id,
+            'name'         => $this->name,
+            'id'           => $this->id,
+            'mark_id'      => $this->mark_id,
+            'vehicle_type' => $this->vehicle_type,
         ];
     }
 
@@ -72,6 +80,16 @@ class VehicleModel extends AbstractStructure
     }
 
     /**
+     * Get vehicle type identifier.
+     *
+     * @return null|string
+     */
+    public function getVehicleType()
+    {
+        return $this->vehicle_type;
+    }
+
+    /**
      * {@inheritdoc}
      */
     protected function configure($raw_data)
@@ -93,6 +111,11 @@ class VehicleModel extends AbstractStructure
 
                     case 'mark_id':
                         $this->mark_id = $value === null
+                            ? null
+                            : (string) $value;
+                        break;
+                    case 'vehicle_type':
+                        $this->vehicle_type = $value === null
                             ? null
                             : (string) $value;
                         break;

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications;
 
+use Avtocod\Specifications\Structures\VehicleModelType;
 use Exception;
 use InvalidArgumentException;
 use PackageVersions\Versions;
@@ -268,6 +269,31 @@ class Specifications
 
         foreach ((array) $input as $source_data) {
             $result->put($source_data['id'], new VehicleModel($source_data));
+        }
+
+        return $result;
+    }
+
+    /**
+     * Get models types specification as collection of typed objects.
+     *
+     * @param string|null $group_name
+     *
+     * @throws Exception
+     *
+     * @return Collection|VehicleModelType[]
+     */
+    public static function getVehicleModelsTypesSpecification(string $group_name = null): Collection
+    {
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+
+        $result = new Collection;
+        $input  = static::getJsonFileContent(
+            static::getRootDirectoryPath("/vehicles/{$group_name}/vehicle_types.json")
+        );
+
+        foreach ((array) $input as $source_data) {
+            $result->put($source_data['id'], new VehicleModelType($source_data));
         }
 
         return $result;

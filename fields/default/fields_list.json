@@ -685,6 +685,36 @@
         ]
     },
     {
+        "path": "registration_actions.items[].owner.org.tin",
+        "description": "Регистрационные действия: ИНН предприятия-владельца",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base.ext"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].owner.org.kpp",
+        "description": "Регистрационные действия: КПП предприятия-владельца",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base.ext"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].owner.org.ogrn",
+        "description": "Регистрационные действия: ОГРН предприятия-владельца",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base.ext"
+        ]
+    },
+    {
         "path": "registration_actions.items[].type",
         "description": "Регистрационные действия: Тип операции",
         "types": [

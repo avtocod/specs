@@ -19,8 +19,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - `./reports/default/examples/full.json` updated [#51]
 - `./fields/default/fields_list.json` updated [#51]
 
-[#51]:https://github.com/avtocod/specs/issues/51
-
 ## v3.2.0
 
 ### Added
@@ -296,3 +294,4 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 [json-schema]:https://json-schema.org
 [#12]:https://github.com/avtocod/specs/issues/12
 [#9]:https://github.com/avtocod/specs/issues/9
+[#51]:https://github.com/avtocod/specs/issues/51

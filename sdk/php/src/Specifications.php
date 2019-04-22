@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Avtocod\Specifications;
 
@@ -34,24 +34,24 @@ class Specifications
      *
      * @var string
      */
-    const ID_TYPE_AGRICULTURAL = 'agricultural',
-        ID_TYPE_ARTIC = 'artic',
-        ID_TYPE_ATV = 'atv',
-        ID_TYPE_AUTOLOADER = 'autoloader',
-        ID_TYPE_BULLDOZER = 'bulldozer',
-        ID_TYPE_BUS = 'bus',
-        ID_TYPE_CAR = 'car',
-        ID_TYPE_CONSTRUCTION = 'construction',
-        ID_TYPE_CRANE = 'crane',
-        ID_TYPE_SELF_LOADER = 'self_loader',
-        ID_TYPE_DREDGE = 'dredge',
-        ID_TYPE_LIGHT_TRUCK = 'light_truck',
-        ID_TYPE_MOTORCYCLE = 'motorcycle',
-        ID_TYPE_MUNICIPAL = 'municipal',
-        ID_TYPE_SCOOTER = 'scooter',
-        ID_TYPE_SNOWMOBILE = 'snowmobile',
-        ID_TYPE_TRAILER = 'trailer',
-        ID_TYPE_TRUCK = 'truck';
+    const ID_TYPE_AGRICULTURAL = 'agricultural';
+    const ID_TYPE_ARTIC        = 'artic';
+    const ID_TYPE_ATV          = 'atv';
+    const ID_TYPE_AUTOLOADER   = 'autoloader';
+    const ID_TYPE_BULLDOZER    = 'bulldozer';
+    const ID_TYPE_BUS          = 'bus';
+    const ID_TYPE_CAR          = 'car';
+    const ID_TYPE_CONSTRUCTION = 'construction';
+    const ID_TYPE_CRANE        = 'crane';
+    const ID_TYPE_SELF_LOADER  = 'self_loader';
+    const ID_TYPE_DREDGE       = 'dredge';
+    const ID_TYPE_LIGHT_TRUCK  = 'light_truck';
+    const ID_TYPE_MOTORCYCLE   = 'motorcycle';
+    const ID_TYPE_MUNICIPAL    = 'municipal';
+    const ID_TYPE_SCOOTER      = 'scooter';
+    const ID_TYPE_SNOWMOBILE   = 'snowmobile';
+    const ID_TYPE_TRAILER      = 'trailer';
+    const ID_TYPE_TRUCK        = 'truck';
 
     /**
      * Get current package version.
@@ -133,7 +133,7 @@ class Specifications
      * Get report example.
      *
      * @param string|null $group_name
-     * @param string      $name Available values: `full` or `empty`
+     * @param string      $name       Available values: `full` or `empty`
      * @param bool        $as_array
      *
      * @return array|object
@@ -284,8 +284,7 @@ class Specifications
     public static function getVehicleModelsSpecification(
         string $group_name = null,
         string $vehicle_type = null
-    ): Collection
-    {
+    ): Collection {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
         $path_file  = ($vehicle_type !== null)
             ? "/vehicles/{$group_name}/models_{$vehicle_type}.json"

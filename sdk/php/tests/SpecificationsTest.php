@@ -501,31 +501,54 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetVehicleModelsSpecification()
     {
+        $availability_vehicle_types = [
+            'agricultural',
+            'artic',
+            'atv',
+            'autoloader',
+            'bulldozer',
+            'bus',
+            'car',
+            'construction',
+            'crane',
+            'self_loader',
+            'dredge',
+            'light_truck',
+            'motorcycle',
+            'municipal',
+            'scooter',
+            'snowmobile',
+            'trailer',
+            'truck',
+        ];
+
         foreach (['default', null] as $group_name) {
-            $result = $this->instance::getVehicleModelsSpecification($group_name);
-            $this->assertInstanceOf(Collection::class, $result);
+            foreach ($availability_vehicle_types as $vehicle_type) {
+                $result = $this->instance::getVehicleModelsSpecification($vehicle_type, $group_name);
+                $this->assertInstanceOf(Collection::class, $result);
 
-            foreach ($result as $item) {
-                $this->assertInstanceOf(VehicleModel::class, $item);
-            }
+                foreach ($result as $item) {
+                    $this->assertInstanceOf(VehicleModel::class, $item);
+                }
 
-            $raw = Json::decode(
-                \file_get_contents($this->instance::getRootDirectoryPath(
-                    '/vehicles/default/models.json'
-                ))
-            );
+                $raw = Json::decode(
+                    \file_get_contents($this->instance::getRootDirectoryPath(
+                        sprintf('/vehicles/default/models_%s.json', $vehicle_type)
+                    ))
+                );
 
-            $this->assertCount(count($raw), $result);
-            $model_ids = [];
+                $this->assertCount(count($raw), $result);
+                $model_ids = [];
 
-            foreach ($raw as $source_data) {
-                $model_id = $source_data['id'];
+                foreach ($raw as $source_data) {
+                    $model_id = $source_data['id'];
 
-                $this->assertEquals($source_data['id'], $result[$model_id]->getId());
-                $this->assertEquals($source_data['name'], $result[$model_id]->getName());
-                $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
-                $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
-                $model_ids[] = $model_id;
+                    $this->assertEquals($source_data['id'], $result[$model_id]->getId());
+                    $this->assertEquals($source_data['name'], $result[$model_id]->getName());
+                    $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
+                    $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
+                    $model_ids[] = $model_id;
+                }
             }
         }
     }

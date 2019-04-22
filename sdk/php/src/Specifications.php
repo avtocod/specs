@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Avtocod\Specifications;
 
@@ -28,6 +28,30 @@ class Specifications
      * Default specification group name.
      */
     const GROUP_NAME_DEFAULT = 'default';
+
+    /**
+     * Vehicle types models.
+     *
+     * @var string
+     */
+    const ID_TYPE_AGRICULTURAL = 'agricultural',
+        ID_TYPE_ARTIC = 'artic',
+        ID_TYPE_ATV = 'atv',
+        ID_TYPE_AUTOLOADER = 'autoloader',
+        ID_TYPE_BULLDOZER = 'bulldozer',
+        ID_TYPE_BUS = 'bus',
+        ID_TYPE_CAR = 'car',
+        ID_TYPE_CONSTRUCTION = 'construction',
+        ID_TYPE_CRANE = 'crane',
+        ID_TYPE_SELF_LOADER = 'self_loader',
+        ID_TYPE_DREDGE = 'dredge',
+        ID_TYPE_LIGHT_TRUCK = 'light_truck',
+        ID_TYPE_MOTORCYCLE = 'motorcycle',
+        ID_TYPE_MUNICIPAL = 'municipal',
+        ID_TYPE_SCOOTER = 'scooter',
+        ID_TYPE_SNOWMOBILE = 'snowmobile',
+        ID_TYPE_TRAILER = 'trailer',
+        ID_TYPE_TRUCK = 'truck';
 
     /**
      * Get current package version.
@@ -109,7 +133,7 @@ class Specifications
      * Get report example.
      *
      * @param string|null $group_name
-     * @param string      $name       Available values: `full` or `empty`
+     * @param string      $name Available values: `full` or `empty`
      * @param bool        $as_array
      *
      * @return array|object
@@ -252,19 +276,21 @@ class Specifications
     /**
      * Get vehicle models specification as collection of typed objects.
      *
+     * @param string      $vehicle_type
      * @param string|null $group_name
-     *
-     * @throws Exception
      *
      * @return Collection|VehicleModel[]
      */
-    public static function getVehicleModelsSpecification(string $group_name = null): Collection
+    public static function getVehicleModelsSpecification(
+        string $vehicle_type = 'car',
+        string $group_name = null
+    ): Collection
     {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
         $result = new Collection;
         $input  = static::getJsonFileContent(
-            static::getRootDirectoryPath("/vehicles/{$group_name}/models.json")
+            static::getRootDirectoryPath("/vehicles/{$group_name}/models_{$vehicle_type}.json")
         );
 
         foreach ((array) $input as $source_data) {

@@ -276,22 +276,23 @@ class Specifications
     /**
      * Get vehicle models specification as collection of typed objects.
      *
-     * @param string      $vehicle_type
      * @param string|null $group_name
+     * @param string|null $vehicle_type
      *
      * @return Collection|VehicleModel[]
      */
     public static function getVehicleModelsSpecification(
-        string $vehicle_type = 'car',
-        string $group_name = null
+        string $group_name = null,
+        string $vehicle_type = null
     ): Collection
     {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+        $path_file  = ($vehicle_type !== null)
+            ? "/vehicles/{$group_name}/models_{$vehicle_type}.json"
+            : "/vehicles/{$group_name}/models.json";
 
         $result = new Collection;
-        $input  = static::getJsonFileContent(
-            static::getRootDirectoryPath("/vehicles/{$group_name}/models_{$vehicle_type}.json")
-        );
+        $input  = static::getJsonFileContent(static::getRootDirectoryPath($path_file));
 
         foreach ((array) $input as $source_data) {
             $result->put($source_data['id'], new VehicleModel($source_data));

@@ -499,7 +499,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleModelsSpecification()
+    public function testGetVehicleModelsByTypeSpecification()
     {
         $availability_vehicle_types = [
             'agricultural',
@@ -520,21 +520,24 @@ class SpecificationsTest extends AbstractTestCase
             'snowmobile',
             'trailer',
             'truck',
+            null,
         ];
 
         foreach (['default', null] as $group_name) {
             foreach ($availability_vehicle_types as $vehicle_type) {
-                $result = $this->instance::getVehicleModelsSpecification($vehicle_type, $group_name);
+                $result = $this->instance::getVehicleModelsSpecification($group_name, $vehicle_type);
                 $this->assertInstanceOf(Collection::class, $result);
 
                 foreach ($result as $item) {
                     $this->assertInstanceOf(VehicleModel::class, $item);
                 }
 
+                $path_file = ($vehicle_type !== null)
+                    ? sprintf('/vehicles/default/models_%s.json', $vehicle_type)
+                    : '/vehicles/default/models.json';
+
                 $raw = Json::decode(
-                    \file_get_contents($this->instance::getRootDirectoryPath(
-                        sprintf('/vehicles/default/models_%s.json', $vehicle_type)
-                    ))
+                    \file_get_contents($this->instance::getRootDirectoryPath($path_file))
                 );
 
                 $this->assertCount(count($raw), $result);

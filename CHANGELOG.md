@@ -292,6 +292,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 [keepachangelog]:https://keepachangelog.com/en/1.0.0/
 [semver]:https://semver.org/spec/v2.0.0.html
 [json-schema]:https://json-schema.org
+[#51]:https://github.com/avtocod/specs/issues/51
 [#12]:https://github.com/avtocod/specs/issues/12
 [#9]:https://github.com/avtocod/specs/issues/9
-[#51]:https://github.com/avtocod/specs/issues/51

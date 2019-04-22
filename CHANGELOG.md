@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.3.0
+
+### Added
+
+- Field with path `registration_actions.items[].owner.org.tin` [#51]
+- Field with path `registration_actions.items[].owner.org.kpp` [#51]
+- Field with path `registration_actions.items[].owner.org.ogrn` [#51]
+
+### Changed
+
+- [json-schema][json-schema] `./reports/default/json-schema.json` updated [#51]
+- `./reports/default/examples/empty.json` updated [#51]
+- `./reports/default/examples/full.json` updated [#51]
+- `./fields/default/fields_list.json` updated [#51]
+
 ## v3.2.0
 
 ### Added
@@ -80,8 +95,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Each source in `./sources/default/sources_list.json` now contains boolean property `enabled`. Sources `tech.base` and `base.taxi` marked as disabled
 - **PHP SDK** method `getReportExample` now accepts 3rd argument `bool $as_array = true` and can returns `array` or `object`
 - **PHP SDK** protected method `getJsonFileAsArray` renamed to `getJsonFileContent` and accepts 2nd argument `bool $as_array = true` and can returns `array` or `object`
-
-[json-schema]:https://json-schema.org
 
 ## v2.13.0
 
@@ -278,5 +291,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 [keepachangelog]:https://keepachangelog.com/en/1.0.0/
 [semver]:https://semver.org/spec/v2.0.0.html
+[json-schema]:https://json-schema.org
+[#51]:https://github.com/avtocod/specs/issues/51
 [#12]:https://github.com/avtocod/specs/issues/12
 [#9]:https://github.com/avtocod/specs/issues/9

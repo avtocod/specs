@@ -1231,6 +1231,45 @@
                                                     "base.ext",
                                                     "base.taxi"
                                                 ]
+                                            },
+                                            "tin": {
+                                                "description": "ИНН предприятия-владельца",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "3664069397"
+                                                ],
+                                                "fillable_by": [
+                                                    "base.ext"
+                                                ]
+                                            },
+                                            "kpp": {
+                                                "description": "КПП предприятия-владельца",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "773301001"
+                                                ],
+                                                "fillable_by": [
+                                                    "base.ext"
+                                                ]
+                                            },
+                                            "ogrn": {
+                                                "description": "ОГРН предприятия-владельца",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "1053600591197"
+                                                ],
+                                                "fillable_by": [
+                                                    "base.ext"
+                                                ]
                                             }
                                         }
                                     }

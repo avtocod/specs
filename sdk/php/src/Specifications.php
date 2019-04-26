@@ -34,24 +34,24 @@ class Specifications
      *
      * @var string
      */
-    const ID_TYPE_AGRICULTURAL = 'agricultural';
-    const ID_TYPE_ARTIC        = 'artic';
-    const ID_TYPE_ATV          = 'atv';
-    const ID_TYPE_AUTOLOADER   = 'autoloader';
-    const ID_TYPE_BULLDOZER    = 'bulldozer';
-    const ID_TYPE_BUS          = 'bus';
-    const ID_TYPE_CAR          = 'car';
-    const ID_TYPE_CONSTRUCTION = 'construction';
-    const ID_TYPE_CRANE        = 'crane';
-    const ID_TYPE_SELF_LOADER  = 'self_loader';
-    const ID_TYPE_DREDGE       = 'dredge';
-    const ID_TYPE_LIGHT_TRUCK  = 'light_truck';
-    const ID_TYPE_MOTORCYCLE   = 'motorcycle';
-    const ID_TYPE_MUNICIPAL    = 'municipal';
-    const ID_TYPE_SCOOTER      = 'scooter';
-    const ID_TYPE_SNOWMOBILE   = 'snowmobile';
-    const ID_TYPE_TRAILER      = 'trailer';
-    const ID_TYPE_TRUCK        = 'truck';
+    const VEHICLE_TYPE_AGRICULTURAL = 'agricultural';
+    const VEHICLE_TYPE_ARTIC        = 'artic';
+    const VEHICLE_TYPE_ATV          = 'atv';
+    const VEHICLE_TYPE_AUTOLOADER   = 'autoloader';
+    const VEHICLE_TYPE_BULLDOZER    = 'bulldozer';
+    const VEHICLE_TYPE_BUS          = 'bus';
+    const VEHICLE_TYPE_CAR          = 'car';
+    const VEHICLE_TYPE_CONSTRUCTION = 'construction';
+    const VEHICLE_TYPE_CRANE        = 'crane';
+    const VEHICLE_TYPE_SELF_LOADER  = 'self_loader';
+    const VEHICLE_TYPE_DREDGE       = 'dredge';
+    const VEHICLE_TYPE_LIGHT_TRUCK  = 'light_truck';
+    const VEHICLE_TYPE_MOTORCYCLE   = 'motorcycle';
+    const VEHICLE_TYPE_MUNICIPAL    = 'municipal';
+    const VEHICLE_TYPE_SCOOTER      = 'scooter';
+    const VEHICLE_TYPE_SNOWMOBILE   = 'snowmobile';
+    const VEHICLE_TYPE_TRAILER      = 'trailer';
+    const VEHICLE_TYPE_TRUCK        = 'truck';
 
     /**
      * Get current package version.
@@ -279,6 +279,8 @@ class Specifications
      * @param string|null $group_name
      * @param string|null $vehicle_type
      *
+     * @throws InvalidArgumentException
+     *
      * @return Collection|VehicleModel[]
      */
     public static function getVehicleModelsSpecification(
@@ -315,7 +317,7 @@ class Specifications
 
         $result = new Collection;
         $input  = static::getJsonFileContent(
-            static::getRootDirectoryPath("/vehicles/{$group_name}/vehicle_types.json")
+            static::getRootDirectoryPath("/vehicles/{$group_name}/types.json")
         );
 
         foreach ((array) $input as $source_data) {

@@ -8,13 +8,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Added vehicle model types specifications `vehicle_types.json`
+- Added vehicle model types specifications `types.json`
 - **PHP SDK** method `getVehicleModelsTypesSpecification`
+- Extended support for models of cars, new model files are grouped by vehicle type (example: `models_car.json` - cars)
 
 ### Changed
 
 - Extended vehicle marks specifications
-- Extended vehicle models specifications
 - **PHP SDK** object `VehicleModel`, add vehicle model type `vehicle_type`
 
 ## v3.3.0

@@ -499,6 +499,35 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
+    public function testGetVehicleModelsSpecification()
+    {
+        foreach (['default', null] as $group_name) {
+            $result = $this->instance::getVehicleModelsSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+            foreach ($result as $item) {
+                $this->assertInstanceOf(VehicleModel::class, $item);
+            }
+            $raw = Json::decode(
+                \file_get_contents($this->instance::getRootDirectoryPath(
+                    '/vehicles/default/models.json'
+                ))
+            );
+            $this->assertCount(count($raw), $result);
+            $model_ids = [];
+            foreach ($raw as $source_data) {
+                $model_id = $source_data['id'];
+                $this->assertEquals($source_data['id'], $result[$model_id]->getId());
+                $this->assertEquals($source_data['name'], $result[$model_id]->getName());
+                $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
+                $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
+                $model_ids[] = $model_id;
+            }
+        }
+    }
+
+    /**
+     * @return void
+     */
     public function testGetVehicleModelsByTypeSpecification()
     {
         $availability_vehicle_types = [
@@ -520,32 +549,23 @@ class SpecificationsTest extends AbstractTestCase
             'snowmobile',
             'trailer',
             'truck',
-            null,
         ];
 
         foreach (['default', null] as $group_name) {
             foreach ($availability_vehicle_types as $vehicle_type) {
                 $result = $this->instance::getVehicleModelsSpecification($group_name, $vehicle_type);
                 $this->assertInstanceOf(Collection::class, $result);
-
                 foreach ($result as $item) {
                     $this->assertInstanceOf(VehicleModel::class, $item);
                 }
-
-                $path_file = ($vehicle_type !== null)
-                    ? sprintf('/vehicles/default/models_%s.json', $vehicle_type)
-                    : '/vehicles/default/models.json';
-
-                $raw = Json::decode(
+                $path_file = sprintf('/vehicles/default/models_%s.json', $vehicle_type);
+                $raw       = Json::decode(
                     \file_get_contents($this->instance::getRootDirectoryPath($path_file))
                 );
-
                 $this->assertCount(count($raw), $result);
                 $model_ids = [];
-
                 foreach ($raw as $source_data) {
                     $model_id = $source_data['id'];
-
                     $this->assertEquals($source_data['id'], $result[$model_id]->getId());
                     $this->assertEquals($source_data['name'], $result[$model_id]->getName());
                     $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
@@ -571,7 +591,7 @@ class SpecificationsTest extends AbstractTestCase
 
             $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
-                    '/vehicles/default/vehicle_types.json'
+                    '/vehicles/default/types.json'
                 ))
             );
 

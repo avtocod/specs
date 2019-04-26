@@ -80,7 +80,7 @@ class SpecFilesTest extends AbstractTestCase
             $root . '/vehicles/default/models_snowmobile.json',
             $root . '/vehicles/default/models_trailer.json',
             $root . '/vehicles/default/models_truck.json',
-            $root . '/vehicles/default/vehicle_types.json',
+            $root . '/vehicles/default/types.json',
         ]);
 
         foreach ($files as $file) {

@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Added vehicle model types specifications `types.json`
 - **PHP SDK** method `getVehicleModelsTypesSpecification`
+- **PHP SDK** method `getVehicleTypeAliasById`
 - Extended support for models of cars, new model files are grouped by vehicle type (example: `models_car.json` - cars)
 
 ### Changed

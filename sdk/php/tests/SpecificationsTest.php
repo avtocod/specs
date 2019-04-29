@@ -526,11 +526,11 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * @return void
+     * @return array
      */
-    public function testGetVehicleModelsByTypeSpecification()
+    protected function getVehicleTypeAliasByIdMap()
     {
-        $availability_vehicle_types = [
+        return [
             'ID_TYPE_AGRICULTURAL' => 'agricultural',
             'ID_TYPE_ARTIC'        => 'artic',
             'ID_TYPE_ATV'          => 'atv',
@@ -550,9 +550,15 @@ class SpecificationsTest extends AbstractTestCase
             'ID_TYPE_TRAILER'      => 'trailer',
             'ID_TYPE_TRUCK'        => 'truck',
         ];
+    }
 
+    /**
+     * @return void
+     */
+    public function testGetVehicleModelsByTypeSpecification()
+    {
         foreach (['default', null] as $group_name) {
-            foreach ($availability_vehicle_types as $vehicle_type => $alias) {
+            foreach ($this->getVehicleTypeAliasByIdMap() as $vehicle_type => $alias) {
                 $result = $this->instance::getVehicleModelsSpecification($group_name, $vehicle_type);
                 $this->assertInstanceOf(Collection::class, $result);
                 foreach ($result as $item) {
@@ -579,12 +585,31 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
+    public function testGetVehicleModelsByTypeSpecificationException()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->instance::getVehicleModelsSpecification(null, 'UNKNOWN');
+    }
+
+    /**
+     * @return void
+     */
     public function testGetVehicleTypeAliasById()
     {
-        $this->markTestIncomplete('wip');
         foreach (['default', null] as $group_name) {
-//            $this->instance::getVehicleTypeAliasById();
+            foreach ($this->getVehicleTypeAliasByIdMap() as $id => $alias) {
+                $this->assertSame($alias, $this->instance::getVehicleTypeAliasById($id));
+            }
         }
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleTypeAliasByIdException()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->instance::getVehicleTypeAliasById('UNKNOWN', null);
     }
 
     /**

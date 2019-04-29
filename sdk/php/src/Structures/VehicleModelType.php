@@ -69,7 +69,7 @@ class VehicleModelType extends AbstractStructure
         return [
             'name'  => $this->name,
             'id'    => $this->id,
-            'alias' => $this->alias
+            'alias' => $this->alias,
         ];
     }
 

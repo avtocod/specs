@@ -288,6 +288,7 @@ class Specifications
      * @param string|null $group_name
      *
      * @throws Exception
+     * @throws InvalidArgumentException
      *
      * @return Collection|VehicleModelType[]
      */
@@ -314,6 +315,7 @@ class Specifications
      * @param string|null $group_name
      *
      * @return string|null
+     * @throws InvalidArgumentException
      */
     public static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
     {
@@ -329,7 +331,10 @@ class Specifications
             return $vehicle_model_type->getAlias();
         }
 
-        return null;
+        throw new InvalidArgumentException(sprintf(
+            'Can not find vehicle type alias by passed id [%s]',
+            $vehicle_type_id
+        ));
     }
 
     /**

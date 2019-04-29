@@ -314,8 +314,9 @@ class Specifications
      * @param string      $vehicle_type_id
      * @param string|null $group_name
      *
-     * @return string|null
      * @throws InvalidArgumentException
+     *
+     * @return string|null
      */
     public static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
     {

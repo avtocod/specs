@@ -326,7 +326,7 @@ class Specifications
             $types = static::getVehicleModelsTypesSpecification($group_name);
         }
 
-        /** @var VehicleModelType $vehicle_model_type */
+        /** @var VehicleModelType|null $vehicle_model_type */
         $vehicle_model_type = $types->where('id', $vehicle_type_id)->first();
         if ($vehicle_model_type !== null) {
             return $vehicle_model_type->getAlias();

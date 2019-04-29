@@ -531,34 +531,34 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetVehicleModelsByTypeSpecification()
     {
         $availability_vehicle_types = [
-            VehicleModelType::VEHICLE_TYPE_AGRICULTURAL,
-            VehicleModelType::VEHICLE_TYPE_ARTIC,
-            VehicleModelType::VEHICLE_TYPE_ATV,
-            VehicleModelType::VEHICLE_TYPE_AUTOLOADER,
-            VehicleModelType::VEHICLE_TYPE_BULLDOZER,
-            VehicleModelType::VEHICLE_TYPE_BUS,
-            VehicleModelType::VEHICLE_TYPE_CAR,
-            VehicleModelType::VEHICLE_TYPE_CONSTRUCTION,
-            VehicleModelType::VEHICLE_TYPE_CRANE,
-            VehicleModelType::VEHICLE_TYPE_SELF_LOADER,
-            VehicleModelType::VEHICLE_TYPE_DREDGE,
-            VehicleModelType::VEHICLE_TYPE_LIGHT_TRUCK,
-            VehicleModelType::VEHICLE_TYPE_MOTORCYCLE,
-            VehicleModelType::VEHICLE_TYPE_MUNICIPAL,
-            VehicleModelType::VEHICLE_TYPE_SCOOTER,
-            VehicleModelType::VEHICLE_TYPE_SNOWMOBILE,
-            VehicleModelType::VEHICLE_TYPE_TRAILER,
-            VehicleModelType::VEHICLE_TYPE_TRUCK,
+            'ID_TYPE_AGRICULTURAL' => 'agricultural',
+            'ID_TYPE_ARTIC'        => 'artic',
+            'ID_TYPE_ATV'          => 'atv',
+            'ID_TYPE_AUTOLOADER'   => 'autoloader',
+            'ID_TYPE_BULLDOZER'    => 'bulldozer',
+            'ID_TYPE_BUS'          => 'bus',
+            'ID_TYPE_CAR'          => 'car',
+            'ID_TYPE_CONSTRUCTION' => 'construction',
+            'ID_TYPE_CRANE'        => 'crane',
+            'ID_TYPE_SELF_LOADER'  => 'self_loader',
+            'ID_TYPE_DREDGE'       => 'dredge',
+            'ID_TYPE_LIGHT_TRUCK'  => 'light_truck',
+            'ID_TYPE_MOTORCYCLE'   => 'motorcycle',
+            'ID_TYPE_MUNICIPAL'    => 'municipal',
+            'ID_TYPE_SCOOTER'      => 'scooter',
+            'ID_TYPE_SNOWMOBILE'   => 'snowmobile',
+            'ID_TYPE_TRAILER'      => 'trailer',
+            'ID_TYPE_TRUCK'        => 'truck',
         ];
 
         foreach (['default', null] as $group_name) {
-            foreach ($availability_vehicle_types as $vehicle_type) {
+            foreach ($availability_vehicle_types as $vehicle_type => $alias) {
                 $result = $this->instance::getVehicleModelsSpecification($group_name, $vehicle_type);
                 $this->assertInstanceOf(Collection::class, $result);
                 foreach ($result as $item) {
                     $this->assertInstanceOf(VehicleModel::class, $item);
                 }
-                $path_file = sprintf('/vehicles/default/models_%s.json', $vehicle_type);
+                $path_file = sprintf('/vehicles/default/models_%s.json', $alias);
                 $raw       = Json::decode(
                     \file_get_contents($this->instance::getRootDirectoryPath($path_file))
                 );
@@ -573,6 +573,17 @@ class SpecificationsTest extends AbstractTestCase
                     $model_ids[] = $model_id;
                 }
             }
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleTypeAliasById()
+    {
+        $this->markTestIncomplete('wip');
+        foreach (['default', null] as $group_name) {
+//            $this->instance::getVehicleTypeAliasById();
         }
     }
 

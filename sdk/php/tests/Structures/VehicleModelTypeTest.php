@@ -21,10 +21,12 @@ class VehicleModelTypeTest extends AbstractStructureTestCase
         $this->instance = $this->factory($input = [
             'id'           => $id_type = 'some id',
             'name'         => $name = 'some name',
+            'alias'        => $alias = 'some alias',
         ]);
 
         $this->assertEquals($id_type, $this->instance->getId());
         $this->assertEquals($name, $this->instance->getName());
+        $this->assertEquals($alias, $this->instance->getAlias());
 
         $this->assertEquals($input, $this->instance->toArray());
     }
@@ -39,10 +41,12 @@ class VehicleModelTypeTest extends AbstractStructureTestCase
         $this->instance = $this->factory($input = [
             'id'           => null,
             'name'         => null,
+            'alias'        => null,
         ]);
 
         $this->assertNull($this->instance->getId());
         $this->assertNull($this->instance->getName());
+        $this->assertNull($this->instance->getAlias());
     }
 
     /**

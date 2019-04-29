@@ -1,74 +1,92 @@
 [
     {
         "id": "ID_TYPE_AGRICULTURAL",
-        "name": "Сельскохозяйственная техника"
+        "name": "Сельскохозяйственная техника",
+        "alias": "agricultural"
     },
     {
         "id": "ID_TYPE_ARTIC",
-        "name": "Седельный тягач"
+        "name": "Седельный тягач",
+        "alias": "artic"
     },
     {
         "id": "ID_TYPE_ATV",
-        "name": "Мотовездеход"
+        "name": "Мотовездеход",
+        "alias": "atv"
     },
     {
         "id": "ID_TYPE_AUTOLOADER",
-        "name": "Автопогрузчик"
+        "name": "Автопогрузчик",
+        "alias": "autoloader"
     },
     {
         "id": "ID_TYPE_BULLDOZER",
-        "name": "Бульдозер"
+        "name": "Бульдозер",
+        "alias": "bulldozer"
     },
     {
         "id": "ID_TYPE_BUS",
-        "name": "Автобус"
+        "name": "Автобус",
+        "alias": "bus"
     },
     {
         "id": "ID_TYPE_CAR",
-        "name": "Легковой автомобиль"
+        "name": "Легковой автомобиль",
+        "alias": "car"
     },
     {
         "id": "ID_TYPE_CONSTRUCTION",
-        "name": "Строительная техника"
+        "name": "Строительная техника",
+        "alias": "construction"
     },
     {
         "id": "ID_TYPE_CRANE",
-        "name": "Автокран"
+        "name": "Автокран",
+        "alias": "crane"
     },
     {
         "id": "ID_TYPE_SELF_LOADER",
-        "name": "Самопогрузчик"
+        "name": "Самопогрузчик",
+        "alias": "self_loader"
     },
     {
         "id": "ID_TYPE_DREDGE",
-        "name": "Экскаватор"
+        "name": "Экскаватор",
+        "alias": "dredge"
     },
     {
         "id": "ID_TYPE_LIGHT_TRUCK",
-        "name": "Легкий грузовик"
+        "name": "Легкий грузовик",
+        "alias": "light_truck"
     },
     {
         "id": "ID_TYPE_MOTORCYCLE",
-        "name": "Мотоцикл"
+        "name": "Мотоцикл",
+        "alias": "motorcycle"
     },
     {
         "id": "ID_TYPE_MUNICIPAL",
-        "name": "Коммунальная техника"
+        "name": "Коммунальная техника",
+        "alias": "municipal"
     },
     {
         "id": "ID_TYPE_SCOOTER",
-        "name": "Скутер"
+        "name": "Скутер",
+        "alias": "scooter"
     },
     {
         "id": "ID_TYPE_SNOWMOBILE",
-        "name": "Снегоход"
+        "name": "Снегоход",
+        "alias": "snowmobile"
     },
     {
         "id": "ID_TYPE_TRAILER",
-        "name": "Прицеп"
+        "name": "Прицеп",
+        "alias": "trailer"
     },
     {
         "id": "ID_TYPE_TRUCK",
-        "name": "Грузовик"
+        "name": "Грузовик",
+        "alias": "truck"
     }
 ]

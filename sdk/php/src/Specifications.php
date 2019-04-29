@@ -264,9 +264,13 @@ class Specifications
         string $vehicle_type = null
     ): Collection {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
-        $path_file  = ($vehicle_type !== null)
-            ? "/vehicles/{$group_name}/models_{$vehicle_type}.json"
-            : "/vehicles/{$group_name}/models.json";
+
+        if ($vehicle_type !== null) {
+            $alias     = static::getVehicleTypeAliasById($vehicle_type, $group_name);
+            $path_file = "/vehicles/{$group_name}/models_{$alias}.json";
+        } else {
+            $path_file = "/vehicles/{$group_name}/models.json";
+        }
 
         $result = new Collection;
         $input  = static::getJsonFileContent(static::getRootDirectoryPath($path_file));
@@ -301,6 +305,31 @@ class Specifications
         }
 
         return $result;
+    }
+
+    /**
+     * Get vehicle type alias by vehicle type id.
+     *
+     * @param string      $vehicle_type_id
+     * @param string|null $group_name
+     *
+     * @return string|null
+     */
+    public static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
+    {
+        static $types;
+
+        if ($types === null) {
+            $types = static::getVehicleModelsTypesSpecification($group_name);
+        }
+
+        /** @var VehicleModelType $vehicle_model_type */
+        $vehicle_model_type = $types->where('id', $vehicle_type_id)->first();
+        if ($vehicle_model_type !== null) {
+            return $vehicle_model_type->getAlias();
+        }
+
+        return null;
     }
 
     /**

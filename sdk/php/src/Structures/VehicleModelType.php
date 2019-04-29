@@ -9,30 +9,6 @@ use Traversable;
 class VehicleModelType extends AbstractStructure
 {
     /**
-     * Vehicle types models.
-     *
-     * @var string
-     */
-    const VEHICLE_TYPE_AGRICULTURAL = 'agricultural';
-    const VEHICLE_TYPE_ARTIC        = 'artic';
-    const VEHICLE_TYPE_ATV          = 'atv';
-    const VEHICLE_TYPE_AUTOLOADER   = 'autoloader';
-    const VEHICLE_TYPE_BULLDOZER    = 'bulldozer';
-    const VEHICLE_TYPE_BUS          = 'bus';
-    const VEHICLE_TYPE_CAR          = 'car';
-    const VEHICLE_TYPE_CONSTRUCTION = 'construction';
-    const VEHICLE_TYPE_CRANE        = 'crane';
-    const VEHICLE_TYPE_SELF_LOADER  = 'self_loader';
-    const VEHICLE_TYPE_DREDGE       = 'dredge';
-    const VEHICLE_TYPE_LIGHT_TRUCK  = 'light_truck';
-    const VEHICLE_TYPE_MOTORCYCLE   = 'motorcycle';
-    const VEHICLE_TYPE_MUNICIPAL    = 'municipal';
-    const VEHICLE_TYPE_SCOOTER      = 'scooter';
-    const VEHICLE_TYPE_SNOWMOBILE   = 'snowmobile';
-    const VEHICLE_TYPE_TRAILER      = 'trailer';
-    const VEHICLE_TYPE_TRUCK        = 'truck';
-
-    /**
      * Name.
      *
      * @var string|null
@@ -45,6 +21,13 @@ class VehicleModelType extends AbstractStructure
      * @var string|null
      */
     protected $id;
+
+    /**
+     * Alias.
+     *
+     * @var string|null
+     */
+    protected $alias;
 
     /**
      * Get name.
@@ -67,6 +50,16 @@ class VehicleModelType extends AbstractStructure
     }
 
     /**
+     * Get vehicle type alias.
+     *
+     * @return string|null
+     */
+    public function getAlias()
+    {
+        return $this->alias;
+    }
+
+    /**
      * Get the instance as an array.
      *
      * @return array
@@ -74,8 +67,9 @@ class VehicleModelType extends AbstractStructure
     public function toArray(): array
     {
         return [
-            'name' => $this->name,
-            'id'   => $this->id,
+            'name'  => $this->name,
+            'id'    => $this->id,
+            'alias' => $this->alias
         ];
     }
 
@@ -97,6 +91,12 @@ class VehicleModelType extends AbstractStructure
 
                     case 'id':
                         $this->id = $value === null
+                            ? null
+                            : (string) $value;
+                        break;
+
+                    case 'alias':
+                        $this->alias = $value === null
                             ? null
                             : (string) $value;
                         break;

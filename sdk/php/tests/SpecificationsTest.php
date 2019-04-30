@@ -571,6 +571,8 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetVehicleModelsByTypeSpecificationException()
     {
         $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Unknown vehicle type identifier [UNKNOWN]');
+
         $this->instance::getVehicleModelsSpecification(null, 'UNKNOWN');
     }
 

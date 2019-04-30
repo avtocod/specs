@@ -30,7 +30,7 @@ class Specifications
     const GROUP_NAME_DEFAULT = 'default';
 
     /**
-     * Default vehicle type
+     * Default vehicle type.
      */
     const VEHICLE_TYPE_DEFAULT = 'ID_TYPE_CAR';
 
@@ -268,7 +268,7 @@ class Specifications
         string $group_name = null,
         string $vehicle_type = null
     ): Collection {
-        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+        $group_name   = $group_name ?? self::GROUP_NAME_DEFAULT;
         $vehicle_type = $vehicle_type ?? self::VEHICLE_TYPE_DEFAULT;
 
         $path_file = static::getVehicleModelsSpecificationFilePath($vehicle_type, $group_name);
@@ -360,20 +360,20 @@ class Specifications
     }
 
     /**
-     * Get vehicle models specification file path by group and vehicle type
+     * Get vehicle models specification file path by group and vehicle type.
      *
      * @param string $vehicle_type_id
      * @param string $group_name
      *
      * @throws InvalidArgumentException
+     *
      * @return string
      */
     protected static function getVehicleModelsSpecificationFilePath(
         string $vehicle_type_id = null,
         string $group_name = null
-    ): string
-    {
-        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+    ): string {
+        $group_name      = $group_name ?? self::GROUP_NAME_DEFAULT;
         $vehicle_type_id = $vehicle_type_id ?? self::VEHICLE_TYPE_DEFAULT;
 
         if ($vehicle_type_id === self::VEHICLE_TYPE_DEFAULT) {

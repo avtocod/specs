@@ -319,7 +319,7 @@ class Specifications
      *
      * @return string|null
      */
-    protected static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
+    protected static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name)
     {
         static $types;
 
@@ -368,14 +368,8 @@ class Specifications
      * @throws InvalidArgumentException
      * @return string
      */
-    protected static function getVehicleModelsSpecificationFilePath(
-        string $vehicle_type_id = null,
-        string $group_name = null
-    ): string
+    protected static function getVehicleModelsSpecificationFilePath(string $vehicle_type_id, string $group_name): string
     {
-        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
-        $vehicle_type_id = $vehicle_type_id ?? self::VEHICLE_TYPE_DEFAULT;
-
         if ($vehicle_type_id === self::VEHICLE_TYPE_DEFAULT) {
             return "/vehicles/{$group_name}/models.json";
         }

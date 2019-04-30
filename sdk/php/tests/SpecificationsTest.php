@@ -505,18 +505,23 @@ class SpecificationsTest extends AbstractTestCase
         foreach (['default', null] as $group_name) {
             $result = $this->instance::getVehicleModelsSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
+
             foreach ($result as $item) {
                 $this->assertInstanceOf(VehicleModel::class, $item);
             }
+
             $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
                     '/vehicles/default/models.json'
                 ))
             );
+
             $this->assertCount(count($raw), $result);
             $model_ids = [];
+
             foreach ($raw as $source_data) {
                 $model_id = $source_data['id'];
+
                 $this->assertEquals($source_data['id'], $result[$model_id]->getId());
                 $this->assertEquals($source_data['name'], $result[$model_id]->getName());
                 $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
@@ -603,7 +608,7 @@ class SpecificationsTest extends AbstractTestCase
         $method_name = 'getVehicleModelsSpecificationFilePath';
         $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
-        foreach (['default', null, 'custom'] as $group_name) {
+        foreach (['default', 'custom'] as $group_name) {
             foreach ($this->getVehicleModelsFilePathByTypeId($group_name) as $id => $path) {
                 $this->assertSame($path, $method->invokeArgs($this->instance, [$id, $group_name]));
             }
@@ -618,7 +623,7 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage('Can not find vehicle type alias by passed id [UNKNOWN]');
 
-        $method->invokeArgs($this->instance, ['UNKNOWN', null]);
+        $method->invokeArgs($this->instance, ['UNKNOWN', 'default']);
     }
 
     /**

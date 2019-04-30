@@ -17,9 +17,9 @@ class VehicleModelTest extends AbstractStructureTestCase
     public function testConfigure()
     {
         $this->instance = $this->factory($input = [
-            'id'           => $description = 'some description',
-            'name'         => $name = 'some name',
-            'mark_id'      => $mark_id = 'some mark id',
+            'id'      => $description = 'some description',
+            'name'    => $name = 'some name',
+            'mark_id' => $mark_id = 'some mark id',
         ]);
 
         $this->assertEquals($description, $this->instance->getId());
@@ -35,9 +35,9 @@ class VehicleModelTest extends AbstractStructureTestCase
     public function testConfigureWithNulls()
     {
         $this->instance = $this->factory($input = [
-            'id'           => null,
-            'name'         => null,
-            'mark_id'      => null,
+            'id'      => null,
+            'name'    => null,
+            'mark_id' => null,
         ]);
 
         $this->assertNull($this->instance->getId());

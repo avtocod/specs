@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Avtocod\Specifications\Structures;
 
@@ -35,9 +35,9 @@ class VehicleModel extends AbstractStructure
     public function toArray(): array
     {
         return [
-            'name'         => $this->name,
-            'id'           => $this->id,
-            'mark_id'      => $this->mark_id,
+            'name'    => $this->name,
+            'id'      => $this->id,
+            'mark_id' => $this->mark_id,
         ];
     }
 

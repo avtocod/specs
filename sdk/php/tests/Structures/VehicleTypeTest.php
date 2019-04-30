@@ -2,12 +2,12 @@
 
 namespace Avtocod\Specifications\Tests\Structures;
 
-use Avtocod\Specifications\Structures\VehicleModelType;
+use Avtocod\Specifications\Structures\VehicleType;
 
-class VehicleModelTypeTest extends AbstractStructureTestCase
+class VehicleTypeTest extends AbstractStructureTestCase
 {
     /**
-     * @var VehicleModelType
+     * @var VehicleType
      */
     protected $instance;
 
@@ -58,6 +58,6 @@ class VehicleModelTypeTest extends AbstractStructureTestCase
      */
     protected function factory(...$arguments)
     {
-        return new VehicleModelType(...$arguments);
+        return new VehicleType(...$arguments);
     }
 }

@@ -14,7 +14,7 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
-use Avtocod\Specifications\Structures\VehicleModelType;
+use Avtocod\Specifications\Structures\VehicleType;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
 class Specifications
@@ -284,16 +284,16 @@ class Specifications
     }
 
     /**
-     * Get models types specification as collection of typed objects.
+     * Get vehicle types specification as collection of typed objects.
      *
      * @param string|null $group_name
      *
      * @throws Exception
      * @throws InvalidArgumentException
      *
-     * @return Collection|VehicleModelType[]
+     * @return Collection|VehicleType[]
      */
-    public static function getVehicleModelsTypesSpecification(string $group_name = null): Collection
+    public static function getVehicleTypesSpecification(string $group_name = null): Collection
     {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
@@ -303,7 +303,7 @@ class Specifications
         );
 
         foreach ((array) $input as $source_data) {
-            $result->put($source_data['id'], new VehicleModelType($source_data));
+            $result->put($source_data['id'], new VehicleType($source_data));
         }
 
         return $result;
@@ -324,10 +324,10 @@ class Specifications
         static $types;
 
         if ($types === null) {
-            $types = static::getVehicleModelsTypesSpecification($group_name);
+            $types = static::getVehicleTypesSpecification($group_name);
         }
 
-        /** @var VehicleModelType|null $vehicle_model_type */
+        /** @var VehicleType|null $vehicle_model_type */
         $vehicle_model_type = $types->where('id', $vehicle_type_id)->first();
         if ($vehicle_model_type !== null) {
             return $vehicle_model_type->getAlias();

@@ -17,7 +17,7 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
-use Avtocod\Specifications\Structures\VehicleModelType;
+use Avtocod\Specifications\Structures\VehicleType;
 
 /**
  * @coversDefaultClass \Avtocod\Specifications\Specifications
@@ -629,14 +629,14 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleModelTypeSpecification()
+    public function testGetVehicleTypesSpecification()
     {
         foreach (['default', null] as $group_name) {
-            $result = $this->instance::getVehicleModelsTypesSpecification($group_name);
+            $result = $this->instance::getVehicleTypesSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
 
             foreach ($result as $item) {
-                $this->assertInstanceOf(VehicleModelType::class, $item);
+                $this->assertInstanceOf(VehicleType::class, $item);
             }
 
             $raw = Json::decode(
@@ -646,15 +646,15 @@ class SpecificationsTest extends AbstractTestCase
             );
 
             $this->assertCount(count($raw), $result);
-            $model_type_ids = [];
+            $types_ids = [];
 
             foreach ($raw as $source_data) {
-                $model_id = $source_data['id'];
+                $type_id = $source_data['id'];
 
-                $this->assertEquals($source_data['id'], $result[$model_id]->getId());
-                $this->assertEquals($source_data['name'], $result[$model_id]->getName());
-                $this->assertNotContains($model_id, $model_type_ids, "Model type ID contains duplicate: {$model_id}");
-                $model_type_ids[] = $model_id;
+                $this->assertEquals($source_data['id'], $result[$type_id]->getId());
+                $this->assertEquals($source_data['name'], $result[$type_id]->getName());
+                $this->assertNotContains($type_id, $types_ids, "Model type ID contains duplicate: {$type_id}");
+                $types_ids[] = $type_id;
             }
         }
     }

@@ -6,7 +6,7 @@ namespace Avtocod\Specifications\Structures;
 
 use Traversable;
 
-class VehicleModelType extends AbstractStructure
+class VehicleType extends AbstractStructure
 {
     /**
      * Name.

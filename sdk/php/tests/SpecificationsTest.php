@@ -3,12 +3,12 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
+use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Opis\JsonSchema\Schema;
 use PackageVersions\Versions;
 use Opis\JsonSchema\Validator;
-use ReflectionClass;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Specifications;
@@ -580,7 +580,7 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetVehicleTypeAliasById()
     {
         $method_name = 'getVehicleTypeAliasById';
-        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+        $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         foreach (['default', null] as $group_name) {
             foreach ($this->getVehicleTypeAliasByIdMap() as $id => $alias) {
@@ -595,7 +595,7 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetVehicleTypeAliasByIdException()
     {
         $method_name = 'getVehicleTypeAliasById';
-        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+        $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage('Can not find vehicle type alias by passed id [UNKNOWN]');
@@ -606,7 +606,7 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetVehicleModelsSpecificationFilePath()
     {
         $method_name = 'getVehicleModelsSpecificationFilePath';
-        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+        $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         foreach (['default', 'custom'] as $group_name) {
             foreach ($this->getVehicleModelsFilePathByTypeId($group_name) as $id => $path) {
@@ -618,7 +618,7 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetVehicleModelsSpecificationFilePathException()
     {
         $method_name = 'getVehicleModelsSpecificationFilePath';
-        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+        $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage('Can not find vehicle type alias by passed id [UNKNOWN]');
@@ -743,7 +743,7 @@ class SpecificationsTest extends AbstractTestCase
      */
     protected function getNonPublicMethod($class_name, $method_name)
     {
-        $class = new ReflectionClass($class_name);
+        $class  = new ReflectionClass($class_name);
         $method = $class->getMethod($method_name);
         $method->setAccessible(true);
 

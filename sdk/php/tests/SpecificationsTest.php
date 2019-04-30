@@ -543,7 +543,7 @@ class SpecificationsTest extends AbstractTestCase
                 foreach ($result as $item) {
                     $this->assertInstanceOf(VehicleModel::class, $item);
                 }
-                if ($vehicle_type === 'ID_TYPE_CAR') {
+                if ($vehicle_type === Specifications::VEHICLE_TYPE_DEFAULT) {
                     $path_file = '/vehicles/default/models.json';
                 } else {
                     $path_file = sprintf('/vehicles/default/models_%s.json', $alias);

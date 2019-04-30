@@ -267,7 +267,8 @@ class Specifications
     public static function getVehicleModelsSpecification(
         string $group_name = null,
         string $vehicle_type = null
-    ): Collection {
+    ): Collection
+    {
         $group_name   = $group_name ?? self::GROUP_NAME_DEFAULT;
         $vehicle_type = $vehicle_type ?? self::VEHICLE_TYPE_DEFAULT;
 

@@ -12,9 +12,9 @@ use Illuminate\Support\Collection;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
+use Avtocod\Specifications\Structures\VehicleType;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
-use Avtocod\Specifications\Structures\VehicleType;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
 class Specifications

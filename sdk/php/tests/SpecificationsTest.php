@@ -598,7 +598,7 @@ class SpecificationsTest extends AbstractTestCase
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('Can not find vehicle type alias by passed id [UNKNOWN]');
+        $this->expectExceptionMessage('Unknown vehicle type identifier [UNKNOWN]');
 
         $method->invokeArgs($this->instance, ['UNKNOWN', null]);
     }
@@ -621,7 +621,7 @@ class SpecificationsTest extends AbstractTestCase
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('Can not find vehicle type alias by passed id [UNKNOWN]');
+        $this->expectExceptionMessage('Unknown vehicle type identifier [UNKNOWN]');
 
         $method->invokeArgs($this->instance, ['UNKNOWN', 'default']);
     }
@@ -723,7 +723,7 @@ class SpecificationsTest extends AbstractTestCase
         $file_paths = [];
 
         foreach ($alias_map as $id => $alias) {
-            if ($id === 'ID_TYPE_CAR') {
+            if ($id === Specifications::VEHICLE_TYPE_DEFAULT) {
                 $file_paths[$id] = "/vehicles/{$group_name}/models.json";
             } else {
                 $file_paths[$id] = "/vehicles/{$group_name}/models_{$alias}.json";

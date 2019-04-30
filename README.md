@@ -60,7 +60,7 @@
 
 Со всеми поддерживаемыми нами идентификаторами вы можете ознакомиться в файлах [марок](./vehicles/default/marks.json) и [моделей](./vehicles/default/).
 
-> Модели поделены по категориям типа ТС. Пример: [models_car.json](./vehicles/default/models_car.json) - легковые автомобили.   
+> Модели поделены по категориям типа ТС. Пример: [models_car.json](./vehicles/default/models_bus.json) - автобусы.   
 
 С идентификаторами типов моделей вы можете ознакомится в [файле спецификации](vehicles/default/types.json).
 

@@ -319,7 +319,7 @@ class Specifications
      *
      * @return string|null
      */
-    protected static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name)
+    protected static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
     {
         static $types;
 
@@ -333,10 +333,7 @@ class Specifications
             return $vehicle_model_type->getAlias();
         }
 
-        throw new InvalidArgumentException(sprintf(
-            'Can not find vehicle type alias by passed id [%s]',
-            $vehicle_type_id
-        ));
+        throw new InvalidArgumentException(sprintf('Unknown vehicle type identifier [%s]', $vehicle_type_id));
     }
 
     /**

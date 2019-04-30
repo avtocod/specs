@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use Opis\JsonSchema\Schema;
 use PackageVersions\Versions;
 use Opis\JsonSchema\Validator;
+use ReflectionClass;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
 use Avtocod\Specifications\Specifications;
@@ -537,7 +538,11 @@ class SpecificationsTest extends AbstractTestCase
                 foreach ($result as $item) {
                     $this->assertInstanceOf(VehicleModel::class, $item);
                 }
-                $path_file = sprintf('/vehicles/default/models_%s.json', $alias);
+                if ($vehicle_type === 'ID_TYPE_CAR') {
+                    $path_file = '/vehicles/default/models.json';
+                } else {
+                    $path_file = sprintf('/vehicles/default/models_%s.json', $alias);
+                }
                 $raw       = Json::decode(
                     \file_get_contents($this->instance::getRootDirectoryPath($path_file))
                 );
@@ -569,9 +574,12 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetVehicleTypeAliasById()
     {
+        $method_name = 'getVehicleTypeAliasById';
+        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+
         foreach (['default', null] as $group_name) {
             foreach ($this->getVehicleTypeAliasByIdMap() as $id => $alias) {
-                $this->assertSame($alias, $this->instance::getVehicleTypeAliasById($id));
+                $this->assertSame($alias, $method->invokeArgs($this->instance, [$id, $group_name]));
             }
         }
     }
@@ -581,8 +589,36 @@ class SpecificationsTest extends AbstractTestCase
      */
     public function testGetVehicleTypeAliasByIdException()
     {
+        $method_name = 'getVehicleTypeAliasById';
+        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+
         $this->expectException(\InvalidArgumentException::class);
-        $this->instance::getVehicleTypeAliasById('UNKNOWN', null);
+        $this->expectExceptionMessage('Can not find vehicle type alias by passed id [UNKNOWN]');
+
+        $method->invokeArgs($this->instance, ['UNKNOWN', null]);
+    }
+
+    public function testGetVehicleModelsSpecificationFilePath()
+    {
+        $method_name = 'getVehicleModelsSpecificationFilePath';
+        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+
+        foreach (['default', null, 'custom'] as $group_name) {
+            foreach ($this->getVehicleModelsFilePathByTypeId($group_name) as $id => $path) {
+                $this->assertSame($path, $method->invokeArgs($this->instance, [$id, $group_name]));
+            }
+        }
+    }
+
+    public function testGetVehicleModelsSpecificationFilePathException()
+    {
+        $method_name = 'getVehicleModelsSpecificationFilePath';
+        $method = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Can not find vehicle type alias by passed id [UNKNOWN]');
+
+        $method->invokeArgs($this->instance, ['UNKNOWN', null]);
     }
 
     /**
@@ -630,6 +666,8 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
+     * Return vehicle type aliases mapped to vehicle type ids.
+     *
      * @return array
      */
     protected function getVehicleTypeAliasByIdMap()
@@ -654,5 +692,56 @@ class SpecificationsTest extends AbstractTestCase
             'ID_TYPE_TRAILER'      => 'trailer',
             'ID_TYPE_TRUCK'        => 'truck',
         ];
+    }
+
+    /**
+     * Return vehicle models specs files paths mapped to vehicle type id.
+     *
+     * @example
+     * [
+     *      ...
+     *      'ID_TYPE_CAR' => '/vehicles/default/models.json',
+     *      'ID_TYPE_SCOOTER' => '/vehicles/default/models_scooter.json',
+     *      ...
+     * ]
+     *
+     * @param string $group_name
+     *
+     * @return array
+     */
+    protected function getVehicleModelsFilePathByTypeId($group_name = null)
+    {
+        $group_name = $group_name ?? 'default';
+
+        $alias_map = $this->getVehicleTypeAliasByIdMap();
+
+        $file_paths = [];
+
+        foreach ($alias_map as $id => $alias) {
+            if ($id === 'ID_TYPE_CAR') {
+                $file_paths[$id] = "/vehicles/{$group_name}/models.json";
+            } else {
+                $file_paths[$id] = "/vehicles/{$group_name}/models_{$alias}.json";
+            }
+        }
+
+        return $file_paths;
+    }
+
+    /**
+     * Make accessible non public method and return it.
+     *
+     * @param string $class_name
+     * @param string $method_name
+     *
+     * @return \ReflectionMethod
+     */
+    protected function getNonPublicMethod($class_name, $method_name)
+    {
+        $class = new ReflectionClass($class_name);
+        $method = $class->getMethod($method_name);
+        $method->setAccessible(true);
+
+        return $method;
     }
 }

@@ -30,6 +30,11 @@ class Specifications
     const GROUP_NAME_DEFAULT = 'default';
 
     /**
+     * Default vehicle type
+     */
+    const VEHICLE_TYPE_DEFAULT = 'ID_TYPE_CAR';
+
+    /**
      * Get current package version.
      *
      * @param bool $without_hash
@@ -264,13 +269,9 @@ class Specifications
         string $vehicle_type = null
     ): Collection {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+        $vehicle_type = $vehicle_type ?? self::VEHICLE_TYPE_DEFAULT;
 
-        if ($vehicle_type !== null) {
-            $alias     = static::getVehicleTypeAliasById($vehicle_type, $group_name);
-            $path_file = "/vehicles/{$group_name}/models_{$alias}.json";
-        } else {
-            $path_file = "/vehicles/{$group_name}/models.json";
-        }
+        $path_file = static::getVehicleModelsSpecificationFilePath($vehicle_type, $group_name);
 
         $result = new Collection;
         $input  = static::getJsonFileContent(static::getRootDirectoryPath($path_file));
@@ -318,7 +319,7 @@ class Specifications
      *
      * @return string|null
      */
-    public static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
+    protected static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
     {
         static $types;
 
@@ -356,5 +357,31 @@ class Specifications
         }
 
         return Json::decode((string) \file_get_contents($file_path), $as_array);
+    }
+
+    /**
+     * Get vehicle models specification file path by group and vehicle type
+     *
+     * @param string $vehicle_type_id
+     * @param string $group_name
+     *
+     * @throws InvalidArgumentException
+     * @return string
+     */
+    protected static function getVehicleModelsSpecificationFilePath(
+        string $vehicle_type_id = null,
+        string $group_name = null
+    ): string
+    {
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+        $vehicle_type_id = $vehicle_type_id ?? self::VEHICLE_TYPE_DEFAULT;
+
+        if ($vehicle_type_id === self::VEHICLE_TYPE_DEFAULT) {
+            return "/vehicles/{$group_name}/models.json";
+        }
+
+        $alias = static::getVehicleTypeAliasById($vehicle_type_id, $group_name);
+
+        return "/vehicles/{$group_name}/models_{$alias}.json";
     }
 }

@@ -68,7 +68,6 @@ class SpecFilesTest extends AbstractTestCase
             $root . '/vehicles/default/models_autoloader.json',
             $root . '/vehicles/default/models_bulldozer.json',
             $root . '/vehicles/default/models_bus.json',
-            $root . '/vehicles/default/models_car.json',
             $root . '/vehicles/default/models_construction.json',
             $root . '/vehicles/default/models_crane.json',
             $root . '/vehicles/default/models_dredge.json',

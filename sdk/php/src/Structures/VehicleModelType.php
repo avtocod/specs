@@ -6,7 +6,7 @@ namespace Avtocod\Specifications\Structures;
 
 use Traversable;
 
-class VehicleModel extends AbstractStructure
+class VehicleModelType extends AbstractStructure
 {
     /**
      * Name.
@@ -23,46 +23,16 @@ class VehicleModel extends AbstractStructure
     protected $id;
 
     /**
-     * Vehicle mark unique identifier.
+     * Alias.
      *
      * @var string|null
      */
-    protected $mark_id;
-
-    /**
-     * Vehicle type identifier.
-     *
-     * @var string|null
-     */
-    protected $vehicle_type;
-
-    /**
-     * {@inheritdoc}
-     */
-    public function toArray(): array
-    {
-        return [
-            'name'         => $this->name,
-            'id'           => $this->id,
-            'mark_id'      => $this->mark_id,
-            'vehicle_type' => $this->vehicle_type,
-        ];
-    }
-
-    /**
-     * Get unique identifier.
-     *
-     * @return null|string
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
+    protected $alias;
 
     /**
      * Get name.
      *
-     * @return null|string
+     * @return string|null
      */
     public function getName()
     {
@@ -70,27 +40,43 @@ class VehicleModel extends AbstractStructure
     }
 
     /**
-     * Get mark unique identifier.
-     *
-     * @return null|string
-     */
-    public function getMarkId()
-    {
-        return $this->mark_id;
-    }
-
-    /**
      * Get vehicle type identifier.
      *
-     * @return null|string
+     * @return string|null
      */
-    public function getVehicleType()
+    public function getId()
     {
-        return $this->vehicle_type;
+        return $this->id;
     }
 
     /**
-     * {@inheritdoc}
+     * Get vehicle type alias.
+     *
+     * @return string|null
+     */
+    public function getAlias()
+    {
+        return $this->alias;
+    }
+
+    /**
+     * Get the instance as an array.
+     *
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            'name'  => $this->name,
+            'id'    => $this->id,
+            'alias' => $this->alias,
+        ];
+    }
+
+    /**
+     * Configure itself.
+     *
+     * @param mixed|null $raw_data
      */
     protected function configure($raw_data)
     {
@@ -109,13 +95,8 @@ class VehicleModel extends AbstractStructure
                             : (string) $value;
                         break;
 
-                    case 'mark_id':
-                        $this->mark_id = $value === null
-                            ? null
-                            : (string) $value;
-                        break;
-                    case 'vehicle_type':
-                        $this->vehicle_type = $value === null
+                    case 'alias':
+                        $this->alias = $value === null
                             ? null
                             : (string) $value;
                         break;

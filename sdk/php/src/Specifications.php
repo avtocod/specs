@@ -14,6 +14,7 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
+use Avtocod\Specifications\Structures\VehicleModelType;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
 class Specifications
@@ -252,25 +253,89 @@ class Specifications
      * Get vehicle models specification as collection of typed objects.
      *
      * @param string|null $group_name
+     * @param string|null $vehicle_type
      *
-     * @throws Exception
+     * @throws InvalidArgumentException
      *
      * @return Collection|VehicleModel[]
      */
-    public static function getVehicleModelsSpecification(string $group_name = null): Collection
-    {
+    public static function getVehicleModelsSpecification(
+        string $group_name = null,
+        string $vehicle_type = null
+    ): Collection {
         $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
 
+        if ($vehicle_type !== null) {
+            $alias     = static::getVehicleTypeAliasById($vehicle_type, $group_name);
+            $path_file = "/vehicles/{$group_name}/models_{$alias}.json";
+        } else {
+            $path_file = "/vehicles/{$group_name}/models.json";
+        }
+
         $result = new Collection;
-        $input  = static::getJsonFileContent(
-            static::getRootDirectoryPath("/vehicles/{$group_name}/models.json")
-        );
+        $input  = static::getJsonFileContent(static::getRootDirectoryPath($path_file));
 
         foreach ((array) $input as $source_data) {
             $result->put($source_data['id'], new VehicleModel($source_data));
         }
 
         return $result;
+    }
+
+    /**
+     * Get models types specification as collection of typed objects.
+     *
+     * @param string|null $group_name
+     *
+     * @throws Exception
+     * @throws InvalidArgumentException
+     *
+     * @return Collection|VehicleModelType[]
+     */
+    public static function getVehicleModelsTypesSpecification(string $group_name = null): Collection
+    {
+        $group_name = $group_name ?? self::GROUP_NAME_DEFAULT;
+
+        $result = new Collection;
+        $input  = static::getJsonFileContent(
+            static::getRootDirectoryPath("/vehicles/{$group_name}/types.json")
+        );
+
+        foreach ((array) $input as $source_data) {
+            $result->put($source_data['id'], new VehicleModelType($source_data));
+        }
+
+        return $result;
+    }
+
+    /**
+     * Get vehicle type alias by vehicle type id.
+     *
+     * @param string      $vehicle_type_id
+     * @param string|null $group_name
+     *
+     * @throws InvalidArgumentException
+     *
+     * @return string|null
+     */
+    public static function getVehicleTypeAliasById(string $vehicle_type_id, string $group_name = null)
+    {
+        static $types;
+
+        if ($types === null) {
+            $types = static::getVehicleModelsTypesSpecification($group_name);
+        }
+
+        /** @var VehicleModelType|null $vehicle_model_type */
+        $vehicle_model_type = $types->where('id', $vehicle_type_id)->first();
+        if ($vehicle_model_type !== null) {
+            return $vehicle_model_type->getAlias();
+        }
+
+        throw new InvalidArgumentException(sprintf(
+            'Can not find vehicle type alias by passed id [%s]',
+            $vehicle_type_id
+        ));
     }
 
     /**

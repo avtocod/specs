@@ -16,6 +16,7 @@ use Avtocod\Specifications\Structures\Source;
 use Avtocod\Specifications\Structures\VehicleMark;
 use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
+use Avtocod\Specifications\Structures\VehicleModelType;
 
 /**
  * @coversDefaultClass \Avtocod\Specifications\Specifications
@@ -503,28 +504,116 @@ class SpecificationsTest extends AbstractTestCase
         foreach (['default', null] as $group_name) {
             $result = $this->instance::getVehicleModelsSpecification($group_name);
             $this->assertInstanceOf(Collection::class, $result);
-
             foreach ($result as $item) {
                 $this->assertInstanceOf(VehicleModel::class, $item);
             }
-
             $raw = Json::decode(
                 \file_get_contents($this->instance::getRootDirectoryPath(
                     '/vehicles/default/models.json'
                 ))
             );
-
             $this->assertCount(count($raw), $result);
             $model_ids = [];
+            foreach ($raw as $source_data) {
+                $model_id = $source_data['id'];
+                $this->assertEquals($source_data['id'], $result[$model_id]->getId());
+                $this->assertEquals($source_data['name'], $result[$model_id]->getName());
+                $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
+                $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
+                $model_ids[] = $model_id;
+            }
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleModelsByTypeSpecification()
+    {
+        foreach (['default', null] as $group_name) {
+            foreach ($this->getVehicleTypeAliasByIdMap() as $vehicle_type => $alias) {
+                $result = $this->instance::getVehicleModelsSpecification($group_name, $vehicle_type);
+                $this->assertInstanceOf(Collection::class, $result);
+                foreach ($result as $item) {
+                    $this->assertInstanceOf(VehicleModel::class, $item);
+                }
+                $path_file = sprintf('/vehicles/default/models_%s.json', $alias);
+                $raw       = Json::decode(
+                    \file_get_contents($this->instance::getRootDirectoryPath($path_file))
+                );
+                $this->assertCount(count($raw), $result);
+                $model_ids = [];
+                foreach ($raw as $source_data) {
+                    $model_id = $source_data['id'];
+                    $this->assertEquals($source_data['id'], $result[$model_id]->getId());
+                    $this->assertEquals($source_data['name'], $result[$model_id]->getName());
+                    $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
+                    $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
+                    $model_ids[] = $model_id;
+                }
+            }
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleModelsByTypeSpecificationException()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->instance::getVehicleModelsSpecification(null, 'UNKNOWN');
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleTypeAliasById()
+    {
+        foreach (['default', null] as $group_name) {
+            foreach ($this->getVehicleTypeAliasByIdMap() as $id => $alias) {
+                $this->assertSame($alias, $this->instance::getVehicleTypeAliasById($id));
+            }
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleTypeAliasByIdException()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->instance::getVehicleTypeAliasById('UNKNOWN', null);
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetVehicleModelTypeSpecification()
+    {
+        foreach (['default', null] as $group_name) {
+            $result = $this->instance::getVehicleModelsTypesSpecification($group_name);
+            $this->assertInstanceOf(Collection::class, $result);
+
+            foreach ($result as $item) {
+                $this->assertInstanceOf(VehicleModelType::class, $item);
+            }
+
+            $raw = Json::decode(
+                \file_get_contents($this->instance::getRootDirectoryPath(
+                    '/vehicles/default/types.json'
+                ))
+            );
+
+            $this->assertCount(count($raw), $result);
+            $model_type_ids = [];
 
             foreach ($raw as $source_data) {
                 $model_id = $source_data['id'];
 
                 $this->assertEquals($source_data['id'], $result[$model_id]->getId());
                 $this->assertEquals($source_data['name'], $result[$model_id]->getName());
-                $this->assertEquals($source_data['mark_id'], $result[$model_id]->getMarkId());
-                $this->assertNotContains($model_id, $model_ids, "Model ID contains duplicate: {$model_id}");
-                $model_ids[] = $model_id;
+                $this->assertNotContains($model_id, $model_type_ids, "Model type ID contains duplicate: {$model_id}");
+                $model_type_ids[] = $model_id;
             }
         }
     }
@@ -538,5 +627,32 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
         $this->instance::getSourcesSpecification('foo bar');
+    }
+
+    /**
+     * @return array
+     */
+    protected function getVehicleTypeAliasByIdMap()
+    {
+        return [
+            'ID_TYPE_AGRICULTURAL' => 'agricultural',
+            'ID_TYPE_ARTIC'        => 'artic',
+            'ID_TYPE_ATV'          => 'atv',
+            'ID_TYPE_AUTOLOADER'   => 'autoloader',
+            'ID_TYPE_BULLDOZER'    => 'bulldozer',
+            'ID_TYPE_BUS'          => 'bus',
+            'ID_TYPE_CAR'          => 'car',
+            'ID_TYPE_CONSTRUCTION' => 'construction',
+            'ID_TYPE_CRANE'        => 'crane',
+            'ID_TYPE_SELF_LOADER'  => 'self_loader',
+            'ID_TYPE_DREDGE'       => 'dredge',
+            'ID_TYPE_LIGHT_TRUCK'  => 'light_truck',
+            'ID_TYPE_MOTORCYCLE'   => 'motorcycle',
+            'ID_TYPE_MUNICIPAL'    => 'municipal',
+            'ID_TYPE_SCOOTER'      => 'scooter',
+            'ID_TYPE_SNOWMOBILE'   => 'snowmobile',
+            'ID_TYPE_TRAILER'      => 'trailer',
+            'ID_TYPE_TRUCK'        => 'truck',
+        ];
     }
 }

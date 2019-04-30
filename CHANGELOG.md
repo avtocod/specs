@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.4.0
+
+### Added
+
+- Added vehicle model types specifications `types.json`
+- **PHP SDK** method `getVehicleModelsTypesSpecification`
+- **PHP SDK** method `getVehicleTypeAliasById`
+- Extended support for models of cars, new model files are grouped by vehicle type (example: `models_car.json` - cars)
+
+### Changed
+
+- Extended vehicle marks specifications
+- **PHP SDK** object `VehicleModel`, add vehicle model type `vehicle_type`
+
 ## v3.3.0
 
 ### Added

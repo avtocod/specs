@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.3.1
+
+### Fixed
+
+- Vin code in examples changed from `C5KY36SZRBD974789` to `EXAMPL0V1N1000000`
+
 ## v3.3.0
 
 ### Added

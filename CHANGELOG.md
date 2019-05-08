@@ -14,6 +14,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - **PHP SDK** protected method `getVehicleModelsSpecificationFilePath`
 - Extended support for models of cars, new model files are grouped by vehicle type (example: `models_bus.json` - cars)
 
+## v3.3.1
+
+### Fixed
+
+- Vin code in examples changed from `C5KY36SZRBD974789` to `EXAMPL0V1N1000000`
+
 ## v3.3.0
 
 ### Added

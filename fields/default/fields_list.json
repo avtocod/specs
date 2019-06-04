@@ -606,6 +606,26 @@
         ]
     },
     {
+        "path": "ownership.history.items[].last_operation.code",
+        "description": "История владения: код последней операции в периоде владения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.history"
+        ]
+    },
+    {
+        "path": "ownership.history.items[].last_operation.description",
+        "description": "История владения: описание последней операции в периоде владения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.history"
+        ]
+    },
+    {
         "path": "registration_actions.items[].date.start",
         "description": "Регистрационные действия: Дата начала рег. действия",
         "types": [

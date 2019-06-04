@@ -4535,6 +4535,38 @@
                                                 ]
                                             }
                                         }
+                                    },
+                                    "last_operation": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "code": {
+                                                "description": "История владения: код последней операции в периоде владения",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "11"
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.history"
+                                                ]
+                                            },
+                                            "description": {
+                                                "description": "История владения: описание последней операции в периоде владения",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "первичная регистрация"
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.history"
+                                                ]
+                                            }
+                                        }
                                     }
                                 }
                             }

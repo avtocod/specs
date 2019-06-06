@@ -3,7 +3,6 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
-use PHPUnit\Framework\Constraint\IsType;
 use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -13,6 +12,7 @@ use PackageVersions\Versions;
 use Opis\JsonSchema\Validator;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
+use PHPUnit\Framework\Constraint\IsType;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;

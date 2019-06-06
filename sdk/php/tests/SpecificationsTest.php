@@ -12,7 +12,6 @@ use PackageVersions\Versions;
 use Opis\JsonSchema\Validator;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Support\Collection;
-use PHPUnit\Framework\Constraint\IsType;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Structures\Field;
 use Avtocod\Specifications\Structures\Source;

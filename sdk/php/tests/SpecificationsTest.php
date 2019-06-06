@@ -7,6 +7,7 @@ use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Opis\JsonSchema\Schema;
+use InvalidArgumentException;
 use PackageVersions\Versions;
 use Opis\JsonSchema\Validator;
 use Tarampampam\Wrappers\Json;
@@ -670,6 +671,24 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
         $this->instance::getSourcesSpecification('foo bar');
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetJsonFileContent()
+    {
+        $method_name = 'getJsonFileContent';
+        $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+
+        $path = $this->instance::getRootDirectoryPath('/vehicles/default/types.json');
+        $this->assertInternalType('array', $method->invokeArgs($this->instance, [$path, true]));
+        $this->assertInternalType('object', $method->invokeArgs($this->instance, [$path, false]));
+
+        $wrong_path = $this->instance::getRootDirectoryPath('/not_exists.json');
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage("File [{$wrong_path}] was not found");
+        $method->invokeArgs($this->instance, [$wrong_path, true]);
     }
 
     /**

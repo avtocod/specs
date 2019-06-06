@@ -353,7 +353,11 @@ class Specifications
             throw new \InvalidArgumentException("File [{$file_path}] was not found");
         }
 
-        return Json::decode((string) \file_get_contents($file_path), $as_array);
+        $content = (string) \file_get_contents($file_path);
+
+        return $as_array === true
+            ? (array) Json::decode($content, true)
+            : (object) Json::decode($content, false);
     }
 
     /**

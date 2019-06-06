@@ -3,11 +3,11 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
-use InvalidArgumentException;
 use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Opis\JsonSchema\Schema;
+use InvalidArgumentException;
 use PackageVersions\Versions;
 use Opis\JsonSchema\Validator;
 use Tarampampam\Wrappers\Json;

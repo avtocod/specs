@@ -683,8 +683,8 @@ class SpecificationsTest extends AbstractTestCase
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         $path = $this->instance::getRootDirectoryPath('/vehicles/default/types.json');
-        $this->assertInternalType(IsType::TYPE_ARRAY, $method->invokeArgs($this->instance, [$path, true]));
-        $this->assertInternalType(IsType::TYPE_OBJECT, $method->invokeArgs($this->instance, [$path, false]));
+        $this->assertInternalType('array', $method->invokeArgs($this->instance, [$path, true]));
+        $this->assertInternalType('object', $method->invokeArgs($this->instance, [$path, false]));
 
         $wrong_path = $this->instance::getRootDirectoryPath('/not_exists.json');
         $this->expectException(InvalidArgumentException::class);

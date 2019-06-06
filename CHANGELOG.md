@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.5.0
+
+### Added
+
+- Field with path `ownership.history.items[].last_operation.code` [#56]
+- Field with path `ownership.history.items[].last_operation.description` [#56]
+- Added casting to `array`|`object` for result of method `Specifications::getJsonFileContent()`
+
+### Changed
+
+- [json-schema][json-schema] `./reports/default/json-schema.json` updated [#56]
+- `./reports/default/examples/empty.json` updated [#56]
+- `./reports/default/examples/full.json` updated [#56]
+- `./fields/default/fields_list.json` updated [#56]
+
 ## v3.4.0
 
 ### Added

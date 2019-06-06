@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `ownership.history.items[].last_operation.code` [#56]
 - Field with path `ownership.history.items[].last_operation.description` [#56]
+- Added casting to `array`|`object` for result of method `Specifications::getJsonFileContent()`
 
 ### Changed
 

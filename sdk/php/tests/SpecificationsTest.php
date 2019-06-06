@@ -3,6 +3,7 @@
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
+use InvalidArgumentException;
 use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -670,6 +671,24 @@ class SpecificationsTest extends AbstractTestCase
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
 
         $this->instance::getSourcesSpecification('foo bar');
+    }
+
+    /**
+     * @return void
+     */
+    public function testGetJsonFileContent()
+    {
+        $method_name = 'getJsonFileContent';
+        $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
+
+        $path = $this->instance::getRootDirectoryPath('/vehicles/default/types.json');
+        $this->assertIsArray($method->invokeArgs($this->instance, [$path, true]));
+        $this->assertIsObject($method->invokeArgs($this->instance, [$path, false]));
+
+        $wrong_path = $this->instance::getRootDirectoryPath('/not_exists.json');
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage("File [{$wrong_path}] was not found");
+        $method->invokeArgs($this->instance, [$wrong_path, true]);
     }
 
     /**

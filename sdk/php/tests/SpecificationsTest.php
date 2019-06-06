@@ -4,6 +4,7 @@ namespace Avtocod\Specifications\Tests;
 
 use Exception;
 use InvalidArgumentException;
+use PHPUnit\Framework\Constraint\IsType;
 use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -682,8 +683,8 @@ class SpecificationsTest extends AbstractTestCase
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         $path = $this->instance::getRootDirectoryPath('/vehicles/default/types.json');
-        $this->assertIsArray($method->invokeArgs($this->instance, [$path, true]));
-        $this->assertIsObject($method->invokeArgs($this->instance, [$path, false]));
+        $this->assertInternalType(IsType::TYPE_ARRAY, $method->invokeArgs($this->instance, [$path, true]));
+        $this->assertInternalType(IsType::TYPE_OBJECT, $method->invokeArgs($this->instance, [$path, false]));
 
         $wrong_path = $this->instance::getRootDirectoryPath('/not_exists.json');
         $this->expectException(InvalidArgumentException::class);

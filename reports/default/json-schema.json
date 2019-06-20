@@ -1313,6 +1313,20 @@
                     "description": "Количество вхождений",
                     "type": "integer",
                     "minimum": 0
+                },
+                "has_annulment": {
+                    "description": "Регистрационные действия: Признак аннулирования последнего рег. действия",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "examples": [
+                        true,
+                        null
+                    ],
+                    "fillable_by": [
+                        "base.ext"
+                    ]
                 }
             }
         },

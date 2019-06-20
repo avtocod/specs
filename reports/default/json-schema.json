@@ -1305,6 +1305,26 @@
                                     "base.ext",
                                     "base.taxi"
                                 ]
+                            },
+                            "attributes": {
+                                "description": "Вероятный признак рег. действия [LEASING,ANNULMENT,...]",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": "string"
+                                },
+                                "examples": [
+                                    [
+                                        "LEASING",
+                                        "ANNULMENT"
+                                    ],
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "base.ext"
+                                ]
                             }
                         }
                     }

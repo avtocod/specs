@@ -759,6 +759,16 @@
         ]
     },
     {
+        "path": "registration_actions.items[].attributes",
+        "description": "Вероятный признак рег. действия [LEASING,ANNULMENT,...]",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "base.ext"
+        ]
+    },
+    {
         "path": "insurance.osago.items[].number",
         "description": "ОСАГО: Номер договора",
         "types": [

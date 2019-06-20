@@ -760,7 +760,7 @@
     },
     {
         "path": "registration_actions.items[].attributes",
-        "description": "Вероятный признак рег. действия [LEASING,ANNULMENT,...]",
+        "description": "Вероятный признак рег. действия [LEASING, ANNULMENT, EXPLOITATION_ON, EXPLOITATION_OFF]",
         "types": [
             "array"
         ],

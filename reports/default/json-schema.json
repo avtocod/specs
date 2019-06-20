@@ -1307,19 +1307,23 @@
                                 ]
                             },
                             "attributes": {
-                                "description": "Вероятный признак рег. действия [LEASING,ANNULMENT,...]",
+                                "description": "Вероятный признак рег. действия [LEASING, ANNULMENT, EXPLOITATION_ON, EXPLOITATION_OFF]",
                                 "type": [
                                     "array",
                                     "null"
                                 ],
                                 "items": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "enum": [
+                                        "LEASING",
+                                        "ANNULMENT",
+                                        "EXPLOITATION_ON",
+                                        "EXPLOITATION_OFF"
+                                    ]
                                 },
                                 "examples": [
                                     [
                                         "LEASING",
-                                        "ANNULMENT",
-                                        "EXPLOITATION_ON",
                                         "EXPLOITATION_OFF"
                                     ],
                                     null

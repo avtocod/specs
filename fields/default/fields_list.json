@@ -759,7 +759,7 @@
         ]
     },
     {
-        "path": "registration_actions.items[].allowed_usage",
+        "path": "registration_actions.items[].usage_allowed",
         "description": "Вероятный признак, возможно ли эксплуатация ТС?",
         "types": [
             "boolean"

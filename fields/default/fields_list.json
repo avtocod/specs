@@ -759,6 +759,17 @@
         ]
     },
     {
+        "path": "registration_actions.items[].allowed_usage",
+        "description": "Вероятный признак, возможно ли эксплуатация ТС?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
         "path": "registration_actions.has_annulment",
         "description": "Регистрационные действия: Признак аннулирования последнего рег. действия",
         "types": [

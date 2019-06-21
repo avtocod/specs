@@ -1305,6 +1305,20 @@
                                     "base.ext",
                                     "base.taxi"
                                 ]
+                            },
+                            "allowed_usage": {
+                                "description": "Вероятный признак, возможно ли эксплуатация ТС?",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    true
+                                ],
+                                "fillable_by": [
+                                    "base",
+                                    "base.ext"
+                                ]
                             }
                         }
                     }

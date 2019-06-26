@@ -759,6 +759,37 @@
         ]
     },
     {
+        "path": "registration_actions.items[].attributes",
+        "description": "Вероятный признак рег. действия [LEASING, ANNULMENT, ...]",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "base.ext"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].usage_allowed",
+        "description": "Вероятный признак, возможна ли эксплуатация ТС?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
+        "path": "registration_actions.has_annulment",
+        "description": "Регистрационные действия: Признак аннулирования последнего рег. действия",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "base.ext"
+        ]
+    },
+    {
         "path": "insurance.osago.items[].number",
         "description": "ОСАГО: Номер договора",
         "types": [

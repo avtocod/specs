@@ -1305,6 +1305,44 @@
                                     "base.ext",
                                     "base.taxi"
                                 ]
+                            },
+                            "attributes": {
+                                "description": "Вероятный признак рег. действия [LEASING, ANNULMENT, ...]",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "LEASING",
+                                        "ANNULMENT"
+                                    ]
+                                },
+                                "examples": [
+                                    [
+                                        "LEASING",
+                                        "ANNULMENT"
+                                    ],
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "base.ext"
+                                ]
+                            },
+                            "usage_allowed": {
+                                "description": "Вероятный признак, возможна ли эксплуатация ТС?",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    true
+                                ],
+                                "fillable_by": [
+                                    "base",
+                                    "base.ext"
+                                ]
                             }
                         }
                     }
@@ -1313,6 +1351,20 @@
                     "description": "Количество вхождений",
                     "type": "integer",
                     "minimum": 0
+                },
+                "has_annulment": {
+                    "description": "Регистрационные действия: Признак аннулирования последнего рег. действия",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "examples": [
+                        true,
+                        null
+                    ],
+                    "fillable_by": [
+                        "base.ext"
+                    ]
                 }
             }
         },

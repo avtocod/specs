@@ -1306,6 +1306,30 @@
                                     "base.taxi"
                                 ]
                             },
+                            "attributes": {
+                                "description": "Вероятный признак рег. действия [LEASING, ANNULMENT, ...]",
+                                "type": [
+                                    "array",
+                                    "null"
+                                ],
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "LEASING",
+                                        "ANNULMENT"
+                                    ]
+                                },
+                                "examples": [
+                                    [
+                                        "LEASING",
+                                        "ANNULMENT"
+                                    ],
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "base.ext"
+                                ]
+                            },
                             "usage_allowed": {
                                 "description": "Вероятный признак, возможна ли эксплуатация ТС?",
                                 "type": [

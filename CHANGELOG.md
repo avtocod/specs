@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Field with path `registration_actions.has_annulment` [#63]
+- Field with path `registration_actions.items[].usage_allowed` [#63]
 - Field with path `registration_actions.items[].attributes` [#61]
 
 ## v3.5.0

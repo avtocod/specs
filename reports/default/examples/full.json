@@ -151,10 +151,12 @@
                 "attributes": [
                     "LEASING",
                     "ANNULMENT"
-                ]
+                ],
+                "usage_allowed": true
             }
         ],
-        "count": 1
+        "count": 1,
+        "has_annulment": false
     },
     "repairs": {
         "history": {

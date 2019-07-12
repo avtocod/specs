@@ -14,7 +14,7 @@ class FieldTest extends AbstractStructureTestCase
     /**
      * {@inheritdoc}
      */
-    public function testConfigure()
+    public function testConfigure(): void
     {
         $this->instance = $this->factory($input = [
             'path'        => $path = 'some path',
@@ -34,7 +34,7 @@ class FieldTest extends AbstractStructureTestCase
     /**
      * @return void
      */
-    public function testConfigureWithNulls()
+    public function testConfigureWithNulls(): void
     {
         $this->instance = $this->factory($input = [
             'path'        => null,
@@ -52,7 +52,7 @@ class FieldTest extends AbstractStructureTestCase
     /**
      * {@inheritdoc}
      */
-    public function testArrayAccess()
+    public function testArrayAccess(): void
     {
         $this->instance = $this->factory([
             'path' => $path = 'some path',
@@ -67,7 +67,7 @@ class FieldTest extends AbstractStructureTestCase
     /**
      * @return void
      */
-    public function testNesting()
+    public function testNesting(): void
     {
         $this->instance = $this->factory([
             'path' => 'some path',
@@ -94,7 +94,7 @@ class FieldTest extends AbstractStructureTestCase
     /**
      * @return void
      */
-    public function testPathParts()
+    public function testPathParts(): void
     {
         $this->instance = $this->factory([
             'path' => 'some.path[].included',
@@ -118,7 +118,7 @@ class FieldTest extends AbstractStructureTestCase
      *
      * @return Field
      */
-    protected function factory(...$arguments)
+    protected function factory(...$arguments): Field
     {
         return new Field(...$arguments);
     }

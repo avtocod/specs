@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.7.0
+
+### Changed
+
+- **PHP SDK** minimal `PHP` version now is `7.1.3`
+- **PHP SDK** maximal `illuminate/support` dependency version now is `5.8.x`
+
 ## v3.6.0
 
 ### Added

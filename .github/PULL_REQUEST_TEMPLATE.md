@@ -1,25 +1,33 @@
-Вопрос                | Ответ
---------------------- | ---
-Это исправление?      | Да / Нет
-Это новый функционал? | Да / Нет
+| Q             | A
+| ------------- | ---
+| Bug fix?      | Yes or No
+| New feature?  | Yes or No
 
-## Описание
+## Description
 
-> В произвольной форме опишите что именно изменяют или исправляют предложенные вами изменения. Если возможно - сгруппируйте их в блоки "Изменено", "Добавлено" и "Удалено".
+<!--
 
-Исправление # (issue)
+Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-## Чек-лист
+-->
 
-- [ ] Мой код соответствует общему стилю этого проекта
-- [ ] Я самостоятельно просмотрел свой код
-- [ ] Я оставил комментарии в своём коде там, где это необходимо
-- [ ] Я написал тесты на весь код, что был мною написан
-- [ ] Я внёс соответствующие изменения в файл [CHANGELOG.md](https://github.com/avtocod/specs/blob/master/CHANGELOG.md)
+Fixes # (issue)
 
-> Об изменениях файла `CHANGELOG.md`:
->
-> * Добавь заголовок новой версии вида `## v3.x.x`, если его не существует
-> * Добавь описания в секции `Added` / `Changed` / `Fixed`
-> * Добавь ссылку на соответствующие issues `[#000]`
-> * Добавь ссылки на issues в конец документа
+## Checklist
+
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I wrote unit tests for my code
+- [ ] I have made changes in [CHANGELOG.md](https://github.com/avtocod/specs/blob/master/CHANGELOG.md) file
+
+<!--
+
+About your changes in `CHANGELOG.md`:
+
+* Add new version header like `## v1.x.x`, if it does not exists
+* Add description under `added`/`changed`/`fixed` sections
+* Add reference to closed issues `[#000]`
+* Add link to issue in the end of document
+
+-->

@@ -22,17 +22,17 @@ class Specifications
     /**
      * Self package name.
      */
-    const SELF_PACKAGE_NAME = 'avtocod/specs';
+    public const SELF_PACKAGE_NAME = 'avtocod/specs';
 
     /**
      * Default specification group name.
      */
-    const GROUP_NAME_DEFAULT = 'default';
+    public const GROUP_NAME_DEFAULT = 'default';
 
     /**
      * Default vehicle type.
      */
-    const VEHICLE_TYPE_DEFAULT = 'ID_TYPE_CAR';
+    public const VEHICLE_TYPE_DEFAULT = 'ID_TYPE_CAR';
 
     /**
      * Get current package version.

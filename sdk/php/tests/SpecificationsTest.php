@@ -1,9 +1,12 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Avtocod\Specifications\Tests;
 
 use Exception;
 use ReflectionClass;
+use ReflectionMethod;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Opis\JsonSchema\Schema;
@@ -38,7 +41,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * {@inheritdoc}
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -51,7 +54,7 @@ class SpecificationsTest extends AbstractTestCase
      *
      * @return void
      */
-    public function testConstants()
+    public function testConstants(): void
     {
         $this->assertEquals('default', Specifications::GROUP_NAME_DEFAULT);
     }
@@ -59,7 +62,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetRootDirectoryPath()
+    public function testGetRootDirectoryPath(): void
     {
         $this->assertEquals($this->instance::getRootDirectoryPath(), $root = $this->getRootDirPath());
         $this->assertEquals($this->instance::getRootDirectoryPath('foo'), $root . DIRECTORY_SEPARATOR . 'foo');
@@ -69,7 +72,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetFieldsSpecification()
+    public function testGetFieldsSpecification(): void
     {
         $fillable_by_should_be_empty_for = [
             'tech_data.manufacturer.name',
@@ -138,7 +141,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetFieldsJsonSchema()
+    public function testGetFieldsJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
             $this->assertInternalType('object', $as_object = $this->instance::getFieldsJsonSchema($group_name));
@@ -154,7 +157,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testFieldsJsonSchemaValidation()
+    public function testFieldsJsonSchemaValidation(): void
     {
         $fields_raw = Json::decode(\file_get_contents(
             $this->instance::getRootDirectoryPath('/fields/default/fields_list.json')
@@ -168,7 +171,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetReportExample()
+    public function testGetReportExample(): void
     {
         foreach (['default', null] as $group_name) {
             foreach (['full', 'empty'] as $name) {
@@ -189,7 +192,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetReportExampleWithInvalidGroupName()
+    public function testGetReportExampleWithInvalidGroupName(): void
     {
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
@@ -200,7 +203,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetReportJsonSchema()
+    public function testGetReportJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
             $this->assertInternalType('object', $as_object = $this->instance::getReportJsonSchema($group_name));
@@ -216,7 +219,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testReportExamplesUsingSchemaValidator()
+    public function testReportExamplesUsingSchemaValidator(): void
     {
         foreach (['default', null] as $group_name) {
             foreach (['full', 'empty'] as $report_example_type) {
@@ -235,7 +238,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetIdentifierTypesSpecification()
+    public function testGetIdentifierTypesSpecification(): void
     {
         foreach (['default', null] as $group_name) {
             $result = $this->instance::getIdentifierTypesSpecification($group_name);
@@ -270,7 +273,7 @@ class SpecificationsTest extends AbstractTestCase
      *
      * @return void
      */
-    public function testGetIdentifierTypesSpecificationWithInvalidGroupName()
+    public function testGetIdentifierTypesSpecificationWithInvalidGroupName(): void
     {
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
@@ -281,7 +284,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetIdentifierTypesJsonSchema()
+    public function testGetIdentifierTypesJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
             $this->assertInternalType(
@@ -303,7 +306,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testIdentifierTypesUsingSchemaValidator()
+    public function testIdentifierTypesUsingSchemaValidator(): void
     {
         foreach (['default', null] as $group_name) {
             $identifier_types = Json::decode(\file_get_contents($this->instance::getRootDirectoryPath(
@@ -324,7 +327,7 @@ class SpecificationsTest extends AbstractTestCase
      *
      * @return void
      */
-    public function testVersion()
+    public function testVersion(): void
     {
         $this->assertSame(
             $version = Versions::getVersion($this->instance::SELF_PACKAGE_NAME),
@@ -337,7 +340,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testFieldsListAndReportSchemaAreSame()
+    public function testFieldsListAndReportSchemaAreSame(): void
     {
         $fields = $this->instance::getFieldsSpecification();
         $schema = $this->instance::getReportJsonSchema(null, true);
@@ -383,7 +386,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetFieldsSpecificationWithInvalidGroupName()
+    public function testGetFieldsSpecificationWithInvalidGroupName(): void
     {
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
@@ -394,7 +397,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetSourcesSpecification()
+    public function testGetSourcesSpecification(): void
     {
         foreach (['default', null] as $group_name) {
             $result = $this->instance::getSourcesSpecification($group_name);
@@ -427,7 +430,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetSourcesJsonSchema()
+    public function testGetSourcesJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
             $this->assertInternalType(
@@ -449,7 +452,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testSourcesUsingSchemaValidator()
+    public function testSourcesUsingSchemaValidator(): void
     {
         foreach (['default', null] as $group_name) {
             $identifier_types = Json::decode(\file_get_contents($this->instance::getRootDirectoryPath(
@@ -468,7 +471,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehiclesMarksSpecification()
+    public function testGetVehiclesMarksSpecification(): void
     {
         foreach (['default', null] as $group_name) {
             $result = $this->instance::getVehicleMarksSpecification($group_name);
@@ -501,7 +504,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleModelsSpecification()
+    public function testGetVehicleModelsSpecification(): void
     {
         foreach (['default', null] as $group_name) {
             $result = $this->instance::getVehicleModelsSpecification($group_name);
@@ -535,7 +538,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleModelsByTypeSpecification()
+    public function testGetVehicleModelsByTypeSpecification(): void
     {
         foreach (['default', null] as $group_name) {
             foreach ($this->getVehicleTypeAliasByIdMap() as $vehicle_type => $alias) {
@@ -569,7 +572,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleModelsByTypeSpecificationException()
+    public function testGetVehicleModelsByTypeSpecificationException(): void
     {
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage('Unknown vehicle type identifier [UNKNOWN]');
@@ -580,7 +583,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleTypeAliasById()
+    public function testGetVehicleTypeAliasById(): void
     {
         $method_name = 'getVehicleTypeAliasById';
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
@@ -595,7 +598,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleTypeAliasByIdException()
+    public function testGetVehicleTypeAliasByIdException(): void
     {
         $method_name = 'getVehicleTypeAliasById';
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
@@ -606,7 +609,7 @@ class SpecificationsTest extends AbstractTestCase
         $method->invokeArgs($this->instance, ['UNKNOWN', null]);
     }
 
-    public function testGetVehicleModelsSpecificationFilePath()
+    public function testGetVehicleModelsSpecificationFilePath(): void
     {
         $method_name = 'getVehicleModelsSpecificationFilePath';
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
@@ -618,7 +621,7 @@ class SpecificationsTest extends AbstractTestCase
         }
     }
 
-    public function testGetVehicleModelsSpecificationFilePathException()
+    public function testGetVehicleModelsSpecificationFilePathException(): void
     {
         $method_name = 'getVehicleModelsSpecificationFilePath';
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
@@ -632,7 +635,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetVehicleTypesSpecification()
+    public function testGetVehicleTypesSpecification(): void
     {
         foreach (['default', null] as $group_name) {
             $result = $this->instance::getVehicleTypesSpecification($group_name);
@@ -665,7 +668,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetSourcesSpecificationWithInvalidGroupName()
+    public function testGetSourcesSpecificationWithInvalidGroupName(): void
     {
         $this->expectException(Exception::class);
         $this->expectExceptionMessageRegExp('~file.+was not found~i');
@@ -676,7 +679,7 @@ class SpecificationsTest extends AbstractTestCase
     /**
      * @return void
      */
-    public function testGetJsonFileContent()
+    public function testGetJsonFileContent(): void
     {
         $method_name = 'getJsonFileContent';
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
@@ -696,7 +699,7 @@ class SpecificationsTest extends AbstractTestCase
      *
      * @return array
      */
-    protected function getVehicleTypeAliasByIdMap()
+    protected function getVehicleTypeAliasByIdMap(): array
     {
         return [
             'ID_TYPE_AGRICULTURAL' => 'agricultural',
@@ -735,7 +738,7 @@ class SpecificationsTest extends AbstractTestCase
      *
      * @return array
      */
-    protected function getVehicleModelsFilePathByTypeId($group_name = null)
+    protected function getVehicleModelsFilePathByTypeId($group_name = null): array
     {
         $group_name = $group_name ?? 'default';
 
@@ -760,9 +763,9 @@ class SpecificationsTest extends AbstractTestCase
      * @param string $class_name
      * @param string $method_name
      *
-     * @return \ReflectionMethod
+     * @return ReflectionMethod
      */
-    protected function getNonPublicMethod($class_name, $method_name)
+    protected function getNonPublicMethod($class_name, $method_name): ReflectionMethod
     {
         $class  = new ReflectionClass($class_name);
         $method = $class->getMethod($method_name);

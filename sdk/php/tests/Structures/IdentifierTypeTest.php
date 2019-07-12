@@ -14,7 +14,7 @@ class IdentifierTypeTest extends AbstractStructureTestCase
     /**
      * {@inheritdoc}
      */
-    public function testConfigure()
+    public function testConfigure(): void
     {
         $this->instance = $this->factory($input = [
             'description' => $description = 'some description',
@@ -30,7 +30,7 @@ class IdentifierTypeTest extends AbstractStructureTestCase
     /**
      * @return void
      */
-    public function testConfigureWithNulls()
+    public function testConfigureWithNulls(): void
     {
         $this->instance = $this->factory($input = [
             'description' => null,
@@ -44,7 +44,7 @@ class IdentifierTypeTest extends AbstractStructureTestCase
     /**
      * {@inheritdoc}
      */
-    public function testArrayAccess()
+    public function testArrayAccess(): void
     {
         $this->instance = $this->factory([
             'type' => $type = 'some type',
@@ -61,7 +61,7 @@ class IdentifierTypeTest extends AbstractStructureTestCase
      *
      * @return IdentifierType
      */
-    protected function factory(...$arguments)
+    protected function factory(...$arguments): IdentifierType
     {
         return new IdentifierType(...$arguments);
     }

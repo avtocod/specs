@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Avtocod\Specifications\Tests;
 
 use PHPUnit\Framework\TestCase;
@@ -9,10 +11,10 @@ abstract class AbstractTestCase extends TestCase
     /**
      * Get the root directory path.
      *
-     * @return bool|string
+     * @return string
      */
-    protected function getRootDirPath()
+    protected function getRootDirPath(): string
     {
-        return \realpath(__DIR__ . '/../../..');
+        return (string) \realpath(__DIR__ . '/../../..');
     }
 }

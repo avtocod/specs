@@ -14,7 +14,7 @@ class VehicleModelTest extends AbstractStructureTestCase
     /**
      * {@inheritdoc}
      */
-    public function testConfigure()
+    public function testConfigure(): void
     {
         $this->instance = $this->factory($input = [
             'id'      => $description = 'some description',
@@ -32,7 +32,7 @@ class VehicleModelTest extends AbstractStructureTestCase
     /**
      * @return void
      */
-    public function testConfigureWithNulls()
+    public function testConfigureWithNulls(): void
     {
         $this->instance = $this->factory($input = [
             'id'      => null,
@@ -48,7 +48,7 @@ class VehicleModelTest extends AbstractStructureTestCase
     /**
      * {@inheritdoc}
      */
-    public function testArrayAccess()
+    public function testArrayAccess(): void
     {
         $this->instance = $this->factory([
             'name' => $name = 'some name',
@@ -65,7 +65,7 @@ class VehicleModelTest extends AbstractStructureTestCase
      *
      * @return VehicleModel
      */
-    protected function factory(...$arguments)
+    protected function factory(...$arguments): VehicleModel
     {
         return new VehicleModel(...$arguments);
     }

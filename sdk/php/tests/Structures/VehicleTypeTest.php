@@ -16,7 +16,7 @@ class VehicleTypeTest extends AbstractStructureTestCase
      *
      * @return void
      */
-    public function testArrayAccess()
+    public function testArrayAccess(): void
     {
         $this->instance = $this->factory($input = [
             'id'           => $id_type = 'some id',
@@ -36,7 +36,7 @@ class VehicleTypeTest extends AbstractStructureTestCase
      *
      * @return void
      */
-    public function testConfigure()
+    public function testConfigure(): void
     {
         $this->instance = $this->factory($input = [
             'id'           => null,

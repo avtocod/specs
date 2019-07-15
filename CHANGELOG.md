@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## 3.8.0
+
+### Added
+
+- Field with path `accidents.history.items[].damage.codes` [#67]
+
 ## v3.7.0
 
 ### Changed

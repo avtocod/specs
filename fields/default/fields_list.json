@@ -1458,6 +1458,106 @@
         ]
     },
     {
+        "path": "pledges_nbki.items[].date.end",
+        "description": "Обременения на ТС по данным НБКИ: Дата окончания обременения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].note",
+        "description": "Обременения на ТС по данным НБКИ: Произвольная комментарий",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].vehicle.color.name",
+        "description": "Обременения на ТС по данным НБКИ: Цвет ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].vehicle.model.name",
+        "description": "Обременения на ТС по данным НБКИ: Наименование модели ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].vehicle.identifiers.vin",
+        "description": "Обременения на ТС по данным НБКИ: VIN номер ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].vehicle.identifiers.pts",
+        "description": "Обременения на ТС по данным НБКИ: Номер ПТС (паспорт ТС)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].vehicle.identifiers.body",
+        "description": "Обременения на ТС по данным НБКИ: Номер кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].vehicle.identifiers.chassis",
+        "description": "Обременения на ТС по данным НБКИ: Номер шасси ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].vehicle.identifiers.engine",
+        "description": "Обременения на ТС по данным НБКИ: Номер двигателя ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
+        "path": "pledges_nbki.items[].in_pledge",
+        "description": "Обременения на ТС по данным НБКИ: Находится ли ТС в залоге?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
         "path": "customs.history.items[].date.event",
         "description": "История по таможне: Дата получения таможенной декларации",
         "types": [

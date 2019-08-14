@@ -547,6 +547,33 @@
         ],
         "count": 1
     },
+    "pledges_nbki": {
+        "items": [
+            {
+                "date": {
+                    "end": "2019-08-02 00:00:00"
+                },
+                "note": "Произвольная заметка",
+                "vehicle": {
+                    "color": {
+                        "name": "Красный"
+                    },
+                    "model": {
+                        "name": "LADA"
+                    },
+                    "year": 2015,
+                    "identifiers": {
+                        "vin": "XTA217230C0203988",
+                        "pts": "63НМ942458",
+                        "body": null,
+                        "chassis": null,
+                        "engine": null
+                    }
+                },
+                "in_pledge": true
+            }
+        ]
+    },
     "insurance": {
         "osago": {
             "items": [

@@ -491,6 +491,33 @@
         ],
         "count": 1
     },
+    "pledges_nbki": {
+        "items": [
+            {
+                "date": {
+                    "end": null
+                },
+                "note": null,
+                "vehicle": {
+                    "color": {
+                        "name": null
+                    },
+                    "model": {
+                        "name": null
+                    },
+                    "year": null,
+                    "identifiers": {
+                        "vin": null,
+                        "pts": null,
+                        "body": null,
+                        "chassis": null,
+                        "engine": null
+                    }
+                },
+                "in_pledge": null
+            }
+        ]
+    },
     "insurance": {
         "osago": {
             "items": [

@@ -4222,6 +4222,31 @@
                                                 "fillable_by": [
                                                     "gibdd.dtp"
                                                 ]
+                                            },
+                                            "codes": {
+                                                "description": "Коды повреждений для расширенной схемы ДТП (коды мест повреждений ТС)",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 1,
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    [
+                                                        "006",
+                                                        "112"
+                                                    ],
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.dtp"
+                                                ]
                                             }
                                         }
                                     },

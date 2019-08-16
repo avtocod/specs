@@ -1095,6 +1095,16 @@
         ]
     },
     {
+        "path": "accidents.history.items[].damage.codes",
+        "description": "История ДТП: Коды повреждений для расширенной схемы ДТП (коды мест повреждений ТС)",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
+        ]
+    },
+    {
         "path": "accidents.history.items[].damage.raw",
         "description": "История ДТП: Описание повреждений в не-нормализованном виде",
         "types": [

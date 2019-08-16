@@ -17,7 +17,7 @@ class SpecFilesTest extends AbstractTestCase
      *
      * @return void
      */
-    public function testDirectoriesStructure()
+    public function testDirectoriesStructure(): void
     {
         $root = $this->getRootDirPath();
 
@@ -46,7 +46,7 @@ class SpecFilesTest extends AbstractTestCase
      *
      * @return void
      */
-    public function testFilesStructure()
+    public function testFilesStructure(): void
     {
         $root = $this->getRootDirPath();
 
@@ -93,7 +93,7 @@ class SpecFilesTest extends AbstractTestCase
      *
      * @return void
      */
-    public function testJsonFilesFormat()
+    public function testJsonFilesFormat(): void
     {
         $root = $this->getRootDirPath();
 
@@ -130,7 +130,7 @@ class SpecFilesTest extends AbstractTestCase
      *
      * @return void
      */
-    public function testReportsExamples()
+    public function testReportsExamples(): void
     {
         $not_setted = sprintf('__NOT_SETTED_%s__', md5(microtime(true)));
 

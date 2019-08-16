@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Avtocod\Specifications\Tests\Structures;
 
 use LogicException;
@@ -16,7 +18,7 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -26,7 +28,7 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
     /**
      * Test to array converting without any data.
      */
-    public function testBasicToArray()
+    public function testBasicToArray(): void
     {
         $this->assertInternalType('array', $this->instance->toArray());
         $this->assertInternalType('string', $this->instance->toJson());
@@ -37,12 +39,12 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
      *
      * @return void
      */
-    abstract public function testArrayAccess();
+    abstract public function testArrayAccess(): void;
 
     /**
      * @return void
      */
-    public function testArrayAccessExceptionOnChanging()
+    public function testArrayAccessExceptionOnChanging(): void
     {
         $this->expectException(LogicException::class);
 
@@ -52,7 +54,7 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
     /**
      * @return void
      */
-    public function testIterator()
+    public function testIterator(): void
     {
         $this->assertInstanceOf(\ArrayIterator::class, $this->instance->getIterator());
 
@@ -79,7 +81,7 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
     /**
      * @return void
      */
-    public function testArrayAccessExceptionOnUnset()
+    public function testArrayAccessExceptionOnUnset(): void
     {
         $this->expectException(LogicException::class);
 
@@ -91,7 +93,7 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
      *
      * @return void
      */
-    abstract public function testConfigure();
+    abstract public function testConfigure(): void;
 
     /**
      * Tested instance factory.

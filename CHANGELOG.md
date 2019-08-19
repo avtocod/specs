@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.9.0
+
+### Added
+
+- Field with path `pledges_nbki.items[].date.end` [#69] 
+- Field with path `pledges_nbki.items[].note` [#69]
+- Field with path `pledges_nbki.items[].vehicle.color.name` [#69] 
+- Field with path `pledges_nbki.items[].vehicle.model.name` [#69]
+- Field with path `pledges_nbki.items[].vehicle.identifiers.vin` [#69]
+- Field with path `pledges_nbki.items[].vehicle.identifiers.pts` [#69]
+- Field with path `pledges_nbki.items[].vehicle.identifiers.body` [#69]
+- Field with path `pledges_nbki.items[].vehicle.identifiers.chassis` [#69]
+- Field with path `pledges_nbki.items[].vehicle.identifiers.engine`[#69]
+- Field with path `pledges_nbki.items[].in_pledge` [#69]
+
 ## v3.8.0
 
 ### Added

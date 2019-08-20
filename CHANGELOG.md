@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `pledges_nbki.items[].note` [#69]
 - Field with path `pledges_nbki.items[].vehicle.color.name` [#69] 
 - Field with path `pledges_nbki.items[].vehicle.model.name` [#69]
+- Field with path `pledges_nbki.items[].vehicle.year` [#69]
 - Field with path `pledges_nbki.items[].vehicle.identifiers.vin` [#69]
 - Field with path `pledges_nbki.items[].vehicle.identifiers.pts` [#69]
 - Field with path `pledges_nbki.items[].vehicle.identifiers.body` [#69]

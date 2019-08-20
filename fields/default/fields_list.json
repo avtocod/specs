@@ -1508,6 +1508,16 @@
         ]
     },
     {
+        "path": "pledges_nbki.items[].vehicle.year",
+        "description": "Обременения на ТС по данным НБКИ: Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
         "path": "pledges_nbki.items[].vehicle.identifiers.vin",
         "description": "Обременения на ТС по данным НБКИ: VIN номер ТС",
         "types": [

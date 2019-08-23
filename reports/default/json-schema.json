@@ -3712,6 +3712,224 @@
                 }
             }
         },
+        "pledges_nbki": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Обременения на ТС",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "end": {
+                                        "description": "Дата окончания обременения",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2019-08-02 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "pledge.nbki"
+                                        ]
+                                    }
+                                }
+                            },
+                            "note": {
+                                "description": "Произвольная заметка",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "Произвольная заметка",
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "pledge.nbki"
+                                ]
+                            },
+                            "vehicle": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "color": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Цвет ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Красный"
+                                                ],
+                                                "fillable_by": [
+                                                    "pledge.nbki"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "model": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование модели ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "LADA"
+                                                ],
+                                                "fillable_by": [
+                                                    "pledge.nbki"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "year": {
+                                        "description": "Год выпуска ТС",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "minimum": 1800,
+                                        "examples": [
+                                            2015
+                                        ],
+                                        "fillable_by": [
+                                            "pledge.nbki"
+                                        ]
+                                    },
+                                    "identifiers": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "description": "Идентификаторы ТС",
+                                        "properties": {
+                                            "vin": {
+                                                "description": "VIN номер ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/vin_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "EXAMPL0V1N1000000"
+                                                ],
+                                                "fillable_by": [
+                                                    "pledge.nbki"
+                                                ]
+                                            },
+                                            "pts": {
+                                                "description": "Номер ПТС (паспорт ТС)",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/pts_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "36КС619977"
+                                                ],
+                                                "fillable_by": [
+                                                    "pledge.nbki"
+                                                ]
+                                            },
+                                            "body": {
+                                                "description": "Номер кузова ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/body_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "KCA275-9673180"
+                                                ],
+                                                "fillable_by": [
+                                                    "pledge.nbki"
+                                                ]
+                                            },
+                                            "chassis": {
+                                                "description": "Номер шасси ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/chassis_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "LFPVBM6819793"
+                                                ],
+                                                "fillable_by": [
+                                                    "pledge.nbki"
+                                                ]
+                                            },
+                                            "engine": {
+                                                "description": "Номер двигателя ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "A 30038"
+                                                ],
+                                                "fillable_by": [
+                                                    "pledge.nbki"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "in_pledge": {
+                                "description": "Находится ли ТС в залоге?",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    true,
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "pledge.nbki"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
         "insurance": {
             "type": "object",
             "additionalProperties": false,

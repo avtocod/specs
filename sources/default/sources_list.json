@@ -60,6 +60,11 @@
         "enabled": true
     },
     {
+        "name": "pledge.nbki",
+        "description": "Обременения на ТС по данным НБКИ",
+        "enabled": true
+    },
+    {
         "name": "ramiosago.base",
         "description": "Данные о полисах ОСАГО, оформленных на ТС",
         "enabled": true

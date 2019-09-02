@@ -133,5 +133,10 @@
         "name": "ads.base",
         "description": "История объявлений о продажах ТС",
         "enabled": true
+    },
+    {
+        "name": "references.transdekra",
+        "description": " Справочник ТС Трансдекра",
+        "enabled": true
     }
 ]

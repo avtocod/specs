@@ -3,7 +3,6 @@
     "$id": "https://github.com/avtocod/specs/blob/master/reports/default/json-schema.json#",
     "title": "Report",
     "description": "Vehicle information",
-
     "definitions": {
         "vin_code": {
             "type": "string",
@@ -1043,6 +1042,66 @@
                             "fillable_by": [
                                 "base.ext"
                             ]
+                        }
+                    }
+                },
+                "catalog": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "transdekra": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "rsa_code": {
+                                                "description": "Код ТС в справочнике РСА",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "395021359"
+                                                ],
+                                                "fillable_by": [
+                                                    "references.transdekra"
+                                                ]
+                                            },
+                                            "modification_id": {
+                                                "description": "Код ТС в справочнике Трансдекра",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "19050"
+                                                ],
+                                                "fillable_by": [
+                                                    "references.transdekra"
+                                                ]
+                                            },
+                                            "relevance": {
+                                                "description": "Релевантность записи",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    100.0
+                                                ],
+                                                "fillable_by": [
+                                                    "references.transdekra"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },

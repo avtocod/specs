@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.10.0
+
+### Added
+
+- Field with path `additional_info.catalog.transdekra.items[].rsa_code` [#71]
+- Field with path `additional_info.catalog.transdekra.items[].modification_id` [#71]
+- Field with path `additional_info.catalog.transdekra.items[].relevance` [#71]
+
 ## v3.9.0
 
 ### Added

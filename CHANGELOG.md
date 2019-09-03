@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.10.0
+
+### Added
+
+- Source `gibdd.fines` [#73]
+- Field with path `fines.items[].photos.grz` [#73] 
+- Field with path `fines.items[].photos.vehicle` [#73]
+
 ## v3.9.0
 
 ### Added

@@ -2041,7 +2041,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2051,7 +2052,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2061,7 +2063,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2071,7 +2074,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2081,7 +2085,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2091,7 +2096,8 @@
             "float"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2101,7 +2107,8 @@
             "float"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2111,7 +2118,8 @@
             "float"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2121,7 +2129,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2131,7 +2140,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2211,7 +2221,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2231,7 +2242,30 @@
             "boolean"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
+        ]
+    },
+    {
+        "path": "fines.items[].photos.grz",
+        "description": "Штрафы: Фото ГРЗ транспортного средства",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines"
+        ]
+    },
+    {
+        "path": "fines.items[].photos.vehicle",
+        "description": "Штрафы: Фото транспортного средства",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {

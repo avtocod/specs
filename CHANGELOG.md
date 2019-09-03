@@ -14,18 +14,18 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Field with path `fines.items[].date.event` also fillable by `gibdd.fines`
-- Field with path `fines.items[].article.code` also fillable by `gibdd.fines`
-- Field with path `fines.items[].article.description` also fillable by `gibdd.fines`
-- Field with path `fines.items[].description` also fillable by `gibdd.fines`
-- Field with path `fines.items[].vendor.name` also fillable by `gibdd.fines`
-- Field with path `fines.items[].amount.value` also fillable by `gibdd.fines`
-- Field with path `fines.items[].amount.total` also fillable by `gibdd.fines`
-- Field with path `fines.items[].discount.percent` also fillable by `gibdd.fines`
-- Field with path `fines.items[].discount.date.end` also fillable by `gibdd.fines`
-- Field with path `fines.items[].is_paid` also fillable by `gibdd.fines`
-- Field with path `fines.items[].wire.kbk` also fillable by `gibdd.fines`
-- Field with path `fines.has_fines` also fillable by `gibdd.fines`
+- Field with path `fines.items[].date.event` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].article.code` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].article.description` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].description` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].vendor.name` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].amount.value` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].amount.total` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].discount.percent` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].discount.date.end` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].is_paid` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.items[].wire.kbk` also fillable by `gibdd.fines` [#73]
+- Field with path `fines.has_fines` also fillable by `gibdd.fines` [#73]
 
 ## v3.9.0
 

@@ -386,10 +386,16 @@
                     "kbk": "18811630020016000140",
                     "okato": "78691068"
                 },
-                "photos": {
-                    "grz": "https://via.placeholder.com/300x300.png?text=Test%20GRZ%20Photo",
-                    "vehicle": "https://via.placeholder.com/300x300.png?text=Test%20Vehicle%20Photo"
-                }
+                "photos": [
+                    {
+                        "type": "GRZ_PLATE",
+                        "url": "https://via.placeholder.com/300x300.png?text=Test%20GRZ%20Photo"
+                    },
+                    {
+                        "type": "CAMERA",
+                        "url": "https://via.placeholder.com/300x300.png?text=Test%20Vehicle%20Photo"
+                    }
+                ]
             }
         ],
         "has_fines": true,

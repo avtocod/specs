@@ -9,8 +9,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `gibdd.fines` [#73]
-- Field with path `fines.items[].photos.grz` [#73] 
-- Field with path `fines.items[].photos.vehicle` [#73]
+- Field with path `fines.items[].photos[].type` [#73] 
+- Field with path `fines.items[].photos[].url` [#73]
 
 ### Changed
 

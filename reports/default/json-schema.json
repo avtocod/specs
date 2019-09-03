@@ -2579,36 +2579,42 @@
                                 }
                             },
                             "photos": {
-                                "type": "object",
-                                "additionalProperties": false,
-                                "properties": {
-                                    "grz": {
-                                        "description": "Фото ГРЗ транспортного средства",
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ],
-                                        "examples": [
-                                            "https://domain.com/photos/grz.jpg",
-                                            null
-                                        ],
-                                        "fillable_by": [
-                                            "gibdd.fines"
-                                        ]
-                                    },
-                                    "vehicle": {
-                                        "description": "Фото транспортного средства",
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ],
-                                        "examples": [
-                                            "https://domain.com/photos/vehicle.jpg",
-                                            null
-                                        ],
-                                        "fillable_by": [
-                                            "gibdd.fines"
-                                        ]
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "type": {
+                                            "description": "Тип фото нарушения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "enum": [
+                                                "GRZ_PLATE",
+                                                "CAMERA",
+                                                "UNKNOWN"
+                                            ],
+                                            "examples": [
+                                                "GRZ_PLATE"
+                                            ],
+                                            "fillable_by": [
+                                                "gibdd.fines"
+                                            ]
+                                        },
+                                        "url": {
+                                            "description": "Url фото нарушения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "https://via.placeholder.com/300x300.png?text=Test%20GRZ%20Photo"
+                                            ],
+                                            "fillable_by": [
+                                                "gibdd.fines"
+                                            ]
+                                        }
                                     }
                                 }
                             }

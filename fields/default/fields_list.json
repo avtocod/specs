@@ -2247,8 +2247,8 @@
         ]
     },
     {
-        "path": "fines.items[].photos.grz",
-        "description": "Штрафы: Фото ГРЗ транспортного средства",
+        "path": "fines.items[].photos[].type",
+        "description": "Штрафы: Тип фото",
         "types": [
             "string"
         ],
@@ -2257,8 +2257,8 @@
         ]
     },
     {
-        "path": "fines.items[].photos.vehicle",
-        "description": "Штрафы: Фото транспортного средства",
+        "path": "fines.items[].photos[].url",
+        "description": "Штрафы: URL фото",
         "types": [
             "string"
         ],

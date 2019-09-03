@@ -2248,7 +2248,7 @@
     },
     {
         "path": "fines.items[].photos[].type",
-        "description": "Штрафы: Тип фото",
+        "description": "Штрафы: Тип фото нарушения",
         "types": [
             "string"
         ],
@@ -2257,8 +2257,8 @@
         ]
     },
     {
-        "path": "fines.items[].photos[].url",
-        "description": "Штрафы: URL фото",
+        "path": "fines.items[].photos[].uri",
+        "description": "Штрафы: URI фото нарушения",
         "types": [
             "string"
         ],

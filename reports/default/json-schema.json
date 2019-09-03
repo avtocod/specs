@@ -2593,7 +2593,8 @@
                                             "enum": [
                                                 "GRZ_PLATE",
                                                 "CAMERA",
-                                                "UNKNOWN"
+                                                "UNKNOWN",
+                                                null
                                             ],
                                             "examples": [
                                                 "GRZ_PLATE"
@@ -2602,8 +2603,8 @@
                                                 "gibdd.fines"
                                             ]
                                         },
-                                        "url": {
-                                            "description": "Url фото нарушения",
+                                        "uri": {
+                                            "description": "URI фото нарушения",
                                             "type": [
                                                 "string",
                                                 "null"

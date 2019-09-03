@@ -405,6 +405,17 @@
         ]
     },
     {
+        "path": "additional_info.vehicle.owner.phone_number",
+        "description": "Дополнительная информация: Номер телефона владельца",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.owner.geo",
         "description": "Дополнительная информация: Гео-данные владельца (техники)",
         "types": [

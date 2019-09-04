@@ -133,5 +133,10 @@
         "name": "ads.base",
         "description": "История объявлений о продажах ТС",
         "enabled": true
+    },
+    {
+        "name": "gibdd.fines",
+        "description": "Данные о штрафах, оформленных на ТС, по данным ГИБДД",
+        "enabled": true
     }
 ]

@@ -54,7 +54,6 @@
         },
         "geo_raw_data": {
             "type": "object",
-            "additionalProperties": false,
             "properties": {
                 "country": {
                     "type": [
@@ -884,6 +883,21 @@
                                         "base.ext"
                                     ]
                                 },
+                                "phone_number": {
+                                    "description": "Номер телефона владельца",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        null,
+                                        "9123456789"
+                                    ],
+                                    "fillable_by": [
+                                        "base",
+                                        "base.ext"
+                                    ]
+                                },
                                 "geo": {
                                     "description": "Гео-данные владельца (техники)",
                                     "oneOf": [
@@ -891,7 +905,30 @@
                                             "type": "null"
                                         },
                                         {
-                                            "$ref": "#/definitions/geo_raw_data"
+                                            "allOf": [
+                                                {
+                                                    "$ref": "#/definitions/geo_raw_data"
+                                                },
+                                                {
+                                                    "properties": {
+                                                        "postal_code": {
+                                                            "description": "Почтовый индекс",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                null,
+                                                                "141207"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "base",
+                                                                "base.ext"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ],
                                     "fillable_by": [
@@ -2322,7 +2359,8 @@
                                             "2018-05-23 00:00:00"
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     }
                                 }
@@ -2341,7 +2379,8 @@
                                             "12.9 Ч.2"
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "description": {
@@ -2354,7 +2393,8 @@
                                             "Превышение установленной скорости движения транспортного средства на величину более 20, но не более 40 километров в час"
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     }
                                 }
@@ -2369,7 +2409,8 @@
                                     "УИН 18810161753886424481 от 2018-05-23 на 4200.00 руб."
                                 ],
                                 "fillable_by": [
-                                    "fines.base"
+                                    "fines.base",
+                                    "gibdd.fines"
                                 ]
                             },
                             "vendor": {
@@ -2386,7 +2427,8 @@
                                             "ОДД ГИБДД ГУ МВД России, Новгородская область"
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     }
                                 }
@@ -2405,7 +2447,8 @@
                                             4200.0
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "total": {
@@ -2418,7 +2461,8 @@
                                             4200.0
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     }
                                 }
@@ -2438,7 +2482,8 @@
                                         ],
                                         "minimum": 0,
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "date": {
@@ -2459,7 +2504,8 @@
                                                     "2018-06-23 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base"
+                                                    "fines.base",
+                                                    "gibdd.fines"
                                                 ]
                                             }
                                         }
@@ -2476,7 +2522,8 @@
                                     true
                                 ],
                                 "fillable_by": [
-                                    "fines.base"
+                                    "fines.base",
+                                    "gibdd.fines"
                                 ]
                             },
                             "wire": {
@@ -2608,7 +2655,8 @@
                                             "18811630020016000140"
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "okato": {
@@ -2623,6 +2671,47 @@
                                         "fillable_by": [
                                             "fines.base"
                                         ]
+                                    }
+                                }
+                            },
+                            "photos": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "type": {
+                                            "description": "Тип фото нарушения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "enum": [
+                                                "GRZ_PLATE",
+                                                "CAMERA",
+                                                "UNKNOWN",
+                                                null
+                                            ],
+                                            "examples": [
+                                                "GRZ_PLATE"
+                                            ],
+                                            "fillable_by": [
+                                                "gibdd.fines"
+                                            ]
+                                        },
+                                        "uri": {
+                                            "description": "URI фото нарушения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "https://via.placeholder.com/300x300.png?text=Test%20GRZ%20Photo"
+                                            ],
+                                            "fillable_by": [
+                                                "gibdd.fines"
+                                            ]
+                                        }
                                     }
                                 }
                             }
@@ -2640,7 +2729,8 @@
                         null
                     ],
                     "fillable_by": [
-                        "fines.base"
+                        "fines.base",
+                        "gibdd.fines"
                     ]
                 },
                 "count": {

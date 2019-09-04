@@ -81,12 +81,14 @@
             },
             "owner": {
                 "type": "LEGAL",
+                "phone_number": "91234567890",
                 "geo": {
                     "country": null,
                     "region": "Пензенская",
                     "city": "Пушкино",
                     "street": null,
-                    "house": null
+                    "house": null,
+                    "postal_code": "141207"
                 }
             },
             "passport": {
@@ -396,7 +398,17 @@
                     },
                     "kbk": "18811630020016000140",
                     "okato": "78691068"
-                }
+                },
+                "photos": [
+                    {
+                        "type": "GRZ_PLATE",
+                        "uri": "https://via.placeholder.com/300x300.png?text=Test%20GRZ%20Photo"
+                    },
+                    {
+                        "type": "CAMERA",
+                        "uri": "https://via.placeholder.com/300x300.png?text=Test%20Vehicle%20Photo"
+                    }
+                ]
             }
         ],
         "has_fines": true,

@@ -405,6 +405,17 @@
         ]
     },
     {
+        "path": "additional_info.vehicle.owner.phone_number",
+        "description": "Дополнительная информация: Номер телефона владельца",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.owner.geo",
         "description": "Дополнительная информация: Гео-данные владельца (техники)",
         "types": [
@@ -2071,7 +2082,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2081,7 +2093,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2091,7 +2104,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2101,7 +2115,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2111,7 +2126,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2121,7 +2137,8 @@
             "float"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2131,7 +2148,8 @@
             "float"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2141,7 +2159,8 @@
             "float"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2151,7 +2170,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2161,7 +2181,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2241,7 +2262,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
         ]
     },
     {
@@ -2261,7 +2283,28 @@
             "boolean"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "gibdd.fines"
+        ]
+    },
+    {
+        "path": "fines.items[].photos[].type",
+        "description": "Штрафы: Тип фото нарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.fines"
+        ]
+    },
+    {
+        "path": "fines.items[].photos[].uri",
+        "description": "Штрафы: URI фото нарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.fines"
         ]
     },
     {

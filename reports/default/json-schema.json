@@ -906,24 +906,30 @@
                                             "type": "null"
                                         },
                                         {
-                                            "$ref": "#/definitions/geo_raw_data",
-                                            "properties": {
-                                                "postal_code": {
-                                                    "description": "Почтовый индекс",
-                                                    "type": [
-                                                        "string",
-                                                        "null"
-                                                    ],
-                                                    "examples": [
-                                                        null,
-                                                        "141207"
-                                                    ],
-                                                    "fillable_by": [
-                                                        "base",
-                                                        "base.ext"
-                                                    ]
+                                            "allOf": [
+                                                {
+                                                    "$ref": "#/definitions/geo_raw_data"
+                                                },
+                                                {
+                                                    "properties": {
+                                                        "postal_code": {
+                                                            "description": "Почтовый индекс",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                null,
+                                                                "141207"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "base",
+                                                                "base.ext"
+                                                            ]
+                                                        }
+                                                    }
                                                 }
-                                            }
+                                            ]
                                         }
                                     ],
                                     "fillable_by": [

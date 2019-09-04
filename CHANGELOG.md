@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.10.0
+
+### Added
+
+- Field with path `additional_info.vehicle.owner.phone_number` [#75] 
+- Field with path `additional_info.vehicle.owner.geo.postal_code` [#75]
+
 ## v3.9.0
 
 ### Added

@@ -138,5 +138,10 @@
         "name": "gibdd.fines",
         "description": "Данные о штрафах, оформленных на ТС, по данным ГИБДД",
         "enabled": true
+    },
+    {
+        "name": "references.transdekra",
+        "description": " Справочник ТС Трансдекра",
+        "enabled": true
     }
 ]

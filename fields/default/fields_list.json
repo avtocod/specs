@@ -489,6 +489,36 @@
         ]
     },
     {
+        "path": "additional_info.catalog.transdekra.items[].rsa_code",
+        "description": "Дополнительная информация: Код ТС в справочнике РСА",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.transdekra"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.transdekra.items[].modification_id",
+        "description": "Дополнительная информация: Код ТС в справочнике Трансдекра",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.transdekra"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.transdekra.items[].relevance",
+        "description": "Дополнительная информация: Релевантность записи",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.transdekra"
+        ]
+    },
+    {
         "path": "additional_info.identifiers.vin.checksum_validated",
         "description": "Дополнительная информация: Пройдена ли проверка контрольного символа VIN?",
         "types": [

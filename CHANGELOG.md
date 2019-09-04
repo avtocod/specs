@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Source `references.transdekra` [#71]
+- Field with path `additional_info.catalog.transdekra.items[].rsa_code` [#71]
+- Field with path `additional_info.catalog.transdekra.items[].modification_id` [#71]
+- Field with path `additional_info.catalog.transdekra.items[].relevance` [#71]
 - Source `gibdd.fines` [#73]
 - Field with path `fines.items[].photos[].type` [#73] 
 - Field with path `fines.items[].photos[].uri` [#73]

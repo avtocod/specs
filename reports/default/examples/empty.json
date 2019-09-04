@@ -81,12 +81,14 @@
             },
             "owner": {
                 "type": null,
+                "phone_number": null,
                 "geo": {
                     "country": null,
                     "region": null,
                     "city": null,
                     "street": null,
-                    "house": null
+                    "house": null,
+                    "postal_code": null
                 }
             },
             "passport": {

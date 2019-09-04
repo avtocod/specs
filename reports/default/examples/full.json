@@ -81,12 +81,14 @@
             },
             "owner": {
                 "type": "LEGAL",
+                "phone_number": "91234567890",
                 "geo": {
                     "country": null,
                     "region": "Пензенская",
                     "city": "Пушкино",
                     "street": null,
-                    "house": null
+                    "house": null,
+                    "postal_code": "141207"
                 }
             },
             "passport": {

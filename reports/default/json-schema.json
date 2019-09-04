@@ -55,7 +55,6 @@
         },
         "geo_raw_data": {
             "type": "object",
-            "additionalProperties": false,
             "properties": {
                 "country": {
                     "type": [
@@ -885,6 +884,21 @@
                                         "base.ext"
                                     ]
                                 },
+                                "phone_number": {
+                                    "description": "Номер телефона владельца",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        null,
+                                        "9123456789"
+                                    ],
+                                    "fillable_by": [
+                                        "base",
+                                        "base.ext"
+                                    ]
+                                },
                                 "geo": {
                                     "description": "Гео-данные владельца (техники)",
                                     "oneOf": [
@@ -892,7 +906,30 @@
                                             "type": "null"
                                         },
                                         {
-                                            "$ref": "#/definitions/geo_raw_data"
+                                            "allOf": [
+                                                {
+                                                    "$ref": "#/definitions/geo_raw_data"
+                                                },
+                                                {
+                                                    "properties": {
+                                                        "postal_code": {
+                                                            "description": "Почтовый индекс",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                null,
+                                                                "141207"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "base",
+                                                                "base.ext"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ],
                                     "fillable_by": [

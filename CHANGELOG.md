@@ -11,6 +11,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Source `gibdd.fines` [#73]
 - Field with path `fines.items[].photos[].type` [#73] 
 - Field with path `fines.items[].photos[].uri` [#73]
+- Field with path `additional_info.vehicle.owner.phone_number` [#75] 
+- Field with path `additional_info.vehicle.owner.geo.postal_code` [#75]
 
 ### Changed
 

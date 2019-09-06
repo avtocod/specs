@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.10.1
+
+### Changed
+
+- Description for field `additional_info.vehicle.owner.phone_number` [#77]
+
 ## v3.10.0
 
 ### Added

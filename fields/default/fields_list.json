@@ -2972,5 +2972,395 @@
         "fillable_by": [
             "repairs.history"
         ]
+    },
+    {
+        "path": "service_history.items[].dealer.name",
+        "description": "История дилерского обслуживания: Наименование автодилера",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].dealer.branch.name",
+        "description": "История дилерского обслуживания: Наименование СТО",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].date.start",
+        "description": "История дилерского обслуживания: Дата начала работ",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].date.end",
+        "description": "История дилерского обслуживания: Дата окончания работ",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].amount.value",
+        "description": "История дилерского обслуживания: Сумма за выполненные работы",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].amount.currency",
+        "description": "История дилерского обслуживания: Тип валюты [RUB, EUR, USD]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].type",
+        "description": "История дилерского обслуживания: Тип услуги [SERVICE, SALE, EQUIPMENT, INSURANCE]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].service.type",
+        "description": "История дилерского обслуживания: Тип сервисных работ",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].service.content",
+        "description": "История дилерского обслуживания: Список сервисных работ СТО",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].service.spare_parts",
+        "description": "История дилерского обслуживания: Список запасных частей для сервисных работ",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].service.recommendations",
+        "description": "История дилерского обслуживания: Список рекомендованных работ СТО",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].service.is_planned",
+        "description": "История дилерского обслуживания: Признак плановых сервисных работ",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].sale.is_credit",
+        "description": "История дилерского обслуживания: Признак покупки ТС в кредит",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].sale.is_new",
+        "description": "История дилерского обслуживания: Признак нового ТС",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].equipment.content",
+        "description": "История дилерского обслуживания: Список доп. оборудования",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].insurance.type",
+        "description": "История дилерского обслуживания: Тип страхования авто [ОСАГО, КАСКО, ДРУГОЕ]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].insurance.date.start",
+        "description": "История дилерского обслуживания: Дата начала действия страхования авто",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].insurance.date.end",
+        "description": "История дилерского обслуживания: Дата окончания действия страхования авто",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].client.type",
+        "description": "История дилерского обслуживания: Тип клиента [PERSON, LEGAL, LEASING]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].geo",
+        "description": "История дилерского обслуживания: Гео-данные места нахождения СТО",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.brand.name",
+        "description": "История дилерского обслуживания: Наименование марки (бренда) ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.model.name",
+        "description": "История дилерского обслуживания: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.year",
+        "description": "История дилерского обслуживания: Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.mileage",
+        "description": "История дилерского обслуживания: Значение пробега ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.body.doors",
+        "description": "История дилерского обслуживания: Количество дверей у ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.body.type",
+        "description": "История дилерского обслуживания: Тип кузова ТС [Седан, Универсал, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.body.color",
+        "description": "История дилерского обслуживания: Цвет кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.engine.number",
+        "description": "История дилерского обслуживания: Номер двигателя ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.engine.type",
+        "description": "История дилерского обслуживания: Тип топлива [БЕНЗИНОВЫЙ, ДИЗЕЛЬНЫЙ, ГИБРИДНЫЙ, ЭЛЕКТРО]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.engine.volume",
+        "description": "История дилерского обслуживания: Объем двигателя ТС",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.engine.power.hp",
+        "description": "История дилерского обслуживания: Мощность двигателя в ЛС",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.transmission.type",
+        "description": "История дилерского обслуживания: Тип трансмиссии [РУЧНАЯ, АВТОМАТИЧЕСКАЯ, ВАРИАТОР, РОБОТ]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.wheel.position",
+        "description": "История дилерского обслуживания: Расположение руля [ЛЕВЫЙ, ПРАВЫЙ]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.drive.type",
+        "description": "История дилерского обслуживания: Тип привода [ПЕРЕДНИЙ, ЗАДНИЙ, ПОЛНЫЙ]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.notes",
+        "description": "История дилерского обслуживания: Дополнительная информация по комплектации ТС",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.equipment.type",
+        "description": "История дилерского обслуживания: Описание комплектации ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.identifiers.body",
+        "description": "История дилерского обслуживания: Номер кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.identifiers.vin",
+        "description": "История дилерского обслуживания: VIN номер ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
+    },
+    {
+        "path": "service_history.items[].vehicle.identifiers.chassis",
+        "description": "История дилерского обслуживания: Номер шасси ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history"
+        ]
     }
 ]

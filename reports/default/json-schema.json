@@ -6057,6 +6057,727 @@
                     }
                 }
             }
+        },
+        "service_history": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "История дилерского обслуживания",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "dealer": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Наименование автодилера",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "euroauto",
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "branch": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование СТО",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "CTO Испытателей",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "start": {
+                                        "description": "Дата начала работ",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2018-01-21 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "end": {
+                                        "description": "Дата окончания работ",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2018-01-22 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "amount": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "value": {
+                                        "description": "Сумма за выполненные работы",
+                                        "type": [
+                                            "number",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            21792.1,
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "currency": {
+                                        "description": "Тип валюты",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "RUB",
+                                            "EUR",
+                                            "USD",
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "type": {
+                                "description": "Тип услуги",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "SERVICE",
+                                    "SALE",
+                                    "EQUIPMENT",
+                                    "INSURANCE",
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "service.history"
+                                ]
+                            },
+                            "service": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "type": {
+                                        "description": "Тип сервисных работ",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "GUARANTY",
+                                            "BODY_INSURANCE",
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "content": {
+                                        "description": "Список сервисных работ СТО",
+                                        "type": [
+                                            "array",
+                                            "null"
+                                        ],
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "spare_parts": {
+                                        "description": "Список запасных частей для сервисных работ",
+                                        "type": [
+                                            "array",
+                                            "null"
+                                        ],
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "recommendations": {
+                                        "description": "Список рекомендованных работ СТО",
+                                        "type": [
+                                            "array",
+                                            "null"
+                                        ],
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "is_planned": {
+                                        "description": "Признак плановых сервисных работ",
+                                        "type": [
+                                            "boolean",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            false,
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "sale": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "is_credit": {
+                                        "description": "Признак покупки ТС в кредит",
+                                        "type": [
+                                            "boolean",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            false,
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "is_new": {
+                                        "description": "Признак нового ТС",
+                                        "type": [
+                                            "boolean",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            false,
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "equipment": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "content": {
+                                        "description": "Список доп. оборудования",
+                                        "type": [
+                                            "array",
+                                            "null"
+                                        ],
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "insurance": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "type": {
+                                        "description": "Тип страхования авто",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "ОСАГО",
+                                            "КАСКО",
+                                            "ДРУГОЕ",
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "start": {
+                                                "description": "Дата начала действия страхования авто",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2018-01-21 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания действия страхования авто",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2019-01-22 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "client": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "type": {
+                                        "description": "Тип клиента",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "PERSON",
+                                            "LEGAL",
+                                            "LEASING",
+                                            null
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "geo": {
+                                "description": "Гео-данные места нахождения СТО",
+                                "oneOf": [
+                                    {
+                                        "type": "null"
+                                    },
+                                    {
+                                        "$ref": "#/definitions/geo_raw_data"
+                                    }
+                                ],
+                                "fillable_by": [
+                                    "service.history"
+                                ]
+                            },
+                            "vehicle": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "brand": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование марки (бренда) ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Mazda"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "model": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Модель ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Mazda 3 (BK)"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "year": {
+                                        "description": "Год выпуска ТС",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "minimum": 1800,
+                                        "examples": [
+                                            2018
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "mileage": {
+                                        "description": "Значение пробега ТС",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "minimum": 1,
+                                        "examples": [
+                                            75893
+                                        ],
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "body": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "doors": {
+                                                "description": "Количество дверей у ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 1,
+                                                "examples": [
+                                                    4,
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "type": {
+                                                "description": "Тип кузова ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Седан",
+                                                    "Универсал"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "color": {
+                                                "description": "Цвет кузова ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Белый"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "engine": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "number": {
+                                                "description": "Номер двигателя ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "SDN144599",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "type": {
+                                                "description": "Тип топлива",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "БЕНЗИНОВЫЙ",
+                                                    "ДИЗЕЛЬНЫЙ",
+                                                    "ГИБРИДНЫЙ",
+                                                    "ЭЛЕКТРО",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "volume": {
+                                                "description": "Объем двигателя ТС",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "minimum": 1,
+                                                "examples": [
+                                                    1592.1
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "power": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "hp": {
+                                                        "description": "Мощность двигателя в ЛС",
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ],
+                                                        "minimum": 1,
+                                                        "examples": [
+                                                            101.9
+                                                        ],
+                                                        "fillable_by": [
+                                                            "service.history"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "transmission": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип трансмиссии",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "РУЧНАЯ",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "wheel": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "position": {
+                                                "description": "Расположение руля",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ЛЕВЫЙ",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "drive": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип привода",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ПЕРЕДНИЙ",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "notes": {
+                                        "description": "Дополнительная информация по комплектации ТС",
+                                        "type": [
+                                            "array",
+                                            "null"
+                                        ],
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "fillable_by": [
+                                            "service.history"
+                                        ]
+                                    },
+                                    "equipment": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Описание комплектации ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Люкс",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "identifiers": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "body": {
+                                                "description": "Номер кузова",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/body_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "KCA275-9673180"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "vin": {
+                                                "description": "VIN номер ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/vin_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "EXAMPL0V1N1000000"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            },
+                                            "chassis": {
+                                                "description": "Номер шасси",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/chassis_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "LFPVBM6819793"
+                                                ],
+                                                "fillable_by": [
+                                                    "service.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
         }
     }
 }
+

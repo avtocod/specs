@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `fines.items[].date.accident` [#81]
 
+[#81]:https://github.com/avtocod/specs/issues/81
+
 ## v3.10.1
 
 ### Changed

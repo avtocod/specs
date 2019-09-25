@@ -49,6 +49,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `service_history.items[].vehicle.identifiers.vin` [#79]
 - Field with path `service_history.items[].vehicle.identifiers.chassis` [#79]
 
+[#79]:https://github.com/avtocod/specs/issues/79
+
 ## v3.10.0
 
 ### Added

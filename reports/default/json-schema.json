@@ -6173,11 +6173,14 @@
                                             "string",
                                             "null"
                                         ],
-                                        "examples": [
+                                        "enum": [
                                             "RUB",
                                             "EUR",
                                             "USD",
                                             null
+                                        ], 
+                                        "examples": [
+                                            "RUB"
                                         ],
                                         "fillable_by": [
                                             "service.history"
@@ -6191,12 +6194,15 @@
                                     "string",
                                     "null"
                                 ],
-                                "examples": [
+                                "enum": [
                                     "SERVICE",
                                     "SALE",
                                     "EQUIPMENT",
                                     "INSURANCE",
                                     null
+                                ],
+                                "examples": [
+                                    "SERVICE"
                                 ],
                                 "fillable_by": [
                                     "service.history"
@@ -6212,10 +6218,18 @@
                                             "string",
                                             "null"
                                         ],
-                                        "examples": [
+                                        "enum": [
                                             "GUARANTY",
                                             "BODY_INSURANCE",
+                                            "ORDINARY_INSURANCE",
+                                            "BODY_PAID",
+                                            "ORDINARY_PAID",
+                                            "ORDINARY_DEALER",
+                                            "REGULATION",
                                             null
+                                        ],
+                                        "examples": [
+                                            "GUARANTY"
                                         ],
                                         "fillable_by": [
                                             "service.history"
@@ -6339,11 +6353,14 @@
                                             "string",
                                             "null"
                                         ],
-                                        "examples": [
+                                        "enum": [
                                             "ОСАГО",
                                             "КАСКО",
                                             "ДРУГОЕ",
                                             null
+                                        ], 
+                                        "examples": [
+                                            "ОСАГО"
                                         ],
                                         "fillable_by": [
                                             "service.history"
@@ -6401,11 +6418,14 @@
                                             "string",
                                             "null"
                                         ],
-                                        "examples": [
+                                        "enum": [
                                             "PERSON",
                                             "LEGAL",
                                             "LEASING",
                                             null
+                                        ],
+                                        "examples": [
+                                            "PERSON"
                                         ],
                                         "fillable_by": [
                                             "service.history"
@@ -6569,12 +6589,15 @@
                                                     "string",
                                                     "null"
                                                 ],
-                                                "examples": [
+                                                "enum": [
                                                     "БЕНЗИНОВЫЙ",
                                                     "ДИЗЕЛЬНЫЙ",
                                                     "ГИБРИДНЫЙ",
                                                     "ЭЛЕКТРО",
                                                     null
+                                                ],
+                                                "examples": [
+                                                    "БЕНЗИНОВЫЙ"
                                                 ],
                                                 "fillable_by": [
                                                     "service.history"
@@ -6626,6 +6649,13 @@
                                                     "string",
                                                     "null"
                                                 ],
+                                                "enum": [
+                                                    "РУЧНАЯ",
+                                                    "АВТОМАТИЧЕСКАЯ",
+                                                    "ВАРИАТОР", 
+                                                    "РОБОТ",
+                                                    null
+                                                ],
                                                 "examples": [
                                                     "РУЧНАЯ",
                                                     null
@@ -6646,9 +6676,13 @@
                                                     "string",
                                                     "null"
                                                 ],
-                                                "examples": [
-                                                    "ЛЕВЫЙ",
+                                                "enum": [
+                                                    "ЛЕВЫЙ", 
+                                                    "ПРАВЫЙ",
                                                     null
+                                                ],
+                                                "examples": [
+                                                    "ЛЕВЫЙ"
                                                 ],
                                                 "fillable_by": [
                                                     "service.history"
@@ -6666,9 +6700,14 @@
                                                     "string",
                                                     "null"
                                                 ],
-                                                "examples": [
-                                                    "ПЕРЕДНИЙ",
+                                                "enum": [
+                                                    "ПЕРЕДНИЙ", 
+                                                    "ЗАДНИЙ", 
+                                                    "ПОЛНЫЙ", 
                                                     null
+                                                ],
+                                                "examples": [
+                                                    "ПЕРЕДНИЙ"
                                                 ],
                                                 "fillable_by": [
                                                     "service.history"
@@ -6685,6 +6724,13 @@
                                         "items": {
                                             "type": "string"
                                         },
+                                        "examples": [
+                                            [
+                                                "f",
+                                                "a"
+                                            ],
+                                            null
+                                        ],
                                         "fillable_by": [
                                             "service.history"
                                         ]

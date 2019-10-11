@@ -40,6 +40,20 @@
             "minLength": 7,
             "maxLength": 15
         },
+        "engine_number": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30,
+            "examples": [
+                "168829W",
+                "R055279",
+                "CW066367",
+                "DZ594044650",
+                "90492200128014",
+                "W10B16ABD157Q016",
+                null
+            ]
+        },
         "brand_unique_id": {
             "type": "string",
             "pattern": "[0-9A-Z_]+",
@@ -581,9 +595,13 @@
                         },
                         "number": {
                             "description": "Номер двигателя",
-                            "type": [
-                                "string",
-                                "null"
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/engine_number"
+                                }
                             ],
                             "examples": [
                                 "A 30038"
@@ -4041,9 +4059,13 @@
                                             },
                                             "engine": {
                                                 "description": "Номер двигателя ТС",
-                                                "type": [
-                                                    "string",
-                                                    "null"
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/engine_number"
+                                                    }
                                                 ],
                                                 "examples": [
                                                     "A 30038"
@@ -6571,13 +6593,16 @@
                                         "properties": {
                                             "number": {
                                                 "description": "Номер двигателя ТС",
-                                                "type": [
-                                                    "string",
-                                                    "null"
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/engine_number"
+                                                    }
                                                 ],
                                                 "examples": [
-                                                    "SDN144599",
-                                                    null
+                                                    "SDN144599"
                                                 ],
                                                 "fillable_by": [
                                                     "service.history"

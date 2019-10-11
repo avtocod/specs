@@ -43,16 +43,7 @@
         "engine_number": {
             "type": "string",
             "minLength": 1,
-            "maxLength": 30,
-            "examples": [
-                "168829W",
-                "R055279",
-                "CW066367",
-                "DZ594044650",
-                "90492200128014",
-                "W10B16ABD157Q016",
-                null
-            ]
+            "maxLength": 30
         },
         "brand_unique_id": {
             "type": "string",
@@ -604,7 +595,9 @@
                                 }
                             ],
                             "examples": [
-                                "A 30038"
+                                "A 30038",
+                                "U632451",
+                                "K24Z41002064"
                             ],
                             "fillable_by": [
                                 "base.taxi",
@@ -4068,7 +4061,9 @@
                                                     }
                                                 ],
                                                 "examples": [
-                                                    "A 30038"
+                                                    "K24Z41002064",
+                                                    "141477",
+                                                    "71877"
                                                 ],
                                                 "fillable_by": [
                                                     "pledge.nbki"
@@ -6602,7 +6597,9 @@
                                                     }
                                                 ],
                                                 "examples": [
-                                                    "SDN144599"
+                                                    "SDN144599",
+                                                    "6332526",
+                                                    "U018076"
                                                 ],
                                                 "fillable_by": [
                                                     "service.history"

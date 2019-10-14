@@ -776,6 +776,17 @@
         ]
     },
     {
+        "path": "registration_actions.items[].owner.phone_number",
+        "description": "Регистрационные действия: Предполагаемый номер телефона владельца",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
         "path": "registration_actions.items[].type",
         "description": "Регистрационные действия: Тип операции",
         "types": [

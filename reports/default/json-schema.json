@@ -1369,6 +1369,21 @@
                                                 ]
                                             }
                                         }
+                                    },
+                                    "phone_number": {
+                                        "description": "Предполагаемый номер телефона владельца",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            null,
+                                            "9123456789"
+                                        ],
+                                        "fillable_by": [
+                                            "base",
+                                            "base.ext"
+                                        ]
                                     }
                                 }
                             },
@@ -1394,7 +1409,30 @@
                                         "type": "null"
                                     },
                                     {
-                                        "$ref": "#/definitions/geo_raw_data"
+                                        "allOf": [
+                                            {
+                                                "$ref": "#/definitions/geo_raw_data"
+                                            },
+                                            {
+                                                "properties": {
+                                                    "postal_code": {
+                                                        "description": "Почтовый индекс",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            null,
+                                                            "141207"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "base",
+                                                            "base.ext"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        ]
                                     }
                                 ],
                                 "fillable_by": [

@@ -2363,6 +2363,24 @@
                                             "fines.base",
                                             "gibdd.fines"
                                         ]
+                                    },
+                                    "accident": {
+                                        "description": "Дата правонарушения",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2018-05-20 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "fines.base",
+                                            "gibdd.fines"
+                                        ]
                                     }
                                 }
                             },

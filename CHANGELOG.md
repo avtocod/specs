@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.11.0
+
+### Added
+
+- Field with path `fines.items[].date.accident` [#81]
+
+[#81]:https://github.com/avtocod/specs/issues/81
+
 ## v3.10.1
 
 ### Changed

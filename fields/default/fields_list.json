@@ -2087,6 +2087,17 @@
         ]
     },
     {
+        "path": "fines.items[].date.accident",
+        "description": "Штрафы: Дата правонарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines"
+        ]
+    },
+    {
         "path": "fines.items[].article.code",
         "description": "Штрафы: Статья правонарушения",
         "types": [

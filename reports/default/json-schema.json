@@ -913,13 +913,20 @@
                                                     "properties": {
                                                         "postal_code": {
                                                             "description": "Почтовый индекс",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "type": "string",
+                                                                    "pattern": "[0-9]+",
+                                                                    "minLength": 6,
+                                                                    "maxLength": 6
+                                                                }
                                                             ],
                                                             "examples": [
-                                                                null,
-                                                                "141207"
+                                                                "141207",
+                                                                null
                                                             ],
                                                             "fillable_by": [
                                                                 "base",
@@ -1417,13 +1424,20 @@
                                                 "properties": {
                                                     "postal_code": {
                                                         "description": "Почтовый индекс",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "type": "string",
+                                                                "pattern": "[0-9]+",
+                                                                "minLength": 6,
+                                                                "maxLength": 6
+                                                            }
                                                         ],
                                                         "examples": [
-                                                            null,
-                                                            "141207"
+                                                            "141207",
+                                                            null
                                                         ],
                                                         "fillable_by": [
                                                             "base",

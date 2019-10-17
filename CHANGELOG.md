@@ -9,7 +9,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Field with path `registration_actions.items[].owner.phone_number` [#83]
-- Field with path `registration_actions.items[].geo.postal_code` [#83]
 
 ## v3.10.1
 

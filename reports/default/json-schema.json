@@ -52,6 +52,11 @@
             "minLength": 4,
             "maxLength": 128
         },
+        "phone_number": {
+            "type": "string",
+            "pattern": "[0-9\\+]+",
+            "maxLength": 20
+        },
         "geo_raw_data": {
             "type": "object",
             "properties": {
@@ -885,9 +890,13 @@
                                 },
                                 "phone_number": {
                                     "description": "Предполагаемый номер телефона владельца",
-                                    "type": [
-                                        "string",
-                                        "null"
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/phone_number"
+                                        }
                                     ],
                                     "examples": [
                                         null,
@@ -1379,9 +1388,13 @@
                                     },
                                     "phone_number": {
                                         "description": "Предполагаемый номер телефона владельца",
-                                        "type": [
-                                            "string",
-                                            "null"
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/phone_number"
+                                            }
                                         ],
                                         "examples": [
                                             null,
@@ -5576,15 +5589,27 @@
                                             },
                                             "phones": {
                                                 "description": "Телефоны продавца ТС",
-                                                "type": [
-                                                    "array",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    [
-                                                        "+78005353535"
-                                                    ],
-                                                    null
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 1,
+                                                        "items": {
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/phone_number"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "+79123456789"
+                                                            ]
+                                                        }
+                                                    }
                                                 ],
                                                 "fillable_by": [
                                                     "ads.base"

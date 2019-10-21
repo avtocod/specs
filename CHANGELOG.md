@@ -4,11 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## v3.11.0
+## v3.12.0
 
 ### Added
 
 - Field with path `registration_actions.items[].owner.phone_number` [#83]
+
+[#83]:https://github.com/avtocod/specs/issues/83
+
+## v3.11.0
+
+### Added
+
+- Field with path `fines.items[].date.accident` [#81]
+
+[#81]:https://github.com/avtocod/specs/issues/81
 
 ## v3.10.1
 

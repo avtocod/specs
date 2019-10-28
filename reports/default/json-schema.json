@@ -42,7 +42,7 @@
         },
         "engine_number": {
             "type": "string",
-            "pattern": "[0-9A-Za-zА-ЯЁа-яё\\-_\\s\\/\\\\\\(\\)\\.]+",
+            "pattern": "[0-9A-Za-zА-ЯЁа-яё\\-_\\ \\/\\\\\\(\\)\\.]+",
             "minLength": 1,
             "maxLength": 30
         },

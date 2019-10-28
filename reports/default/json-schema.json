@@ -1429,37 +1429,7 @@
                                         "type": "null"
                                     },
                                     {
-                                        "allOf": [
-                                            {
-                                                "$ref": "#/definitions/geo_raw_data"
-                                            },
-                                            {
-                                                "properties": {
-                                                    "postal_code": {
-                                                        "description": "Почтовый индекс",
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "null"
-                                                            },
-                                                            {
-                                                                "type": "string",
-                                                                "pattern": "[0-9]+",
-                                                                "minLength": 6,
-                                                                "maxLength": 6
-                                                            }
-                                                        ],
-                                                        "examples": [
-                                                            "141207",
-                                                            null
-                                                        ],
-                                                        "fillable_by": [
-                                                            "base",
-                                                            "base.ext"
-                                                        ]
-                                                    }
-                                                }
-                                            }
-                                        ]
+                                        "$ref": "#/definitions/geo_raw_data"
                                     }
                                 ],
                                 "fillable_by": [

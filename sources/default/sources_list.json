@@ -143,5 +143,10 @@
         "name": "references.transdekra",
         "description": " Справочник ТС Трансдекра",
         "enabled": true
+    },
+    {
+        "name": "service.history",
+        "description": "История дилерского обслуживания",
+        "enabled": true
     }
 ]

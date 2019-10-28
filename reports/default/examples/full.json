@@ -940,5 +940,110 @@
             ],
             "count": 1
         }
+    },
+    "service_history": {
+        "items": [
+            {
+                "dealer": {
+                    "name": "euroauto",
+                    "branch": {
+                        "name": "CTO Испытателей"
+                    }
+                },
+                "date": {
+                    "start": null,
+                    "end": "2018-01-21 00:00:00"
+                },
+                "amount": {
+                    "value": null,
+                    "currency": "RUB"
+                },
+                "type": "SERVICE",
+                "service": {
+                    "type": null,
+                    "content": [
+                        "Проверка работы омывателя ветрового стекла",
+                        "Визуальный контроль приводных ремней",
+                        "Проверка щеток стеклоочистителя",
+                        "Диагностика состояния АКБ"
+                    ],
+                    "spare_parts": [
+                        "Лампа"
+                    ],
+                    "recommendations": [
+                        "Диск тормозной передний вентилируемый - Замена",
+                        "Колодки тормозные передние к-кт - Замена",
+                        "Разъем - Замена"
+                    ],
+                    "is_planned": false
+                },
+                "sale": {
+                    "is_credit": false,
+                    "is_new": false
+                },
+                "equipment": {
+                    "content": []
+                },
+                "insurance": {
+                    "type": null,
+                    "date": {
+                        "start": null,
+                        "end": null
+                    }
+                },
+                "client": {
+                    "type": "PERSON"
+                },
+                "geo": {
+                    "country": null,
+                    "region": "Санкт-Петербург",
+                    "city": "Санкт-Петербург",
+                    "street": null,
+                    "house": null
+                },
+                "vehicle": {
+                    "brand": {
+                        "name": "Mazda"
+                    },
+                    "model": {
+                        "name": "Mazda 3 (BK)"
+                    },
+                    "year": 2008,
+                    "mileage": 75893,
+                    "body": {
+                        "doors": null,
+                        "type": null,
+                        "color": "Белый"
+                    },
+                    "engine": {
+                        "number": null,
+                        "type": "БЕНЗИНОВЫЙ",
+                        "volume": null,
+                        "power": {
+                            "hp": null
+                        }
+                    },
+                    "transmission": {
+                        "type": "АВТОМАТИЧЕСКАЯ"
+                    },
+                    "wheel": {
+                        "position": null
+                    },
+                    "drive": {
+                        "type": null
+                    },
+                    "notes": [],
+                    "equipment": {
+                        "type": null
+                    },
+                    "identifiers": {
+                        "body": null,
+                        "vin": "JMZBK14Z591782403",
+                        "chassis": null
+                    }
+                }
+            }
+        ],
+        "count": 1
     }
 }

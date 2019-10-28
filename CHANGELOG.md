@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## v3.11.0
+## v3.12.0
 
 ### Added
 
@@ -50,6 +50,20 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `service_history.items[].vehicle.identifiers.chassis` [#79]
 
 [#79]:https://github.com/avtocod/specs/issues/79
+
+## v3.11.0
+
+### Added
+
+- Field with path `fines.items[].date.accident` [#81]
+
+[#81]:https://github.com/avtocod/specs/issues/81
+
+## v3.10.1
+
+### Changed
+
+- Description for field `additional_info.vehicle.owner.phone_number` [#77]
 
 ## v3.10.0
 

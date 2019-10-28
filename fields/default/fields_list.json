@@ -406,7 +406,7 @@
     },
     {
         "path": "additional_info.vehicle.owner.phone_number",
-        "description": "Дополнительная информация: Номер телефона владельца",
+        "description": "Дополнительная информация: Предполагаемый номер телефона владельца",
         "types": [
             "string"
         ],
@@ -2078,6 +2078,17 @@
     {
         "path": "fines.items[].date.event",
         "description": "Штрафы: Дата инициации штрафа",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines"
+        ]
+    },
+    {
+        "path": "fines.items[].date.accident",
+        "description": "Штрафы: Дата правонарушения",
         "types": [
             "string"
         ],

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications\Tests\Structures;
 
-use LogicException;
-use Avtocod\Specifications\Tests\AbstractTestCase;
 use Avtocod\Specifications\Structures\AbstractStructure;
+use Avtocod\Specifications\Tests\AbstractTestCase;
+use LogicException;
 
 abstract class AbstractStructureTestCase extends AbstractTestCase
 {

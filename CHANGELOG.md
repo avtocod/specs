@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.13.0
+
+### Added 
+
+- Source `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].policy.is_active` [#86]
+
+### Changed
+
+- Field with path `insurance.osago.items[].policy.number` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].policy.series` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].number` also fillable by `ramiosago.base.ext` [#86]
+
+### Fixed
+
+- Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.base` in `fields_list.json` [#86]
+- Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.base` in `fields_list.json` [#86]
+- Makefile task `test-php` now run only `composer test` command. It's fix double `phpstan` check call
+
+[#86]:https://github.com/avtocod/specs/issues/86
+
 ## v3.12.0
 
 ### Added

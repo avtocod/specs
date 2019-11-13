@@ -78,8 +78,6 @@ class SpecificationsTest extends AbstractTestCase
             'tech_data.manufacturer.name',
             'tech_data.brand.name.rus',
             'tech_data.transmission.type',
-            'insurance.osago.items[].date.start',
-            'insurance.osago.items[].date.end',
             'calculate.tax.moscow.yearly.amount',
             'calculate.tax.regions.yearly.amount',
             'utilizations.items[].org.name',

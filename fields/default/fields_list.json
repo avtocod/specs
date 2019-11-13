@@ -837,7 +837,8 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base"
+            "ramiosago.base",
+            "ramiosago.base.ext"
         ]
     },
     {
@@ -847,7 +848,8 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base"
+            "ramiosago.base",
+            "ramiosago.base.ext"
         ]
     },
     {
@@ -857,6 +859,8 @@
             "string"
         ],
         "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
         ]
     },
     {
@@ -866,6 +870,8 @@
             "string"
         ],
         "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
         ]
     },
     {
@@ -875,7 +881,8 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base"
+            "ramiosago.base",
+            "ramiosago.base.ext"
         ]
     },
     {
@@ -885,7 +892,8 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base"
+            "ramiosago.base",
+            "ramiosago.base.ext"
         ]
     },
     {
@@ -895,7 +903,18 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base"
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path":  "insurance.osago.items[].policy.is_active",
+        "description": "ОСАГО: Является ли полис действующим?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base.ext"
         ]
     },
     {

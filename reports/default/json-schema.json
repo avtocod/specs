@@ -4142,7 +4142,8 @@
                                             "33264901"
                                         ],
                                         "fillable_by": [
-                                            "ramiosago.base"
+                                            "ramiosago.base",
+                                            "ramiosago.base.ext"
                                         ]
                                     },
                                     "insurer": {
@@ -4159,7 +4160,8 @@
                                                     "Ресо-Гарантия"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base"
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -4182,7 +4184,8 @@
                                                     "2014-07-07 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base"
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
                                                 ]
                                             },
                                             "end": {
@@ -4199,7 +4202,8 @@
                                                     "2015-07-07 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base"
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -4224,7 +4228,8 @@
                                                     "WITHOUT RESTRICTIONS"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base"
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -4243,7 +4248,8 @@
                                                     "ЕЕЕ"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base"
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
                                                 ]
                                             },
                                             "number": {
@@ -4256,7 +4262,21 @@
                                                     "0018891420"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base"
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "is_active": {
+                                                "description": "Является ли полис действующим?",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base.ext"
                                                 ]
                                             }
                                         }

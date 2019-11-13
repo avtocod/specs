@@ -6,12 +6,12 @@ namespace Avtocod\Specifications\Structures;
 
 use ArrayAccess;
 use ArrayIterator;
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
-use IteratorAggregate;
 use LogicException;
-use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
+use IteratorAggregate;
 use Tarampampam\Wrappers\Json;
+use Illuminate\Contracts\Support\Jsonable;
+use Illuminate\Contracts\Support\Arrayable;
+use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
 abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, IteratorAggregate
 {

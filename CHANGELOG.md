@@ -21,6 +21,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.base.ext` [#86]
 - Field with path `insurance.osago.items[].number` also fillable by `ramiosago.base.ext` [#86]
 
+### Fixed
+
+- Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.base` in `fields_list.json` [#86]
+- Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.base` in `fields_list.json` [#86]
+
 [#86]:https://github.com/avtocod/specs/issues/86
 
 ## v3.12.0

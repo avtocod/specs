@@ -25,7 +25,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.base` in `fields_list.json` [#86]
 - Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.base` in `fields_list.json` [#86]
-- Makefile task `test-php` now run only `composer test` command. It's fixes double `phpstan` check call
+- Makefile task `test-php` now run only `composer test` command. It's fix double `phpstan` check call
 
 [#86]:https://github.com/avtocod/specs/issues/86
 

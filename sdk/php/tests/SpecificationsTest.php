@@ -4,24 +4,24 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications\Tests;
 
-use Avtocod\Specifications\Specifications;
-use Avtocod\Specifications\Structures\Field;
-use Avtocod\Specifications\Structures\IdentifierType;
-use Avtocod\Specifications\Structures\Source;
-use Avtocod\Specifications\Structures\VehicleMark;
-use Avtocod\Specifications\Structures\VehicleModel;
-use Avtocod\Specifications\Structures\VehicleType;
 use Exception;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Str;
-use InvalidArgumentException;
-use Opis\JsonSchema\Schema;
-use Opis\JsonSchema\Validator;
-use PackageVersions\Versions;
 use ReflectionClass;
 use ReflectionMethod;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Opis\JsonSchema\Schema;
+use InvalidArgumentException;
+use PackageVersions\Versions;
+use Opis\JsonSchema\Validator;
 use Tarampampam\Wrappers\Json;
+use Illuminate\Support\Collection;
+use Avtocod\Specifications\Specifications;
+use Avtocod\Specifications\Structures\Field;
+use Avtocod\Specifications\Structures\Source;
+use Avtocod\Specifications\Structures\VehicleMark;
+use Avtocod\Specifications\Structures\VehicleType;
+use Avtocod\Specifications\Structures\VehicleModel;
+use Avtocod\Specifications\Structures\IdentifierType;
 
 /**
  * @coversDefaultClass \Avtocod\Specifications\Specifications

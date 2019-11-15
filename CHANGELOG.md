@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.14.0
+
+### Changed
+
+- Maximal `illuminate/support` packages version now is `6.*`
+
+### Added
+
+- GitHub actions for a tests running
+
 ## v3.13.0
 
 ### Added 

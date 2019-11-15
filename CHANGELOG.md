@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - GitHub actions for a tests running
-- @covers annotations for tests
+- `@covers` annotations for tests
 
 ### Changed
 

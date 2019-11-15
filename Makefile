@@ -18,9 +18,6 @@ help: ## Show this help
 build: ## Build docker images, required for current package environment
 	$(dc_bin) build
 
-test-php: ## Execute php tests and linters
-	$(docker_bin) run $(RUN_ARGS) $(RUN_INTERACTIVE) "$(PHP_IMAGE)" bash -c "composer test"
-
 install: clean ## Install regular php dependencies
 	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --prefer-dist --no-interaction --no-suggest
 

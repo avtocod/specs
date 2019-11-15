@@ -24,7 +24,7 @@ use Avtocod\Specifications\Structures\VehicleModel;
 use Avtocod\Specifications\Structures\IdentifierType;
 
 /**
- * @coversDefaultClass \Avtocod\Specifications\Specifications
+ * @covers \Avtocod\Specifications\Specifications<extended>
  */
 class SpecificationsTest extends AbstractTestCase
 {
@@ -321,8 +321,6 @@ class SpecificationsTest extends AbstractTestCase
     }
 
     /**
-     * @covers ::version
-     *
      * @return void
      */
     public function testVersion(): void

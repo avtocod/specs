@@ -40,7 +40,7 @@
     "scripts": {
         "phpunit": "@php ./vendor/bin/phpunit --configuration ./sdk/php/phpunit.xml.dist --no-coverage --colors=always",
         "phpunit-feature": "@php ./vendor/bin/phpunit --configuration ./sdk/php/phpunit.xml.dist --no-coverage --colors=always",
-        "phpunit-cover": "@php ./vendor/bin/phpunit --configuration ./sdk/php/phpunit.xml.dist --coverage-html='./coverage/html'",
+        "phpunit-cover": "@php ./vendor/bin/phpunit --configuration ./sdk/php/phpunit.xml.dist",
         "phpstan": "@php ./vendor/bin/phpstan analyze --no-progress --ansi --level=max ./sdk/php/src",
         "test": [
             "@phpstan",

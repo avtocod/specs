@@ -1046,5 +1046,21 @@
             }
         ],
         "count": 1
+    },
+    "market_prices": {
+        "ads": {
+            "items": [
+                {
+                    "amount": {
+                        "max": 630000,
+                        "min": 430000,
+                        "optimal": 530000
+                    },
+                    "currency": {
+                        "type": "RUB"
+                    }
+                }
+            ]
+        }
     }
 }

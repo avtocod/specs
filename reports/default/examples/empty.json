@@ -941,5 +941,21 @@
             }
         ],
         "count": 1
+    },
+    "market_prices": {
+        "ads": {
+            "items": [
+                {
+                    "amount": {
+                        "max": null,
+                        "min": null,
+                        "optimal": null
+                    },
+                    "currency": {
+                        "type": null
+                    }
+                }
+            ]
+        }
     }
 }

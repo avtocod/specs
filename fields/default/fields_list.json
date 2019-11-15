@@ -3392,5 +3392,45 @@
         "fillable_by": [
             "service.history"
         ]
+    },
+    {
+        "path": "market_prices.ads.items[].amount.max",
+        "description": "Определение стоимости ТС: Максимальное значение стоимости ТС, рассчитанное на основе объявлений о продаже ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].amount.min",
+        "description": "Определение стоимости ТС: Минимальное значение стоимости ТС, рассчитанное на основе объявлений о продаже ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].amount.optimal",
+        "description": "Определение стоимости ТС: Оптимальное значение стоимости ТС, рассчитанное на основе объявлений о продаже ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].currency.type",
+        "description": "Определение стоимости ТС: Тип валюты в расчете стоимости ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
     }
 ]

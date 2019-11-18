@@ -4,13 +4,85 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## v3.12.0
+## v3.14.0
 
 ### Added
 
 - Field with path `registration_actions.items[].owner.phone_number` [#83]
 
 [#83]:https://github.com/avtocod/specs/issues/83
+
+## v3.13.0
+
+### Added 
+
+- Source `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].policy.is_active` [#86]
+
+### Changed
+
+- Field with path `insurance.osago.items[].policy.number` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].policy.series` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.base.ext` [#86]
+- Field with path `insurance.osago.items[].number` also fillable by `ramiosago.base.ext` [#86]
+
+### Fixed
+
+- Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.base` in `fields_list.json` [#86]
+- Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.base` in `fields_list.json` [#86]
+- Makefile task `test-php` now run only `composer test` command. It's fix double `phpstan` check call
+
+[#86]:https://github.com/avtocod/specs/issues/86
+
+## v3.12.0
+
+### Added
+
+- Source `service.history` [#79]
+- Field with path `service_history.items[].dealer.name` [#79]
+- Field with path `service_history.items[].dealer.branch.name` [#79]
+- Field with path `service_history.items[].date.start` [#79]
+- Field with path `service_history.items[].date.end` [#79]
+- Field with path `service_history.items[].amount.value` [#79]
+- Field with path `service_history.items[].amount.currency` [#79]
+- Field with path `service_history.items[].type` [#79]
+- Field with path `service_history.items[].service.type` [#79]
+- Field with path `service_history.items[].service.content` [#79]
+- Field with path `service_history.items[].service.spare_parts` [#79]
+- Field with path `service_history.items[].service.recommendations` [#79]
+- Field with path `service_history.items[].service.is_planned` [#79]
+- Field with path `service_history.items[].sale.is_credit` [#79]
+- Field with path `service_history.items[].sale.is_new` [#79]
+- Field with path `service_history.items[].equipment.content` [#79]
+- Field with path `service_history.items[].insurance.type` [#79]
+- Field with path `service_history.items[].insurance.date.start` [#79]
+- Field with path `service_history.items[].insurance.date.end` [#79]
+- Field with path `service_history.items[].client.type` [#79]
+- Field with path `service_history.items[].geo` [#79]
+- Field with path `service_history.items[].vehicle.brand.name` [#79]
+- Field with path `service_history.items[].vehicle.model.name` [#79]
+- Field with path `service_history.items[].vehicle.year` [#79]
+- Field with path `service_history.items[].vehicle.mileage` [#79]
+- Field with path `service_history.items[].vehicle.body.doors` [#79]
+- Field with path `service_history.items[].vehicle.body.type` [#79]
+- Field with path `service_history.items[].vehicle.body.color` [#79]
+- Field with path `service_history.items[].vehicle.engine.number` [#79]
+- Field with path `service_history.items[].vehicle.engine.type` [#79]
+- Field with path `service_history.items[].vehicle.engine.volume` [#79]
+- Field with path `service_history.items[].vehicle.engine.power.hp` [#79]
+- Field with path `service_history.items[].vehicle.transmission.type` [#79]
+- Field with path `service_history.items[].vehicle.wheel.position` [#79]
+- Field with path `service_history.items[].vehicle.drive.type` [#79]
+- Field with path `service_history.items[].vehicle.notes` [#79]
+- Field with path `service_history.items[].vehicle.equipment.type` [#79]
+- Field with path `service_history.items[].vehicle.identifiers.body` [#79]
+- Field with path `service_history.items[].vehicle.identifiers.vin` [#79]
+- Field with path `service_history.items[].vehicle.identifiers.chassis` [#79]
+
+[#79]:https://github.com/avtocod/specs/issues/79
 
 ## v3.11.0
 

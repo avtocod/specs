@@ -23,7 +23,7 @@ install-php: ## Install all php dependencies
 	$(docker_bin) run $(RUN_ARGS) $(RUN_INTERACTIVE) "$(PHP_IMAGE)" composer install --no-interaction --ansi --no-suggest --prefer-dist
 
 test-php: ## Execute php tests and linters
-	$(docker_bin) run $(RUN_ARGS) $(RUN_INTERACTIVE) "$(PHP_IMAGE)" bash -c "composer phpstan && composer test"
+	$(docker_bin) run $(RUN_ARGS) $(RUN_INTERACTIVE) "$(PHP_IMAGE)" bash -c "composer test"
 
 shell-php: ## Start shell into container with php
 	$(docker_bin) run $(RUN_ARGS) $(RUN_INTERACTIVE) \

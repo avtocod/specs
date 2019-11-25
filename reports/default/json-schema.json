@@ -5148,7 +5148,9 @@
                                             "gibdd.eaisto",
                                             "tech.ext",
                                             "base.taxi",
-                                            "base.tech"
+                                            "base.tech",
+                                            "ads.base",
+                                            "service.history"
                                         ]
                                     }
                                 }
@@ -5167,8 +5169,43 @@
                                     "gibdd.eaisto",
                                     "tech.ext",
                                     "base.taxi",
-                                    "base.tech"
+                                    "base.tech",
+                                    "ads.base",
+                                    "service.history"
                                 ]
+                            },
+                            "filled_by": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "source": {
+                                        "description": "Имя источника, от которого получено значение пробега",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "enum": [
+                                            "gibdd.eaisto",
+                                            "tech.ext",
+                                            "base.taxi",
+                                            "base.tech",
+                                            "ads.base",
+                                            "service.history",
+                                            null
+                                        ],
+                                        "examples": [
+                                            "gibdd.eaisto"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.eaisto",
+                                            "tech.ext",
+                                            "base.taxi",
+                                            "base.tech",
+                                            "ads.base",
+                                            "service.history"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }

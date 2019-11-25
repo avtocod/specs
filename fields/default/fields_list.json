@@ -2358,7 +2358,9 @@
             "gibdd.eaisto",
             "tech.ext",
             "base.taxi",
-            "base.tech"
+            "base.tech",
+            "ads.base",
+            "service.history"
         ]
     },
     {
@@ -2371,7 +2373,24 @@
             "gibdd.eaisto",
             "tech.ext",
             "base.taxi",
-            "base.tech"
+            "base.tech",
+            "ads.base",
+            "service.history"
+        ]
+    },
+    {
+        "path": "mileages.items[].filled_by.source",
+        "description": "Пробеги: Имя источника, от которого получено значение пробега",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext",
+            "base.taxi",
+            "base.tech",
+            "ads.base",
+            "service.history"
         ]
     },
     {

@@ -2384,14 +2384,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "gibdd.eaisto",
-            "tech.ext",
-            "base.taxi",
-            "base.tech",
-            "ads.base",
-            "service.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "images.photos.items[].vehicle.brand.name",

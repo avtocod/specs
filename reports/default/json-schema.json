@@ -5196,14 +5196,7 @@
                                         "examples": [
                                             "gibdd.eaisto"
                                         ],
-                                        "fillable_by": [
-                                            "gibdd.eaisto",
-                                            "tech.ext",
-                                            "base.taxi",
-                                            "base.tech",
-                                            "ads.base",
-                                            "service.history"
-                                        ]
+                                        "fillable_by": []
                                     }
                                 }
                             }
@@ -6823,6 +6816,7 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
+                                                    
                                                     "service.history"
                                                 ]
                                             }

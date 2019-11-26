@@ -82,6 +82,7 @@ class SpecificationsTest extends AbstractTestCase
             'calculate.tax.regions.yearly.amount',
             'utilizations.items[].org.name',
             'utilizations.items[].country.name',
+            'mileages.items[].filled_by.source'
         ];
 
         foreach (['default', null] as $group_name) {

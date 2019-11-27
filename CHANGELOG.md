@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.15.0
+
+### Added
+
+- Field with path `mileages.items[].filled_by.source` [#91]
+
+[#91]:https://github.com/avtocod/specs/issues/91
+
 ## v3.14.0
 
 ### Added

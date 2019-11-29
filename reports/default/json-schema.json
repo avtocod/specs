@@ -6352,7 +6352,7 @@
                                             "null"
                                         ],
                                         "enum": [
-                                            "GUARANTY",
+                                            "GUARANTEE",
                                             "BODY_INSURANCE",
                                             "ORDINARY_INSURANCE",
                                             "BODY_PAID",
@@ -6362,7 +6362,7 @@
                                             null
                                         ],
                                         "examples": [
-                                            "GUARANTY"
+                                            "GUARANTEE"
                                         ],
                                         "fillable_by": [
                                             "service.history"

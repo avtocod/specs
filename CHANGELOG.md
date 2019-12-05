@@ -8,8 +8,15 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Source `ads.price` [#89]
+- Field with path `market_prices.ads.items[].amount.max` [#89]
+- Field with path `market_prices.ads.items[].amount.min` [#89]
+- Field with path `market_prices.ads.items[].amount.optimal` [#89]
+- Field with path `market_prices.ads.items[].currency.type` [#89]
 - GitHub actions for a tests running
 - `@covers` annotations for tests
+
+[#89]:https://github.com/avtocod/specs/issues/89
 
 ### Changed
 

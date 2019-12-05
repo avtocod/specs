@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.15.2
+
+### Changed
+
+- Field with path `mileages.items[].filled_by.source` now may have value `customs.base` [#94]
+
+[#94]:https://github.com/avtocod/specs/issues/94
+
 ## v3.15.1
 
 ### Fixed

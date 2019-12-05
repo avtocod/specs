@@ -6982,7 +6982,7 @@
         "market_prices": {
             "type": "object",
             "additionalProperties": false,
-            "description": "Определение стоимости ТС",
+            "description": "Рыночная стоимость ТС",
             "properties": {
                 "ads": {
                     "type": "object",

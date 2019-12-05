@@ -63,6 +63,14 @@
             "pattern": "[0-9\\+]+",
             "maxLength": 20
         },
+        "currency_type": {
+            "type": "string",
+            "enum": [
+                "RUB",
+                "EUR",
+                "USD"
+            ]
+        },
         "geo_raw_data": {
             "type": "object",
             "properties": {
@@ -6303,16 +6311,14 @@
                                     },
                                     "currency": {
                                         "description": "Тип валюты",
-                                        "type": [
-                                            "string",
-                                            "null"
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/currency_type"
+                                            }
                                         ],
-                                        "enum": [
-                                            "RUB",
-                                            "EUR",
-                                            "USD",
-                                            null
-                                        ], 
                                         "examples": [
                                             "RUB"
                                         ],
@@ -6971,6 +6977,99 @@
                     "description": "Количество вхождений",
                     "type": "integer",
                     "minimum": 0
+                }
+            }
+        },
+        "market_prices": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Рыночная стоимость ТС",
+            "properties": {
+                "ads": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "amount": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "max": {
+                                                "description": "Максимальное значение стоимости ТС, рассчитанное на основе объявлений о продаже ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 0,
+                                                "examples": [
+                                                    630000
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.price"
+                                                ]
+                                            },
+                                            "min": {
+                                                "description": "Минимальное значение стоимости ТС, рассчитанное на основе объявлений о продаже ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 0,
+                                                "examples": [
+                                                    430000
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.price"
+                                                ]
+                                            },
+                                            "optimal": {
+                                                "description": "Оптимальное значение стоимости ТС, рассчитанное на основе объявлений о продаже ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 0,
+                                                "examples": [
+                                                    530000
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.price"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "currency": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип валюты в расчете стоимости ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/currency_type"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "RUB"
+                                                ],
+                                                "fillable_by": [
+                                                    "ads.price"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

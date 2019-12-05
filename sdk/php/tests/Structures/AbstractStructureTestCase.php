@@ -8,6 +8,9 @@ use LogicException;
 use Avtocod\Specifications\Tests\AbstractTestCase;
 use Avtocod\Specifications\Structures\AbstractStructure;
 
+/**
+ * @coversNothing
+ */
 abstract class AbstractStructureTestCase extends AbstractTestCase
 {
     /**

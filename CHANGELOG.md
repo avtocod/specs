@@ -4,10 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## v3.15.2
+## v3.16.0
+
+### Added
+
+- Source `ads.price` [#89]
+- Field with path `market_prices.ads.items[].amount.max` [#89]
+- Field with path `market_prices.ads.items[].amount.min` [#89]
+- Field with path `market_prices.ads.items[].amount.optimal` [#89]
+- Field with path `market_prices.ads.items[].currency.type` [#89]
+- GitHub actions for a tests running
+- `@covers` annotations for tests
+
+[#89]:https://github.com/avtocod/specs/issues/89
 
 ### Changed
 
+- Maximal `illuminate/support` packages version now is `6.*`
 - Field with path `mileages.items[].filled_by.source` now may have value `customs.base` [#94]
 
 [#94]:https://github.com/avtocod/specs/issues/94

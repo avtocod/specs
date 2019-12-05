@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.16.0
+
+### Added
+
+- Source `ads.price` [#79]
+- Field with path `market_prices.ads.items[].amount.max` [#89]
+- Field with path `market_prices.ads.items[].amount.min` [#89]
+- Field with path `market_prices.ads.items[].amount.optimal` [#89]
+- Field with path `market_prices.ads.items[].currency.type` [#89]
+
+[#89]:https://github.com/avtocod/specs/issues/89
+
 ## v3.15.1
 
 ### Fixed

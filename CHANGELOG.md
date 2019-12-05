@@ -21,6 +21,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Changed
 
 - Maximal `illuminate/support` packages version now is `6.*`
+- Field with path `mileages.items[].filled_by.source` now may have value `customs.base` [#94]
+
+[#94]:https://github.com/avtocod/specs/issues/94
 
 ## v3.15.1
 

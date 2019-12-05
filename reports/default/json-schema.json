@@ -58,6 +58,11 @@
             "minLength": 4,
             "maxLength": 128
         },
+        "phone_number": {
+            "type": "string",
+            "pattern": "[0-9\\+]+",
+            "maxLength": 20
+        },
         "geo_raw_data": {
             "type": "object",
             "properties": {
@@ -897,9 +902,13 @@
                                 },
                                 "phone_number": {
                                     "description": "Предполагаемый номер телефона владельца",
-                                    "type": [
-                                        "string",
-                                        "null"
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/phone_number"
+                                        }
                                     ],
                                     "examples": [
                                         null,
@@ -925,13 +934,20 @@
                                                     "properties": {
                                                         "postal_code": {
                                                             "description": "Почтовый индекс",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "type": "string",
+                                                                    "pattern": "[0-9]+",
+                                                                    "minLength": 6,
+                                                                    "maxLength": 6
+                                                                }
                                                             ],
                                                             "examples": [
-                                                                null,
-                                                                "141207"
+                                                                "141207",
+                                                                null
                                                             ],
                                                             "fillable_by": [
                                                                 "base",
@@ -1381,6 +1397,25 @@
                                                 ]
                                             }
                                         }
+                                    },
+                                    "phone_number": {
+                                        "description": "Предполагаемый номер телефона владельца",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/phone_number"
+                                            }
+                                        ],
+                                        "examples": [
+                                            null,
+                                            "9123456789"
+                                        ],
+                                        "fillable_by": [
+                                            "base",
+                                            "base.ext"
+                                        ]
                                     }
                                 }
                             },
@@ -5113,7 +5148,9 @@
                                             "gibdd.eaisto",
                                             "tech.ext",
                                             "base.taxi",
-                                            "base.tech"
+                                            "base.tech",
+                                            "ads.base",
+                                            "service.history"
                                         ]
                                     }
                                 }
@@ -5132,8 +5169,36 @@
                                     "gibdd.eaisto",
                                     "tech.ext",
                                     "base.taxi",
-                                    "base.tech"
+                                    "base.tech",
+                                    "ads.base",
+                                    "service.history"
                                 ]
+                            },
+                            "filled_by": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "source": {
+                                        "description": "Имя источника, от которого получено значение пробега",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "enum": [
+                                            "gibdd.eaisto",
+                                            "tech.ext",
+                                            "base.taxi",
+                                            "base.tech",
+                                            "ads.base",
+                                            "service.history",
+                                            null
+                                        ],
+                                        "examples": [
+                                            "gibdd.eaisto"
+                                        ],
+                                        "fillable_by": []
+                                    }
+                                }
                             }
                         }
                     }
@@ -5580,15 +5645,27 @@
                                             },
                                             "phones": {
                                                 "description": "Телефоны продавца ТС",
-                                                "type": [
-                                                    "array",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    [
-                                                        "+78005353535"
-                                                    ],
-                                                    null
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 1,
+                                                        "items": {
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/phone_number"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "+79123456789"
+                                                            ]
+                                                        }
+                                                    }
                                                 ],
                                                 "fillable_by": [
                                                     "ads.base"
@@ -6275,7 +6352,7 @@
                                             "null"
                                         ],
                                         "enum": [
-                                            "GUARANTY",
+                                            "GUARANTEE",
                                             "BODY_INSURANCE",
                                             "ORDINARY_INSURANCE",
                                             "BODY_PAID",
@@ -6285,7 +6362,7 @@
                                             null
                                         ],
                                         "examples": [
-                                            "GUARANTY"
+                                            "GUARANTEE"
                                         ],
                                         "fillable_by": [
                                             "service.history"
@@ -6739,6 +6816,7 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
+                                                    
                                                     "service.history"
                                                 ]
                                             }

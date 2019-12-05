@@ -776,6 +776,17 @@
         ]
     },
     {
+        "path": "registration_actions.items[].owner.phone_number",
+        "description": "Регистрационные действия: Предполагаемый номер телефона владельца",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
         "path": "registration_actions.items[].type",
         "description": "Регистрационные действия: Тип операции",
         "types": [
@@ -2347,7 +2358,9 @@
             "gibdd.eaisto",
             "tech.ext",
             "base.taxi",
-            "base.tech"
+            "base.tech",
+            "ads.base",
+            "service.history"
         ]
     },
     {
@@ -2360,8 +2373,18 @@
             "gibdd.eaisto",
             "tech.ext",
             "base.taxi",
-            "base.tech"
+            "base.tech",
+            "ads.base",
+            "service.history"
         ]
+    },
+    {
+        "path": "mileages.items[].filled_by.source",
+        "description": "Пробеги: Имя источника, от которого получено значение пробега",
+        "types": [
+            "string"
+        ],
+        "fillable_by": []
     },
     {
         "path": "images.photos.items[].vehicle.brand.name",

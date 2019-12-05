@@ -147,7 +147,8 @@
                         "tin": null,
                         "kpp": null,
                         "ogrn": null
-                    }
+                    },
+                    "phone_number": null
                 },
                 "type": null,
                 "geo": {
@@ -699,7 +700,10 @@
                 "date": {
                     "event": null
                 },
-                "mileage": null
+                "mileage": null,
+                "filled_by": {
+                    "source": null
+                }
             }
         ],
         "count": 1

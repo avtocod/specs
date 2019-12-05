@@ -60,9 +60,6 @@
         },
         "currency_type": {
             "type": "string",
-            "pattern": "[A-Z]+",
-            "minLength": 3,
-            "maxLength": 3,
             "enum": [
                 "RUB",
                 "EUR",
@@ -6929,6 +6926,7 @@
                                                     "integer",
                                                     "null"
                                                 ],
+                                                "minimum": 0,
                                                 "examples": [
                                                     630000
                                                 ],
@@ -6942,6 +6940,7 @@
                                                     "integer",
                                                     "null"
                                                 ],
+                                                "minimum": 0,
                                                 "examples": [
                                                     430000
                                                 ],
@@ -6955,6 +6954,7 @@
                                                     "integer",
                                                     "null"
                                                 ],
+                                                "minimum": 0,
                                                 "examples": [
                                                     530000
                                                 ],

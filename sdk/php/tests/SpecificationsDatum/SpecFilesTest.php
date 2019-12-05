@@ -10,6 +10,9 @@ use RecursiveDirectoryIterator;
 use Avtocod\Specifications\Specifications;
 use Avtocod\Specifications\Tests\AbstractTestCase;
 
+/**
+ * @coversNothing
+ */
 class SpecFilesTest extends AbstractTestCase
 {
     /**

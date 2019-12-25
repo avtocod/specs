@@ -11,7 +11,7 @@ Please include a summary of the change and which issue is fixed. Please also inc
 
 -->
 
-Fixes # (issue)
+This PR closes # (issue)
 
 ## Checklist
 

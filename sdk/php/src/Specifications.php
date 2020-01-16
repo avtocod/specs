@@ -99,7 +99,7 @@ class Specifications
      * @param string|null $group_name
      * @param bool        $as_array
      *
-     * @return object|array
+     * @return object|mixed[]
      */
     public static function getFieldsJsonSchema(string $group_name = null, bool $as_array = false)
     {
@@ -117,7 +117,7 @@ class Specifications
      * @param string      $name       Available values: `full` or `empty`
      * @param bool        $as_array
      *
-     * @return array|object
+     * @return object|mixed[]
      */
     public static function getReportExample(string $group_name = null, string $name = 'full', bool $as_array = true)
     {
@@ -134,7 +134,7 @@ class Specifications
      * @param string|null $group_name
      * @param bool        $as_array
      *
-     * @return object|array
+     * @return object|mixed[]
      */
     public static function getReportJsonSchema(string $group_name = null, bool $as_array = false)
     {
@@ -176,7 +176,7 @@ class Specifications
      * @param string|null $group_name
      * @param bool        $as_array
      *
-     * @return object|array
+     * @return object|mixed[]
      */
     public static function getIdentifierTypesJsonSchema(string $group_name = null, bool $as_array = false)
     {
@@ -218,7 +218,7 @@ class Specifications
      * @param string|null $group_name
      * @param bool        $as_array
      *
-     * @return object|array
+     * @return object|mixed[]
      */
     public static function getSourcesJsonSchema(string $group_name = null, bool $as_array = false)
     {
@@ -327,9 +327,9 @@ class Specifications
             $types = static::getVehicleTypesSpecification($group_name);
         }
 
-        /** @var VehicleType|null $vehicle_model_type */
+        /** @var VehicleType|null|mixed $vehicle_model_type */
         $vehicle_model_type = $types->where('id', $vehicle_type_id)->first();
-        if ($vehicle_model_type !== null) {
+        if ($vehicle_model_type instanceof VehicleType) {
             return $vehicle_model_type->getAlias();
         }
 
@@ -345,7 +345,7 @@ class Specifications
      * @throws InvalidArgumentException
      * @throws JsonEncodeDecodeException
      *
-     * @return array|object
+     * @return object|mixed[]
      */
     protected static function getJsonFileContent(string $file_path, bool $as_array = true)
     {

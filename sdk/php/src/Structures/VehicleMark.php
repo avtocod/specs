@@ -23,7 +23,9 @@ class VehicleMark extends AbstractStructure
     protected $id;
 
     /**
-     * {@inheritdoc}
+     * Get the instance as an array.
+     *
+     * @return mixed[]
      */
     public function toArray(): array
     {
@@ -58,7 +60,7 @@ class VehicleMark extends AbstractStructure
      */
     protected function configure($raw_data)
     {
-        if (\is_array($raw_data) || $raw_data instanceof Traversable) {
+        if (\is_iterable($raw_data)) {
             foreach ($raw_data as $key => $value) {
                 switch ($key) {
                     case 'name':

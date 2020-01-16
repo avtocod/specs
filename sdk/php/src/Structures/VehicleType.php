@@ -62,7 +62,7 @@ class VehicleType extends AbstractStructure
     /**
      * Get the instance as an array.
      *
-     * @return array
+     * @return mixed[]
      */
     public function toArray(): array
     {
@@ -74,13 +74,11 @@ class VehicleType extends AbstractStructure
     }
 
     /**
-     * Configure itself.
-     *
-     * @param mixed|null $raw_data
+     * {@inheritDoc}
      */
     protected function configure($raw_data)
     {
-        if (\is_array($raw_data) || $raw_data instanceof Traversable) {
+        if (\is_iterable($raw_data)) {
             foreach ($raw_data as $key => $value) {
                 switch ($key) {
                     case 'name':

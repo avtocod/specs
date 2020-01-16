@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications\Structures;
 
-use Traversable;
-
 class VehicleType extends AbstractStructure
 {
     /**
@@ -74,7 +72,7 @@ class VehicleType extends AbstractStructure
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function configure($raw_data)
     {

@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications\Structures;
 
-use Traversable;
-
 class Source extends AbstractStructure
 {
     /**

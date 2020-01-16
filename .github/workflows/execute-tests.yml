@@ -18,13 +18,13 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
       matrix:
         setup: ['basic', 'lowest']
         php: ['7.1', '7.2', '7.3', '7.4']
-        include:
-          - php: '7.1'
-            setup: 'basic'
-            coverage: 'true'
-          - php: '7.4'
-            setup: 'basic'
-            coverage: 'true'
+        #include:
+        #  - php: '7.1'
+        #    setup: 'basic'
+        #    coverage: 'true'
+        #  - php: '7.4'
+        #    setup: 'basic'
+        #    coverage: 'true'
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -66,11 +66,11 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
         if: matrix.coverage != 'true'
         run: composer test
 
-      - name: Execute tests with code coverage
-        if: matrix.coverage == 'true'
-        run: composer test-cover
-
-      - uses: codecov/codecov-action@v1 # Docs: <https://github.com/codecov/codecov-action>
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./sdk/php/coverage/clover.xml
+      #- name: Execute tests with code coverage
+      #  if: matrix.coverage == 'true'
+      #  run: composer test-cover
+      #
+      #- uses: codecov/codecov-action@v1 # Docs: <https://github.com/codecov/codecov-action>
+      #  with:
+      #    token: ${{ secrets.CODECOV_TOKEN }}
+      #    file: ./sdk/php/coverage/clover.xml

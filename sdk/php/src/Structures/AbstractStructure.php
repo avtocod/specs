@@ -4,19 +4,21 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications\Structures;
 
-use ArrayAccess;
 use ArrayIterator;
 use LogicException;
-use IteratorAggregate;
 use Tarampampam\Wrappers\Json;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Arrayable;
 use Tarampampam\Wrappers\Exceptions\JsonEncodeDecodeException;
 
-abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, IteratorAggregate
+/**
+ * @implements \ArrayAccess<string,mixed>
+ * @implements \IteratorAggregate<string,mixed>
+ */
+abstract class AbstractStructure implements Arrayable, Jsonable, \ArrayAccess, \IteratorAggregate
 {
     /**
-     * AbstractStructure constructor.
+     * Create a new structure instance.
      *
      * @param mixed|null $raw_data
      */
@@ -38,7 +40,7 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     /**
      * Get an iterator for the items.
      *
-     * @return ArrayIterator
+     * @return ArrayIterator<string,mixed>
      */
     public function getIterator(): ArrayIterator
     {
@@ -46,7 +48,11 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     }
 
     /**
-     * {@inheritdoc}
+     * Whether a offset exists.
+     *
+     * @param mixed $offset
+     *
+     * @return bool
      */
     public function offsetExists($offset): bool
     {
@@ -54,7 +60,11 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     }
 
     /**
-     * {@inheritdoc}
+     * Offset to retrieve.
+     *
+     * @param mixed $offset
+     *
+     * @return mixed
      */
     public function offsetGet($offset)
     {
@@ -62,9 +72,14 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     }
 
     /**
-     * {@inheritdoc}
+     * Offset to set.
+     *
+     * @param mixed $offset
+     * @param mixed $value
      *
      * @throws LogicException
+     *
+     * @return void
      */
     public function offsetSet($offset, $value)
     {
@@ -72,9 +87,13 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     }
 
     /**
-     * {@inheritdoc}
+     * Offset to unset.
+     *
+     * @param mixed $offset
      *
      * @throws LogicException
+     *
+     * @return void
      */
     public function offsetUnset($offset)
     {
@@ -84,7 +103,9 @@ abstract class AbstractStructure implements Arrayable, Jsonable, ArrayAccess, It
     /**
      * Configure itself.
      *
-     * @param mixed|null $raw_data
+     * @param mixed[]|iterable $raw_data
+     *
+     * @return void
      */
     abstract protected function configure($raw_data);
 }

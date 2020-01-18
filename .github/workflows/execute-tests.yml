@@ -85,7 +85,7 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
           fetch-depth: 1
 
       - name: Lint changelog file
-        uses: avto-dev/markdown-lint@v1 # Action page: <https://github.com/avto-dev/markdown-lint>
+        uses: docker://avtodev/markdown-lint:v1 # Action page: <https://github.com/avto-dev/markdown-lint>
         with:
           rules: '/lint/rules/changelog.js'
           config: '/lint/config/changelog.yml'

@@ -3,11 +3,12 @@
 # Makefile readme (en): <https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents>
 
 dc_bin := $(shell command -v docker-compose 2> /dev/null)
+docker_bin := $(shell command -v docker 2> /dev/null)
 
 SHELL = /bin/sh
 RUN_APP_ARGS = --rm --user "$(shell id -u):$(shell id -g)" app
 
-.PHONY : help build install lowest test test-cover shell clean
+.PHONY : help build install lowest test lint test-cover shell clean
 .DEFAULT_GOAL : help
 
 # This will output the help for each task. thanks to https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
@@ -26,6 +27,12 @@ lowest: clean ## Install lowest php dependencies
 
 test: ## Execute php tests and linters
 	$(dc_bin) run $(RUN_APP_ARGS) composer test
+
+lint: ## Execute linters
+	$(docker_bin) run --rm \
+		-v "$(shell pwd)/CHANGELOG.md:/CHANGELOG.md:ro" \
+		avtodev/markdown-lint:v1 \
+		--rules /lint/rules/changelog.js --config /lint/config/changelog.yml /CHANGELOG.md
 
 test-cover: ## Execute php tests with coverage
 	$(dc_bin) run --rm --user "0:0" app sh -c 'docker-php-ext-enable xdebug && su $(shell whoami) -s /bin/sh -c "composer phpunit-cover"'

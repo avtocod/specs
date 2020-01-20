@@ -49,7 +49,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## v3.13.0
 
-### Added 
+### Added
 
 - Source `ramiosago.base.ext` [#86]
 - Field with path `insurance.osago.items[].policy.is_active` [#86]
@@ -142,9 +142,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `additional_info.catalog.transdekra.items[].modification_id` [#71]
 - Field with path `additional_info.catalog.transdekra.items[].relevance` [#71]
 - Source `gibdd.fines` [#73]
-- Field with path `fines.items[].photos[].type` [#73] 
+- Field with path `fines.items[].photos[].type` [#73]
 - Field with path `fines.items[].photos[].uri` [#73]
-- Field with path `additional_info.vehicle.owner.phone_number` [#75] 
+- Field with path `additional_info.vehicle.owner.phone_number` [#75]
 - Field with path `additional_info.vehicle.owner.geo.postal_code` [#75]
 
 ### Changed
@@ -166,9 +166,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Field with path `pledges_nbki.items[].date.end` [#69] 
+- Field with path `pledges_nbki.items[].date.end` [#69]
 - Field with path `pledges_nbki.items[].note` [#69]
-- Field with path `pledges_nbki.items[].vehicle.color.name` [#69] 
+- Field with path `pledges_nbki.items[].vehicle.color.name` [#69]
 - Field with path `pledges_nbki.items[].vehicle.model.name` [#69]
 - Field with path `pledges_nbki.items[].vehicle.year` [#69]
 - Field with path `pledges_nbki.items[].vehicle.identifiers.vin` [#69]
@@ -336,7 +336,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## v2.12.0
 
-### Added 
+### Added
 
 - Field with path `repairs.history.items[].assessor.name` [#37]
 

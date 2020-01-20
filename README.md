@@ -7,7 +7,6 @@
 ![Release version][badge_release_version]
 ![Release date][badge_release_date]
 ![Commits since latest release][badge_commits_since_release]
-![Releases downloads count][badge_releases_dl_count]
 
 Данный репозиторий содержит публичные спецификации, связанные с проектом "Автокод".
 
@@ -120,7 +119,6 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [badge_build_status]:https://travis-ci.org/avtocod/specs.svg?branch=master
 [badge_packagist_dl_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?maxAge=30
 [badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=for-the-badge&maxAge=30
-[badge_releases_dl_count]:https://img.shields.io/github/downloads/avtocod/specs/total.svg?style=for-the-badge&maxAge=30
 [badge_coverage]:https://img.shields.io/codecov/c/github/avtocod/specs/master.svg?maxAge=5
 [link_packagist]:https://packagist.org/packages/avtocod/specs
 [link_build_status]:https://travis-ci.org/avtocod/specs

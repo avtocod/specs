@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Avtocod\Specifications\Structures;
 
-use Traversable;
-
 class IdentifierType extends AbstractStructure
 {
     /**
@@ -23,7 +21,9 @@ class IdentifierType extends AbstractStructure
     protected $description;
 
     /**
-     * {@inheritdoc}
+     * Get the instance as an array.
+     *
+     * @return mixed[]
      */
     public function toArray(): array
     {
@@ -58,7 +58,7 @@ class IdentifierType extends AbstractStructure
      */
     protected function configure($raw_data)
     {
-        if (\is_array($raw_data) || $raw_data instanceof Traversable) {
+        if (\is_iterable($raw_data)) {
             foreach ($raw_data as $key => $value) {
                 switch ($key) {
                     case 'type':

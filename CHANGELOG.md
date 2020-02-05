@@ -9,12 +9,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Added `base.alt`, `base.alt.ext` to sources list [#101]
-- Added sources `base`, `base.ext`, `base.alt`, `base.alt.ext` to `fillable_by` for fields with path:
-    - `insurance.osago.items[].policy.number` [#101]
-    - `insurance.osago.items[].policy.series` [#101]
-    - `insurance.osago.items[].date.start` [#101]
-    - `insurance.osago.items[].date.end` [#101]
-    - `insurance.osago.items[].insurer.name` [#101]
+- Field with path `insurance.osago.items[].policy.number` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
+- Field with path `insurance.osago.items[].policy.series` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
+- Field with path `insurance.osago.items[].date.start` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
+- Field with path `insurance.osago.items[].date.end` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
 
 [#101]:https://github.com/avtocod/specs/issues/101
 

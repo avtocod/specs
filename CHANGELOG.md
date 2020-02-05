@@ -6,8 +6,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## UNRELEASED
 
-### Changed
+### Added
 
+- Added `base.alt`, `base.alt.ext` to sources list [#101]
 - Added sources `base`, `base.ext`, `base.alt`, `base.alt.ext` to `fillable_by` for fields with path:
     - `insurance.osago.items[].policy.number` [#101]
     - `insurance.osago.items[].policy.series` [#101]

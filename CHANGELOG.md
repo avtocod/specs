@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Added sources `base`, `base.ext`, `base.alt`, `base.alt.ext` to `fillable_by` for fields with path:
+    - `insurance.osago.items[].policy.number` [#101]
+    - `insurance.osago.items[].policy.series` [#101]
+    - `insurance.osago.items[].date.start` [#101]
+    - `insurance.osago.items[].date.end` [#101]
+    - `insurance.osago.items[].insurer.name` [#101]
+
+[#101]:https://github.com/avtocod/specs/issues/101
+
 ## v3.16.0
 
 ### Added

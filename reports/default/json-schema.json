@@ -335,7 +335,9 @@
                                         "gibdd.history",
                                         "base.taxi",
                                         "customs.base",
-                                        "gibdd.eaisto"
+                                        "gibdd.eaisto",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 },
                                 "rus": {
@@ -458,7 +460,9 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
-                                "gibdd.history"
+                                "gibdd.history",
+                                "base.alt",
+                                "base.alt.ext"
                             ]
                         }
                     }
@@ -484,7 +488,9 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.history",
-                                "base.taxi"
+                                "base.taxi",
+                                "base.alt",
+                                "base.alt.ext"
                             ]
                         },
                         "color": {
@@ -503,7 +509,9 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "gibdd.history"
+                                        "gibdd.history",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 },
                                 "type": {
@@ -517,7 +525,9 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext"
+                                        "base.ext",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 }
                             }
@@ -593,7 +603,9 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "customs.base"
+                                        "customs.base",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 }
                             }
@@ -651,7 +663,9 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.history",
-                                "base.taxi"
+                                "base.taxi",
+                                "base.alt",
+                                "base.alt.ext"
                             ]
                         },
                         "power": {
@@ -672,7 +686,9 @@
                                         "base",
                                         "base.ext",
                                         "gibdd.history",
-                                        "base.taxi"
+                                        "base.taxi",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 },
                                 "kw": {
@@ -688,7 +704,9 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "gibdd.history"
+                                        "gibdd.history",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 }
                             }
@@ -713,7 +731,9 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.eaisto",
-                                "base.taxi"
+                                "base.taxi",
+                                "base.alt",
+                                "base.alt.ext"
                             ]
                         },
                         "max": {
@@ -730,7 +750,9 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.eaisto",
-                                "base.taxi"
+                                "base.taxi",
+                                "base.alt",
+                                "base.alt.ext"
                             ]
                         }
                     }
@@ -782,7 +804,9 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext"
+                                "base.ext",
+                                "base.alt",
+                                "base.alt.ext"
                             ]
                         }
                     }
@@ -809,7 +833,9 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
-                                "base.taxi"
+                                "base.taxi",
+                                "base.alt",
+                                "base.alt.ext"
                             ]
                         }
                     }
@@ -861,7 +887,9 @@
                                         "base",
                                         "base.ext",
                                         "base.taxi",
-                                        "gibdd.eaisto"
+                                        "gibdd.eaisto",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 },
                                 "description": {
@@ -905,7 +933,9 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext"
+                                        "base.ext",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 },
                                 "phone_number": {
@@ -996,7 +1026,8 @@
                                                 "2018-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
-                                                "base.ext"
+                                                "base.ext",
+                                                "base.alt.ext"
                                             ]
                                         }
                                     }
@@ -1047,7 +1078,8 @@
                                             ],
                                             "fillable_by": [
                                                 "gibdd.history",
-                                                "base.ext"
+                                                "base.ext",
+                                                "base.alt.ext"
                                             ]
                                         }
                                     }
@@ -1076,7 +1108,8 @@
                                                 "2021-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
-                                                "base.ext"
+                                                "base.ext",
+                                                "base.alt.ext"
                                             ]
                                         }
                                     }
@@ -1098,7 +1131,9 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext"
+                                        "base.ext",
+                                        "base.alt",
+                                        "base.alt.ext"
                                     ]
                                 }
                             }
@@ -1113,7 +1148,8 @@
                                 "type": "string"
                             },
                             "fillable_by": [
-                                "base.ext"
+                                "base.ext",
+                                "base.alt.ext"
                             ]
                         }
                     }
@@ -1256,7 +1292,9 @@
                                         "fillable_by": [
                                             "base",
                                             "base.ext",
-                                            "base.taxi"
+                                            "base.taxi",
+                                            "base.alt",
+                                            "base.alt.ext"
                                         ]
                                     }
                                 }
@@ -1276,7 +1314,9 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext"
+                                    "base.ext",
+                                    "base.alt",
+                                    "base.alt.ext"
                                 ]
                             },
                             "identifiers": {
@@ -1297,7 +1337,8 @@
                                             "10ЕС040762"
                                         ],
                                         "fillable_by": [
-                                            "base.ext"
+                                            "base.ext",
+                                            "base.alt.ext"
                                         ]
                                     },
                                     "sts": {
@@ -1362,7 +1403,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base.ext",
-                                                    "base.taxi"
+                                                    "base.taxi",
+                                                    "base.alt.ext"
                                                 ]
                                             },
                                             "tin": {
@@ -1401,7 +1443,8 @@
                                                     "1053600591197"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.ext"
+                                                    "base.ext",
+                                                    "base.alt.ext"
                                                 ]
                                             }
                                         }
@@ -1439,7 +1482,9 @@
                                 "fillable_by": [
                                     "base.ext",
                                     "base",
-                                    "base.taxi"
+                                    "base.taxi",
+                                    "base.alt",
+                                    "base.alt.ext"
                                 ]
                             },
                             "geo": {
@@ -1493,7 +1538,9 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext"
+                                    "base.ext",
+                                    "base.alt",
+                                    "base.alt.ext"
                                 ]
                             }
                         }
@@ -2050,7 +2097,9 @@
                                             ],
                                             "fillable_by": [
                                                 "base",
-                                                "base.ext"
+                                                "base.ext",
+                                                "base.alt",
+                                                "base.alt.ext"
                                             ]
                                         }
                                     }
@@ -5051,7 +5100,9 @@
                                                     "2010-02-07 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.history"
+                                                    "gibdd.history",
+                                                    "base.alt",
+                                                    "base.alt.ext"
                                                 ]
                                             },
                                             "end": {
@@ -5068,7 +5119,9 @@
                                                     "2011-04-07 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.history"
+                                                    "gibdd.history",
+                                                    "base.alt",
+                                                    "base.alt.ext"
                                                 ]
                                             }
                                         }
@@ -5095,7 +5148,9 @@
                                                     "LEGAL"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.history"
+                                                    "gibdd.history",
+                                                    "base.alt",
+                                                    "base.alt.ext"
                                                 ]
                                             }
                                         }

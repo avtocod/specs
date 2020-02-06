@@ -9,6 +9,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `fines.alt` [#97]
+
+### Changed
+
 - Field with path `fines.items[].date.event` also fillable by `fines.alt` [#97]
 - Field with path `fines.items[].article.code` also fillable by `fines.alt` [#97]
 - Field with path `fines.items[].article.description` also fillable by `fines.alt` [#97]

@@ -1186,6 +1186,16 @@
         ]
     },
     {
+        "path": "accidents.history.items[].actuality.date",
+        "description": "История ДТП: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
+        ]
+    },
+    {
         "path": "accidents.insurance.items[].date.event",
         "description": "История повреждений из страховых компаний: Дата происшествия",
         "types": [

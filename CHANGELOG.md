@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Field `additional_info.vehicle.owner.phone_number` description [#107]
+
+[#107]:https://github.com/avtocod/specs/issues/107
+
 ## v3.18.0
 
 ### Added

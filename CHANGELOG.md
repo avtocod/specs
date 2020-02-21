@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Source `dtp.registry` [#105]
 - Added `base.alt`, `base.alt.ext` to sources list [#101]
 - Field with path `insurance.osago.items[].policy.number` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
 - Field with path `insurance.osago.items[].policy.series` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
@@ -15,7 +16,63 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].date.end` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
 - Field with path `insurance.osago.items[].insurer.name` also fillable by `base`, `base.ext`, `base.alt`, `base.alt.ext`, `fillable_by` [#101]
 
+### Changed
+
+- Field `additional_info.vehicle.owner.phone_number` description [#107]
+- Field with path `accidents.history.items[].number` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].accident.date` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].type` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].state` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].vehicle.brand.name` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].vehicle.model.name` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].vehicle.year` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].geo` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].damage.points` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].damage.codes` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].actuality.date` also fillable by `dtp.registry` [#105]
+
 [#101]:https://github.com/avtocod/specs/issues/101
+[#105]:https://github.com/avtocod/specs/issues/105
+[#107]:https://github.com/avtocod/specs/issues/107
+
+## v3.18.0
+
+### Added
+
+- Field with path `accidents.history.items[].actuality.date` [#103]
+
+[#103]:https://github.com/avtocod/specs/issues/103
+
+## v3.17.0
+
+### Added
+
+- Source `fines.alt` [#97]
+
+### Changed
+
+- Field with path `fines.items[].date.event` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].article.code` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].article.description` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].description` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].vendor.name` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].amount.value` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].amount.total` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].discount.percent` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].is_paid` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.user.name` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.user.tin` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.user.kpp` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.bank.account.number` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.bank.name` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.bank.bik` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.payment.purpose` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.kbk` also fillable by `fines.alt` [#97]
+- Field with path `fines.items[].wire.okato` also fillable by `fines.alt` [#97]
+- Field with path `fines.has_fines` also fillable by `fines.alt` [#97]
+
+[#97]:https://github.com/avtocod/specs/issues/97
 
 ## v3.16.0
 

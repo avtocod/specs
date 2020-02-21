@@ -163,5 +163,10 @@
         "name": "fines.alt",
         "description": "Данные о штрафах, оформленных на ТС, альтернативный источник",
         "enabled": true
+    },
+    {
+        "name": "dtp.registry",
+        "description": "Данные о ДТП зарегистрированных в базе ГИБДД (история ДТП)",
+        "enabled": true
     }
 ]

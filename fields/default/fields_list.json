@@ -103,9 +103,7 @@
             "gibdd.history",
             "base.taxi",
             "customs.base",
-            "gibdd.eaisto",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.eaisto"
         ]
     },
     {
@@ -176,9 +174,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.history",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.history"
         ]
     },
     {
@@ -191,9 +187,7 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -205,9 +199,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.history",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.history"
         ]
     },
     {
@@ -218,9 +210,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -258,9 +248,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "customs.base",
-            "base.alt",
-            "base.alt.ext"
+            "customs.base"
         ]
     },
     {
@@ -294,9 +282,7 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -309,9 +295,7 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -323,9 +307,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.history",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.history"
         ]
     },
     {
@@ -338,9 +320,7 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -353,9 +333,7 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -374,9 +352,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -388,9 +364,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -403,9 +377,7 @@
             "base",
             "base.ext",
             "base.taxi",
-            "gibdd.eaisto",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.eaisto"
         ]
     },
     {
@@ -429,14 +401,12 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
         "path": "additional_info.vehicle.owner.phone_number",
-        "description": "Дополнительная информация: Номер телефона владельца из открытых источников",
+        "description": "Дополнительная информация: Предполагаемый номер телефона владельца",
         "types": [
             "string"
         ],
@@ -463,8 +433,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -474,8 +443,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -507,8 +475,7 @@
         ],
         "fillable_by": [
             "gibdd.history",
-            "base.ext",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -518,8 +485,7 @@
             "array"
         ],
         "fillable_by": [
-            "base.ext",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -570,9 +536,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -659,9 +623,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.history",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.history"
         ]
     },
     {
@@ -671,9 +633,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.history",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.history"
         ]
     },
     {
@@ -683,9 +643,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.history",
-            "base.alt",
-            "base.alt.ext"
+            "gibdd.history"
         ]
     },
     {
@@ -729,9 +687,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -742,9 +698,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -754,8 +708,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -789,8 +742,7 @@
         ],
         "fillable_by": [
             "base.ext",
-            "base.taxi",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -820,8 +772,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -844,9 +795,7 @@
         "fillable_by": [
             "base.ext",
             "base",
-            "base.taxi",
-            "base.alt",
-            "base.alt.ext"
+            "base.taxi"
         ]
     },
     {
@@ -879,9 +828,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -1025,9 +972,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -1147,8 +1092,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1158,8 +1102,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1169,8 +1112,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1180,8 +1122,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1201,8 +1142,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1212,8 +1152,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1223,8 +1162,7 @@
             "integer"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1234,8 +1172,7 @@
             "object"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1245,8 +1182,7 @@
             "array"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1256,8 +1192,7 @@
             "array"
         ],
         "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
+            "gibdd.dtp"
         ]
     },
     {
@@ -1268,17 +1203,6 @@
         ],
         "fillable_by": [
             "base.moscow"
-        ]
-    },
-    {
-        "path": "accidents.history.items[].actuality.date",
-        "description": "История ДТП: Дата актуальности данных",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "gibdd.dtp",
-            "dtp.registry"
         ]
     },
     {
@@ -2209,8 +2133,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2232,8 +2155,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2244,8 +2166,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2256,8 +2177,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2268,8 +2188,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2280,8 +2199,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2292,8 +2210,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2304,8 +2221,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2316,8 +2232,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2328,8 +2243,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2339,8 +2253,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2350,8 +2263,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2361,8 +2273,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2372,8 +2283,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2383,8 +2293,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2394,8 +2303,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2405,8 +2313,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2417,8 +2324,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {
@@ -2428,8 +2334,7 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base",
-            "fines.alt"
+            "fines.base"
         ]
     },
     {
@@ -2440,8 +2345,7 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines",
-            "fines.alt"
+            "gibdd.fines"
         ]
     },
     {

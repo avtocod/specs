@@ -335,9 +335,7 @@
                                         "gibdd.history",
                                         "base.taxi",
                                         "customs.base",
-                                        "gibdd.eaisto",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "gibdd.eaisto"
                                     ]
                                 },
                                 "rus": {
@@ -460,9 +458,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
-                                "gibdd.history",
-                                "base.alt",
-                                "base.alt.ext"
+                                "gibdd.history"
                             ]
                         }
                     }
@@ -488,9 +484,7 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.history",
-                                "base.taxi",
-                                "base.alt",
-                                "base.alt.ext"
+                                "base.taxi"
                             ]
                         },
                         "color": {
@@ -509,9 +503,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "gibdd.history",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "gibdd.history"
                                     ]
                                 },
                                 "type": {
@@ -525,9 +517,7 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "base.ext"
                                     ]
                                 }
                             }
@@ -603,9 +593,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "customs.base",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "customs.base"
                                     ]
                                 }
                             }
@@ -663,9 +651,7 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.history",
-                                "base.taxi",
-                                "base.alt",
-                                "base.alt.ext"
+                                "base.taxi"
                             ]
                         },
                         "power": {
@@ -686,9 +672,7 @@
                                         "base",
                                         "base.ext",
                                         "gibdd.history",
-                                        "base.taxi",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "base.taxi"
                                     ]
                                 },
                                 "kw": {
@@ -704,9 +688,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "gibdd.history",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "gibdd.history"
                                     ]
                                 }
                             }
@@ -731,9 +713,7 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.eaisto",
-                                "base.taxi",
-                                "base.alt",
-                                "base.alt.ext"
+                                "base.taxi"
                             ]
                         },
                         "max": {
@@ -750,9 +730,7 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.eaisto",
-                                "base.taxi",
-                                "base.alt",
-                                "base.alt.ext"
+                                "base.taxi"
                             ]
                         }
                     }
@@ -804,9 +782,7 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
-                                "base.alt.ext"
+                                "base.ext"
                             ]
                         }
                     }
@@ -833,9 +809,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
-                                "base.taxi",
-                                "base.alt",
-                                "base.alt.ext"
+                                "base.taxi"
                             ]
                         }
                     }
@@ -887,9 +861,7 @@
                                         "base",
                                         "base.ext",
                                         "base.taxi",
-                                        "gibdd.eaisto",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "gibdd.eaisto"
                                     ]
                                 },
                                 "description": {
@@ -933,13 +905,11 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "base.ext"
                                     ]
                                 },
                                 "phone_number": {
-                                    "description": "Номер телефона владельца из открытых источников",
+                                    "description": "Предполагаемый номер телефона владельца",
                                     "oneOf": [
                                         {
                                             "type": "null"
@@ -1026,8 +996,7 @@
                                                 "2018-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
-                                                "base.ext",
-                                                "base.alt.ext"
+                                                "base.ext"
                                             ]
                                         }
                                     }
@@ -1078,8 +1047,7 @@
                                             ],
                                             "fillable_by": [
                                                 "gibdd.history",
-                                                "base.ext",
-                                                "base.alt.ext"
+                                                "base.ext"
                                             ]
                                         }
                                     }
@@ -1108,8 +1076,7 @@
                                                 "2021-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
-                                                "base.ext",
-                                                "base.alt.ext"
+                                                "base.ext"
                                             ]
                                         }
                                     }
@@ -1131,9 +1098,7 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
-                                        "base.alt.ext"
+                                        "base.ext"
                                     ]
                                 }
                             }
@@ -1148,8 +1113,7 @@
                                 "type": "string"
                             },
                             "fillable_by": [
-                                "base.ext",
-                                "base.alt.ext"
+                                "base.ext"
                             ]
                         }
                     }
@@ -1292,9 +1256,7 @@
                                         "fillable_by": [
                                             "base",
                                             "base.ext",
-                                            "base.taxi",
-                                            "base.alt",
-                                            "base.alt.ext"
+                                            "base.taxi"
                                         ]
                                     }
                                 }
@@ -1314,9 +1276,7 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext",
-                                    "base.alt",
-                                    "base.alt.ext"
+                                    "base.ext"
                                 ]
                             },
                             "identifiers": {
@@ -1337,8 +1297,7 @@
                                             "10ЕС040762"
                                         ],
                                         "fillable_by": [
-                                            "base.ext",
-                                            "base.alt.ext"
+                                            "base.ext"
                                         ]
                                     },
                                     "sts": {
@@ -1403,8 +1362,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base.ext",
-                                                    "base.taxi",
-                                                    "base.alt.ext"
+                                                    "base.taxi"
                                                 ]
                                             },
                                             "tin": {
@@ -1443,8 +1401,7 @@
                                                     "1053600591197"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.ext",
-                                                    "base.alt.ext"
+                                                    "base.ext"
                                                 ]
                                             }
                                         }
@@ -1482,9 +1439,7 @@
                                 "fillable_by": [
                                     "base.ext",
                                     "base",
-                                    "base.taxi",
-                                    "base.alt",
-                                    "base.alt.ext"
+                                    "base.taxi"
                                 ]
                             },
                             "geo": {
@@ -1538,9 +1493,7 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext",
-                                    "base.alt",
-                                    "base.alt.ext"
+                                    "base.ext"
                                 ]
                             }
                         }
@@ -2097,9 +2050,7 @@
                                             ],
                                             "fillable_by": [
                                                 "base",
-                                                "base.ext",
-                                                "base.alt",
-                                                "base.alt.ext"
+                                                "base.ext"
                                             ]
                                         }
                                     }
@@ -2465,8 +2416,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "accident": {
@@ -2504,8 +2454,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "description": {
@@ -2519,8 +2468,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     }
                                 }
@@ -2536,8 +2484,7 @@
                                 ],
                                 "fillable_by": [
                                     "fines.base",
-                                    "gibdd.fines",
-                                    "fines.alt"
+                                    "gibdd.fines"
                                 ]
                             },
                             "vendor": {
@@ -2555,8 +2502,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     }
                                 }
@@ -2576,8 +2522,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "total": {
@@ -2591,8 +2536,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     }
                                 }
@@ -2613,8 +2557,7 @@
                                         "minimum": 0,
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "date": {
@@ -2636,8 +2579,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "gibdd.fines",
-                                                    "fines.alt"
+                                                    "gibdd.fines"
                                                 ]
                                             }
                                         }
@@ -2655,8 +2597,7 @@
                                 ],
                                 "fillable_by": [
                                     "fines.base",
-                                    "gibdd.fines",
-                                    "fines.alt"
+                                    "gibdd.fines"
                                 ]
                             },
                             "wire": {
@@ -2677,8 +2618,7 @@
                                                     "УФК по ИО (ГУ МВД России по Новгородская область, л\/с 04475979720)"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base",
-                                                    "fines.alt"
+                                                    "fines.base"
                                                 ]
                                             },
                                             "tin": {
@@ -2691,8 +2631,7 @@
                                                     "0592311114"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base",
-                                                    "fines.alt"
+                                                    "fines.base"
                                                 ]
                                             },
                                             "kpp": {
@@ -2705,8 +2644,7 @@
                                                     "059201001"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base",
-                                                    "fines.alt"
+                                                    "fines.base"
                                                 ]
                                             }
                                         }
@@ -2729,8 +2667,7 @@
                                                             "40101810151650010005"
                                                         ],
                                                         "fillable_by": [
-                                                            "fines.base",
-                                                            "fines.alt"
+                                                            "fines.base"
                                                         ]
                                                     }
                                                 }
@@ -2745,8 +2682,7 @@
                                                     "Отделение г. Зарайск"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base",
-                                                    "fines.alt"
+                                                    "fines.base"
                                                 ]
                                             },
                                             "bik": {
@@ -2759,8 +2695,7 @@
                                                     "049750005"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base",
-                                                    "fines.alt"
+                                                    "fines.base"
                                                 ]
                                             }
                                         }
@@ -2779,8 +2714,7 @@
                                                     "ШТРАФ ПО АДМИНИСТРАТИВНОМУ ПРАВОНАРУШЕНИЮ ПОСТАНОВЛЕНИЕ №18810161753886424481"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base",
-                                                    "fines.alt"
+                                                    "fines.base"
                                                 ]
                                             }
                                         }
@@ -2796,8 +2730,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines",
-                                            "fines.alt"
+                                            "gibdd.fines"
                                         ]
                                     },
                                     "okato": {
@@ -2810,8 +2743,7 @@
                                             "78691068"
                                         ],
                                         "fillable_by": [
-                                            "fines.base",
-                                            "fines.alt"
+                                            "fines.base"
                                         ]
                                     }
                                 }
@@ -2872,8 +2804,7 @@
                     ],
                     "fillable_by": [
                         "fines.base",
-                        "gibdd.fines",
-                        "fines.alt"
+                        "gibdd.fines"
                     ]
                 },
                 "count": {
@@ -4451,8 +4382,7 @@
                                             "000043057"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp",
-                                            "dtp.registry"
+                                            "gibdd.dtp"
                                         ]
                                     },
                                     "accident": {
@@ -4473,8 +4403,7 @@
                                                     "1978-02-14 05:24:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "gibdd.dtp"
                                                 ]
                                             }
                                         }
@@ -4490,8 +4419,7 @@
                                             "Наезд на стоящее ТС"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp",
-                                            "dtp.registry"
+                                            "gibdd.dtp"
                                         ]
                                     },
                                     "state": {
@@ -4504,8 +4432,7 @@
                                             "Повреждено"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp",
-                                            "dtp.registry"
+                                            "gibdd.dtp"
                                         ]
                                     },
                                     "org": {
@@ -4567,8 +4494,7 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "gibdd.dtp"
                                                 ]
                                             },
                                             "codes": {
@@ -4593,8 +4519,7 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "gibdd.dtp"
                                                 ]
                                             }
                                         }
@@ -4617,8 +4542,7 @@
                                                             "Opel"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.dtp",
-                                                            "dtp.registry"
+                                                            "gibdd.dtp"
                                                         ]
                                                     }
                                                 }
@@ -4637,8 +4561,7 @@
                                                             "MONTEREY"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.dtp",
-                                                            "dtp.registry"
+                                                            "gibdd.dtp"
                                                         ]
                                                     }
                                                 }
@@ -4654,8 +4577,7 @@
                                                     2004
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "gibdd.dtp"
                                                 ]
                                             }
                                         }
@@ -4671,33 +4593,8 @@
                                             }
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp",
-                                            "dtp.registry"
+                                            "gibdd.dtp"
                                         ]
-                                    },
-                                    "actuality": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "date": {
-                                                "description": "Дата актуальности данных",
-                                                "oneOf": [
-                                                    {
-                                                        "type": "null"
-                                                    },
-                                                    {
-                                                        "$ref": "#/definitions/datetime"
-                                                    }
-                                                ],
-                                                "examples": [
-                                                    "2020-02-11 05:24:00"
-                                                ],
-                                                "fillable_by": [
-                                                    "gibdd.dtp",
-                                                    "dtp.registry"
-                                                ]
-                                            }
-                                        }
                                     }
                                 }
                             }
@@ -5154,9 +5051,7 @@
                                                     "2010-02-07 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.history",
-                                                    "base.alt",
-                                                    "base.alt.ext"
+                                                    "gibdd.history"
                                                 ]
                                             },
                                             "end": {
@@ -5173,9 +5068,7 @@
                                                     "2011-04-07 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.history",
-                                                    "base.alt",
-                                                    "base.alt.ext"
+                                                    "gibdd.history"
                                                 ]
                                             }
                                         }
@@ -5202,9 +5095,7 @@
                                                     "LEGAL"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.history",
-                                                    "base.alt",
-                                                    "base.alt.ext"
+                                                    "gibdd.history"
                                                 ]
                                             }
                                         }
@@ -6627,7 +6518,7 @@
                                             "КАСКО",
                                             "ДРУГОЕ",
                                             null
-                                        ], 
+                                        ],
                                         "examples": [
                                             "ОСАГО"
                                         ],
@@ -6943,7 +6834,7 @@
                                                 "enum": [
                                                     "РУЧНАЯ",
                                                     "АВТОМАТИЧЕСКАЯ",
-                                                    "ВАРИАТОР", 
+                                                    "ВАРИАТОР",
                                                     "РОБОТ",
                                                     null
                                                 ],
@@ -6952,7 +6843,7 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    
+
                                                     "service.history"
                                                 ]
                                             }
@@ -6969,7 +6860,7 @@
                                                     "null"
                                                 ],
                                                 "enum": [
-                                                    "ЛЕВЫЙ", 
+                                                    "ЛЕВЫЙ",
                                                     "ПРАВЫЙ",
                                                     null
                                                 ],
@@ -6993,9 +6884,9 @@
                                                     "null"
                                                 ],
                                                 "enum": [
-                                                    "ПЕРЕДНИЙ", 
-                                                    "ЗАДНИЙ", 
-                                                    "ПОЛНЫЙ", 
+                                                    "ПЕРЕДНИЙ",
+                                                    "ЗАДНИЙ",
+                                                    "ПОЛНЫЙ",
                                                     null
                                                 ],
                                                 "examples": [

@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `dtp.registry` [#105]
+- Source `base.alt`, `base.alt.ext` [#109]
 
 ### Changed
 
@@ -24,9 +25,41 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `accidents.history.items[].damage.points` also fillable by `dtp.registry` [#105]
 - Field with path `accidents.history.items[].damage.codes` also fillable by `dtp.registry` [#105]
 - Field with path `accidents.history.items[].actuality.date` also fillable by `dtp.registry` [#105]
+- Field with path `tech_data.brand.name.original` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.type.name` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.body.number` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.body.color.name` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.body.color.type` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.engine.fuel.type` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.engine.volume` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.engine.power.hp` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.engine.power.kw` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.weight.netto` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.weight.max` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.drive.type` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `tech_data.wheel.position` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.category.code` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.owner.type` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.modifications.was_modificated` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `ownership.history.items[].date.start` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `ownership.history.items[].date.end` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `ownership.history.items[].owner.type` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `registration_actions.items[].date.end` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `registration_actions.items[].reg_num` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `registration_actions.items[].type` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `registration_actions.items[].usage_allowed` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `calculate.osago.coefficients.regional.value` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.sts.date.receive` also fillable by `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.passport.date.receive` also fillable by `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.passport.org.name` also fillable by `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.notes` also fillable by `base.alt.ext` [#109]
+- Field with path `registration_actions.items[].identifiers.pts` also fillable by `base.alt.ext` [#109]
+- Field with path `registration_actions.items[].owner.org.name` also fillable by `base.alt.ext` [#109]
+- Field with path `registration_actions.items[].owner.org.ogrn` also fillable by `base.alt.ext` [#109]
 
 [#105]:https://github.com/avtocod/specs/issues/105
 [#107]:https://github.com/avtocod/specs/issues/107
+[#109]:https://github.com/avtocod/specs/issues/109
 
 ## v3.18.0
 

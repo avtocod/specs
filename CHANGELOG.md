@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
+- Field `additional_info.vehicle.owner.phone_number` description [#107]
 - Field with path `accidents.history.items[].number` also fillable by `dtp.registry` [#105]
 - Field with path `accidents.history.items[].accident.date` also fillable by `dtp.registry` [#105]
 - Field with path `accidents.history.items[].type` also fillable by `dtp.registry` [#105]
@@ -25,6 +26,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `accidents.history.items[].actuality.date` also fillable by `dtp.registry` [#105]
 
 [#105]:https://github.com/avtocod/specs/issues/105
+[#107]:https://github.com/avtocod/specs/issues/107
 
 ## v3.18.0
 

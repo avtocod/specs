@@ -12,7 +12,9 @@
             "base.taxi",
             "gibdd.eaisto",
             "base.tech",
-            "tech.ext"
+            "tech.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -24,7 +26,9 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -35,7 +39,9 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -46,7 +52,9 @@
         ],
         "fillable_by": [
             "base.ext",
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -58,7 +66,9 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -70,7 +80,9 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -234,7 +246,9 @@
             "base.ext",
             "gibdd.eaisto",
             "base.taxi",
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -246,7 +260,9 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -271,7 +287,9 @@
         ],
         "fillable_by": [
             "base.taxi",
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -281,7 +299,9 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -442,7 +462,9 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -453,7 +475,9 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -464,6 +488,7 @@
         ],
         "fillable_by": [
             "base.ext",
+            "base.alt",
             "base.alt.ext"
         ]
     },
@@ -475,6 +500,7 @@
         ],
         "fillable_by": [
             "base.ext",
+            "base.alt",
             "base.alt.ext"
         ]
     },
@@ -496,7 +522,9 @@
         ],
         "fillable_by": [
             "gibdd.history",
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -508,6 +536,7 @@
         "fillable_by": [
             "gibdd.history",
             "base.ext",
+            "base.alt",
             "base.alt.ext"
         ]
     },
@@ -518,8 +547,7 @@
             "array"
         ],
         "fillable_by": [
-            "base.ext",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -570,9 +598,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.alt",
-            "base.alt.ext"
+            "base.ext"
         ]
     },
     {
@@ -717,7 +743,9 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -755,6 +783,7 @@
         ],
         "fillable_by": [
             "base.ext",
+            "base.alt",
             "base.alt.ext"
         ]
     },
@@ -766,7 +795,9 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -778,7 +809,9 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -790,6 +823,7 @@
         "fillable_by": [
             "base.ext",
             "base.taxi",
+            "base.alt",
             "base.alt.ext"
         ]
     },
@@ -800,7 +834,9 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -810,7 +846,9 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -821,6 +859,7 @@
         ],
         "fillable_by": [
             "base.ext",
+            "base.alt",
             "base.alt.ext"
         ]
     },
@@ -832,7 +871,9 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {
@@ -858,7 +899,9 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt",
+            "base.alt.ext"
         ]
     },
     {

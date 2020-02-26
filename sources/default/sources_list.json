@@ -90,6 +90,11 @@
         "enabled": true
     },
     {
+        "name": "base.alt",
+        "description": "Базовая информация о ТС и данные регистрационных действий. Альтернативный источник",
+        "enabled": true
+    },
+    {
         "name": "carfax.check",
         "description": "Наличие данных об отчете о ТС в сервисе CarFax",
         "enabled": true

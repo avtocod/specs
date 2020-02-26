@@ -12,7 +12,8 @@
             "base.taxi",
             "gibdd.eaisto",
             "base.tech",
-            "tech.ext"
+            "tech.ext",
+            "base.alt"
         ]
     },
     {
@@ -24,7 +25,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "base.alt"
         ]
     },
     {
@@ -35,7 +37,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -46,7 +49,8 @@
         ],
         "fillable_by": [
             "base.ext",
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -58,7 +62,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -70,7 +75,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -103,7 +109,8 @@
             "gibdd.history",
             "base.taxi",
             "customs.base",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "base.alt"
         ]
     },
     {
@@ -174,7 +181,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -187,7 +195,8 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -199,7 +208,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -210,7 +220,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -224,7 +235,8 @@
             "base.ext",
             "gibdd.eaisto",
             "base.taxi",
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -236,7 +248,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -248,7 +261,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "customs.base"
+            "customs.base",
+            "base.alt"
         ]
     },
     {
@@ -259,7 +273,8 @@
         ],
         "fillable_by": [
             "base.taxi",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -269,7 +284,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -282,7 +298,8 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -295,7 +312,8 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -307,7 +325,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -320,7 +339,8 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -333,7 +353,8 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -352,7 +373,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -364,7 +386,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -377,7 +400,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "base.alt"
         ]
     },
     {
@@ -401,7 +425,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -412,7 +437,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -423,7 +449,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -433,7 +460,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -443,7 +471,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -464,7 +493,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -475,7 +505,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -623,7 +654,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -633,7 +665,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -643,7 +676,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.history"
+            "gibdd.history",
+            "base.alt"
         ]
     },
     {
@@ -675,7 +709,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -687,7 +722,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -698,7 +734,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -708,7 +745,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -719,7 +757,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -731,7 +770,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -742,7 +782,8 @@
         ],
         "fillable_by": [
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -752,7 +793,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -762,7 +804,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -772,7 +815,8 @@
             "string"
         ],
         "fillable_by": [
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -783,7 +827,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {
@@ -795,7 +840,8 @@
         "fillable_by": [
             "base.ext",
             "base",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -807,7 +853,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi"
+            "base.taxi",
+            "base.alt"
         ]
     },
     {
@@ -919,7 +966,7 @@
         ]
     },
     {
-        "path":  "insurance.osago.items[].policy.is_active",
+        "path": "insurance.osago.items[].policy.is_active",
         "description": "ОСАГО: Является ли полис действующим?",
         "types": [
             "boolean"
@@ -952,7 +999,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "base.alt"
         ]
     },
     {

@@ -4,27 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## v3.19.0
+## UNRELEASED
 
 ### Added
 
-- Source `dtp.registry` [#105]
 - Source `base.alt` [#109]
 
 ### Changed
 
-- Field `additional_info.vehicle.owner.phone_number` description [#107]
-- Field with path `accidents.history.items[].number` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].accident.date` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].type` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].state` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].vehicle.brand.name` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].vehicle.model.name` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].vehicle.year` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].geo` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].damage.points` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].damage.codes` also fillable by `dtp.registry` [#105]
-- Field with path `accidents.history.items[].actuality.date` also fillable by `dtp.registry` [#105]
 - Field with path `additional_info.vehicle.category.code` also fillable by `base.alt` [#109]
 - Field with path `additional_info.vehicle.owner.type` also fillable by `base.alt` [#109]
 - Field with path `additional_info.vehicle.owner.phone_number` also fillable by `base.alt` [#109]
@@ -74,9 +61,31 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `tech_data.year` also fillable by `base.alt` [#109]
 - Field with path `tech_data.wheel.position` also fillable by `base.alt` [#109]
 
+[#109]:https://github.com/avtocod/specs/issues/109
+
+## v3.19.0
+
+### Added
+
+- Source `dtp.registry` [#105]
+
+### Changed
+
+- Field `additional_info.vehicle.owner.phone_number` description [#107]
+- Field with path `accidents.history.items[].number` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].accident.date` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].type` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].state` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].vehicle.brand.name` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].vehicle.model.name` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].vehicle.year` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].geo` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].damage.points` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].damage.codes` also fillable by `dtp.registry` [#105]
+- Field with path `accidents.history.items[].actuality.date` also fillable by `dtp.registry` [#105]
+
 [#105]:https://github.com/avtocod/specs/issues/105
 [#107]:https://github.com/avtocod/specs/issues/107
-[#109]:https://github.com/avtocod/specs/issues/109
 
 ## v3.18.0
 

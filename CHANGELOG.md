@@ -34,6 +34,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `additional_info.vehicle.passport.number` also fillable by `base.alt`, `base.alt.ext` [#109]
 - Field with path `additional_info.vehicle.passport.org.name` also fillable by `base.alt`, `base.alt.ext` [#109]
 - Field with path `additional_info.vehicle.sts.date.receive` also fillable by `base.alt`, `base.alt.ext` [#109]
+- Field with path `additional_info.vehicle.passport.date.receive` also fillable by `base.alt`, `base.alt.ext` [#109]
 - Field with path `calculate.osago.coefficients.regional.value` also fillable by `base.alt`, `base.alt.ext` [#109]
 - Field with path `identifiers.vehicle.body` also fillable by `base.alt`, `base.alt.ext` [#109]
 - Field with path `identifiers.vehicle.chassis` also fillable by `base.alt`, `base.alt.ext` [#109]
@@ -74,7 +75,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `tech_data.weight.max` also fillable by `base.alt`, `base.alt.ext` [#109]
 - Field with path `tech_data.weight.netto` also fillable by `base.alt`, `base.alt.ext` [#109]
 - Field with path `tech_data.wheel.position` also fillable by `base.alt`, `base.alt.ext` [#109]
-- Field with path `additional_info.vehicle.passport.date.receive` also fillable by `base.alt`, `base.alt.ext` [#109]
 
 [#105]:https://github.com/avtocod/specs/issues/105
 [#107]:https://github.com/avtocod/specs/issues/107

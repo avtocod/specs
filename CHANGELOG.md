@@ -12,6 +12,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
+- Field with path `insurance.osago.items[].policy.number` also fillable by `base`, `base.ext`, `base.alt` [#101]
+- Field with path `insurance.osago.items[].policy.series` also fillable by `base`, `base.ext`, `base.alt` [#101]
+- Field with path `insurance.osago.items[].date.start` also fillable by `base`, `base.ext`, `base.alt` [#101]
+- Field with path `insurance.osago.items[].date.end` also fillable by `base`, `base.ext`, `base.alt` [#101]
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `base`, `base.ext`, `base.alt` [#101]
 - Field with path `additional_info.vehicle.category.code` also fillable by `base.alt` [#109]
 - Field with path `additional_info.vehicle.owner.type` also fillable by `base.alt` [#109]
 - Field with path `additional_info.vehicle.owner.phone_number` also fillable by `base.alt` [#109]
@@ -61,6 +66,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `tech_data.year` also fillable by `base.alt` [#109]
 - Field with path `tech_data.wheel.position` also fillable by `base.alt` [#109]
 
+[#101]:https://github.com/avtocod/specs/issues/101
 [#109]:https://github.com/avtocod/specs/issues/109
 
 ## v3.19.0

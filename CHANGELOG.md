@@ -71,8 +71,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `tech_data.type.name` also fillable by `base.alt` [#109]
 - Field with path `tech_data.weight.max` also fillable by `base.alt` [#109]
 - Field with path `tech_data.weight.netto` also fillable by `base.alt` [#109]
-- Field with path `tech_data.weight.netto` also fillable by `base.alt` [#109]
 - Field with path `tech_data.year` also fillable by `base.alt` [#109]
+- Field with path `tech_data.wheel.position` also fillable by `base.alt` [#109]
 
 [#105]:https://github.com/avtocod/specs/issues/105
 [#107]:https://github.com/avtocod/specs/issues/107

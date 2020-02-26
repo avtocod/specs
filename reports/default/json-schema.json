@@ -934,7 +934,7 @@
                                     ]
                                 },
                                 "phone_number": {
-                                    "description": "Предполагаемый номер телефона владельца",
+                                    "description": "Номер телефона владельца из открытых источников",
                                     "oneOf": [
                                         {
                                             "type": "null"
@@ -2462,7 +2462,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     },
                                     "accident": {
@@ -2500,7 +2501,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     },
                                     "description": {
@@ -2514,7 +2516,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     }
                                 }
@@ -2530,7 +2533,8 @@
                                 ],
                                 "fillable_by": [
                                     "fines.base",
-                                    "gibdd.fines"
+                                    "gibdd.fines",
+                                    "fines.alt"
                                 ]
                             },
                             "vendor": {
@@ -2548,7 +2552,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     }
                                 }
@@ -2568,7 +2573,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     },
                                     "total": {
@@ -2582,7 +2588,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     }
                                 }
@@ -2603,7 +2610,8 @@
                                         "minimum": 0,
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     },
                                     "date": {
@@ -2625,7 +2633,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "gibdd.fines"
+                                                    "gibdd.fines",
+                                                    "fines.alt"
                                                 ]
                                             }
                                         }
@@ -2643,7 +2652,8 @@
                                 ],
                                 "fillable_by": [
                                     "fines.base",
-                                    "gibdd.fines"
+                                    "gibdd.fines",
+                                    "fines.alt"
                                 ]
                             },
                             "wire": {
@@ -2664,7 +2674,8 @@
                                                     "УФК по ИО (ГУ МВД России по Новгородская область, л\/с 04475979720)"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base"
+                                                    "fines.base",
+                                                    "fines.alt"
                                                 ]
                                             },
                                             "tin": {
@@ -2677,7 +2688,8 @@
                                                     "0592311114"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base"
+                                                    "fines.base",
+                                                    "fines.alt"
                                                 ]
                                             },
                                             "kpp": {
@@ -2690,7 +2702,8 @@
                                                     "059201001"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base"
+                                                    "fines.base",
+                                                    "fines.alt"
                                                 ]
                                             }
                                         }
@@ -2713,7 +2726,8 @@
                                                             "40101810151650010005"
                                                         ],
                                                         "fillable_by": [
-                                                            "fines.base"
+                                                            "fines.base",
+                                                            "fines.alt"
                                                         ]
                                                     }
                                                 }
@@ -2728,7 +2742,8 @@
                                                     "Отделение г. Зарайск"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base"
+                                                    "fines.base",
+                                                    "fines.alt"
                                                 ]
                                             },
                                             "bik": {
@@ -2741,7 +2756,8 @@
                                                     "049750005"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base"
+                                                    "fines.base",
+                                                    "fines.alt"
                                                 ]
                                             }
                                         }
@@ -2760,7 +2776,8 @@
                                                     "ШТРАФ ПО АДМИНИСТРАТИВНОМУ ПРАВОНАРУШЕНИЮ ПОСТАНОВЛЕНИЕ №18810161753886424481"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.base"
+                                                    "fines.base",
+                                                    "fines.alt"
                                                 ]
                                             }
                                         }
@@ -2776,7 +2793,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.alt"
                                         ]
                                     },
                                     "okato": {
@@ -2789,7 +2807,8 @@
                                             "78691068"
                                         ],
                                         "fillable_by": [
-                                            "fines.base"
+                                            "fines.base",
+                                            "fines.alt"
                                         ]
                                     }
                                 }
@@ -2850,7 +2869,8 @@
                     ],
                     "fillable_by": [
                         "fines.base",
-                        "gibdd.fines"
+                        "gibdd.fines",
+                        "fines.alt"
                     ]
                 },
                 "count": {
@@ -4423,7 +4443,8 @@
                                             "000043057"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp"
+                                            "gibdd.dtp",
+                                            "dtp.registry"
                                         ]
                                     },
                                     "accident": {
@@ -4444,7 +4465,8 @@
                                                     "1978-02-14 05:24:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp"
+                                                    "gibdd.dtp",
+                                                    "dtp.registry"
                                                 ]
                                             }
                                         }
@@ -4460,7 +4482,8 @@
                                             "Наезд на стоящее ТС"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp"
+                                            "gibdd.dtp",
+                                            "dtp.registry"
                                         ]
                                     },
                                     "state": {
@@ -4473,7 +4496,8 @@
                                             "Повреждено"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp"
+                                            "gibdd.dtp",
+                                            "dtp.registry"
                                         ]
                                     },
                                     "org": {
@@ -4535,7 +4559,8 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp"
+                                                    "gibdd.dtp",
+                                                    "dtp.registry"
                                                 ]
                                             },
                                             "codes": {
@@ -4560,7 +4585,8 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp"
+                                                    "gibdd.dtp",
+                                                    "dtp.registry"
                                                 ]
                                             }
                                         }
@@ -4583,7 +4609,8 @@
                                                             "Opel"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.dtp"
+                                                            "gibdd.dtp",
+                                                            "dtp.registry"
                                                         ]
                                                     }
                                                 }
@@ -4602,7 +4629,8 @@
                                                             "MONTEREY"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.dtp"
+                                                            "gibdd.dtp",
+                                                            "dtp.registry"
                                                         ]
                                                     }
                                                 }
@@ -4618,7 +4646,8 @@
                                                     2004
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp"
+                                                    "gibdd.dtp",
+                                                    "dtp.registry"
                                                 ]
                                             }
                                         }
@@ -4634,8 +4663,33 @@
                                             }
                                         ],
                                         "fillable_by": [
-                                            "gibdd.dtp"
+                                            "gibdd.dtp",
+                                            "dtp.registry"
                                         ]
+                                    },
+                                    "actuality": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "date": {
+                                                "description": "Дата актуальности данных",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2020-02-11 05:24:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.dtp",
+                                                    "dtp.registry"
+                                                ]
+                                            }
+                                        }
                                     }
                                 }
                             }

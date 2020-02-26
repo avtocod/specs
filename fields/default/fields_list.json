@@ -431,7 +431,7 @@
     },
     {
         "path": "additional_info.vehicle.owner.phone_number",
-        "description": "Дополнительная информация: Предполагаемый номер телефона владельца",
+        "description": "Дополнительная информация: Номер телефона владельца из открытых источников",
         "types": [
             "string"
         ],
@@ -1135,7 +1135,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1145,7 +1146,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1155,7 +1157,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1165,7 +1168,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1185,7 +1189,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1195,7 +1200,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1205,7 +1211,8 @@
             "integer"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1215,7 +1222,8 @@
             "object"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1225,7 +1233,8 @@
             "array"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1235,7 +1244,8 @@
             "array"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -1246,6 +1256,17 @@
         ],
         "fillable_by": [
             "base.moscow"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].actuality.date",
+        "description": "История ДТП: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp",
+            "dtp.registry"
         ]
     },
     {
@@ -2176,7 +2197,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2198,7 +2220,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2209,7 +2232,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2220,7 +2244,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2231,7 +2256,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2242,7 +2268,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2253,7 +2280,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2264,7 +2292,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2275,7 +2304,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2286,7 +2316,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2296,7 +2327,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2306,7 +2338,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2316,7 +2349,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2326,7 +2360,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2336,7 +2371,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2346,7 +2382,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2356,7 +2393,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2367,7 +2405,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {
@@ -2377,7 +2416,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.alt"
         ]
     },
     {
@@ -2388,7 +2428,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.alt"
         ]
     },
     {

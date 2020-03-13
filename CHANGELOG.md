@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Updated vehicles marks and models specs [#113]
+
+[#113]:https://github.com/avtocod/specs/issues/113
+
 ## v3.20.0
 
 ### Added

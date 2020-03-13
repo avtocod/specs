@@ -30,33 +30,13 @@
         "mark_id": "ID_MARK_CASE"
     },
     {
-        "name": "700J",
-        "id": "ID_MARK_JOHN_DEERE_MODEL_700J",
-        "mark_id": "ID_MARK_JOHN_DEERE"
-    },
-    {
         "name": "750J",
         "id": "ID_MARK_JOHN_DEERE_MODEL_750J",
         "mark_id": "ID_MARK_JOHN_DEERE"
     },
     {
-        "name": "816",
-        "id": "ID_MARK_SEM_MODEL_816",
-        "mark_id": "ID_MARK_SEM"
-    },
-    {
-        "name": "822",
-        "id": "ID_MARK_SEM_MODEL_822",
-        "mark_id": "ID_MARK_SEM"
-    },
-    {
         "name": "850J",
         "id": "ID_MARK_JOHN_DEERE_MODEL_850J",
-        "mark_id": "ID_MARK_JOHN_DEERE"
-    },
-    {
-        "name": "850J2",
-        "id": "ID_MARK_JOHN_DEERE_MODEL_850J2",
         "mark_id": "ID_MARK_JOHN_DEERE"
     },
     {
@@ -190,11 +170,6 @@
         "mark_id": "ID_MARK_KOMATSU"
     },
     {
-        "name": "D51",
-        "id": "ID_MARK_KOMATSU_MODEL_D51",
-        "mark_id": "ID_MARK_KOMATSU"
-    },
-    {
         "name": "D53",
         "id": "ID_MARK_KOMATSU_MODEL_D53",
         "mark_id": "ID_MARK_KOMATSU"
@@ -218,11 +193,6 @@
         "name": "D65",
         "id": "ID_MARK_KOMATSU_MODEL_D65",
         "mark_id": "ID_MARK_KOMATSU"
-    },
-    {
-        "name": "D6R2",
-        "id": "ID_MARK_CATHEFENG_MODEL_D6R2",
-        "mark_id": "ID_MARK_CATHEFENG"
     },
     {
         "name": "D7",
@@ -400,11 +370,6 @@
         "mark_id": "ID_MARK_SHEHWA"
     },
     {
-        "name": "TY 230",
-        "id": "ID_MARK_XCMG_MODEL_TY_230",
-        "mark_id": "ID_MARK_XCMG"
-    },
-    {
         "name": "TY165-2",
         "id": "ID_MARK_HBXG_MODEL_TY165_2",
         "mark_id": "ID_MARK_HBXG"
@@ -445,21 +410,6 @@
         "mark_id": "ID_MARK_ZOOMLION"
     },
     {
-        "name": "ZD160-3",
-        "id": "ID_MARK_ZOOMLION_MODEL_ZD160_3",
-        "mark_id": "ID_MARK_ZOOMLION"
-    },
-    {
-        "name": "ZD220-3",
-        "id": "ID_MARK_ZOOMLION_MODEL_ZD220_3",
-        "mark_id": "ID_MARK_ZOOMLION"
-    },
-    {
-        "name": "ZD320-3",
-        "id": "ID_MARK_ZOOMLION_MODEL_ZD320_3",
-        "mark_id": "ID_MARK_ZOOMLION"
-    },
-    {
         "name": "Б-10.V.М.0101-1E",
         "id": "ID_MARK_CHZT_MODEL_B_10_V_M_0101_1E",
         "mark_id": "ID_MARK_CHZT"
@@ -477,11 +427,6 @@
     {
         "name": "Б-11",
         "id": "ID_MARK_CHTZ_MODEL_B_11",
-        "mark_id": "ID_MARK_CHTZ"
-    },
-    {
-        "name": "Б-14",
-        "id": "ID_MARK_CHTZ_MODEL_B_14",
         "mark_id": "ID_MARK_CHTZ"
     },
     {
@@ -558,16 +503,6 @@
         "name": "ДЭТ-350",
         "id": "ID_MARK_CHTZ_MODEL_DET_350",
         "mark_id": "ID_MARK_CHTZ"
-    },
-    {
-        "name": "К-702",
-        "id": "ID_MARK_KIROVETS_MODEL_K_702_BULLDOZER",
-        "mark_id": "ID_MARK_KIROVETS"
-    },
-    {
-        "name": "К-703",
-        "id": "ID_MARK_KIROVETS_MODEL_K_703_BULLDOZER",
-        "mark_id": "ID_MARK_KIROVETS"
     },
     {
         "name": "К-707Т БК",
@@ -648,5 +583,70 @@
         "name": "Трелевочные трактора",
         "id": "ID_MARK_OTZ_MODEL_TRELEVOCHNYE_TRAKTORA",
         "mark_id": "ID_MARK_OTZ"
+    },
+    {
+        "name": "D6R2",
+        "id": "ID_MARK_CATHEFENG_MODEL_D6R2",
+        "mark_id": "ID_MARK_CATHEFENG"
+    },
+    {
+        "name": "Б-14",
+        "id": "ID_MARK_CHTZ_MODEL_B_14",
+        "mark_id": "ID_MARK_CHTZ"
+    },
+    {
+        "name": "700J",
+        "id": "ID_MARK_JOHN_DEERE_MODEL_700J",
+        "mark_id": "ID_MARK_JOHN_DEERE"
+    },
+    {
+        "name": "850J2",
+        "id": "ID_MARK_JOHN_DEERE_MODEL_850J2",
+        "mark_id": "ID_MARK_JOHN_DEERE"
+    },
+    {
+        "name": "К-702",
+        "id": "ID_MARK_KIROVETS_MODEL_K_702_BULLDOZER",
+        "mark_id": "ID_MARK_KIROVETS"
+    },
+    {
+        "name": "К-703",
+        "id": "ID_MARK_KIROVETS_MODEL_K_703_BULLDOZER",
+        "mark_id": "ID_MARK_KIROVETS"
+    },
+    {
+        "name": "D51",
+        "id": "ID_MARK_KOMATSU_MODEL_D51",
+        "mark_id": "ID_MARK_KOMATSU"
+    },
+    {
+        "name": "816",
+        "id": "ID_MARK_SEM_MODEL_816",
+        "mark_id": "ID_MARK_SEM"
+    },
+    {
+        "name": "822",
+        "id": "ID_MARK_SEM_MODEL_822",
+        "mark_id": "ID_MARK_SEM"
+    },
+    {
+        "name": "TY 230",
+        "id": "ID_MARK_XCMG_MODEL_TY_230",
+        "mark_id": "ID_MARK_XCMG"
+    },
+    {
+        "name": "ZD160-3",
+        "id": "ID_MARK_ZOOMLION_MODEL_ZD160_3",
+        "mark_id": "ID_MARK_ZOOMLION"
+    },
+    {
+        "name": "ZD220-3",
+        "id": "ID_MARK_ZOOMLION_MODEL_ZD220_3",
+        "mark_id": "ID_MARK_ZOOMLION"
+    },
+    {
+        "name": "ZD320-3",
+        "id": "ID_MARK_ZOOMLION_MODEL_ZD320_3",
+        "mark_id": "ID_MARK_ZOOMLION"
     }
 ]

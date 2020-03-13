@@ -5,9 +5,14 @@
         "mark_id": "ID_MARK_JAC"
     },
     {
-        "name": "17",
-        "id": "ID_MARK_VIPO_MODEL_17",
-        "mark_id": "ID_MARK_VIPO"
+        "name": "130",
+        "id": "ID_MARK_ZIL_MODEL_130",
+        "mark_id": "ID_MARK_ZIL"
+    },
+    {
+        "name": "131",
+        "id": "ID_MARK_ZIL_MODEL_131_SELF_LOADER",
+        "mark_id": "ID_MARK_ZIL"
     },
     {
         "name": "18",
@@ -25,6 +30,11 @@
         "mark_id": "ID_MARK_MAN"
     },
     {
+        "name": "3 Series",
+        "id": "ID_MARK_SCANIA_MODEL_3_SERIES_SELF_LOADER",
+        "mark_id": "ID_MARK_SCANIA"
+    },
+    {
         "name": "60.1",
         "id": "ID_MARK_ATLAS_MODEL_60_1",
         "mark_id": "ID_MARK_ATLAS"
@@ -33,61 +43,6 @@
         "name": "66",
         "id": "ID_MARK_GAZ_MODEL_66",
         "mark_id": "ID_MARK_GAZ"
-    },
-    {
-        "name": "130",
-        "id": "ID_MARK_ZIL_MODEL_130",
-        "mark_id": "ID_MARK_ZIL"
-    },
-    {
-        "name": "131",
-        "id": "ID_MARK_ZIL_MODEL_131_SELF_LOADER",
-        "mark_id": "ID_MARK_ZIL"
-    },
-    {
-        "name": "3 Series",
-        "id": "ID_MARK_SCANIA_MODEL_3_SERIES_SELF_LOADER",
-        "mark_id": "ID_MARK_SCANIA"
-    },
-    {
-        "name": "500",
-        "id": "ID_MARK_HINO_MODEL_500",
-        "mark_id": "ID_MARK_HINO"
-    },
-    {
-        "name": "613",
-        "id": "ID_MARK_TATA_MODEL_613",
-        "mark_id": "ID_MARK_TATA"
-    },
-    {
-        "name": "6303А5",
-        "id": "ID_MARK_MAZ_MODEL_6303A5",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "6312А5",
-        "id": "ID_MARK_MAZ_MODEL_6312A5",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "6312А8",
-        "id": "ID_MARK_MAZ_MODEL_6312A8",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "6312А9",
-        "id": "ID_MARK_MAZ_MODEL_6312A9",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "6312В5",
-        "id": "ID_MARK_MAZ_MODEL_6312V5",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "809D",
-        "id": "ID_MARK_MERCEDES_BENZ_MODEL_809D",
-        "mark_id": "ID_MARK_MERCEDES_BENZ"
     },
     {
         "name": "1061",
@@ -205,6 +160,11 @@
         "mark_id": "ID_MARK_MAZ"
     },
     {
+        "name": "500",
+        "id": "ID_MARK_HINO_MODEL_500",
+        "mark_id": "ID_MARK_HINO"
+    },
+    {
         "name": "5301",
         "id": "ID_MARK_ZIL_MODEL_5301_SELF_LOADER",
         "mark_id": "ID_MARK_ZIL"
@@ -222,11 +182,6 @@
     {
         "name": "5411",
         "id": "ID_MARK_KAMAZ_MODEL_5411",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "6520",
-        "id": "ID_MARK_KAMAZ_MODEL_6520",
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
@@ -270,6 +225,51 @@
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
+        "name": "431410",
+        "id": "ID_MARK_ZIL_MODEL_431410",
+        "mark_id": "ID_MARK_ZIL"
+    },
+    {
+        "name": "613",
+        "id": "ID_MARK_TATA_MODEL_613",
+        "mark_id": "ID_MARK_TATA"
+    },
+    {
+        "name": "6303А5",
+        "id": "ID_MARK_MAZ_MODEL_6303A5",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "6312А5",
+        "id": "ID_MARK_MAZ_MODEL_6312A5",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "6312А8",
+        "id": "ID_MARK_MAZ_MODEL_6312A8",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "6312А9",
+        "id": "ID_MARK_MAZ_MODEL_6312A9",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "6312В5",
+        "id": "ID_MARK_MAZ_MODEL_6312V5",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "809D",
+        "id": "ID_MARK_MERCEDES_BENZ_MODEL_809D",
+        "mark_id": "ID_MARK_MERCEDES_BENZ"
+    },
+    {
+        "name": "6520",
+        "id": "ID_MARK_KAMAZ_MODEL_6520",
+        "mark_id": "ID_MARK_KAMAZ"
+    },
+    {
         "name": "55102",
         "id": "ID_MARK_KAMAZ_MODEL_55102",
         "mark_id": "ID_MARK_KAMAZ"
@@ -298,11 +298,6 @@
         "name": "65117",
         "id": "ID_MARK_KAMAZ_MODEL_65117",
         "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "431410",
-        "id": "ID_MARK_ZIL_MODEL_431410",
-        "mark_id": "ID_MARK_ZIL"
     },
     {
         "name": "Actros 2632",
@@ -335,11 +330,6 @@
         "mark_id": "ID_MARK_NAVECO"
     },
     {
-        "name": "CA3310",
-        "id": "ID_MARK_FAW_MODEL_CA3310_SELF_LOADER",
-        "mark_id": "ID_MARK_FAW"
-    },
-    {
         "name": "CF",
         "id": "ID_MARK_DAF_MODEL_CF",
         "mark_id": "ID_MARK_DAF"
@@ -363,11 +353,6 @@
         "name": "Condor",
         "id": "ID_MARK_NISSAN_MODEL_CONDOR",
         "mark_id": "ID_MARK_NISSAN"
-    },
-    {
-        "name": "D - Series",
-        "id": "ID_MARK_AVIA_MODEL_D_SERIES_SELF_LOADER",
-        "mark_id": "ID_MARK_AVIA"
     },
     {
         "name": "DH 76",
@@ -400,11 +385,6 @@
         "mark_id": "ID_MARK_HINO"
     },
     {
-        "name": "E11",
-        "id": "ID_MARK_SISU_MODEL_E11_SELF_LOADER",
-        "mark_id": "ID_MARK_SISU"
-    },
-    {
         "name": "EQ 1110",
         "id": "ID_MARK_DONGFENG_MODEL_EQ_1110",
         "mark_id": "ID_MARK_DONGFENG"
@@ -425,11 +405,6 @@
         "mark_id": "ID_MARK_IVECO"
     },
     {
-        "name": "EuroTech",
-        "id": "ID_MARK_IVECO_MODEL_EUROTECH_SELF_LOADER",
-        "mark_id": "ID_MARK_IVECO"
-    },
-    {
         "name": "EuroTrakker",
         "id": "ID_MARK_IVECO_MODEL_EUROTRAKKER_SELF_LOADER",
         "mark_id": "ID_MARK_IVECO"
@@ -438,16 +413,6 @@
         "name": "F4CJF",
         "id": "ID_MARK_DAEWOO_MODEL_F4CJF",
         "mark_id": "ID_MARK_DAEWOO"
-    },
-    {
-        "name": "F65",
-        "id": "ID_MARK_FASSI_MODEL_F65",
-        "mark_id": "ID_MARK_FASSI"
-    },
-    {
-        "name": "F85",
-        "id": "ID_MARK_FASSI_MODEL_F85",
-        "mark_id": "ID_MARK_FASSI"
     },
     {
         "name": "FE",
@@ -570,11 +535,6 @@
         "mark_id": "ID_MARK_ZAGORETS"
     },
     {
-        "name": "INMAN IT 120",
-        "id": "ID_MARK_PALFINGER_MODEL_INMAN_IT_120",
-        "mark_id": "ID_MARK_PALFINGER"
-    },
-    {
         "name": "K7CRF",
         "id": "ID_MARK_DAEWOO_MODEL_K7CRF",
         "mark_id": "ID_MARK_DAEWOO"
@@ -598,21 +558,6 @@
         "name": "Kerax",
         "id": "ID_MARK_RENAULT_MODEL_KERAX_SELF_LOADER",
         "mark_id": "ID_MARK_RENAULT"
-    },
-    {
-        "name": "LS1256",
-        "id": "ID_MARK_DINTEK_MODEL_LS1256",
-        "mark_id": "ID_MARK_DINTEK"
-    },
-    {
-        "name": "LS2056",
-        "id": "ID_MARK_DINTEK_MODEL_LS2056",
-        "mark_id": "ID_MARK_DINTEK"
-    },
-    {
-        "name": "M30A",
-        "id": "ID_MARK_FASSI_MODEL_M30A",
-        "mark_id": "ID_MARK_FASSI"
     },
     {
         "name": "Mighty",
@@ -730,21 +675,6 @@
         "mark_id": "ID_MARK_SHACMAN_SHAANXI"
     },
     {
-        "name": "Series 300 (Dutro)",
-        "id": "ID_MARK_HINO_MODEL_SERIES_300_DUTRO_SELF_LOADER",
-        "mark_id": "ID_MARK_HINO"
-    },
-    {
-        "name": "Series 500",
-        "id": "ID_MARK_HINO_MODEL_SERIES_500_SELF_LOADER",
-        "mark_id": "ID_MARK_HINO"
-    },
-    {
-        "name": "Series 500 (Ranger)",
-        "id": "ID_MARK_HINO_MODEL_SERIES_500_RANGER_SELF_LOADER",
-        "mark_id": "ID_MARK_HINO"
-    },
-    {
         "name": "Sprinter",
         "id": "ID_MARK_MERCEDES_BENZ_MODEL_SPRINTER_SELF_LOADER",
         "mark_id": "ID_MARK_MERCEDES_BENZ"
@@ -860,26 +790,6 @@
         "mark_id": "ID_MARK_URALSPETSTRANS"
     },
     {
-        "name": "ИМ20",
-        "id": "ID_MARK_INMAN_MODEL_IM20",
-        "mark_id": "ID_MARK_INMAN"
-    },
-    {
-        "name": "ИМ50",
-        "id": "ID_MARK_INMAN_MODEL_IM50",
-        "mark_id": "ID_MARK_INMAN"
-    },
-    {
-        "name": "ИМ55",
-        "id": "ID_MARK_INMAN_MODEL_IM55",
-        "mark_id": "ID_MARK_INMAN"
-    },
-    {
-        "name": "ИМ95",
-        "id": "ID_MARK_INMAN_MODEL_IM95",
-        "mark_id": "ID_MARK_INMAN"
-    },
-    {
         "name": "КАМАЗ-43118 с КМУ Amcoveba",
         "id": "ID_MARK_CHAYKA_SERVIS_MODEL_KAMAZ_43118_S_KMU_AMCOVEBA",
         "mark_id": "ID_MARK_CHAYKA_SERVIS"
@@ -900,11 +810,6 @@
         "mark_id": "ID_MARK_ZAGORETS"
     },
     {
-        "name": "МАЗ 437043-328 с КМУ SQ 3,2SK2Q",
-        "id": "ID_MARK_ZAGORETS_MODEL_MAZ_437043_328_S_KMU_SQ_3_2SK2Q",
-        "mark_id": "ID_MARK_ZAGORETS"
-    },
-    {
         "name": "МПТ",
         "id": "ID_MARK_MOZYRMASH_MODEL_MPT",
         "mark_id": "ID_MARK_MOZYRMASH"
@@ -918,5 +823,100 @@
         "name": "Феникс",
         "id": "ID_MARK_BAW_MODEL_FENIKS",
         "mark_id": "ID_MARK_BAW"
+    },
+    {
+        "name": "D - Series",
+        "id": "ID_MARK_AVIA_MODEL_D_SERIES_SELF_LOADER",
+        "mark_id": "ID_MARK_AVIA"
+    },
+    {
+        "name": "LS1256",
+        "id": "ID_MARK_DINTEK_MODEL_LS1256",
+        "mark_id": "ID_MARK_DINTEK"
+    },
+    {
+        "name": "LS2056",
+        "id": "ID_MARK_DINTEK_MODEL_LS2056",
+        "mark_id": "ID_MARK_DINTEK"
+    },
+    {
+        "name": "F65",
+        "id": "ID_MARK_FASSI_MODEL_F65",
+        "mark_id": "ID_MARK_FASSI"
+    },
+    {
+        "name": "F85",
+        "id": "ID_MARK_FASSI_MODEL_F85",
+        "mark_id": "ID_MARK_FASSI"
+    },
+    {
+        "name": "M30A",
+        "id": "ID_MARK_FASSI_MODEL_M30A",
+        "mark_id": "ID_MARK_FASSI"
+    },
+    {
+        "name": "CA3310",
+        "id": "ID_MARK_FAW_MODEL_CA3310_SELF_LOADER",
+        "mark_id": "ID_MARK_FAW"
+    },
+    {
+        "name": "Series 300 (Dutro)",
+        "id": "ID_MARK_HINO_MODEL_SERIES_300_DUTRO_SELF_LOADER",
+        "mark_id": "ID_MARK_HINO"
+    },
+    {
+        "name": "Series 500 (Ranger)",
+        "id": "ID_MARK_HINO_MODEL_SERIES_500_RANGER_SELF_LOADER",
+        "mark_id": "ID_MARK_HINO"
+    },
+    {
+        "name": "Series 500",
+        "id": "ID_MARK_HINO_MODEL_SERIES_500_SELF_LOADER",
+        "mark_id": "ID_MARK_HINO"
+    },
+    {
+        "name": "ИМ20",
+        "id": "ID_MARK_INMAN_MODEL_IM20",
+        "mark_id": "ID_MARK_INMAN"
+    },
+    {
+        "name": "ИМ50",
+        "id": "ID_MARK_INMAN_MODEL_IM50",
+        "mark_id": "ID_MARK_INMAN"
+    },
+    {
+        "name": "ИМ55",
+        "id": "ID_MARK_INMAN_MODEL_IM55",
+        "mark_id": "ID_MARK_INMAN"
+    },
+    {
+        "name": "ИМ95",
+        "id": "ID_MARK_INMAN_MODEL_IM95",
+        "mark_id": "ID_MARK_INMAN"
+    },
+    {
+        "name": "EuroTech",
+        "id": "ID_MARK_IVECO_MODEL_EUROTECH_SELF_LOADER",
+        "mark_id": "ID_MARK_IVECO"
+    },
+    {
+        "name": "INMAN IT 120",
+        "id": "ID_MARK_PALFINGER_MODEL_INMAN_IT_120",
+        "mark_id": "ID_MARK_PALFINGER"
+    },
+    {
+        "name": "E11",
+        "id": "ID_MARK_SISU_MODEL_E11_SELF_LOADER",
+        "mark_id": "ID_MARK_SISU"
+    },
+    {
+        "name": "17",
+        "id": "ID_MARK_VIPO_MODEL_17",
+        "mark_id": "ID_MARK_VIPO"
+    },
+    {
+        "name": "МАЗ 437043-328 с КМУ SQ 3,2SK2Q",
+        "id": "ID_MARK_ZAGORETS_MODEL_MAZ_437043_328_S_KMU_SQ_3_2SK2Q",
+        "mark_id": "ID_MARK_ZAGORETS"
     }
 ]

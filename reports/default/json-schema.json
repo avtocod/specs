@@ -173,7 +173,8 @@
                                 "gibdd.eaisto",
                                 "base.tech",
                                 "tech.ext",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "reg_num": {
@@ -252,7 +253,8 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "chassis": {
@@ -272,7 +274,8 @@
                                 "base",
                                 "base.ext",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -319,7 +322,8 @@
                                 "ID_MARK_OPEL"
                             ],
                             "fillable_by": [
-                                "references.base"
+                                "references.base",
+                                "regactions.registry"
                             ]
                         },
                         "name": {
@@ -342,7 +346,8 @@
                                         "base.taxi",
                                         "customs.base",
                                         "gibdd.eaisto",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "rus": {
@@ -366,7 +371,8 @@
                                         "Opel"
                                     ],
                                     "fillable_by": [
-                                        "references.base"
+                                        "references.base",
+                                        "regactions.registry"
                                     ]
                                 }
                             }
@@ -410,7 +416,8 @@
                                 "ID_MARK_OPEL_MODEL_MONTEREY"
                             ],
                             "fillable_by": [
-                                "references.base"
+                                "references.base",
+                                "regactions.registry"
                             ]
                         },
                         "name": {
@@ -493,7 +500,8 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "color": {
@@ -551,7 +559,8 @@
                         "gibdd.eaisto",
                         "base.taxi",
                         "gibdd.history",
-                        "base.alt"
+                        "base.alt",
+                        "regactions.registry"
                     ]
                 },
                 "chassis": {
@@ -607,7 +616,8 @@
                                         "base",
                                         "base.ext",
                                         "customs.base",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 }
                             }
@@ -630,7 +640,8 @@
                             "fillable_by": [
                                 "base.taxi",
                                 "base.ext",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "model": {
@@ -668,7 +679,8 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "power": {
@@ -690,7 +702,8 @@
                                         "base.ext",
                                         "gibdd.history",
                                         "base.taxi",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "kw": {
@@ -758,7 +771,8 @@
                                 "base.ext",
                                 "gibdd.eaisto",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "max": {
@@ -776,7 +790,8 @@
                                 "base.ext",
                                 "gibdd.eaisto",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -829,7 +844,8 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -857,7 +873,8 @@
                                 "base",
                                 "base.ext",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -910,7 +927,8 @@
                                         "base.ext",
                                         "base.taxi",
                                         "gibdd.eaisto",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "description": {
@@ -926,7 +944,8 @@
                                         "base",
                                         "base.ext",
                                         "base.taxi",
-                                        "gibdd.eaisto"
+                                        "gibdd.eaisto",
+                                        "regactions.registry"
                                     ]
                                 }
                             }
@@ -955,7 +974,8 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "phone_number": {
@@ -1022,7 +1042,8 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 }
                             }
@@ -1333,7 +1354,8 @@
                                             "base",
                                             "base.ext",
                                             "base.taxi",
-                                            "base.alt"
+                                            "base.alt",
+                                            "regactions.registry"
                                         ]
                                     },
                                     "end": {
@@ -1445,7 +1467,8 @@
                                             "base",
                                             "base.ext",
                                             "base.taxi",
-                                            "base.alt"
+                                            "base.alt",
+                                            "regactions.registry"
                                         ]
                                     },
                                     "org": {
@@ -1464,7 +1487,8 @@
                                                 "fillable_by": [
                                                     "base.ext",
                                                     "base.taxi",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             },
                                             "tin": {
@@ -1478,7 +1502,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base.ext",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             },
                                             "kpp": {
@@ -1546,7 +1571,8 @@
                                     "base.ext",
                                     "base",
                                     "base.taxi",
-                                    "base.alt"
+                                    "base.alt",
+                                    "regactions.registry"
                                 ]
                             },
                             "geo": {
@@ -1563,7 +1589,8 @@
                                     "base",
                                     "base.ext",
                                     "base.taxi",
-                                    "base.alt"
+                                    "base.alt",
+                                    "regactions.registry"
                                 ]
                             },
                             "attributes": {
@@ -5210,7 +5237,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             },
                                             "end": {
@@ -5256,7 +5284,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             }
                                         }

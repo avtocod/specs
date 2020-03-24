@@ -173,5 +173,10 @@
         "name": "dtp.registry",
         "description": "Данные о ДТП зарегистрированных в базе ГИБДД (история ДТП)",
         "enabled": true
+    },
+    {
+        "name": "regactions.registry",
+        "description": "Реестр Регистрационных действий",
+        "enabled": true
     }
 ]

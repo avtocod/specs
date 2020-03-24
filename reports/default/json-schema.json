@@ -1629,6 +1629,29 @@
                                     "base",
                                     "base.ext"
                                 ]
+                            },
+                            "actuality": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата актуальности данных",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2020-02-11 05:24:00"
+                                        ],
+                                        "fillable_by": [
+                                            "regactions.registry"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }

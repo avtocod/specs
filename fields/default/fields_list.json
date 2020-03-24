@@ -937,6 +937,16 @@
         ]
     },
     {
+        "path": "registration_actions.items[].actuality.date",
+        "description": "Регистрационные действия: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "registration_actions.has_annulment",
         "description": "Регистрационные действия: Признак аннулирования последнего рег. действия",
         "types": [

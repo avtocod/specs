@@ -330,6 +330,16 @@
         ]
     },
     {
+        "path": "tech_data.engine.standarts.emission.euro",
+        "description": "Характеристики ТС: Экологический евро стандарт двигателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "tech_data.weight.netto",
         "description": "Характеристики ТС: Масса без нагрузки",
         "types": [
@@ -568,6 +578,26 @@
         "fillable_by": [
             "base",
             "base.ext"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.segment.euro.code",
+        "description": "Характеристики ТС: Сегмент автомобиля",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.segment.euro.description",
+        "description": "Характеристики ТС: Описание сегмента автомобиля",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
         ]
     },
     {

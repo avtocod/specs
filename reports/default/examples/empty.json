@@ -57,6 +57,11 @@
             "power": {
                 "hp": null,
                 "kw": null
+            },
+            "standarts": {
+                "emission": {
+                    "euro": null
+                }
             }
         },
         "weight": {
@@ -109,7 +114,13 @@
             "modifications": {
                 "was_modificated": null
             },
-            "notes": null
+            "notes": null,
+            "segment": {
+                "euro": {
+                    "code": null,
+                    "description": null
+                }
+            }
         },
         "catalog": {
             "transdekra": {

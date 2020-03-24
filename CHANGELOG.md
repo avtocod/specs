@@ -9,6 +9,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `regactions.registry` [#115]
+- Field with path `tech_data.engine.standarts.emission.euro` [#115]
+- Field with path `additional_info.vehicle.segment.euro.code` [#115]
+- Field with path `additional_info.vehicle.segment.euro.description` [#115]
 
 ## v3.20.0
 

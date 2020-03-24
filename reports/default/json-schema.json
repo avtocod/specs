@@ -711,6 +711,31 @@
                                     ]
                                 }
                             }
+                        },
+                        "standarts": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "emission": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "euro": {
+                                            "description": "Характеристики ТС: Экологический евро стандарт двигателя",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "Euro-4"
+                                            ],
+                                            "fillable_by": [
+                                                "regactions.registry"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },
@@ -1147,6 +1172,44 @@
                             "fillable_by": [
                                 "base.ext"
                             ]
+                        },
+                        "segment": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "euro": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "code": {
+                                            "description": "Характеристики ТС: Сегмент автомобиля",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "SUV"
+                                            ],
+                                            "fillable_by": [
+                                                "regactions.registry"
+                                            ]
+                                        },
+                                        "description": {
+                                            "description": "Характеристики ТС: Описание сегмента автомобиля",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "Спортивно-утилитарный автомобиль"
+                                            ],
+                                            "fillable_by": [
+                                                "regactions.registry"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },

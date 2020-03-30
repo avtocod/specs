@@ -97,8 +97,7 @@
             "string"
         ],
         "fillable_by": [
-            "references.base",
-            "regactions.registry"
+            "references.base"
         ]
     },
     {
@@ -125,8 +124,7 @@
             "string"
         ],
         "fillable_by": [
-            "references.base",
-            "regactions.registry"
+            "references.base"
         ]
     },
     {
@@ -154,8 +152,7 @@
             "string"
         ],
         "fillable_by": [
-            "references.base",
-            "regactions.registry"
+            "references.base"
         ]
     },
     {
@@ -776,7 +773,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {

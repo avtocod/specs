@@ -322,8 +322,7 @@
                                 "ID_MARK_OPEL"
                             ],
                             "fillable_by": [
-                                "references.base",
-                                "regactions.registry"
+                                "references.base"
                             ]
                         },
                         "name": {
@@ -371,8 +370,7 @@
                                         "Opel"
                                     ],
                                     "fillable_by": [
-                                        "references.base",
-                                        "regactions.registry"
+                                        "references.base"
                                     ]
                                 }
                             }
@@ -416,8 +414,7 @@
                                 "ID_MARK_OPEL_MODEL_MONTEREY"
                             ],
                             "fillable_by": [
-                                "references.base",
-                                "regactions.registry"
+                                "references.base"
                             ]
                         },
                         "name": {
@@ -1374,7 +1371,8 @@
                                             "base",
                                             "base.ext",
                                             "base.taxi",
-                                            "base.alt"
+                                            "base.alt",
+                                            "regactions.registry"
                                         ]
                                     }
                                 }

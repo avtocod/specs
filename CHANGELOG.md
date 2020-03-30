@@ -13,6 +13,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `additional_info.vehicle.segment.euro.code` [#115]
 - Field with path `additional_info.vehicle.segment.euro.description` [#115]
 - Field with path `registration_actions.items[].actuality.date` [#115]
+
+### Changed
+
 - Field with path `identifiers.vehicle.vin` also fillable by `regactions.registry` source [#115]
 - Field with path `identifiers.vehicle.body` also fillable by `regactions.registry` source [#115]
 - Field with path `identifiers.vehicle.chassis` also fillable by `regactions.registry` source [#115]

@@ -43,6 +43,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `registration_actions.items[].type` also fillable by `regactions.registry` source [#115]
 - Field with path `registration_actions.items[].geo` also fillable by `regactions.registry` source [#115]
 
+[#115]:https://github.com/avtocod/specs/issues/115
+
 ## v3.20.0
 
 ### Added

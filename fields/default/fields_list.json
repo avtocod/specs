@@ -13,7 +13,8 @@
             "gibdd.eaisto",
             "base.tech",
             "tech.ext",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -63,7 +64,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -76,7 +78,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -110,7 +113,8 @@
             "base.taxi",
             "customs.base",
             "gibdd.eaisto",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -196,7 +200,8 @@
             "base.ext",
             "gibdd.history",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -236,7 +241,8 @@
             "gibdd.eaisto",
             "base.taxi",
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -262,7 +268,8 @@
             "base",
             "base.ext",
             "customs.base",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -274,7 +281,8 @@
         "fillable_by": [
             "base.taxi",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -299,7 +307,8 @@
             "base.ext",
             "gibdd.history",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -313,7 +322,8 @@
             "base.ext",
             "gibdd.history",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -330,6 +340,16 @@
         ]
     },
     {
+        "path": "tech_data.engine.standarts.emission.euro",
+        "description": "Характеристики ТС: Экологический евростандарт двигателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "tech_data.weight.netto",
         "description": "Характеристики ТС: Масса без нагрузки",
         "types": [
@@ -340,7 +360,8 @@
             "base.ext",
             "gibdd.eaisto",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -354,7 +375,8 @@
             "base.ext",
             "gibdd.eaisto",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -387,7 +409,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -401,7 +424,8 @@
             "base.ext",
             "base.taxi",
             "gibdd.eaisto",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -414,7 +438,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "regactions.registry"
         ]
     },
     {
@@ -426,7 +451,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -450,7 +476,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -571,6 +598,26 @@
         ]
     },
     {
+        "path": "additional_info.vehicle.segment.euro.code",
+        "description": "Характеристики ТС: Сегмент автомобиля",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.segment.euro.description",
+        "description": "Характеристики ТС: Описание сегмента автомобиля",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "diagnostic_cards.items[].date.from",
         "description": "Диагностические карты: Дата начала действия диагностической карты",
         "types": [
@@ -655,7 +702,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -677,7 +725,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -710,7 +759,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -723,7 +773,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -771,7 +822,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -783,7 +835,8 @@
         "fillable_by": [
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -794,7 +847,8 @@
         ],
         "fillable_by": [
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -841,7 +895,8 @@
             "base.ext",
             "base",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -854,7 +909,8 @@
             "base",
             "base.ext",
             "base.taxi",
-            "base.alt"
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -876,6 +932,16 @@
         "fillable_by": [
             "base",
             "base.ext"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].actuality.date",
+        "description": "Регистрационные действия: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "regactions.registry"
         ]
     },
     {

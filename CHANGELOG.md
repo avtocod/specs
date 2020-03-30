@@ -4,6 +4,47 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `regactions.registry` [#115]
+- Field with path `tech_data.engine.standarts.emission.euro` [#115]
+- Field with path `additional_info.vehicle.segment.euro.code` [#115]
+- Field with path `additional_info.vehicle.segment.euro.description` [#115]
+- Field with path `registration_actions.items[].actuality.date` [#115]
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `regactions.registry` source [#115]
+- Field with path `identifiers.vehicle.body` also fillable by `regactions.registry` source [#115]
+- Field with path `identifiers.vehicle.chassis` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.brand.name.original` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.body.number` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.year` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.engine.fuel.type` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.engine.number` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.engine.volume` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.engine.power.hp` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.weight.netto` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.weight.max` also fillable by `regactions.registry` source [#115]
+- Field with path `tech_data.wheel.position` also fillable by `regactions.registry` source [#115]
+- Field with path `additional_info.vehicle.category.code` also fillable by `regactions.registry` source [#115]
+- Field with path `additional_info.vehicle.category.description` also fillable by `regactions.registry` source [#115]
+- Field with path `additional_info.vehicle.owner.type` also fillable by `regactions.registry` source [#115]
+- Field with path `additional_info.vehicle.owner.geo` also fillable by `regactions.registry` source [#115]
+- Field with path `ownership.history.items[].date.start` also fillable by `regactions.registry` source [#115]
+- Field with path `ownership.history.items[].owner.type` also fillable by `regactions.registry` source [#115]
+- Field with path `registration_actions.items[].date.start` also fillable by `regactions.registry` source [#115]
+- Field with path `registration_actions.items[].date.end` also fillable by `regactions.registry` source [#115]
+- Field with path `registration_actions.items[].owner.type` also fillable by `regactions.registry` source [#115]
+- Field with path `registration_actions.items[].owner.org.name` also fillable by `regactions.registry` source [#115]
+- Field with path `registration_actions.items[].owner.org.tin` also fillable by `regactions.registry` source [#115]
+- Field with path `registration_actions.items[].type` also fillable by `regactions.registry` source [#115]
+- Field with path `registration_actions.items[].geo` also fillable by `regactions.registry` source [#115]
+
+[#115]:https://github.com/avtocod/specs/issues/115
+
 ## v3.20.0
 
 ### Added

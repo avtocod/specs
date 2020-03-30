@@ -173,7 +173,8 @@
                                 "gibdd.eaisto",
                                 "base.tech",
                                 "tech.ext",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "reg_num": {
@@ -252,7 +253,8 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "chassis": {
@@ -272,7 +274,8 @@
                                 "base",
                                 "base.ext",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -342,7 +345,8 @@
                                         "base.taxi",
                                         "customs.base",
                                         "gibdd.eaisto",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "rus": {
@@ -493,7 +497,8 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "color": {
@@ -551,7 +556,8 @@
                         "gibdd.eaisto",
                         "base.taxi",
                         "gibdd.history",
-                        "base.alt"
+                        "base.alt",
+                        "regactions.registry"
                     ]
                 },
                 "chassis": {
@@ -607,7 +613,8 @@
                                         "base",
                                         "base.ext",
                                         "customs.base",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 }
                             }
@@ -630,7 +637,8 @@
                             "fillable_by": [
                                 "base.taxi",
                                 "base.ext",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "model": {
@@ -668,7 +676,8 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "power": {
@@ -690,7 +699,8 @@
                                         "base.ext",
                                         "gibdd.history",
                                         "base.taxi",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "kw": {
@@ -709,6 +719,31 @@
                                         "gibdd.history",
                                         "base.alt"
                                     ]
+                                }
+                            }
+                        },
+                        "standarts": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "emission": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "euro": {
+                                            "description": "Характеристики ТС: Экологический евростандарт двигателя",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "Euro-4"
+                                            ],
+                                            "fillable_by": [
+                                                "regactions.registry"
+                                            ]
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -733,7 +768,8 @@
                                 "base.ext",
                                 "gibdd.eaisto",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         },
                         "max": {
@@ -751,7 +787,8 @@
                                 "base.ext",
                                 "gibdd.eaisto",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -832,7 +869,8 @@
                                 "base",
                                 "base.ext",
                                 "base.taxi",
-                                "base.alt"
+                                "base.alt",
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -885,7 +923,8 @@
                                         "base.ext",
                                         "base.taxi",
                                         "gibdd.eaisto",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "description": {
@@ -901,7 +940,8 @@
                                         "base",
                                         "base.ext",
                                         "base.taxi",
-                                        "gibdd.eaisto"
+                                        "gibdd.eaisto",
+                                        "regactions.registry"
                                     ]
                                 }
                             }
@@ -930,7 +970,8 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 },
                                 "phone_number": {
@@ -997,7 +1038,8 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "base.alt"
+                                        "base.alt",
+                                        "regactions.registry"
                                     ]
                                 }
                             }
@@ -1147,6 +1189,44 @@
                             "fillable_by": [
                                 "base.ext"
                             ]
+                        },
+                        "segment": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "euro": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "code": {
+                                            "description": "Характеристики ТС: Сегмент автомобиля",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "SUV"
+                                            ],
+                                            "fillable_by": [
+                                                "regactions.registry"
+                                            ]
+                                        },
+                                        "description": {
+                                            "description": "Характеристики ТС: Описание сегмента автомобиля",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "Спортивно-утилитарный автомобиль"
+                                            ],
+                                            "fillable_by": [
+                                                "regactions.registry"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },
@@ -1270,7 +1350,8 @@
                                             "base",
                                             "base.ext",
                                             "base.taxi",
-                                            "base.alt"
+                                            "base.alt",
+                                            "regactions.registry"
                                         ]
                                     },
                                     "end": {
@@ -1290,7 +1371,8 @@
                                             "base",
                                             "base.ext",
                                             "base.taxi",
-                                            "base.alt"
+                                            "base.alt",
+                                            "regactions.registry"
                                         ]
                                     }
                                 }
@@ -1382,7 +1464,8 @@
                                             "base",
                                             "base.ext",
                                             "base.taxi",
-                                            "base.alt"
+                                            "base.alt",
+                                            "regactions.registry"
                                         ]
                                     },
                                     "org": {
@@ -1401,7 +1484,8 @@
                                                 "fillable_by": [
                                                     "base.ext",
                                                     "base.taxi",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             },
                                             "tin": {
@@ -1415,7 +1499,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base.ext",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             },
                                             "kpp": {
@@ -1483,7 +1568,8 @@
                                     "base.ext",
                                     "base",
                                     "base.taxi",
-                                    "base.alt"
+                                    "base.alt",
+                                    "regactions.registry"
                                 ]
                             },
                             "geo": {
@@ -1500,7 +1586,8 @@
                                     "base",
                                     "base.ext",
                                     "base.taxi",
-                                    "base.alt"
+                                    "base.alt",
+                                    "regactions.registry"
                                 ]
                             },
                             "attributes": {
@@ -1540,6 +1627,29 @@
                                     "base",
                                     "base.ext"
                                 ]
+                            },
+                            "actuality": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата актуальности данных",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2020-02-11 05:24:00"
+                                        ],
+                                        "fillable_by": [
+                                            "regactions.registry"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
@@ -5147,7 +5257,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             },
                                             "end": {
@@ -5193,7 +5304,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
-                                                    "base.alt"
+                                                    "base.alt",
+                                                    "regactions.registry"
                                                 ]
                                             }
                                         }

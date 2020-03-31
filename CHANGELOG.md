@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.23.0
+
+### Added
+
+- Source `pledge.fnp` [#117]
+
+[#117]:https://github.com/avtocod/specs/issues/117
+
 ## v3.22.0
 
 ### Changed

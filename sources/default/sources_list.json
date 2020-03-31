@@ -178,5 +178,10 @@
         "name": "regactions.registry",
         "description": "Реестр Регистрационных действий",
         "enabled": true
+    },
+    {
+        "name": "pledge.fnp",
+        "description": "Данные о нахождении ТС в залоге (федеральная нотариальная палата)",
+        "enabled": true
     }
 ]

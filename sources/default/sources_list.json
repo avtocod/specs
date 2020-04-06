@@ -178,5 +178,10 @@
         "name": "regactions.registry",
         "description": "Реестр Регистрационных действий",
         "enabled": true
+    },
+    {
+        "name": "pledge.fnp",
+        "description": "Обременения на ТС по данным ФНП",
+        "enabled": true
     }
 ]

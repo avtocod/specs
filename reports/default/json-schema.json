@@ -3909,7 +3909,8 @@
                                         ],
                                         "fillable_by": [
                                             "pledge",
-                                            "pledge.house"
+                                            "pledge.house",
+                                            "pledge.fnp"
                                         ]
                                     }
                                 }
@@ -3925,7 +3926,8 @@
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.fnp"
                                 ]
                             },
                             "pledgors": {
@@ -3945,7 +3947,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.fnp"
                                             ]
                                         },
                                         "type": {
@@ -3967,7 +3970,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.fnp"
                                             ]
                                         },
                                         "dob": {
@@ -3985,7 +3989,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.fnp"
                                             ]
                                         }
                                     }
@@ -4008,7 +4013,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.fnp"
                                             ]
                                         },
                                         "type": {
@@ -4030,7 +4036,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.fnp"
                                             ]
                                         },
                                         "dob": {
@@ -4048,7 +4055,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.fnp"
                                             ]
                                         }
                                     }
@@ -4066,7 +4074,8 @@
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.fnp"
                                 ]
                             },
                             "in_pledge": {
@@ -4081,7 +4090,8 @@
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.fnp"
                                 ]
                             },
                             "data": {
@@ -4098,7 +4108,8 @@
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.fnp"
                                 ]
                             }
                         }

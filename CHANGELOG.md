@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.23.0
+
+### Added
+
+- Source `pledge.fnp` [#117]
+
+### Changed
+
+- Field with path `pledges.items[].date.event` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].number` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].type` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].in_pledge` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].pledgors[].name` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].pledgors[].type` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].pledgors[].dob` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].pledgees[].name` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].pledgees[].type` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].pledgees[].dob` also fillable by `pledge.fnp` source [#117]
+- Field with path `pledges.items[].data` also fillable by `pledge.fnp` source [#117]
+
+[#117]:https://github.com/avtocod/specs/issues/117
+
 ## v3.22.0
 
 ### Changed

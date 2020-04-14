@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.23.1
+
+### Changed
+
+- `SpecificationsTest::testFieldsListAndReportSchemaAreSame` improved [#111]
+
+### Fixed
+
+- Field with path `identifiers.vehicle.body` also fallible by `gibdd.history` source in `./fields/default/fields_list.json` [#111]
+
+[#111]:https://github.com/avtocod/specs/issues/111
+
 ## v3.23.0
 
 ### Added

@@ -377,6 +377,14 @@ class SpecificationsTest extends AbstractTestCase
                     "Schema should contains same 'fillable_by' for field with path {$field->getPath()} (from 'fields_list.json' file)"
                 );
             }
+
+            foreach ($schema_field_data['fillable_by'] as $source_name) {
+                $this->assertContains(
+                    $source_name,
+                    $field->getFillableBy(),
+                    "Schema should contains existing 'fillable_by' for field with path {$field->getPath()} (from 'fields_list.json' file)"
+                );
+            }
         }
     }
 

@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.23.2
+
+### Added
+
+- References value `REFUSE` in `pledges.items[].pledgors[].name` [#122]
+- References value `REFUSE` in `pledges.items[].pledgees[].name` [#122]
+
+[#122]:https://github.com/avtocod/specs/issues/122
+
 ## v3.23.1
 
 ### Changed

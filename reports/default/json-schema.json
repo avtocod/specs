@@ -71,6 +71,13 @@
                 "USD"
             ]
         },
+        "refuse_type": {
+            "description": "Используется при отказе от публикации информации о залогодержателе на основании ч. 3 ст. 103.3",
+            "type": "string",
+            "enum": [
+                "REFUSE"
+            ]
+        },
         "geo_raw_data": {
             "type": "object",
             "properties": {
@@ -3938,9 +3945,16 @@
                                     "properties": {
                                         "name": {
                                             "description": "Залогодатель (имя)",
-                                            "type": [
-                                                "string",
-                                                "null"
+                                            "oneOf": [
+                                                {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/refuse_type"
+                                                }
                                             ],
                                             "examples": [
                                                 "Евгения Сергеевна Дроздова",
@@ -4005,9 +4019,16 @@
                                     "properties": {
                                         "name": {
                                             "description": "Имя залогодержателя",
-                                            "type": [
-                                                "string",
-                                                "null"
+                                            "oneOf": [
+                                                {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/refuse_type"
+                                                }
                                             ],
                                             "examples": [
                                                 "ЗАО ГлавЭлектро",

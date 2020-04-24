@@ -237,6 +237,7 @@
                                 "36КС619977"
                             ],
                             "fillable_by": [
+                                "base",
                                 "base.ext",
                                 "gibdd.history",
                                 "base.alt"
@@ -642,6 +643,7 @@
                                 "K24Z41002064"
                             ],
                             "fillable_by": [
+                                "base",
                                 "base.taxi",
                                 "base.ext",
                                 "base.alt",
@@ -662,6 +664,7 @@
                                         "R4T9186"
                                     ],
                                     "fillable_by": [
+                                        "base",
                                         "base.ext",
                                         "base.alt"
                                     ]
@@ -1073,6 +1076,7 @@
                                                 "2018-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
+                                                "base",
                                                 "base.ext",
                                                 "base.alt"
                                             ]
@@ -1089,6 +1093,7 @@
                                         false
                                     ],
                                     "fillable_by": [
+                                        "base",
                                         "base.ext"
                                     ]
                                 },
@@ -1107,6 +1112,7 @@
                                     ],
                                     "fillable_by": [
                                         "gibdd.history",
+                                        "base",
                                         "base.ext",
                                         "base.alt"
                                     ]
@@ -1126,6 +1132,7 @@
                                             ],
                                             "fillable_by": [
                                                 "gibdd.history",
+                                                "base",
                                                 "base.ext",
                                                 "base.alt"
                                             ]
@@ -1156,6 +1163,7 @@
                                                 "2021-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
+                                                "base",
                                                 "base.ext",
                                                 "base.alt"
                                             ]
@@ -1194,6 +1202,7 @@
                                 "type": "string"
                             },
                             "fillable_by": [
+                                "base",
                                 "base.ext"
                             ]
                         },
@@ -1421,6 +1430,7 @@
                                             "10ЕС040762"
                                         ],
                                         "fillable_by": [
+                                            "base",
                                             "base.ext",
                                             "base.alt"
                                         ]
@@ -1489,6 +1499,7 @@
                                                     "ООО ОблМотор"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
                                                     "base.ext",
                                                     "base.taxi",
                                                     "base.alt",
@@ -1505,6 +1516,7 @@
                                                     "3664069397"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
                                                     "base.ext",
                                                     "base.alt",
                                                     "regactions.registry"
@@ -1520,6 +1532,7 @@
                                                     "773301001"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
                                                     "base.ext",
                                                     "base.alt"
                                                 ]
@@ -1534,6 +1547,7 @@
                                                     "1053600591197"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
                                                     "base.ext",
                                                     "base.alt"
                                                 ]
@@ -1618,6 +1632,7 @@
                                     null
                                 ],
                                 "fillable_by": [
+                                    "base",
                                     "base.ext"
                                 ]
                             },
@@ -1677,6 +1692,7 @@
                         null
                     ],
                     "fillable_by": [
+                        "base",
                         "base.ext"
                     ]
                 }
@@ -3026,6 +3042,7 @@
                                             "2017-11-22 00:00:00"
                                         ],
                                         "fillable_by": [
+                                            "base",
                                             "base.ext"
                                         ]
                                     }
@@ -3045,6 +3062,7 @@
                                             "ОАО ТекстильРыбБухСнос"
                                         ],
                                         "fillable_by": [
+                                            "base",
                                             "base.ext"
                                         ]
                                     }
@@ -3068,6 +3086,7 @@
                                                     "АО ВТБ ЛИЗИНГ"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
                                                     "base.ext"
                                                 ]
                                             }
@@ -3085,6 +3104,7 @@
                                     "6297557802"
                                 ],
                                 "fillable_by": [
+                                    "base",
                                     "base.ext"
                                 ]
                             }
@@ -3102,6 +3122,7 @@
                         null
                     ],
                     "fillable_by": [
+                        "base",
                         "base.ext",
                         "base.taxi"
                     ]

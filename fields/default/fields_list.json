@@ -49,6 +49,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "gibdd.history",
             "base.alt"
@@ -280,6 +281,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.taxi",
             "base.ext",
             "base.alt",
@@ -293,6 +295,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -488,6 +491,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -499,6 +503,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -510,6 +515,7 @@
             "boolean"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -521,6 +527,7 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -533,6 +540,7 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -544,6 +552,7 @@
             "array"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -797,6 +806,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -834,6 +844,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.taxi",
             "base.alt",
@@ -847,6 +858,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.alt",
             "regactions.registry"
@@ -859,6 +871,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -870,6 +883,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.alt"
         ]
@@ -921,6 +935,7 @@
             "array"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -952,6 +967,7 @@
             "boolean"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -1972,6 +1988,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -1982,6 +1999,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -1992,6 +2010,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -2002,6 +2021,7 @@
             "string"
         ],
         "fillable_by": [
+            "base",
             "base.ext"
         ]
     },
@@ -2012,6 +2032,7 @@
             "boolean"
         ],
         "fillable_by": [
+            "base",
             "base.ext",
             "base.taxi"
         ]

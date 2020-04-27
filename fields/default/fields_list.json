@@ -1633,7 +1633,7 @@
     },
     {
         "path": "pledges.items[].pledgors[].name",
-        "description": "Обременения на ТС: Залогодатель (имя)",
+        "description": "Обременения на ТС: Залогодатель (имя) [REFUSE, Евгения Сергеевна Дроздова, ...]",
         "types": [
             "string"
         ],
@@ -1669,7 +1669,7 @@
     },
     {
         "path": "pledges.items[].pledgees[].name",
-        "description": "Обременения на ТС: Имя залогодержателя",
+        "description": "Обременения на ТС: Имя залогодержателя [REFUSE, ЗАО ГлавЭлектро, ...]",
         "types": [
             "string"
         ],

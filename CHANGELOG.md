@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.26.0
+
+### Added
+
+- Field with path `taxi.history.items[].date.actual` [#125]
+
+[#125]:https://github.com/avtocod/specs/issues/125
+
 ## v3.25.1
 
 ### Added

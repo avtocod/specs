@@ -6,9 +6,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## v3.25.1
 
+### Added
+
+- Example for `pledges` block with `REFUSE` values for `pledges.items[].pledgors[].name`, `pledges.items[].pledgees[].name`
+
 ### Fixed
 
-- Fixed `oneOf` keyword on `anyOf` in `./reports/default/json-schema.json`
+- Fixed `oneOf` keyword on `anyOf` for `pledges.items[].pledgors[].name`, `pledges.items[].pledgees[].name` in `./reports/default/json-schema.json`
 
 ## v3.25.0
 

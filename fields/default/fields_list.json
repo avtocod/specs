@@ -2058,6 +2058,16 @@
         ]
     },
     {
+        "path": "taxi.history.items[].date.actual",
+        "description": "Такси: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
+        ]
+    },
+    {
         "path": "taxi.history.items[].license.number",
         "description": "Такси: Регистрационный номер разрешения",
         "types": [

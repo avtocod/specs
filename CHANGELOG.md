@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.25.1
+
+### Added
+
+- Example for `pledges` block with `REFUSE` values for `pledges.items[].pledgors[].name`, `pledges.items[].pledgees[].name`
+
+### Fixed
+
+- Replaced `oneOf` keyword with `anyOf` for `pledges.items[].pledgors[].name`, `pledges.items[].pledgees[].name` in `./reports/default/json-schema.json`
+
 ## v3.25.0
 
 ### Added

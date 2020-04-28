@@ -582,6 +582,29 @@
                 "type": "Возникновение",
                 "in_pledge": true,
                 "data": null
+            },
+            {
+                "date": {
+                    "event": "2013-06-27 00:00:00"
+                },
+                "number": "2013-001-406288-623\/242",
+                "pledgors": [
+                    {
+                        "name": "REFUSE",
+                        "type": "PERSON",
+                        "dob": "1983-08-31"
+                    }
+                ],
+                "pledgees": [
+                    {
+                        "name": "REFUSE",
+                        "type": "LEGAL",
+                        "dob": null
+                    }
+                ],
+                "type": "Исключение",
+                "in_pledge": false,
+                "data": null
             }
         ],
         "count": 1

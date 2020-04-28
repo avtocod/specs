@@ -3966,7 +3966,7 @@
                                     "properties": {
                                         "name": {
                                             "description": "Залогодатель (имя)",
-                                            "oneOf": [
+                                            "anyOf": [
                                                 {
                                                     "type": [
                                                         "string",
@@ -4040,7 +4040,7 @@
                                     "properties": {
                                         "name": {
                                             "description": "Имя залогодержателя",
-                                            "oneOf": [
+                                            "anyOf": [
                                                 {
                                                     "type": [
                                                         "string",

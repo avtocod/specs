@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.25.1
+
+### Fixed
+
+- Fixed `oneOf` keyword on `anyOf` in `./reports/default/json-schema.json`
+
 ## v3.25.0
 
 ### Added

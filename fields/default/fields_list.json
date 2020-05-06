@@ -741,7 +741,7 @@
     },
     {
         "path": "ownership.history.items[].last_operation.code",
-        "description": "История владения: код последней операции в периоде владения",
+        "description": "История владения: Код последней операции в периоде владения",
         "types": [
             "string"
         ],
@@ -751,7 +751,7 @@
     },
     {
         "path": "ownership.history.items[].last_operation.description",
-        "description": "История владения: описание последней операции в периоде владения",
+        "description": "История владения: Описание последней операции в периоде владения",
         "types": [
             "string"
         ],
@@ -930,7 +930,7 @@
     },
     {
         "path": "registration_actions.items[].attributes",
-        "description": "Вероятный признак рег. действия [LEASING, ANNULMENT, ...]",
+        "description": "Регистрационные действия: Вероятный признак рег. действия [LEASING, ANNULMENT, ...]",
         "types": [
             "array"
         ],
@@ -941,7 +941,7 @@
     },
     {
         "path": "registration_actions.items[].usage_allowed",
-        "description": "Вероятный признак, возможна ли эксплуатация ТС?",
+        "description": "Регистрационные действия: Вероятный признак, возможна ли эксплуатация ТС?",
         "types": [
             "boolean"
         ],

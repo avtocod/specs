@@ -4,31 +4,60 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.26.0
+
+### Added
+
+- Field with path `taxi.history.items[].date.actual` [#125]
+
+[#125]:https://github.com/avtocod/specs/issues/125
+
+## v3.25.1
+
+### Added
+
+- Example for `pledges` block with `REFUSE` values for `pledges.items[].pledgors[].name`, `pledges.items[].pledgees[].name`
+
+### Fixed
+
+- Replaced `oneOf` keyword with `anyOf` for `pledges.items[].pledgors[].name`, `pledges.items[].pledgees[].name` in `./reports/default/json-schema.json`
+
+## v3.25.0
+
+### Added
+
+- References value `REFUSE` in `pledges.items[].pledgors[].name` [#122]
+- References value `REFUSE` in `pledges.items[].pledgees[].name` [#122]
+
+[#122]:https://github.com/avtocod/specs/issues/122
+
 ## v3.24.0
 
 ### Changed
 
-- Field with path `identifiers.vehicle.pts` also fillable by `base` source
-- Field with path `tech_data.engine.number` also fillable by `base` source
-- Field with path `tech_data.engine.model.name` also fillable by `base` source
-- Field with path `additional_info.vehicle.sts.date.receive` also fillable by `base` source
-- Field with path `additional_info.vehicle.passport.date.receive` also fillable by `base` source
-- Field with path `additional_info.vehicle.passport.has_dublicate` also fillable by `base` source
-- Field with path `additional_info.vehicle.passport.number` also fillable by `base` source
-- Field with path `additional_info.vehicle.passport.org.name` also fillable by `base` source
-- Field with path `additional_info.vehicle.notes` also fillable by `base` source
-- Field with path `registration_actions.items[].identifiers.pts` also fillable by `base` source
-- Field with path `registration_actions.items[].owner.org.name` also fillable by `base` source
-- Field with path `registration_actions.items[].owner.org.tin` also fillable by `base` source
-- Field with path `registration_actions.items[].owner.org.kpp` also fillable by `base` source
-- Field with path `registration_actions.items[].owner.org.ogrn` also fillable by `base` source
-- Field with path `registration_actions.items[].attributes` also fillable by `base` source
-- Field with path `registration_actions.has_annulment` also fillable by `base` source
-- Field with path `leasings.items[].tin` also fillable by `base` source
-- Field with path `leasings.items[].company.name` also fillable by `base` source
-- Field with path `leasings.items[].lessor.company.name` also fillable by `base` source
-- Field with path `leasings.items[].date.event` also fillable by `base` source
-- Field with path `leasings.used_in_leasing` also fillable by `base` source
+- Field with path `identifiers.vehicle.pts` also fillable by `base` source [#121]
+- Field with path `tech_data.engine.number` also fillable by `base` source [#121]
+- Field with path `tech_data.engine.model.name` also fillable by `base` source [#121]
+- Field with path `additional_info.vehicle.sts.date.receive` also fillable by `base` source [#121]
+- Field with path `additional_info.vehicle.passport.date.receive` also fillable by `base` source [#121]
+- Field with path `additional_info.vehicle.passport.has_dublicate` also fillable by `base` source [#121]
+- Field with path `additional_info.vehicle.passport.number` also fillable by `base` source [#121]
+- Field with path `additional_info.vehicle.passport.org.name` also fillable by `base` source [#121]
+- Field with path `additional_info.vehicle.notes` also fillable by `base` source [#121]
+- Field with path `registration_actions.items[].identifiers.pts` also fillable by `base` source [#121]
+- Field with path `registration_actions.items[].owner.org.name` also fillable by `base` source [#121]
+- Field with path `registration_actions.items[].owner.org.tin` also fillable by `base` source [#121]
+- Field with path `registration_actions.items[].owner.org.kpp` also fillable by `base` source [#121]
+- Field with path `registration_actions.items[].owner.org.ogrn` also fillable by `base` source [#121]
+- Field with path `registration_actions.items[].attributes` also fillable by `base` source [#121]
+- Field with path `registration_actions.has_annulment` also fillable by `base` source [#121]
+- Field with path `leasings.items[].tin` also fillable by `base` source [#121]
+- Field with path `leasings.items[].company.name` also fillable by `base` source [#121]
+- Field with path `leasings.items[].lessor.company.name` also fillable by `base` source [#121]
+- Field with path `leasings.items[].date.event` also fillable by `base` source [#121]
+- Field with path `leasings.used_in_leasing` also fillable by `base` source [#121]
+
+[#121]:https://github.com/avtocod/specs/issues/121
 
 ## v3.23.1
 

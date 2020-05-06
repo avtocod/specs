@@ -71,6 +71,13 @@
                 "USD"
             ]
         },
+        "refuse_type": {
+            "description": "Используется при отказе от публикации информации о залогодержателе в соответствии с ОЗРФоН ч. 3 ст. 103.3",
+            "type": "string",
+            "enum": [
+                "REFUSE"
+            ]
+        },
         "geo_raw_data": {
             "type": "object",
             "properties": {
@@ -3490,6 +3497,23 @@
                                                 "fillable_by": [
                                                     "av.taxi"
                                                 ]
+                                            },
+                                            "actual": {
+                                                "description": "Дата актуальности данных",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2016-11-10 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "av.taxi"
+                                                ]
                                             }
                                         }
                                     },
@@ -3959,12 +3983,20 @@
                                     "properties": {
                                         "name": {
                                             "description": "Залогодатель (имя)",
-                                            "type": [
-                                                "string",
-                                                "null"
+                                            "anyOf": [
+                                                {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/refuse_type"
+                                                }
                                             ],
                                             "examples": [
-                                                "Евгения Сергеевна Дроздова"
+                                                "Евгения Сергеевна Дроздова",
+                                                "REFUSE"
                                             ],
                                             "fillable_by": [
                                                 "pledge",
@@ -4025,12 +4057,20 @@
                                     "properties": {
                                         "name": {
                                             "description": "Имя залогодержателя",
-                                            "type": [
-                                                "string",
-                                                "null"
+                                            "anyOf": [
+                                                {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/refuse_type"
+                                                }
                                             ],
                                             "examples": [
-                                                "ЗАО ГлавЭлектро"
+                                                "ЗАО ГлавЭлектро",
+                                                "REFUSE"
                                             ],
                                             "fillable_by": [
                                                 "pledge",

@@ -741,7 +741,7 @@
                                     "additionalProperties": false,
                                     "properties": {
                                         "euro": {
-                                            "description": "Характеристики ТС: Экологический евростандарт двигателя",
+                                            "description": "Экологический евростандарт двигателя",
                                             "type": [
                                                 "string",
                                                 "null"
@@ -1215,7 +1215,7 @@
                                     "additionalProperties": false,
                                     "properties": {
                                         "code": {
-                                            "description": "Характеристики ТС: Сегмент автомобиля",
+                                            "description": "Сегмент автомобиля",
                                             "type": [
                                                 "string",
                                                 "null"
@@ -1228,7 +1228,7 @@
                                             ]
                                         },
                                         "description": {
-                                            "description": "Характеристики ТС: Описание сегмента автомобиля",
+                                            "description": "Описание сегмента автомобиля",
                                             "type": [
                                                 "string",
                                                 "null"
@@ -1682,7 +1682,7 @@
                     "minimum": 0
                 },
                 "has_annulment": {
-                    "description": "Регистрационные действия: Признак аннулирования последнего рег. действия",
+                    "description": "Признак аннулирования последнего рег. действия",
                     "type": [
                         "boolean",
                         "null"
@@ -5387,7 +5387,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "code": {
-                                                "description": "История владения: код последней операции в периоде владения",
+                                                "description": "Код последней операции в периоде владения",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -5400,7 +5400,7 @@
                                                 ]
                                             },
                                             "description": {
-                                                "description": "История владения: описание последней операции в периоде владения",
+                                                "description": "Описание последней операции в периоде владения",
                                                 "type": [
                                                     "string",
                                                     "null"

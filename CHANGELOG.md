@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.26.2
+
+### Added
+
+- Example for `repairs` block with `Bodyshop` values for `repairs.history.items[].repairer.type`
+
 ## v3.26.1
 
 ### Fixed

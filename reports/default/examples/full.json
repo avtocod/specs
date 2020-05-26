@@ -281,9 +281,74 @@
                         ],
                         "count": 8
                     }
+                },
+                {
+                    "number": {
+                        "calculation": "6592\/046\/0",
+                        "claim": null
+                    },
+                    "date": {
+                        "calculation": "2014-12-20"
+                    },
+                    "mileage": null,
+                    "cost": {
+                        "total": 9560,
+                        "labour": 780,
+                        "parts": null,
+                        "paint": 8780
+                    },
+                    "car": {
+                        "manufacturer": "OPEL [V] [61] [R]",
+                        "model": "MONTEREY [V] [XA] [S] [36] [M]",
+                        "sub_model": "Monterey"
+                    },
+                    "insurer": {
+                        "name": null
+                    },
+                    "assessor": {
+                        "name": null
+                    },
+                    "task_process": null,
+                    "repairer": {
+                        "type": "Bodyshop",
+                        "description": null
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": "КАПОТОКРАСК ПОВЕРХНОСТИ",
+                                "repair": {
+                                    "method": "L",
+                                    "description": "Окраска поверхности"
+                                }
+                            },
+                            {
+                                "name": "ФОРСУНКА С/ОМЫВАТЕЛЯ (1 ИЛИ 2)  - С/У",
+                                "repair": {
+                                    "method": "N",
+                                    "description": "Вспомогательные работы (демонтаж/монтаж, чистка, устранение перекосов и пр.)"
+                                }
+                            },
+                            {
+                                "name": "КАПОТ - С/У",
+                                "repair": {
+                                    "method": "N",
+                                    "description": "Вспомогательные работы (демонтаж/монтаж, чистка, устранение перекосов и пр.)"
+                                }
+                            },
+                            {
+                                "name": "ШУМОИЗ. КАПОТА - С/У",
+                                "repair": {
+                                    "method": "N",
+                                    "description": "Вспомогательные работы (демонтаж/монтаж, чистка, устранение перекосов и пр.)"
+                                }
+                            }
+                        ],
+                        "count": 4
+                    }
                 }
             ],
-            "count": 1
+            "count": 2
         }
     },
     "carfax": {

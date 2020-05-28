@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.27.0
+
+### Added
+
+- Example for `repairs` block with `Bodyshop` values for `repairs.history.items[].repairer.type`
+- Possible value `Bodyshop` for a field with path `repairs.history.items[].repairer.type`
+
+### Changed
+
+- Description for a field with path `repairs.history.items[].repairer.type` in `./fields/default/fields_list.json`
+
 ## v3.26.1
 
 ### Fixed

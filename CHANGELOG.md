@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.27.0
+
+### Added
+
+- Example for `repairs` block with `Bodyshop` values for `repairs.history.items[].repairer.type`
+- Possible value `Bodyshop` for a field with path `repairs.history.items[].repairer.type`
+
+### Changed
+
+- Description for a field with path `repairs.history.items[].repairer.type` in `./fields/default/fields_list.json`
+
+## v3.26.1
+
+### Fixed
+
+- Fix description for a field with path `registration_actions.items[].attributes` in `./fields/default/fields_list.json` [#127]
+- Fix description for a field with path `registration_actions.items[].usage_allowed` in `./fields/default/fields_list.json` [#127]
+- Fix description for a field with path `registration_actions.has_annulment` in `./reports/default/json-schema.json` [#127]
+- Fix description for a field with path `ownership.history.items[].last_operation.code` in `./reports/default/json-schema.json` [#127]
+- Fix description for a field with path `ownership.history.items[].last_operation.description` in `./reports/default/json-schema.json` [#127]
+- Fix description for a field with path `tech_data.engine.standarts.emission.euro` in `./reports/default/json-schema.json` [#127]
+- Fix description for a field with path `additional_info.vehicle.segment.euro.code` in `./reports/default/json-schema.json` [#127]
+- Fix description for a field with path `additional_info.vehicle.segment.euro.description` in `./reports/default/json-schema.json` [#127]
+
+[#127]:https://github.com/avtocod/specs/issues/127
+
 ## v3.26.0
 
 ### Added

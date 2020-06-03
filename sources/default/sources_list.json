@@ -183,5 +183,10 @@
         "name": "pledge.fnp",
         "description": "Обременения на ТС по данным ФНП",
         "enabled": true
+    },
+    {
+        "name": "images.archive",
+        "description": "Данные об автомобиле из социальных сетей и интернета",
+        "enabled": true
     }
 ]

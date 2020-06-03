@@ -5799,7 +5799,8 @@
                                                             "OPEL"
                                                         ],
                                                         "fillable_by": [
-                                                            "images.avtonomer"
+                                                            "images.avtonomer",
+                                                            "images.archive"
                                                         ]
                                                     }
                                                 }
@@ -5818,7 +5819,8 @@
                                                             "MONTEREY"
                                                         ],
                                                         "fillable_by": [
-                                                            "images.avtonomer"
+                                                            "images.avtonomer",
+                                                            "images.archive"
                                                         ]
                                                     }
                                                 }
@@ -5843,7 +5845,8 @@
                                                     "2017-06-17 22:14:41"
                                                 ],
                                                 "fillable_by": [
-                                                    "images.avtonomer"
+                                                    "images.avtonomer",
+                                                    "images.archive"
                                                 ]
                                             }
                                         }
@@ -5858,7 +5861,8 @@
                                             "https://vl.imgix.net/img/opel-logo.png"
                                         ],
                                         "fillable_by": [
-                                            "images.avtonomer"
+                                            "images.avtonomer",
+                                            "images.archive"
                                         ]
                                     }
                                 }
@@ -5911,7 +5915,8 @@
                                             "Продаю семейный автомобиль в отличном состоянии, вложений никаких не требует. Все работает без нареканий."
                                         ],
                                         "fillable_by": [
-                                            "ads.base"
+                                            "ads.base",
+                                            "images.archive"
                                         ]
                                     },
                                     "date": {
@@ -5932,7 +5937,8 @@
                                                     "2019-01-14 11:57:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.base"
+                                                    "ads.base",
+                                                    "images.archive"
                                                 ]
                                             }
                                         }
@@ -5996,7 +6002,8 @@
                                             }
                                         ],
                                         "fillable_by": [
-                                            "ads.base"
+                                            "ads.base",
+                                            "images.archive"
                                         ]
                                     },
                                     "price": {
@@ -6013,7 +6020,8 @@
                                                     117400
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.base"
+                                                    "ads.base",
+                                                    "images.archive"
                                                 ]
                                             }
                                         }
@@ -6032,7 +6040,8 @@
                                                     "type": "string"
                                                 },
                                                 "fillable_by": [
-                                                    "ads.base"
+                                                    "ads.base",
+                                                    "images.archive"
                                                 ]
                                             },
                                             "board": {
@@ -6118,7 +6127,8 @@
                                                             "Opel"
                                                         ],
                                                         "fillable_by": [
-                                                            "ads.base"
+                                                            "ads.base",
+                                                            "images.archive"
                                                         ]
                                                     }
                                                 }
@@ -6137,7 +6147,8 @@
                                                             "Monterey"
                                                         ],
                                                         "fillable_by": [
-                                                            "ads.base"
+                                                            "ads.base",
+                                                            "images.archive"
                                                         ]
                                                     }
                                                 }
@@ -6163,7 +6174,8 @@
                                                             "C5KY36SZ*BD****89"
                                                         ],
                                                         "fillable_by": [
-                                                            "ads.base"
+                                                            "ads.base",
+                                                            "images.archive"
                                                         ]
                                                     },
                                                     "chassis": {
@@ -6199,7 +6211,8 @@
                                                     2018
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.base"
+                                                    "ads.base",
+                                                    "images.archive"
                                                 ]
                                             },
                                             "condition": {
@@ -6472,7 +6485,8 @@
                                                     79000
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.base"
+                                                    "ads.base",
+                                                    "images.archive"
                                                 ]
                                             },
                                             "is_cleared": {

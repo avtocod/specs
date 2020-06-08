@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.28.0
+
+### Added
+
+- Source `images.archive`
+
+### Changed
+
+- Field with path `images.photos.items[].uri` also fillable by `images.archive` source
+- Field with path `images.photos.items[].date.issued` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.model.name` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.brand.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].geo` also fillable by `images.archive` source
+- Field with path `ads.history.items[].text` also fillable by `images.archive` source
+- Field with path `ads.history.items[].date.publish` also fillable by `images.archive` source
+- Field with path `ads.history.items[].price.value` also fillable by `images.archive` source
+- Field with path `ads.history.items[].photos.local` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.year` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.mileage` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.model.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.brand.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.identifiers.vin` also fillable by `images.archive` source
+
 ## v3.27.0
 
 ### Added

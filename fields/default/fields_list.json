@@ -2606,7 +2606,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2616,7 +2617,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2626,7 +2628,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2636,7 +2639,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2656,7 +2660,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2666,7 +2671,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2696,7 +2702,8 @@
             "object"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2706,7 +2713,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2716,7 +2724,8 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2766,7 +2775,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2776,7 +2786,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2786,7 +2797,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2806,7 +2818,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2936,7 +2949,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {

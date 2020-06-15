@@ -479,7 +479,7 @@
     },
     {
         "path": "tech_data.generations[].bodies[].modifications[].engine.fuel.type",
-        "description": "Характеристики ТС:  Тип топлива [Бензиновый, Дизельный, Прочее]",
+        "description": "Характеристики ТС: Тип топлива [Бензиновый, Дизельный, Прочее]",
         "types": [
             "string"
         ],
@@ -489,7 +489,7 @@
     },
     {
         "path": "tech_data.generations[].bodies[].modifications[].engine.power.hp",
-        "description": "Характеристики ТС: Мощность двигателя в  ЛС",
+        "description": "Характеристики ТС: Мощность двигателя в ЛС",
         "types": [
             "float"
         ],

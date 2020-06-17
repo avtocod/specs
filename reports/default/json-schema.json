@@ -884,6 +884,233 @@
                             ]
                         }
                     }
+                },
+                "generations": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "name": {
+                                "description": "Наименование поколения ТС",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "A рестайлинг"
+                                ],
+                                "fillable_by": [
+                                    "references.base"
+                                ]
+                            },
+                            "is_restyling": {
+                                "description": "Является ли ТС рестайлинговым?",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    false
+                                ],
+                                "fillable_by": [
+                                    "references.base"
+                                ]
+                            },
+                            "years": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "start": {
+                                        "description": "Год начала выпуска поколения",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            1990
+                                        ],
+                                        "fillable_by": [
+                                            "references.base"
+                                        ]
+                                    },
+                                    "end": {
+                                        "description": "Год окончания выпуска поколения",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            2001
+                                        ],
+                                        "fillable_by": [
+                                            "references.base"
+                                        ]
+                                    }
+                                }
+                            },
+                            "bodies": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "type": {
+                                            "description": "Тип кузова ТС",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "Седан"
+                                            ],
+                                            "fillable_by": [
+                                                "references.base"
+                                            ]
+                                        },
+                                        "modifications": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Наименование модификации",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "3.5 AT"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "references.base"
+                                                        ]
+                                                    },
+                                                    "engine": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "fuel": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "type": {
+                                                                        "description": "Тип топлива",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "enum": [
+                                                                            "Бензиновый",
+                                                                            "Дизельный",
+                                                                            "Прочее",
+                                                                            null
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Бензиновый"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.base"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "power": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "hp": {
+                                                                        "description": "Мощность двигателя в ЛС",
+                                                                        "type": [
+                                                                            "number",
+                                                                            "null"
+                                                                        ],
+                                                                        "minimum": 1,
+                                                                        "examples": [
+                                                                            176.9
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.base"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "volume": {
+                                                                "description": "Объем двигателя в кубических сантиметрах",
+                                                                "type": [
+                                                                    "number",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    2792.1
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "transmission": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "type": {
+                                                                "description": "Тип трансмиссии",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "enum": [
+                                                                    "AUTOMATIC",
+                                                                    "MANUAL",
+                                                                    "ROBOT",
+                                                                    "VARIABLE",
+                                                                    "UNKNOWN",
+                                                                    null
+                                                                ],
+                                                                "examples": [
+                                                                    "AUTOMATIC"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "drive": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "type": {
+                                                                "description": "Тип привода",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "enum": [
+                                                                    "ПЕРЕДНИЙ",
+                                                                    "ЗАДНИЙ",
+                                                                    "ПОЛНЫЙ",
+                                                                    null
+                                                                ],
+                                                                "examples": [
+                                                                    "Полноприводной"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },

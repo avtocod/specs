@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.29.0
+
+### Added
+
+- Field with path `tech_data.generations[].name`
+- Field with path `tech_data.generations[].is_restyling`
+- Field with path `tech_data.generations[].years.start`
+- Field with path `tech_data.generations[].years.end`
+- Field with path `tech_data.generations[].bodies[].type`
+- Field with path `tech_data.generations[].bodies[].modifications[].name`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.fuel.type`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.power.hp`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.volume`
+- Field with path `tech_data.generations[].bodies[].modifications[].transmission.type`
+- Field with path `tech_data.generations[].bodies[].modifications[].drive.type`
+
 ## v3.28.0
 
 ### Added

@@ -76,7 +76,42 @@
         },
         "wheel": {
             "position": null
-        }
+        },
+        "generations": [
+            {
+                "name": null,
+                "is_restyling": null,
+                "years": {
+                    "start": null,
+                    "end": null
+                },
+                "bodies": [
+                    {
+                        "type": null,
+                        "modifications": [
+                            {
+                                "name": null,
+                                "engine": {
+                                    "fuel": {
+                                        "type": null
+                                    },
+                                    "power": {
+                                        "hp": null
+                                    },
+                                    "volume": null
+                                },
+                                "transmission": {
+                                    "type": null
+                                },
+                                "drive": {
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "additional_info": {
         "vehicle": {

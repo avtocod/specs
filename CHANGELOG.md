@@ -4,12 +4,51 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## v3.28.0
+## v3.30.0
 
 ### Changed
 
 - **PHP SDK** maximal `illuminate/support` dependency version now is `7.*`
 - Update `php` version in docker container from `7.1.3` to `7.2.5`
+
+## v3.29.0
+
+### Added
+
+- Field with path `tech_data.generations[].name`
+- Field with path `tech_data.generations[].is_restyling`
+- Field with path `tech_data.generations[].years.start`
+- Field with path `tech_data.generations[].years.end`
+- Field with path `tech_data.generations[].bodies[].type`
+- Field with path `tech_data.generations[].bodies[].modifications[].name`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.fuel.type`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.power.hp`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.volume`
+- Field with path `tech_data.generations[].bodies[].modifications[].transmission.type`
+- Field with path `tech_data.generations[].bodies[].modifications[].drive.type`
+
+## v3.28.0
+
+### Added
+
+- Source `images.archive`
+
+### Changed
+
+- Field with path `images.photos.items[].uri` also fillable by `images.archive` source
+- Field with path `images.photos.items[].date.issued` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.model.name` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.brand.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].geo` also fillable by `images.archive` source
+- Field with path `ads.history.items[].text` also fillable by `images.archive` source
+- Field with path `ads.history.items[].date.publish` also fillable by `images.archive` source
+- Field with path `ads.history.items[].price.value` also fillable by `images.archive` source
+- Field with path `ads.history.items[].photos.local` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.year` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.mileage` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.model.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.brand.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.identifiers.vin` also fillable by `images.archive` source
 
 ## v3.27.0
 

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.30.0
+
+### Changed
+
+- **PHP SDK** maximal `illuminate/support` dependency version now is `7.*`
+- Update `php` version in docker container from `7.1.3` to `7.2.5`
+
 ## v3.29.0
 
 ### Added

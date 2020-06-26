@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.30.0
+
+### Added
+
+- Field with path `accidents.history.items[].participants.total`
+
 ## v3.29.0
 
 ### Added

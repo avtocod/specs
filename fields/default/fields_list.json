@@ -1344,6 +1344,16 @@
         ]
     },
     {
+        "path": "accidents.history.items[].accident.participants.total",
+        "description": "История ДТП: Количество ТС, участвующих в ДТП",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
+        ]
+    },
+    {
         "path": "accidents.history.items[].type",
         "description": "История ДТП: Тип происшествия [Столкновение, Наезд на стоящее ТС, ...]",
         "types": [

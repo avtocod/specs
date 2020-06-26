@@ -46,6 +46,8 @@ jobs: # Docs: <https://git.io/JvxXE>
           - php: '7.4'
             setup: basic
             coverage: yes
+            illuminate: default
+
     steps:
       - name: Check out code
         uses: actions/checkout@v2

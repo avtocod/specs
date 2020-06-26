@@ -76,7 +76,42 @@
         },
         "wheel": {
             "position": "LEFT"
-        }
+        },
+        "generations": [
+            {
+                "name": "A рестайлинг",
+                "is_restyling": true,
+                "years": {
+                    "start": 1998,
+                    "end": 1999
+                },
+                "bodies": [
+                    {
+                        "type": "Седан",
+                        "modifications": [
+                            {
+                                "name": "3.5 AT",
+                                "engine": {
+                                    "fuel": {
+                                        "type": "Дизельный"
+                                    },
+                                    "power": {
+                                        "hp": 176.9
+                                    },
+                                    "volume": 2792.1
+                                },
+                                "transmission": {
+                                    "type": "AUTOMATIC"
+                                },
+                                "drive": {
+                                    "type": "ПОЛНЫЙ"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "additional_info": {
         "vehicle": {

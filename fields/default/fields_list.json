@@ -418,6 +418,116 @@
         ]
     },
     {
+        "path": "tech_data.generations[].name",
+        "description": "Характеристики ТС: Наименование поколения ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].is_restyling",
+        "description": "Характеристики ТС: Является ли ТС рестайлинговым?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].years.start",
+        "description": "Характеристики ТС: Год начала выпуска поколения",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].years.end",
+        "description": "Характеристики ТС: Год окончания выпуска поколения",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].type",
+        "description": "Характеристики ТС: Тип кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].name",
+        "description": "Характеристики ТС: Наименование модификации",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].engine.fuel.type",
+        "description": "Характеристики ТС: Тип топлива [Бензиновый, Дизельный, Прочее]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].engine.power.hp",
+        "description": "Характеристики ТС: Мощность двигателя в ЛС",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].engine.volume",
+        "description": "Характеристики ТС: Объем двигателя в кубических сантиметрах",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].transmission.type",
+        "description": "Характеристики ТС: Тип трансмиссии [AUTOMATIC, MANUAL, ROBOT, VARIABLE, UNKNOWN]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].drive.type",
+        "description": "Характеристики ТС: Тип привода [ПЕРЕДНИЙ, ЗАДНИЙ, ПОЛНЫЙ]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.category.code",
         "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
         "types": [
@@ -2606,7 +2716,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2616,7 +2727,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2626,7 +2738,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2636,7 +2749,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2656,7 +2770,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2666,7 +2781,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2696,7 +2812,8 @@
             "object"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2706,7 +2823,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2716,7 +2834,8 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2766,7 +2885,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2776,7 +2896,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2786,7 +2907,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2806,7 +2928,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2936,7 +3059,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {

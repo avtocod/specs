@@ -4885,13 +4885,9 @@
                                                 "properties": {
                                                     "total": {
                                                         "description": "Количество ТС, участвующих в ДТП",
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "null"
-                                                            },
-                                                            {
-                                                                "type": "integer"
-                                                            }
+                                                        "type": [
+                                                            "integer",
+                                                            "null"
                                                         ],
                                                         "examples": [
                                                             2, null

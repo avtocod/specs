@@ -8,8 +8,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- **PHP SDK** maximal `illuminate/support` dependency version now is `7.*`
-- Update `php` version in docker container from `7.1.3` to `7.2.5`
+- CI completely moved from "Travis CI" to "Github Actions" _(travis builds disabled)_
+- Minimal required PHP version now is `7.2`
+
+### Added
+
+- PHP 7.4 is supported now`
 
 ## v3.29.0
 

@@ -59,7 +59,7 @@
 
 Со всеми поддерживаемыми нами идентификаторами вы можете ознакомиться в файлах [марок](./vehicles/default/marks.json) и [моделей](./vehicles/default/).
 
-> Модели поделены по категориям типа ТС. Пример: [models_car.json](./vehicles/default/models_bus.json) - автобусы.   
+> Модели поделены по категориям типа ТС. Пример: [models_bus.json](./vehicles/default/models_bus.json) - автобусы.
 
 С идентификаторами типов моделей вы можете ознакомится в [файле спецификации](vehicles/default/types.json).
 
@@ -84,7 +84,7 @@
 [![Build Status][badge_build_status]][link_build_status]
 [![Coverage][badge_coverage]][link_coverage]
 [![Version][badge_packagist_version]][link_packagist]
-![Required PHP version][badge_php_version]
+[![PHP Version][badge_php_version]][link_packagist]
 [![Downloads count][badge_packagist_dl_count]][link_packagist]
 
 Для установки выполните в терминале следующую команду:
@@ -116,7 +116,7 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [badge_commits_since_release]:https://img.shields.io/github/commits-since/avtocod/specs/latest.svg?style=for-the-badge&maxAge=5
 [badge_packagist_version]:https://img.shields.io/packagist/v/avtocod/specs.svg?maxAge=5
 [badge_php_version]:https://img.shields.io/packagist/php-v/avtocod/specs.svg?maxAge=5
-[badge_build_status]:https://travis-ci.org/avtocod/specs.svg?branch=master
+[badge_build_status]:https://img.shields.io/github/workflow/status/avtocod/specs/tests/master
 [badge_packagist_dl_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?maxAge=30
 [badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=for-the-badge&maxAge=30
 [badge_coverage]:https://img.shields.io/codecov/c/github/avtocod/specs/master.svg?maxAge=5

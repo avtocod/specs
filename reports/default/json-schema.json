@@ -3742,6 +3742,23 @@
                                                 "fillable_by": [
                                                     "av.taxi"
                                                 ]
+                                            },
+                                            "cancel": {
+                                                "description": "Дата аннулирования или приостановления лицензии",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2016-11-10 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "av.taxi"
+                                                ]
                                             }
                                         }
                                     },

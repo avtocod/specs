@@ -1344,7 +1344,7 @@
         ]
     },
     {
-        "path": "accidents.history.items[].accident.participants.total",
+        "path": "accidents.history.items[].participants.total",
         "description": "История ДТП: Количество ТС, участвующих в ДТП",
         "types": [
             "integer"

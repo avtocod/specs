@@ -20,7 +20,7 @@ jobs: # Docs: <https://git.io/JvxXE>
       matrix:
         setup: ['basic', 'lowest']
         illuminate: [default]
-        coverage: [yes]
+        coverage: [no]
         php: ['7.2', '7.3', '7.4']
         include:
           - php: '7.3'
@@ -43,6 +43,9 @@ jobs: # Docs: <https://git.io/JvxXE>
             setup: basic
             coverage: no
             illuminate: '~6.0'
+          - php: '7.4'
+            setup: basic
+            coverage: yes
     steps:
       - name: Check out code
         uses: actions/checkout@v2

@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## UNRELEASED
 
+### Added
+
+- PHP 7.4 is supported now
+
 ### Changed
 
 - Maximal `illuminate/*` package versions now is `7.*`
@@ -13,10 +17,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Minimal required PHP version now is `7.2`
 - Minimal required `phpunit/phpunit` version now is `~7.5`
 - Minimal required `illuminate/*` package versions now is `^5.6`
-
-### Added
-
-- PHP 7.4 is supported now
+- Tests was updated. Now it's not using deprecated `PHPUnit` assertions
 
 ## v3.29.0
 

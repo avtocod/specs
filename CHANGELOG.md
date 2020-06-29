@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- CI completely moved from "Travis CI" to "Github Actions" _(travis builds disabled)_
+- **PHP SDK** maximal `illuminate/*` package versions now is `7.*`
+- **PHP SDK** minimal required PHP version now is `7.2`
+- **PHP SDK** minimal required `phpunit/phpunit` version now is `~7.5`
+- **PHP SDK** minimal required `illuminate/*` package versions now is `^5.6`
+- **PHP SDK** Tests was updated. Now it's not using deprecated `PHPUnit` assertions
+
 ## v3.29.0
 
 ### Added

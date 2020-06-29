@@ -20,20 +20,16 @@ jobs: # Docs: <https://git.io/JvxXE>
       matrix:
         setup: ['basic', 'lowest']
         illuminate: [default]
-        coverage: [yes]
         php: ['7.2', '7.3', '7.4']
         include:
           - php: '7.3'
             setup: basic
-            coverage: no
             illuminate: '~5.7.0'
           - php: '7.3'
             setup: basic
-            coverage: no
             illuminate: '~5.8.0'
           - php: '7.3'
             setup: basic
-            coverage: no
             illuminate: '~6.0'
 
     steps:
@@ -78,20 +74,7 @@ jobs: # Docs: <https://git.io/JvxXE>
         run: composer info | grep -e phpunit -e phpstan -e illuminate
 
       - name: Execute tests
-        if: matrix.coverage != 'yes'
         run: composer test
-
-      - name: Execute tests with code coverage
-        if: matrix.coverage == 'yes'
-        run: composer test-cover
-
-      - uses: codecov/codecov-action@v1 # Docs: <https://github.com/codecov/codecov-action>
-        if: matrix.coverage == 'yes'
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./sdk/php/coverage/clover.xml
-          flags: php
-          fail_ci_if_error: false
 
   lint-changelog:
     name: Lint changelog file

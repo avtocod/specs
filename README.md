@@ -81,10 +81,9 @@
 
 #### PHP SDK
 
-[![Build Status][badge_build_status]][link_build_status]
-[![Coverage][badge_coverage]][link_coverage]
 [![Version][badge_packagist_version]][link_packagist]
 [![PHP Version][badge_php_version]][link_packagist]
+[![Build Status][badge_build_status]][link_build_status]
 [![Downloads count][badge_packagist_dl_count]][link_packagist]
 
 Для установки выполните в терминале следующую команду:
@@ -119,12 +118,10 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [badge_build_status]:https://img.shields.io/github/workflow/status/avtocod/specs/tests/master
 [badge_packagist_dl_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?maxAge=30
 [badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=for-the-badge&maxAge=30
-[badge_coverage]:https://img.shields.io/codecov/c/github/avtocod/specs/master.svg?maxAge=5
 [link_packagist]:https://packagist.org/packages/avtocod/specs
 [link_build_status]:https://github.com/avtocod/specs/actions
 [link_issues]:https://github.com/avtocod/specs/issues
 [link_create_issue]:https://github.com/avtocod/specs/issues/new/choose
-[link_coverage]:https://codecov.io/gh/avtocod/specs
 [getcomposer]:https://getcomposer.org/download/
 [git_tagging]:https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [json-schema]:https://json-schema.org

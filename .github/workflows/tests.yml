@@ -12,7 +12,7 @@ on:
 
 jobs: # Docs: <https://git.io/JvxXE>
   php:
-    name: PHP ${{ matrix.php }}, ${{ matrix.setup }} setup, illuminate ${{ matrix.illuminate }}, coverage ${{ matrix.coverage }}
+    name: PHP ${{ matrix.php }}, ${{ matrix.setup }} setup, illuminate ${{ matrix.illuminate }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     strategy:

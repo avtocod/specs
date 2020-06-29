@@ -20,17 +20,9 @@ jobs: # Docs: <https://git.io/JvxXE>
       matrix:
         setup: ['basic', 'lowest']
         illuminate: [default]
-        coverage: [no]
+        coverage: [yes]
         php: ['7.2', '7.3', '7.4']
         include:
-          - php: '7.3'
-            setup: basic
-            coverage: no
-            illuminate: '~5.5.0'
-          - php: '7.3'
-            setup: basic
-            coverage: no
-            illuminate: '~5.6.0'
           - php: '7.3'
             setup: basic
             coverage: no
@@ -43,10 +35,6 @@ jobs: # Docs: <https://git.io/JvxXE>
             setup: basic
             coverage: no
             illuminate: '~6.0'
-          - php: '7.4'
-            setup: basic
-            coverage: yes
-            illuminate: default
 
     steps:
       - name: Check out code

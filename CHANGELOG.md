@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.30.0
+
+### Added
+
+- Source `fines.madiampp`
+
+### Changed
+
+- Field with path `fines.items[].date.event` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].article.code` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].article.description` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].description` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].amount.total` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].discount.percent` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].is_paid` also fillable by `fines.madiampp` source
+- Field with path `fines.has_fines` also fillable by `fines.madiampp` source
+
 ## v3.29.0
 
 ### Added

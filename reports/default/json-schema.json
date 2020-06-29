@@ -2824,7 +2824,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp","fines.madiampp"
                                         ]
                                     },
                                     "accident": {
@@ -2863,7 +2864,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     },
                                     "description": {
@@ -2878,7 +2880,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     }
                                 }
@@ -2895,7 +2898,8 @@
                                 "fillable_by": [
                                     "fines.base",
                                     "gibdd.fines",
-                                    "fines.alt"
+                                    "fines.alt",
+                                    "fines.madiampp"
                                 ]
                             },
                             "vendor": {
@@ -2950,7 +2954,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     }
                                 }
@@ -2972,7 +2977,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     },
                                     "date": {
@@ -2995,7 +3001,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "gibdd.fines",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.madiampp"
                                                 ]
                                             }
                                         }
@@ -3014,7 +3021,8 @@
                                 "fillable_by": [
                                     "fines.base",
                                     "gibdd.fines",
-                                    "fines.alt"
+                                    "fines.alt",
+                                    "fines.madiampp"
                                 ]
                             },
                             "wire": {
@@ -3231,7 +3239,8 @@
                     "fillable_by": [
                         "fines.base",
                         "gibdd.fines",
-                        "fines.alt"
+                        "fines.alt",
+                        "fines.madiampp"
                     ]
                 },
                 "count": {

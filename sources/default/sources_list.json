@@ -188,5 +188,10 @@
         "name": "images.archive",
         "description": "Архив фотографии ТС из открытых источников",
         "enabled": true
+    },
+    {
+        "name": "fines.madiampp",
+        "description": "Данные о штрафах, оформленных на ТС, по данным МАДИ",
+        "enabled": true
     }
 ]

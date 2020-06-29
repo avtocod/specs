@@ -121,7 +121,7 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=for-the-badge&maxAge=30
 [badge_coverage]:https://img.shields.io/codecov/c/github/avtocod/specs/master.svg?maxAge=5
 [link_packagist]:https://packagist.org/packages/avtocod/specs
-[link_build_status]:https://github.com/avtocod/specs/actions?query=branch%3Amaster+workflow%3Atests
+[link_build_status]:https://github.com/avtocod/specs/actions
 [link_issues]:https://github.com/avtocod/specs/issues
 [link_create_issue]:https://github.com/avtocod/specs/issues/new/choose
 [link_coverage]:https://codecov.io/gh/avtocod/specs

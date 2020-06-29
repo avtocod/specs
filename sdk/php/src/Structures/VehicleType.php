@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Avtocod\Specifications\Structures;
 
@@ -61,6 +61,8 @@ class VehicleType extends AbstractStructure
      * Get the instance as an array.
      *
      * @return mixed[]
+     *
+     * @deprecated Will be removed in closest major release
      */
     public function toArray(): array
     {
@@ -73,6 +75,8 @@ class VehicleType extends AbstractStructure
 
     /**
      * {@inheritdoc}
+     *
+     * @deprecated Will be removed in closest major release
      */
     protected function configure($raw_data)
     {

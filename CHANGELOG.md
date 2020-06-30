@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `fines.madiampp`
+- Field with path `fines.items[].location.raw`
 
 ### Changed
 

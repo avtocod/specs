@@ -2661,6 +2661,16 @@
         ]
     },
     {
+        "path": "fines.items[].location.raw",
+        "description": "Штрафы: Место совершения правонарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.madiampp"
+        ]
+    },
+    {
         "path": "fines.items[].photos[].type",
         "description": "Штрафы: Тип фото нарушения",
         "types": [

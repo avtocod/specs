@@ -3182,6 +3182,25 @@
                                     }
                                 }
                             },
+                            "location": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "raw": {
+                                        "description": "Место совершения правонарушения",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "МОСКВА Г. ПАРКОВКА №4034 (50) ПРОФСОЮЗНАЯ УЛИЦА, ДОМ 12"
+                                        ],
+                                        "fillable_by": [
+                                            "fines.madiampp"
+                                        ]
+                                    }
+                                }
+                            },
                             "photos": {
                                 "type": "array",
                                 "items": {

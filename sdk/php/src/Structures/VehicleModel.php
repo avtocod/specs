@@ -31,6 +31,8 @@ class VehicleModel extends AbstractStructure
      * Get the instance as an array.
      *
      * @return mixed[]
+     *
+     * @deprecated Will be removed in closest major release
      */
     public function toArray(): array
     {
@@ -73,6 +75,8 @@ class VehicleModel extends AbstractStructure
 
     /**
      * {@inheritdoc}
+     *
+     * @deprecated Will be removed in closest major release
      */
     protected function configure($raw_data)
     {

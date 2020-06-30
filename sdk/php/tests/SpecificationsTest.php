@@ -113,7 +113,7 @@ class SpecificationsTest extends AbstractTestCase
                     "{$path} has no 'fillable_by' attribute"
                 );
 
-                $this->assertInternalType('array', $fillable_by);
+                $this->assertIsArray($fillable_by);
 
                 if (\in_array($path, $fillable_by_should_be_empty_for, true)) {
                     $this->assertEmpty($fillable_by, "Path {$path} should have empty 'fillable_by' attribute");
@@ -143,8 +143,8 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetFieldsJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
-            $this->assertInternalType('object', $as_object = $this->instance::getFieldsJsonSchema($group_name));
-            $this->assertInternalType('array', $this->instance::getFieldsJsonSchema($group_name, true));
+            $this->assertIsObject($as_object = $this->instance::getFieldsJsonSchema($group_name));
+            $this->assertIsArray($this->instance::getFieldsJsonSchema($group_name, true));
 
             $this->assertStringStartsWith(
                 'https://github.com/avtocod/specs/blob/master/fields/default/json-schema.json',
@@ -175,7 +175,7 @@ class SpecificationsTest extends AbstractTestCase
         foreach (['default', null] as $group_name) {
             foreach (['full', 'empty'] as $name) {
                 $result = $this->instance::getReportExample($group_name, $name);
-                $this->assertInternalType('array', $result);
+                $this->assertIsArray($result);
 
                 $raw = Json::decode(
                     \file_get_contents($this->instance::getRootDirectoryPath(
@@ -205,8 +205,8 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetReportJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
-            $this->assertInternalType('object', $as_object = $this->instance::getReportJsonSchema($group_name));
-            $this->assertInternalType('array', $this->instance::getReportJsonSchema($group_name, true));
+            $this->assertIsObject($as_object = $this->instance::getReportJsonSchema($group_name));
+            $this->assertIsArray($this->instance::getReportJsonSchema($group_name, true));
 
             $this->assertStringStartsWith(
                 'https://github.com/avtocod/specs/blob/master/reports/default/json-schema.json',
@@ -286,14 +286,8 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetIdentifierTypesJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
-            $this->assertInternalType(
-                'object',
-                $as_object = $this->instance::getIdentifierTypesJsonSchema($group_name)
-            );
-            $this->assertInternalType(
-                'array',
-                $this->instance::getIdentifierTypesJsonSchema($group_name, true)
-            );
+            $this->assertIsObject($as_object = $this->instance::getIdentifierTypesJsonSchema($group_name));
+            $this->assertIsArray($this->instance::getIdentifierTypesJsonSchema($group_name, true));
 
             $this->assertStringStartsWith(
                 'https://github.com/avtocod/specs/blob/master/identifiers/default/json-schema.json',
@@ -438,14 +432,8 @@ class SpecificationsTest extends AbstractTestCase
     public function testGetSourcesJsonSchema(): void
     {
         foreach (['default', null] as $group_name) {
-            $this->assertInternalType(
-                'object',
-                $as_object = $this->instance::getSourcesJsonSchema($group_name)
-            );
-            $this->assertInternalType(
-                'array',
-                $this->instance::getSourcesJsonSchema($group_name, true)
-            );
+            $this->assertIsObject($as_object = $this->instance::getSourcesJsonSchema($group_name));
+            $this->assertIsArray($this->instance::getSourcesJsonSchema($group_name, true));
 
             $this->assertStringStartsWith(
                 'https://github.com/avtocod/specs/blob/master/sources/default/json-schema.json',
@@ -690,8 +678,8 @@ class SpecificationsTest extends AbstractTestCase
         $method      = $this->getNonPublicMethod(get_class($this->instance), $method_name);
 
         $path = $this->instance::getRootDirectoryPath('/vehicles/default/types.json');
-        $this->assertInternalType('array', $method->invokeArgs($this->instance, [$path, true]));
-        $this->assertInternalType('object', $method->invokeArgs($this->instance, [$path, false]));
+        $this->assertIsArray($method->invokeArgs($this->instance, [$path, true]));
+        $this->assertIsObject($method->invokeArgs($this->instance, [$path, false]));
 
         $wrong_path = $this->instance::getRootDirectoryPath('/not_exists.json');
         $this->expectException(InvalidArgumentException::class);

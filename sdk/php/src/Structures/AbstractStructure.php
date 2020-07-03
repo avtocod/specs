@@ -31,6 +31,8 @@ abstract class AbstractStructure implements Arrayable, Jsonable, \ArrayAccess, \
      * {@inheritdoc}
      *
      * @throws JsonEncodeDecodeException
+     *
+     * @deprecated Will be removed in closest major release
      */
     public function toJson($options = 0): string
     {
@@ -106,6 +108,8 @@ abstract class AbstractStructure implements Arrayable, Jsonable, \ArrayAccess, \
      * @param mixed[]|iterable $raw_data
      *
      * @return void
+     *
+     * @deprecated Will be removed in closest major release
      */
     abstract protected function configure($raw_data);
 }

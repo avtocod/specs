@@ -2427,7 +2427,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2450,7 +2451,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2462,7 +2464,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2474,7 +2477,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2510,7 +2514,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2522,7 +2527,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2534,7 +2540,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2546,7 +2553,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2658,7 +2666,18 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
+        ]
+    },
+    {
+        "path": "fines.items[].location.raw",
+        "description": "Штрафы: Место совершения правонарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.madiampp"
         ]
     },
     {

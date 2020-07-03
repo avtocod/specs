@@ -4909,6 +4909,26 @@
                                             }
                                         }
                                     },
+                                    "participants": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "total": {
+                                                "description": "Количество ТС, участвующих в ДТП",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    2,
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.dtp"
+                                                ]
+                                            }
+                                        }
+                                    },
                                     "type": {
                                         "description": "Тип происшествия",
                                         "type": [

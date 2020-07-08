@@ -2188,6 +2188,16 @@
         ]
     },
     {
+        "path": "taxi.history.items[].date.cancel",
+        "description": "Такси: Дата аннулирования или приостановления лицензии",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
+        ]
+    },
+    {
         "path": "taxi.history.items[].license.number",
         "description": "Такси: Регистрационный номер разрешения",
         "types": [

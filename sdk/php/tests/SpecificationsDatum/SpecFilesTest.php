@@ -161,19 +161,32 @@ class SpecFilesTest extends AbstractTestCase
                                                          "report example [{$example_name}] does not presents"
                     );
 
-                    foreach ($field_types as $field_type) {
-                        // Typify for a working with internal types checking
-                        switch ($field_type) {
-                            case 'object':
-                                $field_type = 'array';
-                                break;
-                        }
+                    $wrong_field_type_message = "Field {$report_field_path} has invalid type";
 
+                    foreach ($field_types as $field_type) {
                         // Any field data can be null
                         if ($report_field_data !== null) {
-                            $this->assertInternalType(
-                                $field_type, $report_field_data, "Field {$report_field_path} has invalid type"
-                            );
+                            // Typify for a working with internal types checking
+                            switch ($field_type) {
+                                case 'object':
+                                case 'array':
+                                    $this->assertIsArray($report_field_data, $wrong_field_type_message);
+                                    break;
+                                case 'boolean':
+                                    $this->assertIsBool($report_field_data, $wrong_field_type_message);
+                                    break;
+                                case 'float':
+                                    $this->assertIsFloat($report_field_data, $wrong_field_type_message);
+                                    break;
+                                case 'integer':
+                                    $this->assertIsInt($report_field_data, $wrong_field_type_message);
+                                    break;
+                                case 'string':
+                                    $this->assertIsString($report_field_data, $wrong_field_type_message);
+                                    break;
+                                default:
+                                    $this->fail("Field {$report_field_path} has unexpected type. Got [{$field_type}]");
+                            }
                         }
                     }
                 }

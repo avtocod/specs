@@ -15,26 +15,25 @@
         }
     ],
     "require": {
-        "php": "^7.1.3",
+        "php": "^7.2",
         "ext-json": "*",
-        "illuminate/support": "^5.4 || ~6.0",
-        "ocramius/package-versions": "^1.0",
-        "tarampampam/wrappers-php": "^1.3"
+        "illuminate/support": "^5.6 || ~6.0 || ~7.0",
+        "ocramius/package-versions": "^1.4",
+        "tarampampam/wrappers-php": "^1.5"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.4 || ~7.5",
-        "symfony/var-dumper": "~3.2 || ^4.0",
+        "phpunit/phpunit": "~7.5",
         "phpstan/phpstan": "~0.12",
         "opis/json-schema": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Avtocod\\Specifications\\": "sdk/php/src"
+            "Avtocod\\Specifications\\": "sdk/php/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Avtocod\\Specifications\\Tests\\": "sdk/php/tests"
+            "Avtocod\\Specifications\\Tests\\": "sdk/php/tests/"
         }
     },
     "scripts": {
@@ -53,9 +52,5 @@
     "support": {
         "issues": "https://github.com/avtocod/specs/issues",
         "source": "https://github.com/avtocod/specs"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "prefer-stable": true
+    }
 }

@@ -1344,6 +1344,16 @@
         ]
     },
     {
+        "path": "accidents.history.items[].participants.total",
+        "description": "История ДТП: Количество ТС, участвующих в ДТП",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
+        ]
+    },
+    {
         "path": "accidents.history.items[].type",
         "description": "История ДТП: Тип происшествия [Столкновение, Наезд на стоящее ТС, ...]",
         "types": [
@@ -2427,7 +2437,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2450,7 +2461,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2462,7 +2474,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2474,7 +2487,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2510,7 +2524,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2522,7 +2537,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2534,7 +2550,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2546,7 +2563,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2658,7 +2676,18 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
+        ]
+    },
+    {
+        "path": "fines.items[].location.raw",
+        "description": "Штрафы: Место совершения правонарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.madiampp"
         ]
     },
     {

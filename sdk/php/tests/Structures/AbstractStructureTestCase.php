@@ -33,8 +33,8 @@ abstract class AbstractStructureTestCase extends AbstractTestCase
      */
     public function testBasicToArray(): void
     {
-        $this->assertInternalType('array', $this->instance->toArray());
-        $this->assertInternalType('string', $this->instance->toJson());
+        $this->assertIsArray($this->instance->toArray());
+        $this->assertIsString($this->instance->toJson());
     }
 
     /**

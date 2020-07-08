@@ -2824,7 +2824,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     },
                                     "accident": {
@@ -2863,7 +2864,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     },
                                     "description": {
@@ -2878,7 +2880,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     }
                                 }
@@ -2895,7 +2898,8 @@
                                 "fillable_by": [
                                     "fines.base",
                                     "gibdd.fines",
-                                    "fines.alt"
+                                    "fines.alt",
+                                    "fines.madiampp"
                                 ]
                             },
                             "vendor": {
@@ -2950,7 +2954,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     }
                                 }
@@ -2972,7 +2977,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.madiampp"
                                         ]
                                     },
                                     "date": {
@@ -2995,7 +3001,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "gibdd.fines",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.madiampp"
                                                 ]
                                             }
                                         }
@@ -3014,7 +3021,8 @@
                                 "fillable_by": [
                                     "fines.base",
                                     "gibdd.fines",
-                                    "fines.alt"
+                                    "fines.alt",
+                                    "fines.madiampp"
                                 ]
                             },
                             "wire": {
@@ -3174,6 +3182,25 @@
                                     }
                                 }
                             },
+                            "location": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "raw": {
+                                        "description": "Место совершения правонарушения",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "МОСКВА Г. ПАРКОВКА №4034 (50) ПРОФСОЮЗНАЯ УЛИЦА, ДОМ 12"
+                                        ],
+                                        "fillable_by": [
+                                            "fines.madiampp"
+                                        ]
+                                    }
+                                }
+                            },
                             "photos": {
                                 "type": "array",
                                 "items": {
@@ -3231,7 +3258,8 @@
                     "fillable_by": [
                         "fines.base",
                         "gibdd.fines",
-                        "fines.alt"
+                        "fines.alt",
+                        "fines.madiampp"
                     ]
                 },
                 "count": {
@@ -4877,6 +4905,26 @@
                                                 "fillable_by": [
                                                     "gibdd.dtp",
                                                     "dtp.registry"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "participants": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "total": {
+                                                "description": "Количество ТС, участвующих в ДТП",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    2,
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.dtp"
                                                 ]
                                             }
                                         }

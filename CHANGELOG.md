@@ -4,6 +4,42 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.32.0
+
+### Added
+
+- Field with path `accidents.history.items[].participants.total`
+
+## v3.31.0
+
+### Added
+
+- Source `fines.madiampp`
+- Field with path `fines.items[].location.raw`
+
+### Changed
+
+- Field with path `fines.items[].date.event` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].article.code` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].article.description` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].description` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].amount.total` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].discount.percent` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].is_paid` also fillable by `fines.madiampp` source
+- Field with path `fines.has_fines` also fillable by `fines.madiampp` source
+
+## v3.30.0
+
+### Changed
+
+- CI completely moved from "Travis CI" to "Github Actions" _(travis builds disabled)_
+- **PHP SDK** maximal `illuminate/*` package versions now is `7.*`
+- **PHP SDK** minimal required PHP version now is `7.2`
+- **PHP SDK** minimal required `phpunit/phpunit` version now is `~7.5`
+- **PHP SDK** minimal required `illuminate/*` package versions now is `^5.6`
+- **PHP SDK** Tests was updated. Now it's not using deprecated `PHPUnit` assertions
+
 ## v3.29.0
 
 ### Added

@@ -2745,8 +2745,7 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer",
-            "images.archive"
+            "images.avtonomer"
         ]
     },
     {
@@ -2756,8 +2755,7 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer",
-            "images.archive"
+            "images.avtonomer"
         ]
     },
     {
@@ -2874,7 +2872,8 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2884,7 +2883,8 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {

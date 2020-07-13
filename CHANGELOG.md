@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `ramiosago.alt`
+
+### Changed
+
+- Field with path `insurance.osago.items[].policy.series` also fillable by `ramiosago.alt` source
+- Field with path `insurance.osago.items[].policy.number` also fillable by `ramiosago.alt` source
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.alt` source
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `ramiosago.alt` source
+
 ## v3.33.0
 
 ### Added

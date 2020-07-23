@@ -6091,8 +6091,7 @@
                                                             "OPEL"
                                                         ],
                                                         "fillable_by": [
-                                                            "images.avtonomer",
-                                                            "images.archive"
+                                                            "images.avtonomer"
                                                         ]
                                                     }
                                                 }
@@ -6111,8 +6110,7 @@
                                                             "MONTEREY"
                                                         ],
                                                         "fillable_by": [
-                                                            "images.avtonomer",
-                                                            "images.archive"
+                                                            "images.avtonomer"
                                                         ]
                                                     }
                                                 }
@@ -6346,7 +6344,8 @@
                                                     "type": "string"
                                                 },
                                                 "fillable_by": [
-                                                    "ads.base"
+                                                    "ads.base",
+                                                    "images.archive"
                                                 ]
                                             },
                                             "grz": {
@@ -6368,7 +6367,8 @@
                                                 },
                                                 "description": "Список ГРЗ c URI фотографии, на которых они распознаны",
                                                 "fillable_by": [
-                                                    "ads.base"
+                                                    "ads.base",
+                                                    "images.archive"
                                                 ]
                                             }
                                         }

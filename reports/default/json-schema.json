@@ -5753,7 +5753,8 @@
                                             "base.taxi",
                                             "base.tech",
                                             "ads.base",
-                                            "service.history"
+                                            "service.history",
+                                            "images.archive"
                                         ]
                                     }
                                 }
@@ -5774,7 +5775,8 @@
                                     "base.taxi",
                                     "base.tech",
                                     "ads.base",
-                                    "service.history"
+                                    "service.history",
+                                    "images.archive"
                                 ]
                             },
                             "filled_by": {
@@ -5795,6 +5797,7 @@
                                             "ads.base",
                                             "service.history",
                                             "customs.base",
+                                            "images.archive",
                                             null
                                         ],
                                         "examples": [

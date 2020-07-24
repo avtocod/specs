@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Field with path `mileages.items[].date.event` also fillable by `images.archive` source
+- Field with path `mileages.items[].mileage` also fillable by `images.archive` source
+
 ## v3.34.0
 
 ### Changed

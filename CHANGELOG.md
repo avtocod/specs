@@ -4,13 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## v3.33.0
+## UNRELEASED
 
 ### Changed
 
+- Field with path `mileages.items[].date.event` also fillable by `images.archive` source
+- Field with path `mileages.items[].mileage` also fillable by `images.archive` source
 - Field with path `mileages.items[].date.event` also fillable by `customs.base` source
 - Field with path `mileages.items[].mileage` also fillable by `customs.base` source
 - Disabled source with name `base.moscow`
+
+## v3.34.0
+
+### Changed
+
+- Field with path `ads.history.items[].photos.board` also fillable by `images.archive` source
+- Field with path `ads.history.items[].photos.grz` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.brand.name` is not fillable by `images.archive` source now
+- Field with path `images.photos.items[].vehicle.model.name` is not fillable by `images.archive` source now
+
+## v3.33.0
+
+### Added
+
+- Field with path `taxi.history.items[].date.cancel`
 
 ## v3.32.0
 

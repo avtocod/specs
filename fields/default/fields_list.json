@@ -2188,6 +2188,16 @@
         ]
     },
     {
+        "path": "taxi.history.items[].date.cancel",
+        "description": "Такси: Дата аннулирования или приостановления лицензии",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
+        ]
+    },
+    {
         "path": "taxi.history.items[].license.number",
         "description": "Такси: Регистрационный номер разрешения",
         "types": [
@@ -2713,7 +2723,8 @@
             "base.tech",
             "ads.base",
             "service.history",
-            "customs.base"
+            "customs.base",
+            "images.archive"
         ]
     },
     {
@@ -2729,7 +2740,8 @@
             "base.tech",
             "ads.base",
             "service.history",
-            "customs.base"
+            "customs.base",
+            "images.archive"
         ]
     },
     {
@@ -2747,8 +2759,7 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer",
-            "images.archive"
+            "images.avtonomer"
         ]
     },
     {
@@ -2758,8 +2769,7 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer",
-            "images.archive"
+            "images.avtonomer"
         ]
     },
     {
@@ -2876,7 +2886,8 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2886,7 +2897,8 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {

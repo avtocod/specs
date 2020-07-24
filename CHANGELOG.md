@@ -10,6 +10,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `mileages.items[].date.event` also fillable by `images.archive` source
 - Field with path `mileages.items[].mileage` also fillable by `images.archive` source
+- Field with path `mileages.items[].date.event` also fillable by `customs.base` source
+- Field with path `mileages.items[].mileage` also fillable by `customs.base` source
+- Disabled source with name `base.moscow`
 
 ## v3.34.0
 

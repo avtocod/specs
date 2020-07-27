@@ -80,6 +80,11 @@
         "enabled": true
     },
     {
+        "name": "ramiosago.alt.ext",
+        "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
+        "enabled": true
+    },
+    {
         "name": "base.taxi",
         "description": "Базовая информация о ТС и признак использования в такси",
         "enabled": false

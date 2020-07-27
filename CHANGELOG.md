@@ -12,10 +12,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Field with path `insurance.osago.items[].policy.series` also fillable by `ramiosago.alt` source
-- Field with path `insurance.osago.items[].policy.number` also fillable by `ramiosago.alt` source
-- Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.alt` source
-- Field with path `insurance.osago.items[].restrictions.type` also fillable by `ramiosago.alt` source
+- Field with path `insurance.osago.items[].policy.series` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].policy.number` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.alt.ext` source
+- Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.alt.ext` source
+- Field with path `insurance.osago.items[].policy.is_active` also fillable by `ramiosago.alt.ext` source
 
 ## v3.35.0
 

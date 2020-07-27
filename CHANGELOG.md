@@ -17,6 +17,25 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.alt` source
 - Field with path `insurance.osago.items[].restrictions.type` also fillable by `ramiosago.alt` source
 
+## v3.35.0
+
+### Changed
+
+- Field with path `mileages.items[].date.event` also fillable by `images.archive` source
+- Field with path `mileages.items[].mileage` also fillable by `images.archive` source
+- Field with path `mileages.items[].date.event` also fillable by `customs.base` source
+- Field with path `mileages.items[].mileage` also fillable by `customs.base` source
+- Disabled source with name `base.moscow`
+
+## v3.34.0
+
+### Changed
+
+- Field with path `ads.history.items[].photos.board` also fillable by `images.archive` source
+- Field with path `ads.history.items[].photos.grz` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.brand.name` is not fillable by `images.archive` source now
+- Field with path `images.photos.items[].vehicle.model.name` is not fillable by `images.archive` source now
+
 ## v3.33.0
 
 ### Added

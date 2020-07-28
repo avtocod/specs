@@ -20,6 +20,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.alt.ext` source
 - Field with path `insurance.osago.items[].policy.is_active` also fillable by `ramiosago.alt.ext` source
 
+## v3.36.0
+
+### Changed
+
+- Source `carprice` marked as disabled
+
 ## v3.35.0
 
 ### Changed

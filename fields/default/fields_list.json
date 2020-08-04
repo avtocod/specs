@@ -1103,7 +1103,9 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1117,7 +1119,8 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1131,7 +1134,8 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1142,7 +1146,9 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1156,7 +1162,9 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1170,7 +1178,9 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1180,7 +1190,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {

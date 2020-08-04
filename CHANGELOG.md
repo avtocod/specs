@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+### UNRELEASED
+
+### Added
+
+- Source `references.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.rsa` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].code.transdekra` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].code.vehicle` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].relevance` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.type` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.brand.name` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.model.name` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.modifications.name` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.transmission.type` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.drive.type` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.type` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.power.hp` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.volume` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.doors.count` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.seats.count` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.weight.max` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.category.code` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.body.type` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.start` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.end` fillable by `references.rsa` source
+
 ## v3.37.0
 
 ### Added

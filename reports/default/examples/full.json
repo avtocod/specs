@@ -170,6 +170,64 @@
                         "relevance": 100.0
                     }
                 ]
+            },
+            "rsa": {
+                "items": [
+                    {
+                        "code": {
+                            "rsa": "036021565",
+                            "transdekra": "100130986",
+                            "vehicle": "002000035640040106030000000001"
+                        },
+                        "relevance": 0.29162,
+                        "vehicle": {
+                            "type": "Легковой",
+                            "brand": {
+                                "name": "NISSAN"
+                            },
+                            "model": {
+                                "name": "X-TRAIL"
+                            },
+                            "modifications": {
+                                "name": "2.0i SE 2WD"
+                            },
+                            "transmission": {
+                                "type": "Автоматическая"
+                            },
+                            "drive": {
+                                "type": "Полный"
+                            },
+                            "engine": {
+                                "type": "Бензин",
+                                "power": {
+                                    "hp": 313.0
+                                },
+                                "volume": 2.2
+                            },
+                            "doors": {
+                                "count": 5
+                            },
+                            "seats": {
+                                "count": 5
+                            },
+                            "weight": {
+                                "max": 2635
+                            },
+                            "category": {
+                                "code": "B"
+                            },
+                            "body": {
+                                "type": "Универсал"
+                            },
+                            "manufactured": {
+                                "year": {
+                                    "start": 2013,
+                                    "end": 2018
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         },
         "identifiers": {

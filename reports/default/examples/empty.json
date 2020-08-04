@@ -166,6 +166,64 @@
                         "relevance": null
                     }
                 ]
+            },
+            "rsa": {
+                "items": [
+                    {
+                        "code": {
+                            "rsa": null,
+                            "transdekra": null,
+                            "vehicle": null
+                        },
+                        "relevance": null,
+                        "vehicle": {
+                            "type": null,
+                            "brand": {
+                                "name": null
+                            },
+                            "model": {
+                                "name": null
+                            },
+                            "modifications": {
+                                "name": null
+                            },
+                            "transmission": {
+                                "type": null
+                            },
+                            "drive": {
+                                "type": null
+                            },
+                            "engine": {
+                                "type": null,
+                                "power": {
+                                    "hp": null
+                                },
+                                "volume": null
+                            },
+                            "doors": {
+                                "count": null
+                            },
+                            "seats": {
+                                "count": null
+                            },
+                            "weight": {
+                                "max": null
+                            },
+                            "category": {
+                                "code": null
+                            },
+                            "body": {
+                                "type": null
+                            },
+                            "manufactured": {
+                                "year": {
+                                    "start": null,
+                                    "end": null
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         },
         "identifiers": {

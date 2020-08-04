@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Value `Agency` to `repairs.history.items[].repairer.type` set [#143]
+- Value `RETRO CALCULATION` to `repairs.history.items[].task_process` set [#143]
+- Another pattern to `pts_code` [#143]
+
 ## v3.37.0
 
 ### Added

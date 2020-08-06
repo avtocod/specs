@@ -12,6 +12,32 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Value `RETRO CALCULATION` to `repairs.history.items[].task_process` set [#143]
 - Another pattern to `pts_code` [#143]
 
+## v3.38.0
+
+### Added
+
+- Source `references.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.transdekra`
+- Field with path `additional_info.catalog.rsa.items[].code.vehicle`
+- Field with path `additional_info.catalog.rsa.items[].relevance`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.brand.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.model.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.modifications.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.transmission.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.drive.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.power.hp`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.volume`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.doors.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.seats.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.weight.max`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.category.code`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.body.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.start`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.end`
+
 ## v3.37.0
 
 ### Added

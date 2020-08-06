@@ -697,6 +697,206 @@
         ]
     },
     {
+        "path": "additional_info.catalog.rsa.items[].code.rsa",
+        "description": "Дополнительная информация: Код ТС в справочнике РСА",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].code.transdekra",
+        "description": "Дополнительная информация: Код ТС в справочнике Трансдекра",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].code.vehicle",
+        "description": "Дополнительная информация: Код ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].relevance",
+        "description": "Дополнительная информация: Релевантность записи",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.type",
+        "description": "Дополнительная информация: Тип ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.brand.name",
+        "description": "Дополнительная информация: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.model.name",
+        "description": "Дополнительная информация: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.modifications.name",
+        "description": "Дополнительная информация: Модификация ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.transmission.type",
+        "description": "Дополнительная информация: Тип трансмиссии ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.drive.type",
+        "description": "Дополнительная информация: Тип привода ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.engine.type",
+        "description": "Дополнительная информация: Тип топлива ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.engine.power.hp",
+        "description": "Дополнительная информация: Мощность двигателя ТС (л.с)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.engine.volume",
+        "description": "Дополнительная информация: Объем двигателя в кубических сантиметрах",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.doors.count",
+        "description": "Дополнительная информация: Количество дверей у ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.seats.count",
+        "description": "Дополнительная информация: Количество сидений у ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.weight.max",
+        "description": "Дополнительная информация: Разрешенная макс. масса",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.category.code",
+        "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.body.type",
+        "description": "Дополнительная информация: Тип кузова ТС [Седан, Универсал, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.manufactured.year.start",
+        "description": "Дополнительная информация: Год начала производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.manufactured.year.end",
+        "description": "Дополнительная информация: Год окончания производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
         "path": "additional_info.identifiers.vin.checksum_validated",
         "description": "Дополнительная информация: Пройдена ли проверка контрольного символа VIN?",
         "types": [

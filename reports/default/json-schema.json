@@ -1541,6 +1541,377 @@
                                     }
                                 }
                             }
+                        },
+                        "rsa": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "code": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "rsa": {
+                                                        "description": "Код ТС в справочнике РСА",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "366013880"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "references.rsa"
+                                                        ]
+                                                    },
+                                                    "transdekra": {
+                                                        "description": "Код ТС в справочнике Трансдекра",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "100460813"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "references.rsa"
+                                                        ]
+                                                    },
+                                                    "vehicle": {
+                                                        "description": "Код ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "020600204137040101020000041327"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "references.rsa"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "relevance": {
+                                                "description": "Релевантность записи",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "minimum": 0,
+                                                "maximum": 1,
+                                                "examples": [
+                                                    0.5
+                                                ],
+                                                "fillable_by": [
+                                                    "references.rsa"
+                                                ]
+                                            },
+                                            "vehicle": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "type": {
+                                                        "description": "Тип ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Легковой"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "references.rsa"
+                                                        ]
+                                                    },
+                                                    "brand": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Марка ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Skoda"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "model": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Модель ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Octavia III"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "modifications": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Модификация ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "1.8TSI Elegance"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "transmission": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "type": {
+                                                                "description": "Тип трансмиссии ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Автоматическая"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "drive": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "type": {
+                                                                "description": "Тип привода ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Передний"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "engine": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "type": {
+                                                                "description": "Тип топлива ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Бензин"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            },
+                                                            "power": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "hp": {
+                                                                        "description": "Мощность двигателя ТС (л.с)",
+                                                                        "type": [
+                                                                            "number",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            180.0
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.rsa"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "volume": {
+                                                                "description": "Объем двигателя в кубических сантиметрах",
+                                                                "type": [
+                                                                    "number",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    1800.0
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "doors": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "count": {
+                                                                "description": "Количество дверей у ТС",
+                                                                "type": [
+                                                                    "integer",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    5
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "seats": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "count": {
+                                                                "description": "Количество сидений у ТС",
+                                                                "type": [
+                                                                    "integer",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    5
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "weight": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "max": {
+                                                                "description": "Разрешенная макс. масса",
+                                                                "type": [
+                                                                    "integer",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    3440
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "category": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "code": {
+                                                                "description": "Код категории ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "B"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "body": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "type": {
+                                                                "description": "Тип кузова ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Седан"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.rsa"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "manufactured": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "year": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "start": {
+                                                                        "description": "Год начала производства ТС",
+                                                                        "type": [
+                                                                            "integer",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            2014
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.rsa"
+                                                                        ]
+                                                                    },
+                                                                    "end": {
+                                                                        "description": "Год окончания производства ТС",
+                                                                        "type": [
+                                                                            "integer",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            2015
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.rsa"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },

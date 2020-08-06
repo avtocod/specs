@@ -5264,6 +5264,29 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2019-05-16 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "gibdd.dtp",
+                                        "dtp.registry"
+                                    ]
+                                }
+                            }
+                        },
                         "items": {
                             "type": "array",
                             "items": {

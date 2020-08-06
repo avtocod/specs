@@ -1533,6 +1533,17 @@
         ]
     },
     {
+        "path": "accidents.history.date.update",
+        "description": "История ДТП: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp",
+            "dtp.registry"
+        ]
+    },
+    {
         "path": "accidents.history.items[].number",
         "description": "История ДТП: Номер происшествия",
         "types": [

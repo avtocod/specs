@@ -1594,8 +1594,9 @@
                                                     "null"
                                                 ],
                                                 "minimum": 0,
+                                                "maximum": 1,
                                                 "examples": [
-                                                    100.0
+                                                    0.5
                                                 ],
                                                 "fillable_by": [
                                                     "references.rsa"

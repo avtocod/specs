@@ -9,26 +9,26 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `references.rsa`
-- Field with path `additional_info.catalog.rsa.items[].code.rsa` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].code.transdekra` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].code.vehicle` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].relevance` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.type` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.brand.name` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.model.name` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.modifications.name` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.transmission.type` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.drive.type` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.type` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.power.hp` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.volume` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.doors.count` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.seats.count` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.weight.max` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.category.code` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.body.type` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.start` fillable by `references.rsa` source
-- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.end` fillable by `references.rsa` source
+- Field with path `additional_info.catalog.rsa.items[].code.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.transdekra`
+- Field with path `additional_info.catalog.rsa.items[].code.vehicle`
+- Field with path `additional_info.catalog.rsa.items[].relevance`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.brand.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.model.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.modifications.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.transmission.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.drive.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.power.hp`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.volume`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.doors.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.seats.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.weight.max`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.category.code`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.body.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.start`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.end`
 
 ## v3.37.0
 

@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.38.0
+
+### Added
+
+- Source `references.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.transdekra`
+- Field with path `additional_info.catalog.rsa.items[].code.vehicle`
+- Field with path `additional_info.catalog.rsa.items[].relevance`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.brand.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.model.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.modifications.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.transmission.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.drive.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.power.hp`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.volume`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.doors.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.seats.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.weight.max`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.category.code`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.body.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.start`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.end`
+
 ## v3.37.0
 
 ### Added

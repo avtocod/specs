@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Field with path `accidents.history.dates.update`
+- Field with path `accidents.history.date.update`
 
 ## v3.38.0
 

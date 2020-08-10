@@ -8,9 +8,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Value `Agency` to `repairs.history.items[].repairer.type` set [#143]
-- Value `RETRO CALCULATION` to `repairs.history.items[].task_process` set [#143]
-- Another pattern to `pts_code` [#143]
+- New possible value `Agency` for `repairs.history.items[].repairer.type` field [#143]
+- New possible value `RETRO CALCULATION` for `repairs.history.items[].task_process` field [#143]
+- Additional pattern for electronic vehicle passport in `pts_code` definition [#143]
 
 ## v3.38.0
 

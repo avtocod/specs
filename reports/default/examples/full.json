@@ -439,9 +439,53 @@
                         ],
                         "count": 4
                     }
+                },
+                {
+                    "number": {
+                        "calculation": "ads14124sd",
+                        "claim": null
+                    },
+                    "date": {
+                        "calculation": "2016-09-21"
+                    },
+                    "mileage": null,
+                    "cost": {
+                        "total": 9444,
+                        "labour": 1000,
+                        "parts": 8444,
+                        "paint": null
+                    },
+                    "car": {
+                        "manufacturer": "BMW [V] [R] [01]",
+                        "model": "X3 Replacement (F25) 11\/10- [V] [M] [S] [E] [XC]",
+                        "sub_model": "X3 xDrive20d"
+                    },
+                    "insurer": {
+                        "name": null
+                    },
+                    "assessor": {
+                        "name": null
+                    },
+                    "task_process": "RETRO CALCULATION",
+                    "repairer": {
+                        "type": "Agency",
+                        "description": null
+                    },
+                    "details": {
+                        "items": [
+                            {
+                                "name": "ПР-ТУМ ФАРА Л63 17 7 238 787",
+                                "repair": {
+                                    "method": "E",
+                                    "description": "Замена"
+                                }
+                            }
+                        ],
+                        "count": 1
+                    }
                 }
             ],
-            "count": 2
+            "count": 3
         }
     },
     "carfax": {
@@ -789,7 +833,7 @@
                     "year": 2015,
                     "identifiers": {
                         "vin": "XTA217230C0203988",
-                        "pts": "63НМ942458",
+                        "pts": "123456789012345",
                         "body": null,
                         "chassis": null,
                         "engine": null

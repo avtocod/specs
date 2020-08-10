@@ -3560,7 +3560,7 @@
     },
     {
         "path": "repairs.history.items[].task_process",
-        "description": "Ремонтные работы: В каком процессе был выполнен расчёт [KASKO, OSAGO]",
+        "description": "Ремонтные работы: В каком процессе был выполнен расчёт [KASKO, OSAGO, RETRO CALCULATION]",
         "types": [
             "string"
         ],
@@ -3570,7 +3570,7 @@
     },
     {
         "path": "repairs.history.items[].repairer.type",
-        "description": "Ремонтные работы: Тип клиента, работавшего с делом. Garage, Insurance, Assessor, Bodyshop",
+        "description": "Ремонтные работы: Тип клиента, работавшего с делом. Garage, Insurance, Assessor, Bodyshop, Agency",
         "types": [
             "string"
         ],

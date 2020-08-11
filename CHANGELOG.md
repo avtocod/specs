@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.39.0
+
+### Added
+
+- New possible value `Agency` for `repairs.history.items[].repairer.type` field [#143]
+- New possible value `RETRO CALCULATION` for `repairs.history.items[].task_process` field [#143]
+- Additional pattern for electronic vehicle passport in `pts_code` definition [#143]
+- Field with path `accidents.history.date.update`
+
 ## v3.38.0
 
 ### Added

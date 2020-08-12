@@ -4057,5 +4057,55 @@
         "fillable_by": [
             "ads.price"
         ]
+    },
+    {
+        "path": "commercial_use.items[].service.name",
+        "description": "Коммерческое использование ТС: Название сервиса каршеринга",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].service.url",
+        "description": "Коммерческое использование ТС: Ссылка на сервис каршеринга",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].company.name",
+        "description": "Коммерческое использование ТС: Юридическое наименование компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].company.tin",
+        "description": "Коммерческое использование ТС: ИНН компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].company.type",
+        "description": "Коммерческое использование ТС: Тип компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
     }
 ]

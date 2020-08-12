@@ -208,5 +208,10 @@
         "name": "fines.madiampp",
         "description": "Данные о штрафах, оформленных на ТС, по данным МАДИ",
         "enabled": true
+    },
+    {
+        "name": "carsharing.registry",
+        "description": "Данные о коммерческом использовании ТС",
+        "enabled": true
     }
 ]

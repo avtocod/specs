@@ -8125,7 +8125,7 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "name": {
-                                        "description": "Название сервиса каршеринга",
+                                        "description": "Название сервиса",
                                         "type": [
                                             "string",
                                             "null"
@@ -8138,7 +8138,7 @@
                                         ]
                                     },
                                     "url": {
-                                        "description": "Ссылка на сервис каршеринга",
+                                        "description": "Ссылка на сервис",
                                         "type": [
                                             "string",
                                             "null"

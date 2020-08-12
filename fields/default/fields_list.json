@@ -4060,7 +4060,7 @@
     },
     {
         "path": "commercial_use.items[].service.name",
-        "description": "Коммерческое использование ТС: Название сервиса каршеринга",
+        "description": "Коммерческое использование ТС: Название сервиса",
         "types": [
             "string"
         ],
@@ -4070,7 +4070,7 @@
     },
     {
         "path": "commercial_use.items[].service.url",
-        "description": "Коммерческое использование ТС: Ссылка на сервис каршеринга",
+        "description": "Коммерческое использование ТС: Ссылка на сервис",
         "types": [
             "string"
         ],

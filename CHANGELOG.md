@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `commercial_use.count`
 
-## UNRELEASED
+## v3.40.0
 
 ### Added
 

@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Field with path `commercial_use.count`
+
+## UNRELEASED
+
+### Added
+
 - Source `carsharing.registry`
 - Field with path `commercial_use.items[].service.name`
 - Field with path `commercial_use.items[].service.url`

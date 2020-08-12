@@ -50,6 +50,12 @@
             "minLength": 7,
             "maxLength": 15
         },
+        "tin_code": {
+            "type": "string",
+            "pattern": "[0-9]+",
+            "minLength": 10,
+            "maxLength": 12
+        },
         "engine_number": {
             "type": "string",
             "pattern": "[0-9A-Za-zА-ЯЁа-яё\\-_\\ \\/\\\\\\(\\)\\.]+",
@@ -8095,6 +8101,108 @@
                                                 ]
                                             }
                                         }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "commercial_use": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Коммерческое использование ТС",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "service": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Название сервиса каршеринга",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Яндекс такси"
+                                        ],
+                                        "fillable_by": [
+                                            "carsharing.registry"
+                                        ]
+                                    },
+                                    "url": {
+                                        "description": "Ссылка на сервис каршеринга",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "https://yandex.ru/drive/"
+                                        ],
+                                        "fillable_by": [
+                                            "carsharing.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "company": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Юридическое наименование компании-владельца ТС",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "ООО Яндекс"
+                                        ],
+                                        "fillable_by": [
+                                            "carsharing.registry"
+                                        ]
+                                    },
+                                    "tin": {
+                                        "description": "ИНН компании-владельца ТС",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/tin_code"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "7707083893"
+                                        ],
+                                        "fillable_by": [
+                                            "carsharing.registry"
+                                        ]
+                                    },
+                                    "type": {
+                                        "description": "Тип компании-владельца ТС",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "enum": [
+                                            "CARSHARING",
+                                            "COMMERCIAL_USED",
+                                            null
+                                        ],
+                                        "examples": [
+                                            "CARSHARING"
+                                        ],
+                                        "fillable_by": [
+                                            "carsharing.registry"
+                                        ]
                                     }
                                 }
                             }

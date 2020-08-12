@@ -1319,5 +1319,20 @@
                 }
             ]
         }
+    },
+    "commercial_use": {
+        "items": [
+            {
+                "service": {
+                    "name": "Яндекс такси",
+                    "url": "https://yandex.ru/drive/"
+                },
+                "company": {
+                    "name": "ООО Яндекс",
+                    "tin": "7707083893",
+                    "type": "CARSHARING"
+                }
+            }
+        ]
     }
 }

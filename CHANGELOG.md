@@ -6,9 +6,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## UNRELEASED
 
-### Added
+### Fixed
 
-- Field with path `commercial_use.count`
+- Missing field with path `commercial_use.count`
 
 ## v3.40.0
 

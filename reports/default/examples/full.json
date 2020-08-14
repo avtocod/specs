@@ -1319,5 +1319,21 @@
                 }
             ]
         }
+    },
+    "commercial_use": {
+        "items": [
+            {
+                "service": {
+                    "name": "Каршеринг Авто",
+                    "url": "https://example.com"
+                },
+                "company": {
+                    "name": "ООО Каршеринг",
+                    "tin": "7407081193",
+                    "type": "CARSHARING"
+                }
+            }
+        ],
+        "count": 1
     }
 }

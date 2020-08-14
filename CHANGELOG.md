@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.40.1
+
+### Fixed
+
+- Missing field with path `commercial_use.count`
+
+## v3.40.0
+
+### Added
+
+- Source `carsharing.registry`
+- Field with path `commercial_use.items[].service.name`
+- Field with path `commercial_use.items[].service.url`
+- Field with path `commercial_use.items[].company.name`
+- Field with path `commercial_use.items[].company.tin`
+- Field with path `commercial_use.items[].company.type`
+
 ## v3.39.0
 
 ### Added

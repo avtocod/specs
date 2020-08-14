@@ -4107,5 +4107,75 @@
         "fillable_by": [
             "carsharing.registry"
         ]
+    },
+    {
+        "path": "recall_campaigns.items[].date",
+        "description": "Отзывные кампании: Дата начала отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].company.name",
+        "description": "Отзывные кампании: Организатор отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].description.reason",
+        "description": "Отзывные кампании: Причина отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].description.recommendation",
+        "description": "Отзывные кампании: Рекомендации и проводимые работы",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].vehicle.brand",
+        "description": "Отзывные кампании: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].vehicle.model",
+        "description": "Отзывные кампании: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].news.url",
+        "description": "Отзывные кампании: Ссылка на новость об отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
     }
 ]

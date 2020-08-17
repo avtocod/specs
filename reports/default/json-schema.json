@@ -8215,6 +8215,146 @@
                     "minimum": 0
                 }
             }
+        },
+        "recall_campaigns": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Отзывные кампании",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "description": "Дата начала отзывной кампании",
+                                "oneOf": [
+                                    {
+                                        "type": "null"
+                                    },
+                                    {
+                                        "$ref": "#/definitions/date"
+                                    }
+                                ],
+                                "examples": [
+                                    "2012-12-12"
+                                ],
+                                "fillable_by": [
+                                    "recall.campaigns.registry"
+                                ]
+                            },
+                            "company": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Организатор отзывной кампании",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "ООО Отзывная Кампания"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "description": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "reason": {
+                                        "description": "Причина отзывной кампании",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Причиной отзыва автомобилей является возможное некорректное срабатывание подушки безопасности водителя"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    },
+                                    "recommendation": {
+                                        "description": "Рекомендации и проводимые работы",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "На транспортных средствах будет произведена проверка и, при необходимости, замена газогенератора подушки безопасности водителя"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "vehicle": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "brand": {
+                                        "description": "Марка ТС",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Nissan"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    },
+                                    "model": {
+                                        "description": "Модель ТС",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Tilda"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "news": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "url": {
+                                        "description": "Ссылка на новость об отзывной кампании",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "https://example.com"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
         }
     }
 }

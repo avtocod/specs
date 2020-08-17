@@ -213,5 +213,10 @@
         "name": "carsharing.registry",
         "description": "Данные о коммерческом использовании ТС",
         "enabled": true
+    },
+    {
+        "name": "recall.campaigns.registry",
+        "description": "Отзывные кампании",
+        "enabled": true
     }
 ]

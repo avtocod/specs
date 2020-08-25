@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.41.1
+
+### Fixed
+
+- Fixed typo of possible value for `commercial_use.items[].company.type`
+
 ## v3.41.0
 
 ### Added

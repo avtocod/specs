@@ -1098,5 +1098,27 @@
             }
         ],
         "count": 1
+    },
+    "recall_campaigns": {
+        "items": [
+            {
+                "date": null,
+                "company": {
+                    "name": null
+                },
+                "description": {
+                    "reason": null,
+                    "recommendation": null
+                },
+                "vehicle": {
+                    "brand": null,
+                    "model": null
+                },
+                "news": {
+                    "url": null
+                }
+            }
+        ],
+        "count": 1
     }
 }

@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.41.0
+
+### Added
+
+- Source `recall.campaigns.registry`
+- Field with path `recall_campaigns.items[].date`
+- Field with path `recall_campaigns.items[].company.name`
+- Field with path `recall_campaigns.items[].description.reason`
+- Field with path `recall_campaigns.items[].description.recommendation`
+- Field with path `recall_campaigns.items[].vehicle.brand`
+- Field with path `recall_campaigns.items[].vehicle.model`
+- Field with path `recall_campaigns.items[].news.url`
+- Field with path `recall_campaigns.count`
+
 ## v3.40.1
 
 ### Fixed

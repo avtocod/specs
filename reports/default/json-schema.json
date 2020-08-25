@@ -5727,6 +5727,30 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "date": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2015-07-13 00:00:00"
+                                    ],
+                                    "fillable_by": [
+                                        "gibdd.restrict",
+                                        "restrictions.registry"
+                                    ]
+                                }
+                            }
+                        },
                         "items": {
                             "type": "array",
                             "items": {
@@ -5751,7 +5775,8 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
                                             },
                                             "start": {
@@ -5768,7 +5793,8 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
                                             },
                                             "end": {
@@ -5785,7 +5811,8 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
                                             }
                                         }
@@ -5805,7 +5832,8 @@
                                                     2004
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
                                             },
                                             "model": {
@@ -5822,7 +5850,8 @@
                                                             "OPEL MONTEREY"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.restrict"
+                                                            "gibdd.restrict",
+                                                            "restrictions.registry"
                                                         ]
                                                     }
                                                 }
@@ -5843,7 +5872,8 @@
                                                     "Судебные Органы"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
                                             },
                                             "region": {
@@ -5860,7 +5890,8 @@
                                                             "Брянская"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.restrict"
+                                                            "gibdd.restrict",
+                                                            "restrictions.registry"
                                                         ]
                                                     }
                                                 }
@@ -5881,7 +5912,8 @@
                                                     "Запрет на регистрационные действия"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
                                             },
                                             "reason": {
@@ -5894,7 +5926,8 @@
                                                     "Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
                                             },
                                             "number": {
@@ -5907,8 +5940,33 @@
                                                     "90129308-0060"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "restrictions.registry"
                                                 ]
+                                            },
+                                            "actuality": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "date": {
+                                                        "description": "Дата актуальности данных",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/datetime"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "2015-07-13 00:00:00"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "gibdd.restrict",
+                                                            "restrictions.registry"
+                                                        ]
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -5931,7 +5989,8 @@
                                 null
                             ],
                             "fillable_by": [
-                                "gibdd.restrict"
+                                "gibdd.restrict",
+                                "restrictions.registry"
                             ]
                         }
                     }

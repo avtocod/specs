@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `restrictions.registry`
+- Field with path `restrictions.registration_actions.date.update`
+- Field with path `restrictions.registration_actions.items[].restrict.actuality.date`
+
+### Changed
+
+- Field with path `restrictions.registration_actions.items[].date.added` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].date.start` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].date.end` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].vehicle.year` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].vehicle.model.name` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].initiator.name` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].initiator.region.name` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].restrict.type` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].restrict.reason` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].restrict.number` also fillable by `restrictions.registry` source
+
 ## v3.41.0
 
 ### Added

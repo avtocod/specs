@@ -747,6 +747,9 @@
     },
     "restrictions": {
         "registration_actions": {
+            "date": {
+                "update": null
+            },
             "items": [
                 {
                     "date": {
@@ -769,7 +772,10 @@
                     "restrict": {
                         "type": null,
                         "reason": null,
-                        "number": null
+                        "number": null,
+                        "actuality": {
+                            "date": null
+                        }
                     }
                 }
             ],

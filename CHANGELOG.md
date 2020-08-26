@@ -25,6 +25,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `restrictions.registration_actions.items[].restrict.reason` also fillable by `restrictions.registry` source
 - Field with path `restrictions.registration_actions.items[].restrict.number` also fillable by `restrictions.registry` source
 
+## v3.41.1
+
+### Fixed
+
+- Fixed typo of possible value for `commercial_use.items[].company.type`
+
 ## v3.41.0
 
 ### Added

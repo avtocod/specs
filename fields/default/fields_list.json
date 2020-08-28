@@ -1022,6 +1022,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
+            "base.ext",
             "base.alt",
             "regactions.registry"
         ]
@@ -1034,6 +1036,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
+            "base.ext",
             "base.alt"
         ]
     },
@@ -1045,6 +1049,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
+            "base.ext",
             "base.alt",
             "regactions.registry"
         ]
@@ -1056,6 +1062,9 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt",
             "gibdd.history"
         ]
     },
@@ -1066,6 +1075,9 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt",
             "gibdd.history"
         ]
     },

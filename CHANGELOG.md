@@ -25,6 +25,16 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `restrictions.registration_actions.items[].restrict.reason` also fillable by `restrictions.registry` source
 - Field with path `restrictions.registration_actions.items[].restrict.number` also fillable by `restrictions.registry` source
 
+## v3.42.0
+
+### Changed
+
+- Field with path `ownership.history.items[].date.start` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].date.end` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].owner.type` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].last_operation.code` also fillable by `base`, `base.ext`, `base.alt`
+- Field with path `ownership.history.items[].last_operation.description` also fillable by `base`, `base.ext`, `base.alt`
+
 ## v3.41.1
 
 ### Fixed

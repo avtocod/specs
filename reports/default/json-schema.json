@@ -6045,6 +6045,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
+                                                    "base",
+                                                    "base.ext",
                                                     "base.alt",
                                                     "regactions.registry"
                                                 ]
@@ -6064,6 +6066,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
+                                                    "base",
+                                                    "base.ext",
                                                     "base.alt"
                                                 ]
                                             }
@@ -6092,6 +6096,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
+                                                    "base",
+                                                    "base.ext",
                                                     "base.alt",
                                                     "regactions.registry"
                                                 ]
@@ -6112,6 +6118,9 @@
                                                     "11"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
+                                                    "base.ext",
+                                                    "base.alt",
                                                     "gibdd.history"
                                                 ]
                                             },
@@ -6125,6 +6134,9 @@
                                                     "Первичная регистрация"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
+                                                    "base.ext",
+                                                    "base.alt",
                                                     "gibdd.history"
                                                 ]
                                             }

@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.42.0
+
+### Changed
+
+- Field with path `ownership.history.items[].date.start` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].date.end` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].owner.type` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].last_operation.code` also fillable by `base`, `base.ext`, `base.alt`
+- Field with path `ownership.history.items[].last_operation.description` also fillable by `base`, `base.ext`, `base.alt`
+
 ## v3.41.1
 
 ### Fixed

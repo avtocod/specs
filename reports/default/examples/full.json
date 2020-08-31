@@ -1016,7 +1016,10 @@
                         "end": "2011-04-07 00:00:00"
                     },
                     "owner": {
-                        "type": "PERSON"
+                        "type": "PERSON",
+                        "company": {
+                            "tin": "7407081193"
+                        }
                     },
                     "last_operation": {
                         "code": "11",

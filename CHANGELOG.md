@@ -10,20 +10,19 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Source `restrictions.registry`
 - Field with path `restrictions.registration_actions.date.update`
-- Field with path `restrictions.registration_actions.items[].restrict.actuality.date`
-
-### Changed
-
-- Field with path `restrictions.registration_actions.items[].date.added` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].date.start` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].date.end` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].vehicle.year` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].vehicle.model.name` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].initiator.name` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].initiator.region.name` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].restrict.type` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].restrict.reason` also fillable by `restrictions.registry` source
-- Field with path `restrictions.registration_actions.items[].restrict.number` also fillable by `restrictions.registry` source
+- Field with path `restrictions.registration_actions.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.date.update`
+- Field with path `restrictions.registration_actions_archive.items[].date.added`
+- Field with path `restrictions.registration_actions_archive.items[].date.start`
+- Field with path `restrictions.registration_actions_archive.items[].date.end`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.year`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.model.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.region.name`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.type`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.reason`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.number`
+- Field with path `restrictions.registration_actions_archive.items[].actuality.date`
 
 ## v3.42.0
 

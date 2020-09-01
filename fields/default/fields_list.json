@@ -1834,8 +1834,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1845,8 +1844,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1856,8 +1854,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1867,8 +1864,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1878,8 +1874,7 @@
             "integer"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1889,8 +1884,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1900,8 +1894,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1911,8 +1904,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1922,8 +1914,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1933,8 +1924,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1944,19 +1934,17 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
-        "path": "restrictions.registration_actions.items[].restrict.actuality.date",
+        "path": "restrictions.registration_actions.items[].actuality.date",
         "description": "Ограничения на рег. действия: Дата актуальности данных",
         "types": [
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict",
-            "restrictions.registry"
+            "gibdd.restrict"
         ]
     },
     {
@@ -1966,7 +1954,136 @@
             "boolean"
         ],
         "fillable_by": [
-            "gibdd.restrict",
+            "gibdd.restrict"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.date.update",
+        "description": "Архив ограничений на рег. действия: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].date.added",
+        "description": "Архив ограничений на рег. действия: Дата добавления данных об ограничении в реестр",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].date.start",
+        "description": "Архив ограничений на рег. действия: Дата начала действия ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].date.end",
+        "description": "Архив ограничений на рег. действия: Дата окончания действия ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].vehicle.year",
+        "description": "Архив ограничений на рег. действия: Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].vehicle.model.name",
+        "description": "Архив ограничений на рег. действия: Марка (модель) ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].initiator.name",
+        "description": "Архив ограничений на рег. действия: Наименование организации наложившей ограничение",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].initiator.region.name",
+        "description": "Архив ограничений на рег. действия: Регион инициатора ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].restrict.type",
+        "description": "Архив ограничений на рег. действия: Вид ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].restrict.reason",
+        "description": "Архив ограничений на рег. действия: Основания для наложения ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].restrict.number",
+        "description": "Архив ограничений на рег. действия: Номер документа устанавливающего ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].actuality.date",
+        "description": "Архив ограничений на рег. действия: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.has_restrictions",
+        "description": "Архив ограничений на рег. действия: Наличие ограничений на дату формирования архива",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
             "restrictions.registry"
         ]
     },

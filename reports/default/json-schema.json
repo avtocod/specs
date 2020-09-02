@@ -6045,6 +6045,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
+                                                    "base",
+                                                    "base.ext",
                                                     "base.alt",
                                                     "regactions.registry"
                                                 ]
@@ -6064,6 +6066,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
+                                                    "base",
+                                                    "base.ext",
                                                     "base.alt"
                                                 ]
                                             }
@@ -6092,9 +6096,36 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.history",
+                                                    "base",
+                                                    "base.ext",
                                                     "base.alt",
                                                     "regactions.registry"
                                                 ]
+                                            },
+                                            "company": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "tin": {
+                                                        "description": "ИНН компании владельца ТС",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/tin_code"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "7407081193"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "base",
+                                                            "base.ext",
+                                                            "regactions.registry"
+                                                        ]
+                                                    }
+                                                }
                                             }
                                         }
                                     },
@@ -6112,6 +6143,9 @@
                                                     "11"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
+                                                    "base.ext",
+                                                    "base.alt",
                                                     "gibdd.history"
                                                 ]
                                             },
@@ -6125,6 +6159,9 @@
                                                     "Первичная регистрация"
                                                 ],
                                                 "fillable_by": [
+                                                    "base",
+                                                    "base.ext",
+                                                    "base.alt",
                                                     "gibdd.history"
                                                 ]
                                             }

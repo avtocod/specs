@@ -6106,6 +6106,21 @@
                                                 "type": "object",
                                                 "additionalProperties": false,
                                                 "properties": {
+                                                    "name": {
+                                                        "description": "Наименование компании владельца ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "ООО ОблМотор"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "base",
+                                                            "base.ext",
+                                                            "regactions.registry"
+                                                        ]
+                                                    },
                                                     "tin": {
                                                         "description": "ИНН компании владельца ТС",
                                                         "oneOf": [
@@ -6123,6 +6138,34 @@
                                                             "base",
                                                             "base.ext",
                                                             "regactions.registry"
+                                                        ]
+                                                    },
+                                                    "kpp": {
+                                                        "description": "КПП компании владельца ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "773301001"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "base",
+                                                            "base.ext"
+                                                        ]
+                                                    },
+                                                    "ogrn": {
+                                                        "description": "ОГРН компании владельца ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "1053600591197"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "base",
+                                                            "base.ext"
                                                         ]
                                                     }
                                                 }

@@ -77,6 +77,8 @@
 
 ## SDK
 
+Список `SDK` для удобного доступа к данным спецификациям:
+
 - PHP [`avtocod/specs-php`](https://github.com/avtocod/specs-php)
 
 ## Поддержка

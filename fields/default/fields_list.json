@@ -1056,6 +1056,18 @@
         ]
     },
     {
+        "path": "ownership.history.items[].owner.company.tin",
+        "description": "История владения: ИНН компании владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "ownership.history.items[].last_operation.code",
         "description": "История владения: Код последней операции в периоде владения",
         "types": [

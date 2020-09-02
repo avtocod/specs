@@ -6407,6 +6407,31 @@
                                                     "base.alt",
                                                     "regactions.registry"
                                                 ]
+                                            },
+                                            "company": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "tin": {
+                                                        "description": "ИНН компании владельца ТС",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/tin_code"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "7407081193"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "base",
+                                                            "base.ext",
+                                                            "regactions.registry"
+                                                        ]
+                                                    }
+                                                }
                                             }
                                         }
                                     },

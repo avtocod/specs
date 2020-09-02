@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Avtocod\\Specifications\\": "sdk/php/src/"
+            "Avtocod\\Specifications\\Legacy\\": "sdk/php/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Avtocod\\Specifications\\Tests\\": "sdk/php/tests/"
+            "Avtocod\\Specifications\\Legacy\\Tests\\": "sdk/php/tests/"
         }
     },
     "scripts": {

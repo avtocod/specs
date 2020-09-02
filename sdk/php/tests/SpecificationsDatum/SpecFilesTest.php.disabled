@@ -7,7 +7,7 @@ use Illuminate\Support\Arr;
 use RecursiveRegexIterator;
 use RecursiveIteratorIterator;
 use RecursiveDirectoryIterator;
-use Avtocod\Specifications\Specifications;
+use Avtocod\Specifications\Path;
 use Avtocod\Specifications\Tests\AbstractTestCase;
 
 /**
@@ -138,10 +138,10 @@ class SpecFilesTest extends AbstractTestCase
         $not_setted = sprintf('__NOT_SETTED_%s__', md5(microtime(true)));
 
         foreach (['default'] as $group_name) {
-            $fields = Specifications::getFieldsSpecification($group_name);
+            $fields = Path::getFieldsSpecification($group_name);
 
             foreach (['full', 'empty'] as $example_name) {
-                $report_content = Specifications::getReportExample($group_name, $example_name);
+                $report_content = Path::getReportExample($group_name, $example_name);
 
                 foreach ($fields as $field) {
                     $field_path  = $field->getPath();

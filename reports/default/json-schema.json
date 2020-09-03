@@ -56,6 +56,18 @@
             "minLength": 10,
             "maxLength": 12
         },
+        "kpp": {
+            "type": "string",
+            "pattern": "^[0-9]+$",
+            "minLength": 9,
+            "maxLength": 9
+        },
+        "ogrn": {
+            "type": "string",
+            "pattern": "^[0-9]+$",
+            "minLength": 13,
+            "maxLength": 13
+        },
         "engine_number": {
             "type": "string",
             "pattern": "[0-9A-Za-zА-ЯЁа-яё\\-_\\ \\/\\\\\\(\\)\\.]+",
@@ -2138,9 +2150,13 @@
                                             },
                                             "kpp": {
                                                 "description": "КПП предприятия-владельца",
-                                                "type": [
-                                                    "string",
-                                                    "null"
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/kpp"
+                                                    }
                                                 ],
                                                 "examples": [
                                                     "773301001"
@@ -2153,9 +2169,13 @@
                                             },
                                             "ogrn": {
                                                 "description": "ОГРН предприятия-владельца",
-                                                "type": [
-                                                    "string",
-                                                    "null"
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/ogrn"
+                                                    }
                                                 ],
                                                 "examples": [
                                                     "1053600591197"
@@ -3452,9 +3472,13 @@
                                             },
                                             "kpp": {
                                                 "description": "КПП получателя платежа",
-                                                "type": [
-                                                    "string",
-                                                    "null"
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/kpp"
+                                                    }
                                                 ],
                                                 "examples": [
                                                     "059201001"
@@ -6142,9 +6166,13 @@
                                                     },
                                                     "kpp": {
                                                         "description": "КПП компании владельца ТС",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/kpp"
+                                                            }
                                                         ],
                                                         "examples": [
                                                             "773301001"
@@ -6156,9 +6184,13 @@
                                                     },
                                                     "ogrn": {
                                                         "description": "ОГРН компании владельца ТС",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/ogrn"
+                                                            }
                                                         ],
                                                         "examples": [
                                                             "1053600591197"

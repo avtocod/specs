@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Composer dependency `avtocod/specs-php`  [#137]
+
+### Removed
+
+- **PHP SDK**. `PHP SDK` was moved to separate repository [#137]
+- Issue templates for sdk bugs and feature requests [#137]
+- `Makefile` goals `test` and `test-cover` [#137]
+- Installing `xdebug` in `Dockerfile` [#137]
+
+[#137]:https://github.com/avtocod/specs/issues/137
+
 ## v3.44.0
 
 ### Added

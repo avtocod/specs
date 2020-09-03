@@ -25,17 +25,11 @@ install: clean ## Install regular php dependencies
 lowest: clean ## Install lowest php dependencies
 	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --ansi --no-suggest --prefer-dist --prefer-lowest
 
-test: ## Execute php tests and linters
-	$(dc_bin) run $(RUN_APP_ARGS) composer test
-
 lint: ## Execute linters
 	$(docker_bin) run --rm \
 		-v "$(shell pwd)/CHANGELOG.md:/CHANGELOG.md:ro" \
 		avtodev/markdown-lint:v1 \
 		--rules /lint/rules/changelog.js --config /lint/config/changelog.yml /CHANGELOG.md
-
-test-cover: ## Execute php tests with coverage
-	$(dc_bin) run --rm --user "0:0" app sh -c 'docker-php-ext-enable xdebug && su $(shell whoami) -s /bin/sh -c "composer phpunit-cover"'
 
 shell: ## Start shell into container with php
 	$(dc_bin) run -e "PS1=\[\033[1;32m\]\[\033[1;36m\][\u@docker] \[\033[1;34m\]\w\[\033[0;35m\] \[\033[1;36m\]# \[\033[0m\]" \

@@ -26,6 +26,9 @@
             "url": "git@github.com:Reallife/specs-php.git"
         }
     ],
+    "suggest": {
+        "avtocod/specs-php": "SDK for a working with specifications data."
+    },
     "support": {
         "issues": "https://github.com/avtocod/specs/issues",
         "source": "https://github.com/avtocod/specs"

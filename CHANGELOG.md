@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Patterns in `./reports/default/json-schema.json`
 
+## v3.44.0
+
+### Added
+
+- Field with path `ownership.history.items[].owner.company.name`
+- Field with path `ownership.history.items[].owner.company.kpp`
+- Field with path `ownership.history.items[].owner.company.ogrn`
+
 ## v3.43.0
 
 ### Added

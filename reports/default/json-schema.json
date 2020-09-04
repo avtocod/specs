@@ -6,19 +6,19 @@
     "definitions": {
         "vin_code": {
             "type": "string",
-            "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ]+$",
+            "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\*]+$",
             "minLength": 17,
             "maxLength": 17
         },
         "grz_code": {
             "type": "string",
-            "pattern": "^[0-9АВЕКМНОРСТУХ]+$",
+            "pattern": "^[0-9АВЕКМНОРСТУХ\\*]+$",
             "minLength": 6,
             "maxLength": 9
         },
         "sts_code": {
             "type": "string",
-            "pattern": "^[0-9А-ЯЁ ]+$",
+            "pattern": "^[0-9А-ЯЁ\\* ]+$",
             "minLength": 10,
             "maxLength": 12
         },
@@ -26,13 +26,13 @@
             "oneOf": [
                 {
                     "type": "string",
-                    "pattern": "^[0-9А-ЯЁ ]+$",
+                    "pattern": "^[0-9А-ЯЁ\\* ]+$",
                     "minLength": 10,
                     "maxLength": 12
                 },
                 {
                     "type": "string",
-                    "pattern": "^[0-9]+$",
+                    "pattern": "^[0-9\\*]+$",
                     "minLength": 15,
                     "maxLength": 15
                 }
@@ -40,13 +40,13 @@
         },
         "body_code": {
             "type": "string",
-            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
             "maxLength": 15
         },
         "chassis_code": {
             "type": "string",
-            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
             "maxLength": 15
         },
@@ -6996,10 +6996,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "type": "string",
-                                                                "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\*]+$",
-                                                                "minLength": 17,
-                                                                "maxLength": 17
+                                                                "$ref": "#/definitions/vin_code"
                                                             }
                                                         ],
                                                         "examples": [
@@ -7017,10 +7014,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "type": "string",
-                                                                "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
-                                                                "minLength": 7,
-                                                                "maxLength": 15
+                                                                "$ref": "#/definitions/chassis_code"
                                                             }
                                                         ],
                                                         "examples": [

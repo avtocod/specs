@@ -1,12 +1,16 @@
 # Composer lock file
 composer.lock
 
+# yarn lock file
+yarn.lock
+
 # IDEs
 /nbproject
 /.idea
 
 # Vendors
 /vendor
+/node_modules
 
 # Temp dirs & trash
 /temp

@@ -1,6 +1,7 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
-
+/** @typedef {import('ts-jest')} */
+/** @type {import('@jest/types').Config.ConfigGlobals} */
 module.exports = {
   // Stop running tests after `n` failures
   bail: 1,
@@ -22,7 +23,9 @@ module.exports = {
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
-
+  'ts-jest': {
+    tsConfig: 'tsconfig.test.json'
+  },
   // Indicates whether each individual test should be reported during the run
   verbose: true,
 };

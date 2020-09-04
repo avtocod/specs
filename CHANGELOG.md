@@ -19,6 +19,34 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 [#137]:https://github.com/avtocod/specs/issues/137
 
+## v3.45.0
+
+### Changed
+
+- Extend pattern with `*` for definitions `vin_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `grz_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `sts_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `pts_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `body_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `chassis_code` in `./reports/default/json-schema.json`
+
+### Fixed
+
+- Pattern for definitions `vin_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `grz_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `sts_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `pts_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `body_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `chassis_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `tin_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `engine_number` in `./reports/default/json-schema.json`
+- Pattern for definitions `brand_unique_id` in `./reports/default/json-schema.json`
+- Pattern for definitions `model_unique_id` in `./reports/default/json-schema.json`
+- Pattern for definitions `phone_number` in `./reports/default/json-schema.json`
+- Pattern for definitions `datetime` in `./reports/default/json-schema.json`
+- Pattern for definitions `date` in `./reports/default/json-schema.json`
+- Pattern for field with path `additional_info.owner.geo.postal_code` in `./reports/default/json-schema.json`
+
 ## v3.44.0
 
 ### Added

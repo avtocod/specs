@@ -30,6 +30,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Pattern for definitions `phone_number` in `./reports/default/json-schema.json`
 - Pattern for definitions `datetime` in `./reports/default/json-schema.json`
 - Pattern for definitions `date` in `./reports/default/json-schema.json`
+- Pattern for field with path `additional_info.owner.geo.postal_code` in `./reports/default/json-schema.json`
 
 ## v3.44.0
 

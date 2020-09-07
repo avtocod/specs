@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Composer dependency `avtocod/specs-php`  [#137]
+- Composer dependency `avtocod/specs-php` [#137]
 
 ### Removed
 

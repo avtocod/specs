@@ -10,7 +10,6 @@ on:
   schedule:
     - cron: '0 0 * * 0' # once in a week, docs: <https://git.io/JvxXE#onschedule>
 
-
 jobs: # Docs: <https://git.io/JvxXE>
   test:
     name: Run tests

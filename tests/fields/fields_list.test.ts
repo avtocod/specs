@@ -36,8 +36,10 @@ describe.each(groups_list)(`${fields_file_name} file in %s group of fields specs
             expect(matches).toBeArrayOfSize(1);
         });
 
-        test.concurrent(`should ${non_fillable_fields[group_name].indexOf(field.path) === -1 ? 'be fillable by at least one source' : 'not be fillable by any source'}`, async () => {
-            if (field.fillable_by.length > 0) {
+        const is_should_be_fillable = non_fillable_fields[group_name].indexOf(field.path) === -1
+
+        test.concurrent(`should ${ is_should_be_fillable ? 'be fillable by at least one source' : 'not be fillable by any source'}`, async () => {
+            if (is_should_be_fillable) {
                 expect(non_fillable_fields[group_name]).not.toContain(field.path);
             } else {
                 expect(non_fillable_fields[group_name]).toContain(field.path);

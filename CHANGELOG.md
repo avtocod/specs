@@ -9,13 +9,17 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Composer dependency `avtocod/specs-php`  [#137]
+- Tests for specifications using `nodejs` and `jest` [#137]
+
+### Changed
+
+- `Makefile` goals `test` and `install` [#137]
 
 ### Removed
 
 - **PHP SDK**. `PHP SDK` was moved to separate repository [#137]
 - Issue templates for sdk bugs and feature requests [#137]
-- `Makefile` goals `test` and `test-cover` [#137]
-- Installing `xdebug` in `Dockerfile` [#137]
+- `Makefile` goal `test-cover` [#137]
 
 [#137]:https://github.com/avtocod/specs/issues/137
 

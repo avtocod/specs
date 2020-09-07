@@ -21,8 +21,8 @@ const expected_items_count: {[k: string]: number} = {
     default: expected_identifiers_types.default.length
 }
 describe.each(groups_list)(`${identifiers_file_name} file in %s group of identifiers specs`, group_name => {
-    const specs_patch = path.resolve(specs_root_dir, 'identifiers', group_name, identifiers_file_name);
-    const identifiers: Array<Identifier> = require(specs_patch);
+    const specs_path = path.resolve(specs_root_dir, 'identifiers', group_name, identifiers_file_name);
+    const identifiers: Array<Identifier> = require(specs_path);
 
 
     test.concurrent(`has ${expected_items_count[group_name]} items`, async () => {

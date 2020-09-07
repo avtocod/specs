@@ -8,8 +8,8 @@ const expected_items_count: {[k: string]: number} = {
 };
 
 describe.each(groups_list)('marks.json file in %s group of vehicles specs', group_name => {
-    const specs_patch = path.resolve(specs_root_dir, 'vehicles', group_name, marks_file_name);
-    const marks: Array<VehicleMark> = require(specs_patch);
+    const specs_path = path.resolve(specs_root_dir, 'vehicles', group_name, marks_file_name);
+    const marks: Array<VehicleMark> = require(specs_path);
 
     test.concurrent(`has ${expected_items_count[group_name]} items`, async () => {
         expect(marks.length).toBe(expected_items_count[group_name]);

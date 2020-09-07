@@ -17,8 +17,8 @@ const disabled_sources: {[k: string]: string[]} = {
 };
 
 describe.each(groups_list)(`${sources_file_name} file in %s group of sources specs`, group_name => {
-    const specs_patch = path.resolve(specs_root_dir, 'sources', group_name, sources_file_name);
-    const sources: Array<Source> = require(specs_patch);
+    const specs_path = path.resolve(specs_root_dir, 'sources', group_name, sources_file_name);
+    const sources: Array<Source> = require(specs_path);
 
 
     test.concurrent(`has ${expected_items_count[group_name]} items`, async () => {

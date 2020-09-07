@@ -33,8 +33,8 @@ describe.each(groups_list)('%s group of vehicles specs', group_name => {
     const marks: Array<VehicleMark> = require(marks_path);
 
     describe.each(models_file_names)('%s file', models_file_name => {
-        const specs_patch = path.resolve(specs_root_dir, 'vehicles', group_name, models_file_name);
-        const models: Array<VehicleModel> = require(specs_patch);
+        const specs_path = path.resolve(specs_root_dir, 'vehicles', group_name, models_file_name);
+        const models: Array<VehicleModel> = require(specs_path);
 
         test.concurrent(`has ${expected_items_count[group_name][models_file_name]} items`, async () => {
             expect(models.length).toBe(expected_items_count[group_name][models_file_name]);

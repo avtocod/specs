@@ -17,15 +17,8 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
-        "avtocod/specs-php": "dev-fix-tests-and-other-stuff"
+        "avtocod/specs-php": "~1.0"
     },
-    "prefer-stable": true,
-    "repositories":[
-        {
-            "type": "vcs",
-            "url": "git@github.com:Reallife/specs-php.git"
-        }
-    ],
     "suggest": {
         "avtocod/specs-php": "SDK for a working with specifications data."
     },

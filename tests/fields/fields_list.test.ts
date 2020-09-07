@@ -103,6 +103,3 @@ describe.each(groups_list)(`${fields_file_name} file in %s group of fields specs
         });
     });
 });
-
-const isInt = (n: any): boolean => !(n % 1);
-const isFloat = (n: any): boolean => !!(n % 1);

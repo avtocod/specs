@@ -25,7 +25,7 @@ lint: ## Execute linters
 install: ## Install all dependencies
 	$(dc_bin) run $(RUN_ARGS) node yarn install
 
-test: ## Execute tests and linters
+test: ## Execute tests
 	$(dc_bin) run $(RUN_ARGS) node yarn test
 
 shell: ## Start shell into container with node

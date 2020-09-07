@@ -1,7 +1,12 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
-/** @typedef {import('ts-jest')} */
-/** @type {import('@jest/types').Config.ConfigGlobals} */
+
+const { defaults: tsjPreset } = require('ts-jest/presets');
+
+/**
+ * @typedef {import('ts-jest')}
+ * @type {import('@jest/types').Config.ConfigGlobals}
+ */
 module.exports = {
   // Stop running tests after `n` failures
   bail: 1,
@@ -21,11 +26,16 @@ module.exports = {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    '^.+\\.ts?$': 'ts-jest',
+      ...tsjPreset.transform
   },
-  'ts-jest': {
-    tsConfig: 'tsconfig.test.json'
+
+  // ts-jest configuration
+  globals: {
+    'ts-jest': {
+      tsConfig: 'tsconfig.json'
+    },
   },
+
   // Indicates whether each individual test should be reported during the run
-  verbose: true,
+  verbose: false,
 };

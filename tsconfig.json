@@ -4,10 +4,11 @@
     "module": "esnext",
     "moduleResolution": "node",
     "baseUrl": ".",
-//    "strict": true,
+    "strict": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules"

@@ -10,26 +10,26 @@ export const groups_list: Array<string> = [
 
 type FilesMap = {[key: string]: Array<string>}
 
-// All allowed specs files map
-export const files_map: FilesMap = {
-    'fields': [
+// All required specs files map
+export const required_files_map: FilesMap = {
+    fields: [
         'fields_list.json',
         'json-schema.json'
     ],
-    'identifiers': [
+    identifiers: [
         'types_list.json',
         'json-schema.json'
     ],
-    'reports': [
+    reports: [
         'examples/empty.json',
         'examples/full.json',
         'json-schema.json'
     ],
-    'sources': [
+    sources: [
         'sources_list.json',
-        'json-schema.json',
+        'json-schema.json'
     ],
-    'vehicles': [
+    vehicles: [
         'marks.json',
         'models.json',
         'models_agricultural.json',
@@ -49,6 +49,7 @@ export const files_map: FilesMap = {
         'models_snowmobile.json',
         'models_trailer.json',
         'models_truck.json',
-        'types.json',
+        'types.json'
     ]
 };
+

@@ -2,15 +2,15 @@ import * as path from 'path';
 import * as fs from 'fs';
 import {
     groups_list,
-    files_map,
+    required_files_map,
     specs_root_dir
-} from "../definitions";
+} from "../helpers";
 
 describe('Specification`s directory', (): void => {
-    describe.each(Object.keys(files_map))('/%s', specs_type_directory => {
+    describe.each(Object.keys(required_files_map))('/%s', specs_type_directory => {
         // build allowed files paths for specs type in all groups
         const allowed_files: Array<string> = [];
-        files_map[specs_type_directory].forEach(file_name => {
+        required_files_map[specs_type_directory].forEach(file_name => {
             groups_list.forEach(group_name => {
                 allowed_files.push(path.join(group_name, file_name))
             });

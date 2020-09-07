@@ -6,7 +6,7 @@ import { groups_list, specs_root_dir, required_files_map } from "../helpers";
 const json_schema_filename = 'json-schema.json';
 const specs_types = Object.keys(required_files_map).filter(specs_type => specs_type != 'vehicles');
 
-// @see <https://github.com/ajv-validator/ajv/issues/1104>
+/** @see <https://github.com/ajv-validator/ajv/issues/1104> */
 const schema_validator = new Ajv({ allErrors: true })
     .addMetaSchema(draft07, 'https://json-schema.org/draft-07/schema#');
 

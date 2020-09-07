@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Removed
 
-- **PHP SDK**. `PHP SDK` was moved to separate repository [#137]
+- **PHP SDK** - moved to [separate repository `avtocod/specs-php`](https://github.com/avtocod/specs-php) [#137]
 - Issue templates for sdk bugs and feature requests [#137]
 
 [#137]:https://github.com/avtocod/specs/issues/137

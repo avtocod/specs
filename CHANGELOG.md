@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Changed
 
 - `Makefile` goals `test` and `install` [#137]
+- Start using `node:14-alpine` docker image instead of `php:7.2.5-alpine` [#137]
 
 ### Removed
 

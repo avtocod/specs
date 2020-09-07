@@ -17,21 +17,18 @@ const expected_identifiers_types: {[k: string]: string[]} = {
     ]
 };
 
-const expected_items_count: {[k: string]: number} = {
-    default: expected_identifiers_types.default.length
-}
 describe.each(groups_list)(`${identifiers_file_name} file in %s group of identifiers specs`, group_name => {
     const specs_path = path.resolve(specs_root_dir, 'identifiers', group_name, identifiers_file_name);
     const identifiers: Array<Identifier> = require(specs_path);
 
-
-    test.concurrent(`has ${expected_items_count[group_name]} items`, async () => {
-        expect(identifiers.length).toBe(expected_items_count[group_name]);
-    });
-
     describe.each(identifiers)('item %j', (identifier): any => {
         test.concurrent('should have allowed value of "type" property', async () => {
             expect(expected_identifiers_types[group_name]).toContain(identifier.type);
+        });
+
+        test.concurrent('has no doubles with the same "type"', async () => {
+            const matches = identifiers.filter(identifiers_item => identifiers_item.type === identifier.type);
+            expect(matches).toBeArrayOfSize(1);
         });
     });
 });

@@ -3,14 +3,16 @@ import { groups_list, specs_root_dir, required_files_map } from "../helpers";
 import { VehicleType } from "./vehicles";
 
 const types_file_name = 'types.json';
-const expected_items_count = 18;
+const expected_items_count: {[k: string]: number} = {
+    default: 18
+};
 
 describe.each(groups_list)('types.json file in %s group of vehicles specs', group_name => {
     const specs_patch = path.resolve(specs_root_dir, 'vehicles', group_name, types_file_name);
     const types: Array<VehicleType> = require(specs_patch);
 
-    test.concurrent(`has ${expected_items_count} items`, async () => {
-        expect(types.length).toBe(expected_items_count);
+    test.concurrent(`has ${expected_items_count[group_name]} items`, async () => {
+        expect(types.length).toBe(expected_items_count[group_name]);
     });
 
     describe.each(types)('item %j has', (type): any => {

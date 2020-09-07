@@ -3,7 +3,9 @@ import { groups_list, specs_root_dir } from "../helpers";
 import { Field } from "./fields";
 
 const fields_file_name = 'fields_list.json';
-const expected_items_count = 390;
+const expected_items_count: {[k: string]: number} = {
+    default: 390
+};
 const non_fillable_fields = [
     'tech_data.manufacturer.name',
     'tech_data.brand.name.rus',
@@ -18,10 +20,11 @@ const non_fillable_fields = [
 describe.each(groups_list)(`${fields_file_name} file in %s group of fields specs`, group_name => {
     const specs_patch = path.resolve(specs_root_dir, 'fields', group_name, fields_file_name);
     const fields: Array<Field> = require(specs_patch);
+    const report_schema_path = path.resolve(specs_root_dir, 'reports', group_name, 'json-schema.json');
+    const report_schema = require(report_schema_path);
 
-
-    test.concurrent(`has ${expected_items_count} items`, async () => {
-        expect(fields.length).toBe(expected_items_count);
+    test.concurrent(`has ${expected_items_count[group_name]} items`, async () => {
+        expect(fields.length).toBe(expected_items_count[group_name]);
     });
 
     describe.each(fields)('item %j', (field): any => {
@@ -33,5 +36,9 @@ describe.each(groups_list)(`${fields_file_name} file in %s group of fields specs
                 expect(non_fillable_fields).toContain(field.path);
             }
         });
+
+        test.concurrent(`should have identical set of values in "fillable_by" property with "reports/${group_name}/json-schema.json"`, async () => {
+
+        })
     });
 });

@@ -2,8 +2,8 @@
 composer.lock
 
 # yarn lock file
-yarn.lock
-yarn-error.log
+__tests__/yarn.lock
+__tests__/yarn-error.log
 
 # IDEs
 /nbproject
@@ -11,7 +11,7 @@ yarn-error.log
 
 # Vendors
 /vendor
-/node_modules
+__tests__/node_modules
 
 # Temp dirs & trash
 /temp

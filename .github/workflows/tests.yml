@@ -30,9 +30,11 @@ jobs: # Docs: <https://git.io/JvxXE>
 
       - name: Install dependencies
         run: yarn install
+        working-directory: __tests__
 
       - name: Run tests
         run: yarn test
+        working-directory: __tests__
 
   lint-changelog:
     name: Lint changelog file

@@ -1,8 +1,6 @@
 * text=auto
 
 /.github          export-ignore
-/sdk/php/tests    export-ignore
-/sdk/php/phpunit* export-ignore
 /*.md             export-ignore
 /Makefile         export-ignore
 /[Dd]ocker*       export-ignore

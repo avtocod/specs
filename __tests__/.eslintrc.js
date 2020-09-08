@@ -2,7 +2,7 @@
 
 module.exports = {
   root: true,
-  plugins: ["jest"],
+  plugins: ['jest'],
   extends: [
     'eslint:recommended',
     'plugin:jest/recommended',

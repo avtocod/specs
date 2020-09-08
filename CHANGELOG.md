@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Changed
 
 - `Makefile` goals `test` and `install` [#137]
+- Info about supported SDKs added into README.md
 
 ### Removed
 

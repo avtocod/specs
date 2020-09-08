@@ -3174,7 +3174,7 @@
         "path": "ads.history.items[].photos.grz",
         "description": "История объявлений: Список ГРЗ c URI фотографии, на которых они распознаны",
         "types": [
-            "array"
+            "object"
         ],
         "fillable_by": [
             "ads.base",

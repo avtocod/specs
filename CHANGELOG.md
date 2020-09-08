@@ -9,11 +9,20 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Composer dependency `avtocod/specs-php` [#137]
+- Tests for specifications using `nodejs` and `jest` [#137]
+
+### Changed
+
+- `Makefile` goals `test` and `install` [#137]
 
 ### Removed
 
 - **PHP SDK** - moved to [separate repository `avtocod/specs-php`](https://github.com/avtocod/specs-php) [#137]
 - Issue templates for sdk bugs and feature requests [#137]
+
+### Fixed
+
+- Fixed data type for field with path `ads.history.items[].photos.grz` in `fields_list.json`
 
 [#137]:https://github.com/avtocod/specs/issues/137
 

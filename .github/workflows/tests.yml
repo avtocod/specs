@@ -1,0 +1,49 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - master
+    tags-ignore:
+      - '**'
+  pull_request:
+  schedule:
+    - cron: '0 0 * * 0' # once in a week, docs: <https://git.io/JvxXE#onschedule>
+
+jobs: # Docs: <https://git.io/JvxXE>
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v1 # Action page: <https://github.com/actions/setup-node>
+        with:
+          node-version: 14
+
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run tests
+        run: yarn test
+
+  lint-changelog:
+    name: Lint changelog file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Lint changelog file
+        uses: docker://avtodev/markdown-lint:v1 # Action page: <https://github.com/avto-dev/markdown-lint>
+        with:
+          rules: '/lint/rules/changelog.js'
+          config: '/lint/config/changelog.yml'
+          args: './CHANGELOG.md'

@@ -8,25 +8,25 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Composer dependency `avtocod/specs-php` [#137]
-- Tests for specifications using `nodejs` and `jest` [#137]
+- Tests for specifications using `nodejs` and `jest` [#154]
 
 ### Changed
 
-- `Makefile` and `docker-compose.yml` files moved to `__tests__` directory [#137]
-- Info about supported SDKs added into README.md
-- Tests now located in `__tests__` directory
+- Tests now located in `__tests__` directory [#164]
+- `Makefile` and `docker-compose.yml` files moved to `__tests__` directory [#154]
+- Info about supported SDKs added into readme file [#154]
 
 ### Removed
 
-- **PHP SDK** - moved to [separate repository `avtocod/specs-php`](https://github.com/avtocod/specs-php) [#137]
-- Issue templates for sdk bugs and feature requests [#137]
+- **PHP SDK** - moved to [separate repository `avtocod/specs-php`](https://github.com/avtocod/specs-php). **Important notice**: If you used PHP SDK from this repository - you must add new dependency `avtocod/specs-php:~1.0` into your dependencies list! [#154]
+- Issue templates for sdk bugs and feature requests [#154]
 
 ### Fixed
 
-- Fixed data type for field with path `ads.history.items[].photos.grz` in `fields_list.json`
+- Fixed data type for field with path `ads.history.items[].photos.grz` in `fields_list.json` [#154]
 
-[#137]:https://github.com/avtocod/specs/issues/137
+[#154]:https://github.com/avtocod/specs/pull/154
+[#164]:https://github.com/avtocod/specs/pull/164
 
 ## v3.45.0
 

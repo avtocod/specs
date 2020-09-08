@@ -14,11 +14,6 @@
             "homepage": "https://github.com/avtocod"
         }
     ],
-    "require": {
-        "php": "^7.2",
-        "ext-json": "*",
-        "avtocod/specs-php": "~1.0"
-    },
     "suggest": {
         "avtocod/specs-php": "SDK for a working with specifications data."
     },

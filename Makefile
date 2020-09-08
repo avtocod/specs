@@ -6,9 +6,9 @@ dc_bin := $(shell command -v docker-compose 2> /dev/null)
 docker_bin := $(shell command -v docker 2> /dev/null)
 
 SHELL = /bin/sh
-RUN_APP_ARGS = --rm --user "$(shell id -u):$(shell id -g)" app
+RUN_ARGS = --rm --user "$(shell id -u):$(shell id -g)"
 
-.PHONY : help build install lowest test lint test-cover shell clean
+.PHONY : help lint install test shell
 .DEFAULT_GOAL : help
 
 # This will output the help for each task. thanks to https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
@@ -16,30 +16,17 @@ help: ## Show this help
 	@printf "\033[33m%s:\033[0m\n" 'Available commands'
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  \033[32m%-14s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-build: ## Build docker images, required for current package environment
-	$(dc_bin) build
-
-install: clean ## Install regular php dependencies
-	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --prefer-dist --no-interaction --no-suggest
-
-lowest: clean ## Install lowest php dependencies
-	$(dc_bin) run $(RUN_APP_ARGS) composer update -n --ansi --no-suggest --prefer-dist --prefer-lowest
-
-test: ## Execute php tests and linters
-	$(dc_bin) run $(RUN_APP_ARGS) composer test
-
 lint: ## Execute linters
 	$(docker_bin) run --rm \
 		-v "$(shell pwd)/CHANGELOG.md:/CHANGELOG.md:ro" \
 		avtodev/markdown-lint:v1 \
 		--rules /lint/rules/changelog.js --config /lint/config/changelog.yml /CHANGELOG.md
 
-test-cover: ## Execute php tests with coverage
-	$(dc_bin) run --rm --user "0:0" app sh -c 'docker-php-ext-enable xdebug && su $(shell whoami) -s /bin/sh -c "composer phpunit-cover"'
+install: ## Install all dependencies
+	$(dc_bin) run $(RUN_ARGS) node yarn install
 
-shell: ## Start shell into container with php
-	$(dc_bin) run -e "PS1=\[\033[1;32m\]\[\033[1;36m\][\u@docker] \[\033[1;34m\]\w\[\033[0;35m\] \[\033[1;36m\]# \[\033[0m\]" \
-    $(RUN_APP_ARGS) sh
+test: ## Execute tests
+	$(dc_bin) run $(RUN_ARGS) node yarn test
 
-clean: ## Remove all dependencies and unimportant files
-	-rm -Rf ./composer.lock ./vendor ./sdk/php/coverage
+shell: ## Start shell into container with node
+	$(dc_bin) run $(DC_RUN_ARGS) node sh

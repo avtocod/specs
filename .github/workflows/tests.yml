@@ -11,70 +11,28 @@ on:
     - cron: '0 0 * * 0' # once in a week, docs: <https://git.io/JvxXE#onschedule>
 
 jobs: # Docs: <https://git.io/JvxXE>
-  php:
-    name: PHP ${{ matrix.php }}, ${{ matrix.setup }} setup, illuminate ${{ matrix.illuminate }}
+  test:
+    name: Run tests
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    strategy:
-      fail-fast: false
-      matrix:
-        setup: ['basic', 'lowest']
-        illuminate: [default]
-        php: ['7.2', '7.3', '7.4']
-        include:
-          - php: '7.3'
-            setup: basic
-            illuminate: '~5.7.0'
-          - php: '7.3'
-            setup: basic
-            illuminate: '~5.8.0'
-          - php: '7.3'
-            setup: basic
-            illuminate: '~6.0'
-
     steps:
       - name: Check out code
         uses: actions/checkout@v2
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v1 # Action page: <https://github.com/actions/setup-node>
         with:
-          fetch-depth: 1
+          node-version: 14
 
-      - name: Setup PHP, with composer and extensions
-        uses: shivammathur/setup-php@v2 # Action page: <https://github.com/shivammathur/setup-php>
+      - uses: actions/cache@v2
         with:
-          php-version: ${{ matrix.php }}
-          extensions: mbstring
+          path: '**/node_modules'
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Get Composer Cache Directory # Docs: <https://git.io/JfAKn#php---composer>
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - name: Install dependencies
+        run: yarn install
 
-      - name: Cache dependencies # Docs: <https://git.io/JfAKn#php---composer>
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ matrix.setup }}-${{ hashFiles('**/composer.json') }}
-          restore-keys: ${{ runner.os }}-composer-
-
-      - name: Install Composer 'hirak/prestissimo' package
-        run: composer global require hirak/prestissimo --update-no-dev --no-progress --ansi
-
-      - name: Install lowest Composer dependencies
-        if: matrix.setup == 'lowest'
-        run: composer update --prefer-dist --no-suggest --prefer-lowest --ansi
-
-      - name: Install basic Composer dependencies
-        if: matrix.setup == 'basic'
-        run: composer update --prefer-dist --no-suggest --ansi
-
-      - name: Install specific laravel version
-        if: matrix.illuminate != 'default'
-        run: composer require --dev --update-with-all-dependencies --prefer-dist --no-suggest --ansi illuminate/support "${{ matrix.illuminate }}"
-
-      - name: Show most important packages versions
-        run: composer info | grep -e phpunit -e phpstan -e illuminate
-
-      - name: Execute tests
-        run: composer test
+      - name: Run tests
+        run: yarn test
 
   lint-changelog:
     name: Lint changelog file

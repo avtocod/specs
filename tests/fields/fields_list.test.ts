@@ -116,8 +116,10 @@ describe.each(groups_list)(`${fields_file_name} file in %s group of fields specs
                             expect(report_field_value).toBeBoolean();
                             break;
                         case 'float':
-                        case 'integer':
                             expect(report_field_value).toBeNumber();
+                            break;
+                        case 'integer':
+                            expect(Number.isInteger(report_field_value)).toBeTrue();
                             break;
                         case 'string':
                             expect(report_field_value).toBeString();

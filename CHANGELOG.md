@@ -13,8 +13,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- `Makefile` goals `test` and `install` [#137]
+- `Makefile` and `docker-compose.yml` files moved to `__tests__` directory [#137]
 - Info about supported SDKs added into README.md
+- Tests now located in `__tests__` directory
 
 ### Removed
 

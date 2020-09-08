@@ -18,7 +18,7 @@ describe.each(groups_list)('%s group of vehicles specs', group_name => {
         const specs_path = path.resolve(specs_root_dir, 'vehicles', group_name, models_file_name);
         const models: Array<VehicleModel> = require(specs_path);
         // each model in file...
-        describe.each(models)('item %j has', (model): any => {
+        describe.each(models)('item %j has', (model) => {
             // should have all required properties
             test.concurrent(`all expected props ("id", "name", "mark_id")`, async () => {
                 expect(model).toContainAllKeys(['id', 'name', 'mark_id']);

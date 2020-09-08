@@ -43,7 +43,7 @@ describe.each(groups_list)(`${fields_file_name} file in %s group of fields specs
         .map((source: Source) => source.name);
 
     // each field
-    describe.each(fields)('item %j', (field): any => {
+    describe.each(fields)('item %j', (field) => {
         // should not have duplicates with the same path
         test.concurrent('has no doubles with the same "path"', async () => {
             const matches = fields.filter(fields_item => fields_item.path === field.path);

@@ -12,7 +12,7 @@ describe.each(groups_list)('types.json file in %s group of vehicles specs', grou
     const types: Array<VehicleType> = require(specs_path);
 
     // each type should...
-    describe.each(types)('item %j has', (type): any => {
+    describe.each(types)('item %j has', (type) => {
         // ...to have all required properties
         test.concurrent('all expected props ("id", "name", "alias")', async () => {
             expect(type).toContainAllKeys(['id', 'name', 'alias']);

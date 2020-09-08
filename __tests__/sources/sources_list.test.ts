@@ -19,7 +19,7 @@ describe.each(groups_list)(`${sources_file_name} file in %s group of sources spe
     const specs_path = path.resolve(specs_root_dir, 'sources', group_name, sources_file_name);
     const sources: Array<Source> = require(specs_path);
     // each source...
-    describe.each(sources)('item %j', (source): any => {
+    describe.each(sources)('item %j', (source) => {
         // should be enabled or disabled, according disabled_sources list
         test.concurrent(`should be ${disabled_sources[group_name].indexOf(source.name) === -1 ? 'enabled' : 'disabled'}`, async () => {
             if (source.enabled) {

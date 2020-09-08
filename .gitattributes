@@ -2,6 +2,5 @@
 
 /.github          export-ignore
 /*.md             export-ignore
-/Makefile         export-ignore
-/[Dd]ocker*       export-ignore
+/__tests__       export-ignore
 /.*               export-ignore

@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Extend pattern with `*` for definition `engine_number` in `./reports/default/json-schema.json`
+
 ## v3.45.0
 
 ### Changed

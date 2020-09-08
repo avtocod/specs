@@ -9,7 +9,7 @@ describe.each(groups_list)('marks.json file in %s group of vehicles specs', grou
     const specs_path = path.resolve(specs_root_dir, 'vehicles', group_name, marks_file_name);
     const marks: Array<VehicleMark> = require(specs_path);
     // each mark
-    describe.each(marks)('item %j has', (mark): any => {
+    describe.each(marks)('item %j has', (mark) => {
         // should have all required properties
         test.concurrent(`all expected props ("id", "name")`, async () => {
             expect(mark).toContainAllKeys(['id', 'name']);

@@ -23,7 +23,7 @@ describe.each(groups_list)(`${identifiers_file_name} file in %s group of identif
     const specs_path = path.resolve(specs_root_dir, 'identifiers', group_name, identifiers_file_name);
     const identifiers: Array<Identifier> = require(specs_path);
     // each identifier
-    describe.each(identifiers)('item %j', (identifier): any => {
+    describe.each(identifiers)('item %j', (identifier) => {
         // should have allowed type
         test.concurrent('should have allowed value of "type" property', async () => {
             expect(expected_identifiers_types[group_name]).toContain(identifier.type);

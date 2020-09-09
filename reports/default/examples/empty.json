@@ -747,6 +747,9 @@
     },
     "restrictions": {
         "registration_actions": {
+            "date": {
+                "update": null
+            },
             "items": [
                 {
                     "date": {
@@ -770,6 +773,45 @@
                         "type": null,
                         "reason": null,
                         "number": null
+                    },
+                    "actuality": {
+                        "date": null
+                    }
+                }
+            ],
+            "count": 1,
+            "has_restrictions": null
+        },
+        "registration_actions_archive": {
+            "date": {
+                "update": null
+            },
+            "items": [
+                {
+                    "date": {
+                        "added": null,
+                        "start": null,
+                        "end": null
+                    },
+                    "vehicle": {
+                        "year": null,
+                        "model": {
+                            "name": null
+                        }
+                    },
+                    "initiator": {
+                        "name": null,
+                        "region": {
+                            "name": null
+                        }
+                    },
+                    "restrict": {
+                        "type": null,
+                        "reason": null,
+                        "number": null
+                    },
+                    "actuality": {
+                        "date": null
                     }
                 }
             ],

@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `restrictions.registry`
+- Field with path `restrictions.registration_actions.date.update`
+- Field with path `restrictions.registration_actions.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.date.update`
+- Field with path `restrictions.registration_actions_archive.items[].date.added`
+- Field with path `restrictions.registration_actions_archive.items[].date.start`
+- Field with path `restrictions.registration_actions_archive.items[].date.end`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.year`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.model.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.region.name`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.type`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.reason`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.number`
+- Field with path `restrictions.registration_actions_archive.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.has_restrictions`
+
 ## v3.46.0
 
 ### Added

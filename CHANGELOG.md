@@ -24,6 +24,66 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `restrictions.registration_actions_archive.items[].restrict.number`
 - Field with path `restrictions.registration_actions_archive.items[].actuality.date`
 
+## v3.46.0
+
+### Added
+
+- Tests for specifications using `nodejs` and `jest` [#154]
+
+### Changed
+
+- Tests now located in `__tests__` directory [#164]
+- `Makefile` and `docker-compose.yml` files moved to `__tests__` directory [#154]
+- Info about supported SDKs added into readme file [#154]
+
+### Removed
+
+- **PHP SDK** - moved to [separate repository `avtocod/specs-php`](https://github.com/avtocod/specs-php). **Important notice**: If you used PHP SDK from this repository - you must add new dependency `avtocod/specs-php:~1.0` into your dependencies list! [#154]
+- Issue templates for sdk bugs and feature requests [#154]
+
+### Fixed
+
+- Fixed data type for field with path `ads.history.items[].photos.grz` in `fields_list.json` [#154]
+
+[#154]:https://github.com/avtocod/specs/pull/154
+[#164]:https://github.com/avtocod/specs/pull/164
+
+## v3.45.0
+
+### Changed
+
+- Extend pattern with `*` for definitions `vin_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `grz_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `sts_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `pts_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `body_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `chassis_code` in `./reports/default/json-schema.json`
+
+### Fixed
+
+- Pattern for definitions `vin_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `grz_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `sts_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `pts_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `body_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `chassis_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `tin_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `engine_number` in `./reports/default/json-schema.json`
+- Pattern for definitions `brand_unique_id` in `./reports/default/json-schema.json`
+- Pattern for definitions `model_unique_id` in `./reports/default/json-schema.json`
+- Pattern for definitions `phone_number` in `./reports/default/json-schema.json`
+- Pattern for definitions `datetime` in `./reports/default/json-schema.json`
+- Pattern for definitions `date` in `./reports/default/json-schema.json`
+- Pattern for field with path `additional_info.owner.geo.postal_code` in `./reports/default/json-schema.json`
+
+## v3.44.0
+
+### Added
+
+- Field with path `ownership.history.items[].owner.company.name`
+- Field with path `ownership.history.items[].owner.company.kpp`
+- Field with path `ownership.history.items[].owner.company.ogrn`
+
 ## v3.43.0
 
 ### Added

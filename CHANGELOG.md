@@ -23,6 +23,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `restrictions.registration_actions_archive.items[].restrict.reason`
 - Field with path `restrictions.registration_actions_archive.items[].restrict.number`
 - Field with path `restrictions.registration_actions_archive.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.has_restrictions`
 
 ## v3.46.0
 

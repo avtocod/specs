@@ -25,6 +25,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `restrictions.registration_actions_archive.items[].actuality.date`
 - Field with path `restrictions.registration_actions_archive.has_restrictions`
 
+### Changed
+
+- Extend pattern with `*` for definition `engine_number` in `./reports/default/json-schema.json`
+
 ## v3.46.0
 
 ### Added

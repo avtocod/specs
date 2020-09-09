@@ -5751,6 +5751,29 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "date": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2015-07-13 00:00:00"
+                                    ],
+                                    "fillable_by": [
+                                        "gibdd.restrict"
+                                    ]
+                                }
+                            }
+                        },
                         "items": {
                             "type": "array",
                             "items": {
@@ -5935,6 +5958,29 @@
                                                 ]
                                             }
                                         }
+                                    },
+                                    "actuality": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "date": {
+                                                "description": "Дата актуальности данных",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2015-07-13 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.restrict"
+                                                ]
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -5956,6 +6002,266 @@
                             ],
                             "fillable_by": [
                                 "gibdd.restrict"
+                            ]
+                        }
+                    }
+                },
+                "registration_actions_archive": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "description": "Архив ограничений на рег. действия",
+                    "properties": {
+                        "date": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2015-07-13 00:00:00"
+                                    ],
+                                    "fillable_by": [
+                                        "restrictions.registry"
+                                    ]
+                                }
+                            }
+                        },
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "added": {
+                                                "description": "Дата добавления данных об ограничении в реестр",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2015-07-13 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            },
+                                            "start": {
+                                                "description": "Дата начала действия ограничения",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2015-07-13 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания действия ограничения",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2015-07-13 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "vehicle": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "year": {
+                                                "description": "Год выпуска ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 1800,
+                                                "examples": [
+                                                    2004
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            },
+                                            "model": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Марка (модель) ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "OPEL MONTEREY"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "restrictions.registry"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "initiator": {
+                                        "type": "object",
+                                        "additionalProperties": true,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование организации наложившей ограничение",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Судебные Органы"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            },
+                                            "region": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Регион инициатора ограничения",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Брянская"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "restrictions.registry"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "restrict": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Вид ограничения",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Запрет на регистрационные действия"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            },
+                                            "reason": {
+                                                "description": "Основания для наложения ограничения",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            },
+                                            "number": {
+                                                "description": "Номер документа устанавливающего ограничения",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "90129308-0060"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "actuality": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "date": {
+                                                "description": "Дата актуальности данных",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2015-07-13 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "restrictions.registry"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "has_restrictions": {
+                            "description": "Наличие ограничений на дату формирования архива",
+                            "type": [
+                                "boolean",
+                                "null"
+                            ],
+                            "examples": [
+                                true,
+                                null
+                            ],
+                            "fillable_by": [
+                                "restrictions.registry"
                             ]
                         }
                     }

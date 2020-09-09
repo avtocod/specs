@@ -1,0 +1,29 @@
+{
+  "name": "avtocod-specs",
+  "version": "0.0.0",
+  "description": "Specifications repository",
+  "main": "",
+  "repository": "https://github.com/avtocod/specs",
+  "author": "Avtocod",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest --config=./.jest.config.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@types/lodash.get": "^4.4.6",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "ajv": "^6.12.4",
+    "eslint": "^7.8.1",
+    "eslint-plugin-jest": "^23.20.0",
+    "jest": "^26.4.2",
+    "jest-chain": "^1.1.5",
+    "jest-extended": "^0.11.5",
+    "lodash.get": "^4.4.2",
+    "ts-jest": "^26.3.0",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2"
+  }
+}

@@ -1,0 +1,12 @@
+# yarn lock file
+yarn.lock
+yarn-error.log
+
+# Vendors
+/node_modules
+
+# Temp dirs & trash
+/temp
+/tmp
+/*.tmp
+/coverage

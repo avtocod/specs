@@ -77,34 +77,9 @@
 
 ## SDK
 
-Данный репозиторий содержит SDK для удобного доступа к данным спецификаций.
+Список `SDK` для удобного доступа к данным спецификациям:
 
-#### PHP SDK
-
-[![Version][badge_packagist_version]][link_packagist]
-[![PHP Version][badge_php_version]][link_packagist]
-[![Build Status][badge_build_status]][link_build_status]
-[![Downloads count][badge_packagist_dl_count]][link_packagist]
-
-Для установки выполните в терминале следующую команду:
-
-```bash
-$ composer require avtocod/specs "^3.0"
-```
-
-> Для этого необходим установленный `composer`. Для его установки перейдите по [данной ссылке][getcomposer].
-
-> Обратите внимание на то, что необходимо фиксировать мажорную версию устанавливаемого пакета.
-
-После этого вы сможете получать, например, спецификации по филдам в вашем php-приложении следующим образом:
-
-```php
-<?php
-
-$fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecification();
-```
-
-Для получения информации об остальных возможностях - смотрите исходный код.
+- **PHP** [`avtocod/specs-php`](https://github.com/avtocod/specs-php)
 
 ## Поддержка
 

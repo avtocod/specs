@@ -1947,7 +1947,7 @@
                                                     "integer",
                                                     "null"
                                                 ],
-                                                "minimum": 0,
+                                                "minimum": 1,
                                                 "examples": [
                                                     5
                                                 ],
@@ -1961,7 +1961,7 @@
                                                     "integer",
                                                     "null"
                                                 ],
-                                                "minimum": 0,
+                                                "minimum": 1,
                                                 "examples": [
                                                     9154
                                                 ],
@@ -1975,7 +1975,7 @@
                                                     "integer",
                                                     "null"
                                                 ],
-                                                "minimum": 0,
+                                                "minimum": 1,
                                                 "examples": [
                                                     9308
                                                 ],
@@ -8853,4 +8853,3 @@
         }
     }
 }
-

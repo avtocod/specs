@@ -4,6 +4,55 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.47.0
+
+### Added
+
+- Source `restrictions.registry`
+- Field with path `restrictions.registration_actions.date.update`
+- Field with path `restrictions.registration_actions.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.date.update`
+- Field with path `restrictions.registration_actions_archive.items[].date.added`
+- Field with path `restrictions.registration_actions_archive.items[].date.start`
+- Field with path `restrictions.registration_actions_archive.items[].date.end`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.year`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.model.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.region.name`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.type`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.reason`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.number`
+- Field with path `restrictions.registration_actions_archive.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.has_restrictions`
+
+### Changed
+
+- Extend pattern with `*` for definition `engine_number` in `./reports/default/json-schema.json`
+
+## v3.46.0
+
+### Added
+
+- Tests for specifications using `nodejs` and `jest` [#154]
+
+### Changed
+
+- Tests now located in `__tests__` directory [#164]
+- `Makefile` and `docker-compose.yml` files moved to `__tests__` directory [#154]
+- Info about supported SDKs added into readme file [#154]
+
+### Removed
+
+- **PHP SDK** - moved to [separate repository `avtocod/specs-php`](https://github.com/avtocod/specs-php). **Important notice**: If you used PHP SDK from this repository - you must add new dependency `avtocod/specs-php:~1.0` into your dependencies list! [#154]
+- Issue templates for sdk bugs and feature requests [#154]
+
+### Fixed
+
+- Fixed data type for field with path `ads.history.items[].photos.grz` in `fields_list.json` [#154]
+
+[#154]:https://github.com/avtocod/specs/pull/154
+[#164]:https://github.com/avtocod/specs/pull/164
+
 ## v3.45.0
 
 ### Changed

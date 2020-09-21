@@ -218,5 +218,10 @@
         "name": "recall.campaigns.registry",
         "description": "Отзывные кампании",
         "enabled": true
+    },
+    {
+        "name": "restrictions.registry",
+        "description": "Данные о наличии ограничений на регистрационные действия ТС по данным ГИБДД (история ограничений)",
+        "enabled": true
     }
 ]

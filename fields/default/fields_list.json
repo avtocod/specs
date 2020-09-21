@@ -3154,7 +3154,8 @@
             "ads.base",
             "service.history",
             "customs.base",
-            "images.archive"
+            "images.archive",
+            "mileages.registry"
         ]
     },
     {
@@ -3171,7 +3172,8 @@
             "ads.base",
             "service.history",
             "customs.base",
-            "images.archive"
+            "images.archive",
+            "mileages.registry"
         ]
     },
     {
@@ -3181,6 +3183,24 @@
             "string"
         ],
         "fillable_by": []
+    },
+    {
+        "path": "mileages.items[].actuality.date",
+        "description": "Пробеги: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext",
+            "base.taxi",
+            "base.tech",
+            "ads.base",
+            "service.history",
+            "customs.base",
+            "images.archive",
+            "mileages.registry"
+        ]
     },
     {
         "path": "images.photos.items[].vehicle.brand.name",

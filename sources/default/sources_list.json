@@ -223,5 +223,10 @@
         "name": "restrictions.registry",
         "description": "Данные о наличии ограничений на регистрационные действия ТС по данным ГИБДД (история ограничений)",
         "enabled": true
+    },
+    {
+        "name": "mileages.registry",
+        "description": "Архивные данные о пробегах",
+        "enabled": true
     }
 ]

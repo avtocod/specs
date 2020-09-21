@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `mileages.registry`
+- Field with path `mileages.items[].actuality.date`
+
+### Changed
+
+- Field with path `mileages.items[].date.event` also fillable by `mileages.registry`
+- Field with path `mileages.items[].mileage` also fillable by `mileages.registry`
+
 ## v3.47.0
 
 ### Added

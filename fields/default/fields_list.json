@@ -897,6 +897,56 @@
         ]
     },
     {
+        "path": "additional_info.catalog.tecdoc.items[].manufacturer_id",
+        "description": "Дополнительная информация: Код производителя ТС в каталоге TecDoc",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].model_id",
+        "description": "Дополнительная информация: Код модели ТС в каталоге TecDoc",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].id",
+        "description": "Дополнительная информация: Код ТС в каталоге TecDoc",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].name",
+        "description": "Дополнительная информация: Наименование ТС в каталоге TecDoc",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].description",
+        "description": "Дополнительная информация: Описание ТС в каталоге TecDoc",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
         "path": "additional_info.identifiers.vin.checksum_validated",
         "description": "Дополнительная информация: Пройдена ли проверка контрольного символа VIN?",
         "types": [

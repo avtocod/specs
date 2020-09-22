@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `references.tecdoc`
+- Field with path `additional_info.catalog.tecdoc.items[].manufacturer_id`
+- Field with path `additional_info.catalog.tecdoc.items[].model_id`
+- Field with path `additional_info.catalog.tecdoc.items[].id`
+- Field with path `additional_info.catalog.tecdoc.items[].name`
+- Field with path `additional_info.catalog.tecdoc.items[].description`
+
 ## v3.47.0
 
 ### Added

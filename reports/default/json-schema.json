@@ -1930,6 +1930,89 @@
                                     }
                                 }
                             }
+                        },
+                        "tecdoc": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "manufacturer_id": {
+                                                "description": "Код производителя ТС в каталоге TecDoc",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 1,
+                                                "examples": [
+                                                    5
+                                                ],
+                                                "fillable_by": [
+                                                    "references.tecdoc"
+                                                ]
+                                            },
+                                            "model_id": {
+                                                "description": "Код модели ТС в каталоге TecDoc",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 1,
+                                                "examples": [
+                                                    9154
+                                                ],
+                                                "fillable_by": [
+                                                    "references.tecdoc"
+                                                ]
+                                            },
+                                            "id": {
+                                                "description": "Код ТС в каталоге TecDoc",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 1,
+                                                "examples": [
+                                                    9308
+                                                ],
+                                                "fillable_by": [
+                                                    "references.tecdoc"
+                                                ]
+                                            },
+                                            "name": {
+                                                "description": "Наименование ТС в каталоге TecDoc",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "AUDI A6 (4G2, 4GC, C7) 2.0 TDI"
+                                                ],
+                                                "fillable_by": [
+                                                    "references.tecdoc"
+                                                ]
+                                            },
+                                            "description": {
+                                                "description": "Описание ТС в каталоге TecDoc",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "2.0 TDI"
+                                                ],
+                                                "fillable_by": [
+                                                    "references.tecdoc"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },
@@ -8770,4 +8853,3 @@
         }
     }
 }
-

@@ -16,6 +16,17 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].date.event` also fillable by `mileages.registry`
 - Field with path `mileages.items[].mileage` also fillable by `mileages.registry`
 
+## v3.48.0
+
+### Added
+
+- Source `references.tecdoc`
+- Field with path `additional_info.catalog.tecdoc.items[].manufacturer_id`
+- Field with path `additional_info.catalog.tecdoc.items[].model_id`
+- Field with path `additional_info.catalog.tecdoc.items[].id`
+- Field with path `additional_info.catalog.tecdoc.items[].name`
+- Field with path `additional_info.catalog.tecdoc.items[].description`
+
 ## v3.47.0
 
 ### Added

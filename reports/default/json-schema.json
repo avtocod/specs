@@ -6680,7 +6680,8 @@
                                             "ads.base",
                                             "service.history",
                                             "customs.base",
-                                            "images.archive"
+                                            "images.archive",
+                                            "mileages.registry"
                                         ]
                                     }
                                 }
@@ -6703,7 +6704,8 @@
                                     "ads.base",
                                     "service.history",
                                     "customs.base",
-                                    "images.archive"
+                                    "images.archive",
+                                    "mileages.registry"
                                 ]
                             },
                             "filled_by": {
@@ -6731,6 +6733,37 @@
                                             "gibdd.eaisto"
                                         ],
                                         "fillable_by": []
+                                    }
+                                }
+                            },
+                            "actuality": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата актуальности данных",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2009-07-10 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.eaisto",
+                                            "tech.ext",
+                                            "base.taxi",
+                                            "base.tech",
+                                            "ads.base",
+                                            "service.history",
+                                            "customs.base",
+                                            "images.archive",
+                                            "mileages.registry"
+                                        ]
                                     }
                                 }
                             }

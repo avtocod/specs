@@ -10,6 +10,17 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Extend enum with `OSAGO CETOA` value for field `repairs.history.items[].task_process` in `./reports/default/json-schema.json`
 
+## v3.48.0
+
+### Added
+
+- Source `references.tecdoc`
+- Field with path `additional_info.catalog.tecdoc.items[].manufacturer_id`
+- Field with path `additional_info.catalog.tecdoc.items[].model_id`
+- Field with path `additional_info.catalog.tecdoc.items[].id`
+- Field with path `additional_info.catalog.tecdoc.items[].name`
+- Field with path `additional_info.catalog.tecdoc.items[].description`
+
 ## v3.47.0
 
 ### Added

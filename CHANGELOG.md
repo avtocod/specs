@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
+- Extend enum with `OSAGO CETOA` value for field `repairs.history.items[].task_process` in `./reports/default/json-schema.json`
 - Field with path `mileages.items[].date.event` also fillable by `mileages.registry`
 - Field with path `mileages.items[].mileage` also fillable by `mileages.registry`
 

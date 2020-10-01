@@ -7792,7 +7792,8 @@
                                             null
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "branch": {
@@ -7810,7 +7811,8 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "service.history"
+                                                    "service.history",
+                                                    "service.history.fitservice"
                                                 ]
                                             }
                                         }
@@ -7852,7 +7854,8 @@
                                             "2018-01-22 00:00:00"
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     }
                                 }
@@ -7872,7 +7875,8 @@
                                             null
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "currency": {
@@ -7951,7 +7955,8 @@
                                             "type": "string"
                                         },
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "spare_parts": {
@@ -7964,7 +7969,8 @@
                                             "type": "string"
                                         },
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "recommendations": {
@@ -7977,7 +7983,8 @@
                                             "type": "string"
                                         },
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "is_planned": {
@@ -8150,7 +8157,8 @@
                                     }
                                 ],
                                 "fillable_by": [
-                                    "service.history"
+                                    "service.history",
+                                    "service.history.fitservice"
                                 ]
                             },
                             "vehicle": {
@@ -8171,7 +8179,8 @@
                                                     "Mazda"
                                                 ],
                                                 "fillable_by": [
-                                                    "service.history"
+                                                    "service.history",
+                                                    "service.history.fitservice"
                                                 ]
                                             }
                                         }
@@ -8190,7 +8199,8 @@
                                                     "Mazda 3 (BK)"
                                                 ],
                                                 "fillable_by": [
-                                                    "service.history"
+                                                    "service.history",
+                                                    "service.history.fitservice"
                                                 ]
                                             }
                                         }
@@ -8206,7 +8216,8 @@
                                             2018
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "mileage": {
@@ -8220,7 +8231,8 @@
                                             75893
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "body": {
@@ -8511,7 +8523,8 @@
                                                     "EXAMPL0V1N1000000"
                                                 ],
                                                 "fillable_by": [
-                                                    "service.history"
+                                                    "service.history",
+                                                    "service.history.fitservice"
                                                 ]
                                             },
                                             "chassis": {

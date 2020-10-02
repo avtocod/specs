@@ -233,5 +233,10 @@
         "name": "mileages.registry",
         "description": "Архивные данные о пробегах",
         "enabled": true
+    },
+    {
+        "name": "service.history.fitservice",
+        "description": "История сервисного обслуживания ТС сетью СТО Fit Service",
+        "enabled": true
     }
 ]

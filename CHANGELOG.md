@@ -4,6 +4,52 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.50.0
+
+### Added
+
+- Source `service.history.fitservice`
+
+### Changed
+
+- Field with path `service_history.items[].dealer.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].dealer.branch.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].date.end` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].amount.value` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].service.content` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].service.spare_parts` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].service.recommendations` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].geo` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.brand.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.year` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.identifiers.vin` also fillable by `service.history.fitservice`
+
+## v3.49.0
+
+### Added
+
+- Source `mileages.registry`
+- Field with path `mileages.items[].actuality.date`
+
+### Changed
+
+- Extend enum with `OSAGO CETOA` value for field `repairs.history.items[].task_process` in `./reports/default/json-schema.json`
+- Field with path `mileages.items[].date.event` also fillable by `mileages.registry`
+- Field with path `mileages.items[].mileage` also fillable by `mileages.registry`
+
+## v3.48.0
+
+### Added
+
+- Source `references.tecdoc`
+- Field with path `additional_info.catalog.tecdoc.items[].manufacturer_id`
+- Field with path `additional_info.catalog.tecdoc.items[].model_id`
+- Field with path `additional_info.catalog.tecdoc.items[].id`
+- Field with path `additional_info.catalog.tecdoc.items[].name`
+- Field with path `additional_info.catalog.tecdoc.items[].description`
+
 ## v3.47.0
 
 ### Added

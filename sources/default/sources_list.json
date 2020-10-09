@@ -223,5 +223,20 @@
         "name": "restrictions.registry",
         "description": "Данные о наличии ограничений на регистрационные действия ТС по данным ГИБДД (история ограничений)",
         "enabled": true
+    },
+    {
+        "name": "references.tecdoc",
+        "description": "Каталог TecDoc",
+        "enabled": true
+    },
+    {
+        "name": "mileages.registry",
+        "description": "Архивные данные о пробегах",
+        "enabled": true
+    },
+    {
+        "name": "service.history.fitservice",
+        "description": "История сервисного обслуживания ТС сетью СТО Fit Service",
+        "enabled": true
     }
 ]

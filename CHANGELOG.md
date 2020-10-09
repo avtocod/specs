@@ -4,6 +4,35 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Field with path `insurance.osago.items[].policy.status`
+- Field with path `insurance.osago.items[].policy.expired`
+- Field with path `insurance.osago.items[].contract.is_active`
+- Field with path `insurance.osago.items[].contract.using_type.status`
+- Field with path `insurance.osago.items[].contract.using_type.description`
+- Field with path `insurance.osago.items[].contract.amount.value`
+- Field with path `insurance.osago.items[].contract.kbm`
+- Field with path `insurance.osago.items[].contract.is_follow_to_registration"`
+- Field with path `insurance.osago.items[].contract.has_trailer`
+- Field with path `insurance.osago.items[].vehicle.model.name`
+- Field with path `insurance.osago.items[].vehicle.identifiers.reg_num`
+- Field with path `insurance.osago.items[].vehicle.identifiers.vin`
+- Field with path `insurance.osago.items[].vehicle.identifiers.body`
+- Field with path `insurance.osago.items[].vehicle.engine.power.hp`
+- Field with path `insurance.osago.items[].vehicle.weight.max`
+- Field with path `insurance.osago.items[].insurant.type`
+- Field with path `insurance.osago.items[].insurant.dob`
+- Field with path `insurance.osago.items[].insurant.name`
+- Field with path `insurance.osago.items[].insurant.tin`
+- Field with path `insurance.osago.items[].owner.type`
+- Field with path `insurance.osago.items[].owner.dob`
+- Field with path `insurance.osago.items[].owner.name`
+- Field with path `insurance.osago.items[].owner.tin`
+- Field with path `insurance.osago.items[].geo.region`
+
 ## v3.50.0
 
 ### Added

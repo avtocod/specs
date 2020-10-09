@@ -1503,6 +1503,268 @@
         ]
     },
     {
+        "path": "insurance.osago.items[].policy.expired",
+        "description": "ОСАГО: Истек ли срок действия полиса ОСАГО?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].policy.status",
+        "description": "ОСАГО: Статус полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.is_active",
+        "description": "ОСАГО: Является ли договор ОСАГО активным?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.using_type.status",
+        "description": "ОСАГО: Тип использования ТС. Значение. [PERSONAL, TAXI, RENT...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.using_type.description",
+        "description": "ОСАГО: Тип использования ТС. Описание значения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.amount.value",
+        "description": "ОСАГО: Страховая премия",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.kbm",
+        "description": "ОСАГО: Коэффициент бонус-малус по договору ОСАГО",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.is_follow_to_registration",
+        "description": "ОСАГО: Следует ли ТС к месту регистрации или к месту проведения ТО?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.has_trailer",
+        "description": "ОСАГО: Используется ли ТС с прицепом?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.model.name",
+        "description": "ОСАГО: Марка, модель, категория ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.identifiers.reg_num",
+        "description": "ОСАГО: Государственный регистрационный знак (ГРЗ)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.identifiers.vin",
+        "description": "ОСАГО: VIN код ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.identifiers.body",
+        "description": "ОСАГО: Номер кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.engine.power.hp",
+        "description": "ОСАГО: Мощность двигателя в ЛС.",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.weight.max",
+        "description": "ОСАГО: Максимальная разрешенная масса в  Кг.",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.type",
+        "description": "ОСАГО: Тип страхователя [PERSON, LEGAL]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.dob",
+        "description": "ОСАГО: Дата рождения страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.name",
+        "description": "ОСАГО: Имя/Наименование страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.tin",
+        "description": "ОСАГО: ИНН страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.type",
+        "description": "ОСАГО: Тип владельца ТС [PERSON, LEGAL]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.dob",
+        "description": "ОСАГО: Дата рождения владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.name",
+        "description": "ОСАГО: Имя/Наименование владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.tin",
+        "description": "ОСАГО: ИНН страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].geo.region",
+        "description": "ОСАГО: Регион использования ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
         "path": "calculate.tax.moscow.yearly.amount",
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
         "types": [

@@ -681,7 +681,55 @@
                     "policy": {
                         "series": null,
                         "number": null,
-                        "is_active": null
+                        "is_active": null,
+                        "expired": null,
+                        "status": null
+                    },
+                    "contract": {
+                        "is_active": null,
+                        "using_type": {
+                            "status": null,
+                            "description": null
+                        },
+                        "amount": {
+                            "value": null
+                        },
+                        "kbm": null,
+                        "is_follow_to_registration": null,
+                        "has_trailer": null
+                    },
+                    "vehicle": {
+                        "model": {
+                            "name": null
+                        },
+                        "identifiers": {
+                            "reg_num": null,
+                            "vin": null,
+                            "body": null
+                        },
+                        "engine": {
+                            "power": {
+                                "hp": null
+                            }
+                        },
+                        "weight": {
+                            "max": null
+                        }
+                    },
+                    "insurant": {
+                        "type": null,
+                        "dob": null,
+                        "name": null,
+                        "tin": null
+                    },
+                    "owner": {
+                        "type": null,
+                        "dob": null,
+                        "name": null,
+                        "tin": null
+                    },
+                    "geo": {
+                        "region": null
                     }
                 }
             ],

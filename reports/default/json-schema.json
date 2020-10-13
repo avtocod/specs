@@ -5422,6 +5422,18 @@
                                                             "string",
                                                             "null"
                                                         ],
+                                                        "enum": [
+                                                            "PERSONAL",
+                                                            "TAXI",
+                                                            "RENT",
+                                                            "SPECIAL",
+                                                            "TRAINING",
+                                                            "DANGER",
+                                                            "PASSENGER",
+                                                            "EMERGENCY",
+                                                            "OTHER",
+                                                            null
+                                                        ],
                                                         "examples": [
                                                             "TAXI"
                                                         ],
@@ -5451,13 +5463,31 @@
                                                 "additionalProperties": false,
                                                 "properties": {
                                                     "value": {
-                                                        "description": "Страховая премия",
+                                                        "description": "Сумма страховой премии",
                                                         "type": [
-                                                            "string",
+                                                            "number",
                                                             "null"
                                                         ],
                                                         "examples": [
-                                                            "12000 руб."
+                                                            12000
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    },
+                                                    "currency": {
+                                                        "description": "Тип валюты страховой премии [RUB, EUR, USD...]",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/currency_type"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "RUB"
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
@@ -5469,11 +5499,11 @@
                                             "kbm": {
                                                 "description": "Коэффициент бонус-малус по договору ОСАГО",
                                                 "type": [
-                                                    "string",
+                                                    "number",
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "0.95"
+                                                    0.95
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
@@ -5625,7 +5655,7 @@
                                                 "additionalProperties": false,
                                                 "properties": {
                                                     "max": {
-                                                        "description": "Максимальная разрешенная масса в  Кг.",
+                                                        "description": "Максимальная разрешенная масса в кг.",
                                                         "type": [
                                                             "number",
                                                             "null"
@@ -5793,24 +5823,19 @@
                                         }
                                     },
                                     "geo": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "region": {
-                                                "description": "Регион использования ТС",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "Москва"
-                                                ],
-                                                "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext"
-                                                ]
+                                        "description": "Гео-данные использования ТС",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/geo_raw_data"
                                             }
-                                        }
+                                        ],
+                                        "fillable_by": [
+                                            "ramiosago.base",
+                                            "ramiosago.base.ext"
+                                        ]
                                     }
                                 }
                             }

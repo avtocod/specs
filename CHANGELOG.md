@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].contract.using_type.status`
 - Field with path `insurance.osago.items[].contract.using_type.description`
 - Field with path `insurance.osago.items[].contract.amount.value`
+- Field with path `insurance.osago.items[].contract.amount.currency`
 - Field with path `insurance.osago.items[].contract.kbm`
 - Field with path `insurance.osago.items[].contract.is_follow_to_registration"`
 - Field with path `insurance.osago.items[].contract.has_trailer`
@@ -31,7 +32,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].owner.dob`
 - Field with path `insurance.osago.items[].owner.name`
 - Field with path `insurance.osago.items[].owner.tin`
-- Field with path `insurance.osago.items[].geo.region`
+- Field with path `insurance.osago.items[].geo`
 
 ## v3.50.0
 

@@ -692,7 +692,8 @@
                             "description": null
                         },
                         "amount": {
-                            "value": null
+                            "value": null,
+                            "currency": null
                         },
                         "kbm": null,
                         "is_follow_to_registration": null,
@@ -729,7 +730,11 @@
                         "tin": null
                     },
                     "geo": {
-                        "region": null
+                        "country": null,
+                        "region": null,
+                        "city": null,
+                        "street": null,
+                        "house": null
                     }
                 }
             ],

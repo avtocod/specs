@@ -873,7 +873,60 @@
                     "policy": {
                         "series": "ЕЕЕ",
                         "number": "0018891420",
-                        "is_active": false
+                        "is_active": false,
+                        "expired": false,
+                        "status": "Выдан страхователю"
+                    },
+                    "contract": {
+                        "is_active": false,
+                        "using_type": {
+                            "status": "TAXI",
+                            "description": "Такси"
+                        },
+                        "amount": {
+                            "value": 12000,
+                            "currency": "RUB"
+                        },
+                        "kbm": 0.95,
+                        "is_follow_to_registration": false,
+                        "has_trailer": false
+                    },
+                    "vehicle": {
+                        "model": {
+                            "name": "Skoda Yeti (категория «B»)"
+                        },
+                        "identifiers": {
+                            "reg_num": "А332АВ177",
+                            "vin": "EXAMPL0V1N1000000",
+                            "body": "KCA275-9673180"
+                        },
+                        "engine": {
+                            "power": {
+                                "hp": 213
+                            }
+                        },
+                        "weight": {
+                            "max": 1233
+                        }
+                    },
+                    "insurant": {
+                        "type": "PERSON",
+                        "dob": "2001-01-30",
+                        "name": "Ива*** Иван",
+                        "tin": "1233423534"
+                    },
+                    "owner": {
+                        "type": "PERSON",
+                        "dob": "2001-01-30",
+                        "name": "Ива*** Иван",
+                        "tin": "1233423534"
+                    },
+                    "geo": {
+                        "country": null,
+                        "region": "Воронежская",
+                        "city": null,
+                        "street": null,
+                        "house": null
                     }
                 }
             ],

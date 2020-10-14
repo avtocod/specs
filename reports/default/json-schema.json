@@ -5365,8 +5365,477 @@
                                                     "ramiosago.base.ext",
                                                     "ramiosago.alt.ext"
                                                 ]
+                                            },
+                                            "expired": {
+                                                "description": "Истек ли срок действия полиса ОСАГО?",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "status": {
+                                                "description": "Статус полиса",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Выдан страхователю"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base.ext"
+                                                ]
                                             }
                                         }
+                                    },
+                                    "contract": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "is_active": {
+                                                "description": "Является ли договор ОСАГО активным?",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "using_type": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "status": {
+                                                        "description": "Тип использования ТС. Значение. [PERSONAL, TAXI, RENT...]",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "enum": [
+                                                            "PERSONAL",
+                                                            "TAXI",
+                                                            "RENT",
+                                                            "SPECIAL",
+                                                            "TRAINING",
+                                                            "DANGER",
+                                                            "PASSENGER",
+                                                            "EMERGENCY",
+                                                            "OTHER",
+                                                            null
+                                                        ],
+                                                        "examples": [
+                                                            "TAXI"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    },
+                                                    "description": {
+                                                        "description": "Тип использования ТС. Описание значения",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Такси"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "amount": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "value": {
+                                                        "description": "Сумма страховой премии",
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            12000
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    },
+                                                    "currency": {
+                                                        "description": "Тип валюты страховой премии [RUB, EUR, USD...]",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/currency_type"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "RUB"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "kbm": {
+                                                "description": "Коэффициент бонус-малус по договору ОСАГО",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    0.95
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "is_follow_to_registration": {
+                                                "description": "Следует ли ТС к месту регистрации или к месту проведения ТО?",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "has_trailer": {
+                                                "description": "Используется ли ТС с прицепом?",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "vehicle": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "model": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Марка, модель, категория ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Skoda Yeti (категория «B»)"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "identifiers": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "reg_num": {
+                                                        "description": "Государственный регистрационный знак (ГРЗ)",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/grz_code"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "А332АВ177"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    },
+                                                    "vin": {
+                                                        "description": "VIN код ТС",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/vin_code"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "EXAMPL0V1N1000000"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    },
+                                                    "body": {
+                                                        "description": "Номер кузова ТС",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/body_code"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "KCA275-9673180"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "engine": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "power": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "hp": {
+                                                                "description": "Мощность двигателя в ЛС.",
+                                                                "type": [
+                                                                    "number",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    213
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "ramiosago.base",
+                                                                    "ramiosago.base.ext"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "weight": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "max": {
+                                                        "description": "Максимальная разрешенная масса в кг.",
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            1233
+                                                        ],
+                                                        "fillable_by": [
+                                                            "ramiosago.base",
+                                                            "ramiosago.base.ext"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "insurant": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип страхователя [PERSON, LEGAL]",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "enum": [
+                                                    "PERSON",
+                                                    "LEGAL",
+                                                    null
+                                                ],
+                                                "examples": [
+                                                    "PERSON"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "dob": {
+                                                "description": "Дата рождения страхователя",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/date"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2001-01-30"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "name": {
+                                                "description": "Имя/Наименование страхователя",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Ива*** Иван"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "tin": {
+                                                "description": "ИНН страхователя",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/tin_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "1233423534"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "owner": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип владельца ТС [PERSON, LEGAL]",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "enum": [
+                                                    "PERSON",
+                                                    "LEGAL",
+                                                    null
+                                                ],
+                                                "examples": [
+                                                    "PERSON"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "dob": {
+                                                "description": "Дата рождения владельца ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/date"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2001-01-30"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "name": {
+                                                "description": "Имя/Наименование владельца ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Ива*** Иван"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            },
+                                            "tin": {
+                                                "description": "ИНН страхователя",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/tin_code"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "1233423534"
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "geo": {
+                                        "description": "Гео-данные использования ТС",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/geo_raw_data"
+                                            }
+                                        ],
+                                        "fillable_by": [
+                                            "ramiosago.base",
+                                            "ramiosago.base.ext"
+                                        ]
                                     }
                                 }
                             }

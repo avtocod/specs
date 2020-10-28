@@ -20,7 +20,7 @@
 - При необходимости разделить имя филда данных на составные слова используется символ "подчеркивания" (`_`);
 - Для группировки различных филдов используется нотация с помощью точки (`.`);
 - Глубина "вложенности" нотаций может быть произвольной;
-- Для указания того, это элемент пути филда является массивом используется обозначение `[]` (добавляется в конец группы филда).
+- Для указания того, что элемент пути филда является массивом используется обозначение `[]` (добавляется в конец группы филда).
 - Для указания **типа данных**, которые может содержать филд могут использоваться следующие ключевые слова - `array`, `boolean`, `float`, `integer`, `object`, `string`, `null`;
 - Каждый филд может быть `null`.
 
@@ -59,7 +59,7 @@
 
 Со всеми поддерживаемыми нами идентификаторами вы можете ознакомиться в файлах [марок](./vehicles/default/marks.json) и [моделей](./vehicles/default/).
 
-> Модели поделены по категориям типа ТС. Пример: [models_car.json](./vehicles/default/models_bus.json) - автобусы.   
+> Модели поделены по категориям типа ТС. Пример: [models_bus.json](./vehicles/default/models_bus.json) - автобусы.
 
 С идентификаторами типов моделей вы можете ознакомится в [файле спецификации](vehicles/default/types.json).
 
@@ -77,35 +77,9 @@
 
 ## SDK
 
-Данный репозиторий содержит SDK для удобного доступа к данным спецификаций.
+Список `SDK` для удобного доступа к данным спецификациям:
 
-#### PHP SDK
-
-[![Build Status][badge_build_status]][link_build_status]
-[![Coverage][badge_coverage]][link_coverage]
-[![Version][badge_packagist_version]][link_packagist]
-![Required PHP version][badge_php_version]
-[![Downloads count][badge_packagist_dl_count]][link_packagist]
-
-Для установки выполните в терминале следующую команду:
-
-```bash
-$ composer require avtocod/specs "^3.0"
-```
-
-> Для этого необходим установленный `composer`. Для его установки перейдите по [данной ссылке][getcomposer].
-
-> Обратите внимание на то, что необходимо фиксировать мажорную версию устанавливаемого пакета.
-
-После этого вы сможете получать, например, спецификации по филдам в вашем php-приложении следующим образом:
-
-```php
-<?php
-
-$fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecification();
-```
-
-Для получения информации об остальных возможностях - смотрите исходный код.
+- **PHP** [`avtocod/specs-php`](https://github.com/avtocod/specs-php)
 
 ## Поддержка
 
@@ -116,15 +90,13 @@ $fields_specifications = \Avtocod\Specifications\Specifications::getFieldsSpecif
 [badge_commits_since_release]:https://img.shields.io/github/commits-since/avtocod/specs/latest.svg?style=for-the-badge&maxAge=5
 [badge_packagist_version]:https://img.shields.io/packagist/v/avtocod/specs.svg?maxAge=5
 [badge_php_version]:https://img.shields.io/packagist/php-v/avtocod/specs.svg?maxAge=5
-[badge_build_status]:https://travis-ci.org/avtocod/specs.svg?branch=master
+[badge_build_status]:https://img.shields.io/github/workflow/status/avtocod/specs/tests/master
 [badge_packagist_dl_count]:https://img.shields.io/packagist/dt/avtocod/specs.svg?maxAge=30
 [badge_issues]:https://img.shields.io/github/issues/avtocod/specs.svg?style=for-the-badge&maxAge=30
-[badge_coverage]:https://img.shields.io/codecov/c/github/avtocod/specs/master.svg?maxAge=5
 [link_packagist]:https://packagist.org/packages/avtocod/specs
-[link_build_status]:https://travis-ci.org/avtocod/specs
+[link_build_status]:https://github.com/avtocod/specs/actions
 [link_issues]:https://github.com/avtocod/specs/issues
 [link_create_issue]:https://github.com/avtocod/specs/issues/new/choose
-[link_coverage]:https://codecov.io/gh/avtocod/specs
 [getcomposer]:https://getcomposer.org/download/
 [git_tagging]:https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [json-schema]:https://json-schema.org

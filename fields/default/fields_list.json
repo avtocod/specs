@@ -418,6 +418,116 @@
         ]
     },
     {
+        "path": "tech_data.generations[].name",
+        "description": "Характеристики ТС: Наименование поколения ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].is_restyling",
+        "description": "Характеристики ТС: Является ли ТС рестайлинговым?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].years.start",
+        "description": "Характеристики ТС: Год начала выпуска поколения",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].years.end",
+        "description": "Характеристики ТС: Год окончания выпуска поколения",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].type",
+        "description": "Характеристики ТС: Тип кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].name",
+        "description": "Характеристики ТС: Наименование модификации",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].engine.fuel.type",
+        "description": "Характеристики ТС: Тип топлива [Бензиновый, Дизельный, Прочее]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].engine.power.hp",
+        "description": "Характеристики ТС: Мощность двигателя в ЛС",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].engine.volume",
+        "description": "Характеристики ТС: Объем двигателя в кубических сантиметрах",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].transmission.type",
+        "description": "Характеристики ТС: Тип трансмиссии [AUTOMATIC, MANUAL, ROBOT, VARIABLE, UNKNOWN]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].drive.type",
+        "description": "Характеристики ТС: Тип привода [ПЕРЕДНИЙ, ЗАДНИЙ, ПОЛНЫЙ]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.category.code",
         "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
         "types": [
@@ -587,6 +697,256 @@
         ]
     },
     {
+        "path": "additional_info.catalog.rsa.items[].code.rsa",
+        "description": "Дополнительная информация: Код ТС в справочнике РСА",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].code.transdekra",
+        "description": "Дополнительная информация: Код ТС в справочнике Трансдекра",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].code.vehicle",
+        "description": "Дополнительная информация: Код ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].relevance",
+        "description": "Дополнительная информация: Релевантность записи",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.type",
+        "description": "Дополнительная информация: Тип ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.brand.name",
+        "description": "Дополнительная информация: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.model.name",
+        "description": "Дополнительная информация: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.modifications.name",
+        "description": "Дополнительная информация: Модификация ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.transmission.type",
+        "description": "Дополнительная информация: Тип трансмиссии ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.drive.type",
+        "description": "Дополнительная информация: Тип привода ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.engine.type",
+        "description": "Дополнительная информация: Тип топлива ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.engine.power.hp",
+        "description": "Дополнительная информация: Мощность двигателя ТС (л.с)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.engine.volume",
+        "description": "Дополнительная информация: Объем двигателя в кубических сантиметрах",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.doors.count",
+        "description": "Дополнительная информация: Количество дверей у ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.seats.count",
+        "description": "Дополнительная информация: Количество сидений у ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.weight.max",
+        "description": "Дополнительная информация: Разрешенная макс. масса",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.category.code",
+        "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.body.type",
+        "description": "Дополнительная информация: Тип кузова ТС [Седан, Универсал, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.manufactured.year.start",
+        "description": "Дополнительная информация: Год начала производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.rsa.items[].vehicle.manufactured.year.end",
+        "description": "Дополнительная информация: Год окончания производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.rsa"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].manufacturer_id",
+        "description": "Дополнительная информация: Код производителя ТС в каталоге TecDoc",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].model_id",
+        "description": "Дополнительная информация: Код модели ТС в каталоге TecDoc",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].id",
+        "description": "Дополнительная информация: Код ТС в каталоге TecDoc",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].name",
+        "description": "Дополнительная информация: Наименование ТС в каталоге TecDoc",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.tecdoc.items[].description",
+        "description": "Дополнительная информация: Описание ТС в каталоге TecDoc",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.tecdoc"
+        ]
+    },
+    {
         "path": "additional_info.identifiers.vin.checksum_validated",
         "description": "Дополнительная информация: Пройдена ли проверка контрольного символа VIN?",
         "types": [
@@ -712,6 +1072,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
+            "base.ext",
             "base.alt",
             "regactions.registry"
         ]
@@ -724,6 +1086,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
+            "base.ext",
             "base.alt"
         ]
     },
@@ -735,8 +1099,56 @@
         ],
         "fillable_by": [
             "gibdd.history",
+            "base",
+            "base.ext",
             "base.alt",
             "regactions.registry"
+        ]
+    },
+    {
+        "path": "ownership.history.items[].owner.company.tin",
+        "description": "История владения: ИНН компании владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "ownership.history.items[].owner.company.name",
+        "description": "История владения: Наименование компании владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "ownership.history.items[].owner.company.kpp",
+        "description": "История владения: КПП компании владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
+        "path": "ownership.history.items[].owner.company.ogrn",
+        "description": "История владения: ОГРН компании владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -746,6 +1158,9 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt",
             "gibdd.history"
         ]
     },
@@ -756,6 +1171,9 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt",
             "gibdd.history"
         ]
     },
@@ -993,7 +1411,9 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1007,7 +1427,8 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1021,7 +1442,8 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1032,7 +1454,9 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1046,7 +1470,9 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1060,7 +1486,9 @@
             "base.ext",
             "base.alt",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.alt",
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
         ]
     },
     {
@@ -1070,6 +1498,280 @@
             "boolean"
         ],
         "fillable_by": [
+            "ramiosago.base.ext",
+            "ramiosago.alt.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].policy.expired",
+        "description": "ОСАГО: Истек ли срок действия полиса ОСАГО?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].policy.status",
+        "description": "ОСАГО: Статус полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.is_active",
+        "description": "ОСАГО: Является ли договор ОСАГО активным?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.using_type.status",
+        "description": "ОСАГО: Тип использования ТС. Значение. [PERSONAL, TAXI, RENT...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.using_type.description",
+        "description": "ОСАГО: Тип использования ТС. Описание значения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.amount.value",
+        "description": "ОСАГО: Сумма страховой премии",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.amount.currency",
+        "description": "ОСАГО: Тип валюты страховой премии [RUB, EUR, USD...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.kbm",
+        "description": "ОСАГО: Коэффициент бонус-малус по договору ОСАГО",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.is_follow_to_registration",
+        "description": "ОСАГО: Следует ли ТС к месту регистрации или к месту проведения ТО?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].contract.has_trailer",
+        "description": "ОСАГО: Используется ли ТС с прицепом?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.model.name",
+        "description": "ОСАГО: Марка, модель, категория ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.identifiers.reg_num",
+        "description": "ОСАГО: Государственный регистрационный знак (ГРЗ)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.identifiers.vin",
+        "description": "ОСАГО: VIN код ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.identifiers.body",
+        "description": "ОСАГО: Номер кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.engine.power.hp",
+        "description": "ОСАГО: Мощность двигателя в ЛС.",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.weight.max",
+        "description": "ОСАГО: Максимальная разрешенная масса в кг.",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.type",
+        "description": "ОСАГО: Тип страхователя [PERSON, LEGAL]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.dob",
+        "description": "ОСАГО: Дата рождения страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.name",
+        "description": "ОСАГО: Имя/Наименование страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].insurant.tin",
+        "description": "ОСАГО: ИНН страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.type",
+        "description": "ОСАГО: Тип владельца ТС [PERSON, LEGAL]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.dob",
+        "description": "ОСАГО: Дата рождения владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.name",
+        "description": "ОСАГО: Имя/Наименование владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].owner.tin",
+        "description": "ОСАГО: ИНН страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].geo",
+        "description": "ОСАГО: Гео-данные использования ТС",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
             "ramiosago.base.ext"
         ]
     },
@@ -1212,6 +1914,17 @@
         ]
     },
     {
+        "path": "accidents.history.date.update",
+        "description": "История ДТП: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.dtp",
+            "dtp.registry"
+        ]
+    },
+    {
         "path": "accidents.history.items[].number",
         "description": "История ДТП: Номер происшествия",
         "types": [
@@ -1231,6 +1944,16 @@
         "fillable_by": [
             "gibdd.dtp",
             "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].participants.total",
+        "description": "История ДТП: Количество ТС, участвующих в ДТП",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.dtp"
         ]
     },
     {
@@ -1474,6 +2197,16 @@
         ]
     },
     {
+        "path": "restrictions.registration_actions.date.update",
+        "description": "Ограничения на рег. действия: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
+        ]
+    },
+    {
         "path": "restrictions.registration_actions.items[].date.added",
         "description": "Ограничения на рег. действия: Дата добавления данных об ограничении в реестр",
         "types": [
@@ -1574,6 +2307,16 @@
         ]
     },
     {
+        "path": "restrictions.registration_actions.items[].actuality.date",
+        "description": "Ограничения на рег. действия: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
+        ]
+    },
+    {
         "path": "restrictions.registration_actions.has_restrictions",
         "description": "Ограничения на рег. действия: Имеются ли ограничения на рег. действия?",
         "types": [
@@ -1581,6 +2324,136 @@
         ],
         "fillable_by": [
             "gibdd.restrict"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.date.update",
+        "description": "Архив ограничений на рег. действия: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].date.added",
+        "description": "Архив ограничений на рег. действия: Дата добавления данных об ограничении в реестр",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].date.start",
+        "description": "Архив ограничений на рег. действия: Дата начала действия ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].date.end",
+        "description": "Архив ограничений на рег. действия: Дата окончания действия ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].vehicle.year",
+        "description": "Архив ограничений на рег. действия: Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].vehicle.model.name",
+        "description": "Архив ограничений на рег. действия: Марка (модель) ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].initiator.name",
+        "description": "Архив ограничений на рег. действия: Наименование организации наложившей ограничение",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].initiator.region.name",
+        "description": "Архив ограничений на рег. действия: Регион инициатора ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].restrict.type",
+        "description": "Архив ограничений на рег. действия: Вид ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].restrict.reason",
+        "description": "Архив ограничений на рег. действия: Основания для наложения ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].restrict.number",
+        "description": "Архив ограничений на рег. действия: Номер документа устанавливающего ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.items[].actuality.date",
+        "description": "Архив ограничений на рег. действия: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
+        ]
+    },
+    {
+        "path": "restrictions.registration_actions_archive.has_restrictions",
+        "description": "Архив ограничений на рег. действия: Наличие ограничений на дату формирования архива",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "restrictions.registry"
         ]
     },
     {
@@ -2068,6 +2941,16 @@
         ]
     },
     {
+        "path": "taxi.history.items[].date.cancel",
+        "description": "Такси: Дата аннулирования или приостановления лицензии",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "av.taxi"
+        ]
+    },
+    {
         "path": "taxi.history.items[].license.number",
         "description": "Такси: Регистрационный номер разрешения",
         "types": [
@@ -2307,7 +3190,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2330,7 +3214,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2342,7 +3227,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2354,7 +3240,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2390,7 +3277,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2402,7 +3290,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2414,7 +3303,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2426,7 +3316,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
         ]
     },
     {
@@ -2538,7 +3429,18 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.madiampp"
+        ]
+    },
+    {
+        "path": "fines.items[].location.raw",
+        "description": "Штрафы: Место совершения правонарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.madiampp"
         ]
     },
     {
@@ -2573,7 +3475,10 @@
             "base.taxi",
             "base.tech",
             "ads.base",
-            "service.history"
+            "service.history",
+            "customs.base",
+            "images.archive",
+            "mileages.registry"
         ]
     },
     {
@@ -2588,7 +3493,10 @@
             "base.taxi",
             "base.tech",
             "ads.base",
-            "service.history"
+            "service.history",
+            "customs.base",
+            "images.archive",
+            "mileages.registry"
         ]
     },
     {
@@ -2598,6 +3506,24 @@
             "string"
         ],
         "fillable_by": []
+    },
+    {
+        "path": "mileages.items[].actuality.date",
+        "description": "Пробеги: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext",
+            "base.taxi",
+            "base.tech",
+            "ads.base",
+            "service.history",
+            "customs.base",
+            "images.archive",
+            "mileages.registry"
+        ]
     },
     {
         "path": "images.photos.items[].vehicle.brand.name",
@@ -2626,7 +3552,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2636,7 +3563,8 @@
             "string"
         ],
         "fillable_by": [
-            "images.avtonomer"
+            "images.avtonomer",
+            "images.archive"
         ]
     },
     {
@@ -2656,7 +3584,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2666,7 +3595,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2696,7 +3626,8 @@
             "object"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2706,7 +3637,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2716,7 +3648,8 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2726,17 +3659,19 @@
             "array"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
         "path": "ads.history.items[].photos.grz",
         "description": "История объявлений: Список ГРЗ c URI фотографии, на которых они распознаны",
         "types": [
-            "array"
+            "object"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2766,7 +3701,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2776,7 +3712,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2786,7 +3723,8 @@
             "string"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2806,7 +3744,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -2936,7 +3875,8 @@
             "integer"
         ],
         "fillable_by": [
-            "ads.base"
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -3171,7 +4111,7 @@
     },
     {
         "path": "repairs.history.items[].task_process",
-        "description": "Ремонтные работы: В каком процессе был выполнен расчёт [KASKO, OSAGO]",
+        "description": "Ремонтные работы: В каком процессе был выполнен расчёт [KASKO, OSAGO, RETRO CALCULATION]",
         "types": [
             "string"
         ],
@@ -3181,7 +4121,7 @@
     },
     {
         "path": "repairs.history.items[].repairer.type",
-        "description": "Ремонтные работы: Тип клиента, работавшего с делом. Garage, Insurance, Assessor, Bodyshop",
+        "description": "Ремонтные работы: Тип клиента, работавшего с делом. Garage, Insurance, Assessor, Bodyshop, Agency",
         "types": [
             "string"
         ],
@@ -3246,7 +4186,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3256,7 +4197,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3276,7 +4218,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3286,7 +4229,8 @@
             "float"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3326,7 +4270,8 @@
             "array"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3336,7 +4281,8 @@
             "array"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3346,7 +4292,8 @@
             "array"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3436,7 +4383,8 @@
             "object"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3446,7 +4394,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3456,7 +4405,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3466,7 +4416,8 @@
             "integer"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3476,7 +4427,8 @@
             "integer"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3616,7 +4568,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3667,6 +4620,126 @@
         ],
         "fillable_by": [
             "ads.price"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].service.name",
+        "description": "Коммерческое использование ТС: Название сервиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].service.url",
+        "description": "Коммерческое использование ТС: Ссылка на сервис",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].company.name",
+        "description": "Коммерческое использование ТС: Юридическое наименование компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].company.tin",
+        "description": "Коммерческое использование ТС: ИНН компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.items[].company.type",
+        "description": "Коммерческое использование ТС: Тип компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].date",
+        "description": "Отзывные кампании: Дата начала отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].company.name",
+        "description": "Отзывные кампании: Организатор отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].description.reason",
+        "description": "Отзывные кампании: Причина отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].description.recommendation",
+        "description": "Отзывные кампании: Рекомендации и проводимые работы",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].vehicle.brand",
+        "description": "Отзывные кампании: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].vehicle.model",
+        "description": "Отзывные кампании: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].news.url",
+        "description": "Отзывные кампании: Ссылка на новость об отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
         ]
     }
 ]

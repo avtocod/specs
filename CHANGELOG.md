@@ -4,6 +4,378 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.51.0
+
+### Added
+
+- Field with path `insurance.osago.items[].policy.status`
+- Field with path `insurance.osago.items[].policy.expired`
+- Field with path `insurance.osago.items[].contract.is_active`
+- Field with path `insurance.osago.items[].contract.using_type.status`
+- Field with path `insurance.osago.items[].contract.using_type.description`
+- Field with path `insurance.osago.items[].contract.amount.value`
+- Field with path `insurance.osago.items[].contract.amount.currency`
+- Field with path `insurance.osago.items[].contract.kbm`
+- Field with path `insurance.osago.items[].contract.is_follow_to_registration"`
+- Field with path `insurance.osago.items[].contract.has_trailer`
+- Field with path `insurance.osago.items[].vehicle.model.name`
+- Field with path `insurance.osago.items[].vehicle.identifiers.reg_num`
+- Field with path `insurance.osago.items[].vehicle.identifiers.vin`
+- Field with path `insurance.osago.items[].vehicle.identifiers.body`
+- Field with path `insurance.osago.items[].vehicle.engine.power.hp`
+- Field with path `insurance.osago.items[].vehicle.weight.max`
+- Field with path `insurance.osago.items[].insurant.type`
+- Field with path `insurance.osago.items[].insurant.dob`
+- Field with path `insurance.osago.items[].insurant.name`
+- Field with path `insurance.osago.items[].insurant.tin`
+- Field with path `insurance.osago.items[].owner.type`
+- Field with path `insurance.osago.items[].owner.dob`
+- Field with path `insurance.osago.items[].owner.name`
+- Field with path `insurance.osago.items[].owner.tin`
+- Field with path `insurance.osago.items[].geo`
+
+## v3.50.0
+
+### Added
+
+- Source `service.history.fitservice`
+
+### Changed
+
+- Field with path `service_history.items[].dealer.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].dealer.branch.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].date.end` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].amount.value` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].service.content` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].service.spare_parts` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].service.recommendations` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].geo` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.brand.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.year` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.fitservice`
+- Field with path `service_history.items[].vehicle.identifiers.vin` also fillable by `service.history.fitservice`
+
+## v3.49.0
+
+### Added
+
+- Source `mileages.registry`
+- Field with path `mileages.items[].actuality.date`
+
+### Changed
+
+- Extend enum with `OSAGO CETOA` value for field `repairs.history.items[].task_process` in `./reports/default/json-schema.json`
+- Field with path `mileages.items[].date.event` also fillable by `mileages.registry`
+- Field with path `mileages.items[].mileage` also fillable by `mileages.registry`
+
+## v3.48.0
+
+### Added
+
+- Source `references.tecdoc`
+- Field with path `additional_info.catalog.tecdoc.items[].manufacturer_id`
+- Field with path `additional_info.catalog.tecdoc.items[].model_id`
+- Field with path `additional_info.catalog.tecdoc.items[].id`
+- Field with path `additional_info.catalog.tecdoc.items[].name`
+- Field with path `additional_info.catalog.tecdoc.items[].description`
+
+## v3.47.0
+
+### Added
+
+- Source `restrictions.registry`
+- Field with path `restrictions.registration_actions.date.update`
+- Field with path `restrictions.registration_actions.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.date.update`
+- Field with path `restrictions.registration_actions_archive.items[].date.added`
+- Field with path `restrictions.registration_actions_archive.items[].date.start`
+- Field with path `restrictions.registration_actions_archive.items[].date.end`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.year`
+- Field with path `restrictions.registration_actions_archive.items[].vehicle.model.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.name`
+- Field with path `restrictions.registration_actions_archive.items[].initiator.region.name`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.type`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.reason`
+- Field with path `restrictions.registration_actions_archive.items[].restrict.number`
+- Field with path `restrictions.registration_actions_archive.items[].actuality.date`
+- Field with path `restrictions.registration_actions_archive.has_restrictions`
+
+### Changed
+
+- Extend pattern with `*` for definition `engine_number` in `./reports/default/json-schema.json`
+
+## v3.46.0
+
+### Added
+
+- Tests for specifications using `nodejs` and `jest` [#154]
+
+### Changed
+
+- Tests now located in `__tests__` directory [#164]
+- `Makefile` and `docker-compose.yml` files moved to `__tests__` directory [#154]
+- Info about supported SDKs added into readme file [#154]
+
+### Removed
+
+- **PHP SDK** - moved to [separate repository `avtocod/specs-php`](https://github.com/avtocod/specs-php). **Important notice**: If you used PHP SDK from this repository - you must add new dependency `avtocod/specs-php:~1.0` into your dependencies list! [#154]
+- Issue templates for sdk bugs and feature requests [#154]
+
+### Fixed
+
+- Fixed data type for field with path `ads.history.items[].photos.grz` in `fields_list.json` [#154]
+
+[#154]:https://github.com/avtocod/specs/pull/154
+[#164]:https://github.com/avtocod/specs/pull/164
+
+## v3.45.0
+
+### Changed
+
+- Extend pattern with `*` for definitions `vin_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `grz_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `sts_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `pts_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `body_code` in `./reports/default/json-schema.json`
+- Extend pattern with `*` for definitions `chassis_code` in `./reports/default/json-schema.json`
+
+### Fixed
+
+- Pattern for definitions `vin_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `grz_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `sts_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `pts_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `body_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `chassis_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `tin_code` in `./reports/default/json-schema.json`
+- Pattern for definitions `engine_number` in `./reports/default/json-schema.json`
+- Pattern for definitions `brand_unique_id` in `./reports/default/json-schema.json`
+- Pattern for definitions `model_unique_id` in `./reports/default/json-schema.json`
+- Pattern for definitions `phone_number` in `./reports/default/json-schema.json`
+- Pattern for definitions `datetime` in `./reports/default/json-schema.json`
+- Pattern for definitions `date` in `./reports/default/json-schema.json`
+- Pattern for field with path `additional_info.owner.geo.postal_code` in `./reports/default/json-schema.json`
+
+## v3.44.0
+
+### Added
+
+- Field with path `ownership.history.items[].owner.company.name`
+- Field with path `ownership.history.items[].owner.company.kpp`
+- Field with path `ownership.history.items[].owner.company.ogrn`
+
+## v3.43.0
+
+### Added
+
+- Field with path `ownership.history.items[].owner.company.tin`
+
+## v3.42.0
+
+### Changed
+
+- Field with path `ownership.history.items[].date.start` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].date.end` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].owner.type` also fillable by `base`, `base.ext`
+- Field with path `ownership.history.items[].last_operation.code` also fillable by `base`, `base.ext`, `base.alt`
+- Field with path `ownership.history.items[].last_operation.description` also fillable by `base`, `base.ext`, `base.alt`
+
+## v3.41.1
+
+### Fixed
+
+- Fixed typo of possible value for `commercial_use.items[].company.type`
+
+## v3.41.0
+
+### Added
+
+- Source `recall.campaigns.registry`
+- Field with path `recall_campaigns.items[].date`
+- Field with path `recall_campaigns.items[].company.name`
+- Field with path `recall_campaigns.items[].description.reason`
+- Field with path `recall_campaigns.items[].description.recommendation`
+- Field with path `recall_campaigns.items[].vehicle.brand`
+- Field with path `recall_campaigns.items[].vehicle.model`
+- Field with path `recall_campaigns.items[].news.url`
+- Field with path `recall_campaigns.count`
+
+## v3.40.1
+
+### Fixed
+
+- Missing field with path `commercial_use.count`
+
+## v3.40.0
+
+### Added
+
+- Source `carsharing.registry`
+- Field with path `commercial_use.items[].service.name`
+- Field with path `commercial_use.items[].service.url`
+- Field with path `commercial_use.items[].company.name`
+- Field with path `commercial_use.items[].company.tin`
+- Field with path `commercial_use.items[].company.type`
+
+## v3.39.0
+
+### Added
+
+- New possible value `Agency` for `repairs.history.items[].repairer.type` field [#143]
+- New possible value `RETRO CALCULATION` for `repairs.history.items[].task_process` field [#143]
+- Additional pattern for electronic vehicle passport in `pts_code` definition [#143]
+- Field with path `accidents.history.date.update`
+
+## v3.38.0
+
+### Added
+
+- Source `references.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.rsa`
+- Field with path `additional_info.catalog.rsa.items[].code.transdekra`
+- Field with path `additional_info.catalog.rsa.items[].code.vehicle`
+- Field with path `additional_info.catalog.rsa.items[].relevance`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.brand.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.model.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.modifications.name`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.transmission.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.drive.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.power.hp`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.engine.volume`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.doors.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.seats.count`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.weight.max`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.category.code`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.body.type`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.start`
+- Field with path `additional_info.catalog.rsa.items[].vehicle.manufactured.year.end`
+
+## v3.37.0
+
+### Added
+
+- Source `ramiosago.alt`
+- Source `ramiosago.alt.ext`
+
+### Changed
+
+- Field with path `insurance.osago.items[].policy.series` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].policy.number` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `ramiosago.alt`, `ramiosago.alt.ext` sources
+- Field with path `insurance.osago.items[].date.start` also fillable by `ramiosago.alt.ext` source
+- Field with path `insurance.osago.items[].date.end` also fillable by `ramiosago.alt.ext` source
+- Field with path `insurance.osago.items[].policy.is_active` also fillable by `ramiosago.alt.ext` source
+
+## v3.36.0
+
+### Changed
+
+- Source `carprice` marked as disabled
+
+## v3.35.0
+
+### Changed
+
+- Field with path `mileages.items[].date.event` also fillable by `images.archive` source
+- Field with path `mileages.items[].mileage` also fillable by `images.archive` source
+- Field with path `mileages.items[].date.event` also fillable by `customs.base` source
+- Field with path `mileages.items[].mileage` also fillable by `customs.base` source
+- Disabled source with name `base.moscow`
+
+## v3.34.0
+
+### Changed
+
+- Field with path `ads.history.items[].photos.board` also fillable by `images.archive` source
+- Field with path `ads.history.items[].photos.grz` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.brand.name` is not fillable by `images.archive` source now
+- Field with path `images.photos.items[].vehicle.model.name` is not fillable by `images.archive` source now
+
+## v3.33.0
+
+### Added
+
+- Field with path `taxi.history.items[].date.cancel`
+
+## v3.32.0
+
+### Added
+
+- Field with path `accidents.history.items[].participants.total`
+
+## v3.31.0
+
+### Added
+
+- Source `fines.madiampp`
+- Field with path `fines.items[].location.raw`
+
+### Changed
+
+- Field with path `fines.items[].date.event` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].article.code` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].article.description` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].description` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].amount.total` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].discount.percent` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.madiampp` source
+- Field with path `fines.items[].is_paid` also fillable by `fines.madiampp` source
+- Field with path `fines.has_fines` also fillable by `fines.madiampp` source
+
+## v3.30.0
+
+### Changed
+
+- CI completely moved from "Travis CI" to "Github Actions" _(travis builds disabled)_
+- **PHP SDK** maximal `illuminate/*` package versions now is `7.*`
+- **PHP SDK** minimal required PHP version now is `7.2`
+- **PHP SDK** minimal required `phpunit/phpunit` version now is `~7.5`
+- **PHP SDK** minimal required `illuminate/*` package versions now is `^5.6`
+- **PHP SDK** Tests was updated. Now it's not using deprecated `PHPUnit` assertions
+
+## v3.29.0
+
+### Added
+
+- Field with path `tech_data.generations[].name`
+- Field with path `tech_data.generations[].is_restyling`
+- Field with path `tech_data.generations[].years.start`
+- Field with path `tech_data.generations[].years.end`
+- Field with path `tech_data.generations[].bodies[].type`
+- Field with path `tech_data.generations[].bodies[].modifications[].name`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.fuel.type`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.power.hp`
+- Field with path `tech_data.generations[].bodies[].modifications[].engine.volume`
+- Field with path `tech_data.generations[].bodies[].modifications[].transmission.type`
+- Field with path `tech_data.generations[].bodies[].modifications[].drive.type`
+
+## v3.28.0
+
+### Added
+
+- Source `images.archive`
+
+### Changed
+
+- Field with path `images.photos.items[].uri` also fillable by `images.archive` source
+- Field with path `images.photos.items[].date.issued` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.model.name` also fillable by `images.archive` source
+- Field with path `images.photos.items[].vehicle.brand.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].geo` also fillable by `images.archive` source
+- Field with path `ads.history.items[].text` also fillable by `images.archive` source
+- Field with path `ads.history.items[].date.publish` also fillable by `images.archive` source
+- Field with path `ads.history.items[].price.value` also fillable by `images.archive` source
+- Field with path `ads.history.items[].photos.local` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.year` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.mileage` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.model.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.brand.name` also fillable by `images.archive` source
+- Field with path `ads.history.items[].vehicle.identifiers.vin` also fillable by `images.archive` source
+
 ## v3.27.0
 
 ### Added

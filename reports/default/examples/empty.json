@@ -76,7 +76,42 @@
         },
         "wheel": {
             "position": null
-        }
+        },
+        "generations": [
+            {
+                "name": null,
+                "is_restyling": null,
+                "years": {
+                    "start": null,
+                    "end": null
+                },
+                "bodies": [
+                    {
+                        "type": null,
+                        "modifications": [
+                            {
+                                "name": null,
+                                "engine": {
+                                    "fuel": {
+                                        "type": null
+                                    },
+                                    "power": {
+                                        "hp": null
+                                    },
+                                    "volume": null
+                                },
+                                "transmission": {
+                                    "type": null
+                                },
+                                "drive": {
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "additional_info": {
         "vehicle": {
@@ -129,6 +164,75 @@
                         "rsa_code": null,
                         "modification_id": null,
                         "relevance": null
+                    }
+                ]
+            },
+            "rsa": {
+                "items": [
+                    {
+                        "code": {
+                            "rsa": null,
+                            "transdekra": null,
+                            "vehicle": null
+                        },
+                        "relevance": null,
+                        "vehicle": {
+                            "type": null,
+                            "brand": {
+                                "name": null
+                            },
+                            "model": {
+                                "name": null
+                            },
+                            "modifications": {
+                                "name": null
+                            },
+                            "transmission": {
+                                "type": null
+                            },
+                            "drive": {
+                                "type": null
+                            },
+                            "engine": {
+                                "type": null,
+                                "power": {
+                                    "hp": null
+                                },
+                                "volume": null
+                            },
+                            "doors": {
+                                "count": null
+                            },
+                            "seats": {
+                                "count": null
+                            },
+                            "weight": {
+                                "max": null
+                            },
+                            "category": {
+                                "code": null
+                            },
+                            "body": {
+                                "type": null
+                            },
+                            "manufactured": {
+                                "year": {
+                                    "start": null,
+                                    "end": null
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "tecdoc": {
+                "items": [
+                    {
+                        "manufacturer_id": null,
+                        "model_id": null,
+                        "id": null,
+                        "name": null,
+                        "description": null
                     }
                 ]
             }
@@ -359,6 +463,9 @@
                     "kbk": null,
                     "okato": null
                 },
+                "location": {
+                    "raw": null
+                },
                 "photos": [
                     {
                         "type": null,
@@ -445,7 +552,8 @@
                     "date": {
                         "start": null,
                         "end": null,
-                        "actual": null
+                        "actual": null,
+                        "cancel": null
                     },
                     "license": {
                         "number": null,
@@ -573,7 +681,60 @@
                     "policy": {
                         "series": null,
                         "number": null,
-                        "is_active": null
+                        "is_active": null,
+                        "expired": null,
+                        "status": null
+                    },
+                    "contract": {
+                        "is_active": null,
+                        "using_type": {
+                            "status": null,
+                            "description": null
+                        },
+                        "amount": {
+                            "value": null,
+                            "currency": null
+                        },
+                        "kbm": null,
+                        "is_follow_to_registration": null,
+                        "has_trailer": null
+                    },
+                    "vehicle": {
+                        "model": {
+                            "name": null
+                        },
+                        "identifiers": {
+                            "reg_num": null,
+                            "vin": null,
+                            "body": null
+                        },
+                        "engine": {
+                            "power": {
+                                "hp": null
+                            }
+                        },
+                        "weight": {
+                            "max": null
+                        }
+                    },
+                    "insurant": {
+                        "type": null,
+                        "dob": null,
+                        "name": null,
+                        "tin": null
+                    },
+                    "owner": {
+                        "type": null,
+                        "dob": null,
+                        "name": null,
+                        "tin": null
+                    },
+                    "geo": {
+                        "country": null,
+                        "region": null,
+                        "city": null,
+                        "street": null,
+                        "house": null
                     }
                 }
             ],
@@ -582,11 +743,17 @@
     },
     "accidents": {
         "history": {
+            "date": {
+                "update": null
+            },
             "items": [
                 {
                     "number": null,
                     "accident": {
                         "date": null
+                    },
+                    "participants": {
+                        "total": null
                     },
                     "actuality": {
                         "date": null
@@ -644,6 +811,9 @@
     },
     "restrictions": {
         "registration_actions": {
+            "date": {
+                "update": null
+            },
             "items": [
                 {
                     "date": {
@@ -667,6 +837,45 @@
                         "type": null,
                         "reason": null,
                         "number": null
+                    },
+                    "actuality": {
+                        "date": null
+                    }
+                }
+            ],
+            "count": 1,
+            "has_restrictions": null
+        },
+        "registration_actions_archive": {
+            "date": {
+                "update": null
+            },
+            "items": [
+                {
+                    "date": {
+                        "added": null,
+                        "start": null,
+                        "end": null
+                    },
+                    "vehicle": {
+                        "year": null,
+                        "model": {
+                            "name": null
+                        }
+                    },
+                    "initiator": {
+                        "name": null,
+                        "region": {
+                            "name": null
+                        }
+                    },
+                    "restrict": {
+                        "type": null,
+                        "reason": null,
+                        "number": null
+                    },
+                    "actuality": {
+                        "date": null
                     }
                 }
             ],
@@ -701,7 +910,13 @@
                         "end": null
                     },
                     "owner": {
-                        "type": null
+                        "type": null,
+                        "company": {
+                            "name": null,
+                            "tin": null,
+                            "kpp": null,
+                            "ogrn": null
+                        }
                     },
                     "last_operation": {
                         "code": null,
@@ -721,6 +936,9 @@
                 "mileage": null,
                 "filled_by": {
                     "source": null
+                },
+                "actuality": {
+                    "date": null
                 }
             }
         ],
@@ -979,5 +1197,43 @@
                 }
             ]
         }
+    },
+    "commercial_use": {
+        "items": [
+            {
+                "service": {
+                    "name": null,
+                    "url": null
+                },
+                "company": {
+                    "name": null,
+                    "tin": null,
+                    "type": null
+                }
+            }
+        ],
+        "count": 1
+    },
+    "recall_campaigns": {
+        "items": [
+            {
+                "date": null,
+                "company": {
+                    "name": null
+                },
+                "description": {
+                    "reason": null,
+                    "recommendation": null
+                },
+                "vehicle": {
+                    "brand": null,
+                    "model": null
+                },
+                "news": {
+                    "url": null
+                }
+            }
+        ],
+        "count": 1
     }
 }

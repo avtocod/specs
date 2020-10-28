@@ -7,12 +7,12 @@
     {
         "name": "base.moscow",
         "description": "Комплексные данные по ТС эксплуатируемых в Москве и МО",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "carprice",
         "description": "Данные о рыночной стоимости ТС",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "tech.ext",
@@ -70,8 +70,18 @@
         "enabled": true
     },
     {
+        "name": "ramiosago.alt",
+        "description": "Данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
+        "enabled": true
+    },
+    {
         "name": "ramiosago.base.ext",
         "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС",
+        "enabled": true
+    },
+    {
+        "name": "ramiosago.alt.ext",
+        "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
         "enabled": true
     },
     {
@@ -122,6 +132,11 @@
     {
         "name": "references.base",
         "description": "Нормализатор значений марки и модели",
+        "enabled": true
+    },
+    {
+        "name": "references.rsa",
+        "description": "Справочник ТС РСА",
         "enabled": true
     },
     {
@@ -182,6 +197,46 @@
     {
         "name": "pledge.fnp",
         "description": "Обременения на ТС по данным ФНП",
+        "enabled": true
+    },
+    {
+        "name": "images.archive",
+        "description": "Архив фотографии ТС из открытых источников",
+        "enabled": true
+    },
+    {
+        "name": "fines.madiampp",
+        "description": "Данные о штрафах, оформленных на ТС, по данным МАДИ",
+        "enabled": true
+    },
+    {
+        "name": "carsharing.registry",
+        "description": "Данные о коммерческом использовании ТС",
+        "enabled": true
+    },
+    {
+        "name": "recall.campaigns.registry",
+        "description": "Отзывные кампании",
+        "enabled": true
+    },
+    {
+        "name": "restrictions.registry",
+        "description": "Данные о наличии ограничений на регистрационные действия ТС по данным ГИБДД (история ограничений)",
+        "enabled": true
+    },
+    {
+        "name": "references.tecdoc",
+        "description": "Каталог TecDoc",
+        "enabled": true
+    },
+    {
+        "name": "mileages.registry",
+        "description": "Архивные данные о пробегах",
+        "enabled": true
+    },
+    {
+        "name": "service.history.fitservice",
+        "description": "История сервисного обслуживания ТС сетью СТО Fit Service",
         "enabled": true
     }
 ]

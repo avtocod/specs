@@ -1430,7 +1430,57 @@
                     },
                     "currency": {
                         "type": "RUB"
-                    }
+                    },
+                    "related_ads": [
+                        {
+                            "geo": {
+                                "country": "Россия",
+                                "region": "Московская область",
+                                "city": "Москва",
+                                "street": "Ленина",
+                                "house": null
+                            },
+                            "uri": "http://example.com",
+                            "price": {
+                                "value": 450000
+                            },
+                            "vehicle": {
+                                "brand": {
+                                    "name": "Opel"
+                                },
+                                "model": {
+                                    "name": "Monterey"
+                                },
+                                "year": 2018,
+                                "condition": "Не битый",
+                                "wheel": {
+                                    "position": "LEFT"
+                                },
+                                "transmission": {
+                                    "type": "MANUAL"
+                                },
+                                "drive": {
+                                    "type": "Передний"
+                                },
+                                "owners": {
+                                    "count": 2
+                                },
+                                "engine": {
+                                    "power": {
+                                        "hp": 176.3
+                                    },
+                                    "volume": 2793.2,
+                                    "fuel": {
+                                        "type": "Бензиновый"
+                                    }
+                                },
+                                "body": {
+                                    "type": "Седан"
+                                },
+                                "mileage": 79000
+                            }
+                        }
+                    ]
                 }
             ]
         }

@@ -1193,7 +1193,57 @@
                     },
                     "currency": {
                         "type": null
-                    }
+                    },
+                    "related_ads": [
+                        {
+                            "geo": {
+                                "country": null,
+                                "region": null,
+                                "city": null,
+                                "street": null,
+                                "house": null
+                            },
+                            "uri": null,
+                            "price": {
+                                "value": null
+                            },
+                            "vehicle": {
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                },
+                                "year": null,
+                                "condition": null,
+                                "wheel": {
+                                    "position": null
+                                },
+                                "transmission": {
+                                    "type": null
+                                },
+                                "drive": {
+                                    "type": null
+                                },
+                                "owners": {
+                                    "count": null
+                                },
+                                "engine": {
+                                    "power": {
+                                        "hp": null
+                                    },
+                                    "volume": null,
+                                    "fuel": {
+                                        "type": null
+                                    }
+                                },
+                                "body": {
+                                    "type": null
+                                },
+                                "mileage": null
+                            }
+                        }
+                    ]
                 }
             ]
         }

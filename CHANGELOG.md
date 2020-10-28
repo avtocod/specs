@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Field with path `market_prices.ads.items[].related_ads[].geo`
+- Field with path `market_prices.ads.items[].related_ads[].uri`
+- Field with path `market_prices.ads.items[].related_ads[].price.value`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.brand.name`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.model.name`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.year`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.condition`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.wheel.position`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.transmission.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.drive.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.owners.count`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.power.hp`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.volume`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.fuel.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.body.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.mileage`
+
 ## v3.51.0
 
 ### Added

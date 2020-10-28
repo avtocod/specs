@@ -9130,7 +9130,7 @@
                                             "additionalProperties": false,
                                             "properties": {
                                                 "geo": {
-                                                    "description": "Гео-данные места продажи ТС",
+                                                    "description": "Расчетные данные. Гео-данные места продажи ТС",
                                                     "oneOf": [
                                                         {
                                                             "type": "null"
@@ -9144,7 +9144,7 @@
                                                     ]
                                                 },
                                                 "uri": {
-                                                    "description": "Ссылка на объявление",
+                                                    "description": "Расчетные данные. Ссылка на объявление",
                                                     "type": [
                                                         "string",
                                                         "null"
@@ -9161,7 +9161,7 @@
                                                     "additionalProperties": false,
                                                     "properties": {
                                                         "value": {
-                                                            "description": "Цена ТС в объявлении",
+                                                            "description": "Расчетные данные. Цена ТС в объявлении",
                                                             "type": [
                                                                 "integer",
                                                                 "null"
@@ -9184,7 +9184,7 @@
                                                             "additionalProperties": false,
                                                             "properties": {
                                                                 "name": {
-                                                                    "description": "Наименование марки (бренда) ТС",
+                                                                    "description": "Расчетные данные. Наименование марки (бренда) ТС",
                                                                     "type": [
                                                                         "string",
                                                                         "null"
@@ -9203,7 +9203,7 @@
                                                             "additionalProperties": false,
                                                             "properties": {
                                                                 "name": {
-                                                                    "description": "Модель ТС",
+                                                                    "description": "Расчетные данные. Модель ТС",
                                                                     "type": [
                                                                         "string",
                                                                         "null"
@@ -9218,7 +9218,7 @@
                                                             }
                                                         },
                                                         "year": {
-                                                            "description": "Год выпуска ТС",
+                                                            "description": "Расчетные данные. Год выпуска ТС",
                                                             "type": [
                                                                 "integer",
                                                                 "null"
@@ -9232,7 +9232,7 @@
                                                             ]
                                                         },
                                                         "condition": {
-                                                            "description": "Состояние ТС",
+                                                            "description": "Расчетные данные. Состояние ТС",
                                                             "type": [
                                                                 "string",
                                                                 "null"
@@ -9249,7 +9249,7 @@
                                                             "additionalProperties": false,
                                                             "properties": {
                                                                 "position": {
-                                                                    "description": "Расположение руля",
+                                                                    "description": "Расчетные данные. Расположение руля",
                                                                     "oneOf": [
                                                                         {
                                                                             "type": "null"
@@ -9272,7 +9272,7 @@
                                                             "additionalProperties": false,
                                                             "properties": {
                                                                 "type": {
-                                                                    "description": "Тип трансмиссии",
+                                                                    "description": "Расчетные данные. Тип трансмиссии",
                                                                     "oneOf": [
                                                                         {
                                                                             "type": "null"
@@ -9295,7 +9295,7 @@
                                                             "additionalProperties": false,
                                                             "properties": {
                                                                 "type": {
-                                                                    "description": "Тип привода",
+                                                                    "description": "Расчетные данные. Тип привода",
                                                                     "oneOf": [
                                                                         {
                                                                             "type": "null"
@@ -9318,7 +9318,7 @@
                                                             "additionalProperties": false,
                                                             "properties": {
                                                                 "count": {
-                                                                    "description": "Количество владельцев ТС",
+                                                                    "description": "Расчетные данные. Количество владельцев ТС",
                                                                     "type": [
                                                                         "integer",
                                                                         "null"
@@ -9343,7 +9343,7 @@
                                                                     "additionalProperties": false,
                                                                     "properties": {
                                                                         "hp": {
-                                                                            "description": "Мощность двигателя ТС (л.с)",
+                                                                            "description": "Расчетные данные. Мощность двигателя ТС (л.с)",
                                                                             "type": [
                                                                                 "number",
                                                                                 "null"
@@ -9359,7 +9359,7 @@
                                                                     }
                                                                 },
                                                                 "volume": {
-                                                                    "description": "Объем двигателя в кубических сантиметрах",
+                                                                    "description": "Расчетные данные. Объем двигателя в кубических сантиметрах",
                                                                     "type": [
                                                                         "number",
                                                                         "null"
@@ -9377,7 +9377,7 @@
                                                                     "additionalProperties": false,
                                                                     "properties": {
                                                                         "type": {
-                                                                            "description": "Тип топлива",
+                                                                            "description": "Расчетные данные. Тип топлива",
                                                                             "oneOf": [
                                                                                 {
                                                                                     "type": "null"
@@ -9402,7 +9402,7 @@
                                                             "additionalProperties": false,
                                                             "properties": {
                                                                 "type": {
-                                                                    "description": "Тип кузова ТС",
+                                                                    "description": "Расчетные данные. Тип кузова ТС",
                                                                     "type": [
                                                                         "string",
                                                                         "null"
@@ -9418,7 +9418,7 @@
                                                             }
                                                         },
                                                         "mileage": {
-                                                            "description": "Пробег ТС",
+                                                            "description": "Расчетные данные. Пробег ТС",
                                                             "type": [
                                                                 "integer",
                                                                 "null"

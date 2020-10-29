@@ -25,6 +25,15 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `market_prices.ads.items[].related_ads[].vehicle.body.type`
 - Field with path `market_prices.ads.items[].related_ads[].vehicle.mileage`
 
+## v3.52.0
+
+### Changed
+
+- Field with path `mileages.items[].date.event` also fillable by `service.history.fitservice` source
+- Field with path `mileages.items[].mileage` also fillable by `service.history.fitservice` source
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.fitservice` source
+- Extend enum with `service.history.fitservice` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+
 ## v3.51.0
 
 ### Added

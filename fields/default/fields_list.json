@@ -4646,10 +4646,20 @@
         ]
     },
     {
-        "path": "market_prices.ads.items[].related_ads[].price.value",
+        "path": "market_prices.ads.items[].related_ads[].price.amount",
         "description": "Рыночная стоимость ТС: Расчетные данные. Цена ТС в объявлении",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].price.currency",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Тип валюты",
+        "types": [
+            "string"
         ],
         "fillable_by": [
             "ads.price"

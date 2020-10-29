@@ -1442,7 +1442,8 @@
                             },
                             "uri": "http://example.com",
                             "price": {
-                                "value": 450000
+                                "amount": 450000,
+                                "currency": "RUB"
                             },
                             "vehicle": {
                                 "brand": {

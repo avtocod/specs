@@ -10,7 +10,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `market_prices.ads.items[].related_ads[].geo`
 - Field with path `market_prices.ads.items[].related_ads[].uri`
-- Field with path `market_prices.ads.items[].related_ads[].price.value`
+- Field with path `market_prices.ads.items[].related_ads[].price.amount`
+- Field with path `market_prices.ads.items[].related_ads[].price.currency`
 - Field with path `market_prices.ads.items[].related_ads[].vehicle.brand.name`
 - Field with path `market_prices.ads.items[].related_ads[].vehicle.model.name`
 - Field with path `market_prices.ads.items[].related_ads[].vehicle.year`

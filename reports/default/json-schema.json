@@ -9164,7 +9164,7 @@
                                                     "type": "object",
                                                     "additionalProperties": false,
                                                     "properties": {
-                                                        "value": {
+                                                        "amount": {
                                                             "description": "Расчетные данные. Цена ТС в объявлении",
                                                             "type": [
                                                                 "integer",
@@ -9172,6 +9172,23 @@
                                                             ],
                                                             "examples": [
                                                                 117400
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        },
+                                                        "currency": {
+                                                            "description": "Расчетные данные. Тип валюты",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/currency_type"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "RUB"
                                                             ],
                                                             "fillable_by": [
                                                                 "ads.price"

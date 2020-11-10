@@ -4,6 +4,67 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.53.0
+
+### Added
+
+- Field with path `market_prices.ads.items[].related_ads[].geo`
+- Field with path `market_prices.ads.items[].related_ads[].uri`
+- Field with path `market_prices.ads.items[].related_ads[].price.amount`
+- Field with path `market_prices.ads.items[].related_ads[].price.currency`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.brand.name`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.model.name`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.year`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.condition`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.wheel.position`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.transmission.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.drive.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.owners.count`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.power.hp`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.volume`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.fuel.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.body.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.mileage`
+
+## v3.52.0
+
+### Changed
+
+- Field with path `mileages.items[].date.event` also fillable by `service.history.fitservice` source
+- Field with path `mileages.items[].mileage` also fillable by `service.history.fitservice` source
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.fitservice` source
+- Extend enum with `service.history.fitservice` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+
+## v3.51.0
+
+### Added
+
+- Field with path `insurance.osago.items[].policy.status`
+- Field with path `insurance.osago.items[].policy.expired`
+- Field with path `insurance.osago.items[].contract.is_active`
+- Field with path `insurance.osago.items[].contract.using_type.status`
+- Field with path `insurance.osago.items[].contract.using_type.description`
+- Field with path `insurance.osago.items[].contract.amount.value`
+- Field with path `insurance.osago.items[].contract.amount.currency`
+- Field with path `insurance.osago.items[].contract.kbm`
+- Field with path `insurance.osago.items[].contract.is_follow_to_registration"`
+- Field with path `insurance.osago.items[].contract.has_trailer`
+- Field with path `insurance.osago.items[].vehicle.model.name`
+- Field with path `insurance.osago.items[].vehicle.identifiers.reg_num`
+- Field with path `insurance.osago.items[].vehicle.identifiers.vin`
+- Field with path `insurance.osago.items[].vehicle.identifiers.body`
+- Field with path `insurance.osago.items[].vehicle.engine.power.hp`
+- Field with path `insurance.osago.items[].vehicle.weight.max`
+- Field with path `insurance.osago.items[].insurant.type`
+- Field with path `insurance.osago.items[].insurant.dob`
+- Field with path `insurance.osago.items[].insurant.name`
+- Field with path `insurance.osago.items[].insurant.tin`
+- Field with path `insurance.osago.items[].owner.type`
+- Field with path `insurance.osago.items[].owner.dob`
+- Field with path `insurance.osago.items[].owner.name`
+- Field with path `insurance.osago.items[].owner.tin`
+- Field with path `insurance.osago.items[].geo`
+
 ## v3.50.0
 
 ### Added

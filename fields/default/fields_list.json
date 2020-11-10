@@ -897,6 +897,126 @@
         ]
     },
     {
+        "path": "additional_info.catalog.oats.items[].code",
+        "description": "Дополнительная информация: Код ТС в справочнике OATC",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.brand.name",
+        "description": "Дополнительная информация: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.model.name",
+        "description": "Дополнительная информация: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.modifications.name",
+        "description": "Дополнительная информация: Модификация ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.model.name",
+        "description": "Дополнительная информация: Модель двигателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.type",
+        "description": "Дополнительная информация: Тип двигателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.power.hp",
+        "description": "Дополнительная информация: Мощность двигателя ТС (л.с)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.power.kw",
+        "description": "Дополнительная информация: Мощность двигателя ТС (кВ)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.volume",
+        "description": "Дополнительная информация: Объем двигателя в кубических сантиметрах",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.category.name",
+        "description": "Дополнительная информация: Категория ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.manufactured.year.start",
+        "description": "Дополнительная информация: Год начала производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.manufactured.year.end",
+        "description": "Дополнительная информация: Год окончания производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
         "path": "additional_info.catalog.tecdoc.items[].manufacturer_id",
         "description": "Дополнительная информация: Код производителя ТС в каталоге TecDoc",
         "types": [

@@ -13,7 +13,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Changed
 
 - Field with path `fines.items[].date.event` also fillable by `fines.base.ext`
-- Field with path `fines.items[].date.accident` also fillable by `fines.base.ext`
 - Field with path `fines.items[].article.code` also fillable by `fines.base.ext`
 - Field with path `fines.items[].article.description` also fillable by `fines.base.ext`
 - Field with path `fines.items[].description` also fillable by `fines.base.ext`

@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `additional_info.catalog.oats.items[].code`
 - Field with path `additional_info.catalog.oats.items[].vehicle.brand.name`
 - Field with path `additional_info.catalog.oats.items[].vehicle.model.name`
-- Field with path `additional_info.catalog.oats.items[].vehicle.modifications.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.modification.name`
 - Field with path `additional_info.catalog.oats.items[].vehicle.engine.model.name`
 - Field with path `additional_info.catalog.oats.items[].vehicle.engine.type`
 - Field with path `additional_info.catalog.oats.items[].vehicle.engine.power.hp`

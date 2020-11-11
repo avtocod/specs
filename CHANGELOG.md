@@ -4,6 +4,38 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `fines.base.ext`
+
+### Changed
+
+- Field with path `fines.items[].date.event` also fillable by `fines.base.ext`
+- Field with path `fines.items[].article.code` also fillable by `fines.base.ext`
+- Field with path `fines.items[].article.description` also fillable by `fines.base.ext`
+- Field with path `fines.items[].description` also fillable by `fines.base.ext`
+- Field with path `fines.items[].vendor.name` also fillable by `fines.base.ext`
+- Field with path `fines.items[].amount.value` also fillable by `fines.base.ext`
+- Field with path `fines.items[].amount.total` also fillable by `fines.base.ext`
+- Field with path `fines.items[].discount.percent` also fillable by `fines.base.ext`
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.base.ext`
+- Field with path `fines.items[].is_paid` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.user.name` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.user.tin` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.user.kpp` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.bank.account.number` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.bank.name` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.bank.bik` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.payment.purpose` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.kbk` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.okato` also fillable by `fines.base.ext`
+- Field with path `fines.has_fines` also fillable by `fines.base.ext`
+- Field with path `fines.items[].location.raw` also fillable by `fines.base.ext`
+- Field with path `fines.items[].photos[].type` also fillable by `fines.base.ext`
+- Field with path `fines.items[].photos[].uri` also fillable by `fines.base.ext`
+
 ## v3.53.0
 
 ### Added

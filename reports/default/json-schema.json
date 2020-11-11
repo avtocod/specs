@@ -3575,7 +3575,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "accident": {
@@ -3615,7 +3616,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "description": {
@@ -3631,7 +3633,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3649,7 +3652,8 @@
                                     "fines.base",
                                     "gibdd.fines",
                                     "fines.alt",
-                                    "fines.madiampp"
+                                    "fines.madiampp",
+                                    "fines.base.ext"
                                 ]
                             },
                             "vendor": {
@@ -3668,7 +3672,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3689,7 +3694,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "total": {
@@ -3705,7 +3711,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3728,7 +3735,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "date": {
@@ -3752,7 +3760,8 @@
                                                     "fines.base",
                                                     "gibdd.fines",
                                                     "fines.alt",
-                                                    "fines.madiampp"
+                                                    "fines.madiampp",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3772,7 +3781,8 @@
                                     "fines.base",
                                     "gibdd.fines",
                                     "fines.alt",
-                                    "fines.madiampp"
+                                    "fines.madiampp",
+                                    "fines.base.ext"
                                 ]
                             },
                             "wire": {
@@ -3794,7 +3804,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             },
                                             "tin": {
@@ -3808,7 +3819,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             },
                                             "kpp": {
@@ -3826,7 +3838,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3850,7 +3863,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "fines.base",
-                                                            "fines.alt"
+                                                            "fines.alt",
+                                                            "fines.base.ext"
                                                         ]
                                                     }
                                                 }
@@ -3866,7 +3880,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             },
                                             "bik": {
@@ -3880,7 +3895,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3900,7 +3916,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3917,7 +3934,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "okato": {
@@ -3931,7 +3949,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3950,7 +3969,8 @@
                                             "МОСКВА Г. ПАРКОВКА №4034 (50) ПРОФСОЮЗНАЯ УЛИЦА, ДОМ 12"
                                         ],
                                         "fillable_by": [
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3977,7 +3997,8 @@
                                                 "GRZ_PLATE"
                                             ],
                                             "fillable_by": [
-                                                "gibdd.fines"
+                                                "gibdd.fines",
+                                                "fines.base.ext"
                                             ]
                                         },
                                         "uri": {
@@ -3990,7 +4011,8 @@
                                                 "https://via.placeholder.com/300x300.png?text=Test%20GRZ%20Photo"
                                             ],
                                             "fillable_by": [
-                                                "gibdd.fines"
+                                                "gibdd.fines",
+                                                "fines.base.ext"
                                             ]
                                         }
                                     }
@@ -4013,7 +4035,8 @@
                         "fines.base",
                         "gibdd.fines",
                         "fines.alt",
-                        "fines.madiampp"
+                        "fines.madiampp",
+                        "fines.base.ext"
                     ]
                 },
                 "count": {

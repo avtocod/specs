@@ -243,5 +243,10 @@
         "name": "service.history.fitservice",
         "description": "История сервисного обслуживания ТС сетью СТО Fit Service",
         "enabled": true
+    },
+    {
+        "name": "fines.base.ext",
+        "description": "Расширенные данные о штрафах, оформленных на ТС",
+        "enabled": true
     }
 ]

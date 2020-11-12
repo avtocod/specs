@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `references.oats`
+- Field with path `additional_info.catalog.oats.items[].code`
+- Field with path `additional_info.catalog.oats.items[].vehicle.brand.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.model.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.modification.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.model.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.type`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.power.hp`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.power.kw`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.volume`
+- Field with path `additional_info.catalog.oats.items[].vehicle.category.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.start`
+- Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.end`
+
 ## v3.54.0
 
 ### Added

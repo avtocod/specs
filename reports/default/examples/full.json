@@ -239,6 +239,44 @@
                         "description": "2.0 TDI"
                     }
                 ]
+            },
+            "oats": {
+                "items": [
+                    {
+                        "code": "036021565",
+                        "vehicle": {
+                            "brand": {
+                                "name": "NISSAN"
+                            },
+                            "model": {
+                                "name": "X-TRAIL"
+                            },
+                            "modification": {
+                                "name": "2.0i SE 2WD"
+                            },
+                            "engine": {
+                                "model": {
+                                    "name": "G4ED"
+                                },
+                                "type": "Бензиновый",
+                                "power": {
+                                    "hp": 104.0,
+                                    "kw": 77.0
+                                },
+                                "volume": 1800.0
+                            },
+                            "category": {
+                                "name": "Passenger"
+                            },
+                            "manufactured": {
+                                "year": {
+                                    "start": 2013,
+                                    "end": 2018
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         },
         "identifiers": {

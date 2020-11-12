@@ -235,6 +235,44 @@
                         "description": null
                     }
                 ]
+            },
+            "oats": {
+                "items": [
+                    {
+                        "code": null,
+                        "vehicle": {
+                            "brand": {
+                                "name": null
+                            },
+                            "model": {
+                                "name": null
+                            },
+                            "modification": {
+                                "name": null
+                            },
+                            "engine": {
+                                "model": {
+                                    "name": null
+                                },
+                                "type": null,
+                                "power": {
+                                    "hp": null,
+                                    "kw": null
+                                },
+                                "volume": null
+                            },
+                            "category": {
+                                "name": null
+                            },
+                            "manufactured": {
+                                "year": {
+                                    "start": null,
+                                    "end": null
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         },
         "identifiers": {

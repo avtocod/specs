@@ -2037,6 +2037,239 @@
                                     }
                                 }
                             }
+                        },
+                        "oats": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "code": {
+                                                "description": "Код ТС в справочнике OATC",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "366013880"
+                                                ],
+                                                "fillable_by": [
+                                                    "references.oats"
+                                                ]
+                                            },
+                                            "vehicle": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "brand": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Марка ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Skoda"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "model": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Модель ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Octavia III"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "modification": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Модификация ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "1.8TSI Elegance"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "engine": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "model": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "name": {
+                                                                        "description": "Модель двигателя",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "G4ED"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": {
+                                                                "description": "Тип двигателя",
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "null"
+                                                                    },
+                                                                    {
+                                                                        "$ref": "#/definitions/engine_fuel_type"
+                                                                    }
+                                                                ],
+                                                                "examples": [
+                                                                    "Бензиновый"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            },
+                                                            "power": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "hp": {
+                                                                        "description": "Мощность двигателя ТС (л.с)",
+                                                                        "type": [
+                                                                            "number",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            104.0
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    },
+                                                                    "kw": {
+                                                                        "description": "Мощность двигателя ТС (кВ)",
+                                                                        "type": [
+                                                                            "number",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            77.0
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "volume": {
+                                                                "description": "Объем двигателя в кубических сантиметрах",
+                                                                "type": [
+                                                                    "number",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    1800.0
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "category": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Категория ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Passenger"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "manufactured": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "year": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "start": {
+                                                                        "description": "Год начала производства ТС",
+                                                                        "type": [
+                                                                            "integer",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            2014
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    },
+                                                                    "end": {
+                                                                        "description": "Год окончания производства ТС",
+                                                                        "type": [
+                                                                            "integer",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            2015
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },

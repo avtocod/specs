@@ -11,7 +11,9 @@ const disabled_sources: {[k: string]: string[]} = {
         'carfax.ext',
         'tech.base',
         'base.moscow',
-        'carprice'
+        'carprice',
+        'base.tech',
+        'carfax.check'
     ]
 };
 // for each group of specifications...

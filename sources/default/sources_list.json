@@ -2,7 +2,7 @@
     {
         "name": "base.tech",
         "description": "Базовая техническая информация о ТС и данные по таможне",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "base.moscow",
@@ -107,7 +107,7 @@
     {
         "name": "carfax.check",
         "description": "Наличие данных об отчете о ТС в сервисе CarFax",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "carfax.ext",

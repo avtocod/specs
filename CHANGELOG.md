@@ -22,6 +22,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.start`
 - Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.end`
 
+### Changed
+
+- Sources `base.tech`, `carfax.check` marked as disabled
+
 ## v3.54.0
 
 ### Added

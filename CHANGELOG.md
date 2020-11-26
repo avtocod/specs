@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## UNRELEASED
+## v3.56.0
+
+### Changed
+
+- Sources `base.tech`, `carfax.check` marked as disabled
+
+## v3.55.0
 
 ### Added
 
@@ -21,10 +27,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `additional_info.catalog.oats.items[].vehicle.category.name`
 - Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.start`
 - Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.end`
-
-### Changed
-
-- Sources `base.tech`, `carfax.check` marked as disabled
 
 ## v3.54.0
 

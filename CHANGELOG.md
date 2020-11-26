@@ -24,8 +24,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Source `base.tech` marked as disabled
-- Source `carfax.check` marked as disabled
+- Sources `base.tech`, `carfax.check` marked as disabled
 
 ## v3.54.0
 

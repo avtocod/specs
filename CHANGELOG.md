@@ -8,7 +8,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Extend pattern with `|` for definition `engine_number` in `./reports/default/json-schema.json`
 - Sources `ramiosago.alt`, `ramiosago.alt.ext` marked as disabled
 
 ## v3.56.0

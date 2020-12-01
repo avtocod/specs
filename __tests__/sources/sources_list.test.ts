@@ -13,7 +13,9 @@ const disabled_sources: {[k: string]: string[]} = {
         'base.moscow',
         'carprice',
         'base.tech',
-        'carfax.check'
+        'carfax.check',
+        'ramiosago.alt',
+        'ramiosago.alt.ext'
     ]
 };
 // for each group of specifications...

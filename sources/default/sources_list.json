@@ -72,7 +72,7 @@
     {
         "name": "ramiosago.alt",
         "description": "Данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "ramiosago.base.ext",
@@ -82,7 +82,7 @@
     {
         "name": "ramiosago.alt.ext",
         "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "base.taxi",

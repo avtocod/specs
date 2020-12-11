@@ -2,7 +2,7 @@
     {
         "name": "base.tech",
         "description": "Базовая техническая информация о ТС и данные по таможне",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "base.moscow",
@@ -72,7 +72,7 @@
     {
         "name": "ramiosago.alt",
         "description": "Данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "ramiosago.base.ext",
@@ -82,7 +82,7 @@
     {
         "name": "ramiosago.alt.ext",
         "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "base.taxi",
@@ -107,7 +107,7 @@
     {
         "name": "carfax.check",
         "description": "Наличие данных об отчете о ТС в сервисе CarFax",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "carfax.ext",
@@ -137,6 +137,11 @@
     {
         "name": "references.rsa",
         "description": "Справочник ТС РСА",
+        "enabled": true
+    },
+    {
+        "name": "references.oats",
+        "description": "Справочник ТС ОАТС",
         "enabled": true
     },
     {
@@ -237,6 +242,11 @@
     {
         "name": "service.history.fitservice",
         "description": "История сервисного обслуживания ТС сетью СТО Fit Service",
+        "enabled": true
+    },
+    {
+        "name": "fines.base.ext",
+        "description": "Расширенные данные о штрафах, оформленных на ТС",
         "enabled": true
     }
 ]

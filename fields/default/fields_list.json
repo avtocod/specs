@@ -1580,6 +1580,17 @@
         ]
     },
     {
+        "path": "insurance.osago.items[].restrictions.drivers",
+        "description": "ОСАГО: Количество лиц допущенных к управлению",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
+        ]
+    },
+    {
         "path": "insurance.osago.items[].policy.series",
         "description": "ОСАГО: Серия полиса",
         "types": [

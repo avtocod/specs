@@ -5587,6 +5587,20 @@
                                                     "ramiosago.base.ext",
                                                     "ramiosago.alt.ext"
                                                 ]
+                                            },
+                                            "drivers": {
+                                                "description": "Количество лиц допущенных к управлению",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    3
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
+                                                ]
                                             }
                                         }
                                     },

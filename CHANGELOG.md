@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `gots.history`
+- Field with path `gots_auctions.items[].vehicle.mileage`
+- Field with path `gots_auctions.items[].vehicle.damage.value`
+- Field with path `gots_auctions.items[].vehicle.damage.descriptions`
+- Field with path `gots_auctions.items[].auction.date`
+- Field with path `gots_auctions.items[].auction.number`
+- Field with path `gots_auctions.items[].auction.client.name`
+- Field with path `gots_auctions.items[].auction.client.postal_code`
+- Field with path `gots_auctions.items[].auction.client.city`
+- Field with path `gots_auctions.items[].auction.client.address_line`
+- Field with path `gots_auctions.items[].auction.client.phone_number`
+
 ## v3.58.0
 
 ### Added

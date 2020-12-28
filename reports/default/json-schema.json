@@ -3111,7 +3111,8 @@
                                                         "code": {
                                                             "description": "Описание повреждений ТС, код",
                                                             "type": [
-                                                                "string"
+                                                                "string",
+                                                                "null"
                                                             ],
                                                             "examples": [
                                                                 "front"
@@ -3123,7 +3124,8 @@
                                                         "value": {
                                                             "description": "Описание повреждений ТС",
                                                             "type": [
-                                                                "string"
+                                                                "string",
+                                                                "null"
                                                             ],
                                                             "examples": [
                                                                 "Передняя часть"

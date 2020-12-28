@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Field with path `market_prices.ads.items[].mileage`
+- Field with path `market_prices.ads.items[].metadata.functions[].name`
+- Field with path `market_prices.ads.items[].metadata.functions[].description`
+- Field with path `market_prices.ads.items[].metadata.functions[].parts[].type`
+- Field with path `market_prices.ads.items[].metadata.functions[].parts[].description`
+- Field with path `market_prices.ads.items[].metadata.functions[].parts[].coefficients`
+- Field with path `market_prices.ads.items[].metadata.functions[].parts[].bounds.left`
+- Field with path `market_prices.ads.items[].metadata.functions[].parts[].bounds.right`
+
 ## v3.58.0
 
 ### Added

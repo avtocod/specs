@@ -1233,6 +1233,7 @@
                     "currency": {
                         "type": null
                     },
+                    "mileage": null,
                     "related_ads": [
                         {
                             "geo": {
@@ -1283,7 +1284,26 @@
                                 "mileage": null
                             }
                         }
-                    ]
+                    ],
+                    "metadata": {
+                        "functions": [
+                            {
+                                "name": null,
+                                "description": null,
+                                "parts": [
+                                    {
+                                        "type": null,
+                                        "description": null,
+                                        "coefficients": null,
+                                        "bounds": {
+                                            "left": null,
+                                            "right": null
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                 }
             ]
         }

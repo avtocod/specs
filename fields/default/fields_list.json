@@ -4780,6 +4780,16 @@
         ]
     },
     {
+        "path": "market_prices.ads.items[].mileage",
+        "description": "Рыночная стоимость ТС: Пробег ТС для которого сделан расчет цены",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
         "path": "market_prices.ads.items[].related_ads[].geo",
         "description": "Рыночная стоимость ТС: Расчетные данные. Гео-данные места продажи ТС",
         "types": [
@@ -4944,6 +4954,76 @@
         "description": "Рыночная стоимость ТС: Расчетные данные. Пробег ТС",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].metadata.functions[].name",
+        "description": "Рыночная стоимость ТС: Наименование функции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].metadata.functions[].description",
+        "description": "Рыночная стоимость ТС: Описание функции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].metadata.functions[].parts[].type",
+        "description": "Рыночная стоимость ТС: Тип математической функции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].metadata.functions[].parts[].description",
+        "description": "Рыночная стоимость ТС: Описание математической функции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].metadata.functions[].parts[].coefficients",
+        "description": "Рыночная стоимость ТС: Значения переменных функции",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].metadata.functions[].parts[].bounds.left",
+        "description": "Рыночная стоимость ТС: Левая граница диапазона функции",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].metadata.functions[].parts[].bounds.right",
+        "description": "Рыночная стоимость ТС: Правая граница диапазона функции",
+        "types": [
+            "float"
         ],
         "fillable_by": [
             "ads.price"

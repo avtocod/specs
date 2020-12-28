@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Field with path `market_prices.ads.items[].mileage`
+- Field with path `market_prices.ads.items[].related_ads[].date.publish`
 - Field with path `market_prices.ads.items[].metadata.functions[].name`
 - Field with path `market_prices.ads.items[].metadata.functions[].description`
 - Field with path `market_prices.ads.items[].metadata.functions[].parts[].type`

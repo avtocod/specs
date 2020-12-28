@@ -9416,6 +9416,29 @@
                                             "type": "object",
                                             "additionalProperties": false,
                                             "properties": {
+                                                "date": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "publish": {
+                                                            "description": "Дата публикации объявления",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/datetime"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2019-01-14 11:57:00"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
                                                 "geo": {
                                                     "description": "Расчетные данные. Гео-данные места продажи ТС",
                                                     "oneOf": [

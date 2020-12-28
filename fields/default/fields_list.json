@@ -4790,6 +4790,16 @@
         ]
     },
     {
+        "path": "market_prices.ads.items[].related_ads[].date.publish",
+        "description": "Рыночная стоимость ТС: Дата публикации объявления",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
         "path": "market_prices.ads.items[].related_ads[].geo",
         "description": "Рыночная стоимость ТС: Расчетные данные. Гео-данные места продажи ТС",
         "types": [

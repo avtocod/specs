@@ -906,7 +906,8 @@
                         "end": "2015-07-07 00:00:00"
                     },
                     "restrictions": {
-                        "type": "WITHOUT RESTRICTIONS"
+                        "type": "WITH RESTRICTIONS",
+                        "drivers": 3
                     },
                     "policy": {
                         "series": "ЕЕЕ",

@@ -3056,6 +3056,250 @@
                 }
             }
         },
+        "gots_auctions": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Размещение ТС на аукционах ГОТС",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "vehicle": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "mileage": {
+                                        "description": "Пробег ТС",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            132222
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "damage": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "value": {
+                                                "description": "Значение повреждения ТС",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    20562.5
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "descriptions": {
+                                                "description": "Описание повреждений ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "code": {
+                                                                    "description": "Код повреждения",
+                                                                    "type": [
+                                                                        "string"
+                                                                    ],
+                                                                    "enum": [
+                                                                        "front",
+                                                                        "side.left",
+                                                                        "side.right",
+                                                                        "rear",
+                                                                        "roof",
+                                                                        "front.left",
+                                                                        "front.right",
+                                                                        "underbody",
+                                                                        "mechanical",
+                                                                        "interior",
+                                                                        "glass.front",
+                                                                        "glass.side.left",
+                                                                        "glass.side.right",
+                                                                        "glass.rear",
+                                                                        "glass.roof"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "front"
+                                                                    ]
+                                                                },
+                                                                "value": {
+                                                                    "description": "Значение повреждения",
+                                                                    "type": [
+                                                                        "string"
+                                                                    ],
+                                                                    "enum": [
+                                                                        "Передняя часть",
+                                                                        "Левая сторона",
+                                                                        "Правая сторона",
+                                                                        "Задняя часть",
+                                                                        "Крыша",
+                                                                        "Передняя левая часть",
+                                                                        "Передняя правая часть",
+                                                                        "Днище",
+                                                                        "Механические повреждения",
+                                                                        "Салон",
+                                                                        "Стекла спереди",
+                                                                        "Стекла левая сторона",
+                                                                        "Стекла правая сторона",
+                                                                        "Стекла сзади",
+                                                                        "Стекла крыша"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Передняя часть"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "auction": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата размещения на аукционе",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2014-08-15 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "number": {
+                                        "description": "Внутренний номер аукциона",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "2014-08-15.AON.1201408151047029",
+                                            "null"
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "client": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ЗАО МАКС",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "postal_code": {
+                                                "description": "Индекс клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "115184",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "city": {
+                                                "description": "Город клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Москва",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "address_line": {
+                                                "description": "Адрес клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Большая Ордынка 50",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "phone_number": {
+                                                "description": "Телефонный номер клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "91234567890",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
         "carfax": {
             "type": "object",
             "additionalProperties": false,

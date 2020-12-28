@@ -3103,75 +3103,37 @@
                                             },
                                             "descriptions": {
                                                 "description": "Описание повреждений ТС",
-                                                "oneOf": [
-                                                    {
-                                                        "type": "null"
-                                                    },
-                                                    {
-                                                        "type": "array",
-                                                        "items": {
-                                                            "type": "object",
-                                                            "additionalProperties": false,
-                                                            "properties": {
-                                                                "code": {
-                                                                    "description": "Код повреждения",
-                                                                    "type": [
-                                                                        "string"
-                                                                    ],
-                                                                    "enum": [
-                                                                        "front",
-                                                                        "side.left",
-                                                                        "side.right",
-                                                                        "rear",
-                                                                        "roof",
-                                                                        "front.left",
-                                                                        "front.right",
-                                                                        "underbody",
-                                                                        "mechanical",
-                                                                        "interior",
-                                                                        "glass.front",
-                                                                        "glass.side.left",
-                                                                        "glass.side.right",
-                                                                        "glass.rear",
-                                                                        "glass.roof"
-                                                                    ],
-                                                                    "examples": [
-                                                                        "front"
-                                                                    ]
-                                                                },
-                                                                "value": {
-                                                                    "description": "Значение повреждения",
-                                                                    "type": [
-                                                                        "string"
-                                                                    ],
-                                                                    "enum": [
-                                                                        "Передняя часть",
-                                                                        "Левая сторона",
-                                                                        "Правая сторона",
-                                                                        "Задняя часть",
-                                                                        "Крыша",
-                                                                        "Передняя левая часть",
-                                                                        "Передняя правая часть",
-                                                                        "Днище",
-                                                                        "Механические повреждения",
-                                                                        "Салон",
-                                                                        "Стекла спереди",
-                                                                        "Стекла левая сторона",
-                                                                        "Стекла правая сторона",
-                                                                        "Стекла сзади",
-                                                                        "Стекла крыша"
-                                                                    ],
-                                                                    "examples": [
-                                                                        "Передняя часть"
-                                                                    ]
-                                                                }
-                                                            }
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "code": {
+                                                            "description": "Описание повреждений ТС, код",
+                                                            "type": [
+                                                                "string"
+                                                            ],
+                                                            "examples": [
+                                                                "front"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gots.history"
+                                                            ]
+                                                        },
+                                                        "value": {
+                                                            "description": "Описание повреждений ТС",
+                                                            "type": [
+                                                                "string"
+                                                            ],
+                                                            "examples": [
+                                                                "Передняя часть"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gots.history"
+                                                            ]
                                                         }
                                                     }
-                                                ],
-                                                "fillable_by": [
-                                                    "gots.history"
-                                                ]
+                                                }
                                             }
                                         }
                                     }
@@ -3231,7 +3193,7 @@
                                                 ]
                                             },
                                             "postal_code": {
-                                                "description": "Индекс клиента разместившего лот",
+                                                "description": "Почтовый индекс клиента разместившего лот",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -3292,11 +3254,6 @@
                             }
                         }
                     }
-                },
-                "count": {
-                    "description": "Количество вхождений",
-                    "type": "integer",
-                    "minimum": 0
                 }
             }
         },

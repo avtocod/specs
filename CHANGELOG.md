@@ -11,7 +11,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Source `gots.history`
 - Field with path `gots_auctions.items[].vehicle.mileage`
 - Field with path `gots_auctions.items[].vehicle.damage.value`
-- Field with path `gots_auctions.items[].vehicle.damage.descriptions`
+- Field with path `gots_auctions.items[].vehicle.damage.descriptions[].code`
+- Field with path `gots_auctions.items[].vehicle.damage.descriptions[].value`
 - Field with path `gots_auctions.items[].auction.date`
 - Field with path `gots_auctions.items[].auction.number`
 - Field with path `gots_auctions.items[].auction.client.name`

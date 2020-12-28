@@ -4357,10 +4357,20 @@
         ]
     },
     {
-        "path": "gots_auctions.items[].vehicle.damage.descriptions",
+        "path": "gots_auctions.items[].vehicle.damage.descriptions[].code",
+        "description": "Размещение ТС на аукционах ГОТС: Описание повреждений ТС, код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].vehicle.damage.descriptions[].value",
         "description": "Размещение ТС на аукционах ГОТС: Описание повреждений ТС",
         "types": [
-            "array"
+            "string"
         ],
         "fillable_by": [
             "gots.history"
@@ -4398,7 +4408,7 @@
     },
     {
         "path": "gots_auctions.items[].auction.client.postal_code",
-        "description": "Размещение ТС на аукционах ГОТС: Индекс клиента разместившего лот",
+        "description": "Размещение ТС на аукционах ГОТС: Почтовый индекс клиента разместившего лот",
         "types": [
             "string"
         ],

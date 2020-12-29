@@ -372,6 +372,35 @@
             "count": 1
         }
     },
+    "gots_auctions": {
+        "items": [
+            {
+                "vehicle": {
+                    "mileage": null,
+                    "damage": {
+                        "value": null,
+                        "descriptions": [
+                            {
+                                "code": null,
+                                "value": null
+                            }
+                        ]
+                    }
+                },
+                "auction": {
+                    "date": null,
+                    "number": null,
+                    "client": {
+                        "name": null,
+                        "postal_code": null,
+                        "city": null,
+                        "address_line": null,
+                        "phone_number": null
+                    }
+                }
+            }
+        ]
+    },
     "carfax": {
         "check": {
             "exists": null,

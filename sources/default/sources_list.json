@@ -248,5 +248,10 @@
         "name": "fines.base.ext",
         "description": "Расширенные данные о штрафах, оформленных на ТС",
         "enabled": true
+    },
+    {
+        "name": "gots.history",
+        "description": "Размещение ТС на аукционах ГОТС",
+        "enabled": true
     }
 ]

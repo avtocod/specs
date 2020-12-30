@@ -4,6 +4,122 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.59.0
+
+### Added
+
+- Source `gots.history`
+- Field with path `gots_auctions.items[].vehicle.mileage`
+- Field with path `gots_auctions.items[].vehicle.damage.value`
+- Field with path `gots_auctions.items[].vehicle.damage.descriptions[].code`
+- Field with path `gots_auctions.items[].vehicle.damage.descriptions[].value`
+- Field with path `gots_auctions.items[].auction.date`
+- Field with path `gots_auctions.items[].auction.number`
+- Field with path `gots_auctions.items[].auction.client.name`
+- Field with path `gots_auctions.items[].auction.client.postal_code`
+- Field with path `gots_auctions.items[].auction.client.city`
+- Field with path `gots_auctions.items[].auction.client.address_line`
+- Field with path `gots_auctions.items[].auction.client.phone_number`
+
+## v3.58.0
+
+### Added
+
+- Field with path `insurance.osago.items[].restrictions.drivers`
+
+## v3.57.0
+
+### Changed
+
+- Sources `ramiosago.alt`, `ramiosago.alt.ext` marked as disabled
+
+## v3.56.0
+
+### Changed
+
+- Sources `base.tech`, `carfax.check` marked as disabled
+
+## v3.55.0
+
+### Added
+
+- Source `references.oats`
+- Field with path `additional_info.catalog.oats.items[].code`
+- Field with path `additional_info.catalog.oats.items[].vehicle.brand.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.model.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.modification.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.model.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.type`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.power.hp`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.power.kw`
+- Field with path `additional_info.catalog.oats.items[].vehicle.engine.volume`
+- Field with path `additional_info.catalog.oats.items[].vehicle.category.name`
+- Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.start`
+- Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.end`
+
+## v3.54.0
+
+### Added
+
+- Source `fines.base.ext`
+
+### Changed
+
+- Field with path `fines.items[].date.event` also fillable by `fines.base.ext`
+- Field with path `fines.items[].article.code` also fillable by `fines.base.ext`
+- Field with path `fines.items[].article.description` also fillable by `fines.base.ext`
+- Field with path `fines.items[].description` also fillable by `fines.base.ext`
+- Field with path `fines.items[].vendor.name` also fillable by `fines.base.ext`
+- Field with path `fines.items[].amount.value` also fillable by `fines.base.ext`
+- Field with path `fines.items[].amount.total` also fillable by `fines.base.ext`
+- Field with path `fines.items[].discount.percent` also fillable by `fines.base.ext`
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.base.ext`
+- Field with path `fines.items[].is_paid` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.user.name` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.user.tin` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.user.kpp` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.bank.account.number` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.bank.name` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.bank.bik` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.payment.purpose` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.kbk` also fillable by `fines.base.ext`
+- Field with path `fines.items[].wire.okato` also fillable by `fines.base.ext`
+- Field with path `fines.has_fines` also fillable by `fines.base.ext`
+- Field with path `fines.items[].location.raw` also fillable by `fines.base.ext`
+- Field with path `fines.items[].photos[].type` also fillable by `fines.base.ext`
+- Field with path `fines.items[].photos[].uri` also fillable by `fines.base.ext`
+
+## v3.53.0
+
+### Added
+
+- Field with path `market_prices.ads.items[].related_ads[].geo`
+- Field with path `market_prices.ads.items[].related_ads[].uri`
+- Field with path `market_prices.ads.items[].related_ads[].price.amount`
+- Field with path `market_prices.ads.items[].related_ads[].price.currency`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.brand.name`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.model.name`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.year`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.condition`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.wheel.position`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.transmission.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.drive.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.owners.count`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.power.hp`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.volume`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.fuel.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.body.type`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.mileage`
+
+## v3.52.0
+
+### Changed
+
+- Field with path `mileages.items[].date.event` also fillable by `service.history.fitservice` source
+- Field with path `mileages.items[].mileage` also fillable by `service.history.fitservice` source
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.fitservice` source
+- Extend enum with `service.history.fitservice` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+
 ## v3.51.0
 
 ### Added

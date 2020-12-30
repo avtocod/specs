@@ -897,6 +897,126 @@
         ]
     },
     {
+        "path": "additional_info.catalog.oats.items[].code",
+        "description": "Дополнительная информация: Код ТС в справочнике OATC",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.brand.name",
+        "description": "Дополнительная информация: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.model.name",
+        "description": "Дополнительная информация: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.modification.name",
+        "description": "Дополнительная информация: Модификация ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.model.name",
+        "description": "Дополнительная информация: Модель двигателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.type",
+        "description": "Дополнительная информация: Тип двигателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.power.hp",
+        "description": "Дополнительная информация: Мощность двигателя ТС (л.с)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.power.kw",
+        "description": "Дополнительная информация: Мощность двигателя ТС (кВ)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.engine.volume",
+        "description": "Дополнительная информация: Объем двигателя в кубических сантиметрах",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.category.name",
+        "description": "Дополнительная информация: Категория ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.manufactured.year.start",
+        "description": "Дополнительная информация: Год начала производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
+        "path": "additional_info.catalog.oats.items[].vehicle.manufactured.year.end",
+        "description": "Дополнительная информация: Год окончания производства ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "references.oats"
+        ]
+    },
+    {
         "path": "additional_info.catalog.tecdoc.items[].manufacturer_id",
         "description": "Дополнительная информация: Код производителя ТС в каталоге TecDoc",
         "types": [
@@ -1457,6 +1577,17 @@
             "ramiosago.alt",
             "ramiosago.base.ext",
             "ramiosago.alt.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].restrictions.drivers",
+        "description": "ОСАГО: Количество лиц допущенных к управлению",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext"
         ]
     },
     {
@@ -3191,7 +3322,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3215,7 +3347,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3228,7 +3361,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3241,7 +3375,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3253,7 +3388,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3265,7 +3401,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3278,7 +3415,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3291,7 +3429,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3304,7 +3443,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3317,7 +3457,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3328,7 +3469,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3339,7 +3481,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3350,7 +3493,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3361,7 +3505,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3372,7 +3517,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3383,7 +3529,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3394,7 +3541,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3406,7 +3554,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3417,7 +3566,8 @@
         ],
         "fillable_by": [
             "fines.base",
-            "fines.alt"
+            "fines.alt",
+            "fines.base.ext"
         ]
     },
     {
@@ -3430,7 +3580,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3440,7 +3591,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.madiampp"
+            "fines.madiampp",
+            "fines.base.ext"
         ]
     },
     {
@@ -3450,7 +3602,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.base.ext"
         ]
     },
     {
@@ -3460,7 +3613,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.base.ext"
         ]
     },
     {
@@ -3478,7 +3632,8 @@
             "service.history",
             "customs.base",
             "images.archive",
-            "mileages.registry"
+            "mileages.registry",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3496,7 +3651,8 @@
             "service.history",
             "customs.base",
             "images.archive",
-            "mileages.registry"
+            "mileages.registry",
+            "service.history.fitservice"
         ]
     },
     {
@@ -3522,7 +3678,8 @@
             "service.history",
             "customs.base",
             "images.archive",
-            "mileages.registry"
+            "mileages.registry",
+            "service.history.fitservice"
         ]
     },
     {
@@ -4180,6 +4337,116 @@
         ]
     },
     {
+        "path": "gots_auctions.items[].vehicle.mileage",
+        "description": "Размещение ТС на аукционах ГОТС: Пробег ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].vehicle.damage.value",
+        "description": "Размещение ТС на аукционах ГОТС: Значение повреждения ТС",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].vehicle.damage.descriptions[].code",
+        "description": "Размещение ТС на аукционах ГОТС: Описание повреждений ТС, код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].vehicle.damage.descriptions[].value",
+        "description": "Размещение ТС на аукционах ГОТС: Описание повреждений ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.date",
+        "description": "Размещение ТС на аукционах ГОТС: Дата размещения на аукционе",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.number",
+        "description": "Размещение ТС на аукционах ГОТС: Внутренний номер аукциона",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.name",
+        "description": "Размещение ТС на аукционах ГОТС: Наименование клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.postal_code",
+        "description": "Размещение ТС на аукционах ГОТС: Почтовый индекс клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.city",
+        "description": "Размещение ТС на аукционах ГОТС: Город клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.address_line",
+        "description": "Размещение ТС на аукционах ГОТС: Адрес клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.phone_number",
+        "description": "Размещение ТС на аукционах ГОТС: Телефонный номер клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
         "path": "service_history.items[].dealer.name",
         "description": "История дилерского обслуживания: Наименование автодилера",
         "types": [
@@ -4617,6 +4884,176 @@
         "description": "Рыночная стоимость ТС: Тип валюты в расчете стоимости ТС",
         "types": [
             "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].geo",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Гео-данные места продажи ТС",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].uri",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Ссылка на объявление",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].price.amount",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Цена ТС в объявлении",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].price.currency",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Тип валюты",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.brand.name",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Наименование марки (бренда) ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.model.name",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.year",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.condition",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Состояние ТС [Не битый, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.wheel.position",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Расположение руля [LEFT, RIGHT, UNKNOWN]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.transmission.type",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Тип трансмиссии [AUTOMATIC, MANUAL, ROBOT, VARIABLE, UNKNOWN]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.drive.type",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Тип привода [Передний, Полный, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.owners.count",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Количество владельцев ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.engine.power.hp",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Мощность двигателя ТС (л.с)",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.engine.volume",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Объем двигателя в кубических сантиметрах",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.engine.fuel.type",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Тип топлива [Бензиновый, Дизельный, Прочее]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.body.type",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Тип кузова ТС [Седан, Универсал, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].vehicle.mileage",
+        "description": "Рыночная стоимость ТС: Расчетные данные. Пробег ТС",
+        "types": [
+            "integer"
         ],
         "fillable_by": [
             "ads.price"

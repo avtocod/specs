@@ -235,6 +235,44 @@
                         "description": null
                     }
                 ]
+            },
+            "oats": {
+                "items": [
+                    {
+                        "code": null,
+                        "vehicle": {
+                            "brand": {
+                                "name": null
+                            },
+                            "model": {
+                                "name": null
+                            },
+                            "modification": {
+                                "name": null
+                            },
+                            "engine": {
+                                "model": {
+                                    "name": null
+                                },
+                                "type": null,
+                                "power": {
+                                    "hp": null,
+                                    "kw": null
+                                },
+                                "volume": null
+                            },
+                            "category": {
+                                "name": null
+                            },
+                            "manufactured": {
+                                "year": {
+                                    "start": null,
+                                    "end": null
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         },
         "identifiers": {
@@ -333,6 +371,35 @@
             ],
             "count": 1
         }
+    },
+    "gots_auctions": {
+        "items": [
+            {
+                "vehicle": {
+                    "mileage": null,
+                    "damage": {
+                        "value": null,
+                        "descriptions": [
+                            {
+                                "code": null,
+                                "value": null
+                            }
+                        ]
+                    }
+                },
+                "auction": {
+                    "date": null,
+                    "number": null,
+                    "client": {
+                        "name": null,
+                        "postal_code": null,
+                        "city": null,
+                        "address_line": null,
+                        "phone_number": null
+                    }
+                }
+            }
+        ]
     },
     "carfax": {
         "check": {
@@ -676,7 +743,8 @@
                         "end": null
                     },
                     "restrictions": {
-                        "type": null
+                        "type": null,
+                        "drivers": null
                     },
                     "policy": {
                         "series": null,
@@ -1193,7 +1261,58 @@
                     },
                     "currency": {
                         "type": null
-                    }
+                    },
+                    "related_ads": [
+                        {
+                            "geo": {
+                                "country": null,
+                                "region": null,
+                                "city": null,
+                                "street": null,
+                                "house": null
+                            },
+                            "uri": null,
+                            "price": {
+                                "amount": null,
+                                "currency": null
+                            },
+                            "vehicle": {
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                },
+                                "year": null,
+                                "condition": null,
+                                "wheel": {
+                                    "position": null
+                                },
+                                "transmission": {
+                                    "type": null
+                                },
+                                "drive": {
+                                    "type": null
+                                },
+                                "owners": {
+                                    "count": null
+                                },
+                                "engine": {
+                                    "power": {
+                                        "hp": null
+                                    },
+                                    "volume": null,
+                                    "fuel": {
+                                        "type": null
+                                    }
+                                },
+                                "body": {
+                                    "type": null
+                                },
+                                "mileage": null
+                            }
+                        }
+                    ]
                 }
             ]
         }

@@ -106,6 +106,44 @@
                 "REFUSE"
             ]
         },
+        "wheel_position_type": {
+            "type": "string",
+            "enum": [
+                "LEFT",
+                "RIGHT",
+                "UNKNOWN"
+            ]
+        },
+        "transmission_type": {
+            "type": "string",
+            "enum": [
+                "AUTOMATIC",
+                "MANUAL",
+                "ROBOT",
+                "VARIABLE",
+                "UNKNOWN"
+            ]
+        },
+        "drive_type": {
+            "type": "string",
+            "enum": [
+                "Передний",
+                "Переднеприводной",
+                "Задний",
+                "Заднеприводной",
+                "Полный",
+                "Полноприводной",
+                "Иные"
+            ]
+        },
+        "engine_fuel_type": {
+            "type": "string",
+            "enum": [
+                "Бензиновый",
+                "Дизельный",
+                "Прочее"
+            ]
+        },
         "geo_raw_data": {
             "type": "object",
             "properties": {
@@ -632,15 +670,13 @@
                             "properties": {
                                 "type": {
                                     "description": "Тип топлива",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ],
-                                    "enum": [
-                                        "Бензиновый",
-                                        "Дизельный",
-                                        "Прочее",
-                                        null
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/engine_fuel_type"
+                                        }
                                     ],
                                     "examples": [
                                         "Бензиновый"
@@ -837,17 +873,13 @@
                     "properties": {
                         "type": {
                             "description": "Тип трансмиссии",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "enum": [
-                                "AUTOMATIC",
-                                "MANUAL",
-                                "ROBOT",
-                                "VARIABLE",
-                                "UNKNOWN",
-                                null
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/transmission_type"
+                                }
                             ],
                             "examples": [
                                 "AUTOMATIC"
@@ -890,15 +922,13 @@
                     "properties": {
                         "position": {
                             "description": "Расположение руля",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "enum": [
-                                "LEFT",
-                                "RIGHT",
-                                "UNKNOWN",
-                                null
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/wheel_position_type"
+                                }
                             ],
                             "examples": [
                                 "RIGHT"
@@ -1025,15 +1055,13 @@
                                                                 "properties": {
                                                                     "type": {
                                                                         "description": "Тип топлива",
-                                                                        "type": [
-                                                                            "string",
-                                                                            "null"
-                                                                        ],
-                                                                        "enum": [
-                                                                            "Бензиновый",
-                                                                            "Дизельный",
-                                                                            "Прочее",
-                                                                            null
+                                                                        "oneOf": [
+                                                                            {
+                                                                                "type": "null"
+                                                                            },
+                                                                            {
+                                                                                "$ref": "#/definitions/engine_fuel_type"
+                                                                            }
                                                                         ],
                                                                         "examples": [
                                                                             "Бензиновый"
@@ -1085,17 +1113,13 @@
                                                         "properties": {
                                                             "type": {
                                                                 "description": "Тип трансмиссии",
-                                                                "type": [
-                                                                    "string",
-                                                                    "null"
-                                                                ],
-                                                                "enum": [
-                                                                    "AUTOMATIC",
-                                                                    "MANUAL",
-                                                                    "ROBOT",
-                                                                    "VARIABLE",
-                                                                    "UNKNOWN",
-                                                                    null
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "null"
+                                                                    },
+                                                                    {
+                                                                        "$ref": "#/definitions/transmission_type"
+                                                                    }
                                                                 ],
                                                                 "examples": [
                                                                     "AUTOMATIC"
@@ -2013,6 +2037,239 @@
                                     }
                                 }
                             }
+                        },
+                        "oats": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "code": {
+                                                "description": "Код ТС в справочнике OATC",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "366013880"
+                                                ],
+                                                "fillable_by": [
+                                                    "references.oats"
+                                                ]
+                                            },
+                                            "vehicle": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "brand": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Марка ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Skoda"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "model": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Модель ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Octavia III"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "modification": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Модификация ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "1.8TSI Elegance"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "engine": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "model": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "name": {
+                                                                        "description": "Модель двигателя",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "G4ED"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "type": {
+                                                                "description": "Тип двигателя",
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "null"
+                                                                    },
+                                                                    {
+                                                                        "$ref": "#/definitions/engine_fuel_type"
+                                                                    }
+                                                                ],
+                                                                "examples": [
+                                                                    "Бензиновый"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            },
+                                                            "power": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "hp": {
+                                                                        "description": "Мощность двигателя ТС (л.с)",
+                                                                        "type": [
+                                                                            "number",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            104.0
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    },
+                                                                    "kw": {
+                                                                        "description": "Мощность двигателя ТС (кВ)",
+                                                                        "type": [
+                                                                            "number",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            77.0
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "volume": {
+                                                                "description": "Объем двигателя в кубических сантиметрах",
+                                                                "type": [
+                                                                    "number",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    1800.0
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "category": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Категория ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Passenger"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "references.oats"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "manufactured": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "year": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "start": {
+                                                                        "description": "Год начала производства ТС",
+                                                                        "type": [
+                                                                            "integer",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            2014
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    },
+                                                                    "end": {
+                                                                        "description": "Год окончания производства ТС",
+                                                                        "type": [
+                                                                            "integer",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            2015
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "references.oats"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 },
@@ -2799,6 +3056,209 @@
                 }
             }
         },
+        "gots_auctions": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Размещение ТС на аукционах ГОТС",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "vehicle": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "mileage": {
+                                        "description": "Пробег ТС",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            132222
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "damage": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "value": {
+                                                "description": "Значение повреждения ТС",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    20562.5
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "descriptions": {
+                                                "description": "Описание повреждений ТС",
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "code": {
+                                                            "description": "Описание повреждений ТС, код",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "front"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gots.history"
+                                                            ]
+                                                        },
+                                                        "value": {
+                                                            "description": "Описание повреждений ТС",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "Передняя часть"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gots.history"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "auction": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата размещения на аукционе",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2014-08-15 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "number": {
+                                        "description": "Внутренний номер аукциона",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "2014-08-15.AON.1201408151047029",
+                                            "null"
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "client": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ЗАО МАКС",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "postal_code": {
+                                                "description": "Почтовый индекс клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "115184",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "city": {
+                                                "description": "Город клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Москва",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "address_line": {
+                                                "description": "Адрес клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Большая Ордынка 50",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "phone_number": {
+                                                "description": "Телефонный номер клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "91234567890",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "carfax": {
             "type": "object",
             "additionalProperties": false,
@@ -3318,7 +3778,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "accident": {
@@ -3358,7 +3819,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "description": {
@@ -3374,7 +3836,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3392,7 +3855,8 @@
                                     "fines.base",
                                     "gibdd.fines",
                                     "fines.alt",
-                                    "fines.madiampp"
+                                    "fines.madiampp",
+                                    "fines.base.ext"
                                 ]
                             },
                             "vendor": {
@@ -3411,7 +3875,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3432,7 +3897,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "total": {
@@ -3448,7 +3914,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3471,7 +3938,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "date": {
@@ -3495,7 +3963,8 @@
                                                     "fines.base",
                                                     "gibdd.fines",
                                                     "fines.alt",
-                                                    "fines.madiampp"
+                                                    "fines.madiampp",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3515,7 +3984,8 @@
                                     "fines.base",
                                     "gibdd.fines",
                                     "fines.alt",
-                                    "fines.madiampp"
+                                    "fines.madiampp",
+                                    "fines.base.ext"
                                 ]
                             },
                             "wire": {
@@ -3537,7 +4007,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             },
                                             "tin": {
@@ -3551,7 +4022,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             },
                                             "kpp": {
@@ -3569,7 +4041,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3593,7 +4066,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "fines.base",
-                                                            "fines.alt"
+                                                            "fines.alt",
+                                                            "fines.base.ext"
                                                         ]
                                                     }
                                                 }
@@ -3609,7 +4083,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             },
                                             "bik": {
@@ -3623,7 +4098,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3643,7 +4119,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
-                                                    "fines.alt"
+                                                    "fines.alt",
+                                                    "fines.base.ext"
                                                 ]
                                             }
                                         }
@@ -3660,7 +4137,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "gibdd.fines",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     },
                                     "okato": {
@@ -3674,7 +4152,8 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "fines.alt"
+                                            "fines.alt",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3693,7 +4172,8 @@
                                             "МОСКВА Г. ПАРКОВКА №4034 (50) ПРОФСОЮЗНАЯ УЛИЦА, ДОМ 12"
                                         ],
                                         "fillable_by": [
-                                            "fines.madiampp"
+                                            "fines.madiampp",
+                                            "fines.base.ext"
                                         ]
                                     }
                                 }
@@ -3720,7 +4200,8 @@
                                                 "GRZ_PLATE"
                                             ],
                                             "fillable_by": [
-                                                "gibdd.fines"
+                                                "gibdd.fines",
+                                                "fines.base.ext"
                                             ]
                                         },
                                         "uri": {
@@ -3733,7 +4214,8 @@
                                                 "https://via.placeholder.com/300x300.png?text=Test%20GRZ%20Photo"
                                             ],
                                             "fillable_by": [
-                                                "gibdd.fines"
+                                                "gibdd.fines",
+                                                "fines.base.ext"
                                             ]
                                         }
                                     }
@@ -3756,7 +4238,8 @@
                         "fines.base",
                         "gibdd.fines",
                         "fines.alt",
-                        "fines.madiampp"
+                        "fines.madiampp",
+                        "fines.base.ext"
                     ]
                 },
                 "count": {
@@ -5306,6 +5789,20 @@
                                                     "ramiosago.alt",
                                                     "ramiosago.base.ext",
                                                     "ramiosago.alt.ext"
+                                                ]
+                                            },
+                                            "drivers": {
+                                                "description": "Количество лиц допущенных к управлению",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    3
+                                                ],
+                                                "fillable_by": [
+                                                    "ramiosago.base",
+                                                    "ramiosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -7150,7 +7647,8 @@
                                             "service.history",
                                             "customs.base",
                                             "images.archive",
-                                            "mileages.registry"
+                                            "mileages.registry",
+                                            "service.history.fitservice"
                                         ]
                                     }
                                 }
@@ -7174,7 +7672,8 @@
                                     "service.history",
                                     "customs.base",
                                     "images.archive",
-                                    "mileages.registry"
+                                    "mileages.registry",
+                                    "service.history.fitservice"
                                 ]
                             },
                             "filled_by": {
@@ -7196,6 +7695,7 @@
                                             "service.history",
                                             "customs.base",
                                             "images.archive",
+                                            "service.history.fitservice",
                                             null
                                         ],
                                         "examples": [
@@ -7231,7 +7731,8 @@
                                             "service.history",
                                             "customs.base",
                                             "images.archive",
-                                            "mileages.registry"
+                                            "mileages.registry",
+                                            "service.history.fitservice"
                                         ]
                                     }
                                 }
@@ -7952,15 +8453,13 @@
                                                 "properties": {
                                                     "position": {
                                                         "description": "Расположение руля",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ],
-                                                        "enum": [
-                                                            "LEFT",
-                                                            "RIGHT",
-                                                            "UNKNOWN",
-                                                            null
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/wheel_position_type"
+                                                            }
                                                         ],
                                                         "examples": [
                                                             "RIGHT"
@@ -7977,17 +8476,13 @@
                                                 "properties": {
                                                     "type": {
                                                         "description": "Тип трансмиссии",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ],
-                                                        "enum": [
-                                                            "AUTOMATIC",
-                                                            "MANUAL",
-                                                            "ROBOT",
-                                                            "VARIABLE",
-                                                            "UNKNOWN",
-                                                            null
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/transmission_type"
+                                                            }
                                                         ],
                                                         "examples": [
                                                             "AUTOMATIC"
@@ -8004,19 +8499,13 @@
                                                 "properties": {
                                                     "type": {
                                                         "description": "Тип привода",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ],
-                                                        "enum": [
-                                                            "Передний",
-                                                            "Переднеприводной",
-                                                            "Задний",
-                                                            "Заднеприводной",
-                                                            "Полный",
-                                                            "Полноприводной",
-                                                            "Иные",
-                                                            null
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/drive_type"
+                                                            }
                                                         ],
                                                         "examples": [
                                                             "Заднеприводной"
@@ -8132,15 +8621,13 @@
                                                         "properties": {
                                                             "type": {
                                                                 "description": "Тип топлива",
-                                                                "type": [
-                                                                    "string",
-                                                                    "null"
-                                                                ],
-                                                                "enum": [
-                                                                    "Бензиновый",
-                                                                    "Дизельный",
-                                                                    "Прочее",
-                                                                    null
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "null"
+                                                                    },
+                                                                    {
+                                                                        "$ref": "#/definitions/engine_fuel_type"
+                                                                    }
                                                                 ],
                                                                 "examples": [
                                                                     "Бензиновый"
@@ -9110,6 +9597,335 @@
                                                 "fillable_by": [
                                                     "ads.price"
                                                 ]
+                                            }
+                                        }
+                                    },
+                                    "related_ads": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "geo": {
+                                                    "description": "Расчетные данные. Гео-данные места продажи ТС",
+                                                    "oneOf": [
+                                                        {
+                                                            "type": "null"
+                                                        },
+                                                        {
+                                                            "$ref": "#/definitions/geo_raw_data"
+                                                        }
+                                                    ],
+                                                    "fillable_by": [
+                                                        "ads.price"
+                                                    ]
+                                                },
+                                                "uri": {
+                                                    "description": "Расчетные данные. Ссылка на объявление",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "https://example.com"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "ads.price"
+                                                    ]
+                                                },
+                                                "price": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "amount": {
+                                                            "description": "Расчетные данные. Цена ТС в объявлении",
+                                                            "type": [
+                                                                "integer",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                117400
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        },
+                                                        "currency": {
+                                                            "description": "Расчетные данные. Тип валюты",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/currency_type"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "RUB"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "vehicle": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "brand": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "name": {
+                                                                    "description": "Расчетные данные. Наименование марки (бренда) ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Opel"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "model": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "name": {
+                                                                    "description": "Расчетные данные. Модель ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Monterey"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "year": {
+                                                            "description": "Расчетные данные. Год выпуска ТС",
+                                                            "type": [
+                                                                "integer",
+                                                                "null"
+                                                            ],
+                                                            "minimum": 1800,
+                                                            "examples": [
+                                                                2018
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        },
+                                                        "condition": {
+                                                            "description": "Расчетные данные. Состояние ТС",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "Не битый"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        },
+                                                        "wheel": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "position": {
+                                                                    "description": "Расчетные данные. Расположение руля",
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "$ref": "#/definitions/wheel_position_type"
+                                                                        }
+                                                                    ],
+                                                                    "examples": [
+                                                                        "RIGHT"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "transmission": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "type": {
+                                                                    "description": "Расчетные данные. Тип трансмиссии",
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "$ref": "#/definitions/transmission_type"
+                                                                        }
+                                                                    ],
+                                                                    "examples": [
+                                                                        "AUTOMATIC"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "drive": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "type": {
+                                                                    "description": "Расчетные данные. Тип привода",
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "$ref": "#/definitions/drive_type"
+                                                                        }
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Передний"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "owners": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "count": {
+                                                                    "description": "Расчетные данные. Количество владельцев ТС",
+                                                                    "type": [
+                                                                        "integer",
+                                                                        "null"
+                                                                    ],
+                                                                    "minimum": 1,
+                                                                    "examples": [
+                                                                        2,
+                                                                        null
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "engine": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "power": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "hp": {
+                                                                            "description": "Расчетные данные. Мощность двигателя ТС (л.с)",
+                                                                            "type": [
+                                                                                "number",
+                                                                                "null"
+                                                                            ],
+                                                                            "minimum": 1,
+                                                                            "examples": [
+                                                                                176.9
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "ads.price"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "volume": {
+                                                                    "description": "Расчетные данные. Объем двигателя в кубических сантиметрах",
+                                                                    "type": [
+                                                                        "number",
+                                                                        "null"
+                                                                    ],
+                                                                    "minimum": 1,
+                                                                    "examples": [
+                                                                        2792.1
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                },
+                                                                "fuel": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "type": {
+                                                                            "description": "Расчетные данные. Тип топлива",
+                                                                            "oneOf": [
+                                                                                {
+                                                                                    "type": "null"
+                                                                                },
+                                                                                {
+                                                                                    "$ref": "#/definitions/engine_fuel_type"
+                                                                                }
+                                                                            ],
+                                                                            "examples": [
+                                                                                "Бензиновый"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "ads.price"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "body": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "type": {
+                                                                    "description": "Расчетные данные. Тип кузова ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Седан",
+                                                                        "Универсал"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "mileage": {
+                                                            "description": "Расчетные данные. Пробег ТС",
+                                                            "type": [
+                                                                "integer",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                79000
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }

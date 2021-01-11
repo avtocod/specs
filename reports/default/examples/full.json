@@ -1555,8 +1555,12 @@
                     "currency": {
                         "type": "RUB"
                     },
+                    "mileage": 50000,
                     "related_ads": [
                         {
+                            "date": {
+                                "publish": "2019-01-14 11:57:00"
+                            },
                             "geo": {
                                 "country": "Россия",
                                 "region": "Московская область",
@@ -1605,7 +1609,29 @@
                                 "mileage": 79000
                             }
                         }
-                    ]
+                    ],
+                    "metadata": {
+                        "functions": [
+                            {
+                                "name": "price_mileage",
+                                "description": "y = price, x = mileage",
+                                "parts": [
+                                    {
+                                        "type": "STRAIGHT_LINE",
+                                        "description": "y = coefficients[0] + x * coefficients[1]",
+                                        "coefficients": [
+                                            1667183,
+                                            -4.515303312754018
+                                        ],
+                                        "bounds": {
+                                            "left": 0,
+                                            "right": 365907.42316982563
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                 }
             ]
         }

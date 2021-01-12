@@ -537,6 +537,91 @@
             "count": 3
         }
     },
+    "gots_auctions": {
+        "items": [
+            {
+                "vehicle": {
+                    "mileage": 132222,
+                    "damage": {
+                        "value": 20562.5,
+                        "descriptions": [
+                            {
+                                "code": "front",
+                                "value": "Передняя часть"
+                            },
+                            {
+                                "code": "side.left",
+                                "value": "Левая сторона"
+                            },
+                            {
+                                "code": "side.right",
+                                "value": "Правая сторона"
+                            },
+                            {
+                                "code": "rear",
+                                "value": "Задняя часть"
+                            },
+                            {
+                                "code": "roof",
+                                "value": "Крыша"
+                            },
+                            {
+                                "code": "front.left",
+                                "value": "Передняя левая часть"
+                            },
+                            {
+                                "code": "front.right",
+                                "value": "Передняя правая часть"
+                            },
+                            {
+                                "code": "underbody",
+                                "value": "Днище"
+                            },
+                            {
+                                "code": "mechanical",
+                                "value": "Механические повреждения"
+                            },
+                            {
+                                "code": "interior",
+                                "value": "Салон"
+                            },
+                            {
+                                "code": "glass.front",
+                                "value": "Стекла спереди"
+                            },
+                            {
+                                "code": "glass.side.left",
+                                "value": "Стекла левая сторона"
+                            },
+                            {
+                                "code": "glass.side.right",
+                                "value": "Стекла правая сторона"
+                            },
+                            {
+                                "code": "glass.rear",
+                                "value": "Стекла сзади"
+                            },
+                            {
+                                "code": "glass.roof",
+                                "value": "Стекла крыша"
+                            }
+                        ]
+                    }
+                },
+                "auction": {
+                    "date": "2014-08-15 00:00:00",
+                    "number": "2014-08-15.AON.1201408151047029",
+                    "client": {
+                        "name": "ЗАО МАКС",
+                        "postal_code": "115184",
+                        "city": "Москва",
+                        "address_line": "Большая Ордынка 50",
+                        "phone_number": "91234567890"
+                    }
+                }
+            }
+        ]
+    },
     "carfax": {
         "check": {
             "exists": false,
@@ -1473,6 +1558,9 @@
                     "mileage": 50000,
                     "related_ads": [
                         {
+                            "date": {
+                                "publish": "2019-01-14 11:57:00"
+                            },
                             "geo": {
                                 "country": "Россия",
                                 "region": "Московская область",

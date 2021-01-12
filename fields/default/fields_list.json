@@ -4337,6 +4337,116 @@
         ]
     },
     {
+        "path": "gots_auctions.items[].vehicle.mileage",
+        "description": "Размещение ТС на аукционах ГОТС: Пробег ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].vehicle.damage.value",
+        "description": "Размещение ТС на аукционах ГОТС: Значение повреждения ТС",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].vehicle.damage.descriptions[].code",
+        "description": "Размещение ТС на аукционах ГОТС: Описание повреждений ТС, код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].vehicle.damage.descriptions[].value",
+        "description": "Размещение ТС на аукционах ГОТС: Описание повреждений ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.date",
+        "description": "Размещение ТС на аукционах ГОТС: Дата размещения на аукционе",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.number",
+        "description": "Размещение ТС на аукционах ГОТС: Внутренний номер аукциона",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.name",
+        "description": "Размещение ТС на аукционах ГОТС: Наименование клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.postal_code",
+        "description": "Размещение ТС на аукционах ГОТС: Почтовый индекс клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.city",
+        "description": "Размещение ТС на аукционах ГОТС: Город клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.address_line",
+        "description": "Размещение ТС на аукционах ГОТС: Адрес клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.items[].auction.client.phone_number",
+        "description": "Размещение ТС на аукционах ГОТС: Телефонный номер клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
         "path": "service_history.items[].dealer.name",
         "description": "История дилерского обслуживания: Наименование автодилера",
         "types": [
@@ -4784,6 +4894,16 @@
         "description": "Рыночная стоимость ТС: Пробег ТС для которого сделан расчет цены",
         "types": [
             "integer"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
+        "path": "market_prices.ads.items[].related_ads[].date.publish",
+        "description": "Рыночная стоимость ТС: Дата публикации объявления",
+        "types": [
+            "string"
         ],
         "fillable_by": [
             "ads.price"

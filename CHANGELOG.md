@@ -4,11 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## UNRELEASED
+## v3.60.0
 
 ### Added
 
 - Field with path `market_prices.ads.items[].mileage`
+- Field with path `market_prices.ads.items[].related_ads[].date.publish`
 - Field with path `market_prices.ads.items[].metadata.functions[].name`
 - Field with path `market_prices.ads.items[].metadata.functions[].description`
 - Field with path `market_prices.ads.items[].metadata.functions[].parts[].type`
@@ -16,6 +17,23 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `market_prices.ads.items[].metadata.functions[].parts[].coefficients`
 - Field with path `market_prices.ads.items[].metadata.functions[].parts[].bounds.left`
 - Field with path `market_prices.ads.items[].metadata.functions[].parts[].bounds.right`
+
+## v3.59.0
+
+### Added
+
+- Source `gots.history`
+- Field with path `gots_auctions.items[].vehicle.mileage`
+- Field with path `gots_auctions.items[].vehicle.damage.value`
+- Field with path `gots_auctions.items[].vehicle.damage.descriptions[].code`
+- Field with path `gots_auctions.items[].vehicle.damage.descriptions[].value`
+- Field with path `gots_auctions.items[].auction.date`
+- Field with path `gots_auctions.items[].auction.number`
+- Field with path `gots_auctions.items[].auction.client.name`
+- Field with path `gots_auctions.items[].auction.client.postal_code`
+- Field with path `gots_auctions.items[].auction.client.city`
+- Field with path `gots_auctions.items[].auction.client.address_line`
+- Field with path `gots_auctions.items[].auction.client.phone_number`
 
 ## v3.58.0
 

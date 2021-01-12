@@ -3056,6 +3056,209 @@
                 }
             }
         },
+        "gots_auctions": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Размещение ТС на аукционах ГОТС",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "vehicle": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "mileage": {
+                                        "description": "Пробег ТС",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            132222
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "damage": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "value": {
+                                                "description": "Значение повреждения ТС",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    20562.5
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "descriptions": {
+                                                "description": "Описание повреждений ТС",
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "code": {
+                                                            "description": "Описание повреждений ТС, код",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "front"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gots.history"
+                                                            ]
+                                                        },
+                                                        "value": {
+                                                            "description": "Описание повреждений ТС",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "Передняя часть"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gots.history"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "auction": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата размещения на аукционе",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2014-08-15 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "number": {
+                                        "description": "Внутренний номер аукциона",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "2014-08-15.AON.1201408151047029",
+                                            "null"
+                                        ],
+                                        "fillable_by": [
+                                            "gots.history"
+                                        ]
+                                    },
+                                    "client": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ЗАО МАКС",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "postal_code": {
+                                                "description": "Почтовый индекс клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "115184",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "city": {
+                                                "description": "Город клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Москва",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "address_line": {
+                                                "description": "Адрес клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Большая Ордынка 50",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            },
+                                            "phone_number": {
+                                                "description": "Телефонный номер клиента разместившего лот",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "91234567890",
+                                                    "null"
+                                                ],
+                                                "fillable_by": [
+                                                    "gots.history"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "carfax": {
             "type": "object",
             "additionalProperties": false,
@@ -9416,6 +9619,29 @@
                                             "type": "object",
                                             "additionalProperties": false,
                                             "properties": {
+                                                "date": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "publish": {
+                                                            "description": "Дата публикации объявления",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/datetime"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2019-01-14 11:57:00"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
                                                 "geo": {
                                                     "description": "Расчетные данные. Гео-данные места продажи ТС",
                                                     "oneOf": [
@@ -9813,6 +10039,9 @@
                                                                             "array",
                                                                             "null"
                                                                         ],
+                                                                        "items": {
+                                                                            "type": "number"
+                                                                        },
                                                                         "examples": [
                                                                             [
                                                                                 1667183,

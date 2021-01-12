@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Fixed
+
+- Data type for field with path `market_prices.ads.items[].metadata.functions[].name` in `./reports/default/json-schema.json`
+- Data type for field with path `market_prices.ads.items[].metadata.functions[].description` in `./reports/default/json-schema.json`
+- Data type for field with path `market_prices.ads.items[].metadata.functions[].parts[].type` in `./reports/default/json-schema.json`
+- Data type for field with path `market_prices.ads.items[].metadata.functions[].parts[].description` in `./reports/default/json-schema.json`
+- Data type for field with path `market_prices.ads.items[].metadata.functions[].parts[].coefficients` in `./reports/default/json-schema.json`
+
 ## v3.60.0
 
 ### Added

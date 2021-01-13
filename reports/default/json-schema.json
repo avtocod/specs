@@ -9977,10 +9977,7 @@
                                                     "properties": {
                                                         "name": {
                                                             "description": "Наименование функции",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
-                                                            ],
+                                                            "type": "string",
                                                             "examples": [
                                                                 "price_mileage"
                                                             ],
@@ -9990,10 +9987,7 @@
                                                         },
                                                         "description": {
                                                             "description": "Описание функции",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
-                                                            ],
+                                                            "type": "string",
                                                             "examples": [
                                                                 "y = price, x = mileage"
                                                             ],
@@ -10009,10 +10003,7 @@
                                                                 "properties": {
                                                                     "type": {
                                                                         "description": "Тип математической функции",
-                                                                        "type": [
-                                                                            "string",
-                                                                            "null"
-                                                                        ],
+                                                                        "type": "string",
                                                                         "examples": [
                                                                             "STRAIGHT_LINE"
                                                                         ],
@@ -10022,10 +10013,7 @@
                                                                     },
                                                                     "description": {
                                                                         "description": "Описание математической функции",
-                                                                        "type": [
-                                                                            "string",
-                                                                            "null"
-                                                                        ],
+                                                                        "type": "string",
                                                                         "examples": [
                                                                             "y = coefficients[0] + x * coefficients[1]"
                                                                         ],
@@ -10035,10 +10023,7 @@
                                                                     },
                                                                     "coefficients": {
                                                                         "description": "Значения переменных функции",
-                                                                        "type": [
-                                                                            "array",
-                                                                            "null"
-                                                                        ],
+                                                                        "type": "array",
                                                                         "items": {
                                                                             "type": "number"
                                                                         },

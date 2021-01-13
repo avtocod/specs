@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.transmission.type_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.wheel.position_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.drive.type_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.fuel.type_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.body.type_id`
+
+### Changed
+
+- Extend enum with `Газовый`, `Гибридный` and `Электрический` values for definition `engine_fuel_type` in `./reports/default/json-schema.json`
+
 ## v3.60.1
 
 ### Fixed

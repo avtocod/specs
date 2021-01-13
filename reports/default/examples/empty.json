@@ -1290,13 +1290,16 @@
                                 "year": null,
                                 "condition": null,
                                 "wheel": {
-                                    "position": null
+                                    "position": null,
+                                    "position_id": null
                                 },
                                 "transmission": {
-                                    "type": null
+                                    "type": null,
+                                    "type_id": null
                                 },
                                 "drive": {
-                                    "type": null
+                                    "type": null,
+                                    "type_id": null
                                 },
                                 "owners": {
                                     "count": null
@@ -1307,11 +1310,13 @@
                                     },
                                     "volume": null,
                                     "fuel": {
-                                        "type": null
+                                        "type": null,
+                                        "type_id": null
                                     }
                                 },
                                 "body": {
-                                    "type": null
+                                    "type": null,
+                                    "type_id": null
                                 },
                                 "mileage": null
                             }

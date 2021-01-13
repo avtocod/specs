@@ -114,6 +114,14 @@
                 "UNKNOWN"
             ]
         },
+        "wheel_position_type_id": {
+            "type": "string",
+            "enum": [
+                "ID_STEERING_WHEEL_LEFT",
+                "ID_STEERING_WHEEL_RIGHT",
+                "ID_STEERING_WHEEL_OTHER"
+            ]
+        },
         "transmission_type": {
             "type": "string",
             "enum": [
@@ -122,6 +130,16 @@
                 "ROBOT",
                 "VARIABLE",
                 "UNKNOWN"
+            ]
+        },
+        "transmission_type_id": {
+            "type": "string",
+            "enum": [
+                "ID_TRANSMISSION_AUTOMATIC",
+                "ID_TRANSMISSION_MANUAL",
+                "ID_TRANSMISSION_ROBOT",
+                "ID_TRANSMISSION_VARIABLE",
+                "ID_TRANSMISSION_OTHER"
             ]
         },
         "drive_type": {
@@ -136,12 +154,53 @@
                 "Иные"
             ]
         },
+        "drive_type_id": {
+            "type": "string",
+            "enum": [
+                "ID_DRIVING_WHEELS_FRONT",
+                "ID_DRIVING_WHEELS_REAR",
+                "ID_DRIVING_WHEELS_ALL",
+                "ID_DRIVING_WHEELS_OTHER"
+            ]
+        },
         "engine_fuel_type": {
             "type": "string",
             "enum": [
                 "Бензиновый",
                 "Дизельный",
+                "Газовый",
+                "Гибридный",
+                "Электрический",
                 "Прочее"
+            ]
+        },
+        "engine_fuel_type_id": {
+            "type": "string",
+            "enum": [
+                "ID_ENGINE_TYPE_PETROL",
+                "ID_ENGINE_TYPE_DIESEL",
+                "ID_ENGINE_TYPE_GAS",
+                "ID_ENGINE_TYPE_ELECTRIC",
+                "ID_ENGINE_TYPE_HYBRID",
+                "ID_ENGINE_TYPE_OTHER"
+            ]
+        },
+        "body_type_id": {
+            "type": "string",
+            "enum": [
+                "ID_BODY_SEDAN",
+                "ID_BODY_HATCHBACK",
+                "ID_BODY_LIFTBACK",
+                "ID_BODY_SUV",
+                "ID_BODY_WAGON",
+                "ID_BODY_COUPE",
+                "ID_BODY_MINIVAN",
+                "ID_BODY_LIMOUSINE",
+                "ID_BODY_PICKUP",
+                "ID_BODY_VAN",
+                "ID_BODY_CONVERTIBLE",
+                "ID_BODY_MINIBUS",
+                "ID_BODY_OTHER"
             ]
         },
         "geo_raw_data": {
@@ -9794,6 +9853,23 @@
                                                                     "fillable_by": [
                                                                         "ads.price"
                                                                     ]
+                                                                },
+                                                                "position_id": {
+                                                                    "description": "Расчетные данные. Id расположения руля",
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "$ref": "#/definitions/wheel_position_type_id"
+                                                                        }
+                                                                    ],
+                                                                    "examples": [
+                                                                        "ID_STEERING_WHEEL_RIGHT"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
                                                                 }
                                                             }
                                                         },
@@ -9817,6 +9893,23 @@
                                                                     "fillable_by": [
                                                                         "ads.price"
                                                                     ]
+                                                                },
+                                                                "type_id": {
+                                                                    "description": "Расчетные данные. Id типа трансмиссии",
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "$ref": "#/definitions/transmission_type_id"
+                                                                        }
+                                                                    ],
+                                                                    "examples": [
+                                                                        "ID_TRANSMISSION_AUTOMATIC"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
                                                                 }
                                                             }
                                                         },
@@ -9836,6 +9929,23 @@
                                                                     ],
                                                                     "examples": [
                                                                         "Передний"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                },
+                                                                "type_id": {
+                                                                    "description": "Расчетные данные. Id типа привода",
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "$ref": "#/definitions/drive_type_id"
+                                                                        }
+                                                                    ],
+                                                                    "examples": [
+                                                                        "ID_DRIVING_WHEELS_FRONT"
                                                                     ],
                                                                     "fillable_by": [
                                                                         "ads.price"
@@ -9922,6 +10032,23 @@
                                                                             "fillable_by": [
                                                                                 "ads.price"
                                                                             ]
+                                                                        },
+                                                                        "type_id": {
+                                                                            "description": "Расчетные данные. Id типа топлива",
+                                                                            "oneOf": [
+                                                                                {
+                                                                                    "type": "null"
+                                                                                },
+                                                                                {
+                                                                                    "$ref": "#/definitions/engine_fuel_type_id"
+                                                                                }
+                                                                            ],
+                                                                            "examples": [
+                                                                                "ID_ENGINE_TYPE_PETROL"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "ads.price"
+                                                                            ]
                                                                         }
                                                                     }
                                                                 }
@@ -9940,6 +10067,23 @@
                                                                     "examples": [
                                                                         "Седан",
                                                                         "Универсал"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "ads.price"
+                                                                    ]
+                                                                },
+                                                                "type_id": {
+                                                                    "description": "Расчетные данные. Id типа кузова ТС",
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "$ref": "#/definitions/body_type_id"
+                                                                        }
+                                                                    ],
+                                                                    "examples": [
+                                                                        "ID_BODY_SEDAN"
                                                                     ],
                                                                     "fillable_by": [
                                                                         "ads.price"

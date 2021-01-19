@@ -14,6 +14,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - References `./vehicles/default/driving_wheels_types.json`
 - References `./vehicles/default/steering_wheel_types.json`
 
+## v3.61.0
+
+### Added
+
+- Field with path `ads.history.items[].uri` in `./reports/default/json-schema.json`
+
 ## v3.60.1
 
 ### Fixed

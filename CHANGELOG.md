@@ -18,6 +18,22 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Extend enum with `Газовый`, `Гибридный` and `Электрический` values for definition `engine_fuel_type` in `./reports/default/json-schema.json`
 
+## v3.62.0
+
+### Added
+
+- References `./vehicles/default/body_types.json`
+- References `./vehicles/default/engine_types.json`
+- References `./vehicles/default/transmission_types.json`
+- References `./vehicles/default/driving_wheels_types.json`
+- References `./vehicles/default/steering_wheel_types.json`
+
+## v3.61.0
+
+### Added
+
+- Field with path `ads.history.items[].uri` in `./reports/default/json-schema.json`
+
 ## v3.60.1
 
 ### Fixed

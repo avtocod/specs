@@ -3746,6 +3746,17 @@
         ]
     },
     {
+        "path": "ads.history.items[].uri",
+        "description": "История объявлений: Ссылка на объявление",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base",
+            "images.archive"
+        ]
+    },
+    {
         "path": "ads.history.items[].date.publish",
         "description": "История объявлений: Дата публикации объявления",
         "types": [

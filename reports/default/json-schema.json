@@ -8201,6 +8201,20 @@
                                             "images.archive"
                                         ]
                                     },
+                                    "uri": {
+                                        "description": "Ссылка на объявление",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "https://example.com"
+                                        ],
+                                        "fillable_by": [
+                                            "ads.base",
+                                            "images.archive"
+                                        ]
+                                    },
                                     "date": {
                                         "type": "object",
                                         "additionalProperties": false,

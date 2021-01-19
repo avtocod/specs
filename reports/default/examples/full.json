@@ -1584,13 +1584,16 @@
                                 "year": 2018,
                                 "condition": "Не битый",
                                 "wheel": {
-                                    "position": "LEFT"
+                                    "position": "LEFT",
+                                    "position_id": "ID_STEERING_WHEEL_TYPE_LEFT"
                                 },
                                 "transmission": {
-                                    "type": "MANUAL"
+                                    "type": "MANUAL",
+                                    "type_id": "ID_TRANSMISSION_TYPE_MANUAL"
                                 },
                                 "drive": {
-                                    "type": "Передний"
+                                    "type": "Передний",
+                                    "type_id": "ID_DRIVING_WHEELS_TYPE_FRONT"
                                 },
                                 "owners": {
                                     "count": 2
@@ -1601,11 +1604,13 @@
                                     },
                                     "volume": 2793.2,
                                     "fuel": {
-                                        "type": "Бензиновый"
+                                        "type": "Бензиновый",
+                                        "type_id": "ID_ENGINE_TYPE_PETROL"
                                     }
                                 },
                                 "body": {
-                                    "type": "Седан"
+                                    "type": "Седан",
+                                    "type_id": "ID_BODY_TYPE_SEDAN"
                                 },
                                 "mileage": 79000
                             }

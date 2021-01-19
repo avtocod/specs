@@ -5012,7 +5012,7 @@
     },
     {
         "path": "market_prices.ads.items[].related_ads[].vehicle.wheel.position_id",
-        "description": "Рыночная стоимость ТС: Расчетные данные. Id расположения руля",
+        "description": "Рыночная стоимость ТС: Расчетные данные. ID расположения руля",
         "types": [
             "string"
         ],
@@ -5032,7 +5032,7 @@
     },
     {
         "path": "market_prices.ads.items[].related_ads[].vehicle.transmission.type_id",
-        "description": "Рыночная стоимость ТС: Расчетные данные. Id типа трансмиссии",
+        "description": "Рыночная стоимость ТС: Расчетные данные. ID типа трансмиссии",
         "types": [
             "string"
         ],
@@ -5052,7 +5052,7 @@
     },
     {
         "path": "market_prices.ads.items[].related_ads[].vehicle.drive.type_id",
-        "description": "Рыночная стоимость ТС: Расчетные данные. Id типа привода",
+        "description": "Рыночная стоимость ТС: Расчетные данные. ID типа привода",
         "types": [
             "string"
         ],
@@ -5102,7 +5102,7 @@
     },
     {
         "path": "market_prices.ads.items[].related_ads[].vehicle.engine.fuel.type_id",
-        "description": "Рыночная стоимость ТС: Расчетные данные. Id типа топлива",
+        "description": "Рыночная стоимость ТС: Расчетные данные. ID типа топлива",
         "types": [
             "string"
         ],
@@ -5122,7 +5122,7 @@
     },
     {
         "path": "market_prices.ads.items[].related_ads[].vehicle.body.type_id",
-        "description": "Рыночная стоимость ТС: Расчетные данные. Id типа кузова ТС",
+        "description": "Рыночная стоимость ТС: Расчетные данные. ID типа кузова ТС",
         "types": [
             "string"
         ],

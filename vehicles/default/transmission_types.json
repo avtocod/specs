@@ -1,22 +1,22 @@
 [
     {
         "name": "Механика",
-        "id": "ID_TRANSMISSION_MANUAL"
+        "id": "ID_TRANSMISSION_TYPE_MANUAL"
     },
     {
         "name": "Автомат",
-        "id": "ID_TRANSMISSION_AUTOMATIC"
+        "id": "ID_TRANSMISSION_TYPE_AUTOMATIC"
     },
     {
         "name": "Вариатор",
-        "id": "ID_TRANSMISSION_VARIABLE"
+        "id": "ID_TRANSMISSION_TYPE_VARIABLE"
     },
     {
         "name": "Робот",
-        "id": "ID_TRANSMISSION_ROBOT"
+        "id": "ID_TRANSMISSION_TYPE_ROBOT"
     },
     {
         "name": "Прочее",
-        "id": "ID_TRANSMISSION_OTHER"
+        "id": "ID_TRANSMISSION_TYPE_OTHER"
     }
 ]

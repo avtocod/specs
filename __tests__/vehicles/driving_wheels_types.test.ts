@@ -1,13 +1,13 @@
 import * as path from 'path';
 import { groups_list, specs_root_dir } from '../helpers';
-import { VehicleTransmission } from './vehicle_attributes';
+import { VehicleDrivingWheelsType } from './vehicles'
 
-const file_name = 'transmissions.json';
+const file_name = 'driving_wheels_types.json';
 
 // for each defined groups of specifications...
-describe.each(groups_list)(file_name + ' file in %s group of vehicle attributes specs', group_name => {
-    const specs_path = path.resolve(specs_root_dir, 'vehicle_attributes', group_name, file_name);
-    const items: Array<VehicleTransmission> = require(specs_path);
+describe.each(groups_list)(file_name + ' file in %s group of vehicle specs', group_name => {
+    const specs_path = path.resolve(specs_root_dir, 'vehicles', group_name, file_name);
+    const items: Array<VehicleDrivingWheelsType> = require(specs_path);
 
     describe.each(items)('item %j has', (item) => {
 
@@ -17,8 +17,8 @@ describe.each(groups_list)(file_name + ' file in %s group of vehicle attributes 
         });
 
         // value of "id" property should matches with pattern
-        test.concurrent(`"id" property with value matching with pattern "^ID_TRANSMISSION_.*$`, async () => {
-            expect(item.id).toMatch(new RegExp('^ID_TRANSMISSION_.*$'));
+        test.concurrent(`"id" property with value matching with pattern "^ID_DRIVING_WHEELS_TYPE_.*$`, async () => {
+            expect(item.id).toMatch(new RegExp('^ID_DRIVING_WHEELS_TYPE_.*$'));
         });
 
         // attribute shouldn't have duplicates with same "id" and "name"

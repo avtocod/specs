@@ -1,12 +1,12 @@
 import * as path from 'path';
 import { groups_list, specs_root_dir } from '../helpers';
-import { VehicleEngineType } from './vehicle_attributes';
+import { VehicleEngineType } from './vehicles';
 
 const file_name = 'engine_types.json';
 
 // for each defined groups of specifications...
-describe.each(groups_list)(file_name + ' file in %s group of vehicle attributes specs', group_name => {
-    const specs_path = path.resolve(specs_root_dir, 'vehicle_attributes', group_name, file_name);
+describe.each(groups_list)(file_name + ' file in %s group of vehicle specs', group_name => {
+    const specs_path = path.resolve(specs_root_dir, 'vehicles', group_name, file_name);
     const items: Array<VehicleEngineType> = require(specs_path);
 
     describe.each(items)('item %j has', (item) => {

@@ -3,7 +3,14 @@ import { groups_list, specs_root_dir, required_files_map } from "../helpers";
 import { VehicleMark, VehicleModel } from "./vehicles";
 
 const models_file_names = required_files_map.vehicles.filter(filename => {
-    return ['marks.json', 'types.json'].indexOf(filename) === -1;
+    return [
+        'marks.json',
+        'types.json',
+        'body_types.json',
+        'driving_wheels_types.json',
+        'engine_types.json',
+        'steering_wheel_types.json',
+        'transmission_types.json'].indexOf(filename) === -1;
 });
 
 // for each defined groups of specifications...

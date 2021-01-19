@@ -8,11 +8,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- References `./vehicle_attributes/default/bodies.json`
-- References `./vehicle_attributes/default/engine_types.json`
-- References `./vehicle_attributes/default/transmissions.json`
-- References `./vehicle_attributes/default/driving_wheels.json`
-- References `./vehicle_attributes/default/steering_wheels.json`
+- References `./vehicles/default/body_types.json`
+- References `./vehicles/default/engine_types.json`
+- References `./vehicles/default/transmission_types.json`
+- References `./vehicles/default/driving_wheels_types.json`
+- References `./vehicles/default/steering_wheel_types.json`
 
 ## v3.60.1
 

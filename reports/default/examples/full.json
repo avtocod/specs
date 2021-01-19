@@ -1585,15 +1585,15 @@
                                 "condition": "Не битый",
                                 "wheel": {
                                     "position": "LEFT",
-                                    "position_id": "ID_STEERING_WHEEL_LEFT"
+                                    "position_id": "ID_STEERING_WHEEL_TYPE_LEFT"
                                 },
                                 "transmission": {
                                     "type": "MANUAL",
-                                    "type_id": "ID_TRANSMISSION_MANUAL"
+                                    "type_id": "ID_TRANSMISSION_TYPE_MANUAL"
                                 },
                                 "drive": {
                                     "type": "Передний",
-                                    "type_id": "ID_DRIVING_WHEELS_FRONT"
+                                    "type_id": "ID_DRIVING_WHEELS_TYPE_FRONT"
                                 },
                                 "owners": {
                                     "count": 2
@@ -1610,7 +1610,7 @@
                                 },
                                 "body": {
                                     "type": "Седан",
-                                    "type_id": "ID_BODY_SEDAN"
+                                    "type_id": "ID_BODY_TYPE_SEDAN"
                                 },
                                 "mileage": 79000
                             }

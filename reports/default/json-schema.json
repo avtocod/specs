@@ -117,9 +117,9 @@
         "wheel_position_type_id": {
             "type": "string",
             "enum": [
-                "ID_STEERING_WHEEL_LEFT",
-                "ID_STEERING_WHEEL_RIGHT",
-                "ID_STEERING_WHEEL_OTHER"
+                "ID_STEERING_WHEEL_TYPE_LEFT",
+                "ID_STEERING_WHEEL_TYPE_RIGHT",
+                "ID_STEERING_WHEEL_TYPE_OTHER"
             ]
         },
         "transmission_type": {
@@ -135,11 +135,11 @@
         "transmission_type_id": {
             "type": "string",
             "enum": [
-                "ID_TRANSMISSION_AUTOMATIC",
-                "ID_TRANSMISSION_MANUAL",
-                "ID_TRANSMISSION_ROBOT",
-                "ID_TRANSMISSION_VARIABLE",
-                "ID_TRANSMISSION_OTHER"
+                "ID_TRANSMISSION_TYPE_AUTOMATIC",
+                "ID_TRANSMISSION_TYPE_MANUAL",
+                "ID_TRANSMISSION_TYPE_ROBOT",
+                "ID_TRANSMISSION_TYPE_VARIABLE",
+                "ID_TRANSMISSION_TYPE_OTHER"
             ]
         },
         "drive_type": {
@@ -157,10 +157,10 @@
         "drive_type_id": {
             "type": "string",
             "enum": [
-                "ID_DRIVING_WHEELS_FRONT",
-                "ID_DRIVING_WHEELS_REAR",
-                "ID_DRIVING_WHEELS_ALL",
-                "ID_DRIVING_WHEELS_OTHER"
+                "ID_DRIVING_WHEELS_TYPE_FRONT",
+                "ID_DRIVING_WHEELS_TYPE_REAR",
+                "ID_DRIVING_WHEELS_TYPE_ALL",
+                "ID_DRIVING_WHEELS_TYPE_OTHER"
             ]
         },
         "engine_fuel_type": {
@@ -188,19 +188,19 @@
         "body_type_id": {
             "type": "string",
             "enum": [
-                "ID_BODY_SEDAN",
-                "ID_BODY_HATCHBACK",
-                "ID_BODY_LIFTBACK",
-                "ID_BODY_SUV",
-                "ID_BODY_WAGON",
-                "ID_BODY_COUPE",
-                "ID_BODY_MINIVAN",
-                "ID_BODY_LIMOUSINE",
-                "ID_BODY_PICKUP",
-                "ID_BODY_VAN",
-                "ID_BODY_CONVERTIBLE",
-                "ID_BODY_MINIBUS",
-                "ID_BODY_OTHER"
+                "ID_BODY_TYPE_SEDAN",
+                "ID_BODY_TYPE_HATCHBACK",
+                "ID_BODY_TYPE_LIFTBACK",
+                "ID_BODY_TYPE_SUV",
+                "ID_BODY_TYPE_WAGON",
+                "ID_BODY_TYPE_COUPE",
+                "ID_BODY_TYPE_MINIVAN",
+                "ID_BODY_TYPE_LIMOUSINE",
+                "ID_BODY_TYPE_PICKUP",
+                "ID_BODY_TYPE_VAN",
+                "ID_BODY_TYPE_CONVERTIBLE",
+                "ID_BODY_TYPE_MINIBUS",
+                "ID_BODY_TYPE_OTHER"
             ]
         },
         "geo_raw_data": {

@@ -32,7 +32,7 @@ module.exports = {
   // ts-jest configuration
   globals: {
     'ts-jest': {
-      tsConfig: 'tsconfig.json'
+      tsconfig: 'tsconfig.json'
     },
   },
 

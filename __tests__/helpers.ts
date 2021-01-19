@@ -49,7 +49,12 @@ export const required_files_map: FilesMap = {
         'models_snowmobile.json',
         'models_trailer.json',
         'models_truck.json',
-        'types.json'
+        'types.json',
+        'body_types.json',
+        'driving_wheels_types.json',
+        'engine_types.json',
+        'steering_wheel_types.json',
+        'transmission_types.json',
     ]
 };
 

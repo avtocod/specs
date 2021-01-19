@@ -4,7 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-v3.61.0
+## UNRELEASED
+
+### Added
+
+- References `./vehicles/default/body_types.json`
+- References `./vehicles/default/engine_types.json`
+- References `./vehicles/default/transmission_types.json`
+- References `./vehicles/default/driving_wheels_types.json`
+- References `./vehicles/default/steering_wheel_types.json`
+
+## v3.61.0
 
 ### Added
 

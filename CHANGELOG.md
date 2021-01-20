@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Field with path `tech_data.type.type_id`
+- Field with path `tech_data.drive.type_id`
+- Field with path `tech_data.wheel.position_id`
+- Field with path `tech_data.engine.fuel.type_id`
+- Field with path `tech_data.transmission.type_id`
+
 ## v3.63.0
 
 ### Added

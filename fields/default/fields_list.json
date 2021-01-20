@@ -192,6 +192,19 @@
         ]
     },
     {
+        "path": "tech_data.type.type_id",
+        "description": "Характеристики ТС: ID типа кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt",
+            "gibdd.history"
+        ]
+    },
+    {
         "path": "tech_data.body.number",
         "description": "Характеристики ТС: Номер Кузова",
         "types": [
@@ -271,6 +284,20 @@
             "base.ext",
             "customs.base",
             "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "tech_data.engine.fuel.type_id",
+        "description": "Характеристики ТС: ID типа топлива",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt",
+            "customs.base",
             "regactions.registry"
         ]
     },
@@ -392,6 +419,14 @@
         "fillable_by": []
     },
     {
+        "path": "tech_data.transmission.type_id",
+        "description": "Характеристики ТС: ID типа трансмиссии",
+        "types": [
+            "string"
+        ],
+        "fillable_by": []
+    },
+    {
         "path": "tech_data.drive.type",
         "description": "Характеристики ТС: Тип привода [Заднеприводной, Переднеприводной, Полноприводной, Иные]",
         "types": [
@@ -404,8 +439,34 @@
         ]
     },
     {
+        "path": "tech_data.drive.type_id",
+        "description": "Характеристики ТС: ID типа привода",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt"
+        ]
+    },
+    {
         "path": "tech_data.wheel.position",
         "description": "Характеристики ТС: Расположение руля [LEFT, RIGHT, UNKNOWN]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "tech_data.wheel.position_id",
+        "description": "Характеристики ТС: ID расположения руля",
         "types": [
             "string"
         ],

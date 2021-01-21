@@ -32,7 +32,8 @@
             }
         },
         "type": {
-            "name": "Седан"
+            "name": "Седан",
+            "type_id": "ID_BODY_TYPE_SEDAN"
         },
         "body": {
             "number": "KCA275-9673180",
@@ -47,7 +48,8 @@
         },
         "engine": {
             "fuel": {
-                "type": "Дизельный"
+                "type": "Дизельный",
+                "type_id": "ID_ENGINE_TYPE_DIESEL"
             },
             "number": "A 30038",
             "model": {
@@ -69,13 +71,16 @@
             "max": 3440
         },
         "transmission": {
-            "type": "AUTOMATIC"
+            "type": "AUTOMATIC",
+            "type_id": "ID_TRANSMISSION_TYPE_AUTOMATIC"
         },
         "drive": {
-            "type": "Полноприводной"
+            "type": "Полноприводной",
+            "type_id": "ID_DRIVING_WHEELS_TYPE_ALL"
         },
         "wheel": {
-            "position": "LEFT"
+            "position": "LEFT",
+            "position_id": "ID_STEERING_WHEEL_TYPE_LEFT"
         },
         "generations": [
             {

@@ -605,6 +605,26 @@
                                 "gibdd.history",
                                 "base.alt"
                             ]
+                        },
+                        "type_id": {
+                            "description": "ID типа кузова ТС",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/body_type_id"
+                                }
+                            ],
+                            "examples": [
+                                "ID_BODY_TYPE_SEDAN"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.alt",
+                                "gibdd.history"
+                            ]
                         }
                     }
                 },
@@ -745,6 +765,27 @@
                                         "base.ext",
                                         "customs.base",
                                         "base.alt",
+                                        "regactions.registry"
+                                    ]
+                                },
+                                "type_id": {
+                                    "description": "ID типа топлива",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/engine_fuel_type_id"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "ID_ENGINE_TYPE_PETROL"
+                                    ],
+                                    "fillable_by": [
+                                        "base",
+                                        "base.ext",
+                                        "base.alt",
+                                        "customs.base",
                                         "regactions.registry"
                                     ]
                                 }
@@ -944,6 +985,21 @@
                                 "AUTOMATIC"
                             ],
                             "fillable_by": []
+                        },
+                        "type_id": {
+                            "description": "ID типа трансмиссии",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/transmission_type_id"
+                                }
+                            ],
+                            "examples": [
+                                "ID_TRANSMISSION_TYPE_AUTOMATIC"
+                            ],
+                            "fillable_by": []
                         }
                     }
                 },
@@ -972,6 +1028,25 @@
                                 "base.ext",
                                 "base.alt"
                             ]
+                        },
+                        "type_id": {
+                            "description": "ID типа привода",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/drive_type_id"
+                                }
+                            ],
+                            "examples": [
+                                "ID_DRIVING_WHEELS_TYPE_REAR"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.alt"
+                            ]
                         }
                     }
                 },
@@ -991,6 +1066,27 @@
                             ],
                             "examples": [
                                 "RIGHT"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        },
+                        "position_id": {
+                            "description": "ID расположения руля",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/wheel_position_type_id"
+                                }
+                            ],
+                            "examples": [
+                                "ID_STEERING_WHEEL_TYPE_RIGHT"
                             ],
                             "fillable_by": [
                                 "base",

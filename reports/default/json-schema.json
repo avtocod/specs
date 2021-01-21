@@ -1444,7 +1444,7 @@
                                     "additionalProperties": false,
                                     "properties": {
                                         "has_proceedings": {
-                                            "description": "Есть ли исполнительные производства?",
+                                            "description": "Признак наличия исполнительных производств",
                                             "type": [
                                                 "boolean",
                                                 "null"

@@ -374,6 +374,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -404,7 +407,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "date": {
+            "update": null
+        }
     },
     "carfax": {
         "check": {
@@ -567,6 +573,9 @@
             }
         ],
         "used_in_leasing": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "customs": {
@@ -733,6 +742,9 @@
                 "in_pledge": null
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "insurance": {
@@ -811,6 +823,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -997,6 +1012,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1052,6 +1070,9 @@
             }
         ],
         "was_utilized": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "images": {
@@ -1072,6 +1093,9 @@
                     "uri": null
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1254,6 +1278,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "market_prices": {
@@ -1348,7 +1375,10 @@
                         ]
                     }
                 }
-            ]
+            ],
+            "date": {
+                "update": null
+            }
         }
     },
     "commercial_use": {
@@ -1387,6 +1417,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     }
 }

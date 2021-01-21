@@ -3202,6 +3202,28 @@
                                 }
                             }
                         },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2021-01-11 12:54:00"
+                                    ],
+                                    "fillable_by": [
+                                        "repairs.history"
+                                    ]
+                                }
+                            }
+                        },
                         "count": {
                             "description": "Количество вхождений",
                             "type": "integer",
@@ -3409,6 +3431,28 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-12-16 22:11:00"
+                            ],
+                            "fillable_by": [
+                                "gots.history"
+                            ]
                         }
                     }
                 }
@@ -4517,6 +4561,30 @@
                         "base.ext",
                         "base.taxi"
                     ]
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-10-16 22:10:00"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi"
+                            ]
+                        }
+                    }
                 },
                 "count": {
                     "description": "Количество вхождений",
@@ -5808,6 +5876,28 @@
                         }
                     }
                 },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2021-01-16 17:10:00"
+                            ],
+                            "fillable_by": [
+                                "pledge.nbki"
+                            ]
+                        }
+                    }
+                },
                 "count": {
                     "description": "Количество вхождений",
                     "type": "integer",
@@ -6489,6 +6579,34 @@
                                             "ramiosago.base.ext"
                                         ]
                                     }
+                                }
+                            }
+                        },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2020-07-10 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "ramiosago.base",
+                                        "ramiosago.base.ext",
+                                        "base",
+                                        "base.ext",
+                                        "base.alt",
+                                        "ramiosago.alt",
+                                        "ramiosago.alt.ext"
+                                    ]
                                 }
                             }
                         },
@@ -7756,6 +7874,32 @@
                                 }
                             }
                         },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2019-05-16 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "gibdd.history",
+                                        "base",
+                                        "base.ext",
+                                        "base.alt",
+                                        "regactions.registry"
+                                    ]
+                                }
+                            }
+                        },
                         "count": {
                             "description": "Количество вхождений",
                             "type": "integer",
@@ -8143,6 +8287,30 @@
                         "base.ext",
                         "base.taxi"
                     ]
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-11-16 11:10:00"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi"
+                            ]
+                        }
+                    }
                 }
             }
         },
@@ -8243,6 +8411,28 @@
                                             "images.archive"
                                         ]
                                     }
+                                }
+                            }
+                        },"date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2020-12-22 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "images.avtonomer",
+                                        "images.archive"
+                                    ]
                                 }
                             }
                         },
@@ -9676,6 +9866,29 @@
                         }
                     }
                 },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-05-12 22:10:00"
+                            ],
+                            "fillable_by": [
+                                "service.history",
+                                "service.history.fitservice"
+                            ]
+                        }
+                    }
+                },
                 "count": {
                     "description": "Количество вхождений",
                     "type": "integer",
@@ -10333,6 +10546,28 @@
                                     }
                                 }
                             }
+                        },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2019-07-06 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "ads.price"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }
@@ -10575,6 +10810,28 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-11-14 12:10:00"
+                            ],
+                            "fillable_by": [
+                                "recall.campaigns.registry"
+                            ]
                         }
                     }
                 },

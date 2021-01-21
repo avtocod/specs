@@ -643,6 +643,16 @@
         ]
     },
     {
+        "path": "additional_info.vehicle.owner.enforcement_proceedings.has_proceedings",
+        "description": "Исполнительные производства: Есть ли исполнительные производства?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "fssp.base"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.owner.geo",
         "description": "Дополнительная информация: Гео-данные владельца (техники)",
         "types": [

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `fssp.base`
+- Field with path `additional_info.vehicle.owner.enforcement_proceedings.has_proceedings`
+
 ## v3.64.0
 
 ### Added

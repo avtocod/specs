@@ -1438,6 +1438,26 @@
                                         "base.alt"
                                     ]
                                 },
+                                "enforcement_proceedings": {
+                                    "type": "object",
+                                    "description": "Исполнительные производства",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "has_proceedings": {
+                                            "description": "Есть ли исполнительные производства?",
+                                            "type": [
+                                                "boolean",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                true
+                                            ],
+                                            "fillable_by": [
+                                                "fssp.base"
+                                            ]
+                                        }
+                                    }
+                                },
                                 "geo": {
                                     "description": "Гео-данные владельца (техники)",
                                     "oneOf": [

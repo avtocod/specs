@@ -127,6 +127,9 @@
             "owner": {
                 "type": "LEGAL",
                 "phone_number": "91234567890",
+                "enforcement_proceedings": {
+                    "has_proceedings": true
+                },
                 "geo": {
                     "country": null,
                     "region": "Пензенская",

@@ -589,6 +589,24 @@
         ]
     },
     {
+        "path": "tech_data.date.update",
+        "description": "Характеристики ТС: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base",
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "customs.base",
+            "gibdd.eaisto",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.category.code",
         "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
         "types": [
@@ -1246,6 +1264,17 @@
         ]
     },
     {
+        "path": "diagnostic_cards.date.update",
+        "description": "Диагностические карты: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
+        ]
+    },
+    {
         "path": "ownership.history.items[].date.start",
         "description": "История владения: Дата начала владения",
         "types": [
@@ -1582,6 +1611,20 @@
         "fillable_by": [
             "base",
             "base.ext"
+        ]
+    },
+    {
+        "path": "registration_actions.date.update",
+        "description": "Регистрационные действия: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi",
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -3099,6 +3142,17 @@
         ]
     },
     {
+        "path": "customs.history.date.update",
+        "description": "История по таможне: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base",
+            "base.tech"
+        ]
+    },
+    {
         "path": "leasings.items[].tin",
         "description": "Лизинг: Номер ИНН компании-лизингополучателя",
         "types": [
@@ -3743,6 +3797,20 @@
         ]
     },
     {
+        "path": "fines.date.update",
+        "description": "Штрафы: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines",
+            "fines.alt",
+            "fines.madiampp",
+            "fines.base.ext"
+        ]
+    },
+    {
         "path": "mileages.items[].date.event",
         "description": "Пробеги: Дата фиксирования пробега",
         "types": [
@@ -4191,6 +4259,17 @@
         ],
         "fillable_by": [
             "ads.base"
+        ]
+    },
+    {
+        "path": "ads.history.date.update",
+        "description": "История объявлений: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base",
+            "images.archive"
         ]
     },
     {
@@ -5430,6 +5509,16 @@
     {
         "path": "commercial_use.items[].company.type",
         "description": "Коммерческое использование ТС: Тип компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.date.update",
+        "description": "Коммерческое использование ТС: Дата обновления данных",
         "types": [
             "string"
         ],

@@ -1318,6 +1318,36 @@
                             }
                         }
                     }
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-01-16 22:10:00"
+                            ],
+                            "fillable_by": [
+                                "references.base",
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "customs.base",
+                                "gibdd.eaisto",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        }
+                    }
                 }
             }
         },
@@ -2802,6 +2832,32 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-01-17 19:11:00"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
                         }
                     }
                 },
@@ -4441,6 +4497,32 @@
                         "fines.base.ext"
                     ]
                 },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-05-16 22:10:00"
+                            ],
+                            "fillable_by": [
+                                "fines.base",
+                                "gibdd.fines",
+                                "fines.alt",
+                                "fines.madiampp",
+                                "fines.base.ext"
+                            ]
+                        }
+                    }
+                },
                 "count": {
                     "description": "Количество вхождений",
                     "type": "integer",
@@ -4892,6 +4974,29 @@
                                             }
                                         }
                                     }
+                                }
+                            }
+                        },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2020-02-11 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "customs.base",
+                                        "base.tech"
+                                    ]
                                 }
                             }
                         },
@@ -8188,6 +8293,29 @@
                         }
                     }
                 },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-02-12 22:10:00"
+                            ],
+                            "fillable_by": [
+                                "gibdd.eaisto",
+                                "tech.ext"
+                            ]
+                        }
+                    }
+                },
                 "count": {
                     "description": "Количество вхождений",
                     "type": "integer",
@@ -9069,6 +9197,29 @@
                                             }
                                         }
                                     }
+                                }
+                            }
+                        },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2020-02-19 21:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "ads.base",
+                                        "images.archive"
+                                    ]
                                 }
                             }
                         },
@@ -10670,6 +10821,28 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-03-09 21:10:00"
+                            ],
+                            "fillable_by": [
+                                "carsharing.registry"
+                            ]
                         }
                     }
                 },

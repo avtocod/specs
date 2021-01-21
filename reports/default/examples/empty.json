@@ -116,7 +116,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "date": {
+            "update": null
+        }
     },
     "additional_info": {
         "vehicle": {
@@ -323,6 +326,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1,
         "has_annulment": null
     },
@@ -553,6 +559,9 @@
             }
         ],
         "has_fines": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "leasings": {
@@ -623,6 +632,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1053,6 +1065,9 @@
                 "reg_num": null
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "utilizations": {
@@ -1183,6 +1198,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1395,6 +1413,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "recall_campaigns": {

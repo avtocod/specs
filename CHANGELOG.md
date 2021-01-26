@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Possible value `E` for a field with path `additional_info.vehicle.category.code`
+
 ## v3.64.0
 
 ### Added

@@ -2423,6 +2423,17 @@
         ]
     },
     {
+        "path": "stealings.date.update",
+        "description": "Проверка на угон: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "base.taxi"
+        ]
+    },
+    {
         "path": "utilizations.items[].date.utilization",
         "description": "Утилизация: Дата утилизации",
         "types": [

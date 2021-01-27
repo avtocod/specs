@@ -9,6 +9,25 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Possible value `E` for a field with path `additional_info.vehicle.category.code`
+- Field with path `ads.history.date.update`
+- Field with path `commercial_use.date.update`
+- Field with path `customs.history.date.update`
+- Field with path `diagnostic_cards.date.update`
+- Field with path `fines.date.update`
+- Field with path `gots_auctions.date.update`
+- Field with path `images.photos.date.update`
+- Field with path `insurance.osago.date.update`
+- Field with path `leasings.date.update`
+- Field with path `market_prices.ads.date.update`
+- Field with path `ownership.history.date.update`
+- Field with path `pledges_nbki.date.update`
+- Field with path `recall_campaigns.date.update`
+- Field with path `registration_actions.date.update`
+- Field with path `repairs.history.date.update`
+- Field with path `service_history.date.update`
+- Field with path `stealings.date.update`
+- Field with path `tech_data.date.update`
+- Field with path `utilizations.date.update`
 
 ## v3.64.0
 

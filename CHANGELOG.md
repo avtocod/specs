@@ -26,6 +26,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `ads.history.date.update`
 - Field with path `commercial_use.date.update`
 - Field with path `stealings.date.update`
+- Field with path `recall_campaigns.date.update`
 
 ## v3.64.0
 

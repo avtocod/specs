@@ -589,6 +589,24 @@
         ]
     },
     {
+        "path": "tech_data.date.update",
+        "description": "Характеристики ТС: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base",
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "customs.base",
+            "gibdd.eaisto",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.category.code",
         "description": "Дополнительная информация: Код категории ТС [A, B, B1, ...]",
         "types": [
@@ -1256,6 +1274,17 @@
         ]
     },
     {
+        "path": "diagnostic_cards.date.update",
+        "description": "Диагностические карты: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.eaisto",
+            "tech.ext"
+        ]
+    },
+    {
         "path": "ownership.history.items[].date.start",
         "description": "История владения: Дата начала владения",
         "types": [
@@ -1366,6 +1395,20 @@
             "base.ext",
             "base.alt",
             "gibdd.history"
+        ]
+    },
+    {
+        "path": "ownership.history.date.update",
+        "description": "История владения: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.history",
+            "base",
+            "base.ext",
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -1578,6 +1621,20 @@
         "fillable_by": [
             "base",
             "base.ext"
+        ]
+    },
+    {
+        "path": "registration_actions.date.update",
+        "description": "Регистрационные действия: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi",
+            "base.alt",
+            "regactions.registry"
         ]
     },
     {
@@ -1978,6 +2035,22 @@
         ]
     },
     {
+        "path": "insurance.osago.date.update",
+        "description": "ОСАГО: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ramiosago.base",
+            "ramiosago.base.ext",
+            "base",
+            "base.ext",
+            "base.alt",
+            "ramiosago.alt",
+            "ramiosago.alt.ext"
+        ]
+    },
+    {
         "path": "calculate.tax.moscow.yearly.amount",
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
         "types": [
@@ -2360,6 +2433,17 @@
         ]
     },
     {
+        "path": "stealings.date.update",
+        "description": "Проверка на угон: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "base.taxi"
+        ]
+    },
+    {
         "path": "utilizations.items[].date.utilization",
         "description": "Утилизация: Дата утилизации",
         "types": [
@@ -2391,6 +2475,18 @@
         "description": "Утилизация: Было ли ТС утилизировано?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
+        ]
+    },
+    {
+        "path": "utilizations.date.update",
+        "description": "Утилизация: Дата обновления данных",
+        "types": [
+            "string"
         ],
         "fillable_by": [
             "base",
@@ -2902,6 +2998,16 @@
         ]
     },
     {
+        "path": "pledges_nbki.date.update",
+        "description": "Обременения на ТС по данным НБКИ: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.nbki"
+        ]
+    },
+    {
         "path": "customs.history.items[].date.event",
         "description": "История по таможне: Дата получения таможенной декларации",
         "types": [
@@ -3057,6 +3163,17 @@
         ]
     },
     {
+        "path": "customs.history.date.update",
+        "description": "История по таможне: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base",
+            "base.tech"
+        ]
+    },
+    {
         "path": "leasings.items[].tin",
         "description": "Лизинг: Номер ИНН компании-лизингополучателя",
         "types": [
@@ -3105,6 +3222,18 @@
         "description": "Лизинг: Приобреталось ли ТС в лизинг?",
         "types": [
             "boolean"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi"
+        ]
+    },
+    {
+        "path": "leasings.date.update",
+        "description": "Лизинг: Дата обновления данных",
+        "types": [
+            "string"
         ],
         "fillable_by": [
             "base",
@@ -3689,6 +3818,20 @@
         ]
     },
     {
+        "path": "fines.date.update",
+        "description": "Штрафы: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines",
+            "fines.alt",
+            "fines.madiampp",
+            "fines.base.ext"
+        ]
+    },
+    {
         "path": "mileages.items[].date.event",
         "description": "Пробеги: Дата фиксирования пробега",
         "types": [
@@ -3787,6 +3930,17 @@
     {
         "path": "images.photos.items[].uri",
         "description": "Фотографии ТС: URI фотографии ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "images.avtonomer",
+            "images.archive"
+        ]
+    },
+    {
+        "path": "images.photos.date.update",
+        "description": "Фотографии ТС: Дата обновления данных",
         "types": [
             "string"
         ],
@@ -4129,6 +4283,17 @@
         ]
     },
     {
+        "path": "ads.history.date.update",
+        "description": "История объявлений: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.base",
+            "images.archive"
+        ]
+    },
+    {
         "path": "car_price.items[].date.release",
         "description": "Стоимость ТС: Дата выпуска ТС",
         "types": [
@@ -4419,6 +4584,16 @@
         ]
     },
     {
+        "path": "repairs.history.date.update",
+        "description": "Ремонтные работы: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "repairs.history"
+        ]
+    },
+    {
         "path": "gots_auctions.items[].vehicle.mileage",
         "description": "Размещение ТС на аукционах ГОТС: Пробег ТС",
         "types": [
@@ -4521,6 +4696,16 @@
     {
         "path": "gots_auctions.items[].auction.client.phone_number",
         "description": "Размещение ТС на аукционах ГОТС: Телефонный номер клиента разместившего лот",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gots.history"
+        ]
+    },
+    {
+        "path": "gots_auctions.date.update",
+        "description": "Размещение ТС на аукционах ГОТС: Дата обновления данных",
         "types": [
             "string"
         ],
@@ -4932,6 +5117,17 @@
         ]
     },
     {
+        "path": "service_history.date.update",
+        "description": "История дилерского обслуживания: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "service.history",
+            "service.history.fitservice"
+        ]
+    },
+    {
         "path": "market_prices.ads.items[].amount.max",
         "description": "Рыночная стоимость ТС: Максимальное значение стоимости ТС, рассчитанное на основе объявлений о продаже ТС",
         "types": [
@@ -5282,6 +5478,16 @@
         ]
     },
     {
+        "path": "market_prices.ads.date.update",
+        "description": "Рыночная стоимость ТС: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.price"
+        ]
+    },
+    {
         "path": "commercial_use.items[].service.name",
         "description": "Коммерческое использование ТС: Название сервиса",
         "types": [
@@ -5324,6 +5530,16 @@
     {
         "path": "commercial_use.items[].company.type",
         "description": "Коммерческое использование ТС: Тип компании-владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.registry"
+        ]
+    },
+    {
+        "path": "commercial_use.date.update",
+        "description": "Коммерческое использование ТС: Дата обновления данных",
         "types": [
             "string"
         ],
@@ -5394,6 +5610,16 @@
     {
         "path": "recall_campaigns.items[].news.url",
         "description": "Отзывные кампании: Ссылка на новость об отзывной кампании",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.date.update",
+        "description": "Отзывные кампании: Дата обновления данных",
         "types": [
             "string"
         ],

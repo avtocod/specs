@@ -4,11 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## UNRELEASED
+## v3.65.0
 
 ### Added
 
-- Possible value `E` for a field with path `additional_info.vehicle.category.code`
 - Field with path `ads.history.date.update`
 - Field with path `commercial_use.date.update`
 - Field with path `customs.history.date.update`
@@ -28,6 +27,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `stealings.date.update`
 - Field with path `tech_data.date.update`
 - Field with path `utilizations.date.update`
+- Extend enum with `E` value for definition `additional_info.vehicle.category.code` in `./reports/default/json-schema.json`
 
 ## v3.64.0
 

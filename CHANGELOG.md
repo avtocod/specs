@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Possible value `E` for a field with path `additional_info.vehicle.category.code`
 - Field with path `ads.history.date.update`
 - Field with path `commercial_use.date.update`
 - Field with path `customs.history.date.update`

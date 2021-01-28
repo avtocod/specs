@@ -130,6 +130,9 @@
             "owner": {
                 "type": null,
                 "phone_number": null,
+                "enforcement_proceedings": {
+                    "has_proceedings": null
+                },
                 "geo": {
                     "country": null,
                     "region": null,

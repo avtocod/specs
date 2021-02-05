@@ -116,7 +116,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "date": {
+            "update": "2020-01-16 22:10:00"
+        }
     },
     "additional_info": {
         "vehicle": {
@@ -127,6 +130,9 @@
             "owner": {
                 "type": "LEGAL",
                 "phone_number": "91234567890",
+                "enforcement_proceedings": {
+                    "has_proceedings": true
+                },
                 "geo": {
                     "country": null,
                     "region": "Пензенская",
@@ -330,6 +336,9 @@
                 }
             }
         ],
+        "date": {
+            "update": "2020-01-17 19:11:00"
+        },
         "count": 1,
         "has_annulment": false
     },
@@ -539,6 +548,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2021-01-11 12:54:00"
+            },
             "count": 3
         }
     },
@@ -625,7 +637,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "date": {
+            "update": "2020-12-16 22:11:00"
+        }
     },
     "carfax": {
         "check": {
@@ -772,6 +787,9 @@
             }
         ],
         "has_fines": true,
+        "date": {
+            "update": "2020-05-16 22:10:00"
+        },
         "count": 1
     },
     "leasings": {
@@ -792,6 +810,9 @@
             }
         ],
         "used_in_leasing": true,
+        "date": {
+            "update": "2020-10-16 22:10:00"
+        },
         "count": 1
     },
     "customs": {
@@ -839,6 +860,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2020-02-11 22:10:00"
+            },
             "count": 1
         }
     },
@@ -981,6 +1005,9 @@
                 "in_pledge": true
             }
         ],
+        "date": {
+            "update": "2021-01-16 17:10:00"
+        },
         "count": 1
     },
     "insurance": {
@@ -1059,6 +1086,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2020-07-10 22:10:00"
+            },
             "count": 1
         }
     },
@@ -1240,7 +1270,10 @@
                     "house": null
                 }
             }
-        ]
+        ],
+        "date": {
+            "update": "2020-12-11 11:10:00"
+        }
     },
     "ownership": {
         "history": {
@@ -1265,6 +1298,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2021-01-12 11:12:00"
+            },
             "count": 1
         }
     },
@@ -1303,6 +1339,9 @@
                 "reg_num": "А332АВ177"
             }
         ],
+        "date": {
+            "update": "2020-02-12 22:10:00"
+        },
         "count": 1
     },
     "utilizations": {
@@ -1320,6 +1359,9 @@
             }
         ],
         "was_utilized": true,
+        "date": {
+            "update": "2020-11-16 11:10:00"
+        },
         "count": 1
     },
     "images": {
@@ -1340,6 +1382,9 @@
                     "uri": "https:\/\/lorempixel.com\/1024\/740\/transport\/?73445"
                 }
             ],
+            "date": {
+                "update": "2020-12-22 22:10:00"
+            },
             "count": 1
         }
     },
@@ -1441,6 +1486,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2020-02-19 21:10:00"
+            },
             "count": 1
         }
     },
@@ -1547,6 +1595,9 @@
                 }
             }
         ],
+        "date": {
+            "update": "2019-05-12 22:10:00"
+        },
         "count": 1
     },
     "market_prices": {
@@ -1644,7 +1695,10 @@
                         ]
                     }
                 }
-            ]
+            ],
+            "date": {
+                "update": "2019-07-06 22:10:00"
+            }
         }
     },
     "commercial_use": {
@@ -1661,6 +1715,9 @@
                 }
             }
         ],
+        "date": {
+            "update": "2020-03-09 21:10:00"
+        },
         "count": 1
     },
     "recall_campaigns": {
@@ -1683,6 +1740,9 @@
                 }
             }
         ],
+        "date": {
+            "update": "2019-11-14 12:10:00"
+        },
         "count": 1
     }
 }

@@ -116,7 +116,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "date": {
+            "update": null
+        }
     },
     "additional_info": {
         "vehicle": {
@@ -127,6 +130,9 @@
             "owner": {
                 "type": null,
                 "phone_number": null,
+                "enforcement_proceedings": {
+                    "has_proceedings": null
+                },
                 "geo": {
                     "country": null,
                     "region": null,
@@ -323,6 +329,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1,
         "has_annulment": null
     },
@@ -374,6 +383,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -404,7 +416,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "date": {
+            "update": null
+        }
     },
     "carfax": {
         "check": {
@@ -547,6 +562,9 @@
             }
         ],
         "has_fines": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "leasings": {
@@ -567,6 +585,9 @@
             }
         ],
         "used_in_leasing": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "customs": {
@@ -614,6 +635,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -733,6 +757,9 @@
                 "in_pledge": null
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "insurance": {
@@ -811,6 +838,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -972,6 +1002,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "ownership": {
@@ -997,6 +1030,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1035,6 +1071,9 @@
                 "reg_num": null
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "utilizations": {
@@ -1052,6 +1091,9 @@
             }
         ],
         "was_utilized": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "images": {
@@ -1072,6 +1114,9 @@
                     "uri": null
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1159,6 +1204,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1254,6 +1302,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "market_prices": {
@@ -1348,7 +1399,10 @@
                         ]
                     }
                 }
-            ]
+            ],
+            "date": {
+                "update": null
+            }
         }
     },
     "commercial_use": {
@@ -1365,6 +1419,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "recall_campaigns": {
@@ -1387,6 +1444,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     }
 }

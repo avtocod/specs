@@ -1678,10 +1678,7 @@
                             }
                         },
                         "notes": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
+                            "type": "array",
                             "description": "Заметки по ТС",
                             "items": {
                                 "type": "string"
@@ -9967,10 +9964,7 @@
                                     },
                                     "notes": {
                                         "description": "Дополнительная информация по комплектации ТС",
-                                        "type": [
-                                            "array",
-                                            "null"
-                                        ],
+                                        "type": "array",
                                         "items": {
                                             "type": "string"
                                         },

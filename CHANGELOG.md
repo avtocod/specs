@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Fixed
+
+- Data type for field with path `additional_info.vehicle.notes` in `./reports/default/json-schema.json`
+- Data type for field with path `service_history.items[].vehicle.notes` in `./reports/default/json-schema.json`
+
 ## v3.66.0
 
 ### Added

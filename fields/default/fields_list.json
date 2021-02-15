@@ -2888,6 +2888,18 @@
         ]
     },
     {
+        "path": "pledges.date.update",
+        "description": "Обременения на ТС: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house",
+            "pledge.fnp"
+        ]
+    },
+    {
         "path": "pledges_nbki.items[].date.end",
         "description": "Обременения на ТС по данным НБКИ: Дата окончания обременения",
         "types": [

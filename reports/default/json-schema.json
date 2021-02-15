@@ -5778,6 +5778,30 @@
                         }
                     }
                 },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-10-17 00:20:00"
+                            ],
+                            "fillable_by": [
+                                "pledge",
+                                "pledge.house",
+                                "pledge.fnp"
+                            ]
+                        }
+                    }
+                },
                 "count": {
                     "description": "Количество вхождений",
                     "type": "integer",

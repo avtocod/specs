@@ -258,5 +258,10 @@
         "name": "fssp.base",
         "description": "Данные об исполнительных производствах в базе ФССП",
         "enabled": true
+    },
+    {
+        "name": "rsaosago.base.ext",
+        "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС",
+        "enabled": true
     }
 ]

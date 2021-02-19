@@ -4,6 +4,49 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `rsaosago.base.ext`
+
+### Changed
+
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].date.start` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].date.end` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].restrictions.drivers` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.series` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.number` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.is_active` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.expired` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.status` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.is_active` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.using_type.status` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.using_type.description` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.amount.value` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.amount.currency` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.kbm` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.is_follow_to_registration` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.has_trailer` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.model.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.reg_num` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.vin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.body` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.engine.power.hp` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.weight.max` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.dob` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.tin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.dob` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.tin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].geo` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.date.update` also fillable by `rsaosago.base.ext`
+
 ## v3.67.0
 
 ### Added

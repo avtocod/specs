@@ -45,11 +45,6 @@
         "alias": "crane"
     },
     {
-        "id": "ID_TYPE_SELF_LOADER",
-        "name": "Самопогрузчик",
-        "alias": "self_loader"
-    },
-    {
         "id": "ID_TYPE_DREDGE",
         "name": "Экскаватор",
         "alias": "dredge"
@@ -73,6 +68,11 @@
         "id": "ID_TYPE_SCOOTER",
         "name": "Скутер",
         "alias": "scooter"
+    },
+    {
+        "id": "ID_TYPE_SELF_LOADER",
+        "name": "Самопогрузчик",
+        "alias": "self_loader"
     },
     {
         "id": "ID_TYPE_SNOWMOBILE",

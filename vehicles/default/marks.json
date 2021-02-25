@@ -1,965 +1,5 @@
 [
     {
-        "name": "AC",
-        "id": "ID_MARK_AC"
-    },
-    {
-        "name": "AM General",
-        "id": "ID_MARK_AM_GENERAL"
-    },
-    {
-        "name": "AMC",
-        "id": "ID_MARK_AMC"
-    },
-    {
-        "name": "Acura",
-        "id": "ID_MARK_ACURA"
-    },
-    {
-        "name": "Adler",
-        "id": "ID_MARK_ADLER"
-    },
-    {
-        "name": "Alfa Romeo",
-        "id": "ID_MARK_ALFA_ROMEO"
-    },
-    {
-        "name": "Alpina",
-        "id": "ID_MARK_ALPINA"
-    },
-    {
-        "name": "Alpine",
-        "id": "ID_MARK_ALPINE"
-    },
-    {
-        "name": "Ariel",
-        "id": "ID_MARK_ARIEL"
-    },
-    {
-        "name": "Aro",
-        "id": "ID_MARK_ARO"
-    },
-    {
-        "name": "Asia",
-        "id": "ID_MARK_ASIA"
-    },
-    {
-        "name": "Aston Martin",
-        "id": "ID_MARK_ASTON_MARTIN"
-    },
-    {
-        "name": "Audi",
-        "id": "ID_MARK_AUDI"
-    },
-    {
-        "name": "Austin",
-        "id": "ID_MARK_AUSTIN"
-    },
-    {
-        "name": "Autobianchi",
-        "id": "ID_MARK_AUTOBIANCHI"
-    },
-    {
-        "name": "BMW",
-        "id": "ID_MARK_BMW"
-    },
-    {
-        "name": "BYD",
-        "id": "ID_MARK_BYD"
-    },
-    {
-        "name": "Bajaj",
-        "id": "ID_MARK_BAJAJ"
-    },
-    {
-        "name": "Baltijas Dzips",
-        "id": "ID_MARK_BALTIJAS_DZIPS"
-    },
-    {
-        "name": "Batmobile",
-        "id": "ID_MARK_BATMOBILE"
-    },
-    {
-        "name": "Beijing",
-        "id": "ID_MARK_BEIJING"
-    },
-    {
-        "name": "Bentley",
-        "id": "ID_MARK_BENTLEY"
-    },
-    {
-        "name": "Bertone",
-        "id": "ID_MARK_BERTONE"
-    },
-    {
-        "name": "Bilenkin",
-        "id": "ID_MARK_BILENKIN"
-    },
-    {
-        "name": "Bitter",
-        "id": "ID_MARK_BITTER"
-    },
-    {
-        "name": "Borgward",
-        "id": "ID_MARK_BORGWARD"
-    },
-    {
-        "name": "Brabus",
-        "id": "ID_MARK_BRABUS"
-    },
-    {
-        "name": "Brilliance",
-        "id": "ID_MARK_BRILLIANCE"
-    },
-    {
-        "name": "Bristol",
-        "id": "ID_MARK_BRISTOL"
-    },
-    {
-        "name": "Bufori",
-        "id": "ID_MARK_BUFORI"
-    },
-    {
-        "name": "Bugatti",
-        "id": "ID_MARK_BUGATTI"
-    },
-    {
-        "name": "Buick",
-        "id": "ID_MARK_BUICK"
-    },
-    {
-        "name": "Byvin",
-        "id": "ID_MARK_BYVIN"
-    },
-    {
-        "name": "Cadillac",
-        "id": "ID_MARK_CADILLAC"
-    },
-    {
-        "name": "Callaway",
-        "id": "ID_MARK_CALLAWAY"
-    },
-    {
-        "name": "Carbodies",
-        "id": "ID_MARK_CARBODIES"
-    },
-    {
-        "name": "Caterham",
-        "id": "ID_MARK_CATERHAM"
-    },
-    {
-        "name": "ChangFeng",
-        "id": "ID_MARK_CHANGFENG"
-    },
-    {
-        "name": "Changan",
-        "id": "ID_MARK_CHANGAN"
-    },
-    {
-        "name": "Chery",
-        "id": "ID_MARK_CHERY"
-    },
-    {
-        "name": "Chevrolet",
-        "id": "ID_MARK_CHEVROLET"
-    },
-    {
-        "name": "Chrysler",
-        "id": "ID_MARK_CHRYSLER"
-    },
-    {
-        "name": "Citroen",
-        "id": "ID_MARK_CITROEN"
-    },
-    {
-        "name": "Cizeta",
-        "id": "ID_MARK_CIZETA"
-    },
-    {
-        "name": "Coggiola",
-        "id": "ID_MARK_COGGIOLA"
-    },
-    {
-        "name": "DS",
-        "id": "ID_MARK_DS"
-    },
-    {
-        "name": "Dacia",
-        "id": "ID_MARK_DACIA"
-    },
-    {
-        "name": "Dadi",
-        "id": "ID_MARK_DADI"
-    },
-    {
-        "name": "Daewoo",
-        "id": "ID_MARK_DAEWOO"
-    },
-    {
-        "name": "Daihatsu",
-        "id": "ID_MARK_DAIHATSU"
-    },
-    {
-        "name": "Daimler",
-        "id": "ID_MARK_DAIMLER"
-    },
-    {
-        "name": "Datsun",
-        "id": "ID_MARK_DATSUN"
-    },
-    {
-        "name": "De Tomaso",
-        "id": "ID_MARK_DE_TOMASO"
-    },
-    {
-        "name": "DeLorean",
-        "id": "ID_MARK_DELOREAN"
-    },
-    {
-        "name": "DeSoto",
-        "id": "ID_MARK_DESOTO"
-    },
-    {
-        "name": "Delage",
-        "id": "ID_MARK_DELAGE"
-    },
-    {
-        "name": "Derways",
-        "id": "ID_MARK_DERWAYS"
-    },
-    {
-        "name": "Dodge",
-        "id": "ID_MARK_DODGE"
-    },
-    {
-        "name": "DongFeng",
-        "id": "ID_MARK_DONGFENG"
-    },
-    {
-        "name": "Doninvest",
-        "id": "ID_MARK_DONINVEST"
-    },
-    {
-        "name": "Donkervoort",
-        "id": "ID_MARK_DONKERVOORT"
-    },
-    {
-        "name": "E-Car",
-        "id": "ID_MARK_E_CAR"
-    },
-    {
-        "name": "Eagle",
-        "id": "ID_MARK_EAGLE"
-    },
-    {
-        "name": "Eagle Cars",
-        "id": "ID_MARK_EAGLE_CARS"
-    },
-    {
-        "name": "Ecomotors",
-        "id": "ID_MARK_ECOMOTORS"
-    },
-    {
-        "name": "Excalibur",
-        "id": "ID_MARK_EXCALIBUR"
-    },
-    {
-        "name": "FAW",
-        "id": "ID_MARK_FAW"
-    },
-    {
-        "name": "FSO",
-        "id": "ID_MARK_FSO"
-    },
-    {
-        "name": "Ferrari",
-        "id": "ID_MARK_FERRARI"
-    },
-    {
-        "name": "Fiat",
-        "id": "ID_MARK_FIAT"
-    },
-    {
-        "name": "Fisker",
-        "id": "ID_MARK_FISKER"
-    },
-    {
-        "name": "Ford",
-        "id": "ID_MARK_FORD"
-    },
-    {
-        "name": "Foton",
-        "id": "ID_MARK_FOTON"
-    },
-    {
-        "name": "Fuqi",
-        "id": "ID_MARK_FUQI"
-    },
-    {
-        "name": "GMC",
-        "id": "ID_MARK_GMC"
-    },
-    {
-        "name": "GP",
-        "id": "ID_MARK_GP"
-    },
-    {
-        "name": "Geely",
-        "id": "ID_MARK_GEELY"
-    },
-    {
-        "name": "Genesis",
-        "id": "ID_MARK_GENESIS"
-    },
-    {
-        "name": "Geo",
-        "id": "ID_MARK_GEO"
-    },
-    {
-        "name": "Gonow",
-        "id": "ID_MARK_GONOW"
-    },
-    {
-        "name": "Gordon",
-        "id": "ID_MARK_GORDON"
-    },
-    {
-        "name": "Great Wall",
-        "id": "ID_MARK_GREAT_WALL"
-    },
-    {
-        "name": "Hafei",
-        "id": "ID_MARK_HAFEI"
-    },
-    {
-        "name": "Haima",
-        "id": "ID_MARK_HAIMA"
-    },
-    {
-        "name": "Hanomag",
-        "id": "ID_MARK_HANOMAG"
-    },
-    {
-        "name": "Haval",
-        "id": "ID_MARK_HAVAL"
-    },
-    {
-        "name": "Hawtai",
-        "id": "ID_MARK_HAWTAI"
-    },
-    {
-        "name": "Hindustan",
-        "id": "ID_MARK_HINDUSTAN"
-    },
-    {
-        "name": "Hispano-Suiza",
-        "id": "ID_MARK_HISPANO_SUIZA"
-    },
-    {
-        "name": "Holden",
-        "id": "ID_MARK_HOLDEN"
-    },
-    {
-        "name": "Honda",
-        "id": "ID_MARK_HONDA"
-    },
-    {
-        "name": "HuangHai",
-        "id": "ID_MARK_HUANGHAI"
-    },
-    {
-        "name": "Hudson",
-        "id": "ID_MARK_HUDSON"
-    },
-    {
-        "name": "Hummer",
-        "id": "ID_MARK_HUMMER"
-    },
-    {
-        "name": "Hyundai",
-        "id": "ID_MARK_HYUNDAI"
-    },
-    {
-        "name": "Infiniti",
-        "id": "ID_MARK_INFINITI"
-    },
-    {
-        "name": "Innocenti",
-        "id": "ID_MARK_INNOCENTI"
-    },
-    {
-        "name": "Invicta",
-        "id": "ID_MARK_INVICTA"
-    },
-    {
-        "name": "Iran Khodro",
-        "id": "ID_MARK_IRAN_KHODRO"
-    },
-    {
-        "name": "Isdera",
-        "id": "ID_MARK_ISDERA"
-    },
-    {
-        "name": "Isuzu",
-        "id": "ID_MARK_ISUZU"
-    },
-    {
-        "name": "JAC",
-        "id": "ID_MARK_JAC"
-    },
-    {
-        "name": "JMC",
-        "id": "ID_MARK_JMC"
-    },
-    {
-        "name": "Jaguar",
-        "id": "ID_MARK_JAGUAR"
-    },
-    {
-        "name": "Jeep",
-        "id": "ID_MARK_JEEP"
-    },
-    {
-        "name": "Jensen",
-        "id": "ID_MARK_JENSEN"
-    },
-    {
-        "name": "KTM AG",
-        "id": "ID_MARK_KTM_AG"
-    },
-    {
-        "name": "Kia",
-        "id": "ID_MARK_KIA"
-    },
-    {
-        "name": "Koenigsegg",
-        "id": "ID_MARK_KOENIGSEGG"
-    },
-    {
-        "name": "LADA (ВАЗ)",
-        "id": "ID_MARK_LADA_VAZ"
-    },
-    {
-        "name": "LTI",
-        "id": "ID_MARK_LTI"
-    },
-    {
-        "name": "Lamborghini",
-        "id": "ID_MARK_LAMBORGHINI"
-    },
-    {
-        "name": "Lancia",
-        "id": "ID_MARK_LANCIA"
-    },
-    {
-        "name": "Land Rover",
-        "id": "ID_MARK_LAND_ROVER"
-    },
-    {
-        "name": "Landwind",
-        "id": "ID_MARK_LANDWIND"
-    },
-    {
-        "name": "Lexus",
-        "id": "ID_MARK_LEXUS"
-    },
-    {
-        "name": "Liebao Motor",
-        "id": "ID_MARK_LIEBAO_MOTOR"
-    },
-    {
-        "name": "Lifan",
-        "id": "ID_MARK_LIFAN"
-    },
-    {
-        "name": "Lincoln",
-        "id": "ID_MARK_LINCOLN"
-    },
-    {
-        "name": "Lotus",
-        "id": "ID_MARK_LOTUS"
-    },
-    {
-        "name": "Luxgen",
-        "id": "ID_MARK_LUXGEN"
-    },
-    {
-        "name": "MG",
-        "id": "ID_MARK_MG"
-    },
-    {
-        "name": "MINI",
-        "id": "ID_MARK_MINI"
-    },
-    {
-        "name": "Mahindra",
-        "id": "ID_MARK_MAHINDRA"
-    },
-    {
-        "name": "Marcos",
-        "id": "ID_MARK_MARCOS"
-    },
-    {
-        "name": "Marlin",
-        "id": "ID_MARK_MARLIN"
-    },
-    {
-        "name": "Marussia",
-        "id": "ID_MARK_MARUSSIA"
-    },
-    {
-        "name": "Maruti",
-        "id": "ID_MARK_MARUTI"
-    },
-    {
-        "name": "Maserati",
-        "id": "ID_MARK_MASERATI"
-    },
-    {
-        "name": "Maybach",
-        "id": "ID_MARK_MAYBACH"
-    },
-    {
-        "name": "Mazda",
-        "id": "ID_MARK_MAZDA"
-    },
-    {
-        "name": "McLaren",
-        "id": "ID_MARK_MCLAREN"
-    },
-    {
-        "name": "Mega",
-        "id": "ID_MARK_MEGA"
-    },
-    {
-        "name": "Mercedes-Benz",
-        "id": "ID_MARK_MERCEDES_BENZ"
-    },
-    {
-        "name": "Mercury",
-        "id": "ID_MARK_MERCURY"
-    },
-    {
-        "name": "Metrocab",
-        "id": "ID_MARK_METROCAB"
-    },
-    {
-        "name": "Microcar",
-        "id": "ID_MARK_MICROCAR"
-    },
-    {
-        "name": "Minelli",
-        "id": "ID_MARK_MINELLI"
-    },
-    {
-        "name": "Mitsubishi",
-        "id": "ID_MARK_MITSUBISHI"
-    },
-    {
-        "name": "Mitsuoka",
-        "id": "ID_MARK_MITSUOKA"
-    },
-    {
-        "name": "Morgan",
-        "id": "ID_MARK_MORGAN"
-    },
-    {
-        "name": "Morris",
-        "id": "ID_MARK_MORRIS"
-    },
-    {
-        "name": "Nissan",
-        "id": "ID_MARK_NISSAN"
-    },
-    {
-        "name": "Noble",
-        "id": "ID_MARK_NOBLE"
-    },
-    {
-        "name": "Oldsmobile",
-        "id": "ID_MARK_OLDSMOBILE"
-    },
-    {
-        "name": "Opel",
-        "id": "ID_MARK_OPEL"
-    },
-    {
-        "name": "Osca",
-        "id": "ID_MARK_OSCA"
-    },
-    {
-        "name": "PGO",
-        "id": "ID_MARK_PGO"
-    },
-    {
-        "name": "PUCH",
-        "id": "ID_MARK_PUCH"
-    },
-    {
-        "name": "Packard",
-        "id": "ID_MARK_PACKARD"
-    },
-    {
-        "name": "Pagani",
-        "id": "ID_MARK_PAGANI"
-    },
-    {
-        "name": "Panoz",
-        "id": "ID_MARK_PANOZ"
-    },
-    {
-        "name": "Perodua",
-        "id": "ID_MARK_PERODUA"
-    },
-    {
-        "name": "Peugeot",
-        "id": "ID_MARK_PEUGEOT"
-    },
-    {
-        "name": "Piaggio",
-        "id": "ID_MARK_PIAGGIO"
-    },
-    {
-        "name": "Plymouth",
-        "id": "ID_MARK_PLYMOUTH"
-    },
-    {
-        "name": "Pontiac",
-        "id": "ID_MARK_PONTIAC"
-    },
-    {
-        "name": "Porsche",
-        "id": "ID_MARK_PORSCHE"
-    },
-    {
-        "name": "Premier",
-        "id": "ID_MARK_PREMIER"
-    },
-    {
-        "name": "Proton",
-        "id": "ID_MARK_PROTON"
-    },
-    {
-        "name": "Puma",
-        "id": "ID_MARK_PUMA"
-    },
-    {
-        "name": "Qoros",
-        "id": "ID_MARK_QOROS"
-    },
-    {
-        "name": "Qvale",
-        "id": "ID_MARK_QVALE"
-    },
-    {
-        "name": "Ravon",
-        "id": "ID_MARK_RAVON"
-    },
-    {
-        "name": "Reliant",
-        "id": "ID_MARK_RELIANT"
-    },
-    {
-        "name": "Renaissance",
-        "id": "ID_MARK_RENAISSANCE"
-    },
-    {
-        "name": "Renault",
-        "id": "ID_MARK_RENAULT"
-    },
-    {
-        "name": "Renault Samsung",
-        "id": "ID_MARK_RENAULT_SAMSUNG"
-    },
-    {
-        "name": "Rezvani",
-        "id": "ID_MARK_REZVANI"
-    },
-    {
-        "name": "Rimac",
-        "id": "ID_MARK_RIMAC"
-    },
-    {
-        "name": "Rolls-Royce",
-        "id": "ID_MARK_ROLLS_ROYCE"
-    },
-    {
-        "name": "Ronart",
-        "id": "ID_MARK_RONART"
-    },
-    {
-        "name": "Rover",
-        "id": "ID_MARK_ROVER"
-    },
-    {
-        "name": "SEAT",
-        "id": "ID_MARK_SEAT"
-    },
-    {
-        "name": "Saab",
-        "id": "ID_MARK_SAAB"
-    },
-    {
-        "name": "Saleen",
-        "id": "ID_MARK_SALEEN"
-    },
-    {
-        "name": "Santana",
-        "id": "ID_MARK_SANTANA"
-    },
-    {
-        "name": "Saturn",
-        "id": "ID_MARK_SATURN"
-    },
-    {
-        "name": "Scion",
-        "id": "ID_MARK_SCION"
-    },
-    {
-        "name": "Shanghai Maple",
-        "id": "ID_MARK_SHANGHAI_MAPLE"
-    },
-    {
-        "name": "ShuangHuan",
-        "id": "ID_MARK_SHUANGHUAN"
-    },
-    {
-        "name": "Skoda",
-        "id": "ID_MARK_SKODA"
-    },
-    {
-        "name": "Smart",
-        "id": "ID_MARK_SMART"
-    },
-    {
-        "name": "Soueast",
-        "id": "ID_MARK_SOUEAST"
-    },
-    {
-        "name": "Spectre",
-        "id": "ID_MARK_SPECTRE"
-    },
-    {
-        "name": "Spyker",
-        "id": "ID_MARK_SPYKER"
-    },
-    {
-        "name": "SsangYong",
-        "id": "ID_MARK_SSANGYONG"
-    },
-    {
-        "name": "Steyr",
-        "id": "ID_MARK_STEYR"
-    },
-    {
-        "name": "Subaru",
-        "id": "ID_MARK_SUBARU"
-    },
-    {
-        "name": "Suzuki",
-        "id": "ID_MARK_SUZUKI"
-    },
-    {
-        "name": "TATA",
-        "id": "ID_MARK_TATA"
-    },
-    {
-        "name": "TVR",
-        "id": "ID_MARK_TVR"
-    },
-    {
-        "name": "Talbot",
-        "id": "ID_MARK_TALBOT"
-    },
-    {
-        "name": "Tatra",
-        "id": "ID_MARK_TATRA"
-    },
-    {
-        "name": "Tazzari",
-        "id": "ID_MARK_TAZZARI"
-    },
-    {
-        "name": "Tesla",
-        "id": "ID_MARK_TESLA"
-    },
-    {
-        "name": "Think",
-        "id": "ID_MARK_THINK"
-    },
-    {
-        "name": "Tianma",
-        "id": "ID_MARK_TIANMA"
-    },
-    {
-        "name": "Tianye",
-        "id": "ID_MARK_TIANYE"
-    },
-    {
-        "name": "Tofas",
-        "id": "ID_MARK_TOFAS"
-    },
-    {
-        "name": "Toyota",
-        "id": "ID_MARK_TOYOTA"
-    },
-    {
-        "name": "Trabant",
-        "id": "ID_MARK_TRABANT"
-    },
-    {
-        "name": "Tramontana",
-        "id": "ID_MARK_TRAMONTANA"
-    },
-    {
-        "name": "Triumph",
-        "id": "ID_MARK_TRIUMPH"
-    },
-    {
-        "name": "Ultima",
-        "id": "ID_MARK_ULTIMA"
-    },
-    {
-        "name": "Vauxhall",
-        "id": "ID_MARK_VAUXHALL"
-    },
-    {
-        "name": "Vector",
-        "id": "ID_MARK_VECTOR"
-    },
-    {
-        "name": "Venturi",
-        "id": "ID_MARK_VENTURI"
-    },
-    {
-        "name": "Volkswagen",
-        "id": "ID_MARK_VOLKSWAGEN"
-    },
-    {
-        "name": "Volvo",
-        "id": "ID_MARK_VOLVO"
-    },
-    {
-        "name": "Vortex",
-        "id": "ID_MARK_VORTEX"
-    },
-    {
-        "name": "W Motors",
-        "id": "ID_MARK_W_MOTORS"
-    },
-    {
-        "name": "Wanderer",
-        "id": "ID_MARK_WANDERER"
-    },
-    {
-        "name": "Wartburg",
-        "id": "ID_MARK_WARTBURG"
-    },
-    {
-        "name": "Westfield",
-        "id": "ID_MARK_WESTFIELD"
-    },
-    {
-        "name": "Wiesmann",
-        "id": "ID_MARK_WIESMANN"
-    },
-    {
-        "name": "Willys",
-        "id": "ID_MARK_WILLYS"
-    },
-    {
-        "name": "Xin Kai",
-        "id": "ID_MARK_XIN_KAI"
-    },
-    {
-        "name": "ZX",
-        "id": "ID_MARK_ZX"
-    },
-    {
-        "name": "Zastava",
-        "id": "ID_MARK_ZASTAVA"
-    },
-    {
-        "name": "Zenos",
-        "id": "ID_MARK_ZENOS"
-    },
-    {
-        "name": "Zenvo",
-        "id": "ID_MARK_ZENVO"
-    },
-    {
-        "name": "Zibar",
-        "id": "ID_MARK_ZIBAR"
-    },
-    {
-        "name": "Zotye",
-        "id": "ID_MARK_ZOTYE"
-    },
-    {
-        "name": "Ё-мобиль",
-        "id": "ID_MARK_E_MOBIL"
-    },
-    {
-        "name": "Автокам",
-        "id": "ID_MARK_AVTOKAM"
-    },
-    {
-        "name": "Бронто",
-        "id": "ID_MARK_BRONTO"
-    },
-    {
-        "name": "ГАЗ",
-        "id": "ID_MARK_GAZ"
-    },
-    {
-        "name": "ЗАЗ",
-        "id": "ID_MARK_ZAZ"
-    },
-    {
-        "name": "ЗИЛ",
-        "id": "ID_MARK_ZIL"
-    },
-    {
-        "name": "ЗиС",
-        "id": "ID_MARK_ZIS"
-    },
-    {
-        "name": "ИЖ",
-        "id": "ID_MARK_IZH"
-    },
-    {
-        "name": "Канонир",
-        "id": "ID_MARK_KANONIR"
-    },
-    {
-        "name": "Комбат",
-        "id": "ID_MARK_KOMBAT"
-    },
-    {
-        "name": "ЛуАЗ",
-        "id": "ID_MARK_LUAZ"
-    },
-    {
-        "name": "Москвич",
-        "id": "ID_MARK_MOSKVICH"
-    },
-    {
-        "name": "СМЗ",
-        "id": "ID_MARK_SMZ"
-    },
-    {
-        "name": "ТагАЗ",
-        "id": "ID_MARK_TAGAZ"
-    },
-    {
-        "name": "УАЗ",
-        "id": "ID_MARK_UAZ"
-    },
-    {
-        "name": "A LEX",
-        "id": "ID_MARK_A_LEX"
-    },
-    {
         "name": "ABG",
         "id": "ID_MARK_ABG"
     },
@@ -970,6 +10,10 @@
     {
         "name": "ABM",
         "id": "ID_MARK_ABM"
+    },
+    {
+        "name": "AC",
+        "id": "ID_MARK_AC"
     },
     {
         "name": "ACTM",
@@ -1000,6 +44,18 @@
         "id": "ID_MARK_AJS"
     },
     {
+        "name": "A LEX",
+        "id": "ID_MARK_A_LEX"
+    },
+    {
+        "name": "AMC",
+        "id": "ID_MARK_AMC"
+    },
+    {
+        "name": "AM General",
+        "id": "ID_MARK_AM_GENERAL"
+    },
+    {
         "name": "AMS-NN",
         "id": "ID_MARK_AMS_NN"
     },
@@ -1016,8 +72,16 @@
         "id": "ID_MARK_ASA"
     },
     {
+        "name": "ASHOK LEYLAND",
+        "id": "ID_MARK_ASHOK_LEYLAND"
+    },
+    {
         "name": "ASTRA",
         "id": "ID_MARK_ASTRA"
+    },
+    {
+        "name": "ASV",
+        "id": "ID_MARK_ASV"
     },
     {
         "name": "ATC",
@@ -1044,8 +108,16 @@
         "id": "ID_MARK_ACKERMANN"
     },
     {
+        "name": "Acura",
+        "id": "ID_MARK_ACURA"
+    },
+    {
         "name": "Adige",
         "id": "ID_MARK_ADIGE"
+    },
+    {
+        "name": "Adler",
+        "id": "ID_MARK_ADLER"
     },
     {
         "name": "Adly",
@@ -1112,12 +184,20 @@
         "id": "ID_MARK_AKERMAN"
     },
     {
+        "name": "Akkord",
+        "id": "ID_MARK_AKKORD"
+    },
+    {
         "name": "Aksoylu",
         "id": "ID_MARK_AKSOYLU"
     },
     {
         "name": "Alfa",
         "id": "ID_MARK_ALFA"
+    },
+    {
+        "name": "Alfa Romeo",
+        "id": "ID_MARK_ALFA_ROMEO"
     },
     {
         "name": "Alfer",
@@ -1146,6 +226,22 @@
     {
         "name": "Alkom",
         "id": "ID_MARK_ALKOM"
+    },
+    {
+        "name": "Alloy",
+        "id": "ID_MARK_ALLOY"
+    },
+    {
+        "name": "Almatruck",
+        "id": "ID_MARK_ALMATRUCK"
+    },
+    {
+        "name": "Alpina",
+        "id": "ID_MARK_ALPINA"
+    },
+    {
+        "name": "Alpine",
+        "id": "ID_MARK_ALPINE"
     },
     {
         "name": "Altec",
@@ -1192,6 +288,10 @@
         "id": "ID_MARK_ANSSEMS"
     },
     {
+        "name": "Apal",
+        "id": "ID_MARK_APAL"
+    },
+    {
         "name": "Apollo",
         "id": "ID_MARK_APOLLO"
     },
@@ -1224,6 +324,10 @@
         "id": "ID_MARK_ARGO"
     },
     {
+        "name": "Ariel",
+        "id": "ID_MARK_ARIEL"
+    },
+    {
         "name": "Arlen Ness",
         "id": "ID_MARK_ARLEN_NESS"
     },
@@ -1232,8 +336,16 @@
         "id": "ID_MARK_ARMADA"
     },
     {
+        "name": "Aro",
+        "id": "ID_MARK_ARO"
+    },
+    {
         "name": "Art Grup",
         "id": "ID_MARK_ART_GRUP"
+    },
+    {
+        "name": "Asia",
+        "id": "ID_MARK_ASIA"
     },
     {
         "name": "Asiawing",
@@ -1246,6 +358,10 @@
     {
         "name": "Asko",
         "id": "ID_MARK_ASKO"
+    },
+    {
+        "name": "Aston Martin",
+        "id": "ID_MARK_ASTON_MARTIN"
     },
     {
         "name": "Atcomex",
@@ -1280,12 +396,36 @@
         "id": "ID_MARK_ATTACK"
     },
     {
+        "name": "Auburn",
+        "id": "ID_MARK_AUBURN"
+    },
+    {
+        "name": "Audi",
+        "id": "ID_MARK_AUDI"
+    },
+    {
         "name": "Aurepa",
         "id": "ID_MARK_AUREPA"
     },
     {
+        "name": "Aurus",
+        "id": "ID_MARK_AURUS"
+    },
+    {
         "name": "Ausa",
         "id": "ID_MARK_AUSA"
+    },
+    {
+        "name": "Austin",
+        "id": "ID_MARK_AUSTIN"
+    },
+    {
+        "name": "Austin Healey",
+        "id": "ID_MARK_AUSTIN_HEALEY"
+    },
+    {
+        "name": "Autobianchi",
+        "id": "ID_MARK_AUTOBIANCHI"
     },
     {
         "name": "Autosan",
@@ -1324,6 +464,10 @@
         "id": "ID_MARK_AZEL"
     },
     {
+        "name": "BAIC",
+        "id": "ID_MARK_BAIC"
+    },
+    {
         "name": "BASHAN",
         "id": "ID_MARK_BASHAN"
     },
@@ -1352,12 +496,20 @@
         "id": "ID_MARK_BMS"
     },
     {
+        "name": "BMW",
+        "id": "ID_MARK_BMW"
+    },
+    {
         "name": "BMW Alpina",
         "id": "ID_MARK_BMW_ALPINA"
     },
     {
         "name": "BRP",
         "id": "ID_MARK_BRP"
+    },
+    {
+        "name": "BRZ",
+        "id": "ID_MARK_BRZ"
     },
     {
         "name": "BSA",
@@ -1380,6 +532,10 @@
         "id": "ID_MARK_BURG"
     },
     {
+        "name": "BYD",
+        "id": "ID_MARK_BYD"
+    },
+    {
         "name": "Bagram",
         "id": "ID_MARK_BAGRAM"
     },
@@ -1388,12 +544,20 @@
         "id": "ID_MARK_BAILEY"
     },
     {
+        "name": "Bajaj",
+        "id": "ID_MARK_BAJAJ"
+    },
+    {
         "name": "Balkancar",
         "id": "ID_MARK_BALKANCAR"
     },
     {
         "name": "Baltic trailer",
         "id": "ID_MARK_BALTIC_TRAILER"
+    },
+    {
+        "name": "Baltijas Dzips",
+        "id": "ID_MARK_BALTIJAS_DZIPS"
     },
     {
         "name": "Baltmotors",
@@ -1436,6 +600,10 @@
         "id": "ID_MARK_BARYVAL"
     },
     {
+        "name": "Batmobile",
+        "id": "ID_MARK_BATMOBILE"
+    },
+    {
         "name": "Bauer",
         "id": "ID_MARK_BAUER"
     },
@@ -1454,6 +622,10 @@
     {
         "name": "Bedford",
         "id": "ID_MARK_BEDFORD"
+    },
+    {
+        "name": "Beiben (North Benz)",
+        "id": "ID_MARK_BEIBEN_NORTH_BENZ"
     },
     {
         "name": "Beifang Benchi",
@@ -1480,6 +652,10 @@
         "id": "ID_MARK_BENELLI"
     },
     {
+        "name": "Bentley",
+        "id": "ID_MARK_BENTLEY"
+    },
+    {
         "name": "Benzhou",
         "id": "ID_MARK_BENZHOU"
     },
@@ -1492,8 +668,16 @@
         "id": "ID_MARK_BERGER"
     },
     {
+        "name": "Bertone",
+        "id": "ID_MARK_BERTONE"
+    },
+    {
         "name": "Beta",
         "id": "ID_MARK_BETA"
+    },
+    {
+        "name": "Beyerland",
+        "id": "ID_MARK_BEYERLAND"
     },
     {
         "name": "Bifei",
@@ -1508,12 +692,28 @@
         "id": "ID_MARK_BIG_DOG_MOTORCYCLES"
     },
     {
+        "name": "Bilenkin",
+        "id": "ID_MARK_BILENKIN"
+    },
+    {
         "name": "Bimota",
         "id": "ID_MARK_BIMOTA"
     },
     {
+        "name": "Bio auto",
+        "id": "ID_MARK_BIO_AUTO"
+    },
+    {
         "name": "Bison",
         "id": "ID_MARK_BISON"
+    },
+    {
+        "name": "Bitter",
+        "id": "ID_MARK_BITTER"
+    },
+    {
+        "name": "Bizien",
+        "id": "ID_MARK_BIZIEN"
     },
     {
         "name": "Blata",
@@ -1588,8 +788,16 @@
         "id": "ID_MARK_BORCO_HOEHNS"
     },
     {
+        "name": "Borgward",
+        "id": "ID_MARK_BORGWARD"
+    },
+    {
         "name": "Borile",
         "id": "ID_MARK_BORILE"
+    },
+    {
+        "name": "Borum",
+        "id": "ID_MARK_BORUM"
     },
     {
         "name": "Boschung",
@@ -1604,12 +812,20 @@
         "id": "ID_MARK_BOULDER"
     },
     {
+        "name": "Bourgault",
+        "id": "ID_MARK_BOURGAULT"
+    },
+    {
         "name": "Bourgets Bike Works",
         "id": "ID_MARK_BOURGETS_BIKE_WORKS"
     },
     {
         "name": "Bova",
         "id": "ID_MARK_BOVA"
+    },
+    {
+        "name": "Brabus",
+        "id": "ID_MARK_BRABUS"
     },
     {
         "name": "Brait",
@@ -1644,8 +860,16 @@
         "id": "ID_MARK_BRIAN_JAMES_TRAILERS"
     },
     {
+        "name": "Brilliance",
+        "id": "ID_MARK_BRILLIANCE"
+    },
+    {
         "name": "Brinkmann",
         "id": "ID_MARK_BRINKMANN"
+    },
+    {
+        "name": "Bristol",
+        "id": "ID_MARK_BRISTOL"
     },
     {
         "name": "Brokk",
@@ -1658,6 +882,10 @@
     {
         "name": "Broshuis",
         "id": "ID_MARK_BROSHUIS"
+    },
+    {
+        "name": "Brough Superior",
+        "id": "ID_MARK_BROUGH_SUPERIOR"
     },
     {
         "name": "Brown",
@@ -1680,6 +908,14 @@
         "id": "ID_MARK_BUERSTNER"
     },
     {
+        "name": "Bufori",
+        "id": "ID_MARK_BUFORI"
+    },
+    {
+        "name": "Bugatti",
+        "id": "ID_MARK_BUGATTI"
+    },
+    {
         "name": "Bugfaster",
         "id": "ID_MARK_BUGFASTER"
     },
@@ -1690,6 +926,10 @@
     {
         "name": "Buhler",
         "id": "ID_MARK_BUHLER"
+    },
+    {
+        "name": "Buick",
+        "id": "ID_MARK_BUICK"
     },
     {
         "name": "Bull",
@@ -1712,8 +952,24 @@
         "id": "ID_MARK_BUNGE"
     },
     {
+        "name": "Bunker",
+        "id": "ID_MARK_BUNKER"
+    },
+    {
+        "name": "Burstner",
+        "id": "ID_MARK_BURSTNER"
+    },
+    {
         "name": "Buzonderheden",
         "id": "ID_MARK_BUZONDERHEDEN"
+    },
+    {
+        "name": "Byrus",
+        "id": "ID_MARK_BYRUS"
+    },
+    {
+        "name": "Byvin",
+        "id": "ID_MARK_BYVIN"
     },
     {
         "name": "C&C Trucks",
@@ -1724,12 +980,12 @@
         "id": "ID_MARK_C_WAY"
     },
     {
-        "name": "CAM Superline",
-        "id": "ID_MARK_CAM_SUPERLINE"
-    },
-    {
         "name": "CAMC",
         "id": "ID_MARK_CAMC"
+    },
+    {
+        "name": "CAM Superline",
+        "id": "ID_MARK_CAM_SUPERLINE"
     },
     {
         "name": "CCM",
@@ -1742,6 +998,10 @@
     {
         "name": "CFMoto",
         "id": "ID_MARK_CFMOTO"
+    },
+    {
+        "name": "CHERYEXEED",
+        "id": "ID_MARK_CHERYEXEED"
     },
     {
         "name": "CH Racing",
@@ -1792,6 +1052,10 @@
         "id": "ID_MARK_CZ"
     },
     {
+        "name": "Cadillac",
+        "id": "ID_MARK_CADILLAC"
+    },
+    {
         "name": "Cagiva",
         "id": "ID_MARK_CAGIVA"
     },
@@ -1804,12 +1068,20 @@
         "id": "ID_MARK_CALDAL"
     },
     {
+        "name": "Callaway",
+        "id": "ID_MARK_CALLAWAY"
+    },
+    {
         "name": "Campagna",
         "id": "ID_MARK_CAMPAGNA"
     },
     {
         "name": "Caravelair",
         "id": "ID_MARK_CARAVELAIR"
+    },
+    {
+        "name": "Carbodies",
+        "id": "ID_MARK_CARBODIES"
     },
     {
         "name": "Cardi",
@@ -1864,8 +1136,16 @@
         "id": "ID_MARK_CASTERA"
     },
     {
+        "name": "Caterham",
+        "id": "ID_MARK_CATERHAM"
+    },
+    {
         "name": "Caterpillar",
         "id": "ID_MARK_CATERPILLAR"
+    },
+    {
+        "name": "Cathefeng",
+        "id": "ID_MARK_CATHEFENG"
     },
     {
         "name": "Catmann",
@@ -1904,8 +1184,24 @@
         "id": "ID_MARK_CHAMP"
     },
     {
+        "name": "Chana",
+        "id": "ID_MARK_CHANA"
+    },
+    {
         "name": "Chang-Jiang",
         "id": "ID_MARK_CHANG_JIANG"
+    },
+    {
+        "name": "ChangFeng",
+        "id": "ID_MARK_CHANGFENG"
+    },
+    {
+        "name": "Changan",
+        "id": "ID_MARK_CHANGAN"
+    },
+    {
+        "name": "Changhe",
+        "id": "ID_MARK_CHANGHE"
     },
     {
         "name": "Changlin",
@@ -1928,8 +1224,16 @@
         "id": "ID_MARK_CHEREAU"
     },
     {
+        "name": "Chery",
+        "id": "ID_MARK_CHERY"
+    },
+    {
         "name": "Cheval Liberte",
         "id": "ID_MARK_CHEVAL_LIBERTE"
+    },
+    {
+        "name": "Chevrolet",
+        "id": "ID_MARK_CHEVROLET"
     },
     {
         "name": "Chieftain",
@@ -1940,8 +1244,20 @@
         "id": "ID_MARK_CHOICE"
     },
     {
+        "name": "Chrysler",
+        "id": "ID_MARK_CHRYSLER"
+    },
+    {
         "name": "Cifa",
         "id": "ID_MARK_CIFA"
+    },
+    {
+        "name": "Citroen",
+        "id": "ID_MARK_CITROEN"
+    },
+    {
+        "name": "Cizeta",
+        "id": "ID_MARK_CIZETA"
     },
     {
         "name": "Claas",
@@ -1950,6 +1266,10 @@
     {
         "name": "Clark",
         "id": "ID_MARK_CLARK"
+    },
+    {
+        "name": "Clayton",
+        "id": "ID_MARK_CLAYTON"
     },
     {
         "name": "Cobo",
@@ -1968,6 +1288,10 @@
         "id": "ID_MARK_CODER"
     },
     {
+        "name": "Coggiola",
+        "id": "ID_MARK_COGGIOLA"
+    },
+    {
         "name": "Combilift",
         "id": "ID_MARK_COMBILIFT"
     },
@@ -1980,8 +1304,16 @@
         "id": "ID_MARK_CONFEDERATE"
     },
     {
+        "name": "Contar",
+        "id": "ID_MARK_CONTAR"
+    },
+    {
         "name": "Coolster",
         "id": "ID_MARK_COOLSTER"
+    },
+    {
+        "name": "Cord",
+        "id": "ID_MARK_CORD"
     },
     {
         "name": "Corsa",
@@ -2064,8 +1396,36 @@
         "id": "ID_MARK_DM_TELAI"
     },
     {
+        "name": "DS",
+        "id": "ID_MARK_DS"
+    },
+    {
+        "name": "DW Hower",
+        "id": "ID_MARK_DW_HOWER"
+    },
+    {
+        "name": "Dacia",
+        "id": "ID_MARK_DACIA"
+    },
+    {
+        "name": "Dadi",
+        "id": "ID_MARK_DADI"
+    },
+    {
         "name": "Daelim",
         "id": "ID_MARK_DAELIM"
+    },
+    {
+        "name": "Daewoo",
+        "id": "ID_MARK_DAEWOO"
+    },
+    {
+        "name": "Daihatsu",
+        "id": "ID_MARK_DAIHATSU"
+    },
+    {
+        "name": "Daimler",
+        "id": "ID_MARK_DAIMLER"
     },
     {
         "name": "Dalery",
@@ -2074,6 +1434,10 @@
     {
         "name": "Dalian",
         "id": "ID_MARK_DALIAN"
+    },
+    {
+        "name": "Dallara",
+        "id": "ID_MARK_DALLARA"
     },
     {
         "name": "Danson",
@@ -2086,6 +1450,10 @@
     {
         "name": "Dasan",
         "id": "ID_MARK_DASAN"
+    },
+    {
+        "name": "Datsun",
+        "id": "ID_MARK_DATSUN"
     },
     {
         "name": "Davino",
@@ -2104,8 +1472,28 @@
         "id": "ID_MARK_DE_ANGELIS"
     },
     {
+        "name": "DeLorean",
+        "id": "ID_MARK_DELOREAN"
+    },
+    {
+        "name": "DeSoto",
+        "id": "ID_MARK_DESOTO"
+    },
+    {
+        "name": "De Tomaso",
+        "id": "ID_MARK_DE_TOMASO"
+    },
+    {
+        "name": "Deco Rides",
+        "id": "ID_MARK_DECO_RIDES"
+    },
+    {
         "name": "Defiant",
         "id": "ID_MARK_DEFIANT"
+    },
+    {
+        "name": "Delage",
+        "id": "ID_MARK_DELAGE"
     },
     {
         "name": "Deller",
@@ -2130,6 +1518,10 @@
     {
         "name": "Derbi",
         "id": "ID_MARK_DERBI"
+    },
+    {
+        "name": "Derways",
+        "id": "ID_MARK_DERWAYS"
     },
     {
         "name": "Desert Raven",
@@ -2168,6 +1560,10 @@
         "id": "ID_MARK_DIGGER"
     },
     {
+        "name": "Dijkstra",
+        "id": "ID_MARK_DIJKSTRA"
+    },
+    {
         "name": "Dinex Crane",
         "id": "ID_MARK_DINEX_CRANE"
     },
@@ -2184,12 +1580,20 @@
         "id": "ID_MARK_DINOLIFT"
     },
     {
+        "name": "Dintek",
+        "id": "ID_MARK_DINTEK"
+    },
+    {
         "name": "Dirtmax",
         "id": "ID_MARK_DIRTMAX"
     },
     {
         "name": "DitchWitch",
         "id": "ID_MARK_DITCHWITCH"
+    },
+    {
+        "name": "Dodge",
+        "id": "ID_MARK_DODGE"
     },
     {
         "name": "Dogan Yildiz",
@@ -2208,12 +1612,24 @@
         "id": "ID_MARK_DOLLY"
     },
     {
+        "name": "DongFeng",
+        "id": "ID_MARK_DONGFENG"
+    },
+    {
         "name": "Donghae",
         "id": "ID_MARK_DONGHAE"
     },
     {
         "name": "Dongin",
         "id": "ID_MARK_DONGIN"
+    },
+    {
+        "name": "Doninvest",
+        "id": "ID_MARK_DONINVEST"
+    },
+    {
+        "name": "Donkervoort",
+        "id": "ID_MARK_DONKERVOORT"
     },
     {
         "name": "Doohan",
@@ -2232,6 +1648,10 @@
         "id": "ID_MARK_DRESSTA"
     },
     {
+        "name": "Drillto",
+        "id": "ID_MARK_DRILLTO"
+    },
+    {
         "name": "Ducati",
         "id": "ID_MARK_DUCATI"
     },
@@ -2242,6 +1662,14 @@
     {
         "name": "Dynapac",
         "id": "ID_MARK_DYNAPAC"
+    },
+    {
+        "name": "E-Car",
+        "id": "ID_MARK_E_CAR"
+    },
+    {
+        "name": "E-M",
+        "id": "ID_MARK_E_M"
     },
     {
         "name": "E-max",
@@ -2260,6 +1688,14 @@
         "id": "ID_MARK_ECHO"
     },
     {
+        "name": "EKW",
+        "id": "ID_MARK_EKW"
+    },
+    {
+        "name": "EL7",
+        "id": "ID_MARK_EL7"
+    },
+    {
         "name": "ERF (MAN Truck)",
         "id": "ID_MARK_ERF_MAN_TRUCK"
     },
@@ -2270,6 +1706,18 @@
     {
         "name": "EZ Loader",
         "id": "ID_MARK_EZ_LOADER"
+    },
+    {
+        "name": "Eagle",
+        "id": "ID_MARK_EAGLE"
+    },
+    {
+        "name": "Eagle Cars",
+        "id": "ID_MARK_EAGLE_CARS"
+    },
+    {
+        "name": "EcoGet",
+        "id": "ID_MARK_ECOGET"
     },
     {
         "name": "Ecopress",
@@ -2312,8 +1760,16 @@
         "id": "ID_MARK_ERKAN"
     },
     {
+        "name": "Esterel",
+        "id": "ID_MARK_ESTEREL"
+    },
+    {
         "name": "Etramo",
         "id": "ID_MARK_ETRAMO"
+    },
+    {
+        "name": "EuroTank",
+        "id": "ID_MARK_EUROTANK"
     },
     {
         "name": "Eurocomach",
@@ -2340,6 +1796,10 @@
         "id": "ID_MARK_EVERUN"
     },
     {
+        "name": "Excalibur",
+        "id": "ID_MARK_EXCALIBUR"
+    },
+    {
         "name": "Excelsior-Henderson",
         "id": "ID_MARK_EXCELSIOR_HENDERSON"
     },
@@ -2352,8 +1812,16 @@
         "id": "ID_MARK_EYLUL_MAKINA"
     },
     {
+        "name": "FAW",
+        "id": "ID_MARK_FAW"
+    },
+    {
         "name": "FMGru",
         "id": "ID_MARK_FMGRU"
+    },
+    {
+        "name": "FSO",
+        "id": "ID_MARK_FSO"
     },
     {
         "name": "FVG",
@@ -2378,6 +1846,10 @@
     {
         "name": "Faresin Handlers",
         "id": "ID_MARK_FARESIN_HANDLERS"
+    },
+    {
+        "name": "Fassi",
+        "id": "ID_MARK_FASSI"
     },
     {
         "name": "Fatih Treyler",
@@ -2436,6 +1908,18 @@
         "id": "ID_MARK_FERMEC"
     },
     {
+        "name": "Ferrari",
+        "id": "ID_MARK_FERRARI"
+    },
+    {
+        "name": "Fiat",
+        "id": "ID_MARK_FIAT"
+    },
+    {
+        "name": "Fiat-Hitachi",
+        "id": "ID_MARK_FIAT_HITACHI"
+    },
+    {
         "name": "Fiat Kobelco",
         "id": "ID_MARK_FIAT_KOBELCO"
     },
@@ -2444,8 +1928,8 @@
         "id": "ID_MARK_FIAT_PROFESSIONAL"
     },
     {
-        "name": "Fiat-Hitachi",
-        "id": "ID_MARK_FIAT_HITACHI"
+        "name": "Fibo intercon",
+        "id": "ID_MARK_FIBO_INTERCON"
     },
     {
         "name": "Fighter",
@@ -2476,6 +1960,22 @@
         "id": "ID_MARK_FISCHER"
     },
     {
+        "name": "Fishride",
+        "id": "ID_MARK_FISHRIDE"
+    },
+    {
+        "name": "Fisker",
+        "id": "ID_MARK_FISKER"
+    },
+    {
+        "name": "Fisso",
+        "id": "ID_MARK_FISSO"
+    },
+    {
+        "name": "Flanker",
+        "id": "ID_MARK_FLANKER"
+    },
+    {
         "name": "Fliegl",
         "id": "ID_MARK_FLIEGL"
     },
@@ -2500,6 +2000,10 @@
         "id": "ID_MARK_FONTAINE"
     },
     {
+        "name": "Ford",
+        "id": "ID_MARK_FORD"
+    },
+    {
         "name": "Forever Joy",
         "id": "ID_MARK_FOREVER_JOY"
     },
@@ -2510,6 +2014,10 @@
     {
         "name": "Forss Parator",
         "id": "ID_MARK_FORSS_PARATOR"
+    },
+    {
+        "name": "Forst",
+        "id": "ID_MARK_FORST"
     },
     {
         "name": "Fortschritt",
@@ -2532,12 +2040,20 @@
         "id": "ID_MARK_FOSTI"
     },
     {
+        "name": "Foton",
+        "id": "ID_MARK_FOTON"
+    },
+    {
         "name": "FoxTank",
         "id": "ID_MARK_FOXTANK"
     },
     {
         "name": "Foxbus",
         "id": "ID_MARK_FOXBUS"
+    },
+    {
+        "name": "Franz Kleine",
+        "id": "ID_MARK_FRANZ_KLEINE"
     },
     {
         "name": "Franz Mersch",
@@ -2572,6 +2088,10 @@
         "id": "ID_MARK_FUNCRUISER"
     },
     {
+        "name": "Fuqi",
+        "id": "ID_MARK_FUQI"
+    },
+    {
         "name": "Furukawa",
         "id": "ID_MARK_FURUKAWA"
     },
@@ -2596,8 +2116,20 @@
         "id": "ID_MARK_GAS_GAS"
     },
     {
+        "name": "GEM",
+        "id": "ID_MARK_GEM"
+    },
+    {
         "name": "GG Quad",
         "id": "ID_MARK_GG_QUAD"
+    },
+    {
+        "name": "GMC",
+        "id": "ID_MARK_GMC"
+    },
+    {
+        "name": "GP",
+        "id": "ID_MARK_GP"
     },
     {
         "name": "GR",
@@ -2612,12 +2144,20 @@
         "id": "ID_MARK_GS_MOON"
     },
     {
+        "name": "GT7 (Кузполимермаш)",
+        "id": "ID_MARK_GT7_KUZPOLIMERMASH"
+    },
+    {
         "name": "GTI",
         "id": "ID_MARK_GTI"
     },
     {
         "name": "GTS Trailer",
         "id": "ID_MARK_GTS_TRAILER"
+    },
+    {
+        "name": "GT Semi Trailers",
+        "id": "ID_MARK_GT_SEMI_TRAILERS"
     },
     {
         "name": "GX moto",
@@ -2672,6 +2212,10 @@
         "id": "ID_MARK_GEBERT"
     },
     {
+        "name": "Geely",
+        "id": "ID_MARK_GEELY"
+    },
+    {
         "name": "Geesinknorba",
         "id": "ID_MARK_GEESINKNORBA"
     },
@@ -2692,8 +2236,16 @@
         "id": "ID_MARK_GENERIC"
     },
     {
+        "name": "Genesis",
+        "id": "ID_MARK_GENESIS"
+    },
+    {
         "name": "Genie",
         "id": "ID_MARK_GENIE"
+    },
+    {
+        "name": "Geo",
+        "id": "ID_MARK_GEO"
     },
     {
         "name": "Geogid",
@@ -2724,6 +2276,10 @@
         "id": "ID_MARK_GILERA"
     },
     {
+        "name": "Ginaf",
+        "id": "ID_MARK_GINAF"
+    },
+    {
         "name": "Gloria - Fahrzeugbau",
         "id": "ID_MARK_GLORIA_FAHRZEUGBAU"
     },
@@ -2748,6 +2304,10 @@
         "id": "ID_MARK_GOMACO"
     },
     {
+        "name": "Gonow",
+        "id": "ID_MARK_GONOW"
+    },
+    {
         "name": "Goodsense",
         "id": "ID_MARK_GOODSENSE"
     },
@@ -2756,8 +2316,16 @@
         "id": "ID_MARK_GOODWILL"
     },
     {
+        "name": "Goodwork",
+        "id": "ID_MARK_GOODWORK"
+    },
+    {
         "name": "Gooseneck",
         "id": "ID_MARK_GOOSENECK"
+    },
+    {
+        "name": "Gordon",
+        "id": "ID_MARK_GORDON"
     },
     {
         "name": "Goupil",
@@ -2772,12 +2340,20 @@
         "id": "ID_MARK_GRACO"
     },
     {
+        "name": "Gradall",
+        "id": "ID_MARK_GRADALL"
+    },
+    {
         "name": "Gray&Adams",
         "id": "ID_MARK_GRAY_ADAMS"
     },
     {
         "name": "Great Dane",
         "id": "ID_MARK_GREAT_DANE"
+    },
+    {
+        "name": "Great Wall",
+        "id": "ID_MARK_GREAT_WALL"
     },
     {
         "name": "Grimme",
@@ -2804,6 +2380,10 @@
         "id": "ID_MARK_GRUAU"
     },
     {
+        "name": "Grun",
+        "id": "ID_MARK_GRUN"
+    },
+    {
         "name": "Grunber",
         "id": "ID_MARK_GRUNBER"
     },
@@ -2824,12 +2404,20 @@
         "id": "ID_MARK_GUHUR"
     },
     {
+        "name": "Guillen",
+        "id": "ID_MARK_GUILLEN"
+    },
+    {
         "name": "Gurlesenyil",
         "id": "ID_MARK_GURLESENYIL"
     },
     {
         "name": "Gute Wolf",
         "id": "ID_MARK_GUTE_WOLF"
+    },
+    {
+        "name": "GuteWolf",
+        "id": "ID_MARK_GUTEWOLF"
     },
     {
         "name": "H&W",
@@ -2872,8 +2460,16 @@
         "id": "ID_MARK_HZM"
     },
     {
+        "name": "Hafei",
+        "id": "ID_MARK_HAFEI"
+    },
+    {
         "name": "Hagglunds",
         "id": "ID_MARK_HAGGLUNDS"
+    },
+    {
+        "name": "Haima",
+        "id": "ID_MARK_HAIMA"
     },
     {
         "name": "Hako",
@@ -2906,6 +2502,10 @@
     {
         "name": "Hanlyma",
         "id": "ID_MARK_HANLYMA"
+    },
+    {
+        "name": "Hanomag",
+        "id": "ID_MARK_HANOMAG"
     },
     {
         "name": "Hansin",
@@ -2944,6 +2544,10 @@
         "id": "ID_MARK_HARTUNG"
     },
     {
+        "name": "Hasky",
+        "id": "ID_MARK_HASKY"
+    },
+    {
         "name": "Hatzenbichler",
         "id": "ID_MARK_HATZENBICHLER"
     },
@@ -2956,6 +2560,14 @@
         "id": "ID_MARK_HAULOTTE"
     },
     {
+        "name": "Haval",
+        "id": "ID_MARK_HAVAL"
+    },
+    {
+        "name": "Hawtai",
+        "id": "ID_MARK_HAWTAI"
+    },
+    {
         "name": "Headbanger",
         "id": "ID_MARK_HEADBANGER"
     },
@@ -2966,6 +2578,10 @@
     {
         "name": "Heil",
         "id": "ID_MARK_HEIL"
+    },
+    {
+        "name": "Heinkel",
+        "id": "ID_MARK_HEINKEL"
     },
     {
         "name": "Heizohack",
@@ -2982,6 +2598,10 @@
     {
         "name": "Hengtong",
         "id": "ID_MARK_HENGTONG"
+    },
+    {
+        "name": "Hennessey",
+        "id": "ID_MARK_HENNESSEY"
     },
     {
         "name": "Henra",
@@ -3020,6 +2640,10 @@
         "id": "ID_MARK_HIGHLAND"
     },
     {
+        "name": "Hindustan",
+        "id": "ID_MARK_HINDUSTAN"
+    },
+    {
         "name": "Hino",
         "id": "ID_MARK_HINO"
     },
@@ -3032,6 +2656,10 @@
         "id": "ID_MARK_HIRTH"
     },
     {
+        "name": "Hispano-Suiza",
+        "id": "ID_MARK_HISPANO_SUIZA"
+    },
+    {
         "name": "Hitachi",
         "id": "ID_MARK_HITACHI"
     },
@@ -3040,12 +2668,20 @@
         "id": "ID_MARK_HOBBY"
     },
     {
+        "name": "Holden",
+        "id": "ID_MARK_HOLDEN"
+    },
+    {
         "name": "Holder",
         "id": "ID_MARK_HOLDER"
     },
     {
         "name": "Holmer",
         "id": "ID_MARK_HOLMER"
+    },
+    {
+        "name": "Honda",
+        "id": "ID_MARK_HONDA"
     },
     {
         "name": "HongJian",
@@ -3064,6 +2700,10 @@
         "id": "ID_MARK_HONOLD"
     },
     {
+        "name": "Horch",
+        "id": "ID_MARK_HORCH"
+    },
+    {
         "name": "Horex",
         "id": "ID_MARK_HOREX"
     },
@@ -3080,6 +2720,10 @@
         "id": "ID_MARK_HUANDA"
     },
     {
+        "name": "HuangHai",
+        "id": "ID_MARK_HUANGHAI"
+    },
+    {
         "name": "Huanghai Jinma",
         "id": "ID_MARK_HUANGHAI_JINMA"
     },
@@ -3092,6 +2736,10 @@
         "id": "ID_MARK_HUBIERE"
     },
     {
+        "name": "Hudson",
+        "id": "ID_MARK_HUDSON"
+    },
+    {
         "name": "Huffermann",
         "id": "ID_MARK_HUFFERMANN"
     },
@@ -3102,6 +2750,10 @@
     {
         "name": "Humbaur",
         "id": "ID_MARK_HUMBAUR"
+    },
+    {
+        "name": "Hummer",
+        "id": "ID_MARK_HUMMER"
     },
     {
         "name": "Husaberg",
@@ -3134,6 +2786,10 @@
     {
         "name": "Hyster",
         "id": "ID_MARK_HYSTER"
+    },
+    {
+        "name": "Hyundai",
+        "id": "ID_MARK_HYUNDAI"
     },
     {
         "name": "IFA",
@@ -3196,8 +2852,16 @@
         "id": "ID_MARK_INDOX"
     },
     {
+        "name": "Infiniti",
+        "id": "ID_MARK_INFINITI"
+    },
+    {
         "name": "Ingersoll Rand",
         "id": "ID_MARK_INGERSOLL_RAND"
+    },
+    {
+        "name": "Innocenti",
+        "id": "ID_MARK_INNOCENTI"
     },
     {
         "name": "Inta Eimar",
@@ -3220,6 +2884,14 @@
         "id": "ID_MARK_INTERSTATE_1"
     },
     {
+        "name": "Invicta",
+        "id": "ID_MARK_INVICTA"
+    },
+    {
+        "name": "Iran Khodro",
+        "id": "ID_MARK_IRAN_KHODRO"
+    },
+    {
         "name": "Irisbus",
         "id": "ID_MARK_IRISBUS"
     },
@@ -3228,12 +2900,20 @@
         "id": "ID_MARK_IRONWORKS"
     },
     {
+        "name": "Isdera",
+        "id": "ID_MARK_ISDERA"
+    },
+    {
         "name": "Iseki",
         "id": "ID_MARK_ISEKI"
     },
     {
         "name": "Istrail",
         "id": "ID_MARK_ISTRAIL"
+    },
+    {
+        "name": "Isuzu",
+        "id": "ID_MARK_ISUZU"
     },
     {
         "name": "Italian Volt",
@@ -3252,6 +2932,10 @@
         "id": "ID_MARK_J8"
     },
     {
+        "name": "JAC",
+        "id": "ID_MARK_JAC"
+    },
+    {
         "name": "JBC",
         "id": "ID_MARK_JBC"
     },
@@ -3268,6 +2952,10 @@
         "id": "ID_MARK_JLG"
     },
     {
+        "name": "JMC",
+        "id": "ID_MARK_JMC"
+    },
+    {
         "name": "JM Kipper",
         "id": "ID_MARK_JM_KIPPER"
     },
@@ -3280,12 +2968,20 @@
         "id": "ID_MARK_JANO"
     },
     {
+        "name": "Jaguar",
+        "id": "ID_MARK_JAGUAR"
+    },
+    {
         "name": "Janmil",
         "id": "ID_MARK_JANMIL"
     },
     {
         "name": "Jawa",
         "id": "ID_MARK_JAWA"
+    },
+    {
+        "name": "Jeep",
+        "id": "ID_MARK_JEEP"
     },
     {
         "name": "Jekko",
@@ -3296,8 +2992,20 @@
         "id": "ID_MARK_JELCZ"
     },
     {
+        "name": "Jensen",
+        "id": "ID_MARK_JENSEN"
+    },
+    {
+        "name": "Jialing",
+        "id": "ID_MARK_JIALING"
+    },
+    {
         "name": "Jianshe",
         "id": "ID_MARK_JIANSHE"
+    },
+    {
+        "name": "Jinbei",
+        "id": "ID_MARK_JINBEI"
     },
     {
         "name": "Jinma",
@@ -3392,8 +3100,20 @@
         "id": "ID_MARK_KOBELCO"
     },
     {
+        "name": "KOiRA",
+        "id": "ID_MARK_KOIRA"
+    },
+    {
         "name": "KTM",
         "id": "ID_MARK_KTM"
+    },
+    {
+        "name": "KTM AG",
+        "id": "ID_MARK_KTM_AG"
+    },
+    {
+        "name": "KUHN",
+        "id": "ID_MARK_KUHN"
     },
     {
         "name": "KXD",
@@ -3428,6 +3148,10 @@
         "id": "ID_MARK_KANGLIM"
     },
     {
+        "name": "Kansas",
+        "id": "ID_MARK_KANSAS"
+    },
+    {
         "name": "Kanuni",
         "id": "ID_MARK_KANUNI"
     },
@@ -3444,12 +3168,20 @@
         "id": "ID_MARK_KAROSA"
     },
     {
+        "name": "Kassbohrer",
+        "id": "ID_MARK_KASSBOHRER"
+    },
+    {
         "name": "Katmerciler",
         "id": "ID_MARK_KATMERCILER"
     },
     {
         "name": "Kaufman",
         "id": "ID_MARK_KAUFMAN"
+    },
+    {
+        "name": "Kautec",
+        "id": "ID_MARK_KAUTEC"
     },
     {
         "name": "Kawasaki",
@@ -3492,8 +3224,16 @@
         "id": "ID_MARK_KEPLER"
     },
     {
+        "name": "Kerland",
+        "id": "ID_MARK_KERLAND"
+    },
+    {
         "name": "Khalex",
         "id": "ID_MARK_KHALEX"
+    },
+    {
+        "name": "Kia",
+        "id": "ID_MARK_KIA"
     },
     {
         "name": "King",
@@ -3556,8 +3296,16 @@
         "id": "ID_MARK_KOENIG"
     },
     {
+        "name": "Koenigsegg",
+        "id": "ID_MARK_KOENIGSEGG"
+    },
+    {
         "name": "Kogel",
         "id": "ID_MARK_KOGEL"
+    },
+    {
+        "name": "Kolman",
+        "id": "ID_MARK_KOLMAN"
     },
     {
         "name": "Koluman",
@@ -3566,6 +3314,10 @@
     {
         "name": "Komatsu",
         "id": "ID_MARK_KOMATSU"
+    },
+    {
+        "name": "Kome",
+        "id": "ID_MARK_KOME"
     },
     {
         "name": "Komplet",
@@ -3580,12 +3332,20 @@
         "id": "ID_MARK_KOREA_TRAILER"
     },
     {
+        "name": "Korn Kippers",
+        "id": "ID_MARK_KORN_KIPPERS"
+    },
+    {
         "name": "Korten",
         "id": "ID_MARK_KORTEN"
     },
     {
         "name": "Koscian",
         "id": "ID_MARK_KOSCIAN"
+    },
+    {
+        "name": "Koshine",
+        "id": "ID_MARK_KOSHINE"
     },
     {
         "name": "Kotschenreuther",
@@ -3640,6 +3400,10 @@
         "id": "ID_MARK_KYMCO"
     },
     {
+        "name": "LADA (ВАЗ)",
+        "id": "ID_MARK_LADA_VAZ"
+    },
+    {
         "name": "LAG",
         "id": "ID_MARK_LAG"
     },
@@ -3660,6 +3424,10 @@
         "id": "ID_MARK_LML"
     },
     {
+        "name": "LTI",
+        "id": "ID_MARK_LTI"
+    },
+    {
         "name": "LUECK",
         "id": "ID_MARK_LUECK"
     },
@@ -3676,12 +3444,28 @@
         "id": "ID_MARK_LAMBERET"
     },
     {
+        "name": "Lamborghini",
+        "id": "ID_MARK_LAMBORGHINI"
+    },
+    {
         "name": "Lambretta",
         "id": "ID_MARK_LAMBRETTA"
     },
     {
+        "name": "Lancia",
+        "id": "ID_MARK_LANCIA"
+    },
+    {
+        "name": "Land Rover",
+        "id": "ID_MARK_LAND_ROVER"
+    },
+    {
         "name": "Landformer",
         "id": "ID_MARK_LANDFORMER"
+    },
+    {
+        "name": "Landwind",
+        "id": "ID_MARK_LANDWIND"
     },
     {
         "name": "Langendorf",
@@ -3740,6 +3524,14 @@
         "id": "ID_MARK_LEMA"
     },
     {
+        "name": "Lexus",
+        "id": "ID_MARK_LEXUS"
+    },
+    {
+        "name": "LiXiang",
+        "id": "ID_MARK_LIXIANG"
+    },
+    {
         "name": "Liangshan Dongyue",
         "id": "ID_MARK_LIANGSHAN_DONGYUE"
     },
@@ -3748,12 +3540,28 @@
         "id": "ID_MARK_LIDER_TRADE"
     },
     {
+        "name": "Liebao Motor",
+        "id": "ID_MARK_LIEBAO_MOTOR"
+    },
+    {
         "name": "Liebherr",
         "id": "ID_MARK_LIEBHERR"
     },
     {
+        "name": "Lifan",
+        "id": "ID_MARK_LIFAN"
+    },
+    {
+        "name": "Ligier",
+        "id": "ID_MARK_LIGIER"
+    },
+    {
         "name": "Lima",
         "id": "ID_MARK_LIMA"
+    },
+    {
+        "name": "Lincoln",
+        "id": "ID_MARK_LINCOLN"
     },
     {
         "name": "Linde",
@@ -3812,6 +3620,10 @@
         "id": "ID_MARK_LODICO"
     },
     {
+        "name": "Logem",
+        "id": "ID_MARK_LOGEM"
+    },
+    {
         "name": "Logset",
         "id": "ID_MARK_LOGSET"
     },
@@ -3840,12 +3652,28 @@
         "id": "ID_MARK_LONKING"
     },
     {
+        "name": "Lotos",
+        "id": "ID_MARK_LOTOS"
+    },
+    {
+        "name": "Lotus",
+        "id": "ID_MARK_LOTUS"
+    },
+    {
         "name": "LuFeng",
         "id": "ID_MARK_LUFENG"
     },
     {
         "name": "Lublin",
         "id": "ID_MARK_LUBLIN"
+    },
+    {
+        "name": "Lucid",
+        "id": "ID_MARK_LUCID"
+    },
+    {
+        "name": "Lunar",
+        "id": "ID_MARK_LUNAR"
     },
     {
         "name": "Luqing",
@@ -3856,12 +3684,20 @@
         "id": "ID_MARK_LUTONG"
     },
     {
+        "name": "Luxgen",
+        "id": "ID_MARK_LUXGEN"
+    },
+    {
         "name": "Luyue",
         "id": "ID_MARK_LUYUE"
     },
     {
         "name": "M&G",
         "id": "ID_MARK_M_G"
+    },
+    {
+        "name": "M&V GmbH Siegmar",
+        "id": "ID_MARK_M_V_GMBH_SIEGMAR"
     },
     {
         "name": "MAN",
@@ -3882,6 +3718,18 @@
     {
         "name": "MEV",
         "id": "ID_MARK_MEV"
+    },
+    {
+        "name": "MG",
+        "id": "ID_MARK_MG"
+    },
+    {
+        "name": "MINI",
+        "id": "ID_MARK_MINI"
+    },
+    {
+        "name": "MITSUBI",
+        "id": "ID_MARK_MITSUBI"
     },
     {
         "name": "MKF Metallbau",
@@ -3936,8 +3784,16 @@
         "id": "ID_MARK_MAGYAR"
     },
     {
+        "name": "Mahindra",
+        "id": "ID_MARK_MAHINDRA"
+    },
+    {
         "name": "Maico",
         "id": "ID_MARK_MAICO"
+    },
+    {
+        "name": "Maisonneuve",
+        "id": "ID_MARK_MAISONNEUVE"
     },
     {
         "name": "Makinsan",
@@ -3972,8 +3828,28 @@
         "id": "ID_MARK_MARCOPOLO"
     },
     {
+        "name": "Marcos",
+        "id": "ID_MARK_MARCOS"
+    },
+    {
         "name": "Marini",
         "id": "ID_MARK_MARINI"
+    },
+    {
+        "name": "Marlin",
+        "id": "ID_MARK_MARLIN"
+    },
+    {
+        "name": "Mars",
+        "id": "ID_MARK_MARS"
+    },
+    {
+        "name": "Marussia",
+        "id": "ID_MARK_MARUSSIA"
+    },
+    {
+        "name": "Maruti",
+        "id": "ID_MARK_MARUTI"
     },
     {
         "name": "Mas Treyler",
@@ -3982,6 +3858,10 @@
     {
         "name": "Masai",
         "id": "ID_MARK_MASAI"
+    },
+    {
+        "name": "Maserati",
+        "id": "ID_MARK_MASERATI"
     },
     {
         "name": "Massenza",
@@ -4012,12 +3892,12 @@
         "id": "ID_MARK_MAX"
     },
     {
-        "name": "Max Trailer",
-        "id": "ID_MARK_MAX_TRAILER"
-    },
-    {
         "name": "MaxCut",
         "id": "ID_MARK_MAXCUT"
+    },
+    {
+        "name": "Max Trailer",
+        "id": "ID_MARK_MAX_TRAILER"
     },
     {
         "name": "Maxilode",
@@ -4032,6 +3912,14 @@
         "id": "ID_MARK_MAXIMUS"
     },
     {
+        "name": "Maybach",
+        "id": "ID_MARK_MAYBACH"
+    },
+    {
+        "name": "Mazda",
+        "id": "ID_MARK_MAZDA"
+    },
+    {
         "name": "McCloskey",
         "id": "ID_MARK_MCCLOSKEY"
     },
@@ -4044,12 +3932,20 @@
         "id": "ID_MARK_MCCULLOCH"
     },
     {
+        "name": "McLaren",
+        "id": "ID_MARK_MCLAREN"
+    },
+    {
         "name": "Mecalac",
         "id": "ID_MARK_MECALAC"
     },
     {
         "name": "Mecbo",
         "id": "ID_MARK_MECBO"
+    },
+    {
+        "name": "Mega",
+        "id": "ID_MARK_MEGA"
     },
     {
         "name": "Megaactive",
@@ -4072,8 +3968,16 @@
         "id": "ID_MARK_MENCI"
     },
     {
+        "name": "Mercedes-Benz",
+        "id": "ID_MARK_MERCEDES_BENZ"
+    },
+    {
         "name": "Merceron",
         "id": "ID_MARK_MERCERON"
+    },
+    {
+        "name": "Mercury",
+        "id": "ID_MARK_MERCURY"
     },
     {
         "name": "Merker",
@@ -4088,12 +3992,24 @@
         "id": "ID_MARK_METACO"
     },
     {
+        "name": "Metal Fach",
+        "id": "ID_MARK_METAL_FACH"
+    },
+    {
         "name": "Metalna",
         "id": "ID_MARK_METALNA"
     },
     {
+        "name": "Metbox",
+        "id": "ID_MARK_METBOX"
+    },
+    {
         "name": "Metrakit",
         "id": "ID_MARK_METRAKIT"
+    },
+    {
+        "name": "Metrocab",
+        "id": "ID_MARK_METROCAB"
     },
     {
         "name": "Metsan",
@@ -4108,6 +4024,10 @@
         "id": "ID_MARK_MEUSBURGER"
     },
     {
+        "name": "Microcar",
+        "id": "ID_MARK_MICROCAR"
+    },
+    {
         "name": "Midual",
         "id": "ID_MARK_MIDUAL"
     },
@@ -4118,6 +4038,10 @@
     {
         "name": "Mikilon",
         "id": "ID_MARK_MIKILON"
+    },
+    {
+        "name": "Minelli",
+        "id": "ID_MARK_MINELLI"
     },
     {
         "name": "Minerva",
@@ -4140,12 +4064,24 @@
         "id": "ID_MARK_MITSUBER"
     },
     {
+        "name": "Mitsubishi",
+        "id": "ID_MARK_MITSUBISHI"
+    },
+    {
         "name": "Mitsubishi Fuso",
         "id": "ID_MARK_MITSUBISHI_FUSO"
     },
     {
+        "name": "Mitsuoka",
+        "id": "ID_MARK_MITSUOKA"
+    },
+    {
         "name": "Moelven",
         "id": "ID_MARK_MOELVEN"
+    },
+    {
+        "name": "Mole",
+        "id": "ID_MARK_MOLE"
     },
     {
         "name": "Molot",
@@ -4180,8 +4116,16 @@
         "id": "ID_MARK_MORBARK"
     },
     {
+        "name": "Morgan",
+        "id": "ID_MARK_MORGAN"
+    },
+    {
         "name": "Morooka",
         "id": "ID_MARK_MOROOKA"
+    },
+    {
+        "name": "Morris",
+        "id": "ID_MARK_MORRIS"
     },
     {
         "name": "Mosebillit",
@@ -4218,6 +4162,10 @@
     {
         "name": "Motowell",
         "id": "ID_MARK_MOTOWELL"
+    },
+    {
+        "name": "Mowgli",
+        "id": "ID_MARK_MOWGLI"
     },
     {
         "name": "Mudan",
@@ -4260,8 +4208,16 @@
         "id": "ID_MARK_NCR"
     },
     {
+        "name": "NEC",
+        "id": "ID_MARK_NEC"
+    },
+    {
         "name": "NFP",
         "id": "ID_MARK_NFP"
+    },
+    {
+        "name": "NIU",
+        "id": "ID_MARK_NIU"
     },
     {
         "name": "NOE",
@@ -4270,6 +4226,10 @@
     {
         "name": "Narko",
         "id": "ID_MARK_NARKO"
+    },
+    {
+        "name": "Nash",
+        "id": "ID_MARK_NASH"
     },
     {
         "name": "Naveco",
@@ -4328,6 +4288,10 @@
         "id": "ID_MARK_NICOLAS"
     },
     {
+        "name": "Niewiadow",
+        "id": "ID_MARK_NIEWIADOW"
+    },
+    {
         "name": "Nigata",
         "id": "ID_MARK_NIGATA"
     },
@@ -4340,6 +4304,10 @@
         "id": "ID_MARK_NILFISK"
     },
     {
+        "name": "Nio",
+        "id": "ID_MARK_NIO"
+    },
+    {
         "name": "Nipponia",
         "id": "ID_MARK_NIPPONIA"
     },
@@ -4348,12 +4316,20 @@
         "id": "ID_MARK_NISSAMARAN"
     },
     {
+        "name": "Nissan",
+        "id": "ID_MARK_NISSAN"
+    },
+    {
         "name": "Nisseki",
         "id": "ID_MARK_NISSEKI"
     },
     {
         "name": "Nitro",
         "id": "ID_MARK_NITRO"
+    },
+    {
+        "name": "Noble",
+        "id": "ID_MARK_NOBLE"
     },
     {
         "name": "Nokamic",
@@ -4440,6 +4416,10 @@
         "id": "ID_MARK_OMT"
     },
     {
+        "name": "OSET",
+        "id": "ID_MARK_OSET"
+    },
+    {
         "name": "OSSA",
         "id": "ID_MARK_OSSA"
     },
@@ -4452,8 +4432,16 @@
         "id": "ID_MARK_OHARA"
     },
     {
+        "name": "Ohvale",
+        "id": "ID_MARK_OHVALE"
+    },
+    {
         "name": "Ok Kardesler",
         "id": "ID_MARK_OK_KARDESLER"
+    },
+    {
+        "name": "Oldsmobile",
+        "id": "ID_MARK_OLDSMOBILE"
     },
     {
         "name": "Omaks Motors",
@@ -4462,6 +4450,14 @@
     {
         "name": "Omme",
         "id": "ID_MARK_OMME"
+    },
+    {
+        "name": "Opel",
+        "id": "ID_MARK_OPEL"
+    },
+    {
+        "name": "Orange County Choppers",
+        "id": "ID_MARK_ORANGE_COUNTY_CHOPPERS"
     },
     {
         "name": "Orion",
@@ -4474,6 +4470,10 @@
     {
         "name": "Orthaus",
         "id": "ID_MARK_ORTHAUS"
+    },
+    {
+        "name": "Osca",
+        "id": "ID_MARK_OSCA"
     },
     {
         "name": "Otokar",
@@ -4516,12 +4516,32 @@
         "id": "ID_MARK_PCW"
     },
     {
+        "name": "PGO",
+        "id": "ID_MARK_PGO"
+    },
+    {
         "name": "POWERPLUS",
         "id": "ID_MARK_POWERPLUS"
     },
     {
+        "name": "PUCH",
+        "id": "ID_MARK_PUCH"
+    },
+    {
+        "name": "PWR Racing",
+        "id": "ID_MARK_PWR_RACING"
+    },
+    {
+        "name": "Packard",
+        "id": "ID_MARK_PACKARD"
+    },
+    {
         "name": "Pacton",
         "id": "ID_MARK_PACTON"
+    },
+    {
+        "name": "Pagani",
+        "id": "ID_MARK_PAGANI"
     },
     {
         "name": "Palesse",
@@ -4552,6 +4572,10 @@
         "id": "ID_MARK_PANNONIA"
     },
     {
+        "name": "Panoz",
+        "id": "ID_MARK_PANOZ"
+    },
+    {
         "name": "Parcisa",
         "id": "ID_MARK_PARCISA"
     },
@@ -4580,8 +4604,20 @@
         "id": "ID_MARK_PENGPU"
     },
     {
+        "name": "Perard",
+        "id": "ID_MARK_PERARD"
+    },
+    {
+        "name": "Perodua",
+        "id": "ID_MARK_PERODUA"
+    },
+    {
         "name": "Peterbilt",
         "id": "ID_MARK_PETERBILT"
+    },
+    {
+        "name": "Peugeot",
+        "id": "ID_MARK_PEUGEOT"
     },
     {
         "name": "Pezzaioli",
@@ -4590,6 +4626,10 @@
     {
         "name": "Phantom Snowmobiles",
         "id": "ID_MARK_PHANTOM_SNOWMOBILES"
+    },
+    {
+        "name": "Piaggio",
+        "id": "ID_MARK_PIAGGIO"
     },
     {
         "name": "Piccini",
@@ -4616,6 +4656,14 @@
         "id": "ID_MARK_PLACENZA"
     },
     {
+        "name": "Plymouth",
+        "id": "ID_MARK_PLYMOUTH"
+    },
+    {
+        "name": "Polar Badger",
+        "id": "ID_MARK_POLAR_BADGER"
+    },
+    {
         "name": "Polar Fox",
         "id": "ID_MARK_POLAR_FOX"
     },
@@ -4632,12 +4680,28 @@
         "id": "ID_MARK_POLARIS"
     },
     {
+        "name": "Polestar",
+        "id": "ID_MARK_POLESTAR"
+    },
+    {
         "name": "Polini",
         "id": "ID_MARK_POLINI"
     },
     {
+        "name": "Pomor",
+        "id": "ID_MARK_POMOR"
+    },
+    {
         "name": "Ponsse",
         "id": "ID_MARK_PONSSE"
+    },
+    {
+        "name": "Pontiac",
+        "id": "ID_MARK_PONTIAC"
+    },
+    {
+        "name": "Porsche",
+        "id": "ID_MARK_PORSCHE"
     },
     {
         "name": "Potain",
@@ -4646,6 +4710,10 @@
     {
         "name": "Praga",
         "id": "ID_MARK_PRAGA"
+    },
+    {
+        "name": "Premier",
+        "id": "ID_MARK_PREMIER"
     },
     {
         "name": "Prestige",
@@ -4664,6 +4732,10 @@
         "id": "ID_MARK_PRINOTH"
     },
     {
+        "name": "Progasi",
+        "id": "ID_MARK_PROGASI"
+    },
+    {
         "name": "Pronar",
         "id": "ID_MARK_PRONAR"
     },
@@ -4672,8 +4744,16 @@
         "id": "ID_MARK_PRORAB"
     },
     {
+        "name": "Proton",
+        "id": "ID_MARK_PROTON"
+    },
+    {
         "name": "Pubert",
         "id": "ID_MARK_PUBERT"
+    },
+    {
+        "name": "Puma",
+        "id": "ID_MARK_PUMA"
     },
     {
         "name": "Putzmeister",
@@ -4692,8 +4772,20 @@
         "id": "ID_MARK_QLINK"
     },
     {
+        "name": "Qoros",
+        "id": "ID_MARK_QOROS"
+    },
+    {
         "name": "Quadro",
         "id": "ID_MARK_QUADRO"
+    },
+    {
+        "name": "Qvale",
+        "id": "ID_MARK_QVALE"
+    },
+    {
+        "name": "RAM",
+        "id": "ID_MARK_RAM"
     },
     {
         "name": "RBC",
@@ -4702,6 +4794,10 @@
     {
         "name": "RC Juniorcars",
         "id": "ID_MARK_RC_JUNIORCARS"
+    },
+    {
+        "name": "RM-Terex",
+        "id": "ID_MARK_RM_TEREX"
     },
     {
         "name": "RMH",
@@ -4728,6 +4824,10 @@
         "id": "ID_MARK_RAKTOR"
     },
     {
+        "name": "Rambler",
+        "id": "ID_MARK_RAMBLER"
+    },
+    {
         "name": "Rammax",
         "id": "ID_MARK_RAMMAX"
     },
@@ -4748,8 +4848,16 @@
         "id": "ID_MARK_RAVO"
     },
     {
+        "name": "Ravon",
+        "id": "ID_MARK_RAVON"
+    },
+    {
         "name": "Recker",
         "id": "ID_MARK_RECKER"
+    },
+    {
+        "name": "Reddot",
+        "id": "ID_MARK_REDDOT"
     },
     {
         "name": "Regal Raptor",
@@ -4764,8 +4872,28 @@
         "id": "ID_MARK_REGULMOTO"
     },
     {
+        "name": "Reimer",
+        "id": "ID_MARK_REIMER"
+    },
+    {
         "name": "Reisch",
         "id": "ID_MARK_REISCH"
+    },
+    {
+        "name": "Reliant",
+        "id": "ID_MARK_RELIANT"
+    },
+    {
+        "name": "Renaissance",
+        "id": "ID_MARK_RENAISSANCE"
+    },
+    {
+        "name": "Renault",
+        "id": "ID_MARK_RENAULT"
+    },
+    {
+        "name": "Renault Samsung",
+        "id": "ID_MARK_RENAULT_SAMSUNG"
     },
     {
         "name": "Renders",
@@ -4786,6 +4914,10 @@
     {
         "name": "Rewaco",
         "id": "ID_MARK_REWACO"
+    },
+    {
+        "name": "Rezvani",
+        "id": "ID_MARK_REZVANI"
     },
     {
         "name": "Rhino",
@@ -4812,6 +4944,14 @@
         "id": "ID_MARK_RIGUAL"
     },
     {
+        "name": "Rimac",
+        "id": "ID_MARK_RIMAC"
+    },
+    {
+        "name": "Rinspeed",
+        "id": "ID_MARK_RINSPEED"
+    },
+    {
         "name": "Robinson",
         "id": "ID_MARK_ROBINSON"
     },
@@ -4830,6 +4970,10 @@
     {
         "name": "Roehr",
         "id": "ID_MARK_ROEHR"
+    },
+    {
+        "name": "Roewe",
+        "id": "ID_MARK_ROEWE"
     },
     {
         "name": "Rofa",
@@ -4852,12 +4996,24 @@
         "id": "ID_MARK_ROLFO"
     },
     {
+        "name": "Rolls-Royce",
+        "id": "ID_MARK_ROLLS_ROYCE"
+    },
+    {
+        "name": "Ronart",
+        "id": "ID_MARK_RONART"
+    },
+    {
         "name": "Ropa",
         "id": "ID_MARK_ROPA"
     },
     {
         "name": "Rottne",
         "id": "ID_MARK_ROTTNE"
+    },
+    {
+        "name": "Rover",
+        "id": "ID_MARK_ROVER"
     },
     {
         "name": "Roxon",
@@ -4888,6 +5044,10 @@
         "id": "ID_MARK_RUNMAX"
     },
     {
+        "name": "Rutrike",
+        "id": "ID_MARK_RUTRIKE"
+    },
+    {
         "name": "Rydwan",
         "id": "ID_MARK_RYDWAN"
     },
@@ -4900,12 +5060,20 @@
         "id": "ID_MARK_SAM"
     },
     {
+        "name": "SCM",
+        "id": "ID_MARK_SCM"
+    },
+    {
         "name": "SDC Trailers",
         "id": "ID_MARK_SDC_TRAILERS"
     },
     {
         "name": "SDLG",
         "id": "ID_MARK_SDLG"
+    },
+    {
+        "name": "SEAT",
+        "id": "ID_MARK_SEAT"
     },
     {
         "name": "SEM",
@@ -4928,12 +5096,24 @@
         "id": "ID_MARK_SPY"
     },
     {
+        "name": "STIGA",
+        "id": "ID_MARK_STIGA"
+    },
+    {
         "name": "SVM",
         "id": "ID_MARK_SVM"
     },
     {
+        "name": "SWM",
+        "id": "ID_MARK_SWM"
+    },
+    {
         "name": "SZM",
         "id": "ID_MARK_SZM"
+    },
+    {
+        "name": "Saab",
+        "id": "ID_MARK_SAAB"
     },
     {
         "name": "Sachs",
@@ -4952,8 +5132,20 @@
         "id": "ID_MARK_SAHIN_TANKER"
     },
     {
+        "name": "Saipa",
+        "id": "ID_MARK_SAIPA"
+    },
+    {
         "name": "Sakai",
         "id": "ID_MARK_SAKAI"
+    },
+    {
+        "name": "Saleen",
+        "id": "ID_MARK_SALEEN"
+    },
+    {
+        "name": "SamAuto",
+        "id": "ID_MARK_SAMAUTO"
     },
     {
         "name": "Samangan",
@@ -4980,6 +5172,10 @@
         "id": "ID_MARK_SANGLAS"
     },
     {
+        "name": "Santana",
+        "id": "ID_MARK_SANTANA"
+    },
+    {
         "name": "Sany",
         "id": "ID_MARK_SANY"
     },
@@ -4990,6 +5186,10 @@
     {
         "name": "Saris",
         "id": "ID_MARK_SARIS"
+    },
+    {
+        "name": "Saturn",
+        "id": "ID_MARK_SATURN"
     },
     {
         "name": "Saurer",
@@ -5048,8 +5248,16 @@
         "id": "ID_MARK_SCHWING"
     },
     {
+        "name": "Scion",
+        "id": "ID_MARK_SCION"
+    },
+    {
         "name": "Scorpa",
         "id": "ID_MARK_SCORPA"
+    },
+    {
+        "name": "Sears",
+        "id": "ID_MARK_SEARS"
     },
     {
         "name": "Secma",
@@ -5092,12 +5300,20 @@
         "id": "ID_MARK_SHANDONG_KAMA"
     },
     {
+        "name": "Shanghai Maple",
+        "id": "ID_MARK_SHANGHAI_MAPLE"
+    },
+    {
         "name": "Shanlin",
         "id": "ID_MARK_SHANLIN"
     },
     {
         "name": "Shantui",
         "id": "ID_MARK_SHANTUI"
+    },
+    {
+        "name": "Sharmax",
+        "id": "ID_MARK_SHARMAX"
     },
     {
         "name": "Shehwa",
@@ -5136,6 +5352,10 @@
         "id": "ID_MARK_SHORELANDER"
     },
     {
+        "name": "ShuangHuan",
+        "id": "ID_MARK_SHUANGHUAN"
+    },
+    {
         "name": "Shuchi",
         "id": "ID_MARK_SHUCHI"
     },
@@ -5160,6 +5380,10 @@
         "id": "ID_MARK_SIMBEL"
     },
     {
+        "name": "Simca",
+        "id": "ID_MARK_SIMCA"
+    },
+    {
         "name": "Simson",
         "id": "ID_MARK_SIMSON"
     },
@@ -5170,6 +5394,10 @@
     {
         "name": "Sisu",
         "id": "ID_MARK_SISU"
+    },
+    {
+        "name": "Skoda",
+        "id": "ID_MARK_SKODA"
     },
     {
         "name": "Skoda LIAZ",
@@ -5192,6 +5420,10 @@
         "id": "ID_MARK_SKYMAN"
     },
     {
+        "name": "Smart",
+        "id": "ID_MARK_SMART"
+    },
+    {
         "name": "Smile",
         "id": "ID_MARK_SMILE"
     },
@@ -5200,8 +5432,16 @@
         "id": "ID_MARK_SMULDERS"
     },
     {
+        "name": "Snow Dragon",
+        "id": "ID_MARK_SNOW_DRAGON"
+    },
+    {
         "name": "Snow Hawk",
         "id": "ID_MARK_SNOW_HAWK"
+    },
+    {
+        "name": "Sogjoy",
+        "id": "ID_MARK_SOGJOY"
     },
     {
         "name": "Soilmec",
@@ -5240,8 +5480,16 @@
         "id": "ID_MARK_SOOSUNG"
     },
     {
+        "name": "Soueast",
+        "id": "ID_MARK_SOUEAST"
+    },
+    {
         "name": "Specpricep",
         "id": "ID_MARK_SPECPRICEP"
+    },
+    {
+        "name": "Spectre",
+        "id": "ID_MARK_SPECTRE"
     },
     {
         "name": "Spier",
@@ -5250,6 +5498,18 @@
     {
         "name": "Spitzer",
         "id": "ID_MARK_SPITZER"
+    },
+    {
+        "name": "Sprite",
+        "id": "ID_MARK_SPRITE"
+    },
+    {
+        "name": "Spyker",
+        "id": "ID_MARK_SPYKER"
+    },
+    {
+        "name": "SsangYong",
+        "id": "ID_MARK_SSANGYONG"
     },
     {
         "name": "Stalker",
@@ -5304,6 +5564,10 @@
         "id": "ID_MARK_STERLING"
     },
     {
+        "name": "Steyr",
+        "id": "ID_MARK_STEYR"
+    },
+    {
         "name": "Still",
         "id": "ID_MARK_STILL"
     },
@@ -5332,6 +5596,10 @@
         "id": "ID_MARK_STRAIGHTLINE"
     },
     {
+        "name": "Strassmayr",
+        "id": "ID_MARK_STRASSMAYR"
+    },
+    {
         "name": "Strom",
         "id": "ID_MARK_STROM"
     },
@@ -5342,6 +5610,10 @@
     {
         "name": "Studebaker",
         "id": "ID_MARK_STUDEBAKER"
+    },
+    {
+        "name": "Subaru",
+        "id": "ID_MARK_SUBARU"
     },
     {
         "name": "Sumitomo",
@@ -5358,6 +5630,14 @@
     {
         "name": "Super Soco",
         "id": "ID_MARK_SUPER_SOCO"
+    },
+    {
+        "name": "Sur-ron",
+        "id": "ID_MARK_SUR_RON"
+    },
+    {
+        "name": "Suzuki",
+        "id": "ID_MARK_SUZUKI"
     },
     {
         "name": "Swatt",
@@ -5380,8 +5660,16 @@
         "id": "ID_MARK_SYRIUSZ"
     },
     {
+        "name": "System Trailers",
+        "id": "ID_MARK_SYSTEM_TRAILERS"
+    },
+    {
         "name": "TAM",
         "id": "ID_MARK_TAM"
+    },
+    {
+        "name": "TATA",
+        "id": "ID_MARK_TATA"
     },
     {
         "name": "TCM",
@@ -5408,8 +5696,16 @@
         "id": "ID_MARK_TM_RACING"
     },
     {
+        "name": "TSM",
+        "id": "ID_MARK_TSM"
+    },
+    {
         "name": "TSR",
         "id": "ID_MARK_TSR"
+    },
+    {
+        "name": "TVR",
+        "id": "ID_MARK_TVR"
     },
     {
         "name": "TVS",
@@ -5444,6 +5740,10 @@
         "id": "ID_MARK_TAKEUCHI"
     },
     {
+        "name": "Talbot",
+        "id": "ID_MARK_TALBOT"
+    },
+    {
         "name": "Tamrock",
         "id": "ID_MARK_TAMROCK"
     },
@@ -5460,8 +5760,20 @@
         "id": "ID_MARK_TARSUS"
     },
     {
+        "name": "Tatra",
+        "id": "ID_MARK_TATRA"
+    },
+    {
         "name": "Tauras",
         "id": "ID_MARK_TAURAS"
+    },
+    {
+        "name": "Tavials",
+        "id": "ID_MARK_TAVIALS"
+    },
+    {
+        "name": "Tazzari",
+        "id": "ID_MARK_TAZZARI"
     },
     {
         "name": "Tecnokar",
@@ -5484,12 +5796,16 @@
         "id": "ID_MARK_TEREX"
     },
     {
+        "name": "Terex-Demag",
+        "id": "ID_MARK_TEREX_DEMAG"
+    },
+    {
         "name": "Terex O&K",
         "id": "ID_MARK_TEREX_O_K"
     },
     {
-        "name": "Terex-Demag",
-        "id": "ID_MARK_TEREX_DEMAG"
+        "name": "Termit",
+        "id": "ID_MARK_TERMIT"
     },
     {
         "name": "Terranica",
@@ -5502,6 +5818,10 @@
     {
         "name": "Tesab",
         "id": "ID_MARK_TESAB"
+    },
+    {
+        "name": "Tesla",
+        "id": "ID_MARK_TESLA"
     },
     {
         "name": "Tesmec",
@@ -5520,6 +5840,10 @@
         "id": "ID_MARK_THEURER"
     },
     {
+        "name": "Think",
+        "id": "ID_MARK_THINK"
+    },
+    {
         "name": "Thomas",
         "id": "ID_MARK_THOMAS"
     },
@@ -5532,6 +5856,10 @@
         "id": "ID_MARK_THOR"
     },
     {
+        "name": "Thor Motor Coach",
+        "id": "ID_MARK_THOR_MOTOR_COACH"
+    },
+    {
         "name": "Thule",
         "id": "ID_MARK_THULE"
     },
@@ -5540,12 +5868,24 @@
         "id": "ID_MARK_TIANGONG"
     },
     {
+        "name": "Tianma",
+        "id": "ID_MARK_TIANMA"
+    },
+    {
+        "name": "Tianye",
+        "id": "ID_MARK_TIANYE"
+    },
+    {
         "name": "Tiema",
         "id": "ID_MARK_TIEMA"
     },
     {
         "name": "Tigarbo",
         "id": "ID_MARK_TIGARBO"
+    },
+    {
+        "name": "Tigercat",
+        "id": "ID_MARK_TIGERCAT"
     },
     {
         "name": "Tiki Treiler",
@@ -5570,6 +5910,10 @@
     {
         "name": "Titan",
         "id": "ID_MARK_TITAN"
+    },
+    {
+        "name": "Tofas",
+        "id": "ID_MARK_TOFAS"
     },
     {
         "name": "Tokyu",
@@ -5624,6 +5968,18 @@
         "id": "ID_MARK_TOTA"
     },
     {
+        "name": "Towtoy",
+        "id": "ID_MARK_TOWTOY"
+    },
+    {
+        "name": "Toyota",
+        "id": "ID_MARK_TOYOTA"
+    },
+    {
+        "name": "Trabant",
+        "id": "ID_MARK_TRABANT"
+    },
+    {
         "name": "Trail King",
         "id": "ID_MARK_TRAIL_KING"
     },
@@ -5640,12 +5996,20 @@
         "id": "ID_MARK_TRAILOR"
     },
     {
+        "name": "Tramontana",
+        "id": "ID_MARK_TRAMONTANA"
+    },
+    {
         "name": "Tramp",
         "id": "ID_MARK_TRAMP"
     },
     {
         "name": "Tranders",
         "id": "ID_MARK_TRANDERS"
+    },
+    {
+        "name": "Transvario",
+        "id": "ID_MARK_TRANSVARIO"
     },
     {
         "name": "Travertson",
@@ -5662,6 +6026,10 @@
     {
         "name": "Triton All",
         "id": "ID_MARK_TRITON_ALL"
+    },
+    {
+        "name": "Triumph",
+        "id": "ID_MARK_TRIUMPH"
     },
     {
         "name": "Troll",
@@ -5706,6 +6074,10 @@
     {
         "name": "UVM",
         "id": "ID_MARK_UVM"
+    },
+    {
+        "name": "Ultima",
+        "id": "ID_MARK_ULTIMA"
     },
     {
         "name": "Unic",
@@ -5784,6 +6156,14 @@
         "id": "ID_MARK_VAN_VEEN"
     },
     {
+        "name": "Vauxhall",
+        "id": "ID_MARK_VAUXHALL"
+    },
+    {
+        "name": "Vector",
+        "id": "ID_MARK_VECTOR"
+    },
+    {
         "name": "Vectrix",
         "id": "ID_MARK_VECTRIX"
     },
@@ -5792,12 +6172,20 @@
         "id": "ID_MARK_VENIERI"
     },
     {
+        "name": "Venta",
+        "id": "ID_MARK_VENTA"
+    },
+    {
         "name": "Vento",
         "id": "ID_MARK_VENTO"
     },
     {
         "name": "Venture",
         "id": "ID_MARK_VENTURE"
+    },
+    {
+        "name": "Venturi",
+        "id": "ID_MARK_VENTURI"
     },
     {
         "name": "Vermeer",
@@ -5848,6 +6236,14 @@
         "id": "ID_MARK_VMAX"
     },
     {
+        "name": "Vocol",
+        "id": "ID_MARK_VOCOL"
+    },
+    {
+        "name": "Voge",
+        "id": "ID_MARK_VOGE"
+    },
+    {
         "name": "Vogele",
         "id": "ID_MARK_VOGELE"
     },
@@ -5860,12 +6256,28 @@
         "id": "ID_MARK_VOLGABUS"
     },
     {
+        "name": "Volkan",
+        "id": "ID_MARK_VOLKAN"
+    },
+    {
+        "name": "Volkswagen",
+        "id": "ID_MARK_VOLKSWAGEN"
+    },
+    {
         "name": "Volteco",
         "id": "ID_MARK_VOLTECO"
     },
     {
+        "name": "Volvo",
+        "id": "ID_MARK_VOLVO"
+    },
+    {
         "name": "Von Dutch",
         "id": "ID_MARK_VON_DUTCH"
+    },
+    {
+        "name": "Vortex",
+        "id": "ID_MARK_VORTEX"
     },
     {
         "name": "Voxan",
@@ -5888,12 +6300,16 @@
         "id": "ID_MARK_WM_MEYER"
     },
     {
-        "name": "WT Motors",
-        "id": "ID_MARK_WT_MOTORS"
+        "name": "W Motors",
+        "id": "ID_MARK_W_MOTORS"
     },
     {
         "name": "WT-Metall",
         "id": "ID_MARK_WT_METALL"
+    },
+    {
+        "name": "WT Motors",
+        "id": "ID_MARK_WT_MOTORS"
     },
     {
         "name": "Wabash",
@@ -5920,8 +6336,20 @@
         "id": "ID_MARK_WAKAN"
     },
     {
+        "name": "Waltrak",
+        "id": "ID_MARK_WALTRAK"
+    },
+    {
         "name": "Waltron",
         "id": "ID_MARK_WALTRON"
+    },
+    {
+        "name": "Wanderer",
+        "id": "ID_MARK_WANDERER"
+    },
+    {
+        "name": "Wartburg",
+        "id": "ID_MARK_WARTBURG"
     },
     {
         "name": "Watermaster",
@@ -5976,6 +6404,10 @@
         "id": "ID_MARK_WELTE"
     },
     {
+        "name": "Weltmeister",
+        "id": "ID_MARK_WELTMEISTER"
+    },
+    {
         "name": "Weltsbummler",
         "id": "ID_MARK_WELTSBUMMLER"
     },
@@ -5992,8 +6424,16 @@
         "id": "ID_MARK_WESTFALIA"
     },
     {
+        "name": "Westfield",
+        "id": "ID_MARK_WESTFIELD"
+    },
+    {
         "name": "Wielton",
         "id": "ID_MARK_WIELTON"
+    },
+    {
+        "name": "Wiesmann",
+        "id": "ID_MARK_WIESMANN"
     },
     {
         "name": "Wild Panther",
@@ -6014,6 +6454,10 @@
     {
         "name": "Willig",
         "id": "ID_MARK_WILLIG"
+    },
+    {
+        "name": "Willys",
+        "id": "ID_MARK_WILLYS"
     },
     {
         "name": "Wirtgen",
@@ -6068,6 +6512,10 @@
         "id": "ID_MARK_XIAGONG"
     },
     {
+        "name": "Xin Kai",
+        "id": "ID_MARK_XIN_KAI"
+    },
+    {
         "name": "XingYue",
         "id": "ID_MARK_XINGYUE"
     },
@@ -6086,6 +6534,10 @@
     {
         "name": "Xmotos",
         "id": "ID_MARK_XMOTOS"
+    },
+    {
+        "name": "Xpeng",
+        "id": "ID_MARK_XPENG"
     },
     {
         "name": "Xtreme",
@@ -6172,6 +6624,10 @@
         "id": "ID_MARK_YUKON"
     },
     {
+        "name": "Yulon",
+        "id": "ID_MARK_YULON"
+    },
+    {
         "name": "Yutong",
         "id": "ID_MARK_YUTONG"
     },
@@ -6184,8 +6640,16 @@
         "id": "ID_MARK_ZEV"
     },
     {
+        "name": "ZIP Motors",
+        "id": "ID_MARK_ZIP_MOTORS"
+    },
+    {
         "name": "ZVVZ",
         "id": "ID_MARK_ZVVZ"
+    },
+    {
+        "name": "ZX",
+        "id": "ID_MARK_ZX"
     },
     {
         "name": "Zadira",
@@ -6196,8 +6660,20 @@
         "id": "ID_MARK_ZASLAW"
     },
     {
+        "name": "Zastava",
+        "id": "ID_MARK_ZASTAVA"
+    },
+    {
         "name": "Zemag",
         "id": "ID_MARK_ZEMAG"
+    },
+    {
+        "name": "Zenos",
+        "id": "ID_MARK_ZENOS"
+    },
+    {
+        "name": "Zenvo",
+        "id": "ID_MARK_ZENVO"
     },
     {
         "name": "Zeppelin",
@@ -6224,6 +6700,10 @@
         "id": "ID_MARK_ZHONG_TONG"
     },
     {
+        "name": "Zibar",
+        "id": "ID_MARK_ZIBAR"
+    },
+    {
         "name": "Zoeller",
         "id": "ID_MARK_ZOELLER"
     },
@@ -6248,6 +6728,10 @@
         "id": "ID_MARK_ZORZI"
     },
     {
+        "name": "Zotye",
+        "id": "ID_MARK_ZOTYE"
+    },
+    {
         "name": "Zremb",
         "id": "ID_MARK_ZREMB"
     },
@@ -6268,6 +6752,18 @@
         "id": "ID_MARK_ZWEIRAD_UNION"
     },
     {
+        "name": "xDevice",
+        "id": "ID_MARK_XDEVICE"
+    },
+    {
+        "name": "Ё-мобиль",
+        "id": "ID_MARK_E_MOBIL"
+    },
+    {
+        "name": "ААК Прогресс",
+        "id": "ID_MARK_AAK_PROGRESS"
+    },
+    {
         "name": "АВДИС",
         "id": "ID_MARK_AVDIS"
     },
@@ -6282,6 +6778,10 @@
     {
         "name": "АКМТ Коминвест",
         "id": "ID_MARK_AKMT_KOMINVEST"
+    },
+    {
+        "name": "АКТ",
+        "id": "ID_MARK_AKT"
     },
     {
         "name": "АПС",
@@ -6312,6 +6812,10 @@
         "id": "ID_MARK_ATZ_TRANS_ABSOLYUT"
     },
     {
+        "name": "Авион",
+        "id": "ID_MARK_AVION"
+    },
+    {
         "name": "Авто",
         "id": "ID_MARK_AVTO"
     },
@@ -6320,8 +6824,16 @@
         "id": "ID_MARK_AVTO_MODUL_AMD"
     },
     {
+        "name": "Авто-Профи",
+        "id": "ID_MARK_AVTO_PROFI"
+    },
+    {
         "name": "АвтоВАЗтранс",
         "id": "ID_MARK_AVTOVAZTRANS"
+    },
+    {
+        "name": "АвтоГазТранс",
+        "id": "ID_MARK_AVTOGAZTRANS"
     },
     {
         "name": "АвтоМаш",
@@ -6330,6 +6842,10 @@
     {
         "name": "АвтоСпецТехника",
         "id": "ID_MARK_AVTOSPETSTEKHNIKA"
+    },
+    {
+        "name": "Автокам",
+        "id": "ID_MARK_AVTOKAM"
     },
     {
         "name": "Автомастер",
@@ -6346,6 +6862,10 @@
     {
         "name": "Агро-Союз",
         "id": "ID_MARK_AGRO_SOYUZ"
+    },
+    {
+        "name": "Агромастер",
+        "id": "ID_MARK_AGROMASTER"
     },
     {
         "name": "Агромаш",
@@ -6412,6 +6932,14 @@
         "id": "ID_MARK_BRMZ"
     },
     {
+        "name": "БТС",
+        "id": "ID_MARK_BTS"
+    },
+    {
+        "name": "БЭСТ",
+        "id": "ID_MARK_BEST"
+    },
+    {
         "name": "Багем",
         "id": "ID_MARK_BAGEM"
     },
@@ -6468,8 +6996,16 @@
         "id": "ID_MARK_BOREKS"
     },
     {
+        "name": "Бронто",
+        "id": "ID_MARK_BRONTO"
+    },
+    {
         "name": "Брянский арсенал",
         "id": "ID_MARK_BRYANSKIY_ARSENAL"
+    },
+    {
+        "name": "Брянсксельмаш",
+        "id": "ID_MARK_BRYANSKSELMASH"
     },
     {
         "name": "Бурлак",
@@ -6552,6 +7088,10 @@
         "id": "ID_MARK_VOSTOK_TREYLER"
     },
     {
+        "name": "ГАЗ",
+        "id": "ID_MARK_GAZ"
+    },
+    {
         "name": "ГАЗ-САЗ",
         "id": "ID_MARK_GAZ_SAZ"
     },
@@ -6568,12 +7108,12 @@
         "id": "ID_MARK_GERDAKAR"
     },
     {
-        "name": "ГК Содружество",
-        "id": "ID_MARK_GK_SODRUZHESTVO"
-    },
-    {
         "name": "ГКБ",
         "id": "ID_MARK_GKB"
+    },
+    {
+        "name": "ГК Содружество",
+        "id": "ID_MARK_GK_SODRUZHESTVO"
     },
     {
         "name": "ГС",
@@ -6602,6 +7142,10 @@
     {
         "name": "Гомсельмаш",
         "id": "ID_MARK_GOMSELMASH"
+    },
+    {
+        "name": "Гоночный автомобиль",
+        "id": "ID_MARK_GONOCHNYY_AVTOMOBIL"
     },
     {
         "name": "Горизонталь",
@@ -6688,6 +7232,10 @@
         "id": "ID_MARK_EVROMASH"
     },
     {
+        "name": "Евромонтаж",
+        "id": "ID_MARK_EVROMONTAZH"
+    },
+    {
         "name": "Европрицеп",
         "id": "ID_MARK_EVROPRITSEP"
     },
@@ -6704,6 +7252,10 @@
         "id": "ID_MARK_ERAZ"
     },
     {
+        "name": "ЗАЗ",
+        "id": "ID_MARK_ZAZ"
+    },
+    {
         "name": "ЗАО Мегаполис",
         "id": "ID_MARK_ZAO_MEGAPOLIS"
     },
@@ -6714,6 +7266,10 @@
     {
         "name": "ЗДС",
         "id": "ID_MARK_ZDS"
+    },
+    {
+        "name": "ЗИЛ",
+        "id": "ID_MARK_ZIL"
     },
     {
         "name": "ЗИФ",
@@ -6736,12 +7292,32 @@
         "id": "ID_MARK_ZIM"
     },
     {
+        "name": "ЗиС",
+        "id": "ID_MARK_ZIS"
+    },
+    {
+        "name": "Зырянин",
+        "id": "ID_MARK_ZYRYANIN"
+    },
+    {
+        "name": "ИЖ",
+        "id": "ID_MARK_IZH"
+    },
+    {
         "name": "Ивановец",
         "id": "ID_MARK_IVANOVETS"
     },
     {
         "name": "Ивэнергомаш",
         "id": "ID_MARK_IVENERGOMASH"
+    },
+    {
+        "name": "Ижевские прицепы",
+        "id": "ID_MARK_IZHEVSKIE_PRITSEPY"
+    },
+    {
+        "name": "Инман",
+        "id": "ID_MARK_INMAN"
     },
     {
         "name": "Ирмаш",
@@ -6782,6 +7358,10 @@
     {
         "name": "КЗС",
         "id": "ID_MARK_KZS"
+    },
+    {
+        "name": "ККЗ (Камышинский КЗ)",
+        "id": "ID_MARK_KKZ_KAMYSHINSKIY_KZ"
     },
     {
         "name": "КМ",
@@ -6836,8 +7416,16 @@
         "id": "ID_MARK_KAMENSKAVTO"
     },
     {
+        "name": "Канонир",
+        "id": "ID_MARK_KANONIR"
+    },
+    {
         "name": "Капри",
         "id": "ID_MARK_KAPRI"
+    },
+    {
+        "name": "Кентавр",
+        "id": "ID_MARK_KENTAVR"
     },
     {
         "name": "Кинешма",
@@ -6866,6 +7454,10 @@
     {
         "name": "Колмогор",
         "id": "ID_MARK_KOLMOGOR"
+    },
+    {
+        "name": "Комбат",
+        "id": "ID_MARK_KOMBAT"
     },
     {
         "name": "Коммаш (Арзамас)",
@@ -6898,6 +7490,10 @@
     {
         "name": "Кранэкс",
         "id": "ID_MARK_KRANEKS"
+    },
+    {
+        "name": "Кремень",
+        "id": "ID_MARK_KREMEN"
     },
     {
         "name": "Криогенмаш",
@@ -6960,6 +7556,10 @@
         "id": "ID_MARK_LTS_OPYTNYY_ZAVOD"
     },
     {
+        "name": "Лаггар",
+        "id": "ID_MARK_LAGGAR"
+    },
+    {
         "name": "Ленкомтех",
         "id": "ID_MARK_LENKOMTEKH"
     },
@@ -6976,8 +7576,16 @@
         "id": "ID_MARK_LIDAGROPROMMASH"
     },
     {
+        "name": "Лидер",
+        "id": "ID_MARK_LIDER"
+    },
+    {
         "name": "Лидсельмаш",
         "id": "ID_MARK_LIDSELMASH"
+    },
+    {
+        "name": "ЛуАЗ",
+        "id": "ID_MARK_LUAZ"
     },
     {
         "name": "Львовский Автопогрузчик",
@@ -7088,6 +7696,10 @@
         "id": "ID_MARK_MASHZAVOD_IM_KUYBYSHEVA"
     },
     {
+        "name": "Машино-Деталь",
+        "id": "ID_MARK_MASHINO_DETAL"
+    },
+    {
         "name": "Мекан",
         "id": "ID_MARK_MEKAN"
     },
@@ -7128,6 +7740,10 @@
         "id": "ID_MARK_MOSDIZAYNMASH"
     },
     {
+        "name": "Москвич",
+        "id": "ID_MARK_MOSKVICH"
+    },
+    {
         "name": "Мотовилиха",
         "id": "ID_MARK_MOTOVILIKHA"
     },
@@ -7150,6 +7766,14 @@
     {
         "name": "НКМЗ",
         "id": "ID_MARK_NKMZ"
+    },
+    {
+        "name": "НМЗ",
+        "id": "ID_MARK_NMZ"
+    },
+    {
+        "name": "НОЭЗНО",
+        "id": "ID_MARK_NOEZNO"
     },
     {
         "name": "НПК Коммаш",
@@ -7220,12 +7844,24 @@
         "id": "ID_MARK_ORLOVSKIY_POGRUZCHIK"
     },
     {
+        "name": "Охотец",
+        "id": "ID_MARK_OKHOTETS"
+    },
+    {
         "name": "ПАЗ",
         "id": "ID_MARK_PAZ"
     },
     {
         "name": "ПЗГТ",
         "id": "ID_MARK_PZGT"
+    },
+    {
+        "name": "ПЗСММ",
+        "id": "ID_MARK_PZSMM"
+    },
+    {
+        "name": "ПК УСПТ",
+        "id": "ID_MARK_PK_USPT"
     },
     {
         "name": "ПМЗ",
@@ -7372,6 +8008,10 @@
         "id": "ID_MARK_ROSSPETSPRITSEP"
     },
     {
+        "name": "Росомаха",
+        "id": "ID_MARK_ROSOMAKHA"
+    },
+    {
         "name": "Рострак",
         "id": "ID_MARK_ROSTRAK"
     },
@@ -7394,6 +8034,10 @@
     {
         "name": "Русский Вездеход",
         "id": "ID_MARK_RUSSKIY_VEZDEKHOD"
+    },
+    {
+        "name": "Русский грузовик",
+        "id": "ID_MARK_RUSSKIY_GRUZOVIK"
     },
     {
         "name": "Рысь",
@@ -7440,6 +8084,10 @@
         "id": "ID_MARK_SKG"
     },
     {
+        "name": "СМЗ",
+        "id": "ID_MARK_SMZ"
+    },
+    {
         "name": "СМТ",
         "id": "ID_MARK_SMT"
     },
@@ -7448,8 +8096,20 @@
         "id": "ID_MARK_SNM_STROYNEFTEMASH"
     },
     {
+        "name": "СОЗА",
+        "id": "ID_MARK_SOZA"
+    },
+    {
+        "name": "СПК",
+        "id": "ID_MARK_SPK"
+    },
+    {
         "name": "ССТ",
         "id": "ID_MARK_SST"
+    },
+    {
+        "name": "СТС",
+        "id": "ID_MARK_STS"
     },
     {
         "name": "Сармат",
@@ -7466,6 +8126,10 @@
     {
         "name": "Севдормаш",
         "id": "ID_MARK_SEVDORMASH"
+    },
+    {
+        "name": "Север (Sever)",
+        "id": "ID_MARK_SEVER_SEVER"
     },
     {
         "name": "Сеспель",
@@ -7496,8 +8160,16 @@
         "id": "ID_MARK_SKIF"
     },
     {
+        "name": "Слон",
+        "id": "ID_MARK_SLON"
+    },
+    {
         "name": "Сокол",
         "id": "ID_MARK_SOKOL"
+    },
+    {
+        "name": "СпецАвтоПрицеп",
+        "id": "ID_MARK_SPETSAVTOPRITSEP"
     },
     {
         "name": "СпецМаш",
@@ -7540,6 +8212,10 @@
         "id": "ID_MARK_START"
     },
     {
+        "name": "Сторк",
+        "id": "ID_MARK_STORK"
+    },
+    {
         "name": "Стрелец",
         "id": "ID_MARK_STRELETS"
     },
@@ -7576,6 +8252,10 @@
         "id": "ID_MARK_TVEKS"
     },
     {
+        "name": "ТЕХПРО",
+        "id": "ID_MARK_TEKHPRO"
+    },
+    {
         "name": "ТЗА",
         "id": "ID_MARK_TZA"
     },
@@ -7602,6 +8282,10 @@
     {
         "name": "ТТМ",
         "id": "ID_MARK_TTM"
+    },
+    {
+        "name": "ТагАЗ",
+        "id": "ID_MARK_TAGAZ"
     },
     {
         "name": "Тайзер",
@@ -7708,6 +8392,10 @@
         "id": "ID_MARK_TURIST"
     },
     {
+        "name": "УАЗ",
+        "id": "ID_MARK_UAZ"
+    },
+    {
         "name": "УГБ",
         "id": "ID_MARK_UGB"
     },
@@ -7770,6 +8458,14 @@
     {
         "name": "ФРС",
         "id": "ID_MARK_FRS"
+    },
+    {
+        "name": "ХАЗ",
+        "id": "ID_MARK_KHAZ"
+    },
+    {
+        "name": "ХАНТ",
+        "id": "ID_MARK_KHANT"
     },
     {
         "name": "ХТЗ",
@@ -7868,6 +8564,10 @@
         "id": "ID_MARK_CHUVASHPILLER"
     },
     {
+        "name": "ШУС",
+        "id": "ID_MARK_SHUS"
+    },
+    {
         "name": "Шатун",
         "id": "ID_MARK_SHATUN"
     },
@@ -7890,6 +8590,10 @@
     {
         "name": "ЭКОсервис-Нефтегаз",
         "id": "ID_MARK_EKOSERVIS_NEFTEGAZ"
+    },
+    {
+        "name": "ЭЛЬТАВР",
+        "id": "ID_MARK_ELTAVR"
     },
     {
         "name": "ЭО",
@@ -7946,657 +8650,5 @@
     {
         "name": "Ясиноватский Машиностроительный Завод",
         "id": "ID_MARK_YASINOVATSKIY_MASHINOSTROITELNYY_ZAVOD"
-    },
-    {
-        "name": "ASHOK LEYLAND",
-        "id": "ID_MARK_ASHOK_LEYLAND"
-    },
-    {
-        "name": "ASV",
-        "id": "ID_MARK_ASV"
-    },
-    {
-        "name": "Akkord",
-        "id": "ID_MARK_AKKORD"
-    },
-    {
-        "name": "Alloy",
-        "id": "ID_MARK_ALLOY"
-    },
-    {
-        "name": "Almatruck",
-        "id": "ID_MARK_ALMATRUCK"
-    },
-    {
-        "name": "Apal",
-        "id": "ID_MARK_APAL"
-    },
-    {
-        "name": "Aurus",
-        "id": "ID_MARK_AURUS"
-    },
-    {
-        "name": "Austin Healey",
-        "id": "ID_MARK_AUSTIN_HEALEY"
-    },
-    {
-        "name": "BAIC",
-        "id": "ID_MARK_BAIC"
-    },
-    {
-        "name": "BRZ",
-        "id": "ID_MARK_BRZ"
-    },
-    {
-        "name": "Beiben (North Benz)",
-        "id": "ID_MARK_BEIBEN_NORTH_BENZ"
-    },
-    {
-        "name": "Beyerland",
-        "id": "ID_MARK_BEYERLAND"
-    },
-    {
-        "name": "Bizien",
-        "id": "ID_MARK_BIZIEN"
-    },
-    {
-        "name": "Borum",
-        "id": "ID_MARK_BORUM"
-    },
-    {
-        "name": "Bourgault",
-        "id": "ID_MARK_BOURGAULT"
-    },
-    {
-        "name": "Brough Superior",
-        "id": "ID_MARK_BROUGH_SUPERIOR"
-    },
-    {
-        "name": "Bunker",
-        "id": "ID_MARK_BUNKER"
-    },
-    {
-        "name": "Burstner",
-        "id": "ID_MARK_BURSTNER"
-    },
-    {
-        "name": "Byrus",
-        "id": "ID_MARK_BYRUS"
-    },
-    {
-        "name": "Cathefeng",
-        "id": "ID_MARK_CATHEFENG"
-    },
-    {
-        "name": "Chana",
-        "id": "ID_MARK_CHANA"
-    },
-    {
-        "name": "Changhe",
-        "id": "ID_MARK_CHANGHE"
-    },
-    {
-        "name": "Clayton",
-        "id": "ID_MARK_CLAYTON"
-    },
-    {
-        "name": "Contar",
-        "id": "ID_MARK_CONTAR"
-    },
-    {
-        "name": "Cord",
-        "id": "ID_MARK_CORD"
-    },
-    {
-        "name": "DW Hower",
-        "id": "ID_MARK_DW_HOWER"
-    },
-    {
-        "name": "Dallara",
-        "id": "ID_MARK_DALLARA"
-    },
-    {
-        "name": "Dijkstra",
-        "id": "ID_MARK_DIJKSTRA"
-    },
-    {
-        "name": "Dintek",
-        "id": "ID_MARK_DINTEK"
-    },
-    {
-        "name": "Drillto",
-        "id": "ID_MARK_DRILLTO"
-    },
-    {
-        "name": "E-M",
-        "id": "ID_MARK_E_M"
-    },
-    {
-        "name": "EKW",
-        "id": "ID_MARK_EKW"
-    },
-    {
-        "name": "EL7",
-        "id": "ID_MARK_EL7"
-    },
-    {
-        "name": "EcoGet",
-        "id": "ID_MARK_ECOGET"
-    },
-    {
-        "name": "Esterel",
-        "id": "ID_MARK_ESTEREL"
-    },
-    {
-        "name": "EuroTank",
-        "id": "ID_MARK_EUROTANK"
-    },
-    {
-        "name": "Fassi",
-        "id": "ID_MARK_FASSI"
-    },
-    {
-        "name": "Fibo intercon",
-        "id": "ID_MARK_FIBO_INTERCON"
-    },
-    {
-        "name": "Fishride",
-        "id": "ID_MARK_FISHRIDE"
-    },
-    {
-        "name": "Fisso",
-        "id": "ID_MARK_FISSO"
-    },
-    {
-        "name": "Flanker",
-        "id": "ID_MARK_FLANKER"
-    },
-    {
-        "name": "Forst",
-        "id": "ID_MARK_FORST"
-    },
-    {
-        "name": "Franz Kleine",
-        "id": "ID_MARK_FRANZ_KLEINE"
-    },
-    {
-        "name": "GEM",
-        "id": "ID_MARK_GEM"
-    },
-    {
-        "name": "GT Semi Trailers",
-        "id": "ID_MARK_GT_SEMI_TRAILERS"
-    },
-    {
-        "name": "GT7 (Кузполимермаш)",
-        "id": "ID_MARK_GT7_KUZPOLIMERMASH"
-    },
-    {
-        "name": "Ginaf",
-        "id": "ID_MARK_GINAF"
-    },
-    {
-        "name": "Goodwork",
-        "id": "ID_MARK_GOODWORK"
-    },
-    {
-        "name": "Gradall",
-        "id": "ID_MARK_GRADALL"
-    },
-    {
-        "name": "Grun",
-        "id": "ID_MARK_GRUN"
-    },
-    {
-        "name": "Guillen",
-        "id": "ID_MARK_GUILLEN"
-    },
-    {
-        "name": "GuteWolf",
-        "id": "ID_MARK_GUTEWOLF"
-    },
-    {
-        "name": "Hasky",
-        "id": "ID_MARK_HASKY"
-    },
-    {
-        "name": "Horch",
-        "id": "ID_MARK_HORCH"
-    },
-    {
-        "name": "Jialing",
-        "id": "ID_MARK_JIALING"
-    },
-    {
-        "name": "Jinbei",
-        "id": "ID_MARK_JINBEI"
-    },
-    {
-        "name": "KOiRA",
-        "id": "ID_MARK_KOIRA"
-    },
-    {
-        "name": "KUHN",
-        "id": "ID_MARK_KUHN"
-    },
-    {
-        "name": "Kansas",
-        "id": "ID_MARK_KANSAS"
-    },
-    {
-        "name": "Kassbohrer",
-        "id": "ID_MARK_KASSBOHRER"
-    },
-    {
-        "name": "Kautec",
-        "id": "ID_MARK_KAUTEC"
-    },
-    {
-        "name": "Kerland",
-        "id": "ID_MARK_KERLAND"
-    },
-    {
-        "name": "Kolman",
-        "id": "ID_MARK_KOLMAN"
-    },
-    {
-        "name": "Kome",
-        "id": "ID_MARK_KOME"
-    },
-    {
-        "name": "Korn Kippers",
-        "id": "ID_MARK_KORN_KIPPERS"
-    },
-    {
-        "name": "Koshine",
-        "id": "ID_MARK_KOSHINE"
-    },
-    {
-        "name": "Ligier",
-        "id": "ID_MARK_LIGIER"
-    },
-    {
-        "name": "Logem",
-        "id": "ID_MARK_LOGEM"
-    },
-    {
-        "name": "Lotos",
-        "id": "ID_MARK_LOTOS"
-    },
-    {
-        "name": "Lucid",
-        "id": "ID_MARK_LUCID"
-    },
-    {
-        "name": "Lunar",
-        "id": "ID_MARK_LUNAR"
-    },
-    {
-        "name": "M&V GmbH Siegmar",
-        "id": "ID_MARK_M_V_GMBH_SIEGMAR"
-    },
-    {
-        "name": "MITSUBI",
-        "id": "ID_MARK_MITSUBI"
-    },
-    {
-        "name": "Maisonneuve",
-        "id": "ID_MARK_MAISONNEUVE"
-    },
-    {
-        "name": "Mars",
-        "id": "ID_MARK_MARS"
-    },
-    {
-        "name": "Metal Fach",
-        "id": "ID_MARK_METAL_FACH"
-    },
-    {
-        "name": "Metbox",
-        "id": "ID_MARK_METBOX"
-    },
-    {
-        "name": "Mole",
-        "id": "ID_MARK_MOLE"
-    },
-    {
-        "name": "Mowgli",
-        "id": "ID_MARK_MOWGLI"
-    },
-    {
-        "name": "NEC",
-        "id": "ID_MARK_NEC"
-    },
-    {
-        "name": "NIU",
-        "id": "ID_MARK_NIU"
-    },
-    {
-        "name": "Nash",
-        "id": "ID_MARK_NASH"
-    },
-    {
-        "name": "Niewiadow",
-        "id": "ID_MARK_NIEWIADOW"
-    },
-    {
-        "name": "OSET",
-        "id": "ID_MARK_OSET"
-    },
-    {
-        "name": "Ohvale",
-        "id": "ID_MARK_OHVALE"
-    },
-    {
-        "name": "Orange County Choppers",
-        "id": "ID_MARK_ORANGE_COUNTY_CHOPPERS"
-    },
-    {
-        "name": "PWR Racing",
-        "id": "ID_MARK_PWR_RACING"
-    },
-    {
-        "name": "Perard",
-        "id": "ID_MARK_PERARD"
-    },
-    {
-        "name": "Polar Badger",
-        "id": "ID_MARK_POLAR_BADGER"
-    },
-    {
-        "name": "Pomor",
-        "id": "ID_MARK_POMOR"
-    },
-    {
-        "name": "Progasi",
-        "id": "ID_MARK_PROGASI"
-    },
-    {
-        "name": "RM-Terex",
-        "id": "ID_MARK_RM_TEREX"
-    },
-    {
-        "name": "Rambler",
-        "id": "ID_MARK_RAMBLER"
-    },
-    {
-        "name": "Reddot",
-        "id": "ID_MARK_REDDOT"
-    },
-    {
-        "name": "Reimer",
-        "id": "ID_MARK_REIMER"
-    },
-    {
-        "name": "Rinspeed",
-        "id": "ID_MARK_RINSPEED"
-    },
-    {
-        "name": "Rutrike",
-        "id": "ID_MARK_RUTRIKE"
-    },
-    {
-        "name": "SCM",
-        "id": "ID_MARK_SCM"
-    },
-    {
-        "name": "STIGA",
-        "id": "ID_MARK_STIGA"
-    },
-    {
-        "name": "SWM",
-        "id": "ID_MARK_SWM"
-    },
-    {
-        "name": "Saipa",
-        "id": "ID_MARK_SAIPA"
-    },
-    {
-        "name": "SamAuto",
-        "id": "ID_MARK_SAMAUTO"
-    },
-    {
-        "name": "Sharmax",
-        "id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "Simca",
-        "id": "ID_MARK_SIMCA"
-    },
-    {
-        "name": "Snow Dragon",
-        "id": "ID_MARK_SNOW_DRAGON"
-    },
-    {
-        "name": "Sogjoy",
-        "id": "ID_MARK_SOGJOY"
-    },
-    {
-        "name": "Sprite",
-        "id": "ID_MARK_SPRITE"
-    },
-    {
-        "name": "Strassmayr",
-        "id": "ID_MARK_STRASSMAYR"
-    },
-    {
-        "name": "Sur-ron",
-        "id": "ID_MARK_SUR_RON"
-    },
-    {
-        "name": "System Trailers",
-        "id": "ID_MARK_SYSTEM_TRAILERS"
-    },
-    {
-        "name": "TSM",
-        "id": "ID_MARK_TSM"
-    },
-    {
-        "name": "Tavials",
-        "id": "ID_MARK_TAVIALS"
-    },
-    {
-        "name": "Termit",
-        "id": "ID_MARK_TERMIT"
-    },
-    {
-        "name": "Thor Motor Coach",
-        "id": "ID_MARK_THOR_MOTOR_COACH"
-    },
-    {
-        "name": "Tigercat",
-        "id": "ID_MARK_TIGERCAT"
-    },
-    {
-        "name": "Towtoy",
-        "id": "ID_MARK_TOWTOY"
-    },
-    {
-        "name": "Transvario",
-        "id": "ID_MARK_TRANSVARIO"
-    },
-    {
-        "name": "Venta",
-        "id": "ID_MARK_VENTA"
-    },
-    {
-        "name": "Vocol",
-        "id": "ID_MARK_VOCOL"
-    },
-    {
-        "name": "Voge",
-        "id": "ID_MARK_VOGE"
-    },
-    {
-        "name": "Volkan",
-        "id": "ID_MARK_VOLKAN"
-    },
-    {
-        "name": "Waltrak",
-        "id": "ID_MARK_WALTRAK"
-    },
-    {
-        "name": "ZIP Motors",
-        "id": "ID_MARK_ZIP_MOTORS"
-    },
-    {
-        "name": "xDevice",
-        "id": "ID_MARK_XDEVICE"
-    },
-    {
-        "name": "ААК Прогресс",
-        "id": "ID_MARK_AAK_PROGRESS"
-    },
-    {
-        "name": "АКТ",
-        "id": "ID_MARK_AKT"
-    },
-    {
-        "name": "Авион",
-        "id": "ID_MARK_AVION"
-    },
-    {
-        "name": "Авто-Профи",
-        "id": "ID_MARK_AVTO_PROFI"
-    },
-    {
-        "name": "АвтоГазТранс",
-        "id": "ID_MARK_AVTOGAZTRANS"
-    },
-    {
-        "name": "Агромастер",
-        "id": "ID_MARK_AGROMASTER"
-    },
-    {
-        "name": "БТС",
-        "id": "ID_MARK_BTS"
-    },
-    {
-        "name": "БЭСТ",
-        "id": "ID_MARK_BEST"
-    },
-    {
-        "name": "Брянсксельмаш",
-        "id": "ID_MARK_BRYANSKSELMASH"
-    },
-    {
-        "name": "Гоночный болид",
-        "id": "ID_MARK_GONOCHNYY_BOLID"
-    },
-    {
-        "name": "Евромонтаж",
-        "id": "ID_MARK_EVROMONTAZH"
-    },
-    {
-        "name": "Зырянин",
-        "id": "ID_MARK_ZYRYANIN"
-    },
-    {
-        "name": "Ижевские прицепы",
-        "id": "ID_MARK_IZHEVSKIE_PRITSEPY"
-    },
-    {
-        "name": "Инман",
-        "id": "ID_MARK_INMAN"
-    },
-    {
-        "name": "ККЗ (Камышинский КЗ)",
-        "id": "ID_MARK_KKZ_KAMYSHINSKIY_KZ"
-    },
-    {
-        "name": "Кентавр",
-        "id": "ID_MARK_KENTAVR"
-    },
-    {
-        "name": "Кремень",
-        "id": "ID_MARK_KREMEN"
-    },
-    {
-        "name": "Лаггар",
-        "id": "ID_MARK_LAGGAR"
-    },
-    {
-        "name": "Лидер",
-        "id": "ID_MARK_LIDER"
-    },
-    {
-        "name": "Машино-Деталь",
-        "id": "ID_MARK_MASHINO_DETAL"
-    },
-    {
-        "name": "НМЗ",
-        "id": "ID_MARK_NMZ"
-    },
-    {
-        "name": "НОЭЗНО",
-        "id": "ID_MARK_NOEZNO"
-    },
-    {
-        "name": "Охотец",
-        "id": "ID_MARK_OKHOTETS"
-    },
-    {
-        "name": "ПЗСММ",
-        "id": "ID_MARK_PZSMM"
-    },
-    {
-        "name": "ПК УСПТ",
-        "id": "ID_MARK_PK_USPT"
-    },
-    {
-        "name": "Росомаха",
-        "id": "ID_MARK_ROSOMAKHA"
-    },
-    {
-        "name": "Русский грузовик",
-        "id": "ID_MARK_RUSSKIY_GRUZOVIK"
-    },
-    {
-        "name": "СОЗА",
-        "id": "ID_MARK_SOZA"
-    },
-    {
-        "name": "СПК",
-        "id": "ID_MARK_SPK"
-    },
-    {
-        "name": "СТС",
-        "id": "ID_MARK_STS"
-    },
-    {
-        "name": "Север (Sever)",
-        "id": "ID_MARK_SEVER_SEVER"
-    },
-    {
-        "name": "Слон",
-        "id": "ID_MARK_SLON"
-    },
-    {
-        "name": "СпецАвтоПрицеп",
-        "id": "ID_MARK_SPETSAVTOPRITSEP"
-    },
-    {
-        "name": "Сторк",
-        "id": "ID_MARK_STORK"
-    },
-    {
-        "name": "ТЕХПРО",
-        "id": "ID_MARK_TEKHPRO"
-    },
-    {
-        "name": "ХАЗ",
-        "id": "ID_MARK_KHAZ"
-    },
-    {
-        "name": "ХАНТ",
-        "id": "ID_MARK_KHANT"
-    },
-    {
-        "name": "ШУС",
-        "id": "ID_MARK_SHUS"
-    },
-    {
-        "name": "ЭЛЬТАВР",
-        "id": "ID_MARK_ELTAVR"
     }
 ]

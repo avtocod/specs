@@ -1,18 +1,58 @@
 [
     {
+        "name": "2-Series",
+        "id": "ID_MARK_SCANIA_MODEL_2_SERIES",
+        "mark_id": "ID_MARK_SCANIA"
+    },
+    {
+        "name": "3-Series",
+        "id": "ID_MARK_SCANIA_MODEL_3_SERIES",
+        "mark_id": "ID_MARK_SCANIA"
+    },
+    {
+        "name": "4-Series",
+        "id": "ID_MARK_SCANIA_MODEL_4_SERIES",
+        "mark_id": "ID_MARK_SCANIA"
+    },
+    {
+        "name": "4X2",
+        "id": "ID_MARK_HOWO_MODEL_4X2",
+        "mark_id": "ID_MARK_HOWO"
+    },
+    {
+        "name": "4x2",
+        "id": "ID_MARK_CAMC_MODEL_4X2",
+        "mark_id": "ID_MARK_CAMC"
+    },
+    {
+        "name": "4x2",
+        "id": "ID_MARK_HANIA_MODEL_4X2",
+        "mark_id": "ID_MARK_HANIA"
+    },
+    {
+        "name": "6X4",
+        "id": "ID_MARK_HOWO_MODEL_6X4",
+        "mark_id": "ID_MARK_HOWO"
+    },
+    {
+        "name": "6x2",
+        "id": "ID_MARK_HANIA_MODEL_6X2",
+        "mark_id": "ID_MARK_HANIA"
+    },
+    {
+        "name": "6x4",
+        "id": "ID_MARK_CAMC_MODEL_6X4",
+        "mark_id": "ID_MARK_CAMC"
+    },
+    {
+        "name": "6x4",
+        "id": "ID_MARK_HANIA_MODEL_6X4",
+        "mark_id": "ID_MARK_HANIA"
+    },
+    {
         "name": "14",
         "id": "ID_MARK_MAN_MODEL_14",
         "mark_id": "ID_MARK_MAN"
-    },
-    {
-        "name": "131",
-        "id": "ID_MARK_ZIL_MODEL_131",
-        "mark_id": "ID_MARK_ZIL"
-    },
-    {
-        "name": "133",
-        "id": "ID_MARK_ZIL_MODEL_133",
-        "mark_id": "ID_MARK_ZIL"
     },
     {
         "name": "17",
@@ -30,11 +70,6 @@
         "mark_id": "ID_MARK_MAN"
     },
     {
-        "name": "2-Series",
-        "id": "ID_MARK_SCANIA_MODEL_2_SERIES",
-        "mark_id": "ID_MARK_SCANIA"
-    },
-    {
         "name": "22",
         "id": "ID_MARK_MAN_MODEL_22",
         "mark_id": "ID_MARK_MAN"
@@ -43,11 +78,6 @@
         "name": "26",
         "id": "ID_MARK_MAN_MODEL_26",
         "mark_id": "ID_MARK_MAN"
-    },
-    {
-        "name": "3-Series",
-        "id": "ID_MARK_SCANIA_MODEL_3_SERIES",
-        "mark_id": "ID_MARK_SCANIA"
     },
     {
         "name": "33",
@@ -65,6 +95,31 @@
         "mark_id": "ID_MARK_MAN"
     },
     {
+        "name": "95",
+        "id": "ID_MARK_DAF_MODEL_95",
+        "mark_id": "ID_MARK_DAF"
+    },
+    {
+        "name": "95 series",
+        "id": "ID_MARK_DAF_MODEL_95_SERIES",
+        "mark_id": "ID_MARK_DAF"
+    },
+    {
+        "name": "95XF",
+        "id": "ID_MARK_DAF_MODEL_95XF",
+        "mark_id": "ID_MARK_DAF"
+    },
+    {
+        "name": "131",
+        "id": "ID_MARK_ZIL_MODEL_131",
+        "mark_id": "ID_MARK_ZIL"
+    },
+    {
+        "name": "133",
+        "id": "ID_MARK_ZIL_MODEL_133",
+        "mark_id": "ID_MARK_ZIL"
+    },
+    {
         "name": "255",
         "id": "ID_MARK_KRAZ_MODEL_255",
         "mark_id": "ID_MARK_KRAZ"
@@ -78,6 +133,16 @@
         "name": "260",
         "id": "ID_MARK_KRAZ_MODEL_260",
         "mark_id": "ID_MARK_KRAZ"
+    },
+    {
+        "name": "290D",
+        "id": "ID_MARK_MAGIRUS_MODEL_290D_ARTIC",
+        "mark_id": "ID_MARK_MAGIRUS"
+    },
+    {
+        "name": "330.30",
+        "id": "ID_MARK_IVECO_MODEL_330_30",
+        "mark_id": "ID_MARK_IVECO"
     },
     {
         "name": "362",
@@ -95,9 +160,39 @@
         "mark_id": "ID_MARK_PETERBILT"
     },
     {
-        "name": "4-Series",
-        "id": "ID_MARK_SCANIA_MODEL_4_SERIES",
-        "mark_id": "ID_MARK_SCANIA"
+        "name": "504",
+        "id": "ID_MARK_MAZ_MODEL_504",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "537",
+        "id": "ID_MARK_MAZ_MODEL_537",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "543\/7310",
+        "id": "ID_MARK_MAZ_MODEL_543_7310",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "579",
+        "id": "ID_MARK_PETERBILT_MODEL_579",
+        "mark_id": "ID_MARK_PETERBILT"
+    },
+    {
+        "name": "587",
+        "id": "ID_MARK_PETERBILT_MODEL_587",
+        "mark_id": "ID_MARK_PETERBILT"
+    },
+    {
+        "name": "682",
+        "id": "ID_MARK_IVECO_MODEL_682",
+        "mark_id": "ID_MARK_IVECO"
+    },
+    {
+        "name": "700 (Profia)",
+        "id": "ID_MARK_HINO_MODEL_700_PROFIA",
+        "mark_id": "ID_MARK_HINO"
     },
     {
         "name": "4308",
@@ -125,34 +220,9 @@
         "mark_id": "ID_MARK_WESTERN_STAR"
     },
     {
-        "name": "4X2",
-        "id": "ID_MARK_HOWO_MODEL_4X2",
-        "mark_id": "ID_MARK_HOWO"
-    },
-    {
-        "name": "4x2",
-        "id": "ID_MARK_CAMC_MODEL_4X2",
-        "mark_id": "ID_MARK_CAMC"
-    },
-    {
-        "name": "4x2",
-        "id": "ID_MARK_HANIA_MODEL_4X2",
-        "mark_id": "ID_MARK_HANIA"
-    },
-    {
         "name": "5000 Series",
         "id": "ID_MARK_INTERNATIONAL_MODEL_5000_SERIES",
         "mark_id": "ID_MARK_INTERNATIONAL"
-    },
-    {
-        "name": "504",
-        "id": "ID_MARK_MAZ_MODEL_504",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "537",
-        "id": "ID_MARK_MAZ_MODEL_537",
-        "mark_id": "ID_MARK_MAZ"
     },
     {
         "name": "5301",
@@ -220,101 +290,6 @@
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
-        "name": "44108",
-        "id": "ID_MARK_KAMAZ_MODEL_44108",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "44202",
-        "id": "ID_MARK_URAL_MODEL_44202",
-        "mark_id": "ID_MARK_URAL"
-    },
-    {
-        "name": "53504",
-        "id": "ID_MARK_KAMAZ_MODEL_53504",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "54112",
-        "id": "ID_MARK_KAMAZ_MODEL_54112",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "54115",
-        "id": "ID_MARK_KAMAZ_MODEL_54115",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "54326",
-        "id": "ID_MARK_MAZ_MAN_MODEL_54326",
-        "mark_id": "ID_MARK_MAZ_MAN"
-    },
-    {
-        "name": "442160",
-        "id": "ID_MARK_ZIL_MODEL_442160",
-        "mark_id": "ID_MARK_ZIL"
-    },
-    {
-        "name": "543\/7310",
-        "id": "ID_MARK_MAZ_MODEL_543_7310",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "579",
-        "id": "ID_MARK_PETERBILT_MODEL_579",
-        "mark_id": "ID_MARK_PETERBILT"
-    },
-    {
-        "name": "587",
-        "id": "ID_MARK_PETERBILT_MODEL_587",
-        "mark_id": "ID_MARK_PETERBILT"
-    },
-    {
-        "name": "682",
-        "id": "ID_MARK_IVECO_MODEL_682",
-        "mark_id": "ID_MARK_IVECO"
-    },
-    {
-        "name": "6X4",
-        "id": "ID_MARK_HOWO_MODEL_6X4",
-        "mark_id": "ID_MARK_HOWO"
-    },
-    {
-        "name": "6x2",
-        "id": "ID_MARK_HANIA_MODEL_6X2",
-        "mark_id": "ID_MARK_HANIA"
-    },
-    {
-        "name": "6x4",
-        "id": "ID_MARK_CAMC_MODEL_6X4",
-        "mark_id": "ID_MARK_CAMC"
-    },
-    {
-        "name": "6x4",
-        "id": "ID_MARK_HANIA_MODEL_6X4",
-        "mark_id": "ID_MARK_HANIA"
-    },
-    {
-        "name": "700 (Profia)",
-        "id": "ID_MARK_HINO_MODEL_700_PROFIA",
-        "mark_id": "ID_MARK_HINO"
-    },
-    {
-        "name": "7000 Series",
-        "id": "ID_MARK_INTERNATIONAL_MODEL_7000_SERIES",
-        "mark_id": "ID_MARK_INTERNATIONAL"
-    },
-    {
-        "name": "7912\/7917",
-        "id": "ID_MARK_MAZ_MODEL_7912_7917",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "9000 Series",
-        "id": "ID_MARK_INTERNATIONAL_MODEL_9000_SERIES",
-        "mark_id": "ID_MARK_INTERNATIONAL"
-    },
-    {
         "name": "6140",
         "id": "ID_MARK_KRAZ_MODEL_6140",
         "mark_id": "ID_MARK_KRAZ"
@@ -346,13 +321,13 @@
     },
     {
         "name": "6425",
-        "id": "ID_MARK_MAZ_MAN_MODEL_6425",
-        "mark_id": "ID_MARK_MAZ_MAN"
+        "id": "ID_MARK_MAZ_MODEL_6425",
+        "mark_id": "ID_MARK_MAZ"
     },
     {
         "name": "6425",
-        "id": "ID_MARK_MAZ_MODEL_6425",
-        "mark_id": "ID_MARK_MAZ"
+        "id": "ID_MARK_MAZ_MAN_MODEL_6425",
+        "mark_id": "ID_MARK_MAZ_MAN"
     },
     {
         "name": "6428",
@@ -400,6 +375,11 @@
         "mark_id": "ID_MARK_MZKT"
     },
     {
+        "name": "7000 Series",
+        "id": "ID_MARK_INTERNATIONAL_MODEL_7000_SERIES",
+        "mark_id": "ID_MARK_INTERNATIONAL"
+    },
+    {
         "name": "7401",
         "id": "ID_MARK_MZKT_MODEL_7401",
         "mark_id": "ID_MARK_MZKT"
@@ -425,9 +405,59 @@
         "mark_id": "ID_MARK_MZKT"
     },
     {
+        "name": "7912\/7917",
+        "id": "ID_MARK_MAZ_MODEL_7912_7917",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
         "name": "8014",
         "id": "ID_MARK_RUSICH_KZKT_MODEL_8014",
         "mark_id": "ID_MARK_RUSICH_KZKT"
+    },
+    {
+        "name": "9000 Series",
+        "id": "ID_MARK_INTERNATIONAL_MODEL_9000_SERIES",
+        "mark_id": "ID_MARK_INTERNATIONAL"
+    },
+    {
+        "name": "43118",
+        "id": "ID_MARK_KAMAZ_MODEL_43118_ARTIC",
+        "mark_id": "ID_MARK_KAMAZ"
+    },
+    {
+        "name": "44108",
+        "id": "ID_MARK_KAMAZ_MODEL_44108",
+        "mark_id": "ID_MARK_KAMAZ"
+    },
+    {
+        "name": "44202",
+        "id": "ID_MARK_URAL_MODEL_44202",
+        "mark_id": "ID_MARK_URAL"
+    },
+    {
+        "name": "53504",
+        "id": "ID_MARK_KAMAZ_MODEL_53504",
+        "mark_id": "ID_MARK_KAMAZ"
+    },
+    {
+        "name": "54112",
+        "id": "ID_MARK_KAMAZ_MODEL_54112",
+        "mark_id": "ID_MARK_KAMAZ"
+    },
+    {
+        "name": "54115",
+        "id": "ID_MARK_KAMAZ_MODEL_54115",
+        "mark_id": "ID_MARK_KAMAZ"
+    },
+    {
+        "name": "54326",
+        "id": "ID_MARK_MAZ_MAN_MODEL_54326",
+        "mark_id": "ID_MARK_MAZ_MAN"
+    },
+    {
+        "name": "54901",
+        "id": "ID_MARK_KAMAZ_MODEL_54901",
+        "mark_id": "ID_MARK_KAMAZ"
     },
     {
         "name": "55571",
@@ -447,6 +477,11 @@
     {
         "name": "65206",
         "id": "ID_MARK_KAMAZ_MODEL_65206",
+        "mark_id": "ID_MARK_KAMAZ"
+    },
+    {
+        "name": "65209",
+        "id": "ID_MARK_KAMAZ_MODEL_65209",
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
@@ -470,6 +505,11 @@
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
+        "name": "442160",
+        "id": "ID_MARK_ZIL_MODEL_442160",
+        "mark_id": "ID_MARK_ZIL"
+    },
+    {
         "name": "640168",
         "id": "ID_MARK_MAZ_MAN_MODEL_640168",
         "mark_id": "ID_MARK_MAZ_MAN"
@@ -478,11 +518,6 @@
         "name": "642268",
         "id": "ID_MARK_MAZ_MAN_MODEL_642268",
         "mark_id": "ID_MARK_MAZ_MAN"
-    },
-    {
-        "name": "95 series",
-        "id": "ID_MARK_DAF_MODEL_95_SERIES",
-        "mark_id": "ID_MARK_DAF"
     },
     {
         "name": "A-line",
@@ -505,8 +540,18 @@
         "mark_id": "ID_MARK_FREIGHTLINER"
     },
     {
+        "name": "Arocs",
+        "id": "ID_MARK_MERCEDES_BENZ_MODEL_AROCS_ARTIC",
+        "mark_id": "ID_MARK_MERCEDES_BENZ"
+    },
+    {
         "name": "Auman BJ425x",
         "id": "ID_MARK_FOTON_MODEL_AUMAN_BJ425X",
+        "mark_id": "ID_MARK_FOTON"
+    },
+    {
+        "name": "Auman EST A",
+        "id": "ID_MARK_FOTON_MODEL_AUMAN_EST_A",
         "mark_id": "ID_MARK_FOTON"
     },
     {
@@ -630,14 +675,19 @@
         "mark_id": "ID_MARK_IVECO"
     },
     {
-        "name": "F 2000",
-        "id": "ID_MARK_MAN_MODEL_F_2000",
-        "mark_id": "ID_MARK_MAN"
+        "name": "F-Max",
+        "id": "ID_MARK_FORD_MODEL_F_MAX",
+        "mark_id": "ID_MARK_FORD"
     },
     {
         "name": "F-Series",
         "id": "ID_MARK_VOLVO_MODEL_F_SERIES",
         "mark_id": "ID_MARK_VOLVO"
+    },
+    {
+        "name": "F 2000",
+        "id": "ID_MARK_MAN_MODEL_F_2000",
+        "mark_id": "ID_MARK_MAN"
     },
     {
         "name": "FE",
@@ -705,13 +755,13 @@
         "mark_id": "ID_MARK_SCANIA"
     },
     {
-        "name": "HD1000",
-        "id": "ID_MARK_HYUNDAI_MODEL_HD1000",
+        "name": "HD450\/500\/700",
+        "id": "ID_MARK_HYUNDAI_MODEL_HD450_500_700",
         "mark_id": "ID_MARK_HYUNDAI"
     },
     {
-        "name": "HD450\/500\/700",
-        "id": "ID_MARK_HYUNDAI_MODEL_HD450_500_700",
+        "name": "HD1000",
+        "id": "ID_MARK_HYUNDAI_MODEL_HD1000",
         "mark_id": "ID_MARK_HYUNDAI"
     },
     {
@@ -723,6 +773,11 @@
         "name": "J6 CA4250",
         "id": "ID_MARK_FAW_MODEL_J6_CA4250",
         "mark_id": "ID_MARK_FAW"
+    },
+    {
+        "name": "JNP4250",
+        "id": "ID_MARK_YOUNGMAN_MODEL_JNP4250",
+        "mark_id": "ID_MARK_YOUNGMAN"
     },
     {
         "name": "K-Series",
@@ -773,6 +828,16 @@
         "name": "Manager",
         "id": "ID_MARK_RENAULT_MODEL_MANAGER",
         "mark_id": "ID_MARK_RENAULT"
+    },
+    {
+        "name": "ND4250",
+        "id": "ID_MARK_BEIBEN_NORTH_BENZ_MODEL_ND4250",
+        "mark_id": "ID_MARK_BEIBEN_NORTH_BENZ"
+    },
+    {
+        "name": "NFM",
+        "id": "ID_MARK_VOLVO_MODEL_NFM",
+        "mark_id": "ID_MARK_VOLVO"
     },
     {
         "name": "NH",
@@ -840,6 +905,11 @@
         "mark_id": "ID_MARK_MERCEDES_BENZ"
     },
     {
+        "name": "SM321",
+        "id": "ID_MARK_ALMATRUCK_MODEL_SM321",
+        "mark_id": "ID_MARK_ALMATRUCK"
+    },
+    {
         "name": "SX4184",
         "id": "ID_MARK_SHACMAN_SHAANXI_MODEL_SX4184",
         "mark_id": "ID_MARK_SHACMAN_SHAANXI"
@@ -875,6 +945,11 @@
         "mark_id": "ID_MARK_SKODA_LIAZ"
     },
     {
+        "name": "Series 700 (Profia)",
+        "id": "ID_MARK_HINO_MODEL_SERIES_700_PROFIA_ARTIC",
+        "mark_id": "ID_MARK_HINO"
+    },
+    {
         "name": "Stralis",
         "id": "ID_MARK_IVECO_MODEL_STRALIS",
         "mark_id": "ID_MARK_IVECO"
@@ -883,16 +958,6 @@
         "name": "Super Great",
         "id": "ID_MARK_MITSUBISHI_FUSO_MODEL_SUPER_GREAT",
         "mark_id": "ID_MARK_MITSUBISHI_FUSO"
-    },
-    {
-        "name": "T 158",
-        "id": "ID_MARK_TATRA_MODEL_T_158",
-        "mark_id": "ID_MARK_TATRA"
-    },
-    {
-        "name": "T 815",
-        "id": "ID_MARK_TATRA_MODEL_T_815",
-        "mark_id": "ID_MARK_TATRA"
     },
     {
         "name": "T-Series",
@@ -905,9 +970,9 @@
         "mark_id": "ID_MARK_SCANIA"
     },
     {
-        "name": "T2000",
-        "id": "ID_MARK_KENWORTH_MODEL_T2000",
-        "mark_id": "ID_MARK_KENWORTH"
+        "name": "T 158",
+        "id": "ID_MARK_TATRA_MODEL_T_158",
+        "mark_id": "ID_MARK_TATRA"
     },
     {
         "name": "T600",
@@ -922,6 +987,16 @@
     {
         "name": "T800",
         "id": "ID_MARK_KENWORTH_MODEL_T800",
+        "mark_id": "ID_MARK_KENWORTH"
+    },
+    {
+        "name": "T 815",
+        "id": "ID_MARK_TATRA_MODEL_T_815",
+        "mark_id": "ID_MARK_TATRA"
+    },
+    {
+        "name": "T2000",
+        "id": "ID_MARK_KENWORTH_MODEL_T2000",
         "mark_id": "ID_MARK_KENWORTH"
     },
     {
@@ -990,6 +1065,16 @@
         "mark_id": "ID_MARK_KENWORTH"
     },
     {
+        "name": "XF (106)",
+        "id": "ID_MARK_DAF_MODEL_XF_106",
+        "mark_id": "ID_MARK_DAF"
+    },
+    {
+        "name": "XF95",
+        "id": "ID_MARK_DAF_MODEL_XF95",
+        "mark_id": "ID_MARK_DAF"
+    },
+    {
         "name": "XF105",
         "id": "ID_MARK_DAF_MODEL_XF105",
         "mark_id": "ID_MARK_DAF"
@@ -997,11 +1082,6 @@
     {
         "name": "XF106 series",
         "id": "ID_MARK_DAF_MODEL_XF106_SERIES",
-        "mark_id": "ID_MARK_DAF"
-    },
-    {
-        "name": "XF95",
-        "id": "ID_MARK_DAF_MODEL_XF95",
         "mark_id": "ID_MARK_DAF"
     },
     {
@@ -1018,85 +1098,5 @@
         "name": "Неизвестна (седельные тягачи)",
         "id": "ID_MARK_DRUGIE_MODEL_NEIZVESTNA_SEDELNYE_TYAGACHI",
         "mark_id": "ID_MARK_DRUGIE"
-    },
-    {
-        "name": "SM321",
-        "id": "ID_MARK_ALMATRUCK_MODEL_SM321",
-        "mark_id": "ID_MARK_ALMATRUCK"
-    },
-    {
-        "name": "ND4250",
-        "id": "ID_MARK_BEIBEN_NORTH_BENZ_MODEL_ND4250",
-        "mark_id": "ID_MARK_BEIBEN_NORTH_BENZ"
-    },
-    {
-        "name": "95",
-        "id": "ID_MARK_DAF_MODEL_95",
-        "mark_id": "ID_MARK_DAF"
-    },
-    {
-        "name": "95XF",
-        "id": "ID_MARK_DAF_MODEL_95XF",
-        "mark_id": "ID_MARK_DAF"
-    },
-    {
-        "name": "XF (106)",
-        "id": "ID_MARK_DAF_MODEL_XF_106",
-        "mark_id": "ID_MARK_DAF"
-    },
-    {
-        "name": "F-Max",
-        "id": "ID_MARK_FORD_MODEL_F_MAX",
-        "mark_id": "ID_MARK_FORD"
-    },
-    {
-        "name": "Auman EST A",
-        "id": "ID_MARK_FOTON_MODEL_AUMAN_EST_A",
-        "mark_id": "ID_MARK_FOTON"
-    },
-    {
-        "name": "Series 700 (Profia)",
-        "id": "ID_MARK_HINO_MODEL_SERIES_700_PROFIA_ARTIC",
-        "mark_id": "ID_MARK_HINO"
-    },
-    {
-        "name": "330.30",
-        "id": "ID_MARK_IVECO_MODEL_330_30",
-        "mark_id": "ID_MARK_IVECO"
-    },
-    {
-        "name": "43118",
-        "id": "ID_MARK_KAMAZ_MODEL_43118_ARTIC",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "54901",
-        "id": "ID_MARK_KAMAZ_MODEL_54901",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "65209",
-        "id": "ID_MARK_KAMAZ_MODEL_65209",
-        "mark_id": "ID_MARK_KAMAZ"
-    },
-    {
-        "name": "290D",
-        "id": "ID_MARK_MAGIRUS_MODEL_290D_ARTIC",
-        "mark_id": "ID_MARK_MAGIRUS"
-    },
-    {
-        "name": "Arocs",
-        "id": "ID_MARK_MERCEDES_BENZ_MODEL_AROCS_ARTIC",
-        "mark_id": "ID_MARK_MERCEDES_BENZ"
-    },
-    {
-        "name": "NFM",
-        "id": "ID_MARK_VOLVO_MODEL_NFM",
-        "mark_id": "ID_MARK_VOLVO"
-    },
-    {
-        "name": "JNP4250",
-        "id": "ID_MARK_YOUNGMAN_MODEL_JNP4250",
-        "mark_id": "ID_MARK_YOUNGMAN"
     }
 ]

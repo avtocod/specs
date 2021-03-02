@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Field with path `identifiers_masked.vehicle.vin`
+- Field with path `identifiers_masked.vehicle.reg_num`
+- Field with path `identifiers_masked.vehicle.sts`
+- Field with path `identifiers_masked.vehicle.pts`
+- Field with path `identifiers_masked.vehicle.body`
+- Field with path `identifiers_masked.vehicle.chassis`
+
 ## v3.69.0
 
 ### Changed

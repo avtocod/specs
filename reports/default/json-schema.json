@@ -415,6 +415,146 @@
                 }
             }
         },
+        "identifiers_masked": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "vehicle": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "description": "Маскированные идентификаторы ТС",
+                    "properties": {
+                        "vin": {
+                            "description": "VIN код",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code"
+                                }
+                            ],
+                            "examples": [
+                                "EXAM************0"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "gibdd.eaisto",
+                                "base.tech",
+                                "tech.ext",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        },
+                        "reg_num": {
+                            "description": "Государственный регистрационный знак (ГРЗ)",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/grz_code"
+                                }
+                            ],
+                            "examples": [
+                                "А******77"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.eaisto",
+                                "base.alt"
+                            ]
+                        },
+                        "sts": {
+                            "description": "Номер СТС (свидетельства регистрации ТС)",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/sts_code"
+                                }
+                            ],
+                            "examples": [
+                                "310*****07"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.alt"
+                            ]
+                        },
+                        "pts": {
+                            "description": "Номер ПТС (паспорт ТС)",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/pts_code"
+                                }
+                            ],
+                            "examples": [
+                                "36К*****77"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.alt"
+                            ]
+                        },
+                        "body": {
+                            "description": "Номер кузова",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/body_code"
+                                }
+                            ],
+                            "examples": [
+                                "KCA**********0"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        },
+                        "chassis": {
+                            "description": "Номер шасси",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/chassis_code"
+                                }
+                            ],
+                            "examples": [
+                                "LF**********3"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
         "tech_data": {
             "type": "object",
             "additionalProperties": false,

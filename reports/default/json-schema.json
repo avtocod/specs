@@ -6,11 +6,23 @@
     "definitions": {
         "vin_code": {
             "type": "string",
+            "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ]+$",
+            "minLength": 17,
+            "maxLength": 17
+        },
+        "vin_code_masked": {
+            "type": "string",
             "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\*]+$",
             "minLength": 17,
             "maxLength": 17
         },
         "grz_code": {
+            "type": "string",
+            "pattern": "^[0-9АВЕКМНОРСТУХ]+$",
+            "minLength": 6,
+            "maxLength": 9
+        },
+        "grz_code_masked": {
             "type": "string",
             "pattern": "^[0-9АВЕКМНОРСТУХ\\*]+$",
             "minLength": 6,
@@ -18,11 +30,33 @@
         },
         "sts_code": {
             "type": "string",
+            "pattern": "^[0-9А-ЯЁ ]+$",
+            "minLength": 10,
+            "maxLength": 12
+        },
+        "sts_code_masked": {
+            "type": "string",
             "pattern": "^[0-9А-ЯЁ\\* ]+$",
             "minLength": 10,
             "maxLength": 12
         },
         "pts_code": {
+            "oneOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[0-9А-ЯЁ ]+$",
+                    "minLength": 10,
+                    "maxLength": 12
+                },
+                {
+                    "type": "string",
+                    "pattern": "^[0-9]+$",
+                    "minLength": 15,
+                    "maxLength": 15
+                }
+            ]
+        },
+        "pts_code_masked": {
             "oneOf": [
                 {
                     "type": "string",
@@ -40,11 +74,23 @@
         },
         "body_code": {
             "type": "string",
+            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "body_code_masked": {
+            "type": "string",
             "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
             "maxLength": 15
         },
         "chassis_code": {
+            "type": "string",
+            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "chassis_code_masked": {
             "type": "string",
             "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
@@ -286,12 +332,15 @@
                     "properties": {
                         "vin": {
                             "description": "VIN код",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/vin_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code_masked"
                                 }
                             ],
                             "examples": [
@@ -311,12 +360,15 @@
                         },
                         "reg_num": {
                             "description": "Государственный регистрационный знак (ГРЗ)",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/grz_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/grz_code_masked"
                                 }
                             ],
                             "examples": [
@@ -331,12 +383,15 @@
                         },
                         "sts": {
                             "description": "Номер СТС (свидетельства регистрации ТС)",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/sts_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/sts_code_masked"
                                 }
                             ],
                             "examples": [
@@ -350,12 +405,15 @@
                         },
                         "pts": {
                             "description": "Номер ПТС (паспорт ТС)",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/pts_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/pts_code_masked"
                                 }
                             ],
                             "examples": [
@@ -370,12 +428,15 @@
                         },
                         "body": {
                             "description": "Номер кузова",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/body_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/body_code_masked"
                                 }
                             ],
                             "examples": [
@@ -392,12 +453,15 @@
                         },
                         "chassis": {
                             "description": "Номер шасси",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/chassis_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/chassis_code_masked"
                                 }
                             ],
                             "examples": [
@@ -431,7 +495,7 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/vin_code"
+                                    "$ref": "#/definitions/vin_code_masked"
                                 }
                             ],
                             "examples": [
@@ -456,7 +520,7 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/grz_code"
+                                    "$ref": "#/definitions/grz_code_masked"
                                 }
                             ],
                             "examples": [
@@ -476,7 +540,7 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/sts_code"
+                                    "$ref": "#/definitions/sts_code_masked"
                                 }
                             ],
                             "examples": [
@@ -495,7 +559,7 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/pts_code"
+                                    "$ref": "#/definitions/pts_code_masked"
                                 }
                             ],
                             "examples": [
@@ -515,7 +579,7 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/body_code"
+                                    "$ref": "#/definitions/body_code_masked"
                                 }
                             ],
                             "examples": [
@@ -537,7 +601,7 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/chassis_code"
+                                    "$ref": "#/definitions/chassis_code_masked"
                                 }
                             ],
                             "examples": [
@@ -9118,7 +9182,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "$ref": "#/definitions/vin_code"
+                                                                "$ref": "#/definitions/vin_code_masked"
                                                             }
                                                         ],
                                                         "examples": [
@@ -9136,7 +9200,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "$ref": "#/definitions/chassis_code"
+                                                                "$ref": "#/definitions/chassis_code_masked"
                                                             }
                                                         ],
                                                         "examples": [

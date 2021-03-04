@@ -360,12 +360,15 @@
                         },
                         "mvin": {
                             "description": "VIN код производителя",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/vin_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code_masked"
                                 }
                             ],
                             "examples": [

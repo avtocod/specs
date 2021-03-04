@@ -6,11 +6,23 @@
     "definitions": {
         "vin_code": {
             "type": "string",
+            "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ]+$",
+            "minLength": 17,
+            "maxLength": 17
+        },
+        "vin_code_masked": {
+            "type": "string",
             "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\*]+$",
             "minLength": 17,
             "maxLength": 17
         },
         "grz_code": {
+            "type": "string",
+            "pattern": "^[0-9АВЕКМНОРСТУХ]+$",
+            "minLength": 6,
+            "maxLength": 9
+        },
+        "grz_code_masked": {
             "type": "string",
             "pattern": "^[0-9АВЕКМНОРСТУХ\\*]+$",
             "minLength": 6,
@@ -18,11 +30,33 @@
         },
         "sts_code": {
             "type": "string",
+            "pattern": "^[0-9А-ЯЁ ]+$",
+            "minLength": 10,
+            "maxLength": 12
+        },
+        "sts_code_masked": {
+            "type": "string",
             "pattern": "^[0-9А-ЯЁ\\* ]+$",
             "minLength": 10,
             "maxLength": 12
         },
         "pts_code": {
+            "oneOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[0-9А-ЯЁ ]+$",
+                    "minLength": 10,
+                    "maxLength": 12
+                },
+                {
+                    "type": "string",
+                    "pattern": "^[0-9]+$",
+                    "minLength": 15,
+                    "maxLength": 15
+                }
+            ]
+        },
+        "pts_code_masked": {
             "oneOf": [
                 {
                     "type": "string",
@@ -40,11 +74,23 @@
         },
         "body_code": {
             "type": "string",
+            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "body_code_masked": {
+            "type": "string",
             "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
             "maxLength": 15
         },
         "chassis_code": {
+            "type": "string",
+            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "chassis_code_masked": {
             "type": "string",
             "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
@@ -286,16 +332,174 @@
                     "properties": {
                         "vin": {
                             "description": "VIN код",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/vin_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code_masked"
                                 }
                             ],
                             "examples": [
                                 "EXAMPL0V1N1000000"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "gibdd.eaisto",
+                                "base.tech",
+                                "tech.ext",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        },
+                        "reg_num": {
+                            "description": "Государственный регистрационный знак (ГРЗ)",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/grz_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/grz_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "А332АВ177"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.eaisto",
+                                "base.alt"
+                            ]
+                        },
+                        "sts": {
+                            "description": "Номер СТС (свидетельства регистрации ТС)",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/sts_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/sts_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "3104847107"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.alt"
+                            ]
+                        },
+                        "pts": {
+                            "description": "Номер ПТС (паспорт ТС)",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/pts_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/pts_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "36КС619977"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.alt"
+                            ]
+                        },
+                        "body": {
+                            "description": "Номер кузова",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/body_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/body_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "KCA275-9673180"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        },
+                        "chassis": {
+                            "description": "Номер шасси",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/chassis_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/chassis_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "LFPVBM6819793"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "identifiers_masked": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "vehicle": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "description": "Маскированные идентификаторы ТС",
+                    "properties": {
+                        "vin": {
+                            "description": "VIN код",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "EXAM************0"
                             ],
                             "fillable_by": [
                                 "base",
@@ -316,11 +520,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/grz_code"
+                                    "$ref": "#/definitions/grz_code_masked"
                                 }
                             ],
                             "examples": [
-                                "А332АВ177"
+                                "А******77"
                             ],
                             "fillable_by": [
                                 "base",
@@ -336,11 +540,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/sts_code"
+                                    "$ref": "#/definitions/sts_code_masked"
                                 }
                             ],
                             "examples": [
-                                "3104847107"
+                                "310*****07"
                             ],
                             "fillable_by": [
                                 "base",
@@ -355,11 +559,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/pts_code"
+                                    "$ref": "#/definitions/pts_code_masked"
                                 }
                             ],
                             "examples": [
-                                "36КС619977"
+                                "36К*****77"
                             ],
                             "fillable_by": [
                                 "base",
@@ -375,11 +579,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/body_code"
+                                    "$ref": "#/definitions/body_code_masked"
                                 }
                             ],
                             "examples": [
-                                "KCA275-9673180"
+                                "KCA**********0"
                             ],
                             "fillable_by": [
                                 "base",
@@ -397,11 +601,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/chassis_code"
+                                    "$ref": "#/definitions/chassis_code_masked"
                                 }
                             ],
                             "examples": [
-                                "LFPVBM6819793"
+                                "LF**********3"
                             ],
                             "fillable_by": [
                                 "base",
@@ -8978,7 +9182,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "$ref": "#/definitions/vin_code"
+                                                                "$ref": "#/definitions/vin_code_masked"
                                                             }
                                                         ],
                                                         "examples": [
@@ -8996,7 +9200,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "$ref": "#/definitions/chassis_code"
+                                                                "$ref": "#/definitions/chassis_code_masked"
                                                             }
                                                         ],
                                                         "examples": [

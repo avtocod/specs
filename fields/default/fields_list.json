@@ -97,6 +97,91 @@
         ]
     },
     {
+        "path": "identifiers_masked.vehicle.vin",
+        "description": "Маскированный идентификатор ТС: VIN код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "gibdd.eaisto",
+            "base.tech",
+            "tech.ext",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.reg_num",
+        "description": "Маскированный идентификатор ТС: Государственный регистрационный знак (ГРЗ)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.eaisto",
+            "base.alt"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.sts",
+        "description": "Маскированный идентификатор ТС: Номер СТС (свидетельства регистрации ТС)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.pts",
+        "description": "Маскированный идентификатор ТС: Номер ПТС (паспорт ТС)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.alt"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.body",
+        "description": "Маскированный идентификатор ТС: Номер кузова",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.chassis",
+        "description": "Маскированный идентификатор ТС: Номер шасси",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "tech_data.manufacturer.name",
         "description": "Характеристики ТС: Наименование производителя",
         "types": [

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.70.0
+
+### Added
+
+- Field with path `identifiers_masked.vehicle.vin`
+- Field with path `identifiers_masked.vehicle.reg_num`
+- Field with path `identifiers_masked.vehicle.sts`
+- Field with path `identifiers_masked.vehicle.pts`
+- Field with path `identifiers_masked.vehicle.body`
+- Field with path `identifiers_masked.vehicle.chassis`
+- Definition `vin_code_masked` in `./reports/default/json-schema.json`
+- Definition `grz_code_masked` in `./reports/default/json-schema.json`
+- Definition `sts_code_masked` in `./reports/default/json-schema.json`
+- Definition `pts_code_masked` in `./reports/default/json-schema.json`
+- Definition `body_code_masked` in `./reports/default/json-schema.json`
+- Definition `chassis_code_masked` in `./reports/default/json-schema.json`
+
 ## v3.69.0
 
 ### Changed

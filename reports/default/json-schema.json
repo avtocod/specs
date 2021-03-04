@@ -309,6 +309,25 @@
                                 "regactions.registry"
                             ]
                         },
+                        "mvin": {
+                            "description": "VIN код производителя",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code"
+                                }
+                            ],
+                            "examples": [
+                                "EXAMPL0V1N1000002"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.alt"
+                            ]
+                        },
                         "reg_num": {
                             "description": "Государственный регистрационный знак (ГРЗ)",
                             "oneOf": [

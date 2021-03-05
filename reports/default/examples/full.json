@@ -2,12 +2,14 @@
     "identifiers": {
         "vehicle": {
             "vin": "EXAMPL0V1N1000000",
-            "mvin": "EXAMPL0V1N1000002",
             "reg_num": "А332АВ177",
             "sts": "3104847107",
             "pts": "36КС619977",
             "body": "KCA275-9673180",
             "chassis": "LFPVBM6819793"
+        },
+        "manufacture": {
+            "vin": "EXAMPL0V1N1000002"
         }
     },
     "identifiers_masked": {

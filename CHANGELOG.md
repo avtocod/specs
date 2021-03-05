@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Field with path `identifiers.vehicle.mvin`
+- Field with path `identifiers.manufacture.vin`
 
 ## v3.70.0
 

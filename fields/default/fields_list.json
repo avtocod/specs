@@ -18,18 +18,6 @@
         ]
     },
     {
-        "path": "identifiers.vehicle.mvin",
-        "description": "Идентификатор ТС: VIN код производителя",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base",
-            "base.ext",
-            "base.alt"
-        ]
-    },
-    {
         "path": "identifiers.vehicle.reg_num",
         "description": "Идентификатор ТС: Государственный регистрационный знак (ГРЗ)",
         "types": [
@@ -94,6 +82,17 @@
             "base.taxi",
             "base.alt",
             "regactions.registry"
+        ]
+    },
+    {
+        "path": "identifiers.manufacture.vin",
+        "description": "Идентификатор ТС: Производственный VIN код ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {

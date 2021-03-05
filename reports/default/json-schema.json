@@ -476,6 +476,31 @@
                             ]
                         }
                     }
+                },
+                "manufacture": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "description": "Производственные идентификаторы ТС",
+                    "properties": {
+                        "vin": {
+                            "description": "Производственный VIN код ТС",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code"
+                                }
+                            ],
+                            "examples": [
+                                "EXAMPL0V1N1000002"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
+                        }
+                    }
                 }
             }
         },

@@ -85,6 +85,17 @@
         ]
     },
     {
+        "path": "identifiers.manufacture.vin",
+        "description": "Идентификатор ТС: Производственный VIN код ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
         "path": "identifiers_masked.vehicle.vin",
         "description": "Маскированный идентификатор ТС: VIN код",
         "types": [

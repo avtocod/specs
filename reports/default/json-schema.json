@@ -6820,7 +6820,7 @@
                                                 "additionalProperties": false,
                                                 "properties": {
                                                     "count": {
-                                                        "description": "Количество сидячих мест для категории D",
+                                                        "description": "Количество сидячих мест (для категории D)",
                                                         "type": [
                                                             "integer",
                                                             "null"

@@ -4,6 +4,34 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `gibdd.diagnostic.cards`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers.vehicle.body` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers.vehicle.chassis` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].inspection.place` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.date.update` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.brand.name.original` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.model.name.original` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.date.update` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].date.event` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].mileage` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].filled_by` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].actuality.date` also fillable by `gibdd.diagnostic.cards`
+
 ## v3.71.0
 
 ### Added

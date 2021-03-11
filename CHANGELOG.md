@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Field with path `accidents.history.items[].damage.raw` also fillable by `gibdd.dtp`
+- Field with path `accidents.history.items[].damage.raw` is not fillable by `base.moscow` source now
+
 ## v3.71.0
 
 ### Added

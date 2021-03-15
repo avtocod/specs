@@ -263,5 +263,10 @@
         "name": "rsaosago.base.ext",
         "description": "Расширенная информация о полисах ОСАГО оформленных на ТС, по данным РСА",
         "enabled": true
+    },
+    {
+        "name": "gibdd.diagnostic.cards",
+        "description": "Данные о диагностических картах и пробегах ТС из базы ГИБДД",
+        "enabled": true
     }
 ]

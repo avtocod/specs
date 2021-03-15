@@ -355,7 +355,8 @@
                                 "base.tech",
                                 "tech.ext",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         },
                         "reg_num": {
@@ -448,7 +449,8 @@
                                 "gibdd.history",
                                 "base.taxi",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         },
                         "chassis": {
@@ -472,7 +474,8 @@
                                 "base.ext",
                                 "base.taxi",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         }
                     }
@@ -535,7 +538,8 @@
                                 "base.tech",
                                 "tech.ext",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         },
                         "reg_num": {
@@ -616,7 +620,8 @@
                                 "gibdd.history",
                                 "base.taxi",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         },
                         "chassis": {
@@ -637,7 +642,8 @@
                                 "base.ext",
                                 "base.taxi",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         }
                     }
@@ -708,7 +714,8 @@
                                         "customs.base",
                                         "gibdd.eaisto",
                                         "base.alt",
-                                        "regactions.registry"
+                                        "regactions.registry",
+                                        "gibdd.diagnostic.cards"
                                     ]
                                 },
                                 "rus": {
@@ -794,7 +801,8 @@
                                     ],
                                     "fillable_by": [
                                         "gibdd.history",
-                                        "gibdd.eaisto"
+                                        "gibdd.eaisto",
+                                        "gibdd.diagnostic.cards"
                                     ]
                                 },
                                 "normalized": {
@@ -1573,7 +1581,8 @@
                                 "customs.base",
                                 "gibdd.eaisto",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         }
                     }
@@ -8383,7 +8392,8 @@
                                             "customs.base",
                                             "images.archive",
                                             "mileages.registry",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8408,7 +8418,8 @@
                                     "customs.base",
                                     "images.archive",
                                     "mileages.registry",
-                                    "service.history.fitservice"
+                                    "service.history.fitservice",
+                                    "gibdd.diagnostic.cards"
                                 ]
                             },
                             "filled_by": {
@@ -8431,6 +8442,7 @@
                                             "customs.base",
                                             "images.archive",
                                             "service.history.fitservice",
+                                            "gibdd.diagnostic.cards",
                                             null
                                         ],
                                         "examples": [
@@ -8467,7 +8479,8 @@
                                             "customs.base",
                                             "images.archive",
                                             "mileages.registry",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8512,7 +8525,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     },
                                     "to": {
@@ -8530,7 +8544,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8564,7 +8579,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     },
                                     "type": {
@@ -8578,7 +8594,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8598,7 +8615,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8642,7 +8660,8 @@
                             ],
                             "fillable_by": [
                                 "gibdd.eaisto",
-                                "tech.ext"
+                                "tech.ext",
+                                "gibdd.diagnostic.cards"
                             ]
                         }
                     }

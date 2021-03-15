@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `tech_data.date.update` also fillable by `gibdd.diagnostic.cards`
 - Field with path `mileages.items[].date.event` also fillable by `gibdd.diagnostic.cards`
 - Field with path `mileages.items[].mileage` also fillable by `gibdd.diagnostic.cards`
-- Field with path `mileages.items[].filled_by` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].filled_by.source` also fillable by `gibdd.diagnostic.cards`
 - Field with path `mileages.items[].actuality.date` also fillable by `gibdd.diagnostic.cards`
 
 ## v3.71.0

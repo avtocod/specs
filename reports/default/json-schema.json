@@ -6823,6 +6823,25 @@
                                                         ]
                                                     }
                                                 }
+                                            },
+                                            "seats": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "count": {
+                                                        "description": "Количество сидячих мест (для категории D)",
+                                                        "type": [
+                                                            "integer",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            5
+                                                        ],
+                                                        "fillable_by": [
+                                                            "rsaosago.base.ext"
+                                                        ]
+                                                    }
+                                                }
                                             }
                                         }
                                     },

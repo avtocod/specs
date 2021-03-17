@@ -6,8 +6,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## UNRELEASED
 
-### Changed
+### Added
 
+- Field with path `insurance.osago.items[].vehicle.seats.count`
 - Field with path `accidents.history.items[].damage.raw` also fillable by `gibdd.dtp`
 - Field with path `accidents.history.items[].damage.raw` is not fillable by `base.moscow` source now
 

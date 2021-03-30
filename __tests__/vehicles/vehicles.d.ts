@@ -1,6 +1,7 @@
 export type VehicleMark = {
     id: string
     name: string
+    logotype: string|null
 }
 
 export type VehicleModel = {

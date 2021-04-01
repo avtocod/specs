@@ -28,8 +28,8 @@ describe.each(groups_list)('marks.json file in %s group of vehicles specs', grou
             expect(mark.name).toBeString();
             expect(mark.name.length).toBeGreaterThan(0);
         });
-        // value of "logotype" property should be non empty string or null
-        test.concurrent(`"logotype" property that is non empty string or null`, async () => {
+        // value of "logotype_uri" property should be non empty string or null
+        test.concurrent(`"logotype_uri" property that is non empty string or null`, async () => {
             if (typeof mark.logotype_uri === 'string') {
                 expect(mark.logotype_uri.length).toBeGreaterThan(0);
                 expect(mark.logotype_uri).toMatch(new RegExp('^https?.*\.(png|jpg)$'));

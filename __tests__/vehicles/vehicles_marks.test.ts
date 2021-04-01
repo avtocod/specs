@@ -11,8 +11,8 @@ describe.each(groups_list)('marks.json file in %s group of vehicles specs', grou
     // each mark
     describe.each(marks)('item %j has', (mark) => {
         // should have all required properties
-        test.concurrent(`all expected props ("id", "name", "logotype")`, async () => {
-            expect(mark).toContainAllKeys(['id', 'name', 'logotype']);
+        test.concurrent(`all expected props ("id", "name", "logotype_uri")`, async () => {
+            expect(mark).toContainAllKeys(['id', 'name', 'logotype_uri']);
         });
         // value of "id" property should matches with pattern
         test.concurrent(`"id" property with value matching with pattern "^ID_MARK_.*$`, async () => {
@@ -30,11 +30,11 @@ describe.each(groups_list)('marks.json file in %s group of vehicles specs', grou
         });
         // value of "logotype" property should be non empty string or null
         test.concurrent(`"logotype" property that is non empty string or null`, async () => {
-            if (typeof mark.logotype === 'string') {
-                expect(mark.logotype.length).toBeGreaterThan(0);
-                expect(mark.logotype).toMatch(new RegExp('^https?.*\.(png|jpg)$'));
+            if (typeof mark.logotype_uri === 'string') {
+                expect(mark.logotype_uri.length).toBeGreaterThan(0);
+                expect(mark.logotype_uri).toMatch(new RegExp('^https?.*\.(png|jpg)$'));
             } else {
-                expect(mark.logotype).toBeNull();
+                expect(mark.logotype_uri).toBeNull();
             }
         });
     });

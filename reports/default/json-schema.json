@@ -6,11 +6,23 @@
     "definitions": {
         "vin_code": {
             "type": "string",
+            "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ]+$",
+            "minLength": 17,
+            "maxLength": 17
+        },
+        "vin_code_masked": {
+            "type": "string",
             "pattern": "^[0-9ABCDEFGHJKLMNPRSTUVWXYZ\\*]+$",
             "minLength": 17,
             "maxLength": 17
         },
         "grz_code": {
+            "type": "string",
+            "pattern": "^[0-9АВЕКМНОРСТУХ]+$",
+            "minLength": 6,
+            "maxLength": 9
+        },
+        "grz_code_masked": {
             "type": "string",
             "pattern": "^[0-9АВЕКМНОРСТУХ\\*]+$",
             "minLength": 6,
@@ -18,11 +30,33 @@
         },
         "sts_code": {
             "type": "string",
+            "pattern": "^[0-9А-ЯЁ ]+$",
+            "minLength": 10,
+            "maxLength": 12
+        },
+        "sts_code_masked": {
+            "type": "string",
             "pattern": "^[0-9А-ЯЁ\\* ]+$",
             "minLength": 10,
             "maxLength": 12
         },
         "pts_code": {
+            "oneOf": [
+                {
+                    "type": "string",
+                    "pattern": "^[0-9А-ЯЁ ]+$",
+                    "minLength": 10,
+                    "maxLength": 12
+                },
+                {
+                    "type": "string",
+                    "pattern": "^[0-9]+$",
+                    "minLength": 15,
+                    "maxLength": 15
+                }
+            ]
+        },
+        "pts_code_masked": {
             "oneOf": [
                 {
                     "type": "string",
@@ -40,11 +74,23 @@
         },
         "body_code": {
             "type": "string",
+            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "body_code_masked": {
+            "type": "string",
             "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
             "maxLength": 15
         },
         "chassis_code": {
+            "type": "string",
+            "pattern": "^[0-9A-ZА-ЯЁ\\- ]+$",
+            "minLength": 7,
+            "maxLength": 15
+        },
+        "chassis_code_masked": {
             "type": "string",
             "pattern": "^[0-9A-ZА-ЯЁ\\-\\* ]+$",
             "minLength": 7,
@@ -286,12 +332,15 @@
                     "properties": {
                         "vin": {
                             "description": "VIN код",
-                            "oneOf": [
+                            "anyOf": [
                                 {
                                     "type": "null"
                                 },
                                 {
                                     "$ref": "#/definitions/vin_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code_masked"
                                 }
                             ],
                             "examples": [
@@ -306,7 +355,191 @@
                                 "base.tech",
                                 "tech.ext",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
+                            ]
+                        },
+                        "reg_num": {
+                            "description": "Государственный регистрационный знак (ГРЗ)",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/grz_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/grz_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "А332АВ177"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.eaisto",
+                                "base.alt"
+                            ]
+                        },
+                        "sts": {
+                            "description": "Номер СТС (свидетельства регистрации ТС)",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/sts_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/sts_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "3104847107"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.alt"
+                            ]
+                        },
+                        "pts": {
+                            "description": "Номер ПТС (паспорт ТС)",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/pts_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/pts_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "36КС619977"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.alt"
+                            ]
+                        },
+                        "body": {
+                            "description": "Номер кузова",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/body_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/body_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "KCA275-9673180"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
+                            ]
+                        },
+                        "chassis": {
+                            "description": "Номер шасси",
+                            "anyOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/chassis_code"
+                                },
+                                {
+                                    "$ref": "#/definitions/chassis_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "LFPVBM6819793"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "base.taxi",
+                                "base.alt",
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
+                            ]
+                        }
+                    }
+                },
+                "manufacture": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "description": "Производственные идентификаторы ТС",
+                    "properties": {
+                        "vin": {
+                            "description": "Производственный VIN код ТС",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code"
+                                }
+                            ],
+                            "examples": [
+                                "EXAMPL0V1N1000002"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "identifiers_masked": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "vehicle": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "description": "Маскированные идентификаторы ТС",
+                    "properties": {
+                        "vin": {
+                            "description": "VIN код",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/vin_code_masked"
+                                }
+                            ],
+                            "examples": [
+                                "EXAM************0"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext",
+                                "gibdd.history",
+                                "base.taxi",
+                                "gibdd.eaisto",
+                                "base.tech",
+                                "tech.ext",
+                                "base.alt",
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         },
                         "reg_num": {
@@ -316,11 +549,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/grz_code"
+                                    "$ref": "#/definitions/grz_code_masked"
                                 }
                             ],
                             "examples": [
-                                "А332АВ177"
+                                "А******77"
                             ],
                             "fillable_by": [
                                 "base",
@@ -336,11 +569,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/sts_code"
+                                    "$ref": "#/definitions/sts_code_masked"
                                 }
                             ],
                             "examples": [
-                                "3104847107"
+                                "310*****07"
                             ],
                             "fillable_by": [
                                 "base",
@@ -355,11 +588,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/pts_code"
+                                    "$ref": "#/definitions/pts_code_masked"
                                 }
                             ],
                             "examples": [
-                                "36КС619977"
+                                "36К*****77"
                             ],
                             "fillable_by": [
                                 "base",
@@ -375,11 +608,11 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/body_code"
+                                    "$ref": "#/definitions/body_code_masked"
                                 }
                             ],
                             "examples": [
-                                "KCA275-9673180"
+                                "KCA**********0"
                             ],
                             "fillable_by": [
                                 "base",
@@ -387,7 +620,8 @@
                                 "gibdd.history",
                                 "base.taxi",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         },
                         "chassis": {
@@ -397,18 +631,19 @@
                                     "type": "null"
                                 },
                                 {
-                                    "$ref": "#/definitions/chassis_code"
+                                    "$ref": "#/definitions/chassis_code_masked"
                                 }
                             ],
                             "examples": [
-                                "LFPVBM6819793"
+                                "LF**********3"
                             ],
                             "fillable_by": [
                                 "base",
                                 "base.ext",
                                 "base.taxi",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         }
                     }
@@ -479,7 +714,8 @@
                                         "customs.base",
                                         "gibdd.eaisto",
                                         "base.alt",
-                                        "regactions.registry"
+                                        "regactions.registry",
+                                        "gibdd.diagnostic.cards"
                                     ]
                                 },
                                 "rus": {
@@ -565,7 +801,8 @@
                                     ],
                                     "fillable_by": [
                                         "gibdd.history",
-                                        "gibdd.eaisto"
+                                        "gibdd.eaisto",
+                                        "gibdd.diagnostic.cards"
                                     ]
                                 },
                                 "normalized": {
@@ -1344,7 +1581,8 @@
                                 "customs.base",
                                 "gibdd.eaisto",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "gibdd.diagnostic.cards"
                             ]
                         }
                     }
@@ -5778,6 +6016,30 @@
                         }
                     }
                 },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-10-17 00:20:00"
+                            ],
+                            "fillable_by": [
+                                "pledge",
+                                "pledge.house",
+                                "pledge.fnp"
+                            ]
+                        }
+                    }
+                },
                 "count": {
                     "description": "Количество вхождений",
                     "type": "integer",
@@ -6081,7 +6343,8 @@
                                                     "ramiosago.base",
                                                     "ramiosago.alt",
                                                     "ramiosago.base.ext",
-                                                    "ramiosago.alt.ext"
+                                                    "ramiosago.alt.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -6109,7 +6372,8 @@
                                                     "base.alt",
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "ramiosago.alt.ext"
+                                                    "ramiosago.alt.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "end": {
@@ -6131,7 +6395,8 @@
                                                     "base.alt",
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "ramiosago.alt.ext"
+                                                    "ramiosago.alt.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -6159,7 +6424,8 @@
                                                     "ramiosago.base",
                                                     "ramiosago.alt",
                                                     "ramiosago.base.ext",
-                                                    "ramiosago.alt.ext"
+                                                    "ramiosago.alt.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "drivers": {
@@ -6173,7 +6439,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -6198,7 +6465,8 @@
                                                     "ramiosago.base",
                                                     "ramiosago.alt",
                                                     "ramiosago.base.ext",
-                                                    "ramiosago.alt.ext"
+                                                    "ramiosago.alt.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "number": {
@@ -6217,7 +6485,8 @@
                                                     "ramiosago.base",
                                                     "ramiosago.alt",
                                                     "ramiosago.base.ext",
-                                                    "ramiosago.alt.ext"
+                                                    "ramiosago.alt.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "is_active": {
@@ -6231,7 +6500,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base.ext",
-                                                    "ramiosago.alt.ext"
+                                                    "ramiosago.alt.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "expired": {
@@ -6244,7 +6514,8 @@
                                                     false
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "status": {
@@ -6257,7 +6528,8 @@
                                                     "Выдан страхователю"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -6277,7 +6549,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "using_type": {
@@ -6307,7 +6580,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     },
                                                     "description": {
@@ -6321,7 +6595,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     }
                                                 }
@@ -6341,7 +6616,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     },
                                                     "currency": {
@@ -6359,7 +6635,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     }
                                                 }
@@ -6375,7 +6652,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "is_follow_to_registration": {
@@ -6389,7 +6667,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "has_trailer": {
@@ -6403,7 +6682,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -6427,7 +6707,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     }
                                                 }
@@ -6451,7 +6732,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     },
                                                     "vin": {
@@ -6469,7 +6751,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     },
                                                     "body": {
@@ -6487,7 +6770,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     }
                                                 }
@@ -6511,7 +6795,8 @@
                                                                 ],
                                                                 "fillable_by": [
                                                                     "ramiosago.base",
-                                                                    "ramiosago.base.ext"
+                                                                    "ramiosago.base.ext",
+                                                                    "rsaosago.base.ext"
                                                                 ]
                                                             }
                                                         }
@@ -6533,7 +6818,27 @@
                                                         ],
                                                         "fillable_by": [
                                                             "ramiosago.base",
-                                                            "ramiosago.base.ext"
+                                                            "ramiosago.base.ext",
+                                                            "rsaosago.base.ext"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "seats": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "count": {
+                                                        "description": "Количество сидячих мест (для категории D)",
+                                                        "type": [
+                                                            "integer",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            5
+                                                        ],
+                                                        "fillable_by": [
+                                                            "rsaosago.base.ext"
                                                         ]
                                                     }
                                                 }
@@ -6560,7 +6865,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "dob": {
@@ -6578,7 +6884,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "name": {
@@ -6592,7 +6899,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "tin": {
@@ -6610,7 +6918,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -6635,7 +6944,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "dob": {
@@ -6653,7 +6963,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "name": {
@@ -6667,7 +6978,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             },
                                             "tin": {
@@ -6685,7 +6997,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base",
-                                                    "ramiosago.base.ext"
+                                                    "ramiosago.base.ext",
+                                                    "rsaosago.base.ext"
                                                 ]
                                             }
                                         }
@@ -6702,7 +7015,8 @@
                                         ],
                                         "fillable_by": [
                                             "ramiosago.base",
-                                            "ramiosago.base.ext"
+                                            "ramiosago.base.ext",
+                                            "rsaosago.base.ext"
                                         ]
                                     }
                                 }
@@ -6731,7 +7045,8 @@
                                         "base.ext",
                                         "base.alt",
                                         "ramiosago.alt",
-                                        "ramiosago.alt.ext"
+                                        "ramiosago.alt.ext",
+                                        "rsaosago.base.ext"
                                     ]
                                 }
                             }
@@ -6904,7 +7219,7 @@
                                                     "Перед справа, перед слева"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.moscow"
+                                                    "gibdd.dtp"
                                                 ]
                                             },
                                             "points": {
@@ -8096,7 +8411,8 @@
                                             "customs.base",
                                             "images.archive",
                                             "mileages.registry",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8121,7 +8437,8 @@
                                     "customs.base",
                                     "images.archive",
                                     "mileages.registry",
-                                    "service.history.fitservice"
+                                    "service.history.fitservice",
+                                    "gibdd.diagnostic.cards"
                                 ]
                             },
                             "filled_by": {
@@ -8144,6 +8461,7 @@
                                             "customs.base",
                                             "images.archive",
                                             "service.history.fitservice",
+                                            "gibdd.diagnostic.cards",
                                             null
                                         ],
                                         "examples": [
@@ -8180,7 +8498,8 @@
                                             "customs.base",
                                             "images.archive",
                                             "mileages.registry",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8225,7 +8544,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     },
                                     "to": {
@@ -8243,7 +8563,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8277,7 +8598,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     },
                                     "type": {
@@ -8291,7 +8613,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8311,7 +8634,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext"
+                                            "tech.ext",
+                                            "gibdd.diagnostic.cards"
                                         ]
                                     }
                                 }
@@ -8355,7 +8679,8 @@
                             ],
                             "fillable_by": [
                                 "gibdd.eaisto",
-                                "tech.ext"
+                                "tech.ext",
+                                "gibdd.diagnostic.cards"
                             ]
                         }
                     }
@@ -8920,7 +9245,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "$ref": "#/definitions/vin_code"
+                                                                "$ref": "#/definitions/vin_code_masked"
                                                             }
                                                         ],
                                                         "examples": [
@@ -8938,7 +9263,7 @@
                                                                 "type": "null"
                                                             },
                                                             {
-                                                                "$ref": "#/definitions/chassis_code"
+                                                                "$ref": "#/definitions/chassis_code_masked"
                                                             }
                                                         ],
                                                         "examples": [

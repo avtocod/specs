@@ -4,6 +4,120 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.73.0
+
+### Added
+
+- Field with path `insurance.osago.items[].vehicle.seats.count`
+- Field with path `accidents.history.items[].damage.raw` also fillable by `gibdd.dtp`
+- Field with path `accidents.history.items[].damage.raw` is not fillable by `base.moscow` source now
+
+## v3.72.0
+
+### Added
+
+- Source `gibdd.diagnostic.cards`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers.vehicle.body` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers.vehicle.chassis` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].inspection.place` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.date.update` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.brand.name.original` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.model.name.original` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.date.update` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].date.event` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].mileage` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].filled_by.source` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].actuality.date` also fillable by `gibdd.diagnostic.cards`
+
+## v3.71.0
+
+### Added
+
+- Field with path `identifiers.manufacture.vin`
+
+## v3.70.0
+
+### Added
+
+- Field with path `identifiers_masked.vehicle.vin`
+- Field with path `identifiers_masked.vehicle.reg_num`
+- Field with path `identifiers_masked.vehicle.sts`
+- Field with path `identifiers_masked.vehicle.pts`
+- Field with path `identifiers_masked.vehicle.body`
+- Field with path `identifiers_masked.vehicle.chassis`
+- Definition `vin_code_masked` in `./reports/default/json-schema.json`
+- Definition `grz_code_masked` in `./reports/default/json-schema.json`
+- Definition `sts_code_masked` in `./reports/default/json-schema.json`
+- Definition `pts_code_masked` in `./reports/default/json-schema.json`
+- Definition `body_code_masked` in `./reports/default/json-schema.json`
+- Definition `chassis_code_masked` in `./reports/default/json-schema.json`
+
+## v3.69.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.68.0
+
+### Added
+
+- Source `rsaosago.base.ext`
+
+### Changed
+
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].date.start` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].date.end` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].restrictions.drivers` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.series` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.number` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.is_active` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.expired` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.status` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.is_active` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.using_type.status` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.using_type.description` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.amount.value` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.amount.currency` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.kbm` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.is_follow_to_registration` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.has_trailer` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.model.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.reg_num` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.vin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.body` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.engine.power.hp` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.weight.max` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.dob` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.tin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.dob` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.tin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].geo` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.date.update` also fillable by `rsaosago.base.ext`
+
+## v3.67.0
+
+### Added
+
+- Field with path `pledges.date.update`
+
 ## v3.66.0
 
 ### Added

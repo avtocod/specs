@@ -7,6 +7,19 @@
             "pts": null,
             "body": null,
             "chassis": null
+        },
+        "manufacture": {
+            "vin": null
+        }
+    },
+    "identifiers_masked": {
+        "vehicle": {
+            "vin": null,
+            "reg_num": null,
+            "sts": null,
+            "pts": null,
+            "body": null,
+            "chassis": null
         }
     },
     "tech_data": {
@@ -729,6 +742,9 @@
                 "data": null
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "pledges_nbki": {
@@ -815,6 +831,9 @@
                         },
                         "weight": {
                             "max": null
+                        },
+                        "seats": {
+                            "count": null
                         }
                     },
                     "insurant": {

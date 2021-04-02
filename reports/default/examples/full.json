@@ -7,6 +7,19 @@
             "pts": "36КС619977",
             "body": "KCA275-9673180",
             "chassis": "LFPVBM6819793"
+        },
+        "manufacture": {
+            "vin": "EXAMPL0V1N1000002"
+        }
+    },
+    "identifiers_masked": {
+        "vehicle": {
+            "vin": "EXAM************0",
+            "reg_num": "А******77",
+            "sts": "310*****07",
+            "pts": "36К*****77",
+            "body": "KCA**********0",
+            "chassis": "LF**********3"
         }
     },
     "tech_data": {
@@ -977,6 +990,9 @@
                 "data": null
             }
         ],
+        "date": {
+            "update": "2019-10-17 00:20:00"
+        },
         "count": 1
     },
     "pledges_nbki": {
@@ -1063,6 +1079,9 @@
                         },
                         "weight": {
                             "max": 1233
+                        },
+                        "seats": {
+                            "count": 5
                         }
                     },
                     "insurant": {

@@ -14,7 +14,8 @@
             "base.tech",
             "tech.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -67,7 +68,8 @@
             "gibdd.history",
             "base.taxi",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -81,7 +83,107 @@
             "base.ext",
             "base.taxi",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
+        ]
+    },
+    {
+        "path": "identifiers.manufacture.vin",
+        "description": "Идентификатор ТС: Производственный VIN код ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.vin",
+        "description": "Маскированный идентификатор ТС: VIN код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "gibdd.eaisto",
+            "base.tech",
+            "tech.ext",
+            "base.alt",
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.reg_num",
+        "description": "Маскированный идентификатор ТС: Государственный регистрационный знак (ГРЗ)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.eaisto",
+            "base.alt"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.sts",
+        "description": "Маскированный идентификатор ТС: Номер СТС (свидетельства регистрации ТС)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.alt"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.pts",
+        "description": "Маскированный идентификатор ТС: Номер ПТС (паспорт ТС)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.alt"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.body",
+        "description": "Маскированный идентификатор ТС: Номер кузова",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "gibdd.history",
+            "base.taxi",
+            "base.alt",
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
+        ]
+    },
+    {
+        "path": "identifiers_masked.vehicle.chassis",
+        "description": "Маскированный идентификатор ТС: Номер шасси",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext",
+            "base.taxi",
+            "base.alt",
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -116,7 +218,8 @@
             "customs.base",
             "gibdd.eaisto",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -165,7 +268,8 @@
         ],
         "fillable_by": [
             "gibdd.history",
-            "gibdd.eaisto"
+            "gibdd.eaisto",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -603,7 +707,8 @@
             "customs.base",
             "gibdd.eaisto",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -1204,7 +1309,8 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -1215,7 +1321,8 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -1237,7 +1344,8 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -1248,7 +1356,8 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -1259,7 +1368,8 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -1281,7 +1391,8 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "tech.ext"
+            "tech.ext",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -1661,7 +1772,8 @@
             "ramiosago.base",
             "ramiosago.alt",
             "ramiosago.base.ext",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1676,7 +1788,8 @@
             "base.alt",
             "ramiosago.base",
             "ramiosago.base.ext",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1691,7 +1804,8 @@
             "base.alt",
             "ramiosago.base",
             "ramiosago.base.ext",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1704,7 +1818,8 @@
             "ramiosago.base",
             "ramiosago.alt",
             "ramiosago.base.ext",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1715,7 +1830,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1731,7 +1847,8 @@
             "ramiosago.base",
             "ramiosago.alt",
             "ramiosago.base.ext",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1747,7 +1864,8 @@
             "ramiosago.base",
             "ramiosago.alt",
             "ramiosago.base.ext",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1758,7 +1876,8 @@
         ],
         "fillable_by": [
             "ramiosago.base.ext",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1768,7 +1887,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1778,7 +1898,8 @@
             "string"
         ],
         "fillable_by": [
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1789,7 +1910,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1800,7 +1922,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1811,7 +1934,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1822,7 +1946,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1833,7 +1958,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1844,7 +1970,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1855,7 +1982,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1866,7 +1994,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1877,7 +2006,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1888,7 +2018,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1899,7 +2030,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1910,7 +2042,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1921,7 +2054,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1932,7 +2066,18 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.seats.count",
+        "description": "ОСАГО: Количество сидячих мест (для категории D)",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1943,7 +2088,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1954,7 +2100,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1965,7 +2112,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1976,7 +2124,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1987,7 +2136,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -1998,7 +2148,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -2009,7 +2160,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -2020,7 +2172,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -2031,7 +2184,8 @@
         ],
         "fillable_by": [
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -2047,7 +2201,8 @@
             "base.ext",
             "base.alt",
             "ramiosago.alt",
-            "ramiosago.alt.ext"
+            "ramiosago.alt.ext",
+            "rsaosago.base.ext"
         ]
     },
     {
@@ -2336,7 +2491,7 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow"
+            "gibdd.dtp"
         ]
     },
     {
@@ -2880,6 +3035,18 @@
         "types": [
             "string",
             "array"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house",
+            "pledge.fnp"
+        ]
+    },
+    {
+        "path": "pledges.date.update",
+        "description": "Обременения на ТС: Дата обновления данных",
+        "types": [
+            "string"
         ],
         "fillable_by": [
             "pledge",
@@ -3847,7 +4014,8 @@
             "customs.base",
             "images.archive",
             "mileages.registry",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -3866,7 +4034,8 @@
             "customs.base",
             "images.archive",
             "mileages.registry",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "gibdd.diagnostic.cards"
         ]
     },
     {
@@ -3893,7 +4062,8 @@
             "customs.base",
             "images.archive",
             "mileages.registry",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "gibdd.diagnostic.cards"
         ]
     },
     {

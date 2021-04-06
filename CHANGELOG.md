@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Vehicle marks logos
+- Vehicle `logotype_uri` field in `./vehicle/default/marks.json`
 
 ## v3.73.0
 

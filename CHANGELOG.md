@@ -4,11 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## UNRELEASED
+## v3.74.0
 
 ### Added
 
-- Vehicle `logotype_uri` field in `./vehicle/default/marks.json`
+- Vehicle marks `logotype_uri` field in `./vehicle/default/marks.json`
 
 ## v3.73.0
 

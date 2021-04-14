@@ -11,6 +11,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `fines.items[].uin`
 - Field with path `fines.items[].need_payment`
 
+### Changed
+
+- Field with path `fines.items[].location.raw` also fillable by `fines.base`
+
 ## v3.74.0
 
 ### Added

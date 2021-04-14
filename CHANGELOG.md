@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `fines.items[].uin`
+- Field with path `fines.items[].need_payment`
+
 ## v3.74.0
 
 ### Added

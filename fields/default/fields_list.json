@@ -3733,6 +3733,18 @@
         ]
     },
     {
+        "path": "fines.items[].uin",
+        "description": "Штрафы: Уникальный идентификатор начисления",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines",
+            "fines.base.ext"
+        ]
+    },
+    {
         "path": "fines.items[].description",
         "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном формате)",
         "types": [
@@ -3811,6 +3823,18 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
+            "fines.base.ext"
+        ]
+    },
+    {
+        "path": "fines.items[].need_payment",
+        "description": "Штрафы: Требуется оплата",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines",
             "fines.base.ext"
         ]
     },
@@ -3958,6 +3982,7 @@
             "string"
         ],
         "fillable_by": [
+            "fines.base",
             "fines.madiampp",
             "fines.base.ext"
         ]

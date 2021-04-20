@@ -4356,6 +4356,21 @@
                                     }
                                 }
                             },
+                            "uin": {
+                                "description": "Уникальный идентификатор начисления",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "18810161753886424481"
+                                ],
+                                "fillable_by": [
+                                    "fines.base",
+                                    "gibdd.fines",
+                                    "fines.base.ext"
+                                ]
+                            },
                             "description": {
                                 "description": "Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном формате)",
                                 "type": [
@@ -4484,6 +4499,21 @@
                                         }
                                     }
                                 }
+                            },
+                            "need_payment": {
+                                "description": "Требуется оплата",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    false
+                                ],
+                                "fillable_by": [
+                                    "fines.base",
+                                    "gibdd.fines",
+                                    "fines.base.ext"
+                                ]
                             },
                             "is_paid": {
                                 "description": "Оплачен ли штраф?",
@@ -4686,6 +4716,7 @@
                                             "МОСКВА Г. ПАРКОВКА №4034 (50) ПРОФСОЮЗНАЯ УЛИЦА, ДОМ 12"
                                         ],
                                         "fillable_by": [
+                                            "fines.base",
                                             "fines.madiampp",
                                             "fines.base.ext"
                                         ]

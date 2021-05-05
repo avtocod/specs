@@ -583,6 +583,16 @@
         ]
     },
     {
+        "path": "tech_data.generations[].id",
+        "description": "Характеристики ТС: Уникальный идентификатор поколения ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
         "path": "tech_data.generations[].name",
         "description": "Характеристики ТС: Наименование поколения ТС",
         "types": [
@@ -623,8 +633,28 @@
         ]
     },
     {
+        "path": "tech_data.generations[].bodies[].id",
+        "description": "Характеристики ТС: Уникальный идентификатор типа кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
         "path": "tech_data.generations[].bodies[].type",
         "description": "Характеристики ТС: Тип кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].id",
+        "description": "Характеристики ТС: Уникальный идентификатор модификации ТС",
         "types": [
             "string"
         ],

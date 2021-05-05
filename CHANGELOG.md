@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `tech_data.generations[].id`
+- Field with path `tech_data.generations[].bodies[].id`
+- Field with path `tech_data.generations[].bodies[].modifications[].id`
+
 ## v3.75.0
 
 ### Added

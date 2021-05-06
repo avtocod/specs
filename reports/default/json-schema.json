@@ -1341,6 +1341,19 @@
                         "type": "object",
                         "additionalProperties": false,
                         "properties": {
+                            "id": {
+                                "description": "Уникальный идентификатор поколения ТС",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "3"
+                                ],
+                                "fillable_by": [
+                                    "references.base"
+                                ]
+                            },
                             "name": {
                                 "description": "Наименование поколения ТС",
                                 "type": [
@@ -1405,6 +1418,19 @@
                                     "type": "object",
                                     "additionalProperties": false,
                                     "properties": {
+                                        "id": {
+                                            "description": "Уникальный идентификатор типа кузова ТС",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "6"
+                                            ],
+                                            "fillable_by": [
+                                                "references.base"
+                                            ]
+                                        },
                                         "type": {
                                             "description": "Тип кузова ТС",
                                             "type": [
@@ -1424,6 +1450,19 @@
                                                 "type": "object",
                                                 "additionalProperties": false,
                                                 "properties": {
+                                                    "id": {
+                                                        "description": "Уникальный идентификатор модификации ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "4"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "references.base"
+                                                        ]
+                                                    },
                                                     "name": {
                                                         "description": "Наименование модификации",
                                                         "type": [

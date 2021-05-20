@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
+- Field with path `service_history.date.update` also fillable by `service.history.filter`
 - Field with path `service_history.items[].type` also fillable by `service.history.filter`
 - Field with path `service_history.items[].dealer.name` also fillable by `service.history.filter`
 - Field with path `service_history.items[].date.end` also fillable by `service.history.filter`
@@ -26,6 +27,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.filter`
 - Field with path `service_history.items[].vehicle.year` also fillable by `service.history.filter`
 - Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].date.event` also fillable by `service.history.filter`
+- Field with path `mileages.items[].mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.filter`
 
 
 ## v3.76.0
@@ -88,9 +92,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].mileage` also fillable by `gibdd.diagnostic.cards`
 - Field with path `mileages.items[].filled_by.source` also fillable by `gibdd.diagnostic.cards`
 - Field with path `mileages.items[].actuality.date` also fillable by `gibdd.diagnostic.cards`
-- Field with path `mileages.items[].date.event` also fillable by `service.history.filter` source
-- Field with path `mileages.items[].mileage` also fillable by `service.history.filter` source
-- Field with path `mileages.items[].actuality.date` also fillable by `service.history.filter` source
 
 ## v3.71.0
 

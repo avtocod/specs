@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `service.history.filter`
+- Field with path `registration_actions.items[].code`
 
 ### Changed
 

@@ -3033,6 +3033,22 @@
                                     }
                                 }
                             },
+                            "code": {
+                                "description": "Код операции",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "11"
+                                ],
+                                "fillable_by": [
+                                    "base.ext",
+                                    "base",
+                                    "base.alt",
+                                    "regactions.registry"
+                                ]
+                            },
                             "type": {
                                 "description": "Тип операции",
                                 "type": [

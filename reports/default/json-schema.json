@@ -8498,6 +8498,7 @@
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",
+                                            "service.history.filter",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -8524,6 +8525,7 @@
                                     "images.archive",
                                     "mileages.registry",
                                     "service.history.fitservice",
+                                    "service.history.filter",
                                     "gibdd.diagnostic.cards"
                                 ]
                             },
@@ -8547,6 +8549,7 @@
                                             "customs.base",
                                             "images.archive",
                                             "service.history.fitservice",
+                                            "service.history.filter",
                                             "gibdd.diagnostic.cards",
                                             null
                                         ],
@@ -8585,6 +8588,7 @@
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",
+                                            "service.history.filter",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -9714,7 +9718,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "branch": {
@@ -9776,7 +9781,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -9797,7 +9803,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "currency": {
@@ -9814,7 +9821,8 @@
                                             "RUB"
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -9836,7 +9844,8 @@
                                     "SERVICE"
                                 ],
                                 "fillable_by": [
-                                    "service.history"
+                                    "service.history",
+                                    "service.history.filter"
                                 ]
                             },
                             "service": {
@@ -9863,7 +9872,8 @@
                                             "GUARANTEE"
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "content": {
@@ -9877,7 +9887,8 @@
                                         },
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "spare_parts": {
@@ -9891,7 +9902,8 @@
                                         },
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "recommendations": {
@@ -9919,7 +9931,8 @@
                                             null
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -10079,7 +10092,8 @@
                                 ],
                                 "fillable_by": [
                                     "service.history",
-                                    "service.history.fitservice"
+                                    "service.history.fitservice",
+                                    "service.history.filter"
                                 ]
                             },
                             "vehicle": {
@@ -10101,7 +10115,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice"
+                                                    "service.history.fitservice",
+                                                    "service.history.filter"
                                                 ]
                                             }
                                         }
@@ -10121,7 +10136,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice"
+                                                    "service.history.fitservice",
+                                                    "service.history.filter"
                                                 ]
                                             }
                                         }
@@ -10138,7 +10154,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "mileage": {
@@ -10153,7 +10170,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "body": {
@@ -10490,7 +10508,8 @@
                             ],
                             "fillable_by": [
                                 "service.history",
-                                "service.history.fitservice"
+                                "service.history.fitservice",
+                                "service.history.filter"
                             ]
                         }
                     }

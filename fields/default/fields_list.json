@@ -4083,6 +4083,7 @@
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
+            "service.history.filter",
             "gibdd.diagnostic.cards"
         ]
     },
@@ -4103,6 +4104,7 @@
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
+            "service.history.filter",
             "gibdd.diagnostic.cards"
         ]
     },
@@ -4131,6 +4133,7 @@
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
+            "service.history.filter",
             "gibdd.diagnostic.cards"
         ]
     },
@@ -4959,7 +4962,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -4991,7 +4995,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5002,7 +5007,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5012,7 +5018,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5022,7 +5029,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5032,7 +5040,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5043,7 +5052,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5054,7 +5064,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5075,7 +5086,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5156,7 +5168,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5167,7 +5180,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5178,7 +5192,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5189,7 +5204,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5200,7 +5216,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5362,7 +5379,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {

@@ -8,7 +8,29 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Source `service.history.filter`
 - Field with path `registration_actions.items[].code`
+
+### Changed
+
+- Field with path `service_history.date.update` also fillable by `service.history.filter`
+- Field with path `service_history.items[].type` also fillable by `service.history.filter`
+- Field with path `service_history.items[].dealer.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].date.end` also fillable by `service.history.filter`
+- Field with path `service_history.items[].amount.value` also fillable by `service.history.filter`
+- Field with path `service_history.items[].amount.currency` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.type` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.content` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.spare_parts` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.is_planned` also fillable by `service.history.filter`
+- Field with path `service_history.items[].geo` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.brand.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.year` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].date.event` also fillable by `service.history.filter`
+- Field with path `mileages.items[].mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.filter`
 
 ## v3.76.0
 

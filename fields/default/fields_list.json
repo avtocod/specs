@@ -1664,6 +1664,19 @@
         ]
     },
     {
+        "path": "registration_actions.items[].code",
+        "description": "Регистрационные действия: Код операции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base.ext",
+            "base",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "registration_actions.items[].type",
         "description": "Регистрационные действия: Тип операции",
         "types": [

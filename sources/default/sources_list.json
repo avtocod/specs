@@ -245,6 +245,11 @@
         "enabled": true
     },
     {
+        "name": "service.history.filter",
+        "description": "История сервисного обслуживания ТС сетью СТО Фильтр",
+        "enabled": true
+    },
+    {
         "name": "fines.base.ext",
         "description": "Расширенные данные о штрафах, оформленных на ТС",
         "enabled": true

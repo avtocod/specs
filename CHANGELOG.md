@@ -12,19 +12,20 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
+- Field with path `service_history.items[].type` also fillable by `service.history.filter`
 - Field with path `service_history.items[].dealer.name` also fillable by `service.history.filter`
-- Field with path `service_history.items[].dealer.branch.name` also fillable by `service.history.filter`
 - Field with path `service_history.items[].date.end` also fillable by `service.history.filter`
 - Field with path `service_history.items[].amount.value` also fillable by `service.history.filter`
+- Field with path `service_history.items[].amount.currency` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.type` also fillable by `service.history.filter`
 - Field with path `service_history.items[].service.content` also fillable by `service.history.filter`
 - Field with path `service_history.items[].service.spare_parts` also fillable by `service.history.filter`
-- Field with path `service_history.items[].service.recommendations` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.is_planned` also fillable by `service.history.filter`
 - Field with path `service_history.items[].geo` also fillable by `service.history.filter`
 - Field with path `service_history.items[].vehicle.brand.name` also fillable by `service.history.filter`
 - Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.filter`
 - Field with path `service_history.items[].vehicle.year` also fillable by `service.history.filter`
 - Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.filter`
-- Field with path `service_history.items[].vehicle.identifiers.vin` also fillable by `service.history.filter`
 
 
 ## v3.76.0
@@ -87,6 +88,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].mileage` also fillable by `gibdd.diagnostic.cards`
 - Field with path `mileages.items[].filled_by.source` also fillable by `gibdd.diagnostic.cards`
 - Field with path `mileages.items[].actuality.date` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].date.event` also fillable by `service.history.filter` source
+- Field with path `mileages.items[].mileage` also fillable by `service.history.filter` source
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.filter` source
 
 ## v3.71.0
 

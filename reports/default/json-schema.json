@@ -9722,8 +9722,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice",
-                                                    "service.history.filter"
+                                                    "service.history.fitservice"
                                                 ]
                                             }
                                         }
@@ -9806,7 +9805,8 @@
                                             "RUB"
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -9828,7 +9828,8 @@
                                     "SERVICE"
                                 ],
                                 "fillable_by": [
-                                    "service.history"
+                                    "service.history",
+                                    "service.history.filter"
                                 ]
                             },
                             "service": {
@@ -9855,7 +9856,8 @@
                                             "GUARANTEE"
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "content": {
@@ -9899,8 +9901,7 @@
                                         },
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice",
-                                            "service.history.filter"
+                                            "service.history.fitservice"
                                         ]
                                     },
                                     "is_planned": {
@@ -9914,7 +9915,8 @@
                                             null
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -10445,8 +10447,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice",
-                                                    "service.history.filter"
+                                                    "service.history.fitservice"
                                                 ]
                                             },
                                             "chassis": {

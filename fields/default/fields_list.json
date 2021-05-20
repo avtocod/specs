@@ -4961,8 +4961,7 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice",
-            "service.history.filter"
+            "service.history.fitservice"
         ]
     },
     {
@@ -5006,7 +5005,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5016,7 +5016,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5026,7 +5027,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5061,8 +5063,7 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice",
-            "service.history.filter"
+            "service.history.fitservice"
         ]
     },
     {
@@ -5072,7 +5073,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5343,8 +5345,7 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice",
-            "service.history.filter"
+            "service.history.fitservice"
         ]
     },
     {

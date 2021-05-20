@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `registration_actions.items[].code`
 
+## v3.76.0
+
+### Added
+
+- Field with path `tech_data.generations[].id`
+- Field with path `tech_data.generations[].bodies[].id`
+- Field with path `tech_data.generations[].bodies[].modifications[].id`
+
 ## v3.75.0
 
 ### Added

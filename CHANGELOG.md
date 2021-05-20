@@ -31,7 +31,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].mileage` also fillable by `service.history.filter`
 - Field with path `mileages.items[].actuality.date` also fillable by `service.history.filter`
 
-
 ## v3.76.0
 
 ### Added

@@ -8,8 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Extend enum with `UNKNOWN` value for field `insurance.osago.items[].insurant.type` in `./reports/default/json-schema.json`
-- Extend enum with `UNKNOWN` value for field `insurance.osago.items[].owner.type` in `./reports/default/json-schema.json`
+- Extend enum with `UNKNOWN` value for fields `insurance.osago.items[].insurant.type`, `insurance.osago.items[].owner.type` in `./reports/default/json-schema.json`
 
 ## v3.77.0
 

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Extend enum with `UNKNOWN` value for field `insurance.osago.items[].insurant.type` in `./reports/default/json-schema.json`
+- Extend enum with `UNKNOWN` value for field `insurance.osago.items[].owner.type` in `./reports/default/json-schema.json`
+
 ## v3.77.0
 
 ### Added

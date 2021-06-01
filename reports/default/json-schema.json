@@ -6936,7 +6936,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "type": {
-                                                "description": "Тип страхователя [PERSON, LEGAL]",
+                                                "description": "Тип страхователя [PERSON, LEGAL, UNKNOWN]",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -6944,6 +6944,7 @@
                                                 "enum": [
                                                     "PERSON",
                                                     "LEGAL",
+                                                    "UNKNOWN",
                                                     null
                                                 ],
                                                 "examples": [
@@ -7015,7 +7016,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "type": {
-                                                "description": "Тип владельца ТС [PERSON, LEGAL]",
+                                                "description": "Тип владельца ТС [PERSON, LEGAL, UNKNOWN]",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -7023,6 +7024,7 @@
                                                 "enum": [
                                                     "PERSON",
                                                     "LEGAL",
+                                                    "UNKNOWN",
                                                     null
                                                 ],
                                                 "examples": [

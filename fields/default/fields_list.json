@@ -2125,7 +2125,7 @@
     },
     {
         "path": "insurance.osago.items[].insurant.type",
-        "description": "ОСАГО: Тип страхователя [PERSON, LEGAL]",
+        "description": "ОСАГО: Тип страхователя [PERSON, LEGAL, UNKNOWN]",
         "types": [
             "string"
         ],
@@ -2173,7 +2173,7 @@
     },
     {
         "path": "insurance.osago.items[].owner.type",
-        "description": "ОСАГО: Тип владельца ТС [PERSON, LEGAL]",
+        "description": "ОСАГО: Тип владельца ТС [PERSON, LEGAL, UNKNOWN]",
         "types": [
             "string"
         ],

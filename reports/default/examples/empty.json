@@ -97,6 +97,7 @@
         },
         "generations": [
             {
+                "id": null,
                 "name": null,
                 "is_restyling": null,
                 "years": {
@@ -105,9 +106,11 @@
                 },
                 "bodies": [
                     {
+                        "id": null,
                         "type": null,
                         "modifications": [
                             {
+                                "id": null,
                                 "name": null,
                                 "engine": {
                                     "fuel": {
@@ -327,6 +330,7 @@
                     },
                     "phone_number": null
                 },
+                "code": null,
                 "type": null,
                 "geo": {
                     "country": null,
@@ -529,6 +533,7 @@
                     "code": null,
                     "description": null
                 },
+                "uin": null,
                 "description": null,
                 "vendor": {
                     "name": null
@@ -543,6 +548,7 @@
                         "end": null
                     }
                 },
+                "need_payment": null,
                 "is_paid": null,
                 "wire": {
                     "user": {

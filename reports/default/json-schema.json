@@ -1341,6 +1341,19 @@
                         "type": "object",
                         "additionalProperties": false,
                         "properties": {
+                            "id": {
+                                "description": "Уникальный идентификатор поколения ТС",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "3"
+                                ],
+                                "fillable_by": [
+                                    "references.base"
+                                ]
+                            },
                             "name": {
                                 "description": "Наименование поколения ТС",
                                 "type": [
@@ -1405,6 +1418,19 @@
                                     "type": "object",
                                     "additionalProperties": false,
                                     "properties": {
+                                        "id": {
+                                            "description": "Уникальный идентификатор типа кузова ТС",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "6"
+                                            ],
+                                            "fillable_by": [
+                                                "references.base"
+                                            ]
+                                        },
                                         "type": {
                                             "description": "Тип кузова ТС",
                                             "type": [
@@ -1424,6 +1450,19 @@
                                                 "type": "object",
                                                 "additionalProperties": false,
                                                 "properties": {
+                                                    "id": {
+                                                        "description": "Уникальный идентификатор модификации ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "4"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "references.base"
+                                                        ]
+                                                    },
                                                     "name": {
                                                         "description": "Наименование модификации",
                                                         "type": [
@@ -2994,6 +3033,22 @@
                                     }
                                 }
                             },
+                            "code": {
+                                "description": "Код операции",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "11"
+                                ],
+                                "fillable_by": [
+                                    "base.ext",
+                                    "base",
+                                    "base.alt",
+                                    "regactions.registry"
+                                ]
+                            },
                             "type": {
                                 "description": "Тип операции",
                                 "type": [
@@ -4356,6 +4411,21 @@
                                     }
                                 }
                             },
+                            "uin": {
+                                "description": "Уникальный идентификатор начисления",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "18810161753886424481"
+                                ],
+                                "fillable_by": [
+                                    "fines.base",
+                                    "gibdd.fines",
+                                    "fines.base.ext"
+                                ]
+                            },
                             "description": {
                                 "description": "Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном формате)",
                                 "type": [
@@ -4484,6 +4554,21 @@
                                         }
                                     }
                                 }
+                            },
+                            "need_payment": {
+                                "description": "Требуется оплата",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    false
+                                ],
+                                "fillable_by": [
+                                    "fines.base",
+                                    "gibdd.fines",
+                                    "fines.base.ext"
+                                ]
                             },
                             "is_paid": {
                                 "description": "Оплачен ли штраф?",
@@ -4686,6 +4771,7 @@
                                             "МОСКВА Г. ПАРКОВКА №4034 (50) ПРОФСОЮЗНАЯ УЛИЦА, ДОМ 12"
                                         ],
                                         "fillable_by": [
+                                            "fines.base",
                                             "fines.madiampp",
                                             "fines.base.ext"
                                         ]
@@ -6850,7 +6936,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "type": {
-                                                "description": "Тип страхователя [PERSON, LEGAL]",
+                                                "description": "Тип страхователя [PERSON, LEGAL, UNKNOWN]",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -6858,6 +6944,7 @@
                                                 "enum": [
                                                     "PERSON",
                                                     "LEGAL",
+                                                    "UNKNOWN",
                                                     null
                                                 ],
                                                 "examples": [
@@ -6929,7 +7016,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "type": {
-                                                "description": "Тип владельца ТС [PERSON, LEGAL]",
+                                                "description": "Тип владельца ТС [PERSON, LEGAL, UNKNOWN]",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -6937,6 +7024,7 @@
                                                 "enum": [
                                                     "PERSON",
                                                     "LEGAL",
+                                                    "UNKNOWN",
                                                     null
                                                 ],
                                                 "examples": [
@@ -8412,6 +8500,7 @@
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",
+                                            "service.history.filter",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -8438,6 +8527,7 @@
                                     "images.archive",
                                     "mileages.registry",
                                     "service.history.fitservice",
+                                    "service.history.filter",
                                     "gibdd.diagnostic.cards"
                                 ]
                             },
@@ -8461,6 +8551,7 @@
                                             "customs.base",
                                             "images.archive",
                                             "service.history.fitservice",
+                                            "service.history.filter",
                                             "gibdd.diagnostic.cards",
                                             null
                                         ],
@@ -8499,6 +8590,7 @@
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",
+                                            "service.history.filter",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -9628,7 +9720,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "branch": {
@@ -9690,7 +9783,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -9711,7 +9805,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "currency": {
@@ -9728,7 +9823,8 @@
                                             "RUB"
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -9750,7 +9846,8 @@
                                     "SERVICE"
                                 ],
                                 "fillable_by": [
-                                    "service.history"
+                                    "service.history",
+                                    "service.history.filter"
                                 ]
                             },
                             "service": {
@@ -9777,7 +9874,8 @@
                                             "GUARANTEE"
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "content": {
@@ -9791,7 +9889,8 @@
                                         },
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "spare_parts": {
@@ -9805,7 +9904,8 @@
                                         },
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "recommendations": {
@@ -9833,7 +9933,8 @@
                                             null
                                         ],
                                         "fillable_by": [
-                                            "service.history"
+                                            "service.history",
+                                            "service.history.filter"
                                         ]
                                     }
                                 }
@@ -9993,7 +10094,8 @@
                                 ],
                                 "fillable_by": [
                                     "service.history",
-                                    "service.history.fitservice"
+                                    "service.history.fitservice",
+                                    "service.history.filter"
                                 ]
                             },
                             "vehicle": {
@@ -10015,7 +10117,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice"
+                                                    "service.history.fitservice",
+                                                    "service.history.filter"
                                                 ]
                                             }
                                         }
@@ -10035,7 +10138,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice"
+                                                    "service.history.fitservice",
+                                                    "service.history.filter"
                                                 ]
                                             }
                                         }
@@ -10052,7 +10156,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "mileage": {
@@ -10067,7 +10172,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.filter"
                                         ]
                                     },
                                     "body": {
@@ -10404,7 +10510,8 @@
                             ],
                             "fillable_by": [
                                 "service.history",
-                                "service.history.fitservice"
+                                "service.history.fitservice",
+                                "service.history.filter"
                             ]
                         }
                     }

@@ -4,6 +4,65 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.78.0
+
+### Changed
+
+- Extend enum with `UNKNOWN` value for fields `insurance.osago.items[].insurant.type`, `insurance.osago.items[].owner.type` in `./reports/default/json-schema.json`
+
+## v3.77.0
+
+### Added
+
+- Source `service.history.filter`
+- Field with path `registration_actions.items[].code`
+
+### Changed
+
+- Field with path `service_history.date.update` also fillable by `service.history.filter`
+- Field with path `service_history.items[].type` also fillable by `service.history.filter`
+- Field with path `service_history.items[].dealer.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].date.end` also fillable by `service.history.filter`
+- Field with path `service_history.items[].amount.value` also fillable by `service.history.filter`
+- Field with path `service_history.items[].amount.currency` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.type` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.content` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.spare_parts` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.is_planned` also fillable by `service.history.filter`
+- Field with path `service_history.items[].geo` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.brand.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.year` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].date.event` also fillable by `service.history.filter`
+- Field with path `mileages.items[].mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.filter`
+
+## v3.76.0
+
+### Added
+
+- Field with path `tech_data.generations[].id`
+- Field with path `tech_data.generations[].bodies[].id`
+- Field with path `tech_data.generations[].bodies[].modifications[].id`
+
+## v3.75.0
+
+### Added
+
+- Field with path `fines.items[].uin`
+- Field with path `fines.items[].need_payment`
+
+### Changed
+
+- Field with path `fines.items[].location.raw` also fillable by `fines.base`
+
+## v3.74.0
+
+### Added
+
+- Vehicle marks `logotype_uri` field in `./vehicle/default/marks.json`
+
 ## v3.73.0
 
 ### Added

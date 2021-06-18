@@ -583,6 +583,16 @@
         ]
     },
     {
+        "path": "tech_data.generations[].id",
+        "description": "Характеристики ТС: Уникальный идентификатор поколения ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
         "path": "tech_data.generations[].name",
         "description": "Характеристики ТС: Наименование поколения ТС",
         "types": [
@@ -623,8 +633,28 @@
         ]
     },
     {
+        "path": "tech_data.generations[].bodies[].id",
+        "description": "Характеристики ТС: Уникальный идентификатор типа кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
         "path": "tech_data.generations[].bodies[].type",
         "description": "Характеристики ТС: Тип кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "references.base"
+        ]
+    },
+    {
+        "path": "tech_data.generations[].bodies[].modifications[].id",
+        "description": "Характеристики ТС: Уникальный идентификатор модификации ТС",
         "types": [
             "string"
         ],
@@ -1664,6 +1694,19 @@
         ]
     },
     {
+        "path": "registration_actions.items[].code",
+        "description": "Регистрационные действия: Код операции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base.ext",
+            "base",
+            "base.alt",
+            "regactions.registry"
+        ]
+    },
+    {
         "path": "registration_actions.items[].type",
         "description": "Регистрационные действия: Тип операции",
         "types": [
@@ -2082,7 +2125,7 @@
     },
     {
         "path": "insurance.osago.items[].insurant.type",
-        "description": "ОСАГО: Тип страхователя [PERSON, LEGAL]",
+        "description": "ОСАГО: Тип страхователя [PERSON, LEGAL, UNKNOWN]",
         "types": [
             "string"
         ],
@@ -2130,7 +2173,7 @@
     },
     {
         "path": "insurance.osago.items[].owner.type",
-        "description": "ОСАГО: Тип владельца ТС [PERSON, LEGAL]",
+        "description": "ОСАГО: Тип владельца ТС [PERSON, LEGAL, UNKNOWN]",
         "types": [
             "string"
         ],
@@ -3733,6 +3776,18 @@
         ]
     },
     {
+        "path": "fines.items[].uin",
+        "description": "Штрафы: Уникальный идентификатор начисления",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines",
+            "fines.base.ext"
+        ]
+    },
+    {
         "path": "fines.items[].description",
         "description": "Штрафы: Короткое описание штрафа (УИН постановления, дата, сумма - в произвольном формате)",
         "types": [
@@ -3811,6 +3866,18 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
+            "fines.base.ext"
+        ]
+    },
+    {
+        "path": "fines.items[].need_payment",
+        "description": "Штрафы: Требуется оплата",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "fines.base",
+            "gibdd.fines",
             "fines.base.ext"
         ]
     },
@@ -3958,6 +4025,7 @@
             "string"
         ],
         "fillable_by": [
+            "fines.base",
             "fines.madiampp",
             "fines.base.ext"
         ]
@@ -4015,6 +4083,7 @@
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
+            "service.history.filter",
             "gibdd.diagnostic.cards"
         ]
     },
@@ -4035,6 +4104,7 @@
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
+            "service.history.filter",
             "gibdd.diagnostic.cards"
         ]
     },
@@ -4063,6 +4133,7 @@
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
+            "service.history.filter",
             "gibdd.diagnostic.cards"
         ]
     },
@@ -4891,7 +4962,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -4923,7 +4995,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -4934,7 +5007,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -4944,7 +5018,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -4954,7 +5029,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -4964,7 +5040,8 @@
             "string"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -4975,7 +5052,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -4986,7 +5064,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5007,7 +5086,8 @@
             "boolean"
         ],
         "fillable_by": [
-            "service.history"
+            "service.history",
+            "service.history.filter"
         ]
     },
     {
@@ -5088,7 +5168,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5099,7 +5180,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5110,7 +5192,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5121,7 +5204,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5132,7 +5216,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {
@@ -5294,7 +5379,8 @@
         ],
         "fillable_by": [
             "service.history",
-            "service.history.fitservice"
+            "service.history.fitservice",
+            "service.history.filter"
         ]
     },
     {

@@ -12,7 +12,10 @@ const disabled_sources: {[k: string]: string[]} = {
         'tech.base',
         'base.moscow',
         'carprice',
+        'tech.ext',
         'base.tech',
+        'calc.osago',
+        'pledge.fnp',
         'carfax.check',
         'ramiosago.alt',
         'ramiosago.alt.ext'

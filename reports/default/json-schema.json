@@ -10553,7 +10553,8 @@
                                                     630000
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.price"
+                                                    "ads.price",
+                                                    "ads.price.base"
                                                 ]
                                             },
                                             "min": {
@@ -10567,7 +10568,8 @@
                                                     430000
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.price"
+                                                    "ads.price",
+                                                    "ads.price.base"
                                                 ]
                                             },
                                             "optimal": {
@@ -10581,7 +10583,8 @@
                                                     530000
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.price"
+                                                    "ads.price",
+                                                    "ads.price.base"
                                                 ]
                                             }
                                         }
@@ -10604,7 +10607,8 @@
                                                     "RUB"
                                                 ],
                                                 "fillable_by": [
-                                                    "ads.price"
+                                                    "ads.price",
+                                                    "ads.price.base"
                                                 ]
                                             }
                                         }
@@ -10619,7 +10623,8 @@
                                             50000
                                         ],
                                         "fillable_by": [
-                                            "ads.price"
+                                            "ads.price",
+                                            "ads.price.base"
                                         ]
                                     },
                                     "related_ads": {
@@ -10646,7 +10651,8 @@
                                                                 "2019-01-14 11:57:00"
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         }
                                                     }
@@ -10662,7 +10668,8 @@
                                                         }
                                                     ],
                                                     "fillable_by": [
-                                                        "ads.price"
+                                                        "ads.price",
+                                                        "ads.price.base"
                                                     ]
                                                 },
                                                 "uri": {
@@ -10675,7 +10682,8 @@
                                                         "https://example.com"
                                                     ],
                                                     "fillable_by": [
-                                                        "ads.price"
+                                                        "ads.price",
+                                                        "ads.price.base"
                                                     ]
                                                 },
                                                 "price": {
@@ -10692,7 +10700,8 @@
                                                                 117400
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         },
                                                         "currency": {
@@ -10709,7 +10718,8 @@
                                                                 "RUB"
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         }
                                                     }
@@ -10732,7 +10742,8 @@
                                                                         "Opel"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 }
                                                             }
@@ -10751,7 +10762,8 @@
                                                                         "Monterey"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 }
                                                             }
@@ -10767,7 +10779,8 @@
                                                                 2018
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         },
                                                         "condition": {
@@ -10780,7 +10793,8 @@
                                                                 "Не битый"
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         },
                                                         "wheel": {
@@ -10801,7 +10815,8 @@
                                                                         "RIGHT"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 },
                                                                 "position_id": {
@@ -10818,7 +10833,8 @@
                                                                         "ID_STEERING_WHEEL_TYPE_RIGHT"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 }
                                                             }
@@ -10841,7 +10857,8 @@
                                                                         "AUTOMATIC"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 },
                                                                 "type_id": {
@@ -10858,7 +10875,8 @@
                                                                         "ID_TRANSMISSION_TYPE_AUTOMATIC"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 }
                                                             }
@@ -10881,7 +10899,8 @@
                                                                         "Передний"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 },
                                                                 "type_id": {
@@ -10898,7 +10917,8 @@
                                                                         "ID_DRIVING_WHEELS_TYPE_FRONT"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 }
                                                             }
@@ -10919,7 +10939,8 @@
                                                                         null
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 }
                                                             }
@@ -10943,7 +10964,8 @@
                                                                                 176.9
                                                                             ],
                                                                             "fillable_by": [
-                                                                                "ads.price"
+                                                                                "ads.price",
+                                                                                "ads.price.base"
                                                                             ]
                                                                         }
                                                                     }
@@ -10959,7 +10981,8 @@
                                                                         2792.1
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 },
                                                                 "fuel": {
@@ -10980,7 +11003,8 @@
                                                                                 "Бензиновый"
                                                                             ],
                                                                             "fillable_by": [
-                                                                                "ads.price"
+                                                                                "ads.price",
+                                                                                "ads.price.base"
                                                                             ]
                                                                         },
                                                                         "type_id": {
@@ -10997,7 +11021,8 @@
                                                                                 "ID_ENGINE_TYPE_PETROL"
                                                                             ],
                                                                             "fillable_by": [
-                                                                                "ads.price"
+                                                                                "ads.price",
+                                                                                "ads.price.base"
                                                                             ]
                                                                         }
                                                                     }
@@ -11019,7 +11044,8 @@
                                                                         "Универсал"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 },
                                                                 "type_id": {
@@ -11036,7 +11062,8 @@
                                                                         "ID_BODY_TYPE_SEDAN"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "ads.price"
+                                                                        "ads.price",
+                                                                        "ads.price.base"
                                                                     ]
                                                                 }
                                                             }
@@ -11051,7 +11078,8 @@
                                                                 79000
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         }
                                                     }
@@ -11076,7 +11104,8 @@
                                                                 "price_mileage"
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         },
                                                         "description": {
@@ -11086,7 +11115,8 @@
                                                                 "y = price, x = mileage"
                                                             ],
                                                             "fillable_by": [
-                                                                "ads.price"
+                                                                "ads.price",
+                                                                "ads.price.base"
                                                             ]
                                                         },
                                                         "parts": {
@@ -11102,7 +11132,8 @@
                                                                             "STRAIGHT_LINE"
                                                                         ],
                                                                         "fillable_by": [
-                                                                            "ads.price"
+                                                                            "ads.price",
+                                                                            "ads.price.base"
                                                                         ]
                                                                     },
                                                                     "description": {
@@ -11112,7 +11143,8 @@
                                                                             "y = coefficients[0] + x * coefficients[1]"
                                                                         ],
                                                                         "fillable_by": [
-                                                                            "ads.price"
+                                                                            "ads.price",
+                                                                            "ads.price.base"
                                                                         ]
                                                                     },
                                                                     "coefficients": {
@@ -11128,7 +11160,8 @@
                                                                             ]
                                                                         ],
                                                                         "fillable_by": [
-                                                                            "ads.price"
+                                                                            "ads.price",
+                                                                            "ads.price.base"
                                                                         ]
                                                                     },
                                                                     "bounds": {
@@ -11145,7 +11178,8 @@
                                                                                     365907.42316982563
                                                                                 ],
                                                                                 "fillable_by": [
-                                                                                    "ads.price"
+                                                                                    "ads.price",
+                                                                                    "ads.price.base"
                                                                                 ]
                                                                             },
                                                                             "right": {
@@ -11158,7 +11192,8 @@
                                                                                     365907.42316982563
                                                                                 ],
                                                                                 "fillable_by": [
-                                                                                    "ads.price"
+                                                                                    "ads.price",
+                                                                                    "ads.price.base"
                                                                                 ]
                                                                             }
                                                                         }
@@ -11191,7 +11226,8 @@
                                         "2019-07-06 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "ads.price"
+                                        "ads.price",
+                                        "ads.price.base"
                                     ]
                                 }
                             }

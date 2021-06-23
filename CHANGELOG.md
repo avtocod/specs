@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `ads.price.base`
+- Field with path `market_prices.ads.items[].amount.max` also fillable by `ads.price.base`
+- Field with path `market_prices.ads.items[].amount.min` also fillable by `ads.price.base`
+- Field with path `market_prices.ads.items[].amount.optimal` also fillable by `ads.price.base`
+- Field with path `market_prices.ads.items[].currency.type` also fillable by `ads.price.base`
+
 ## v3.79.0
 
 ### Changed

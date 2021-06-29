@@ -9,10 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `ads.price.base`
-- Field with path `market_prices.ads.items[].amount.max` also fillable by `ads.price.base`
-- Field with path `market_prices.ads.items[].amount.min` also fillable by `ads.price.base`
-- Field with path `market_prices.ads.items[].amount.optimal` also fillable by `ads.price.base`
-- Field with path `market_prices.ads.items[].currency.type` also fillable by `ads.price.base`
+- Field with path `market_prices.ads.*` also fillable by `ads.price.base`
 
 ## v3.79.0
 

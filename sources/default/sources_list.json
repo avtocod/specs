@@ -17,7 +17,7 @@
     {
         "name": "tech.ext",
         "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "gibdd.eaisto",
@@ -52,7 +52,7 @@
     {
         "name": "calc.osago",
         "description": "Данные о стоимости страховки ОСАГО",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "pledge",
@@ -185,6 +185,11 @@
         "enabled": true
     },
     {
+        "name": "ads.price.base",
+        "description": "Рыночная стоимость ТС без учета пробега",
+        "enabled": true
+    },
+    {
         "name": "fines.alt",
         "description": "Данные о штрафах, оформленных на ТС, альтернативный источник",
         "enabled": true
@@ -202,7 +207,7 @@
     {
         "name": "pledge.fnp",
         "description": "Обременения на ТС по данным ФНП",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "images.archive",

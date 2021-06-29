@@ -32,6 +32,19 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].mileage` also fillable by `service.history.wilgood`
 - Field with path `mileages.items[].actuality.date` also fillable by `service.history.wilgood`
 
+## v3.80.0
+
+### Added
+
+- Source `ads.price.base`
+- Field with path `market_prices.ads.*` also fillable by `ads.price.base`
+
+## v3.79.0
+
+### Changed
+
+- Sources `calc.osago`, `pledge.fnp`, `tech.ext` marked as disabled
+
 ## v3.78.0
 
 ### Changed

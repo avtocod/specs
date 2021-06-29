@@ -185,6 +185,11 @@
         "enabled": true
     },
     {
+        "name": "ads.price.base",
+        "description": "Рыночная стоимость ТС без учета пробега",
+        "enabled": true
+    },
+    {
         "name": "fines.alt",
         "description": "Данные о штрафах, оформленных на ТС, альтернативный источник",
         "enabled": true

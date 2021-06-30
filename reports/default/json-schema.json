@@ -8501,6 +8501,7 @@
                                             "mileages.registry",
                                             "service.history.fitservice",
                                             "service.history.filter",
+                                            "service.history.wilgood",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -8528,6 +8529,7 @@
                                     "mileages.registry",
                                     "service.history.fitservice",
                                     "service.history.filter",
+                                    "service.history.wilgood",
                                     "gibdd.diagnostic.cards"
                                 ]
                             },
@@ -8591,6 +8593,7 @@
                                             "mileages.registry",
                                             "service.history.fitservice",
                                             "service.history.filter",
+                                            "service.history.wilgood",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -9721,7 +9724,8 @@
                                         "fillable_by": [
                                             "service.history",
                                             "service.history.fitservice",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     },
                                     "branch": {
@@ -9740,7 +9744,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice"
+                                                    "service.history.fitservice",
+                                                    "service.history.wilgood"
                                                 ]
                                             }
                                         }
@@ -9784,7 +9789,8 @@
                                         "fillable_by": [
                                             "service.history",
                                             "service.history.fitservice",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     }
                                 }
@@ -9847,7 +9853,8 @@
                                 ],
                                 "fillable_by": [
                                     "service.history",
-                                    "service.history.filter"
+                                    "service.history.filter",
+                                    "service.history.wilgood"
                                 ]
                             },
                             "service": {
@@ -9875,7 +9882,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     },
                                     "content": {
@@ -9890,7 +9898,8 @@
                                         "fillable_by": [
                                             "service.history",
                                             "service.history.fitservice",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     },
                                     "spare_parts": {
@@ -9905,7 +9914,8 @@
                                         "fillable_by": [
                                             "service.history",
                                             "service.history.fitservice",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     },
                                     "recommendations": {
@@ -9919,7 +9929,8 @@
                                         },
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.fitservice"
+                                            "service.history.fitservice",
+                                            "service.history.wilgood"
                                         ]
                                     },
                                     "is_planned": {
@@ -9934,7 +9945,8 @@
                                         ],
                                         "fillable_by": [
                                             "service.history",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     }
                                 }
@@ -10095,7 +10107,8 @@
                                 "fillable_by": [
                                     "service.history",
                                     "service.history.fitservice",
-                                    "service.history.filter"
+                                    "service.history.filter",
+                                    "service.history.wilgood"
                                 ]
                             },
                             "vehicle": {
@@ -10118,7 +10131,8 @@
                                                 "fillable_by": [
                                                     "service.history",
                                                     "service.history.fitservice",
-                                                    "service.history.filter"
+                                                    "service.history.filter",
+                                                    "service.history.wilgood"
                                                 ]
                                             }
                                         }
@@ -10139,7 +10153,8 @@
                                                 "fillable_by": [
                                                     "service.history",
                                                     "service.history.fitservice",
-                                                    "service.history.filter"
+                                                    "service.history.filter",
+                                                    "service.history.wilgood"
                                                 ]
                                             }
                                         }
@@ -10157,7 +10172,8 @@
                                         "fillable_by": [
                                             "service.history",
                                             "service.history.fitservice",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     },
                                     "mileage": {
@@ -10173,7 +10189,8 @@
                                         "fillable_by": [
                                             "service.history",
                                             "service.history.fitservice",
-                                            "service.history.filter"
+                                            "service.history.filter",
+                                            "service.history.wilgood"
                                         ]
                                     },
                                     "body": {
@@ -10424,7 +10441,8 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "service.history"
+                                                    "service.history",
+                                                    "service.history.wilgood"
                                                 ]
                                             }
                                         }
@@ -10465,7 +10483,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "service.history",
-                                                    "service.history.fitservice"
+                                                    "service.history.fitservice",
+                                                    "service.history.wilgood"
                                                 ]
                                             },
                                             "chassis": {

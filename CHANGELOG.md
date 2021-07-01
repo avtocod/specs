@@ -4,11 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## UNRELEASED
+## v3.81.1
 
-### Changed
+### Fixed
 
-- Extend enum with `service.history.wilgood` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+- Extended enum with `service.history.wilgood` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
 
 ## v3.81.0
 

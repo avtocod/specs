@@ -7,7 +7,6 @@ const sources_file_name = 'sources_list.json';
 // list of sources that should be disabled
 const disabled_sources: {[k: string]: string[]} = {
     default: [
-        'base.taxi',
         'carfax.ext',
         'tech.base',
         'base.moscow',

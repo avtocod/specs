@@ -9,7 +9,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "gibdd.eaisto",
             "base.tech",
             "tech.ext",
@@ -66,7 +65,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "base.alt",
             "regactions.registry",
             "gibdd.diagnostic.cards"
@@ -81,7 +79,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry",
             "gibdd.diagnostic.cards"
@@ -108,7 +105,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "gibdd.eaisto",
             "base.tech",
             "tech.ext",
@@ -165,7 +161,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "base.alt",
             "regactions.registry",
             "gibdd.diagnostic.cards"
@@ -180,7 +175,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry",
             "gibdd.diagnostic.cards"
@@ -214,7 +208,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "customs.base",
             "gibdd.eaisto",
             "base.alt",
@@ -318,7 +311,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -358,7 +350,6 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.taxi",
             "gibdd.history",
             "base.alt",
             "regactions.registry"
@@ -373,7 +364,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt"
         ]
     },
@@ -413,7 +403,6 @@
         ],
         "fillable_by": [
             "base",
-            "base.taxi",
             "base.ext",
             "base.alt",
             "regactions.registry"
@@ -441,7 +430,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -456,7 +444,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -494,7 +481,6 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -509,7 +495,6 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -563,7 +548,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -577,7 +561,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -733,7 +716,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.taxi",
             "customs.base",
             "gibdd.eaisto",
             "base.alt",
@@ -750,7 +732,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "gibdd.eaisto",
             "base.alt",
             "regactions.registry"
@@ -765,7 +746,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "gibdd.eaisto",
             "regactions.registry"
         ]
@@ -1561,7 +1541,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -1575,7 +1554,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -1625,7 +1603,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -1639,7 +1616,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -1715,7 +1691,6 @@
         "fillable_by": [
             "base.ext",
             "base",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -1729,7 +1704,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -1786,7 +1760,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.taxi",
             "base.alt",
             "regactions.registry"
         ]
@@ -2626,8 +2599,7 @@
             "boolean"
         ],
         "fillable_by": [
-            "gibdd.wanted",
-            "base.taxi"
+            "gibdd.wanted"
         ]
     },
     {
@@ -2637,8 +2609,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.wanted",
-            "base.taxi"
+            "gibdd.wanted"
         ]
     },
     {
@@ -2676,8 +2647,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.taxi"
+            "base.ext"
         ]
     },
     {
@@ -2688,8 +2658,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.taxi"
+            "base.ext"
         ]
     },
     {
@@ -3435,8 +3404,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.taxi"
+            "base.ext"
         ]
     },
     {
@@ -3447,8 +3415,7 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext",
-            "base.taxi"
+            "base.ext"
         ]
     },
     {
@@ -3718,8 +3685,7 @@
             "boolean"
         ],
         "fillable_by": [
-            "av.taxi",
-            "base.taxi"
+            "av.taxi"
         ]
     },
     {
@@ -4075,7 +4041,6 @@
         "fillable_by": [
             "gibdd.eaisto",
             "tech.ext",
-            "base.taxi",
             "base.tech",
             "ads.base",
             "service.history",
@@ -4097,7 +4062,6 @@
         "fillable_by": [
             "gibdd.eaisto",
             "tech.ext",
-            "base.taxi",
             "base.tech",
             "ads.base",
             "service.history",
@@ -4127,7 +4091,6 @@
         "fillable_by": [
             "gibdd.eaisto",
             "tech.ext",
-            "base.taxi",
             "base.tech",
             "ads.base",
             "service.history",

@@ -4958,7 +4958,7 @@
                     ],
                     "fillable_by": [
                         "base",
-                        "base.ext",
+                        "base.ext"
                     ]
                 },
                 "date": {
@@ -4979,7 +4979,7 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
+                                "base.ext"
                             ]
                         }
                     }
@@ -5815,7 +5815,7 @@
                         null
                     ],
                     "fillable_by": [
-                        "av.taxi",
+                        "av.taxi"
                     ]
                 }
             }
@@ -8157,7 +8157,7 @@
                         null
                     ],
                     "fillable_by": [
-                        "gibdd.wanted",
+                        "gibdd.wanted"
                     ]
                 },
                 "date": {
@@ -8177,7 +8177,7 @@
                                 "2020-12-11 11:10:00"
                             ],
                             "fillable_by": [
-                                "gibdd.wanted",
+                                "gibdd.wanted"
                             ]
                         }
                     }

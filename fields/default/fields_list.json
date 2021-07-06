@@ -10,7 +10,6 @@
             "base.ext",
             "gibdd.history",
             "gibdd.eaisto",
-            "base.tech",
             "tech.ext",
             "base.alt",
             "regactions.registry",
@@ -106,7 +105,6 @@
             "base.ext",
             "gibdd.history",
             "gibdd.eaisto",
-            "base.tech",
             "tech.ext",
             "base.alt",
             "regactions.registry",
@@ -1277,7 +1275,6 @@
             "boolean"
         ],
         "fillable_by": [
-            "base.tech"
         ]
     },
     {
@@ -3193,8 +3190,7 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
-            "base.tech"
+            "customs.base"
         ]
     },
     {
@@ -3254,8 +3250,7 @@
             "integer"
         ],
         "fillable_by": [
-            "customs.base",
-            "base.tech"
+            "customs.base"
         ]
     },
     {
@@ -3265,8 +3260,7 @@
             "integer"
         ],
         "fillable_by": [
-            "customs.base",
-            "base.tech"
+            "customs.base"
         ]
     },
     {
@@ -3286,8 +3280,7 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
-            "base.tech"
+            "customs.base"
         ]
     },
     {
@@ -3327,8 +3320,7 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
-            "base.tech"
+            "customs.base"
         ]
     },
     {
@@ -3348,8 +3340,7 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
-            "base.tech"
+            "customs.base"
         ]
     },
     {
@@ -4041,7 +4032,6 @@
         "fillable_by": [
             "gibdd.eaisto",
             "tech.ext",
-            "base.tech",
             "ads.base",
             "service.history",
             "customs.base",
@@ -4062,7 +4052,6 @@
         "fillable_by": [
             "gibdd.eaisto",
             "tech.ext",
-            "base.tech",
             "ads.base",
             "service.history",
             "customs.base",
@@ -4091,7 +4080,6 @@
         "fillable_by": [
             "gibdd.eaisto",
             "tech.ext",
-            "base.tech",
             "ads.base",
             "service.history",
             "customs.base",

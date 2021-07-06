@@ -351,7 +351,6 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.tech",
                                 "tech.ext",
                                 "base.alt",
                                 "regactions.registry",
@@ -531,7 +530,6 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.tech",
                                 "tech.ext",
                                 "base.alt",
                                 "regactions.registry",
@@ -2754,7 +2752,6 @@
                                         true
                                     ],
                                     "fillable_by": [
-                                        "base.tech"
                                     ]
                                 }
                             }
@@ -5024,8 +5021,7 @@
                                                     "2016-04-05 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base",
-                                                    "base.tech"
+                                                    "customs.base"
                                                 ]
                                             }
                                         }
@@ -5133,8 +5129,7 @@
                                                     117400
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base",
-                                                    "base.tech"
+                                                    "customs.base"
                                                 ]
                                             }
                                         }
@@ -5149,8 +5144,7 @@
                                             120
                                         ],
                                         "fillable_by": [
-                                            "customs.base",
-                                            "base.tech"
+                                            "customs.base"
                                         ]
                                     },
                                     "ecology": {
@@ -5186,8 +5180,7 @@
                                                     "Honda CR-X"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base",
-                                                    "base.tech"
+                                                    "customs.base"
                                                 ]
                                             },
                                             "raw": {
@@ -5263,8 +5256,7 @@
                                                             "Тайланд"
                                                         ],
                                                         "fillable_by": [
-                                                            "customs.base",
-                                                            "base.tech"
+                                                            "customs.base"
                                                         ]
                                                     }
                                                 }
@@ -5310,8 +5302,7 @@
                                         "2020-02-11 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "customs.base",
-                                        "base.tech"
+                                        "customs.base"
                                     ]
                                 }
                             }
@@ -8460,7 +8451,6 @@
                                         "fillable_by": [
                                             "gibdd.eaisto",
                                             "tech.ext",
-                                            "base.tech",
                                             "ads.base",
                                             "service.history",
                                             "customs.base",
@@ -8487,7 +8477,6 @@
                                 "fillable_by": [
                                     "gibdd.eaisto",
                                     "tech.ext",
-                                    "base.tech",
                                     "ads.base",
                                     "service.history",
                                     "customs.base",
@@ -8512,7 +8501,6 @@
                                         "enum": [
                                             "gibdd.eaisto",
                                             "tech.ext",
-                                            "base.tech",
                                             "ads.base",
                                             "service.history",
                                             "customs.base",
@@ -8550,7 +8538,6 @@
                                         "fillable_by": [
                                             "gibdd.eaisto",
                                             "tech.ext",
-                                            "base.tech",
                                             "ads.base",
                                             "service.history",
                                             "customs.base",

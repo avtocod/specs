@@ -351,7 +351,6 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "tech.ext",
                                 "base.alt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards"
@@ -530,7 +529,6 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "tech.ext",
                                 "base.alt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards"
@@ -3817,7 +3815,6 @@
                                 false
                             ],
                             "fillable_by": [
-                                "carfax.check"
                             ]
                         },
                         "records": {
@@ -3834,7 +3831,6 @@
                                         1
                                     ],
                                     "fillable_by": [
-                                        "carfax.check"
                                     ]
                                 }
                             }
@@ -3857,7 +3853,6 @@
                                                 "Opel Monterey"
                                             ],
                                             "fillable_by": [
-                                                "carfax.check"
                                             ]
                                         }
                                     }
@@ -4186,7 +4181,6 @@
                                             null
                                         ],
                                         "fillable_by": [
-                                            "carprice"
                                         ]
                                     }
                                 }
@@ -4202,7 +4196,6 @@
                                 ],
                                 "minimum": 0,
                                 "fillable_by": [
-                                    "carprice"
                                 ]
                             },
                             "model": {
@@ -4219,7 +4212,6 @@
                                             "EX"
                                         ],
                                         "fillable_by": [
-                                            "carprice"
                                         ]
                                     }
                                 }
@@ -4238,7 +4230,6 @@
                                             "I Restyling"
                                         ],
                                         "fillable_by": [
-                                            "carprice"
                                         ]
                                     }
                                 }
@@ -4257,7 +4248,6 @@
                                             2704.9
                                         ],
                                         "fillable_by": [
-                                            "carprice"
                                         ]
                                     }
                                 }
@@ -4272,7 +4262,6 @@
                                     2018
                                 ],
                                 "fillable_by": [
-                                    "carprice"
                                 ]
                             }
                         }
@@ -7249,7 +7238,6 @@
                                                     "ОДД ГИБДД ГУ МВД России, Новгородская область"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.moscow"
                                                 ]
                                             }
                                         }
@@ -7465,7 +7453,6 @@
                                                     "2010-02-10 18:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.moscow"
                                                 ]
                                             }
                                         }
@@ -7485,7 +7472,6 @@
                                                     "ОСАГО"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.moscow"
                                                 ]
                                             }
                                         }
@@ -7504,7 +7490,6 @@
                                                     "Дорожно-транспортное происшествие"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.moscow"
                                                 ]
                                             }
                                         }
@@ -7523,7 +7508,6 @@
                                                     "<10% от страховой суммы"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.moscow"
                                                 ]
                                             }
                                         }
@@ -7549,8 +7533,7 @@
                         null
                     ],
                     "fillable_by": [
-                        "gibdd.dtp",
-                        "base.moscow"
+                        "gibdd.dtp"
                     ]
                 }
             }
@@ -8450,7 +8433,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "ads.base",
                                             "service.history",
                                             "customs.base",
@@ -8476,7 +8458,6 @@
                                 "minimum": 0,
                                 "fillable_by": [
                                     "gibdd.eaisto",
-                                    "tech.ext",
                                     "ads.base",
                                     "service.history",
                                     "customs.base",
@@ -8500,7 +8481,6 @@
                                         ],
                                         "enum": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "ads.base",
                                             "service.history",
                                             "customs.base",
@@ -8537,7 +8517,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "ads.base",
                                             "service.history",
                                             "customs.base",
@@ -8591,7 +8570,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     },
@@ -8610,7 +8588,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -8630,8 +8607,7 @@
                                             "34ER9"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.eaisto",
-                                            "tech.ext"
+                                            "gibdd.eaisto"
                                         ]
                                     },
                                     "number": {
@@ -8645,7 +8621,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     },
@@ -8660,7 +8635,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -8681,7 +8655,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "tech.ext",
                                             "gibdd.diagnostic.cards"
                                         ]
                                     }
@@ -8701,8 +8674,7 @@
                                     "А332АВ177"
                                 ],
                                 "fillable_by": [
-                                    "gibdd.eaisto",
-                                    "tech.ext"
+                                    "gibdd.eaisto"
                                 ]
                             }
                         }
@@ -8726,7 +8698,6 @@
                             ],
                             "fillable_by": [
                                 "gibdd.eaisto",
-                                "tech.ext",
                                 "gibdd.diagnostic.cards"
                             ]
                         }

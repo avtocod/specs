@@ -1,20 +1,5 @@
 [
     {
-        "name": "base.moscow",
-        "description": "Комплексные данные по ТС эксплуатируемых в Москве и МО",
-        "enabled": false
-    },
-    {
-        "name": "carprice",
-        "description": "Данные о рыночной стоимости ТС",
-        "enabled": false
-    },
-    {
-        "name": "tech.ext",
-        "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
-        "enabled": false
-    },
-    {
         "name": "gibdd.eaisto",
         "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
         "enabled": true
@@ -95,11 +80,6 @@
         "enabled": true
     },
     {
-        "name": "carfax.check",
-        "description": "Наличие данных об отчете о ТС в сервисе CarFax",
-        "enabled": false
-    },
-    {
         "name": "carfax.ext",
         "description": "Данных из отчета о ТС из сервиса CarFax",
         "enabled": false
@@ -133,11 +113,6 @@
         "name": "references.oats",
         "description": "Справочник ТС ОАТС",
         "enabled": true
-    },
-    {
-        "name": "tech.base",
-        "description": null,
-        "enabled": false
     },
     {
         "name": "pledge.house",

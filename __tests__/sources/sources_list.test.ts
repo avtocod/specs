@@ -8,13 +8,8 @@ const sources_file_name = 'sources_list.json';
 const disabled_sources: {[k: string]: string[]} = {
     default: [
         'carfax.ext',
-        'tech.base',
-        'base.moscow',
-        'carprice',
-        'tech.ext',
         'calc.osago',
         'pledge.fnp',
-        'carfax.check',
         'ramiosago.alt',
         'ramiosago.alt.ext'
     ]

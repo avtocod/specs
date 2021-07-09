@@ -9,8 +9,7 @@ const disabled_sources: {[k: string]: string[]} = {
     default: [
         'carfax.ext',
         'calc.osago',
-        'pledge.fnp',
-        'ramiosago.alt.ext'
+        'pledge.fnp'
     ]
 };
 // for each group of specifications...

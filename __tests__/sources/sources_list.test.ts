@@ -10,7 +10,6 @@ const disabled_sources: {[k: string]: string[]} = {
         'carfax.ext',
         'calc.osago',
         'pledge.fnp',
-        'ramiosago.alt',
         'ramiosago.alt.ext'
     ]
 };

@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Removed
 
-- Source `base.moscow`, `base.taxi`, `base.tech`, `carfax.check`, `carprice`, `tech.ext`, `tech.base`
+- Source `base.moscow`, `base.taxi`, `base.tech`, `carfax.check`, `carprice`, `tech.ext`, `tech.base`, `ramiosago.alt`
 
 ## v3.81.1
 

@@ -7526,6 +7526,19 @@
                                                 "fillable_by": [
                                                     "base.moscow"
                                                 ]
+                                            },
+                                            "name": {
+                                                "description": "Наименование страхователя",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "АСКО-Страхование"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.dtp"
+                                                ]
                                             }
                                         }
                                     },
@@ -7563,6 +7576,61 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base.moscow"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "policy": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "series": {
+                                                "description": "Серия полиса страхования",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "XXX"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.dtp"
+                                                ]
+                                            },
+                                            "number": {
+                                                "description": "Номер полиса страхования",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "0023231246"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.dtp"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "actuality": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "date": {
+                                                "description": "Дата актуальности данных",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2015-07-13 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.dtp"
                                                 ]
                                             }
                                         }

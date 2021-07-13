@@ -2569,6 +2569,16 @@
         ]
     },
     {
+        "path": "accidents.insurance.items[].insurer.name",
+        "description": "История повреждений из страховых компаний: Наименование страхователя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.dtp"
+        ]
+    },
+    {
         "path": "accidents.insurance.items[].accident.description",
         "description": "История повреждений из страховых компаний: Тип происшествия",
         "types": [
@@ -2586,6 +2596,26 @@
         ],
         "fillable_by": [
             "base.moscow"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].policy.series",
+        "description": "История повреждений из страховых компаний: Серия полиса страхования",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.dtp"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].policy.number",
+        "description": "История повреждений из страховых компаний: Номер полиса страхования",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.dtp"
         ]
     },
     {

@@ -923,7 +923,12 @@
                         "event": null
                     },
                     "insurer": {
-                        "type": null
+                        "type": null,
+                        "name": null
+                    },
+                    "policy": {
+                        "series": null,
+                        "number": null
                     },
                     "accident": {
                         "description": null

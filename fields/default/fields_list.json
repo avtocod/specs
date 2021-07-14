@@ -2555,22 +2555,12 @@
             "string"
         ],
         "fillable_by": [
-            "base.moscow"
-        ]
-    },
-    {
-        "path": "accidents.insurance.items[].insurer.type",
-        "description": "История повреждений из страховых компаний: Тип страхования [ОСАГО, КАСКО, ...]",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base.moscow"
+            "insurance.dtp"
         ]
     },
     {
         "path": "accidents.insurance.items[].insurer.name",
-        "description": "История повреждений из страховых компаний: Наименование страхователя",
+        "description": "История повреждений из страховых компаний: Наименование страховой компании",
         "types": [
             "string"
         ],
@@ -2579,28 +2569,8 @@
         ]
     },
     {
-        "path": "accidents.insurance.items[].accident.description",
-        "description": "История повреждений из страховых компаний: Тип происшествия",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base.moscow"
-        ]
-    },
-    {
-        "path": "accidents.insurance.items[].damage.raw",
-        "description": "История повреждений из страховых компаний: Размер повреждения или описание",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base.moscow"
-        ]
-    },
-    {
         "path": "accidents.insurance.items[].policy.series",
-        "description": "История повреждений из страховых компаний: Серия полиса страхования",
+        "description": "История повреждений из страховых компаний: Серия страхового полиса",
         "types": [
             "string"
         ],
@@ -2610,7 +2580,17 @@
     },
     {
         "path": "accidents.insurance.items[].policy.number",
-        "description": "История повреждений из страховых компаний: Номер полиса страхования",
+        "description": "История повреждений из страховых компаний: Номер страхового полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.dtp"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].actuality.date",
+        "description": "История повреждений из страховых компаний: Дата актуальности данных",
         "types": [
             "string"
         ],

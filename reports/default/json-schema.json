@@ -7504,7 +7504,7 @@
                                                     "2010-02-10 18:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.moscow"
+                                                    "insurance.dtp"
                                                 ]
                                             }
                                         }
@@ -7513,22 +7513,8 @@
                                         "type": "object",
                                         "additionalProperties": false,
                                         "properties": {
-                                            "type": {
-                                                "description": "Тип страхования",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "КАСКО",
-                                                    "ОСАГО"
-                                                ],
-                                                "fillable_by": [
-                                                    "base.moscow"
-                                                ]
-                                            },
                                             "name": {
-                                                "description": "Наименование страхователя",
+                                                "description": "Наименование страховой компании",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -7542,50 +7528,12 @@
                                             }
                                         }
                                     },
-                                    "accident": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "description": {
-                                                "description": "Тип происшествия",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "Дорожно-транспортное происшествие"
-                                                ],
-                                                "fillable_by": [
-                                                    "base.moscow"
-                                                ]
-                                            }
-                                        }
-                                    },
-                                    "damage": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "raw": {
-                                                "description": "Размер повреждения или описание",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "<10% от страховой суммы"
-                                                ],
-                                                "fillable_by": [
-                                                    "base.moscow"
-                                                ]
-                                            }
-                                        }
-                                    },
                                     "policy": {
                                         "type": "object",
                                         "additionalProperties": false,
                                         "properties": {
                                             "series": {
-                                                "description": "Серия полиса страхования",
+                                                "description": "Серия страхового полиса",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -7598,7 +7546,7 @@
                                                 ]
                                             },
                                             "number": {
-                                                "description": "Номер полиса страхования",
+                                                "description": "Номер страхового полиса",
                                                 "type": [
                                                     "string",
                                                     "null"

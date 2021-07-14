@@ -65,11 +65,6 @@
         "enabled": true
     },
     {
-        "name": "carfax.ext",
-        "description": "Данных из отчета о ТС из сервиса CarFax",
-        "enabled": false
-    },
-    {
         "name": "customs.base",
         "description": "Данные о ТС содержащиеся в таможенной декларации",
         "enabled": true

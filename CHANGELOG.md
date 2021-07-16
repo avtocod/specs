@@ -15,9 +15,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `accidents.insurance.items[].actuality.date` fillable by `insurance.dtp`
 
 ### Changed
+
 - Field with path `accidents.insurance.items[].date.event` fillable by `insurance.dtp`
 
 ### Removed
+
 - Field with path `accidents.insurance.items[].insurer.type`
 - Field with path `accidents.insurance.items[].accident.description`
 - Field with path `accidents.insurance.items[].damage.raw`

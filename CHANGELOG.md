@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `accidents.insurance.items[].accident.description`
 - Field with path `accidents.insurance.items[].damage.raw`
 
+## v3.82.0
+
+### Removed
+
+- Source `base.moscow`, `base.taxi`, `base.tech`, `carfax.check`, `carprice`, `tech.ext`, `tech.base`, `ramiosago.alt`, `ramiosago.alt.ext`, `pledge.fnp`, `references.tecdoc`, `calc.osago`, `carfax.ext`
+
 ## v3.81.1
 
 ### Fixed

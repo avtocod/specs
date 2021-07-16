@@ -9,6 +9,18 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - New fields for `insurance.dtp` source
+- Field with path `accidents.insurance.items[].insurer.name` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].policy.series` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].policy.number` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].actuality.date` fillable by `insurance.dtp`
+
+### Changed
+- Field with path `accidents.insurance.items[].date.event` fillable by `insurance.dtp`
+
+### Removed
+- Field with path `accidents.insurance.items[].insurer.type`
+- Field with path `accidents.insurance.items[].accident.description`
+- Field with path `accidents.insurance.items[].damage.raw`
 
 ## v3.81.1
 

@@ -2485,33 +2485,47 @@
             "string"
         ],
         "fillable_by": [
+            "insurance.dtp"
         ]
     },
     {
-        "path": "accidents.insurance.items[].insurer.type",
-        "description": "История повреждений из страховых компаний: Тип страхования [ОСАГО, КАСКО, ...]",
+        "path": "accidents.insurance.items[].insurer.name",
+        "description": "История повреждений из страховых компаний: Наименование страховой компании",
         "types": [
             "string"
         ],
         "fillable_by": [
+            "insurance.dtp"
         ]
     },
     {
-        "path": "accidents.insurance.items[].accident.description",
-        "description": "История повреждений из страховых компаний: Тип происшествия",
+        "path": "accidents.insurance.items[].policy.series",
+        "description": "История повреждений из страховых компаний: Серия страхового полиса",
         "types": [
             "string"
         ],
         "fillable_by": [
+            "insurance.dtp"
         ]
     },
     {
-        "path": "accidents.insurance.items[].damage.raw",
-        "description": "История повреждений из страховых компаний: Размер повреждения или описание",
+        "path": "accidents.insurance.items[].policy.number",
+        "description": "История повреждений из страховых компаний: Номер страхового полиса",
         "types": [
             "string"
         ],
         "fillable_by": [
+            "insurance.dtp"
+        ]
+    },
+    {
+        "path": "accidents.insurance.items[].actuality.date",
+        "description": "История повреждений из страховых компаний: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.dtp"
         ]
     },
     {

@@ -7412,6 +7412,7 @@
                                                     "2010-02-10 18:00:00"
                                                 ],
                                                 "fillable_by": [
+                                                    "insurance.dtp"
                                                 ]
                                             }
                                         }
@@ -7420,53 +7421,72 @@
                                         "type": "object",
                                         "additionalProperties": false,
                                         "properties": {
-                                            "type": {
-                                                "description": "Тип страхования",
+                                            "name": {
+                                                "description": "Наименование страховой компании",
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "КАСКО",
-                                                    "ОСАГО"
+                                                    "АСКО-Страхование"
                                                 ],
                                                 "fillable_by": [
+                                                    "insurance.dtp"
                                                 ]
                                             }
                                         }
                                     },
-                                    "accident": {
+                                    "policy": {
                                         "type": "object",
                                         "additionalProperties": false,
                                         "properties": {
-                                            "description": {
-                                                "description": "Тип происшествия",
+                                            "series": {
+                                                "description": "Серия страхового полиса",
                                                 "type": [
                                                     "string",
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "Дорожно-транспортное происшествие"
+                                                    "XXX"
                                                 ],
                                                 "fillable_by": [
+                                                    "insurance.dtp"
+                                                ]
+                                            },
+                                            "number": {
+                                                "description": "Номер страхового полиса",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "0023231246"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.dtp"
                                                 ]
                                             }
                                         }
                                     },
-                                    "damage": {
+                                    "actuality": {
                                         "type": "object",
                                         "additionalProperties": false,
                                         "properties": {
-                                            "raw": {
-                                                "description": "Размер повреждения или описание",
-                                                "type": [
-                                                    "string",
-                                                    "null"
+                                            "date": {
+                                                "description": "Дата актуальности данных",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
                                                 ],
                                                 "examples": [
-                                                    "<10% от страховой суммы"
+                                                    "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
+                                                    "insurance.dtp"
                                                 ]
                                             }
                                         }

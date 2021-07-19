@@ -218,5 +218,10 @@
         "name": "gibdd.diagnostic.cards",
         "description": "Данные о диагностических картах и пробегах ТС из базы ГИБДД",
         "enabled": true
+    },
+    {
+        "name": "insurance.dtp",
+        "description": "Информация о ДТП из РСА (европротоколы)",
+        "enabled": true
     }
 ]

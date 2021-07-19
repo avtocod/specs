@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- New fields for `insurance.dtp` source
+- Source `insurance.dtp`
 - Field with path `accidents.insurance.items[].insurer.name` fillable by `insurance.dtp`
 - Field with path `accidents.insurance.items[].policy.series` fillable by `insurance.dtp`
 - Field with path `accidents.insurance.items[].policy.number` fillable by `insurance.dtp`

@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `arbitration.history`
+- Field with path `arbitration.items[].url` fillable by `arbitration.history`
+- Field with path `arbitration.items[].type` fillable by `arbitration.history`
+- Field with path `arbitration.items[].number` fillable by `arbitration.history`
+- Field with path `arbitration.items[].court.name` fillable by `arbitration.history`
+- Field with path `arbitration.items[].description` fillable by `arbitration.history`
+- Field with path `arbitration.items[].date.registration` fillable by `arbitration.history`
+
 ## v3.83.0
 
 ### Added

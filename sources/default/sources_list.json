@@ -223,5 +223,10 @@
         "name": "insurance.dtp",
         "description": "Информация о ДТП из РСА (европротоколы)",
         "enabled": true
+    },
+    {
+        "name": "arbitration.history",
+        "description": "История о судебных делах в которых фигурировал ТС",
+        "enabled": true
     }
 ]

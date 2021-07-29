@@ -5893,5 +5893,15 @@
         "fillable_by": [
             "arbitration.history"
         ]
+    },
+    {
+        "path": "arbitration.date.update",
+        "description": "История арбитражей: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
     }
 ]

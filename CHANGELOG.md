@@ -9,12 +9,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `arbitration.history`
-- Field with path `arbitration.items[].url` fillable by `arbitration.history`
-- Field with path `arbitration.items[].type` fillable by `arbitration.history`
-- Field with path `arbitration.items[].number` fillable by `arbitration.history`
-- Field with path `arbitration.items[].court.name` fillable by `arbitration.history`
-- Field with path `arbitration.items[].description` fillable by `arbitration.history`
-- Field with path `arbitration.items[].date.registration` fillable by `arbitration.history`
+- Field with path `arbitration.items[].url`
+- Field with path `arbitration.items[].type`
+- Field with path `arbitration.items[].number`
+- Field with path `arbitration.items[].court.name`
+- Field with path `arbitration.items[].description`
+- Field with path `arbitration.items[].date.registration`
 
 ## v3.83.0
 

@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.83.0
+
+### Added
+
+- Source `insurance.dtp`
+- Field with path `accidents.insurance.items[].insurer.name` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].policy.series` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].policy.number` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].actuality.date` fillable by `insurance.dtp`
+
+### Changed
+
+- Field with path `accidents.insurance.items[].date.event` fillable by `insurance.dtp`
+
+### Removed
+
+- Field with path `accidents.insurance.items[].insurer.type`
+- Field with path `accidents.insurance.items[].accident.description`
+- Field with path `accidents.insurance.items[].damage.raw`
+
+## v3.82.0
+
+### Removed
+
+- Source `base.moscow`, `base.taxi`, `base.tech`, `carfax.check`, `carprice`, `tech.ext`, `tech.base`, `ramiosago.alt`, `ramiosago.alt.ext`, `pledge.fnp`, `references.tecdoc`, `calc.osago`, `carfax.ext`
+
 ## v3.81.1
 
 ### Fixed

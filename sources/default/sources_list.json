@@ -1,25 +1,5 @@
 [
     {
-        "name": "base.tech",
-        "description": "Базовая техническая информация о ТС и данные по таможне",
-        "enabled": false
-    },
-    {
-        "name": "base.moscow",
-        "description": "Комплексные данные по ТС эксплуатируемых в Москве и МО",
-        "enabled": false
-    },
-    {
-        "name": "carprice",
-        "description": "Данные о рыночной стоимости ТС",
-        "enabled": false
-    },
-    {
-        "name": "tech.ext",
-        "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
-        "enabled": false
-    },
-    {
         "name": "gibdd.eaisto",
         "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
         "enabled": true
@@ -50,11 +30,6 @@
         "enabled": true
     },
     {
-        "name": "calc.osago",
-        "description": "Данные о стоимости страховки ОСАГО",
-        "enabled": false
-    },
-    {
         "name": "pledge",
         "description": "Данные о нахождении ТС в залоге",
         "enabled": true
@@ -70,24 +45,9 @@
         "enabled": true
     },
     {
-        "name": "ramiosago.alt",
-        "description": "Данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
-        "enabled": false
-    },
-    {
         "name": "ramiosago.base.ext",
         "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС",
         "enabled": true
-    },
-    {
-        "name": "ramiosago.alt.ext",
-        "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
-        "enabled": false
-    },
-    {
-        "name": "base.taxi",
-        "description": "Базовая информация о ТС и признак использования в такси",
-        "enabled": false
     },
     {
         "name": "base",
@@ -103,16 +63,6 @@
         "name": "base.alt",
         "description": "Базовая информация о ТС и данные регистрационных действий. Альтернативный источник",
         "enabled": true
-    },
-    {
-        "name": "carfax.check",
-        "description": "Наличие данных об отчете о ТС в сервисе CarFax",
-        "enabled": false
-    },
-    {
-        "name": "carfax.ext",
-        "description": "Данных из отчета о ТС из сервиса CarFax",
-        "enabled": false
     },
     {
         "name": "customs.base",
@@ -143,11 +93,6 @@
         "name": "references.oats",
         "description": "Справочник ТС ОАТС",
         "enabled": true
-    },
-    {
-        "name": "tech.base",
-        "description": null,
-        "enabled": false
     },
     {
         "name": "pledge.house",
@@ -205,11 +150,6 @@
         "enabled": true
     },
     {
-        "name": "pledge.fnp",
-        "description": "Обременения на ТС по данным ФНП",
-        "enabled": false
-    },
-    {
         "name": "images.archive",
         "description": "Архив фотографии ТС из открытых источников",
         "enabled": true
@@ -232,11 +172,6 @@
     {
         "name": "restrictions.registry",
         "description": "Данные о наличии ограничений на регистрационные действия ТС по данным ГИБДД (история ограничений)",
-        "enabled": true
-    },
-    {
-        "name": "references.tecdoc",
-        "description": "Каталог TecDoc",
         "enabled": true
     },
     {
@@ -282,6 +217,11 @@
     {
         "name": "gibdd.diagnostic.cards",
         "description": "Данные о диагностических картах и пробегах ТС из базы ГИБДД",
+        "enabled": true
+    },
+    {
+        "name": "insurance.dtp",
+        "description": "Информация о ДТП из РСА (европротоколы)",
         "enabled": true
     }
 ]

@@ -6,20 +6,7 @@ const sources_file_name = 'sources_list.json';
 
 // list of sources that should be disabled
 const disabled_sources: {[k: string]: string[]} = {
-    default: [
-        'base.taxi',
-        'carfax.ext',
-        'tech.base',
-        'base.moscow',
-        'carprice',
-        'tech.ext',
-        'base.tech',
-        'calc.osago',
-        'pledge.fnp',
-        'carfax.check',
-        'ramiosago.alt',
-        'ramiosago.alt.ext'
-    ]
+    default: []
 };
 // for each group of specifications...
 describe.each(groups_list)(`${sources_file_name} file in %s group of sources specs`, group_name => {

@@ -11445,6 +11445,143 @@
                     "minimum": 0
                 }
             }
+        },
+        "arbitration": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "История арбитражей",
+            "properties": {
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "registration": {
+                                        "description": "История арбитражей: Дата регистрации арбитражного дела",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/date"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2012-12-12"
+                                        ],
+                                        "fillable_by": [
+                                            "arbitration.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "court": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "История арбитражей: Наименование суда",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "AС Челябинской области"
+                                        ],
+                                        "fillable_by": [
+                                            "arbitration.history"
+                                        ]
+                                    }
+                                }
+                            },
+                            "number": {
+                                "description": "История арбитражей: Номер судебного дела",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "А76-4565/2020"
+                                ],
+                                "fillable_by": [
+                                    "arbitration.history"
+                                ]
+                            },
+                            "type": {
+                                "description": "История арбитражей: Тип судебного дела",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "Решения и постановления"
+                                ],
+                                "fillable_by": [
+                                    "arbitration.history"
+                                ]
+                            },
+                            "description": {
+                                "description": "История арбитражей: Описание судебного дела",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "Решение суда первой инстанции"
+                                ],
+                                "fillable_by": [
+                                    "arbitration.history"
+                                ]
+                            },
+                            "url": {
+                                "description": "История арбитражей: Ссылка на судебное дело",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "https://example.com"
+                                ],
+                                "fillable_by": [
+                                    "arbitration.history"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-11-14 12:10:00"
+                            ],
+                            "fillable_by": [
+                                "arbitration.history"
+                            ]
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -5833,5 +5833,75 @@
         "fillable_by": [
             "recall.campaigns.registry"
         ]
+    },
+    {
+        "path": "arbitration.items[].date.registration",
+        "description": "История арбитражей: Дата регистрации арбитражного дела",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
+    },
+    {
+        "path": "arbitration.items[].court.name",
+        "description": "История арбитражей: Наименование суда",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
+    },
+    {
+        "path": "arbitration.items[].number",
+        "description": "История арбитражей: Номер судебного дела",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
+    },
+    {
+        "path": "arbitration.items[].type",
+        "description": "История арбитражей: Тип судебного дела",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
+    },
+    {
+        "path": "arbitration.items[].description",
+        "description": "История арбитражей: Описание судебного дела",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
+    },
+    {
+        "path": "arbitration.items[].url",
+        "description": "История арбитражей: Ссылка на судебное дело",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
+    },
+    {
+        "path": "arbitration.date.update",
+        "description": "История арбитражей: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "arbitration.history"
+        ]
     }
 ]

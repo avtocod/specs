@@ -48,6 +48,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].contract.using_type.description` also fillable by `rsaosago.base.alt`
 - Field with path `insurance.osago.items[].contract.is_follow_to_registration` also fillable by `rsaosago.base.alt`
 
+- Field with path `insurance.osago.items[].date.created` also fillable by `rsaosago.base.ext`
+
 ## v3.84.0
 
 ### Added

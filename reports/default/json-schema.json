@@ -6350,7 +6350,8 @@
                                                     "base.alt",
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             }
                                         }
@@ -6378,7 +6379,8 @@
                                                     "base.alt",
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "end": {
@@ -6400,6 +6402,25 @@
                                                     "base.alt",
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
+                                                ]
+                                            },
+                                            "created": {
+                                                "description": "Дата заключения договора страхования",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2016-07-07 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "rsaosago.base.alt",
                                                     "rsaosago.base.ext"
                                                 ]
                                             }
@@ -6427,7 +6448,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "drivers": {
@@ -6442,7 +6464,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             }
                                         }
@@ -6466,7 +6489,8 @@
                                                     "base.alt",
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "number": {
@@ -6484,7 +6508,8 @@
                                                     "base.alt",
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "is_active": {
@@ -6498,7 +6523,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "expired": {
@@ -6512,7 +6538,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "status": {
@@ -6526,7 +6553,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             }
                                         }
@@ -6547,7 +6575,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "using_type": {
@@ -6578,7 +6607,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     },
                                                     "description": {
@@ -6593,7 +6623,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     }
                                                 }
@@ -6614,7 +6645,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     },
                                                     "currency": {
@@ -6633,7 +6665,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     }
                                                 }
@@ -6650,7 +6683,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "is_follow_to_registration": {
@@ -6665,7 +6699,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "has_trailer": {
@@ -6680,7 +6715,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             }
                                         }
@@ -6705,7 +6741,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     }
                                                 }
@@ -6730,7 +6767,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     },
                                                     "vin": {
@@ -6749,7 +6787,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     },
                                                     "body": {
@@ -6768,7 +6807,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     }
                                                 }
@@ -6793,7 +6833,8 @@
                                                                 "fillable_by": [
                                                                     "ramiosago.base",
                                                                     "ramiosago.base.ext",
-                                                                    "rsaosago.base.ext"
+                                                                    "rsaosago.base.ext",
+                                                                    "rsaosago.base.alt"
                                                                 ]
                                                             }
                                                         }
@@ -6816,7 +6857,8 @@
                                                         "fillable_by": [
                                                             "ramiosago.base",
                                                             "ramiosago.base.ext",
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     }
                                                 }
@@ -6835,7 +6877,8 @@
                                                             5
                                                         ],
                                                         "fillable_by": [
-                                                            "rsaosago.base.ext"
+                                                            "rsaosago.base.ext",
+                                                            "rsaosago.base.alt"
                                                         ]
                                                     }
                                                 }
@@ -6864,7 +6907,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "dob": {
@@ -6883,7 +6927,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "name": {
@@ -6898,7 +6943,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "tin": {
@@ -6917,7 +6963,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             }
                                         }
@@ -6944,7 +6991,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "dob": {
@@ -6963,7 +7011,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "name": {
@@ -6978,7 +7027,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             },
                                             "tin": {
@@ -6997,7 +7047,8 @@
                                                 "fillable_by": [
                                                     "ramiosago.base",
                                                     "ramiosago.base.ext",
-                                                    "rsaosago.base.ext"
+                                                    "rsaosago.base.ext",
+                                                    "rsaosago.base.alt"
                                                 ]
                                             }
                                         }
@@ -7015,7 +7066,8 @@
                                         "fillable_by": [
                                             "ramiosago.base",
                                             "ramiosago.base.ext",
-                                            "rsaosago.base.ext"
+                                            "rsaosago.base.ext",
+                                            "rsaosago.base.alt"
                                         ]
                                     }
                                 }
@@ -7043,7 +7095,8 @@
                                         "base",
                                         "base.ext",
                                         "base.alt",
-                                        "rsaosago.base.ext"
+                                        "rsaosago.base.ext",
+                                        "rsaosago.base.alt"
                                     ]
                                 }
                             }

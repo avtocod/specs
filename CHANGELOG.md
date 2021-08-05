@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `rsaosago.base.alt`
+- Field with path `insurance.osago.items[].date.created`
+
+### Changed
+
+- Field with path `insurance.osago.*` also fillable by `rsaosago.base.alt`
+- Field with path `insurance.osago.items[].date.created` also fillable by `rsaosago.base.ext`
+
 ## v3.84.0
 
 ### Added

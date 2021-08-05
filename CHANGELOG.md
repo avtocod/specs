@@ -9,11 +9,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `rsaosago.base.alt`
-- Field with path insurance.osago.items[].date.created
+- Field with path `insurance.osago.items[].date.created`
 
 ### Changed
 
-- Field with path `insurance.osago.*` also fillable by rsaosago.base.alt
+- Field with path `insurance.osago.*` also fillable by `rsaosago.base.alt`
 - Field with path `insurance.osago.items[].date.created` also fillable by `rsaosago.base.ext`
 
 ## v3.84.0

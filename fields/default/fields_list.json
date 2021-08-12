@@ -3991,6 +3991,26 @@
         ]
     },
     {
+        "path": "fines.items[].fssp.date",
+        "description": "Штрафы: Дата направления постановление в ФССП России",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.fines"
+        ]
+    },
+    {
+        "path": "fines.items[].fssp.is_proceed",
+        "description": "Штрафы: Признак направлено ли постановление в ФССП России",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "gibdd.fines"
+        ]
+    },
+    {
         "path": "fines.items[].photos[].type",
         "description": "Штрафы: Тип фото нарушения",
         "types": [

@@ -4721,6 +4721,42 @@
                                     }
                                 }
                             },
+                            "fssp": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата направления постановление в ФССП России",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/date"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2018-05-23"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.fines"
+                                        ]
+                                    },
+                                    "is_proceed": {
+                                        "description": "Признак направлено ли постановление в ФССП России",
+                                        "type": [
+                                            "boolean",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            false
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.fines"
+                                        ]
+                                    }
+                                }
+                            },
                             "photos": {
                                 "type": "array",
                                 "items": {

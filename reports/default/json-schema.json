@@ -11562,11 +11562,11 @@
                                                 "type": "null"
                                             },
                                             {
-                                                "$ref": "#/definitions/date"
+                                                "$ref": "#/definitions/datetime"
                                             }
                                         ],
                                         "examples": [
-                                            "2012-12-12"
+                                            "2012-12-12 00:00:00"
                                         ],
                                         "fillable_by": [
                                             "arbitration.history"

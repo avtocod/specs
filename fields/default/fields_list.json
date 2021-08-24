@@ -3020,6 +3020,39 @@
         ]
     },
     {
+        "path": "pledges.items[].pledge_managers[].name",
+        "description": "Обременения на ТС: Управляющий залогом (имя) [REFUSE, Евгения Сергеевна Дроздова, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
+    },
+    {
+        "path": "pledges.items[].pledge_managers[].type",
+        "description": "Обременения на ТС: Тип управляющего залогом [PERSON, LEGAL, PERSONLEGAL, UNKNOWN, NONE]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
+    },
+    {
+        "path": "pledges.items[].pledge_managers[].dob",
+        "description": "Обременения на ТС: Дата рождения управляющего залогом",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
+    },
+    {
         "path": "pledges.date.update",
         "description": "Обременения на ТС: Дата обновления данных",
         "types": [

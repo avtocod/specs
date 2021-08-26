@@ -6011,6 +6011,78 @@
                                     }
                                 }
                             },
+                            "pledge_managers": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Управляющий залогом (имя)",
+                                            "anyOf": [
+                                                {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/refuse_type"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "Иванов",
+                                                "REFUSE"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge",
+                                                "pledge.house"
+                                            ]
+                                        },
+                                        "type": {
+                                            "description": "Тип управляющего залогом",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "enum": [
+                                                "PERSON",
+                                                "LEGAL",
+                                                "PERSONLEGAL",
+                                                "UNKNOWN",
+                                                "NONE",
+                                                null
+                                            ],
+                                            "examples": [
+                                                "LEGAL"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge",
+                                                "pledge.house"
+                                            ]
+                                        },
+                                        "dob": {
+                                            "description": "Дата рождения управляющего залогом",
+                                            "oneOf": [
+                                                {
+                                                    "type": "null"
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/date"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "1981-09-08",
+                                                null
+                                            ],
+                                            "fillable_by": [
+                                                "pledge",
+                                                "pledge.house"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
                             "type": {
                                 "description": "Тип события",
                                 "type": [

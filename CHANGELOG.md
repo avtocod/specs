@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `rsaosago.base.history`
-- Field with path `insurance.osago.*` also fillable by `rsaosago.base.history`
+- Fields with path `insurance.osago.*` also fillable by `rsaosago.base.history`
 
 ## v3.88.0
 

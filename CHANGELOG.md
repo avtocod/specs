@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `rsaosago.base.history`
+- Fields with path `insurance.osago.*` also fillable by `rsaosago.base.history`
+
 ## v3.88.0
 
 ### Added

@@ -46,7 +46,8 @@
         },
         "type": {
             "name": null,
-            "type_id": null
+            "type_id": null,
+            "code": null
         },
         "body": {
             "number": null,
@@ -93,7 +94,8 @@
         },
         "wheel": {
             "position": null,
-            "position_id": null
+            "position_id": null,
+            "position_code": null
         },
         "generations": [
             {
@@ -182,7 +184,8 @@
                     "code": null,
                     "description": null
                 }
-            }
+            },
+            "exported": null
         },
         "catalog": {
             "transdekra": {

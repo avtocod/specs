@@ -851,6 +851,27 @@
                                 "base.alt",
                                 "gibdd.history"
                             ]
+                        },
+                        "code": {
+                            "description": "Код типа кузова ТС",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "type": "string",
+                                    "pattern": "^[0-9]+$",
+                                    "minLength": 2,
+                                    "maxLength": 2
+                                }
+                            ],
+                            "examples": [
+                                "21"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
                         }
                     }
                 },
@@ -1310,6 +1331,27 @@
                                 "base.ext",
                                 "base.alt",
                                 "regactions.registry"
+                            ]
+                        },
+                        "position_code": {
+                            "description": "Код расположение руля",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "type": "string",
+                                    "pattern": "^[0-1]+$",
+                                    "minLength": 1,
+                                    "maxLength": 1
+                                }
+                            ],
+                            "examples": [
+                                1
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
                             ]
                         }
                     }
@@ -1981,6 +2023,20 @@
                                     }
                                 }
                             }
+                        },
+                        "exported": {
+                            "description": "Вывезено ли ТС за пределы Российской Федерации?",
+                            "type": [
+                                "boolean",
+                                "null"
+                            ],
+                            "examples": [
+                                true
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
                         }
                     }
                 },

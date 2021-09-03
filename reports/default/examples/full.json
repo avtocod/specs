@@ -46,7 +46,8 @@
         },
         "type": {
             "name": "Седан",
-            "type_id": "ID_BODY_TYPE_SEDAN"
+            "type_id": "ID_BODY_TYPE_SEDAN",
+            "code": "22"
         },
         "body": {
             "number": "KCA275-9673180",
@@ -93,7 +94,8 @@
         },
         "wheel": {
             "position": "LEFT",
-            "position_id": "ID_STEERING_WHEEL_TYPE_LEFT"
+            "position_id": "ID_STEERING_WHEEL_TYPE_LEFT",
+            "position_code": "1"
         },
         "generations": [
             {
@@ -186,7 +188,8 @@
                     "code": "SUV",
                     "description": "Спортивно-утилитарный автомобиль"
                 }
-            }
+            },
+            "exported": true
         },
         "catalog": {
             "transdekra": {

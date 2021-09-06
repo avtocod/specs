@@ -1340,10 +1340,7 @@
                                     "type": "null"
                                 },
                                 {
-                                    "type": "string",
-                                    "pattern": "^[0-1]+$",
-                                    "minLength": 1,
-                                    "maxLength": 1
+                                    "type": "string"
                                 }
                             ],
                             "examples": [

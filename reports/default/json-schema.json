@@ -854,13 +854,9 @@
                         },
                         "code": {
                             "description": "Код типа кузова ТС",
-                            "oneOf": [
-                                {
-                                    "type": "null"
-                                },
-                                {
-                                    "type": "string"
-                                }
+                            "type": [
+                                "string",
+                                "null"
                             ],
                             "examples": [
                                 "21"
@@ -1332,13 +1328,9 @@
                         },
                         "position_code": {
                             "description": "Код расположение руля",
-                            "oneOf": [
-                                {
-                                    "type": "null"
-                                },
-                                {
-                                    "type": "string"
-                                }
+                            "type": [
+                                "string",
+                                "null"
                             ],
                             "examples": [
                                 1

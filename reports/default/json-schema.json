@@ -851,6 +851,20 @@
                                 "base.alt",
                                 "gibdd.history"
                             ]
+                        },
+                        "code": {
+                            "description": "Код типа кузова ТС",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "examples": [
+                                "21"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
                         }
                     }
                 },
@@ -1310,6 +1324,20 @@
                                 "base.ext",
                                 "base.alt",
                                 "regactions.registry"
+                            ]
+                        },
+                        "position_code": {
+                            "description": "Код расположение руля",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "examples": [
+                                "1"
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
                             ]
                         }
                     }
@@ -1981,6 +2009,20 @@
                                     }
                                 }
                             }
+                        },
+                        "exported": {
+                            "description": "Вывезено ли ТС за пределы Российской Федерации?",
+                            "type": [
+                                "boolean",
+                                "null"
+                            ],
+                            "examples": [
+                                true
+                            ],
+                            "fillable_by": [
+                                "base",
+                                "base.ext"
+                            ]
                         }
                     }
                 },

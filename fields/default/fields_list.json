@@ -298,6 +298,17 @@
         ]
     },
     {
+        "path": "tech_data.type.code",
+        "description": "Характеристики ТС: Код типа кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
+        ]
+    },
+    {
         "path": "tech_data.body.number",
         "description": "Характеристики ТС: Номер Кузова",
         "types": [
@@ -559,6 +570,17 @@
             "base.ext",
             "base.alt",
             "regactions.registry"
+        ]
+    },
+    {
+        "path": "tech_data.wheel.position_code",
+        "description": "Характеристики ТС: Код расположение руля",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {
@@ -1299,6 +1321,17 @@
         ],
         "fillable_by": [
             "regactions.registry"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.exported",
+        "description": "Дополнительная информация: Вывезено ли ТС за пределы Российской Федерации?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "base",
+            "base.ext"
         ]
     },
     {

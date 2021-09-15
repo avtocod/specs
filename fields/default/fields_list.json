@@ -2558,6 +2558,16 @@
         ]
     },
     {
+        "path": "accidents.insurance.date.update",
+        "description": "История повреждений из страховых компаний: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.dtp"
+        ]
+    },
+    {
         "path": "accidents.insurance.items[].date.event",
         "description": "История повреждений из страховых компаний: Дата происшествия",
         "types": [

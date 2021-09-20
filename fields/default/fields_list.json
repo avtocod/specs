@@ -1850,6 +1850,26 @@
         ]
     },
     {
+        "path": "insurance.osago.items[].date.periods[].start",
+        "description": "ОСАГО: Дата начала периода использования",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "rsaosago.base"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].date.periods[].end",
+        "description": "ОСАГО: Дата окончания периода использования",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "rsaosago.base"
+        ]
+    },
+    {
         "path": "insurance.osago.items[].restrictions.type",
         "description": "ОСАГО: Ограничения",
         "types": [

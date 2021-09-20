@@ -6567,12 +6567,56 @@
                                                     }
                                                 ],
                                                 "examples": [
-                                                    "2016-07-07 00:00:00"
+                                                    "2016-07-07"
                                                 ],
                                                 "fillable_by": [
                                                     "rsaosago.base.ext",
                                                     "rsaosago.base.history"
                                                 ]
+                                            },
+                                            "periods": {
+                                                "type": "array",
+                                                "additionalProperties": false,
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "start": {
+                                                            "description": "Дата начала действия полиса",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/date"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2014-07-07"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "rsaosago.base"
+                                                            ]
+                                                        },
+                                                        "end": {
+                                                            "description": "Дата окончания действия полиса",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/date"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2015-07-07"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "rsaosago.base",
+                                                            ]
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     },

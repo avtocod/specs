@@ -6567,7 +6567,7 @@
                                                     }
                                                 ],
                                                 "examples": [
-                                                    "2016-07-07"
+                                                    "2016-07-07 00:00:00"
                                                 ],
                                                 "fillable_by": [
                                                     "rsaosago.base.ext",
@@ -6576,7 +6576,6 @@
                                             },
                                             "periods": {
                                                 "type": "array",
-                                                "additionalProperties": false,
                                                 "items": {
                                                     "type": "object",
                                                     "additionalProperties": false,
@@ -6612,7 +6611,7 @@
                                                                 "2015-07-07"
                                                             ],
                                                             "fillable_by": [
-                                                                "rsaosago.base",
+                                                                "rsaosago.base"
                                                             ]
                                                         }
                                                     }

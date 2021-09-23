@@ -1180,7 +1180,48 @@
                         "city": "Домодедово",
                         "street": null,
                         "house": null
-                    }
+                    },
+                    "other_participants": [
+                        {
+                            "number": "000043057",
+                            "accident": {
+                                "date": "1978-02-14 05:24:00"
+                            },
+                            "type": "Наезд на стоящее ТС",
+                            "state": "Повреждено",
+                            "damage": {
+                                "points": [
+                                    210,
+                                    219
+                                ],
+                                "codes": [
+                                    "210",
+                                    "219"
+                                ]
+                            },
+                            "vehicle": {
+                                "brand": {
+                                    "name": "Lanos"
+                                },
+                                "model": {
+                                    "name": "Chevrolet"
+                                },
+                                "year": 2008,
+                                "identifiers": {
+                                    "vin": "EXAMPL0V1N1000000",
+                                    "body": "KCA275-9673180",
+                                    "chassis": "LFPVBM6819793"
+                                }
+                            },
+                            "geo": {
+                                "country": null,
+                                "region": "Воронежская",
+                                "city": "Домодедово",
+                                "street": null,
+                                "house": null
+                            }
+                        }
+                    ]
                 }
             ],
             "count": 1

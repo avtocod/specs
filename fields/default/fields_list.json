@@ -2558,6 +2558,136 @@
         ]
     },
     {
+        "path": "accidents.history.items[].other_participants[].number",
+        "description": "История ДТП: Другие участники ДТП. Номер происшествия",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].accident.date",
+        "description": "История ДТП: Другие участники ДТП. Дата происшествия",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].type",
+        "description": "История ДТП: Другие участники ДТП. Тип происшествия [Столкновение, Наезд на стоящее ТС, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].state",
+        "description": "История ДТП: Другие участники ДТП. Статус ТС [Повреждено, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].vehicle.brand.name",
+        "description": "История ДТП: Другие участники ДТП. Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].vehicle.model.name",
+        "description": "История ДТП: Другие участники ДТП. Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].vehicle.year",
+        "description": "История ДТП: Другие участники ДТП. Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].geo",
+        "description": "История ДТП: Другие участники ДТП. Гео-данные места ДТП",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].damage.points",
+        "description": "История ДТП: Другие участники ДТП. Места повреждений (коды мест повреждений ТС)",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].damage.codes",
+        "description": "История ДТП: Другие участники ДТП. Коды повреждений для расширенной схемы ДТП (коды мест повреждений ТС)",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].vehicle.identifiers.vin",
+        "description": "История ДТП: Другие участники ДТП. VIN код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].vehicle.identifiers.body",
+        "description": "История ДТП: Другие участники ДТП. Номер кузова",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
+        "path": "accidents.history.items[].other_participants[].vehicle.identifiers.chassis",
+        "description": "История ДТП: Другие участники ДТП. Номер шасси",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "dtp.registry"
+        ]
+    },
+    {
         "path": "accidents.insurance.date.update",
         "description": "История повреждений из страховых компаний: Дата обновления данных",
         "types": [

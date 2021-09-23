@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Field with path `accidents.history[].other_participants[].geo`
+- Field with path `accidents.history[].other_participants[].type`
+- Field with path `accidents.history[].other_participants[].state`
+- Field with path `accidents.history[].other_participants[].number`
+- Field with path `accidents.history[].other_participants[].vehicle.year`
+- Field with path `accidents.history[].other_participants[].damage.codes`
+- Field with path `accidents.history[].other_participants[].accident.date`
+- Field with path `accidents.history[].other_participants[].damage.points`
+- Field with path `accidents.history[].other_participants[].vehicle.model.name`
+- Field with path `accidents.history[].other_participants[].vehicle.brand.name`
+- Field with path `accidents.history[].other_participants[].vehicle.identifiers.vin`
+- Field with path `accidents.history[].other_participants[].vehicle.identifiers.body`
+- Field with path `accidents.history[].other_participants[].vehicle.identifiers.chassis`
+
 ## v3.91.0
 
 ### Added

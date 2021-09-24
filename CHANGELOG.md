@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Source `rsaosago.base`
 - Fields with path `insurance.osago.items[].date.periods[].start`
 - Fields with path `insurance.osago.items[].date.periods[].end`
+- Fields with path `insurance.osago.*` also fillable by `rsaosago.base`
 
 ## v3.91.0
 

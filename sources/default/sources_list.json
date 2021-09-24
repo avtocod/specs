@@ -220,6 +220,11 @@
         "enabled": true
     },
     {
+        "name": "rsaosago.base",
+        "description": "Информация о всех полисах ОСАГО оформленных на ТC, по данным РСА",
+        "enabled": true
+    },
+    {
         "name": "gibdd.diagnostic.cards",
         "description": "Данные о диагностических картах и пробегах ТС из базы ГИБДД",
         "enabled": true

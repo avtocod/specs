@@ -22,6 +22,15 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `accidents.history[].other_participants[].vehicle.identifiers.body`
 - Field with path `accidents.history[].other_participants[].vehicle.identifiers.chassis`
 
+## v3.92.0
+
+### Added
+
+- Source `rsaosago.base`
+- Fields with path `insurance.osago.items[].date.periods[].start`
+- Fields with path `insurance.osago.items[].date.periods[].end`
+- Fields with path `insurance.osago.*` also fillable by `rsaosago.base`
+
 ## v3.91.0
 
 ### Added

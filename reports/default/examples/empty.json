@@ -809,7 +809,13 @@
                     "date": {
                         "start": null,
                         "end": null,
-                        "created": null
+                        "created": null,
+                        "periods": [
+                            {
+                                "start": null,
+                                "end": null
+                            }
+                        ]
                     },
                     "restrictions": {
                         "type": null,

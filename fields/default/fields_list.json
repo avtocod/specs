@@ -1786,6 +1786,7 @@
             "string"
         ],
         "fillable_by": [
+            "rsaosago.base",
             "ramiosago.base",
             "ramiosago.base.ext"
         ]
@@ -1800,6 +1801,7 @@
             "base",
             "base.ext",
             "base.alt",
+            "rsaosago.base",
             "ramiosago.base",
             "ramiosago.base.ext",
             "rsaosago.base.ext",
@@ -1816,6 +1818,7 @@
             "base",
             "base.ext",
             "base.alt",
+            "rsaosago.base",
             "ramiosago.base",
             "ramiosago.base.ext",
             "rsaosago.base.ext",
@@ -1832,6 +1835,7 @@
             "base",
             "base.ext",
             "base.alt",
+            "rsaosago.base",
             "ramiosago.base",
             "ramiosago.base.ext",
             "rsaosago.base.ext",
@@ -1845,8 +1849,29 @@
             "string"
         ],
         "fillable_by": [
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].date.periods[].start",
+        "description": "ОСАГО: Дата начала периода использования",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "rsaosago.base"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].date.periods[].end",
+        "description": "ОСАГО: Дата окончания периода использования",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "rsaosago.base"
         ]
     },
     {
@@ -1858,6 +1883,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1871,6 +1897,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1887,6 +1914,7 @@
             "base.alt",
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1903,6 +1931,7 @@
             "base.alt",
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1915,6 +1944,7 @@
         ],
         "fillable_by": [
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1927,6 +1957,7 @@
         ],
         "fillable_by": [
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1939,6 +1970,7 @@
         ],
         "fillable_by": [
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1952,6 +1984,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1965,6 +1998,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1978,6 +2012,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -1991,6 +2026,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2004,6 +2040,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2017,6 +2054,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2030,6 +2068,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2043,6 +2082,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2056,6 +2096,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2069,6 +2110,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2082,6 +2124,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2095,6 +2138,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2108,6 +2152,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2121,6 +2166,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2132,6 +2178,7 @@
             "integer"
         ],
         "fillable_by": [
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2145,6 +2192,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2158,6 +2206,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2171,6 +2220,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2184,6 +2234,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2197,6 +2248,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2210,6 +2262,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2223,6 +2276,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2236,6 +2290,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2249,6 +2304,7 @@
         "fillable_by": [
             "ramiosago.base",
             "ramiosago.base.ext",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]
@@ -2265,6 +2321,7 @@
             "base",
             "base.ext",
             "base.alt",
+            "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history"
         ]

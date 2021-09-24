@@ -6586,7 +6586,7 @@
                                                     "additionalProperties": false,
                                                     "properties": {
                                                         "start": {
-                                                            "description": "Дата начала действия полиса",
+                                                            "description": "Дата начала периода использования",
                                                             "oneOf": [
                                                                 {
                                                                     "type": "null"
@@ -6603,7 +6603,7 @@
                                                             ]
                                                         },
                                                         "end": {
-                                                            "description": "Дата окончания действия полиса",
+                                                            "description": "Дата окончания периода использования",
                                                             "oneOf": [
                                                                 {
                                                                     "type": "null"

@@ -932,7 +932,42 @@
                         "city": null,
                         "street": null,
                         "house": null
-                    }
+                    },
+                    "other_participants": [
+                        {
+                            "number": null,
+                            "accident": {
+                                "date": null
+                            },
+                            "type": null,
+                            "state": null,
+                            "damage": {
+                                "points": null,
+                                "codes": null
+                            },
+                            "vehicle": {
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                },
+                                "year": null,
+                                "identifiers": {
+                                    "vin": null,
+                                    "body": null,
+                                    "chassis": null
+                                }
+                            },
+                            "geo": {
+                                "country": null,
+                                "region": null,
+                                "city": null,
+                                "street": null,
+                                "house": null
+                            }
+                        }
+                    ]
                 }
             ],
             "count": 1

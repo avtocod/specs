@@ -7655,6 +7655,252 @@
                                                 ]
                                             }
                                         }
+                                    },
+                                    "other_participants": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "number": {
+                                                    "description": "Другие участники ДТП. Номер происшествия",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "000043057"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "dtp.registry"
+                                                    ]
+                                                },
+                                                "accident": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "date": {
+                                                            "description": "Другие участники ДТП. Дата происшествия",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/datetime"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "1978-02-14 05:24:00"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "dtp.registry"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "type": {
+                                                    "description": "Другие участники ДТП. Тип происшествия",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "Столкновение",
+                                                        "Наезд на стоящее ТС"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "dtp.registry"
+                                                    ]
+                                                },
+                                                "state": {
+                                                    "description": "Другие участники ДТП. Статус ТС",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "Повреждено"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "dtp.registry"
+                                                    ]
+                                                },
+                                                "damage": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "points": {
+                                                            "description": "Другие участники ДТП. Места повреждений (коды мест повреждений ТС)",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "type": "array",
+                                                                    "minItems": 1,
+                                                                    "items": {
+                                                                        "type": "integer",
+                                                                        "minimum": 0
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                [
+                                                                    1,
+                                                                    2
+                                                                ],
+                                                                null
+                                                            ],
+                                                            "fillable_by": [
+                                                                "dtp.registry"
+                                                            ]
+                                                        },
+                                                        "codes": {
+                                                            "description": "Другие участники ДТП. Коды повреждений для расширенной схемы ДТП (коды мест повреждений ТС)",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "type": "array",
+                                                                    "minItems": 1,
+                                                                    "items": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                [
+                                                                    "006",
+                                                                    "112"
+                                                                ],
+                                                                null
+                                                            ],
+                                                            "fillable_by": [
+                                                                "dtp.registry"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "vehicle": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "brand": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "name": {
+                                                                    "description": "Другие участники ДТП. Марка ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Opel"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "dtp.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "model": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "name": {
+                                                                    "description": "Другие участники ДТП. Модель ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "MONTEREY"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "dtp.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "year": {
+                                                            "description": "Другие участники ДТП. Год выпуска ТС",
+                                                            "type": [
+                                                                "integer",
+                                                                "null"
+                                                            ],
+                                                            "minimum": 1800,
+                                                            "examples": [
+                                                                2004
+                                                            ],
+                                                            "fillable_by": [
+                                                                "dtp.registry"
+                                                            ]
+                                                        },
+                                                        "identifiers": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "vin": {
+                                                                    "description": "Другие участники ДТП. VIN код",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "EXAMPL0V1N1000000"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "dtp.registry"
+                                                                    ]
+                                                                },
+                                                                "body": {
+                                                                    "description": "Другие участники ДТП. Номер кузова",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "KCA275-9673180"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "dtp.registry"
+                                                                    ]
+                                                                },
+                                                                "chassis": {
+                                                                    "description": "Другие участники ДТП. Номер шасси",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "LFPVBM6819793"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "dtp.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "geo": {
+                                                    "description": "Другие участники ДТП. Гео-данные места ДТП",
+                                                    "oneOf": [
+                                                        {
+                                                            "type": "null"
+                                                        },
+                                                        {
+                                                            "$ref": "#/definitions/geo_raw_data"
+                                                        }
+                                                    ],
+                                                    "fillable_by": [
+                                                        "dtp.registry"
+                                                    ]
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }

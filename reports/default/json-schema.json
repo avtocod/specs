@@ -1218,7 +1218,9 @@
                                 "base.ext",
                                 "gibdd.eaisto",
                                 "base.alt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         }
                     }
@@ -1723,7 +1725,9 @@
                                         "base",
                                         "base.ext",
                                         "gibdd.eaisto",
-                                        "regactions.registry"
+                                        "regactions.registry",
+                                        "base.registry",
+                                        "base.registry.retry"
                                     ]
                                 }
                             }

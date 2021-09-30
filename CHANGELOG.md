@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `base.registry`
+- Source `base.registry.retry`
+- Field with path `identifiers.vehicle.vin` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers.vehicle.body` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers.vehicle.chassis` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.weight.max` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.engine.power.hp` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.engine.power.kw` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.brand.name.original` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.model.name.original` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `additional_info.vehicle.category.code` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `additional_info.vehicle.category.description` also fillable by `base.registry`, `base.registry.retry`
+
 ## v3.93.0
 
 ### Added

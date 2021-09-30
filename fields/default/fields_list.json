@@ -12,7 +12,9 @@
             "gibdd.eaisto",
             "base.alt",
             "regactions.registry",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -25,7 +27,9 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.alt"
+            "base.alt",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -65,7 +69,9 @@
             "gibdd.history",
             "base.alt",
             "regactions.registry",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -79,7 +85,9 @@
             "base.ext",
             "base.alt",
             "regactions.registry",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -106,7 +114,9 @@
             "gibdd.eaisto",
             "base.alt",
             "regactions.registry",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -119,7 +129,9 @@
             "base",
             "base.ext",
             "gibdd.eaisto",
-            "base.alt"
+            "base.alt",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -159,7 +171,9 @@
             "gibdd.history",
             "base.alt",
             "regactions.registry",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -173,7 +187,9 @@
             "base.ext",
             "base.alt",
             "regactions.registry",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -208,7 +224,9 @@
             "gibdd.eaisto",
             "base.alt",
             "regactions.registry",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -258,7 +276,9 @@
         "fillable_by": [
             "gibdd.history",
             "gibdd.eaisto",
-            "gibdd.diagnostic.cards"
+            "gibdd.diagnostic.cards",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -452,7 +472,9 @@
             "base.ext",
             "gibdd.history",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -465,7 +487,9 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -752,7 +776,9 @@
             "base.ext",
             "gibdd.eaisto",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "base.registry",
+            "base.registry.retry"
         ]
     },
     {
@@ -2283,7 +2309,7 @@
     },
     {
         "path": "insurance.osago.items[].owner.tin",
-        "description": "ОСАГО: ИНН страхователя",
+        "description": "ОСАГО: ИНН владельца",
         "types": [
             "string"
         ],

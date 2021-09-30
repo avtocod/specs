@@ -353,7 +353,9 @@
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards"
+                                "gibdd.diagnostic.cards",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         },
                         "reg_num": {
@@ -376,7 +378,9 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.eaisto",
-                                "base.alt"
+                                "base.alt",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         },
                         "sts": {
@@ -446,7 +450,9 @@
                                 "gibdd.history",
                                 "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards"
+                                "gibdd.diagnostic.cards",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         },
                         "chassis": {
@@ -470,7 +476,9 @@
                                 "base.ext",
                                 "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards"
+                                "gibdd.diagnostic.cards",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         }
                     }
@@ -531,7 +539,9 @@
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards"
+                                "gibdd.diagnostic.cards",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         },
                         "reg_num": {
@@ -551,7 +561,9 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.eaisto",
-                                "base.alt"
+                                "base.alt",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         },
                         "sts": {
@@ -612,7 +624,9 @@
                                 "gibdd.history",
                                 "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards"
+                                "gibdd.diagnostic.cards",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         },
                         "chassis": {
@@ -633,7 +647,9 @@
                                 "base.ext",
                                 "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards"
+                                "gibdd.diagnostic.cards",
+                                "base.registry",
+                                "base.registry.retry"
                             ]
                         }
                     }
@@ -704,7 +720,9 @@
                                         "gibdd.eaisto",
                                         "base.alt",
                                         "regactions.registry",
-                                        "gibdd.diagnostic.cards"
+                                        "gibdd.diagnostic.cards",
+                                        "base.registry",
+                                        "base.registry.retry"
                                     ]
                                 },
                                 "rus": {
@@ -791,7 +809,9 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "gibdd.eaisto",
-                                        "gibdd.diagnostic.cards"
+                                        "gibdd.diagnostic.cards",
+                                        "base.registry",
+                                        "base.registry.retry"
                                     ]
                                 },
                                 "normalized": {
@@ -1108,7 +1128,9 @@
                                         "base.ext",
                                         "gibdd.history",
                                         "base.alt",
-                                        "regactions.registry"
+                                        "regactions.registry",
+                                        "base.registry",
+                                        "base.registry.retry"
                                     ]
                                 },
                                 "kw": {
@@ -1125,7 +1147,9 @@
                                         "base",
                                         "base.ext",
                                         "gibdd.history",
-                                        "base.alt"
+                                        "base.alt",
+                                        "base.registry",
+                                        "base.registry.retry"
                                     ]
                                 }
                             }
@@ -1681,7 +1705,9 @@
                                         "base.ext",
                                         "gibdd.eaisto",
                                         "base.alt",
-                                        "regactions.registry"
+                                        "regactions.registry",
+                                        "base.registry",
+                                        "base.registry.retry"
                                     ]
                                 },
                                 "description": {
@@ -7259,7 +7285,7 @@
                                                 ]
                                             },
                                             "tin": {
-                                                "description": "ИНН страхователя",
+                                                "description": "ИНН владельца",
                                                 "oneOf": [
                                                     {
                                                         "type": "null"

@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Value `МИНИВЭН` in enum `service_history.items[].vehicle.body.type`
+
 ## v3.94.0
 
 ### Added

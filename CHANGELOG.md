@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Source `osago.registry`
 
+## v3.95.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
 ## v3.94.1
 
 ### Fixed

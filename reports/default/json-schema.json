@@ -6533,7 +6533,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             }
                                         }
@@ -6563,7 +6564,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "end": {
@@ -6587,7 +6589,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "created": {
@@ -6606,7 +6609,8 @@
                                                 "fillable_by": [
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "periods": {
@@ -6629,7 +6633,8 @@
                                                                 "2014-07-07"
                                                             ],
                                                             "fillable_by": [
-                                                                "rsaosago.base"
+                                                                "rsaosago.base",
+                                                                "osago.registry"
                                                             ]
                                                         },
                                                         "end": {
@@ -6646,7 +6651,8 @@
                                                                 "2015-07-07"
                                                             ],
                                                             "fillable_by": [
-                                                                "rsaosago.base"
+                                                                "rsaosago.base",
+                                                                "osago.registry"
                                                             ]
                                                         }
                                                     }
@@ -6678,7 +6684,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "drivers": {
@@ -6695,7 +6702,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             }
                                         }
@@ -6721,7 +6729,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "number": {
@@ -6741,7 +6750,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "is_active": {
@@ -6757,7 +6767,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "expired": {
@@ -6773,7 +6784,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "status": {
@@ -6789,7 +6801,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             }
                                         }
@@ -6812,7 +6825,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "using_type": {
@@ -6845,7 +6859,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     },
                                                     "description": {
@@ -6862,7 +6877,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     }
                                                 }
@@ -6885,7 +6901,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     },
                                                     "currency": {
@@ -6906,7 +6923,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     }
                                                 }
@@ -6925,7 +6943,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "is_follow_to_registration": {
@@ -6942,7 +6961,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "has_trailer": {
@@ -6959,7 +6979,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             }
                                         }
@@ -6986,7 +7007,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     }
                                                 }
@@ -7013,7 +7035,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     },
                                                     "vin": {
@@ -7034,7 +7057,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     },
                                                     "body": {
@@ -7055,7 +7079,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     }
                                                 }
@@ -7082,7 +7107,8 @@
                                                                     "ramiosago.base.ext",
                                                                     "rsaosago.base",
                                                                     "rsaosago.base.ext",
-                                                                    "rsaosago.base.history"
+                                                                    "rsaosago.base.history",
+                                                                    "osago.registry"
                                                                 ]
                                                             }
                                                         }
@@ -7107,7 +7133,8 @@
                                                             "ramiosago.base.ext",
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     }
                                                 }
@@ -7128,7 +7155,8 @@
                                                         "fillable_by": [
                                                             "rsaosago.base",
                                                             "rsaosago.base.ext",
-                                                            "rsaosago.base.history"
+                                                            "rsaosago.base.history",
+                                                            "osago.registry"
                                                         ]
                                                     }
                                                 }
@@ -7159,7 +7187,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "dob": {
@@ -7180,7 +7209,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "name": {
@@ -7197,7 +7227,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "tin": {
@@ -7218,7 +7249,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             }
                                         }
@@ -7247,7 +7279,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "dob": {
@@ -7268,7 +7301,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "name": {
@@ -7285,7 +7319,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             },
                                             "tin": {
@@ -7326,7 +7361,8 @@
                                             "ramiosago.base.ext",
                                             "rsaosago.base",
                                             "rsaosago.base.ext",
-                                            "rsaosago.base.history"
+                                            "rsaosago.base.history",
+                                            "osago.registry"
                                         ]
                                     }
                                 }
@@ -7356,7 +7392,8 @@
                                         "base.alt",
                                         "rsaosago.base",
                                         "rsaosago.base.ext",
-                                        "rsaosago.base.history"
+                                        "rsaosago.base.history",
+                                        "osago.registry"
                                     ]
                                 }
                             }

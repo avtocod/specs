@@ -7010,6 +7010,19 @@
                                                             "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
+                                                    },
+                                                    "category": {
+                                                        "description": "Категория ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "В"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "osago.registry"
+                                                        ]
                                                     }
                                                 }
                                             },

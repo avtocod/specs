@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `osago.registry`
+- Field with path `insurance.items[].vehicle.model.category`
 
 ## v3.95.0
 

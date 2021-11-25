@@ -2154,6 +2154,16 @@
         ]
     },
     {
+        "path": "insurance.osago.items[].vehicle.model.category",
+        "description": "ОСАГО: Категория ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
+        ]
+    },
+    {
         "path": "insurance.osago.items[].vehicle.identifiers.reg_num",
         "description": "ОСАГО: Государственный регистрационный знак (ГРЗ)",
         "types": [

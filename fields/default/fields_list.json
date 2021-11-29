@@ -1911,6 +1911,16 @@
         ]
     },
     {
+        "path": "insurance.osago.items[].actuality_date",
+        "description": "ОСАГО: Дата актуализации данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
+        ]
+    },
+    {
         "path": "insurance.osago.items[].restrictions.type",
         "description": "ОСАГО: Ограничения",
         "types": [

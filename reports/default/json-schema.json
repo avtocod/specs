@@ -6660,6 +6660,23 @@
                                             }
                                         }
                                     },
+                                    "actuality_date": {
+                                        "description": "Дата актуализации данных",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2016-07-07 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "osago.registry"
+                                        ]
+                                    },
                                     "restrictions": {
                                         "type": "object",
                                         "additionalProperties": false,

@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Source `base.registry.retry`
 
+## v3.97.0
+
+### Added
+
+- Source `osago.registry`
+- Field with path `insurance.osago.items[].actuality_date`
+- Field with path `insurance.osago.items[].vehicle.model.category`
+
 ## v3.96.0
 
 ### Changed

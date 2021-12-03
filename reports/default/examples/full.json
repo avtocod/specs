@@ -1065,6 +1065,7 @@
                             }
                         ]
                     },
+                    "actuality_date": "2016-07-07 00:00:00",
                     "restrictions": {
                         "type": "WITH RESTRICTIONS",
                         "drivers": 3
@@ -1092,7 +1093,8 @@
                     },
                     "vehicle": {
                         "model": {
-                            "name": "Skoda Yeti (категория «B»)"
+                            "name": "Skoda Yeti (категория «B»)",
+                            "category": "B"
                         },
                         "identifiers": {
                             "reg_num": "А332АВ177",

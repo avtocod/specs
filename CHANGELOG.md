@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance.osago.items[].vehicle.model.category`
 - Field with path `insurance.osago.items[].actuality_date`
 
+## v3.96.0
+
+### Changed
+
+- Field with path `tech_data.model.name.original` not fillable by `base.registry` and `base.registry.retry` anymore
+
 ## v3.95.0
 
 ### Changed

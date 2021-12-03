@@ -9600,12 +9600,48 @@
                                             }
                                         }
                                     },
+                                    "mileage": {
+                                        "description": "Пробег ТС для которого сделан расчет цены",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            50000
+                                        ],
+                                        "fillable_by": [
+                                            "ads.price"
+                                        ]
+                                    },
                                     "related_ads": {
                                         "type": "array",
                                         "items": {
                                             "type": "object",
                                             "additionalProperties": false,
                                             "properties": {
+                                                "date": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "publish": {
+                                                            "description": "Дата публикации объявления",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/datetime"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2019-01-14 11:57:00"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
                                                 "geo": {
                                                     "description": "Расчетные данные. Гео-данные места продажи ТС",
                                                     "oneOf": [
@@ -9923,6 +9959,118 @@
                                                             "fillable_by": [
                                                                 "ads.price"
                                                             ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "metadata": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "functions": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "name": {
+                                                            "description": "Наименование функции",
+                                                            "type": "string",
+                                                            "examples": [
+                                                                "price_mileage"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        },
+                                                        "description": {
+                                                            "description": "Описание функции",
+                                                            "type": "string",
+                                                            "examples": [
+                                                                "y = price, x = mileage"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "ads.price"
+                                                            ]
+                                                        },
+                                                        "parts": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "type": {
+                                                                        "description": "Тип математической функции",
+                                                                        "type": "string",
+                                                                        "examples": [
+                                                                            "STRAIGHT_LINE"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "ads.price"
+                                                                        ]
+                                                                    },
+                                                                    "description": {
+                                                                        "description": "Описание математической функции",
+                                                                        "type": "string",
+                                                                        "examples": [
+                                                                            "y = coefficients[0] + x * coefficients[1]"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "ads.price"
+                                                                        ]
+                                                                    },
+                                                                    "coefficients": {
+                                                                        "description": "Значения переменных функции",
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                            "type": "number"
+                                                                        },
+                                                                        "examples": [
+                                                                            [
+                                                                                1667183,
+                                                                                -4.515303312754018
+                                                                            ]
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "ads.price"
+                                                                        ]
+                                                                    },
+                                                                    "bounds": {
+                                                                        "type": "object",
+                                                                        "additionalProperties": false,
+                                                                        "properties": {
+                                                                            "left": {
+                                                                                "description": "Левая граница диапазона функции",
+                                                                                "type": [
+                                                                                    "number",
+                                                                                    "null"
+                                                                                ],
+                                                                                "examples": [
+                                                                                    365907.42316982563
+                                                                                ],
+                                                                                "fillable_by": [
+                                                                                    "ads.price"
+                                                                                ]
+                                                                            },
+                                                                            "right": {
+                                                                                "description": "Правая граница диапазона функции",
+                                                                                "type": [
+                                                                                    "number",
+                                                                                    "null"
+                                                                                ],
+                                                                                "examples": [
+                                                                                    365907.42316982563
+                                                                                ],
+                                                                                "fillable_by": [
+                                                                                    "ads.price"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }

@@ -1262,8 +1262,12 @@
                     "currency": {
                         "type": null
                     },
+                    "mileage": null,
                     "related_ads": [
                         {
+                            "date": {
+                                "publish": null
+                            },
                             "geo": {
                                 "country": null,
                                 "region": null,
@@ -1312,7 +1316,26 @@
                                 "mileage": null
                             }
                         }
-                    ]
+                    ],
+                    "metadata": {
+                        "functions": [
+                            {
+                                "name": "",
+                                "description": "",
+                                "parts": [
+                                    {
+                                        "type": "",
+                                        "description": "",
+                                        "coefficients": [],
+                                        "bounds": {
+                                            "left": null,
+                                            "right": null
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                 }
             ]
         }

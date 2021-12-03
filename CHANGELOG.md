@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `osago.registry`
+- Field with path `insurance.osago.items[].vehicle.model.category`
+- Field with path `insurance.osago.items[].actuality_date`
+
 ## v3.96.0
 
 ### Changed

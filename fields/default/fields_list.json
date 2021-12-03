@@ -1833,7 +1833,8 @@
             "ramiosago.base",
             "ramiosago.base.ext",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1850,7 +1851,8 @@
             "ramiosago.base",
             "ramiosago.base.ext",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1867,7 +1869,8 @@
             "ramiosago.base",
             "ramiosago.base.ext",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1879,7 +1882,8 @@
         "fillable_by": [
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1889,7 +1893,8 @@
             "string"
         ],
         "fillable_by": [
-            "rsaosago.base"
+            "rsaosago.base",
+            "osago.registry"
         ]
     },
     {
@@ -1899,7 +1904,18 @@
             "string"
         ],
         "fillable_by": [
-            "rsaosago.base"
+            "rsaosago.base",
+            "osago.registry"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].actuality_date",
+        "description": "ОСАГО: Дата актуализации данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
         ]
     },
     {
@@ -1913,7 +1929,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1927,7 +1944,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1944,7 +1962,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1961,7 +1980,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1974,7 +1994,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -1987,7 +2008,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2000,7 +2022,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2014,7 +2037,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2028,7 +2052,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2042,7 +2067,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2056,7 +2082,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2070,7 +2097,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2084,7 +2112,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2098,7 +2127,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2112,7 +2142,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2126,7 +2157,18 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].vehicle.model.category",
+        "description": "ОСАГО: Категория ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
         ]
     },
     {
@@ -2140,7 +2182,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2154,7 +2197,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2168,7 +2212,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2182,7 +2227,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2196,7 +2242,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2208,7 +2255,8 @@
         "fillable_by": [
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2222,7 +2270,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2236,7 +2285,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2250,7 +2300,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2264,7 +2315,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2278,7 +2330,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2292,7 +2345,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2306,7 +2360,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2334,7 +2389,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2351,7 +2407,8 @@
             "base.alt",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {

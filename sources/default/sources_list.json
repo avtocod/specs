@@ -42,12 +42,12 @@
     {
         "name": "ramiosago.base",
         "description": "Данные о полисах ОСАГО, оформленных на ТС",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "ramiosago.base.ext",
         "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "base",
@@ -212,7 +212,7 @@
     {
         "name": "rsaosago.base.ext",
         "description": "Расширенная информация о полисах ОСАГО оформленных на ТС, по данным РСА",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "rsaosago.base.history",
@@ -227,7 +227,7 @@
     {
         "name": "gibdd.diagnostic.cards",
         "description": "Данные о диагностических картах и пробегах ТС из базы ГИБДД",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "insurance.dtp",

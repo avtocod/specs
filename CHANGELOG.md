@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Sources `ramiosago.base.ext`, `ramiosago.base`, `rsaosago.base.ext`, `gibdd.diagnostic.cards` marked as disabled
+
 ## v3.97.0
 
 ### Added

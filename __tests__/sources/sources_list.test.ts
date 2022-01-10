@@ -6,7 +6,12 @@ const sources_file_name = 'sources_list.json';
 
 // list of sources that should be disabled
 const disabled_sources: {[k: string]: string[]} = {
-    default: []
+    default: [
+        "ramiosago.base.ext",
+        "ramiosago.base",
+        "rsaosago.base.ext",
+        "gibdd.diagnostic.cards"
+    ]
 };
 // for each group of specifications...
 describe.each(groups_list)(`${sources_file_name} file in %s group of sources specs`, group_name => {

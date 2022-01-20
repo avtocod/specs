@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Field with path `insurance.osago.items[].owner.tin` also fillable by `osago.registry`
+- Field with path `insurance.osago.items[].number` also fillable by `osago.registry`
+
 ## v3.98.0
 
 ### Changed

@@ -6507,7 +6507,8 @@
                                         "fillable_by": [
                                             "rsaosago.base",
                                             "ramiosago.base",
-                                            "ramiosago.base.ext"
+                                            "ramiosago.base.ext",
+                                            "osago.registry"
                                         ]
                                     },
                                     "insurer": {
@@ -7369,7 +7370,8 @@
                                                     "ramiosago.base.ext",
                                                     "rsaosago.base",
                                                     "rsaosago.base.ext",
-                                                    "rsaosago.base.history"
+                                                    "rsaosago.base.history",
+                                                    "osago.registry"
                                                 ]
                                             }
                                         }

@@ -8442,7 +8442,7 @@
                                                                     "gibdd.stat.registry"
                                                                 ]
                                                             },
-                                                            "offence": {
+                                                            "offense": {
                                                                 "type": "object",
                                                                 "additionalProperties": false,
                                                                 "properties": {
@@ -8499,6 +8499,138 @@
                                                                 "fillable_by": [
                                                                     "gibdd.stat.registry"
                                                                 ]
+                                                            },
+                                                            "used_seat_belt": {
+                                                                "description": "Использование ремня безопасности водителем",
+                                                                "type": [
+                                                                    "boolean",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    true,
+                                                                    false
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "gibdd.stat.registry"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "passengers": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "gender": {
+                                                                    "description": "Пол пассажира ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "МУЖСКОЙ",
+                                                                        "ЖЕНСКИЙ"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "damage": {
+                                                                    "description": "Телесные повреждения пассажира",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Получил телесные повреждения с показанием к лечению в медицинских организациях (кроме разовой медицинской помощи)"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "used_seat_belt": {
+                                                                    "description": "Использование ремня безопасности пассажиром",
+                                                                    "type": [
+                                                                        "boolean",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "pedestrians": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "gender": {
+                                                                    "description": "Пол пешехода",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "МУЖСКОЙ",
+                                                                        "ЖЕНСКИЙ"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "damage": {
+                                                                    "description": "Телесные повреждения пешехода",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Получил телесные повреждения с показанием к лечению в медицинских организациях (кроме разовой медицинской помощи)"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "offense": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "main": {
+                                                                            "description": "Нарушение пешехода главное",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "Нет нарушений"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "gibdd.stat.registry"
+                                                                            ]
+                                                                        },
+                                                                        "addition": {
+                                                                            "description": "Нарушение пешехода сопутствующее",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "Нет нарушений"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "gibdd.stat.registry"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }

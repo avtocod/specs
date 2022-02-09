@@ -3072,7 +3072,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.vehicle.driver.offence.main",
+        "path": "accidents.statistics.items[].participants.vehicle.driver.offense.main",
         "description": "Статистика ДТП: Нарушение водителя главное",
         "types": [
             "string"
@@ -3082,7 +3082,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.vehicle.driver.offence.addition",
+        "path": "accidents.statistics.items[].participants.vehicle.driver.offense.addition",
         "description": "Статистика ДТП: Нарушение водителя сопутствующее",
         "types": [
             "string"
@@ -3122,7 +3122,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.vehicle.passengers.gender",
+        "path": "accidents.statistics.items[].participants.vehicle.passengers[].gender",
         "description": "Статистика ДТП: Пол пассажира ТС",
         "types": [
             "string"
@@ -3132,7 +3132,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.vehicle.passengers.damage",
+        "path": "accidents.statistics.items[].participants.vehicle.passengers[].damage",
         "description": "Статистика ДТП: Телесные повреждения пассажира",
         "types": [
             "string"
@@ -3142,7 +3142,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.vehicle.passengers.used_seat_belt",
+        "path": "accidents.statistics.items[].participants.vehicle.passengers[].used_seat_belt",
         "description": "Статистика ДТП: Использование ремня безопасности пассажиром",
         "types": [
             "boolean"
@@ -3152,7 +3152,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.pedestrians.gender",
+        "path": "accidents.statistics.items[].participants.pedestrians[].gender",
         "description": "Статистика ДТП: Пол пешехода",
         "types": [
             "string"
@@ -3162,7 +3162,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.pedestrians.offence.main",
+        "path": "accidents.statistics.items[].participants.pedestrians[].offense.main",
         "description": "Статистика ДТП: Нарушение пешехода главное",
         "types": [
             "string"
@@ -3172,7 +3172,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.pedestrians.offence.addition",
+        "path": "accidents.statistics.items[].participants.pedestrians[].offense.addition",
         "description": "Статистика ДТП: Нарушение пешехода сопутствующее",
         "types": [
             "string"
@@ -3182,7 +3182,7 @@
         ]
     },
     {
-        "path": "accidents.statistics.items[].participants.pedestrians.damage",
+        "path": "accidents.statistics.items[].participants.pedestrians[].damage",
         "description": "Статистика ДТП: Телесные повреждения пешехода",
         "types": [
             "string"

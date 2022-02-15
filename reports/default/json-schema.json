@@ -7746,12 +7746,22 @@
                                                                         },
                                                                         "addition": {
                                                                             "description": "Нарушение водителя сопутствующее",
-                                                                            "type": [
-                                                                                "string",
-                                                                                "null"
+                                                                            "oneOf": [
+                                                                                {
+                                                                                    "type": "null"
+                                                                                },
+                                                                                {
+                                                                                    "type": "array",
+                                                                                    "items": {
+                                                                                        "type": "string"
+                                                                                    }
+                                                                                }
                                                                             ],
                                                                             "examples": [
-                                                                                "Нарушение правил проезда пешеходного перехода"
+                                                                                null,
+                                                                                [
+                                                                                    "Нарушение правил проезда пешеходного перехода"
+                                                                                ]
                                                                             ],
                                                                             "fillable_by": [
                                                                                 "gibdd.stat.registry"
@@ -7906,12 +7916,22 @@
                                                                 },
                                                                 "addition": {
                                                                     "description": "Нарушение пешехода сопутствующее",
-                                                                    "type": [
-                                                                        "string",
-                                                                        "null"
+                                                                    "oneOf": [
+                                                                        {
+                                                                            "type": "null"
+                                                                        },
+                                                                        {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
                                                                     ],
                                                                     "examples": [
-                                                                        "Нет нарушений"
+                                                                        null,
+                                                                        [
+                                                                            "Переход в неположенном месте"
+                                                                        ]
                                                                     ],
                                                                     "fillable_by": [
                                                                         "gibdd.stat.registry"

@@ -2724,7 +2724,7 @@
         "path": "accidents.statistics.items[].participants.vehicles[].driver.offense.addition",
         "description": "Статистика ДТП: Нарушение водителя сопутствующее",
         "types": [
-            "string"
+            "array"
         ],
         "fillable_by": [
             "gibdd.stat.registry"
@@ -2814,7 +2814,7 @@
         "path": "accidents.statistics.items[].participants.pedestrians[].offense.addition",
         "description": "Статистика ДТП: Нарушение пешехода сопутствующее",
         "types": [
-            "string"
+            "array"
         ],
         "fillable_by": [
             "gibdd.stat.registry"

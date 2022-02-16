@@ -2722,7 +2722,7 @@
     },
     {
         "path": "accidents.statistics.items[].participants.vehicles[].driver.offense.addition",
-        "description": "Статистика ДТП: Нарушение водителя сопутствующее",
+        "description": "Статистика ДТП: Нарушения водителя сопутствующие",
         "types": [
             "array"
         ],
@@ -2812,7 +2812,7 @@
     },
     {
         "path": "accidents.statistics.items[].participants.pedestrians[].offense.addition",
-        "description": "Статистика ДТП: Нарушение пешехода сопутствующее",
+        "description": "Статистика ДТП: Нарушения пешехода сопутствующие",
         "types": [
             "array"
         ],

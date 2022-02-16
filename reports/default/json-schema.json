@@ -7745,20 +7745,12 @@
                                                                             ]
                                                                         },
                                                                         "addition": {
-                                                                            "description": "Нарушение водителя сопутствующее",
-                                                                            "oneOf": [
-                                                                                {
-                                                                                    "type": "null"
-                                                                                },
-                                                                                {
-                                                                                    "type": "array",
-                                                                                    "items": {
-                                                                                        "type": "string"
-                                                                                    }
-                                                                                }
-                                                                            ],
+                                                                            "description": "Нарушения водителя сопутствующие",
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "string"
+                                                                            },
                                                                             "examples": [
-                                                                                null,
                                                                                 [
                                                                                     "Нарушение правил проезда пешеходного перехода"
                                                                                 ]
@@ -7915,20 +7907,12 @@
                                                                     ]
                                                                 },
                                                                 "addition": {
-                                                                    "description": "Нарушение пешехода сопутствующее",
-                                                                    "oneOf": [
-                                                                        {
-                                                                            "type": "null"
-                                                                        },
-                                                                        {
-                                                                            "type": "array",
-                                                                            "items": {
-                                                                                "type": "string"
-                                                                            }
-                                                                        }
-                                                                    ],
+                                                                    "description": "Нарушения пешехода сопутствующие",
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "string"
+                                                                    },
                                                                     "examples": [
-                                                                        null,
                                                                         [
                                                                             "Переход в неположенном месте"
                                                                         ]

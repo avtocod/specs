@@ -4,6 +4,41 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `gibdd.stat.registry`
+- Field with path `accidents.statistics.date.update`
+- Field with path `accidents.statistics.items[].number`
+- Field with path `accidents.statistics.items[].date`
+- Field with path `accidents.statistics.items[].type`
+- Field with path `accidents.statistics.items[].car_in_accident`
+- Field with path `accidents.statistics.items[].causers[].identifier`
+- Field with path `accidents.statistics.items[].people_in_accident`
+- Field with path `accidents.statistics.items[].geo`
+- Field with path `accidents.statistics.items[].participants.vehicles[].vin`
+- Field with path `accidents.statistics.items[].participants.vehicles[].body`
+- Field with path `accidents.statistics.items[].participants.vehicles[].chassis`
+- Field with path `accidents.statistics.items[].participants.vehicles[].brand.name`
+- Field with path `accidents.statistics.items[].participants.vehicles[].model.name`
+- Field with path `accidents.statistics.items[].participants.vehicles[].year`
+- Field with path `accidents.statistics.items[].participants.vehicles[].category`
+- Field with path `accidents.statistics.items[].participants.vehicles[].color`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.gender`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.offense.main`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.offense.addition`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.drive_experience`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.damage`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.used_seat_belt`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].gender`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].damage`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].used_seat_belt`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].gender`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].offense.main`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].offense.addition`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].damage`
+
 ## v3.99.0
 
 ### Changed

@@ -7442,6 +7442,502 @@
             "additionalProperties": false,
             "description": "История ДТП",
             "properties": {
+                "statistics": {
+                    "description": "Статистика ДТП",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2021-12-31 11:30:20"
+                                    ],
+                                    "fillable_by": [
+                                        "gibdd.stat.registry"
+                                    ]
+                                }
+                            }
+                        },
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "number": {
+                                        "description": "Номер происшествия",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "000043057"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.stat.registry"
+                                        ]
+                                    },
+                                    "date": {
+                                        "description": "Дата происшествия",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2021-12-31 11:30:20"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.stat.registry"
+                                        ]
+                                    },
+                                    "type": {
+                                        "description": "Тип происшествия",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Столкновение",
+                                            "Наезд на стоящее ТС"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.stat.registry"
+                                        ]
+                                    },
+                                    "car_in_accident": {
+                                        "description": "Количество ТС, участвовавших в ДТП",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            2
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.stat.registry"
+                                        ]
+                                    },
+                                    "people_in_accident": {
+                                        "description": "Количество людей, участвовавших в ДТП",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            2
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.stat.registry"
+                                        ]
+                                    },
+                                    "causers": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "identifier": {
+                                                    "description": "Идентификатор виновника ДТП",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "EXAMPL0V1N1000000",
+                                                        "KCA275-9673180"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "gibdd.stat.registry"
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "geo": {
+                                        "description": "Статистика ДТП: Гео-данные места ДТП",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/geo_raw_data"
+                                            }
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.stat.registry"
+                                        ]
+                                    },
+                                    "participants": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "vehicles": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "vin": {
+                                                            "description": "Идентификатор ТС: VIN код",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "EXAMPL0V1N1000000"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "body": {
+                                                            "description": "Идентификатор ТС: Номер кузова",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "KCA275-9673180"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "chassis": {
+                                                            "description": "Идентификатор ТС: Номер шасси",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "LFPVBM6819793"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "brand": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "name": {
+                                                                    "description": "Марка ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "OPEL"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "model": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "name": {
+                                                                    "description": "Модель ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "MONTEREY"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "year": {
+                                                            "description": "Год выпуска ТС",
+                                                            "type": [
+                                                                "integer",
+                                                                "null"
+                                                            ],
+                                                            "minimum": 1800,
+                                                            "examples": [
+                                                                2004
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "category": {
+                                                            "description": "Код категории ТС",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "С-класс (малый средний, компактный) до 4,3 м"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "color": {
+                                                            "description": "Цвет ТС",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "Светло Зеленый"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "driver": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "gender": {
+                                                                    "description": "Пол водителя ТС",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "МУЖСКОЙ",
+                                                                        "ЖЕНСКИЙ"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "offense": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "main": {
+                                                                            "description": "Нарушение водителя главное",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "Нарушение правил проезда пешеходного перехода"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "gibdd.stat.registry"
+                                                                            ]
+                                                                        },
+                                                                        "addition": {
+                                                                            "description": "Нарушения водителя сопутствующие",
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "examples": [
+                                                                                [
+                                                                                    "Нарушение правил проезда пешеходного перехода"
+                                                                                ]
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "gibdd.stat.registry"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "drive_experience": {
+                                                                    "description": "Водительский стаж",
+                                                                    "type": [
+                                                                        "integer",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        15
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "damage": {
+                                                                    "description": "Телесные повреждения водителя",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Не пострадал"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "used_seat_belt": {
+                                                                    "description": "Использование ремня безопасности водителем",
+                                                                    "type": [
+                                                                        "boolean",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        "passengers": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "gender": {
+                                                                        "description": "Пол пассажира ТС",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "МУЖСКОЙ",
+                                                                            "ЖЕНСКИЙ"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "gibdd.stat.registry"
+                                                                        ]
+                                                                    },
+                                                                    "damage": {
+                                                                        "description": "Телесные повреждения пассажира",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Получил телесные повреждения с показанием к лечению в медицинских организациях (кроме разовой медицинской помощи)"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "gibdd.stat.registry"
+                                                                        ]
+                                                                    },
+                                                                    "used_seat_belt": {
+                                                                        "description": "Использование ремня безопасности пассажиром",
+                                                                        "type": [
+                                                                            "boolean",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            true,
+                                                                            false
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "gibdd.stat.registry"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "pedestrians": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "gender": {
+                                                            "description": "Пол пешехода",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "МУЖСКОЙ",
+                                                                "ЖЕНСКИЙ"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "damage": {
+                                                            "description": "Телесные повреждения пешехода",
+                                                            "type": [
+                                                                "string",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                "Получил телесные повреждения с показанием к лечению в медицинских организациях (кроме разовой медицинской помощи)"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "gibdd.stat.registry"
+                                                            ]
+                                                        },
+                                                        "offense": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "main": {
+                                                                    "description": "Нарушение пешехода главное",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "Нет нарушений"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                },
+                                                                "addition": {
+                                                                    "description": "Нарушения пешехода сопутствующие",
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "examples": [
+                                                                        [
+                                                                            "Переход в неположенном месте"
+                                                                        ]
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "gibdd.stat.registry"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                },
                 "history": {
                     "description": "История ДТП",
                     "type": "object",
@@ -9553,7 +10049,8 @@
                                     }
                                 }
                             }
-                        },"date": {
+                        },
+                        "date": {
                             "type": "object",
                             "properties": {
                                 "update": {

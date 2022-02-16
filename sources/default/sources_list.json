@@ -253,5 +253,10 @@
         "name": "osago.registry",
         "description": "Реестр полисов ОСАГО",
         "enabled": true
+    },
+    {
+        "name": "gibdd.stat.registry",
+        "description": "Реестр статистики по ДТП",
+        "enabled": true
     }
 ]

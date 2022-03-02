@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
+### Added
+
 - Source `vehicle.price`
 - Field with path `market_prices.appraisal.amount.max`
 - Field with path `market_prices.appraisal.amount.min`

@@ -6609,5 +6609,175 @@
         "fillable_by": [
             "arbitration.history"
         ]
+    },
+    {
+        "path": "driver_licenses.items[].actuality.date",
+        "description": "Водительские удостоверения: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].number",
+        "description": "Водительские удостоверения: Номер водительского удостоверения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].date.start",
+        "description": "Водительские удостоверения: Дата выдачи водительского удостоверения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].date.end",
+        "description": "Водительские удостоверения: Дата окончания действия водительского удостоверения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].categories",
+        "description": "Водительские удостоверения: Категории водительского удостоверения",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].operation.code",
+        "description": "Водительские удостоверения: Код операции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].operation.description",
+        "description": "Водительские удостоверения: Описание операции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].experience.year_start",
+        "description": "Водительские удостоверения: Год выдачи первого водительского удостоверения",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].deprivations[].date.start",
+        "description": "Водительские удостоверения: Дата лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].deprivations[].date.end",
+        "description": "Водительские удостоверения: Дата окончания лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].deprivations[].state.code",
+        "description": "Водительские удостоверения: Код статуса лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].deprivations[].state.description",
+        "description": "Водительские удостоверения: Статус лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].deprivations[].offense.place",
+        "description": "Водительские удостоверения: Место совершения нарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].deprivations[].offense.decision",
+        "description": "Водительские удостоверения: Решение о лишении права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.items[].deprivations[].registration_place",
+        "description": "Водительские удостоверения: Адрес регистрации владельца ВУ на момент лишения прав",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.date.update",
+        "description": "Водительские удостоверения: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "driver_licenses.has_deprivations",
+        "description": "Водительские удостоверения: Признак наличия действующих лишений",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
     }
 ]

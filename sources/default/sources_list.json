@@ -258,5 +258,10 @@
         "name": "gibdd.stat.registry",
         "description": "Реестр статистики по ДТП",
         "enabled": true
+    },
+    {
+        "name": "gibdd.driver.registry",
+        "description": "Реестр водительских удостоверений",
+        "enabled": true
     }
 ]

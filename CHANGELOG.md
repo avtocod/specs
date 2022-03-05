@@ -17,6 +17,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `market_prices.appraisal.reasons.ownerships.count`
 - Field with path `market_prices.appraisal.date.update`
 
+## v3.101.0
+
+### Changed
+
+- Source `references.transdekra` marked as disabled
+
 ## v3.100.0
 
 ### Added

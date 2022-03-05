@@ -9,6 +9,7 @@ const disabled_sources: {[k: string]: string[]} = {
     default: [
         "ramiosago.base.ext",
         "ramiosago.base",
+        "references.transdekra",
         "rsaosago.base.ext",
         "gibdd.diagnostic.cards"
     ]

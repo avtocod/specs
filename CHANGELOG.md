@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `gibdd.wanted.registry`
+- Field with path `stealings.items[].entry`
+- Field with path `stealings.items[].vehicle.vin`
+- Field with path `stealings.items[].vehicle.body`
+- Field with path `stealings.items[].vehicle.year`
+- Field with path `stealings.items[].actuality.date`
+- Field with path `stealings.items[].vehicle.brand.uid`
+- Field with path `stealings.items[].vehicle.model.uid`
+- Field with path `sstealings.items[].initiator.region`
+- Field with path `stealings.items[].vehicle.brand.name`
+
+### Changed
+
+- Field with path `stealings.is_wanted` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.date.update` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.items[].date.stealing` also fillable by `gibdd.wanted.registry`
+
 ## v3.102.0
 
 ### Added

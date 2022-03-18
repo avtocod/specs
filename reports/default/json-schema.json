@@ -12297,6 +12297,142 @@
                             }
                         }
                     }
+                },
+                "appraisal": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "amount": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "max": {
+                                    "description": "Максимальное значение стоимости ТС",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ],
+                                    "minimum": 0,
+                                    "examples": [
+                                        630000
+                                    ],
+                                    "fillable_by": [
+                                        "vehicle.price"
+                                    ]
+                                },
+                                "min": {
+                                    "description": "Минимальное значение стоимости ТС",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ],
+                                    "minimum": 0,
+                                    "examples": [
+                                        430000
+                                    ],
+                                    "fillable_by": [
+                                        "vehicle.price"
+                                    ]
+                                },
+                                "optimal": {
+                                    "description": "Оптимальное значение стоимости ТС",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ],
+                                    "minimum": 0,
+                                    "examples": [
+                                        530000
+                                    ],
+                                    "fillable_by": [
+                                        "vehicle.price"
+                                    ]
+                                }
+                            }
+                        },
+                        "reasons": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "used_in_taxi": {
+                                    "description": "Фактор влияющий на стоимость ТС - использовалось ли ТС в такси",
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        true,
+                                        false
+                                    ],
+                                    "fillable_by": [
+                                        "vehicle.price"
+                                    ]
+                                },
+                                "accidents": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "count": {
+                                            "description": "Фактор влияющий на стоимость ТС - количество ДТП",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ],
+                                            "minimum": 0,
+                                            "examples": [
+                                                3
+                                            ],
+                                            "fillable_by": [
+                                                "vehicle.price"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "ownerships": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "count": {
+                                            "description": "Фактор влияющий на стоимость ТС - количество периодов владения",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ],
+                                            "minimum": 0,
+                                            "examples": [
+                                                3
+                                            ],
+                                            "fillable_by": [
+                                                "vehicle.price"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2019-05-12 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "vehicle.price"
+                                    ]
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },

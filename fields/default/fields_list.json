@@ -6494,6 +6494,76 @@
         ]
     },
     {
+        "path": "market_prices.appraisal.amount.max",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Максимальное значение стоимости ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.amount.min",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Минимальное значение стоимости ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.amount.optimal",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Оптимальное значение стоимости ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.reasons.used_in_taxi",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Фактор влияющий на стоимость ТС - использовалось ли ТС в такси",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.reasons.accidents.count",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Фактор влияющий на стоимость ТС - количество ДТП",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.reasons.ownerships.count",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Фактор влияющий на стоимость ТС - количество периодов владения",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.date.update",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
         "path": "commercial_use.items[].service.name",
         "description": "Коммерческое использование ТС: Название сервиса",
         "types": [

@@ -1581,6 +1581,25 @@
             "date": {
                 "update": null
             }
+        },
+        "appraisal": {
+            "amount": {
+                "min": null,
+                "max": null,
+                "optimal": null
+            },
+            "reasons": {
+                "used_in_taxi": null,
+                "accidents": {
+                    "count": null
+                },
+                "ownerships": {
+                    "count": null
+                }
+            },
+            "date": {
+                "update": null
+            }
         }
     },
     "commercial_use": {

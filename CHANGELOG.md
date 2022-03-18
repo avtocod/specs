@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `driver_licenses.date.update`
 - Field with path `driver_licenses.has_deprivations`
 - Field with path `driver_licenses.items[].number`
+- Field with path `driver_licenses.items[].status`
 - Field with path `driver_licenses.items[].date.end`
 - Field with path `driver_licenses.items[].date.start`
 - Field with path `driver_licenses.items[].categories[]`

@@ -6701,6 +6701,16 @@
         ]
     },
     {
+        "path": "driver_licenses.items[].status",
+        "description": "Водительские удостоверения: Статус документа 'Т' - текущее (действительное), 'А' - архивное (не действительное)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
         "path": "driver_licenses.items[].date.start",
         "description": "Водительские удостоверения: Дата выдачи водительского удостоверения",
         "types": [

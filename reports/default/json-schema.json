@@ -12911,6 +12911,19 @@
                                     "gibdd.driver.registry"
                                 ]
                             },
+                            "status": {
+                                "description": "Статус документа 'Т' - текущее (действительное), 'А' - архивное (не действительное)",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "А"
+                                ],
+                                "fillable_by": [
+                                    "gibdd.driver.registry"
+                                ]
+                            },
                             "date": {
                                 "type": "object",
                                 "additionalProperties": false,

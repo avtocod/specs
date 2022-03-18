@@ -1429,6 +1429,25 @@
         "is_wanted": true,
         "items": [
             {
+                "actuality": {
+                    "date": "2015-07-13 00:00:00"
+                },
+                "entry": 1,
+                "vehicle": {
+                    "brand": {
+                        "name": "ГАЗ302ГАЗЕЛЬ",
+                        "uid": "ID_MARK_GAZ"
+                    },
+                    "model": {
+                        "uid": "ID_MARK_GAZ_MODEL_3302"
+                    },
+                    "vin": "EXAMPL0V1N1000000",
+                    "body": "KCA275-9673180",
+                    "year": 2013
+                },
+                "initiator": {
+                    "region": "город Москва"
+                },
                 "date": {
                     "stealing": "2014-02-06 00:00:00"
                 },

@@ -258,5 +258,10 @@
         "name": "gibdd.stat.registry",
         "description": "Реестр статистики по ДТП",
         "enabled": true
+    },
+    {
+        "name": "gibdd.wanted.registry",
+        "description": "Реестр истории розысков ТС",
+        "enabled": true
     }
 ]

@@ -1869,6 +1869,25 @@
             "date": {
                 "update": "2019-07-06 22:10:00"
             }
+        },
+        "appraisal": {
+            "amount": {
+                "min": 581938,
+                "max": 862961,
+                "optimal": 722450
+            },
+            "reasons": {
+                "used_in_taxi": false,
+                "accidents": {
+                    "count": 3
+                },
+                "ownerships": {
+                    "count": 4
+                }
+            },
+            "date": {
+                "update": "2019-05-12 22:10:00"
+            }
         }
     },
     "commercial_use": {

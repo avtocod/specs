@@ -258,5 +258,10 @@
         "name": "gibdd.stat.registry",
         "description": "Реестр статистики по ДТП",
         "enabled": true
+    },
+    {
+        "name": "vehicle.price",
+        "description": "Рыночная стоимость ТС c учётом дополнительных факторов",
+        "enabled": true
     }
 ]

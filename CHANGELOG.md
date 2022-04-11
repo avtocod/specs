@@ -10,6 +10,19 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Updated vehicles marks and models specs
 
+## v3.102.0
+
+### Added
+
+- Source `vehicle.price`
+- Field with path `market_prices.appraisal.amount.max`
+- Field with path `market_prices.appraisal.amount.min`
+- Field with path `market_prices.appraisal.amount.optimal`
+- Field with path `market_prices.appraisal.reasons.used_in_taxi`
+- Field with path `market_prices.appraisal.reasons.accidents.count`
+- Field with path `market_prices.appraisal.reasons.ownerships.count`
+- Field with path `market_prices.appraisal.date.update`
+
 ## v3.101.0
 
 ### Changed

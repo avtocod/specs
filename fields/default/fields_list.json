@@ -3198,6 +3198,7 @@
             "string"
         ],
         "fillable_by": [
+            "gibdd.wanted",
             "gibdd.wanted.registry"
         ]
     },
@@ -3208,6 +3209,7 @@
             "integer"
         ],
         "fillable_by": [
+            "gibdd.wanted",
             "gibdd.wanted.registry"
         ]
     },
@@ -3218,26 +3220,7 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.wanted.registry"
-        ]
-    },
-    {
-        "path": "stealings.items[].vehicle.brand.uid",
-        "description": "Проверка на розыск: uid нормализованного значения марки ТС",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "gibdd.wanted.registry"
-        ]
-    },
-    {
-        "path": "stealings.items[].vehicle.model.uid",
-        "description": "Проверка на розыск: uid нормализованного значения модели ТС",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
+            "gibdd.wanted",
             "gibdd.wanted.registry"
         ]
     },
@@ -3248,6 +3231,7 @@
             "string"
         ],
         "fillable_by": [
+            "gibdd.wanted",
             "gibdd.wanted.registry"
         ]
     },
@@ -3258,6 +3242,7 @@
             "string"
         ],
         "fillable_by": [
+            "gibdd.wanted",
             "gibdd.wanted.registry"
         ]
     },
@@ -3268,16 +3253,7 @@
             "integer"
         ],
         "fillable_by": [
-            "gibdd.wanted.registry"
-        ]
-    },
-    {
-        "path": "stealings.items[].initiator.region",
-        "description": "Проверка на розыск: Регион инициатора розыска",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
+            "gibdd.wanted",
             "gibdd.wanted.registry"
         ]
     },
@@ -3299,7 +3275,8 @@
             "object"
         ],
         "fillable_by": [
-            "gibdd.wanted"
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
         ]
     },
     {

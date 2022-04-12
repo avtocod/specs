@@ -9216,6 +9216,7 @@
                                             "2009-07-10 00:00:00"
                                         ],
                                         "fillable_by": [
+                                            "gibdd.wanted",
                                             "gibdd.wanted.registry"
                                         ]
                                     }
@@ -9232,6 +9233,7 @@
                                     null
                                 ],
                                 "fillable_by": [
+                                    "gibdd.wanted",
                                     "gibdd.wanted.registry"
                                 ]
                             },
@@ -9254,40 +9256,7 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.wanted.registry"
-                                                ]
-                                            },
-                                            "uid": {
-                                                "description": "uid нормализованного значения марки ТС",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "ID_MARK_GAZ",
-                                                    null
-                                                ],
-                                                "fillable_by": [
-                                                    "gibdd.wanted.registry"
-                                                ]
-                                            }
-                                        }
-                                    },
-                                    "model": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "uid": {
-                                                "description": "uid нормализованного значения модели ТС",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "ID_MARK_GAZ_MODEL_3302",
-                                                    null
-                                                ],
-                                                "fillable_by": [
+                                                    "gibdd.wanted",
                                                     "gibdd.wanted.registry"
                                                 ]
                                             }
@@ -9303,6 +9272,7 @@
                                             "EXAMPL0V1N1000000"
                                         ],
                                         "fillable_by": [
+                                            "gibdd.wanted",
                                             "gibdd.wanted.registry"
                                         ]
                                     },
@@ -9316,6 +9286,7 @@
                                             "KCA275-9673180"
                                         ],
                                         "fillable_by": [
+                                            "gibdd.wanted",
                                             "gibdd.wanted.registry"
                                         ]
                                     },
@@ -9330,26 +9301,7 @@
                                             2022
                                         ],
                                         "fillable_by": [
-                                            "gibdd.wanted.registry"
-                                        ]
-                                    }
-                                }
-                            },
-                            "initiator": {
-                                "type": "object",
-                                "additionalProperties": false,
-                                "properties": {
-                                    "region": {
-                                        "description": "Регион инициатора розыска",
-                                        "type": [
-                                            "string",
-                                            "null"
-                                        ],
-                                        "examples": [
-                                            "город Москва",
-                                            null
-                                        ],
-                                        "fillable_by": [
+                                            "gibdd.wanted",
                                             "gibdd.wanted.registry"
                                         ]
                                     }
@@ -9390,7 +9342,8 @@
                                     }
                                 ],
                                 "fillable_by": [
-                                    "gibdd.wanted"
+                                    "gibdd.wanted",
+                                    "gibdd.wanted.registry"
                                 ]
                             }
                         }

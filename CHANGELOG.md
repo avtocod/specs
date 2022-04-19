@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Field with path `identifiers.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+- Field with path `identifiers_masked.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+
 ## v3.103.0
 
 ### Changed

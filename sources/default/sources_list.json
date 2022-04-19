@@ -263,5 +263,10 @@
         "name": "vehicle.price",
         "description": "Рыночная стоимость ТС c учётом дополнительных факторов",
         "enabled": true
+    },
+    {
+        "name": "eaisto.registry",
+        "description": "Реестр данных о диагностических картах и пробегах ТС",
+        "enabled": true
     }
 ]

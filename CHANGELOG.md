@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.103.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.102.0
+
+### Added
+
+- Source `vehicle.price`
+- Field with path `market_prices.appraisal.amount.max`
+- Field with path `market_prices.appraisal.amount.min`
+- Field with path `market_prices.appraisal.amount.optimal`
+- Field with path `market_prices.appraisal.reasons.used_in_taxi`
+- Field with path `market_prices.appraisal.reasons.accidents.count`
+- Field with path `market_prices.appraisal.reasons.ownerships.count`
+- Field with path `market_prices.appraisal.date.update`
+
+## v3.101.0
+
+### Changed
+
+- Source `references.transdekra` marked as disabled
+
 ## v3.100.0
 
 ### Added

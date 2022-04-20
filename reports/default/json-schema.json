@@ -355,6 +355,7 @@
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         },
@@ -380,6 +381,7 @@
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         },
@@ -452,6 +454,7 @@
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         },
@@ -478,6 +481,7 @@
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         }
@@ -541,6 +545,7 @@
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         },
@@ -563,6 +568,7 @@
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         },
@@ -626,6 +632,7 @@
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         },
@@ -649,6 +656,7 @@
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
+                                "eaisto.registry",
                                 "base.registry.retry"
                             ]
                         }
@@ -722,6 +730,7 @@
                                         "regactions.registry",
                                         "gibdd.diagnostic.cards",
                                         "base.registry",
+                                        "eaisto.registry",
                                         "base.registry.retry"
                                     ]
                                 },
@@ -809,6 +818,7 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "gibdd.eaisto",
+                                        "eaisto.registry",
                                         "gibdd.diagnostic.cards"
                                     ]
                                 },
@@ -966,6 +976,7 @@
                         "gibdd.eaisto",
                         "gibdd.history",
                         "base.alt",
+                        "eaisto.registry",
                         "regactions.registry"
                     ]
                 },
@@ -1651,6 +1662,7 @@
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "regactions.registry",
+                                "eaisto.registry",
                                 "gibdd.diagnostic.cards"
                             ]
                         }
@@ -2051,6 +2063,62 @@
                                 "base",
                                 "base.ext"
                             ]
+                        },
+                        "techreglament_category": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "code": {
+                                    "description": "Код категории ТС по техническому регламенту",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "enum": [
+                                        "L",
+                                        "L1",
+                                        "L2",
+                                        "L3",
+                                        "L4",
+                                        "L5",
+                                        "L6",
+                                        "L7",
+                                        "M",
+                                        "M1",
+                                        "M2",
+                                        "M3",
+                                        "N",
+                                        "N1",
+                                        "N2",
+                                        "N3",
+                                        "O",
+                                        "O1",
+                                        "O2",
+                                        "O3",
+                                        "O4",
+                                        null
+                                    ],
+                                    "examples": [
+                                        "O4"
+                                    ],
+                                    "fillable_by": [
+                                        "eaisto.registry"
+                                    ]
+                                },
+                                "description":  {
+                                    "description": "Описание категории ТС по техническому регламенту",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "Мототранспортные средства"
+                                    ],
+                                    "fillable_by": [
+                                        "eaisto.registry"
+                                    ]
+                                }
+                            }
                         }
                     }
                 },
@@ -9564,7 +9632,8 @@
                                             "service.history.fitservice",
                                             "service.history.filter",
                                             "service.history.wilgood",
-                                            "gibdd.diagnostic.cards"
+                                            "gibdd.diagnostic.cards",
+                                            "eaisto.registry"
                                         ]
                                     }
                                 }
@@ -9589,7 +9658,8 @@
                                     "service.history.fitservice",
                                     "service.history.filter",
                                     "service.history.wilgood",
-                                    "gibdd.diagnostic.cards"
+                                    "gibdd.diagnostic.cards",
+                                    "eaisto.registry"
                                 ]
                             },
                             "filled_by": {
@@ -9612,6 +9682,7 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "gibdd.diagnostic.cards",
+                                            "eaisto.registry",
                                             null
                                         ],
                                         "examples": [
@@ -9648,7 +9719,8 @@
                                             "service.history.fitservice",
                                             "service.history.filter",
                                             "service.history.wilgood",
-                                            "gibdd.diagnostic.cards"
+                                            "gibdd.diagnostic.cards",
+                                            "eaisto.registry"
                                         ]
                                     }
                                 }
@@ -9693,7 +9765,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards"
+                                            "gibdd.diagnostic.cards",
+                                            "eaisto.registry"
                                         ]
                                     },
                                     "to": {
@@ -9711,7 +9784,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards"
+                                            "gibdd.diagnostic.cards",
+                                            "eaisto.registry"
                                         ]
                                     }
                                 }
@@ -9730,7 +9804,8 @@
                                             "34ER9"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.eaisto"
+                                            "gibdd.eaisto",
+                                            "eaisto.registry"
                                         ]
                                     },
                                     "number": {
@@ -9744,7 +9819,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards"
+                                            "gibdd.diagnostic.cards",
+                                            "eaisto.registry"
                                         ]
                                     },
                                     "type": {
@@ -9758,7 +9834,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards"
+                                            "gibdd.diagnostic.cards",
+                                            "eaisto.registry"
                                         ]
                                     }
                                 }
@@ -9778,7 +9855,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards"
+                                            "gibdd.diagnostic.cards",
+                                            "eaisto.registry"
                                         ]
                                     }
                                 }
@@ -9797,8 +9875,33 @@
                                     "А332АВ177"
                                 ],
                                 "fillable_by": [
-                                    "gibdd.eaisto"
+                                    "gibdd.eaisto",
+                                    "eaisto.registry"
                                 ]
+                            },
+                            "actuality": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата актуальности данных",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2020-02-11 05:24:00"
+                                        ],
+                                        "fillable_by": [
+                                            "eaisto.registry",
+                                            "gibdd.eaisto"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
@@ -9821,7 +9924,8 @@
                             ],
                             "fillable_by": [
                                 "gibdd.eaisto",
-                                "gibdd.diagnostic.cards"
+                                "gibdd.diagnostic.cards",
+                                "eaisto.registry"
                             ]
                         }
                     }

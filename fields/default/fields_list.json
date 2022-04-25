@@ -3190,43 +3190,113 @@
         ]
     },
     {
-        "path": "stealings.items[].date.stealing",
-        "description": "Проверка на угон: Дата угона",
+        "path": "stealings.items[].actuality.date",
+        "description": "Проверка на розыск: Дата актуальности",
         "types": [
             "string"
         ],
         "fillable_by": [
-            "gibdd.wanted"
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
+        ]
+    },
+    {
+        "path": "stealings.items[].entry",
+        "description": "Проверка на розыск: Порядковый номер записи ГИБДД",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
+        ]
+    },
+    {
+        "path": "stealings.items[].vehicle.brand.name",
+        "description": "Проверка на розыск: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
+        ]
+    },
+    {
+        "path": "stealings.items[].vehicle.vin",
+        "description": "Проверка на розыск: VIN код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
+        ]
+    },
+    {
+        "path": "stealings.items[].vehicle.body",
+        "description": "Проверка на розыск: Номер кузова",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
+        ]
+    },
+    {
+        "path": "stealings.items[].vehicle.year",
+        "description": "Проверка на розыск: Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
+        ]
+    },
+    {
+        "path": "stealings.items[].date.stealing",
+        "description": "Проверка на розыск: Дата начала розыска",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
         ]
     },
     {
         "path": "stealings.items[].geo",
-        "description": "Проверка на угон: Данные о месте угона",
+        "description": "Проверка на розыск: Данные о месте угона",
         "types": [
             "object"
         ],
         "fillable_by": [
-            "gibdd.wanted"
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
         ]
     },
     {
         "path": "stealings.is_wanted",
-        "description": "Проверка на угон: ТС находится в розыске?",
+        "description": "Проверка на розыск:  Признак нахождения ТС в розыске",
         "types": [
             "boolean"
         ],
         "fillable_by": [
-            "gibdd.wanted"
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
         ]
     },
     {
         "path": "stealings.date.update",
-        "description": "Проверка на угон: Дата обновления данных",
+        "description": "Проверка на розыск: Дата обновления данных",
         "types": [
             "string"
         ],
         "fillable_by": [
-            "gibdd.wanted"
+            "gibdd.wanted",
+            "gibdd.wanted.registry"
         ]
     },
     {

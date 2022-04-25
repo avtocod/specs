@@ -9188,7 +9188,7 @@
         "stealings": {
             "type": "object",
             "additionalProperties": false,
-            "description": "Проверка на угон",
+            "description": "Проверка на розыск",
             "properties": {
                 "items": {
                     "type": "array",
@@ -9196,12 +9196,121 @@
                         "type": "object",
                         "additionalProperties": false,
                         "properties": {
+                            "actuality": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата актуальности",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2009-07-10 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.wanted",
+                                            "gibdd.wanted.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "entry": {
+                                "description": "Порядковый номер записи ГИБДД",
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ],
+                                "examples": [
+                                    1,
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "gibdd.wanted",
+                                    "gibdd.wanted.registry"
+                                ]
+                            },
+                            "vehicle": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "brand": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Марка ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ГАЗ302ГАЗЕЛЬ",
+                                                    null
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.wanted",
+                                                    "gibdd.wanted.registry"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "vin": {
+                                        "description": "VIN код",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "EXAMPL0V1N1000000"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.wanted",
+                                            "gibdd.wanted.registry"
+                                        ]
+                                    },
+                                    "body": {
+                                        "description": "Номер кузова",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "KCA275-9673180"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.wanted",
+                                            "gibdd.wanted.registry"
+                                        ]
+                                    },
+                                    "year": {
+                                        "description": "Год выпуска ТС",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "minimum": 1800,
+                                        "examples": [
+                                            2022
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.wanted",
+                                            "gibdd.wanted.registry"
+                                        ]
+                                    }
+                                }
+                            },
                             "date": {
                                 "type": "object",
                                 "additionalProperties": false,
                                 "properties": {
                                     "stealing": {
-                                        "description": "Дата угона",
+                                        "description": "Дата начала розыска",
                                         "oneOf": [
                                             {
                                                 "type": "null"
@@ -9214,7 +9323,8 @@
                                             "2014-02-06 00:00:00"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.wanted"
+                                            "gibdd.wanted",
+                                            "gibdd.wanted.registry"
                                         ]
                                     }
                                 }
@@ -9230,7 +9340,8 @@
                                     }
                                 ],
                                 "fillable_by": [
-                                    "gibdd.wanted"
+                                    "gibdd.wanted",
+                                    "gibdd.wanted.registry"
                                 ]
                             }
                         }
@@ -9242,7 +9353,7 @@
                     "minimum": 0
                 },
                 "is_wanted": {
-                    "description": "ТС находится в розыске?",
+                    "description": "Признак нахождения ТС в розыске",
                     "type": [
                         "boolean",
                         "null"
@@ -9252,7 +9363,8 @@
                         null
                     ],
                     "fillable_by": [
-                        "gibdd.wanted"
+                        "gibdd.wanted",
+                        "gibdd.wanted.registry"
                     ]
                 },
                 "date": {
@@ -9272,7 +9384,8 @@
                                 "2020-12-11 11:10:00"
                             ],
                             "fillable_by": [
-                                "gibdd.wanted"
+                                "gibdd.wanted",
+                                "gibdd.wanted.registry"
                             ]
                         }
                     }

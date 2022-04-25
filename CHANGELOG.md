@@ -23,6 +23,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `stealings.items[].geo.region` also fillable by `gibdd.wanted.registry`
 - Field with path `stealings.items[].date.stealing` also fillable by `gibdd.wanted.registry`
 
+## v3.104.0
+
+### Changed
+
+- Field with path `identifiers.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+- Field with path `identifiers_masked.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+
 ## v3.103.0
 
 ### Changed

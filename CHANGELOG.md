@@ -39,6 +39,32 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].date.event` also fillable by `eaisto.registry`
 - Field with path `mileages.items[].actuality.date` also fillable by `eaisto.registry`
 
+## v3.105.0
+
+### Added
+
+- Source `gibdd.wanted.registry`
+- Field with path `stealings.items[].entry`
+- Field with path `stealings.items[].vehicle.vin`
+- Field with path `stealings.items[].vehicle.body`
+- Field with path `stealings.items[].vehicle.year`
+- Field with path `stealings.items[].actuality.date`
+- Field with path `stealings.items[].vehicle.brand.name`
+
+### Changed
+
+- Field with path `stealings.is_wanted` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.date.update` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.items[].geo.region` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.items[].date.stealing` also fillable by `gibdd.wanted.registry`
+
+## v3.104.0
+
+### Changed
+
+- Field with path `identifiers.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+- Field with path `identifiers_masked.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+
 ## v3.103.0
 
 ### Changed

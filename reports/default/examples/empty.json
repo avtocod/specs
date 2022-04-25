@@ -893,6 +893,78 @@
         }
     },
     "accidents": {
+        "statistics": {
+            "date": {
+                "update": null
+            },
+            "items": [
+                {
+                    "number": null,
+                    "type": null,
+                    "car_in_accident": null,
+                    "people_in_accident": null,
+                    "causers": [
+                        {
+                            "identifier": null
+                        }
+                    ],
+                    "geo": {
+                        "country": null,
+                        "region": null,
+                        "city": null,
+                        "street": null,
+                        "house": null
+                    },
+                    "participants": {
+                        "vehicles": [
+                            {
+                                "vin": null,
+                                "body": null,
+                                "chassis": null,
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                },
+                                "year": null,
+                                "category": null,
+                                "color": null,
+                                "driver": {
+                                    "gender": null,
+                                    "drive_experience": null,
+                                    "damage": null,
+                                    "used_seat_belt": null,
+                                    "offense": {
+                                        "main": null,
+                                        "addition": []
+                                    }
+                                },
+                                "passengers": [
+                                    {
+                                        "gender": null,
+                                        "damage": null,
+                                        "used_seat_belt": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "pedestrians": [
+                            {
+                                "gender": null,
+                                "damage": null,
+                                "offense": {
+                                    "main": null,
+                                    "addition": []
+                                }
+                            }
+                        ]
+                    },
+                    "date": null
+                }
+            ],
+            "count": 1
+        },
         "history": {
             "date": {
                 "update": null
@@ -1487,6 +1559,25 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            }
+        },
+        "appraisal": {
+            "amount": {
+                "min": null,
+                "max": null,
+                "optimal": null
+            },
+            "reasons": {
+                "used_in_taxi": null,
+                "accidents": {
+                    "count": null
+                },
+                "ownerships": {
+                    "count": null
+                }
+            },
             "date": {
                 "update": null
             }

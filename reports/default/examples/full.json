@@ -1141,6 +1141,82 @@
         }
     },
     "accidents": {
+        "statistics": {
+            "date": {
+                "update": "2021-11-01 00:00:00"
+            },
+            "items": [
+                {
+                    "number": "010000713",
+                    "type": "Наезд на пешехода",
+                    "car_in_accident": 1,
+                    "people_in_accident": 2,
+                    "causers": [
+                        {
+                            "identifier": "Z94C251BBLR111455"
+                        }
+                    ],
+                    "geo": {
+                        "country": null,
+                        "region": null,
+                        "city": "г Барнаул",
+                        "street": "ул Попова",
+                        "house": null
+                    },
+                    "participants": {
+                        "vehicles": [
+                            {
+                                "vin": "Z94C251BBLR111455",
+                                "body": null,
+                                "chassis": null,
+                                "brand": {
+                                    "name": "Kia"
+                                },
+                                "model": {
+                                    "name": "Rio"
+                                },
+                                "year": 2020,
+                                "category": "C-KLASS (MALY'I SREDNII, KOMEAKTNY'I) DO 4,3 M",
+                                "color": "Белый",
+                                "driver": {
+                                    "gender": "ЖЕНСКИЙ",
+                                    "drive_experience": 4,
+                                    "damage": "Не пострадал",
+                                    "used_seat_belt": false,
+                                    "offense": {
+                                        "main": "Нарушение правил проезда пешеходного перехода",
+                                        "addition": [
+                                            "Нарушение правил перевозки людей"
+                                        ]
+                                    }
+                                },
+                                "passengers": [
+                                    {
+                                        "gender": "ЖЕНСКИЙ",
+                                        "damage": "Получил травмы с оказанием разовой медицинской помощи, к категории раненый не относится",
+                                        "used_seat_belt": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "pedestrians": [
+                            {
+                                "gender": "ЖЕНСКИЙ",
+                                "damage": "Получил телесные повреждения с показанием к лечению в медицинских организациях (кроме разовой медицинской помощи)",
+                                "offense": {
+                                    "main": "Переход в неположенном месте",
+                                    "addition": [
+                                        "Управление ТС в состоянии алкогольного опьянения"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "date": "2021-01-15 15:50:00"
+                }
+            ],
+            "count": 1
+        },
         "history": {
             "date": {
                 "update": "2019-05-16 22:10:00"
@@ -1792,6 +1868,25 @@
             ],
             "date": {
                 "update": "2019-07-06 22:10:00"
+            }
+        },
+        "appraisal": {
+            "amount": {
+                "min": 581938,
+                "max": 862961,
+                "optimal": 722450
+            },
+            "reasons": {
+                "used_in_taxi": false,
+                "accidents": {
+                    "count": 3
+                },
+                "ownerships": {
+                    "count": 4
+                }
+            },
+            "date": {
+                "update": "2019-05-12 22:10:00"
             }
         }
     },

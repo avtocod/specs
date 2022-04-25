@@ -27,7 +27,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.eaisto",
             "base.alt",
             "base.registry",
             "base.registry.retry"
@@ -132,7 +131,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.eaisto",
             "base.alt",
             "base.registry",
             "base.registry.retry"
@@ -1831,7 +1829,8 @@
         "fillable_by": [
             "rsaosago.base",
             "ramiosago.base",
-            "ramiosago.base.ext"
+            "ramiosago.base.ext",
+            "osago.registry"
         ]
     },
     {
@@ -2390,7 +2389,8 @@
             "ramiosago.base.ext",
             "rsaosago.base",
             "rsaosago.base.ext",
-            "rsaosago.base.history"
+            "rsaosago.base.history",
+            "osago.registry"
         ]
     },
     {
@@ -2551,6 +2551,296 @@
             "integer"
         ],
         "fillable_by": [
+        ]
+    },
+    {
+        "path": "accidents.statistics.date.update",
+        "description": "Статистика ДТП: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].number",
+        "description": "Статистика ДТП: Номер происшествия",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].date",
+        "description": "Статистика ДТП: Дата происшествия",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].type",
+        "description": "Статистика ДТП: Тип происшествия [Столкновение, Наезд на стоящее ТС, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].car_in_accident",
+        "description": "Статистика ДТП: Количество ТС, участвовавших в ДТП",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].causers[].identifier",
+        "description": "Статистика ДТП: Идентификатор виновника ДТП",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].people_in_accident",
+        "description": "Статистика ДТП: Количество людей, участвовавших в ДТП",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].geo",
+        "description": "Статистика ДТП: Гео-данные места ДТП",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].vin",
+        "description": "Статистика ДТП: Идентификатор ТС: VIN код",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].body",
+        "description": "Статистика ДТП: Идентификатор ТС: Номер кузова",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].chassis",
+        "description": "Статистика ДТП: Идентификатор ТС: Номер шасси",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].brand.name",
+        "description": "Статистика ДТП: Марка ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].model.name",
+        "description": "Статистика ДТП: Модель ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].year",
+        "description": "Статистика ДТП: Год выпуска ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].category",
+        "description": "Статистика ДТП: Код категории ТС [A, B, B1, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].color",
+        "description": "Статистика ДТП: Цвет ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].driver.gender",
+        "description": "Статистика ДТП: Пол водителя ТС [МУЖСКОЙ, ЖЕНСКИЙ]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].driver.offense.main",
+        "description": "Статистика ДТП: Нарушение водителя главное",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].driver.offense.addition",
+        "description": "Статистика ДТП: Нарушения водителя сопутствующие",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].driver.drive_experience",
+        "description": "Статистика ДТП: Водительский стаж",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].driver.damage",
+        "description": "Статистика ДТП: Телесные повреждения водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].driver.used_seat_belt",
+        "description": "Статистика ДТП: Использование ремня безопасности водителем",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].passengers[].gender",
+        "description": "Статистика ДТП: Пол пассажира ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].passengers[].damage",
+        "description": "Статистика ДТП: Телесные повреждения пассажира",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.vehicles[].passengers[].used_seat_belt",
+        "description": "Статистика ДТП: Использование ремня безопасности пассажиром",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.pedestrians[].gender",
+        "description": "Статистика ДТП: Пол пешехода",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.pedestrians[].offense.main",
+        "description": "Статистика ДТП: Нарушение пешехода главное",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.pedestrians[].offense.addition",
+        "description": "Статистика ДТП: Нарушения пешехода сопутствующие",
+        "types": [
+            "array"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
+        ]
+    },
+    {
+        "path": "accidents.statistics.items[].participants.pedestrians[].damage",
+        "description": "Статистика ДТП: Телесные повреждения пешехода",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.stat.registry"
         ]
     },
     {
@@ -6124,6 +6414,76 @@
         "fillable_by": [
             "ads.price",
             "ads.price.base"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.amount.max",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Максимальное значение стоимости ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.amount.min",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Минимальное значение стоимости ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.amount.optimal",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Оптимальное значение стоимости ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.reasons.used_in_taxi",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Фактор влияющий на стоимость ТС - использовалось ли ТС в такси",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.reasons.accidents.count",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Фактор влияющий на стоимость ТС - количество ДТП",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.reasons.ownerships.count",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Фактор влияющий на стоимость ТС - количество периодов владения",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.appraisal.date.update",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "vehicle.price"
         ]
     },
     {

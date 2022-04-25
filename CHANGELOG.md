@@ -32,6 +32,80 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].actuality.date` also fillable by `eaisto.base`
 - Field with path `mileages.items[].filled_by.source` also fillable by `eaisto.base`
 
+## v3.104.0
+
+### Changed
+
+- Field with path `identifiers.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+- Field with path `identifiers_masked.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+
+## v3.103.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.102.0
+
+### Added
+
+- Source `vehicle.price`
+- Field with path `market_prices.appraisal.amount.max`
+- Field with path `market_prices.appraisal.amount.min`
+- Field with path `market_prices.appraisal.amount.optimal`
+- Field with path `market_prices.appraisal.reasons.used_in_taxi`
+- Field with path `market_prices.appraisal.reasons.accidents.count`
+- Field with path `market_prices.appraisal.reasons.ownerships.count`
+- Field with path `market_prices.appraisal.date.update`
+
+## v3.101.0
+
+### Changed
+
+- Source `references.transdekra` marked as disabled
+
+## v3.100.0
+
+### Added
+
+- Source `gibdd.stat.registry`
+- Field with path `accidents.statistics.date.update`
+- Field with path `accidents.statistics.items[].number`
+- Field with path `accidents.statistics.items[].date`
+- Field with path `accidents.statistics.items[].type`
+- Field with path `accidents.statistics.items[].car_in_accident`
+- Field with path `accidents.statistics.items[].causers[].identifier`
+- Field with path `accidents.statistics.items[].people_in_accident`
+- Field with path `accidents.statistics.items[].geo`
+- Field with path `accidents.statistics.items[].participants.vehicles[].vin`
+- Field with path `accidents.statistics.items[].participants.vehicles[].body`
+- Field with path `accidents.statistics.items[].participants.vehicles[].chassis`
+- Field with path `accidents.statistics.items[].participants.vehicles[].brand.name`
+- Field with path `accidents.statistics.items[].participants.vehicles[].model.name`
+- Field with path `accidents.statistics.items[].participants.vehicles[].year`
+- Field with path `accidents.statistics.items[].participants.vehicles[].category`
+- Field with path `accidents.statistics.items[].participants.vehicles[].color`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.gender`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.offense.main`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.offense.addition`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.drive_experience`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.damage`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.used_seat_belt`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].gender`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].damage`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].used_seat_belt`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].gender`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].offense.main`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].offense.addition`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].damage`
+
+## v3.99.0
+
+### Changed
+
+- Field with path `insurance.osago.items[].owner.tin` also fillable by `osago.registry`
+- Field with path `insurance.osago.items[].number` also fillable by `osago.registry`
+
 ## v3.98.0
 
 ### Changed

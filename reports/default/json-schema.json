@@ -8873,6 +8873,19 @@
                                                 "fillable_by": [
                                                     "gibdd.restrict"
                                                 ]
+                                            },
+                                            "executive_procedure": {
+                                                "description": "Номер исполнительного производства",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "90129308/0060-ИП"
+                                                ],
+                                                "fillable_by": [
+                                                    "gibdd.restrict"
+                                                ]
                                             }
                                         }
                                     },

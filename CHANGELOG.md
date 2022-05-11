@@ -39,6 +39,30 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].date.event` also fillable by `eaisto.registry`
 - Field with path `mileages.items[].actuality.date` also fillable by `eaisto.registry`
 
+## v3.106.0
+
+### Added
+
+- Source `gibdd.driver.registry`
+- Field with path `driver_licenses.date.update`
+- Field with path `driver_licenses.has_deprivations`
+- Field with path `driver_licenses.items[].number`
+- Field with path `driver_licenses.items[].status`
+- Field with path `driver_licenses.items[].date.end`
+- Field with path `driver_licenses.items[].date.start`
+- Field with path `driver_licenses.items[].categories[]`
+- Field with path `driver_licenses.items[].actuality.date`
+- Field with path `driver_licenses.items[].operation.code`
+- Field with path `driver_licenses.items[].operation.description`
+- Field with path `driver_licenses.items[].experience.year_start`
+- Field with path `driver_licenses.items[].deprivations[].date.end`
+- Field with path `driver_licenses.items[].deprivations[].date.start`
+- Field with path `driver_licenses.items[].deprivations[].state.code`
+- Field with path `driver_licenses.items[].deprivations[].offense.place`
+- Field with path `driver_licenses.items[].deprivations[].offense.decision`
+- Field with path `driver_licenses.items[].deprivations[].state.description`
+- Field with path `driver_licenses.items[].deprivations[].registration_place`
+
 ## v3.105.0
 
 ### Added

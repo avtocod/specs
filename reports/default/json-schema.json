@@ -13078,6 +13078,345 @@
                     }
                 }
             }
+        },
+        "driver_licenses": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Водительские удостоверения",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "actuality": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "date": {
+                                        "description": "Дата актуальности данных",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2020-02-11 05:24:00"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.driver.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "number": {
+                                "description": "Номер водительского удостоверения",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "9921430911"
+                                ],
+                                "fillable_by": [
+                                    "gibdd.driver.registry"
+                                ]
+                            },
+                            "status": {
+                                "description": "Статус документа 'Т' - текущее (действительное), 'А' - архивное (не действительное)",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "А"
+                                ],
+                                "fillable_by": [
+                                    "gibdd.driver.registry"
+                                ]
+                            },
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "start": {
+                                        "description": "Дата выдачи водительского удостоверения",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/date"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2012-12-12"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.driver.registry"
+                                        ]
+                                    },
+                                    "end": {
+                                        "description": "Дата окончания действия водительского удостоверения",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/date"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2031-03-16"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.driver.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "categories": {
+                                "type": "array",
+                                "description": "Категории водительского удостоверения",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "examples": [
+                                    [
+                                        "B",
+                                        "B1",
+                                        "M"
+                                    ]
+                                ],
+                                "fillable_by": [
+                                    "gibdd.driver.registry"
+                                ]
+                            },
+                            "experience": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "year_start": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "description": "Год выдачи первого водительского удостоверения",
+                                        "examples": [
+                                            2012
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.driver.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "operation": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "code": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "description": "Код операции",
+                                        "examples": [
+                                            "38"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.driver.registry"
+                                        ]
+                                    },
+                                    "description": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "description": "Описание операции",
+                                        "examples": [
+                                            "Замена ВУ в связи со сменой фамилии"
+                                        ],
+                                        "fillable_by": [
+                                            "gibdd.driver.registry"
+                                        ]
+                                    }
+                                }
+                            },
+                            "deprivations": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "date": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "start": {
+                                                    "description": "Дата лишения права управления ТС",
+                                                    "oneOf": [
+                                                        {
+                                                            "type": "null"
+                                                        },
+                                                        {
+                                                            "$ref": "#/definitions/date"
+                                                        }
+                                                    ],
+                                                    "examples": [
+                                                        "2017-07-26"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "gibdd.driver.registry"
+                                                    ]
+                                                },
+                                                "end": {
+                                                    "description": "Дата окончания лишения права управления ТС",
+                                                    "oneOf": [
+                                                        {
+                                                            "type": "null"
+                                                        },
+                                                        {
+                                                            "$ref": "#/definitions/date"
+                                                        }
+                                                    ],
+                                                    "examples": [
+                                                        "2018-12-16"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "gibdd.driver.registry"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "state": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "code": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "description": "Код статуса лишения права управления ТС",
+                                                    "examples": [
+                                                        "79"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "gibdd.driver.registry"
+                                                    ]
+                                                },
+                                                "description": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "description": "Статус лишения права управления ТС",
+                                                    "examples": [
+                                                        "Окончено исчисление срока лишения права управления (возвращено ВУ)"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "gibdd.driver.registry"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "offense": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "place": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "description": "Место совершения нарушения",
+                                                    "examples": [
+                                                        "1140 Г. САНКТ - ПЕТЕРБУРГ"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "gibdd.driver.registry"
+                                                    ]
+                                                },
+                                                "decision": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "description": "Решение о лишении права управления ТС",
+                                                    "examples": [
+                                                        "ЛИШЕНИЕ ПРАВА УПРАВЛЕНИЯ ТС+ШТРАФ"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "gibdd.driver.registry"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "registration_place": {
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "description": "Адрес регистрации владельца ВУ на момент лишения прав",
+                                            "examples": [
+                                                "МОСКВА Г."
+                                            ],
+                                            "fillable_by": [
+                                                "gibdd.driver.registry"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "has_deprivations": {
+                    "description": "Признак наличия действующих лишений",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "examples": [
+                        true
+                    ],
+                    "fillable_by": [
+                        "gibdd.driver.registry"
+                    ]
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-11-14 12:10:00"
+                            ],
+                            "fillable_by": [
+                                "gibdd.driver.registry"
+                            ]
+                        }
+                    }
+                }
+            }
         }
     }
 }

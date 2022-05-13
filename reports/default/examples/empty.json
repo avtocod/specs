@@ -185,7 +185,11 @@
                     "description": null
                 }
             },
-            "exported": null
+            "exported": null,
+            "techreglament_category": {
+                "code": null,
+                "description": null
+            }
         },
         "catalog": {
             "transdekra": {
@@ -1240,7 +1244,10 @@
                 "inspection": {
                     "place": null
                 },
-                "reg_num": null
+                "reg_num": null,
+                "actuality": {
+                    "date": null
+                }
             }
         ],
         "date": {
@@ -1659,5 +1666,50 @@
         "date": {
             "update": null
         }
+    },
+    "driver_licenses": {
+        "items": [
+            {
+                "actuality": {
+                    "date": null
+                },
+                "number": null,
+                "status": null,
+                "date": {
+                    "start": null,
+                    "end": null
+                },
+                "categories": [],
+                "experience": {
+                    "year_start": null
+                },
+                "operation": {
+                    "description": null,
+                    "code": null
+                },
+                "deprivations": [
+                    {
+                        "date": {
+                            "start": null,
+                            "end": null
+                        },
+                        "state": {
+                            "code": null,
+                            "description": null
+                        },
+                        "offense": {
+                            "place": null,
+                            "decision": null
+                        },
+                        "registration_place": null
+                    }
+                ]
+            }
+        ],
+        "has_deprivations": null,
+        "date": {
+            "update": null
+        },
+        "count": 1
     }
 }

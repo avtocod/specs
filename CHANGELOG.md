@@ -10,6 +10,65 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `restrictions.registration_actions.items[].restrict.executive_procedure`
 
+## v3.107.0
+
+### Added
+
+- Source `eaisto.registry`
+- Field with path `diagnostic_cards.items[].actuality.date`
+- Field with path `additional_info.vehicle.techreglament_category.code`
+- Field with path `additional_info.vehicle.techreglament_category.description`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `eaisto.registry`
+- Field with path `identifiers.vehicle.body` also fillable by `eaisto.registry`
+- Field with path `identifiers.vehicle.chassis` also fillable by `eaisto.registry`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `eaisto.registry`
+- Field with path `tech_data.year` also fillable by `eaisto.registry`
+- Field with path `tech_data.date.update` also fillable by `eaisto.registry`
+- Field with path `tech_data.brand.name.original` also fillable by `eaisto.registry`
+- Field with path `tech_data.model.name.original` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.date.update` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].reg_num` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].doc.serial` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].inspection.place` also fillable by `eaisto.registry`
+- Field with path `mileages.items[].mileage` also fillable by `eaisto.registry`
+- Field with path `mileages.items[].date.event` also fillable by `eaisto.registry`
+- Field with path `mileages.items[].actuality.date` also fillable by `eaisto.registry`
+
+## v3.106.0
+
+### Added
+
+- Source `gibdd.driver.registry`
+- Field with path `driver_licenses.date.update`
+- Field with path `driver_licenses.has_deprivations`
+- Field with path `driver_licenses.items[].number`
+- Field with path `driver_licenses.items[].status`
+- Field with path `driver_licenses.items[].date.end`
+- Field with path `driver_licenses.items[].date.start`
+- Field with path `driver_licenses.items[].categories[]`
+- Field with path `driver_licenses.items[].actuality.date`
+- Field with path `driver_licenses.items[].operation.code`
+- Field with path `driver_licenses.items[].operation.description`
+- Field with path `driver_licenses.items[].experience.year_start`
+- Field with path `driver_licenses.items[].deprivations[].date.end`
+- Field with path `driver_licenses.items[].deprivations[].date.start`
+- Field with path `driver_licenses.items[].deprivations[].state.code`
+- Field with path `driver_licenses.items[].deprivations[].offense.place`
+- Field with path `driver_licenses.items[].deprivations[].offense.decision`
+- Field with path `driver_licenses.items[].deprivations[].state.description`
+- Field with path `driver_licenses.items[].deprivations[].registration_place`
+
 ## v3.105.0
 
 ### Added

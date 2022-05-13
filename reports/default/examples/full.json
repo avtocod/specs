@@ -189,7 +189,11 @@
                     "description": "Спортивно-утилитарный автомобиль"
                 }
             },
-            "exported": true
+            "exported": true,
+            "techreglament_category": {
+                "code": "L",
+                "description": "Мототранспортные средства"
+            }
         },
         "catalog": {
             "transdekra": {
@@ -1519,7 +1523,10 @@
                 "inspection": {
                     "place": "ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
                 },
-                "reg_num": "А332АВ177"
+                "reg_num": "А332АВ177",
+                "actuality": {
+                    "date": "2009-10-09 00:00:00"
+                }
             }
         ],
         "date": {
@@ -1966,5 +1973,54 @@
         "date": {
             "update": "2019-11-14 12:10:00"
         }
+    },
+    "driver_licenses": {
+        "items": [
+            {
+                "actuality": {
+                    "date": "2016-03-16 00:00:00"
+                },
+                "number": "9921430111",
+                "status": "А",
+                "date": {
+                    "start": "2016-03-16",
+                    "end": "2031-03-16"
+                },
+                "categories": [
+                    "B",
+                    "B1",
+                    "M"
+                ],
+                "experience": {
+                    "year_start": 2012
+                },
+                "operation": {
+                    "description": "Замена ВУ в связи со сменой фамилии",
+                    "code": "38"
+                },
+                "deprivations": [
+                    {
+                        "date": {
+                            "start": "2017-07-26",
+                            "end": "2018-12-16"
+                        },
+                        "state": {
+                            "code": "79",
+                            "description": "Окончено исчисление срока лишения права управления (возвращено ВУ)"
+                        },
+                        "offense": {
+                            "place": "1140 Г. САНКТ - ПЕТЕРБУРГ",
+                            "decision": "ЛИШЕНИЕ ПРАВА УПРАВЛЕНИЯ ТС+ШТРАФ"
+                        },
+                        "registration_place": "МОСКВА Г."
+                    }
+                ]
+            }
+        ],
+        "has_deprivations": true,
+        "date": {
+            "update": "2019-11-14 12:10:00"
+        },
+        "count": 1
     }
 }

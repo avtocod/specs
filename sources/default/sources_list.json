@@ -273,5 +273,10 @@
         "name": "gibdd.driver.registry",
         "description": "Реестр водительских удостоверений",
         "enabled": true
+    },
+    {
+        "name": "eaisto.registry",
+        "description": "Реестр данных о диагностических картах и пробегах ТС",
+        "enabled": true
     }
 ]

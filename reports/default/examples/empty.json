@@ -185,7 +185,11 @@
                     "description": null
                 }
             },
-            "exported": null
+            "exported": null,
+            "techreglament_category": {
+                "code": null,
+                "description": null
+            }
         },
         "catalog": {
             "transdekra": {
@@ -1239,7 +1243,10 @@
                 "inspection": {
                     "place": null
                 },
-                "reg_num": null
+                "reg_num": null,
+                "actuality": {
+                    "date": null
+                }
             }
         ],
         "date": {

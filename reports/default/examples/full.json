@@ -189,7 +189,11 @@
                     "description": "Спортивно-утилитарный автомобиль"
                 }
             },
-            "exported": true
+            "exported": true,
+            "techreglament_category": {
+                "code": "L",
+                "description": "Мототранспортные средства"
+            }
         },
         "catalog": {
             "transdekra": {
@@ -1518,7 +1522,10 @@
                 "inspection": {
                     "place": "ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
                 },
-                "reg_num": "А332АВ177"
+                "reg_num": "А332АВ177",
+                "actuality": {
+                    "date": "2009-10-09 00:00:00"
+                }
             }
         ],
         "date": {

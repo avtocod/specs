@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `restrictions.registration_actions.items[].restrict.executive_procedure`
 
+## v3.108.0
+
+### Changed
+
+- Field with path `mileages.items[].mileage` also fillable by `repairs.history`
+- Field with path `mileages.items[].date.event` also fillable by `repairs.history`
+- Field with path `mileages.items[].actuality.date` also fillable by `repairs.history`
+
 ## v3.107.0
 
 ### Added

@@ -4814,7 +4814,7 @@
         ]
     },
     {
-        "path": "fines.items[].fssp.ienforcement_proceeding.number",
+        "path": "fines.items[].fssp.enforcement_proceeding.number",
         "description": "Штрафы: Номер исполнительного производства ФССП",
         "types": [
             "string"
@@ -4824,7 +4824,7 @@
         ]
     },
     {
-        "path": "fines.items[].fssp.ienforcement_proceeding.contact",
+        "path": "fines.items[].fssp.enforcement_proceeding.contact",
         "description": "Штрафы: Контакты судебного пристава",
         "types": [
             "string"

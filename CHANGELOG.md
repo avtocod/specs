@@ -13,8 +13,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `fines.items[].payer.name`
 - Field with path `fines.items[].payer.identifier.type`
 - Field with path `fines.items[].payer.identifier.number`
-- Field with path `fines.items[].fssp.ienforcement_proceeding.number`
-- Field with path `fines.items[].fssp.ienforcement_proceeding.contact`
+- Field with path `fines.items[].fssp.enforcement_proceeding.number`
+- Field with path `fines.items[].fssp.enforcement_proceeding.contact`
 
 ### Changed
 

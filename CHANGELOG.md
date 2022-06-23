@@ -4,6 +4,33 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+### Added
+
+- Source `eaisto.base`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `eaisto.base`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `eaisto.base`
+- Field with path `identifiers.vehicle.body` also fillable by `eaisto.base`
+- Field with path `identifiers.vehicle.chassis` also fillable by `eaisto.base`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `eaisto.base`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `eaisto.base`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `eaisto.base`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `eaisto.base`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `eaisto.base`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `eaisto.base`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `eaisto.base`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `eaisto.base`
+- Field with path `diagnostic_cards.items[].reg_num` also fillable by `eaisto.base`
+- Field with path `diagnostic_cards.items[].actuality.date` also fillable by `eaisto.base`
+- Field with path `diagnostic_cards.date.update` also fillable by `eaisto.base`
+- Field with path `mileages.items[].date.event` also fillable by `eaisto.base`
+- Field with path `mileages.items[].mileage` also fillable by `eaisto.base`
+- Field with path `mileages.items[].actuality.date` also fillable by `eaisto.base`
+- Extend enum with `eaisto.base` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+
+
 ## v3.108.0
 
 ### Changed

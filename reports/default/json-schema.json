@@ -356,7 +356,8 @@
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         },
                         "reg_num": {
@@ -381,7 +382,8 @@
                                 "base.alt",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         },
                         "sts": {
@@ -454,7 +456,8 @@
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         },
                         "chassis": {
@@ -481,7 +484,8 @@
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         }
                     }
@@ -545,7 +549,8 @@
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         },
                         "reg_num": {
@@ -567,7 +572,8 @@
                                 "base.alt",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         },
                         "sts": {
@@ -631,7 +637,8 @@
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         },
                         "chassis": {
@@ -655,7 +662,8 @@
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "eaisto.base"
                             ]
                         }
                     }
@@ -9745,7 +9753,8 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "gibdd.diagnostic.cards",
-                                            "eaisto.registry"
+                                            "eaisto.registry",
+                                            "eaisto.base"
                                         ]
                                     }
                                 }
@@ -9772,7 +9781,8 @@
                                     "service.history.filter",
                                     "service.history.wilgood",
                                     "gibdd.diagnostic.cards",
-                                    "eaisto.registry"
+                                    "eaisto.registry",
+                                    "eaisto.base"
                                 ]
                             },
                             "filled_by": {
@@ -9797,6 +9807,7 @@
                                             "service.history.wilgood",
                                             "gibdd.diagnostic.cards",
                                             "eaisto.registry",
+                                            "eaisto.base",
                                             null
                                         ],
                                         "examples": [
@@ -9835,7 +9846,8 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "gibdd.diagnostic.cards",
-                                            "eaisto.registry"
+                                            "eaisto.registry",
+                                            "eaisto.base"
                                         ]
                                     }
                                 }
@@ -9881,7 +9893,8 @@
                                         "fillable_by": [
                                             "gibdd.eaisto",
                                             "gibdd.diagnostic.cards",
-                                            "eaisto.registry"
+                                            "eaisto.registry",
+                                            "eaisto.base"
                                         ]
                                     },
                                     "to": {
@@ -9900,7 +9913,8 @@
                                         "fillable_by": [
                                             "gibdd.eaisto",
                                             "gibdd.diagnostic.cards",
-                                            "eaisto.registry"
+                                            "eaisto.registry",
+                                            "eaisto.base"
                                         ]
                                     }
                                 }
@@ -9935,7 +9949,8 @@
                                         "fillable_by": [
                                             "gibdd.eaisto",
                                             "gibdd.diagnostic.cards",
-                                            "eaisto.registry"
+                                            "eaisto.registry",
+                                            "eaisto.base"
                                         ]
                                     },
                                     "type": {
@@ -9950,7 +9965,8 @@
                                         "fillable_by": [
                                             "gibdd.eaisto",
                                             "gibdd.diagnostic.cards",
-                                            "eaisto.registry"
+                                            "eaisto.registry",
+                                            "eaisto.base"
                                         ]
                                     }
                                 }
@@ -9991,7 +10007,8 @@
                                 ],
                                 "fillable_by": [
                                     "gibdd.eaisto",
-                                    "eaisto.registry"
+                                    "eaisto.registry",
+                                    "eaisto.base"
                                 ]
                             },
                             "actuality": {
@@ -10013,7 +10030,8 @@
                                         ],
                                         "fillable_by": [
                                             "eaisto.registry",
-                                            "gibdd.eaisto"
+                                            "gibdd.eaisto",
+                                            "eaisto.base"
                                         ]
                                     }
                                 }
@@ -10040,7 +10058,8 @@
                             "fillable_by": [
                                 "gibdd.eaisto",
                                 "gibdd.diagnostic.cards",
-                                "eaisto.registry"
+                                "eaisto.registry",
+                                "eaisto.base"
                             ]
                         }
                     }

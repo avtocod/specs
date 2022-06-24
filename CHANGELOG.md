@@ -32,7 +32,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].actuality.date` also fillable by `eaisto.base`
 - Extend enum with `eaisto.base` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
 
-
 ## v3.110.0
 
 ### Changed

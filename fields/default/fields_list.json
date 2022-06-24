@@ -3525,6 +3525,16 @@
         ]
     },
     {
+        "path": "restrictions.registration_actions.items[].restrict.executive_procedure",
+        "description": "Ограничения на рег. действия: Номер исполнительного производства",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.restrict"
+        ]
+    },
+    {
         "path": "restrictions.registration_actions.items[].actuality.date",
         "description": "Ограничения на рег. действия: Дата актуальности данных",
         "types": [

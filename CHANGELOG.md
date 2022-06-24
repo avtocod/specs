@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
 ### Added
 
 - Source `eaisto.base`
@@ -30,6 +32,18 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].actuality.date` also fillable by `eaisto.base`
 - Extend enum with `eaisto.base` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
 
+
+## v3.110.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.109.0
+
+### Added
+
+- Field with path `restrictions.registration_actions.items[].restrict.executive_procedure`
 
 ## v3.108.0
 

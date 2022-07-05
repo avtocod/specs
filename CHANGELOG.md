@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
-## Added
+### Added
 
 - Source `insurance.dtp.basalt`
 

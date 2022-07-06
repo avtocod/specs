@@ -278,5 +278,10 @@
         "name": "eaisto.registry",
         "description": "Реестр данных о диагностических картах и пробегах ТС",
         "enabled": true
+    },
+    {
+        "name": "insurance.dtp.basalt",
+        "description": "Информация о ДТП (европротоколы)",
+        "enabled": true
     }
 ]

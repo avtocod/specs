@@ -44,6 +44,38 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `fines.items[].fssp.is_proceed` also fillable by `fines.registry`
 - Field with path `fines.date.update` also fillable by `fines.registry`
 
+## v3.112.0
+
+### Changed
+
+- Description for a field with path `accidents.insurance.date.update` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].date.event` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].insurer.name` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.series` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.number` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].actuality.date` in `./fields/default/fields_list.json`
+
+## v3.111.0
+
+### Added
+
+- Source `insurance.dtp.basalt`
+
+### Changed
+
+- Field with path `accidents.insurance.date.update` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].date.event` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].insurer.name` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.series` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.number` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].actuality.date` also fillable by `insurance.dtp.basalt`
+
+## v3.110.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
 ## v3.109.0
 
 ### Added

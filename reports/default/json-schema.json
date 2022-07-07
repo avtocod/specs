@@ -8700,7 +8700,7 @@
                     }
                 },
                 "insurance": {
-                    "description": "История повреждений из страховых компаний",
+                    "description": "История страховых случаев",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
@@ -8721,7 +8721,8 @@
                                         "2019-05-16 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "insurance.dtp"
+                                        "insurance.dtp",
+                                        "insurance.dtp.basalt"
                                     ]
                                 }
                             }
@@ -8750,7 +8751,8 @@
                                                     "2010-02-10 18:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp"
+                                                    "insurance.dtp",
+                                                    "insurance.dtp.basalt"
                                                 ]
                                             }
                                         }
@@ -8769,7 +8771,8 @@
                                                     "АСКО-Страхование"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp"
+                                                    "insurance.dtp",
+                                                    "insurance.dtp.basalt"
                                                 ]
                                             }
                                         }
@@ -8788,7 +8791,8 @@
                                                     "XXX"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp"
+                                                    "insurance.dtp",
+                                                    "insurance.dtp.basalt"
                                                 ]
                                             },
                                             "number": {
@@ -8801,7 +8805,8 @@
                                                     "0023231246"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp"
+                                                    "insurance.dtp",
+                                                    "insurance.dtp.basalt"
                                                 ]
                                             }
                                         }
@@ -8824,7 +8829,8 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp"
+                                                    "insurance.dtp",
+                                                    "insurance.dtp.basalt"
                                                 ]
                                             }
                                         }

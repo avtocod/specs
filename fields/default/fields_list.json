@@ -3172,7 +3172,7 @@
     },
     {
         "path": "accidents.insurance.date.update",
-        "description": "История повреждений из страховых компаний: Дата обновления данных",
+        "description": "История страховых случаев: Дата обновления данных",
         "types": [
             "string"
         ],
@@ -3183,7 +3183,7 @@
     },
     {
         "path": "accidents.insurance.items[].date.event",
-        "description": "История повреждений из страховых компаний: Дата происшествия",
+        "description": "История страховых случаев: Дата происшествия",
         "types": [
             "string"
         ],
@@ -3194,7 +3194,7 @@
     },
     {
         "path": "accidents.insurance.items[].insurer.name",
-        "description": "История повреждений из страховых компаний: Наименование страховой компании",
+        "description": "История страховых случаев: Наименование страховой компании",
         "types": [
             "string"
         ],
@@ -3205,7 +3205,7 @@
     },
     {
         "path": "accidents.insurance.items[].policy.series",
-        "description": "История повреждений из страховых компаний: Серия страхового полиса",
+        "description": "История страховых случаев: Серия страхового полиса",
         "types": [
             "string"
         ],
@@ -3216,7 +3216,7 @@
     },
     {
         "path": "accidents.insurance.items[].policy.number",
-        "description": "История повреждений из страховых компаний: Номер страхового полиса",
+        "description": "История страховых случаев: Номер страхового полиса",
         "types": [
             "string"
         ],
@@ -3227,7 +3227,7 @@
     },
     {
         "path": "accidents.insurance.items[].actuality.date",
-        "description": "История повреждений из страховых компаний: Дата актуальности данных",
+        "description": "История страховых случаев: Дата актуальности данных",
         "types": [
             "string"
         ],

@@ -8572,7 +8572,7 @@
                     }
                 },
                 "insurance": {
-                    "description": "История повреждений из страховых компаний",
+                    "description": "История страховых случаев",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {

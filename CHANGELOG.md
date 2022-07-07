@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Description for a field with path `accidents.insurance.date.update` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].date.event` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].insurer.name` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.series` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.number` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].actuality.date` in `./fields/default/fields_list.json`
+
 ## v3.111.0
 
 ### Added

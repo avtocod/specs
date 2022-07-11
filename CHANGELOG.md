@@ -32,6 +32,21 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].actuality.date` also fillable by `eaisto.base`
 - Extend enum with `eaisto.base` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
 
+## v3.111.0
+
+### Added
+
+- Source `insurance.dtp.basalt`
+
+### Changed
+
+- Field with path `accidents.insurance.date.update` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].date.event` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].insurer.name` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.series` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.number` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].actuality.date` also fillable by `insurance.dtp.basalt`
+
 ## v3.110.0
 
 ### Changed

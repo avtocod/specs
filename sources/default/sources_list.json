@@ -283,5 +283,10 @@
         "name": "insurance.dtp.basalt",
         "description": "Информация о ДТП (европротоколы)",
         "enabled": true
+    },
+    {
+        "name": "fines.registry",
+        "description": "Реестр штрафов",
+        "enabled": true
     }
 ]

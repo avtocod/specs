@@ -543,7 +543,8 @@
                 "uin": null,
                 "description": null,
                 "vendor": {
-                    "name": null
+                    "name": null,
+                    "type": null
                 },
                 "amount": {
                     "value": null,
@@ -581,7 +582,18 @@
                 },
                 "fssp": {
                     "date": null,
-                    "is_proceed": null
+                    "is_proceed": null,
+                    "enforcement_proceeding": {
+                        "number": null,
+                        "contact": null
+                    }
+                },
+                "payer": {
+                    "name": null,
+                    "identifier": {
+                        "type": null,
+                        "number": null
+                    }
                 },
                 "photos": [
                     {

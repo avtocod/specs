@@ -4435,7 +4435,8 @@
                                             "gibdd.fines",
                                             "fines.alt",
                                             "fines.madiampp",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     },
                                     "accident": {
@@ -4476,7 +4477,8 @@
                                             "gibdd.fines",
                                             "fines.alt",
                                             "fines.madiampp",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     },
                                     "description": {
@@ -4493,7 +4495,8 @@
                                             "gibdd.fines",
                                             "fines.alt",
                                             "fines.madiampp",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     }
                                 }
@@ -4510,7 +4513,8 @@
                                 "fillable_by": [
                                     "fines.base",
                                     "gibdd.fines",
-                                    "fines.base.ext"
+                                    "fines.base.ext",
+                                    "fines.registry"
                                 ]
                             },
                             "description": {
@@ -4527,7 +4531,8 @@
                                     "gibdd.fines",
                                     "fines.alt",
                                     "fines.madiampp",
-                                    "fines.base.ext"
+                                    "fines.base.ext",
+                                    "fines.registry"
                                 ]
                             },
                             "vendor": {
@@ -4547,7 +4552,28 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
+                                        ]
+                                    },
+                                    "type": {
+                                        "description": "Тип организации наложившей штраф [GIBDD, NALOG, IP_FSSP, OTHER_GISGMP]",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "GIBDD"
+                                        ],
+                                        "enum": [
+                                            null,
+                                            "GIBDD",
+                                            "NALOG",
+                                            "IP_FSSP",
+                                            "OTHER_GISGMP"
+                                        ],
+                                        "fillable_by": [
+                                            "fines.registry"
                                         ]
                                     }
                                 }
@@ -4586,7 +4612,8 @@
                                             "gibdd.fines",
                                             "fines.alt",
                                             "fines.madiampp",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     }
                                 }
@@ -4610,7 +4637,8 @@
                                             "gibdd.fines",
                                             "fines.alt",
                                             "fines.madiampp",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     },
                                     "date": {
@@ -4635,7 +4663,8 @@
                                                     "gibdd.fines",
                                                     "fines.alt",
                                                     "fines.madiampp",
-                                                    "fines.base.ext"
+                                                    "fines.base.ext",
+                                                    "fines.registry"
                                                 ]
                                             }
                                         }
@@ -4654,7 +4683,8 @@
                                 "fillable_by": [
                                     "fines.base",
                                     "gibdd.fines",
-                                    "fines.base.ext"
+                                    "fines.base.ext",
+                                    "fines.registry"
                                 ]
                             },
                             "is_paid": {
@@ -4671,7 +4701,8 @@
                                     "gibdd.fines",
                                     "fines.alt",
                                     "fines.madiampp",
-                                    "fines.base.ext"
+                                    "fines.base.ext",
+                                    "fines.registry"
                                 ]
                             },
                             "wire": {
@@ -4694,7 +4725,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "fines.alt",
-                                                    "fines.base.ext"
+                                                    "fines.base.ext",
+                                                    "fines.registry"
                                                 ]
                                             },
                                             "tin": {
@@ -4709,7 +4741,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "fines.alt",
-                                                    "fines.base.ext"
+                                                    "fines.base.ext",
+                                                    "fines.registry"
                                                 ]
                                             },
                                             "kpp": {
@@ -4728,7 +4761,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "fines.alt",
-                                                    "fines.base.ext"
+                                                    "fines.base.ext",
+                                                    "fines.registry"
                                                 ]
                                             }
                                         }
@@ -4753,7 +4787,8 @@
                                                         "fillable_by": [
                                                             "fines.base",
                                                             "fines.alt",
-                                                            "fines.base.ext"
+                                                            "fines.base.ext",
+                                                            "fines.registry"
                                                         ]
                                                     }
                                                 }
@@ -4770,7 +4805,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "fines.alt",
-                                                    "fines.base.ext"
+                                                    "fines.base.ext",
+                                                    "fines.registry"
                                                 ]
                                             },
                                             "bik": {
@@ -4785,7 +4821,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "fines.alt",
-                                                    "fines.base.ext"
+                                                    "fines.base.ext",
+                                                    "fines.registry"
                                                 ]
                                             }
                                         }
@@ -4806,7 +4843,8 @@
                                                 "fillable_by": [
                                                     "fines.base",
                                                     "fines.alt",
-                                                    "fines.base.ext"
+                                                    "fines.base.ext",
+                                                    "fines.registry"
                                                 ]
                                             }
                                         }
@@ -4824,7 +4862,8 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     },
                                     "okato": {
@@ -4839,7 +4878,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "fines.alt",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     }
                                 }
@@ -4860,7 +4900,8 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "fines.madiampp",
-                                            "fines.base.ext"
+                                            "fines.base.ext",
+                                            "fines.registry"
                                         ]
                                     }
                                 }
@@ -4883,7 +4924,8 @@
                                             "2018-05-23 00:00:00"
                                         ],
                                         "fillable_by": [
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.registry"
                                         ]
                                     },
                                     "is_proceed": {
@@ -4896,8 +4938,92 @@
                                             false
                                         ],
                                         "fillable_by": [
-                                            "gibdd.fines"
+                                            "gibdd.fines",
+                                            "fines.registry"
                                         ]
+                                    },
+                                    "enforcement_proceeding": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "number": {
+                                                "description": "Номер исполнительного производства ФССП",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "30696/21/63004-ИП от 13.10.2021"
+                                                ],
+                                                "fillable_by": [
+                                                    "fines.registry"
+                                                ]
+                                            },
+                                            "contact": {
+                                                "description": "Контакты судебного пристава",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "БИЦАДЗЕ О. А., тел: +7(84673)2-12-65//ОСП Большеглушицкого района (код отдела: 63004)"
+                                                ],
+                                                "fillable_by": [
+                                                    "fines.registry"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "payer": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "Наименование плательщика",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Иванов Иван Иванович"
+                                        ],
+                                        "fillable_by": [
+                                            "fines.registry"
+                                        ]
+                                    },
+                                    "identifier": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип документа плательщика, на который оформлен штраф",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "STS"
+                                                ],
+                                                "fillable_by": [
+                                                    "fines.registry"
+                                                ]
+                                            },
+                                            "number": {
+                                                "description": "Номер документа плательщика, на который оформлен штраф",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "1111111111"
+                                                ],
+                                                "fillable_by": [
+                                                    "fines.registry"
+                                                ]
+                                            }
+                                        }
                                     }
                                 }
                             },
@@ -4962,7 +5088,8 @@
                         "gibdd.fines",
                         "fines.alt",
                         "fines.madiampp",
-                        "fines.base.ext"
+                        "fines.base.ext",
+                        "fines.registry"
                     ]
                 },
                 "date": {
@@ -4986,7 +5113,8 @@
                                 "gibdd.fines",
                                 "fines.alt",
                                 "fines.madiampp",
-                                "fines.base.ext"
+                                "fines.base.ext",
+                                "fines.registry"
                             ]
                         }
                     }
@@ -8580,7 +8708,7 @@
                     }
                 },
                 "insurance": {
-                    "description": "История повреждений из страховых компаний",
+                    "description": "История страховых случаев",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {

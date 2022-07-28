@@ -3187,7 +3187,7 @@
     },
     {
         "path": "accidents.insurance.date.update",
-        "description": "История повреждений из страховых компаний: Дата обновления данных",
+        "description": "История страховых случаев: Дата обновления данных",
         "types": [
             "string"
         ],
@@ -3198,7 +3198,7 @@
     },
     {
         "path": "accidents.insurance.items[].date.event",
-        "description": "История повреждений из страховых компаний: Дата происшествия",
+        "description": "История страховых случаев: Дата происшествия",
         "types": [
             "string"
         ],
@@ -3209,7 +3209,7 @@
     },
     {
         "path": "accidents.insurance.items[].insurer.name",
-        "description": "История повреждений из страховых компаний: Наименование страховой компании",
+        "description": "История страховых случаев: Наименование страховой компании",
         "types": [
             "string"
         ],
@@ -3220,7 +3220,7 @@
     },
     {
         "path": "accidents.insurance.items[].policy.series",
-        "description": "История повреждений из страховых компаний: Серия страхового полиса",
+        "description": "История страховых случаев: Серия страхового полиса",
         "types": [
             "string"
         ],
@@ -3231,7 +3231,7 @@
     },
     {
         "path": "accidents.insurance.items[].policy.number",
-        "description": "История повреждений из страховых компаний: Номер страхового полиса",
+        "description": "История страховых случаев: Номер страхового полиса",
         "types": [
             "string"
         ],
@@ -3242,7 +3242,7 @@
     },
     {
         "path": "accidents.insurance.items[].actuality.date",
-        "description": "История повреждений из страховых компаний: Дата актуальности данных",
+        "description": "История страховых случаев: Дата актуальности данных",
         "types": [
             "string"
         ],
@@ -4483,7 +4483,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4508,7 +4509,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4522,7 +4524,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4534,7 +4537,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4548,7 +4552,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4561,7 +4566,18 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
+        ]
+    },
+    {
+        "path": "fines.items[].vendor.type",
+        "description": "Штрафы: Тип организации наложившей штраф [GIBDD, NALOG, IP_FSSP, OTHER_GISGMP]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.registry"
         ]
     },
     {
@@ -4588,7 +4604,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4602,7 +4619,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4616,7 +4634,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4628,7 +4647,8 @@
         "fillable_by": [
             "fines.base",
             "gibdd.fines",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4642,7 +4662,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4654,7 +4675,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4666,7 +4688,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4678,7 +4701,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4690,7 +4714,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4702,7 +4727,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4714,7 +4740,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4726,7 +4753,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4739,7 +4767,8 @@
             "fines.base",
             "gibdd.fines",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4751,7 +4780,8 @@
         "fillable_by": [
             "fines.base",
             "fines.alt",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4765,7 +4795,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4777,7 +4808,8 @@
         "fillable_by": [
             "fines.base",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {
@@ -4787,7 +4819,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.registry"
         ]
     },
     {
@@ -4797,7 +4830,28 @@
             "boolean"
         ],
         "fillable_by": [
-            "gibdd.fines"
+            "gibdd.fines",
+            "fines.registry"
+        ]
+    },
+    {
+        "path": "fines.items[].fssp.enforcement_proceeding.number",
+        "description": "Штрафы: Номер исполнительного производства ФССП",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.registry"
+        ]
+    },
+    {
+        "path": "fines.items[].fssp.enforcement_proceeding.contact",
+        "description": "Штрафы: Контакты судебного пристава",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.registry"
         ]
     },
     {
@@ -4823,6 +4877,36 @@
         ]
     },
     {
+        "path": "fines.items[].payer.name",
+        "description": "Штрафы: Наименование плательщика",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.registry"
+        ]
+    },
+    {
+        "path": "fines.items[].payer.identifier.type",
+        "description": "Штрафы: Тип документа плательщика, на который оформлен штраф",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.registry"
+        ]
+    },
+    {
+        "path": "fines.items[].payer.identifier.number",
+        "description": "Штрафы: Номер документа плательщика, на который оформлен штраф",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.registry"
+        ]
+    },
+    {
         "path": "fines.date.update",
         "description": "Штрафы: Дата обновления данных",
         "types": [
@@ -4833,7 +4917,8 @@
             "gibdd.fines",
             "fines.alt",
             "fines.madiampp",
-            "fines.base.ext"
+            "fines.base.ext",
+            "fines.registry"
         ]
     },
     {

@@ -7,6 +7,19 @@
             "pts": "36КС619977",
             "body": "KCA275-9673180",
             "chassis": "LFPVBM6819793"
+        },
+        "manufacture": {
+            "vin": "EXAMPL0V1N1000002"
+        }
+    },
+    "identifiers_masked": {
+        "vehicle": {
+            "vin": "EXAM************0",
+            "reg_num": "А******77",
+            "sts": "310*****07",
+            "pts": "36К*****77",
+            "body": "KCA**********0",
+            "chassis": "LF**********3"
         }
     },
     "tech_data": {
@@ -32,7 +45,9 @@
             }
         },
         "type": {
-            "name": "Седан"
+            "name": "Седан",
+            "type_id": "ID_BODY_TYPE_SEDAN",
+            "code": "22"
         },
         "body": {
             "number": "KCA275-9673180",
@@ -47,7 +62,8 @@
         },
         "engine": {
             "fuel": {
-                "type": "Дизельный"
+                "type": "Дизельный",
+                "type_id": "ID_ENGINE_TYPE_DIESEL"
             },
             "number": "A 30038",
             "model": {
@@ -69,16 +85,21 @@
             "max": 3440
         },
         "transmission": {
-            "type": "AUTOMATIC"
+            "type": "AUTOMATIC",
+            "type_id": "ID_TRANSMISSION_TYPE_AUTOMATIC"
         },
         "drive": {
-            "type": "Полноприводной"
+            "type": "Полноприводной",
+            "type_id": "ID_DRIVING_WHEELS_TYPE_ALL"
         },
         "wheel": {
-            "position": "LEFT"
+            "position": "LEFT",
+            "position_id": "ID_STEERING_WHEEL_TYPE_LEFT",
+            "position_code": "1"
         },
         "generations": [
             {
+                "id": "3",
                 "name": "A рестайлинг",
                 "is_restyling": true,
                 "years": {
@@ -87,9 +108,11 @@
                 },
                 "bodies": [
                     {
+                        "id": "6",
                         "type": "Седан",
                         "modifications": [
                             {
+                                "id": "4",
                                 "name": "3.5 AT",
                                 "engine": {
                                     "fuel": {
@@ -111,7 +134,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "date": {
+            "update": "2020-01-16 22:10:00"
+        }
     },
     "additional_info": {
         "vehicle": {
@@ -122,6 +148,9 @@
             "owner": {
                 "type": "LEGAL",
                 "phone_number": "91234567890",
+                "enforcement_proceedings": {
+                    "has_proceedings": true
+                },
                 "geo": {
                     "country": null,
                     "region": "Пензенская",
@@ -159,6 +188,11 @@
                     "code": "SUV",
                     "description": "Спортивно-утилитарный автомобиль"
                 }
+            },
+            "exported": true,
+            "techreglament_category": {
+                "code": "L",
+                "description": "Мототранспортные средства"
             }
         },
         "catalog": {
@@ -307,6 +341,7 @@
                     },
                     "phone_number": "91234567890"
                 },
+                "code": "11",
                 "type": "Учет нарушений ПДД",
                 "geo": {
                     "country": "Россия",
@@ -325,6 +360,9 @@
                 }
             }
         ],
+        "date": {
+            "update": "2020-01-17 19:11:00"
+        },
         "count": 1,
         "has_annulment": false
     },
@@ -534,6 +572,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2021-01-11 12:54:00"
+            },
             "count": 3
         }
     },
@@ -620,7 +661,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "date": {
+            "update": "2020-12-16 22:11:00"
+        }
     },
     "carfax": {
         "check": {
@@ -717,9 +761,11 @@
                     "code": "12.9 Ч.2",
                     "description": "Превышение установленной скорости движения транспортного средства на величину более 20, но не более 40 километров в час"
                 },
+                "uin": "18810161753886424481",
                 "description": "УИН 18810161753886424481 от 2018-05-23 на 4200.00 руб.",
                 "vendor": {
-                    "name": "ОДД ГИБДД ГУ МВД России, Новгородская область"
+                    "name": "ОДД ГИБДД ГУ МВД России, Новгородская область",
+                    "type": "GIBDD"
                 },
                 "amount": {
                     "value": 4200.0,
@@ -731,6 +777,7 @@
                         "end": "2018-06-23 00:00:00"
                     }
                 },
+                "need_payment": false,
                 "is_paid": true,
                 "wire": {
                     "user": {
@@ -754,6 +801,21 @@
                 "location": {
                     "raw": "МОСКВА Г. ПАРКОВКА №4034 (50) ПРОФСОЮЗНАЯ УЛИЦА, ДОМ 12"
                 },
+                "fssp": {
+                    "date": "2018-05-23 00:00:00",
+                    "is_proceed": true,
+                    "enforcement_proceeding": {
+                        "number": "30696/21/63004-ИП от 13.10.2021",
+                        "contact": "БИЦАДЗЕ О. А., тел: +7(84673)2-12-65//ОСП Большеглушицкого района (код отдела: 63004)"
+                    }
+                },
+                "payer": {
+                    "name": "Иванов Иван Иванович",
+                    "identifier": {
+                        "type": "STS",
+                        "number": "1111111111"
+                    }
+                },
                 "photos": [
                     {
                         "type": "GRZ_PLATE",
@@ -767,6 +829,9 @@
             }
         ],
         "has_fines": true,
+        "date": {
+            "update": "2020-05-16 22:10:00"
+        },
         "count": 1
     },
     "leasings": {
@@ -787,6 +852,9 @@
             }
         ],
         "used_in_leasing": true,
+        "date": {
+            "update": "2020-10-16 22:10:00"
+        },
         "count": 1
     },
     "customs": {
@@ -834,6 +902,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2020-02-11 22:10:00"
+            },
             "count": 1
         }
     },
@@ -920,6 +991,13 @@
                         "dob": null
                     }
                 ],
+                "pledge_managers": [
+                    {
+                        "name": "Иванов Иван Иванович",
+                        "type": "PERSON",
+                        "dob": "1981-09-08"
+                    }
+                ],
                 "type": "Возникновение",
                 "in_pledge": true,
                 "data": null
@@ -948,6 +1026,9 @@
                 "data": null
             }
         ],
+        "date": {
+            "update": "2019-10-17 00:20:00"
+        },
         "count": 1
     },
     "pledges_nbki": {
@@ -976,6 +1057,9 @@
                 "in_pledge": true
             }
         ],
+        "date": {
+            "update": "2021-01-16 17:10:00"
+        },
         "count": 1
     },
     "insurance": {
@@ -988,8 +1072,16 @@
                     },
                     "date": {
                         "start": "2014-07-07 00:00:00",
-                        "end": "2015-07-07 00:00:00"
+                        "end": "2015-07-07 00:00:00",
+                        "created": "2016-07-07 00:00:00",
+                        "periods": [
+                            {
+                                "start": "2021-01-03",
+                                "end": "2022-01-02"
+                            }
+                        ]
                     },
+                    "actuality_date": "2016-07-07 00:00:00",
                     "restrictions": {
                         "type": "WITH RESTRICTIONS",
                         "drivers": 3
@@ -1017,7 +1109,8 @@
                     },
                     "vehicle": {
                         "model": {
-                            "name": "Skoda Yeti (категория «B»)"
+                            "name": "Skoda Yeti (категория «B»)",
+                            "category": "B"
                         },
                         "identifiers": {
                             "reg_num": "А332АВ177",
@@ -1031,6 +1124,9 @@
                         },
                         "weight": {
                             "max": 1233
+                        },
+                        "seats": {
+                            "count": 5
                         }
                     },
                     "insurant": {
@@ -1054,10 +1150,89 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2020-07-10 22:10:00"
+            },
             "count": 1
         }
     },
     "accidents": {
+        "statistics": {
+            "date": {
+                "update": "2021-11-01 00:00:00"
+            },
+            "items": [
+                {
+                    "number": "010000713",
+                    "type": "Наезд на пешехода",
+                    "car_in_accident": 1,
+                    "people_in_accident": 2,
+                    "causers": [
+                        {
+                            "identifier": "Z94C251BBLR111455"
+                        }
+                    ],
+                    "geo": {
+                        "country": null,
+                        "region": null,
+                        "city": "г Барнаул",
+                        "street": "ул Попова",
+                        "house": null
+                    },
+                    "participants": {
+                        "vehicles": [
+                            {
+                                "vin": "Z94C251BBLR111455",
+                                "body": null,
+                                "chassis": null,
+                                "brand": {
+                                    "name": "Kia"
+                                },
+                                "model": {
+                                    "name": "Rio"
+                                },
+                                "year": 2020,
+                                "category": "C-KLASS (MALY'I SREDNII, KOMEAKTNY'I) DO 4,3 M",
+                                "color": "Белый",
+                                "driver": {
+                                    "gender": "ЖЕНСКИЙ",
+                                    "drive_experience": 4,
+                                    "damage": "Не пострадал",
+                                    "used_seat_belt": false,
+                                    "offense": {
+                                        "main": "Нарушение правил проезда пешеходного перехода",
+                                        "addition": [
+                                            "Нарушение правил перевозки людей"
+                                        ]
+                                    }
+                                },
+                                "passengers": [
+                                    {
+                                        "gender": "ЖЕНСКИЙ",
+                                        "damage": "Получил травмы с оказанием разовой медицинской помощи, к категории раненый не относится",
+                                        "used_seat_belt": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "pedestrians": [
+                            {
+                                "gender": "ЖЕНСКИЙ",
+                                "damage": "Получил телесные повреждения с показанием к лечению в медицинских организациях (кроме разовой медицинской помощи)",
+                                "offense": {
+                                    "main": "Переход в неположенном месте",
+                                    "addition": [
+                                        "Управление ТС в состоянии алкогольного опьянения"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "date": "2021-01-15 15:50:00"
+                }
+            ],
+            "count": 1
+        },
         "history": {
             "date": {
                 "update": "2019-05-16 22:10:00"
@@ -1105,25 +1280,70 @@
                         "city": "Домодедово",
                         "street": null,
                         "house": null
-                    }
+                    },
+                    "other_participants": [
+                        {
+                            "number": "000043057",
+                            "accident": {
+                                "date": "1978-02-14 05:24:00"
+                            },
+                            "type": "Наезд на стоящее ТС",
+                            "state": "Повреждено",
+                            "damage": {
+                                "points": [
+                                    210,
+                                    219
+                                ],
+                                "codes": [
+                                    "210",
+                                    "219"
+                                ]
+                            },
+                            "vehicle": {
+                                "brand": {
+                                    "name": "Lanos"
+                                },
+                                "model": {
+                                    "name": "Chevrolet"
+                                },
+                                "year": 2008,
+                                "identifiers": {
+                                    "vin": "EXAMPL0V1N1000000",
+                                    "body": "KCA275-9673180",
+                                    "chassis": "LFPVBM6819793"
+                                }
+                            },
+                            "geo": {
+                                "country": null,
+                                "region": "Воронежская",
+                                "city": "Домодедово",
+                                "street": null,
+                                "house": null
+                            }
+                        }
+                    ]
                 }
             ],
             "count": 1
         },
         "insurance": {
+            "date": {
+                "update": "2019-05-16 22:10:00"
+            },
             "items": [
                 {
                     "date": {
                         "event": "2010-02-10 18:00:00"
                     },
                     "insurer": {
-                        "type": "КАСКО"
+                        "name": "АСКО-Страхование"
                     },
-                    "accident": {
-                        "description": "Дорожно-транспортное происшествие"
+                    "policy": {
+                        "series": "XXX",
+                        "number": "0022114168"
                     },
-                    "damage": {
-                        "raw": "<10% от страховой суммы"
+                    "actuality": {
+                        "date": "2021-07-14 09:58:32"
                     }
                 },
                 {
@@ -1131,13 +1351,14 @@
                         "event": "2014-03-04 18:00:00"
                     },
                     "insurer": {
-                        "type": "ОСАГО"
+                        "name": "АСКО-Страхование"
                     },
-                    "accident": {
-                        "description": "Страховой случай"
+                    "policy": {
+                        "series": "XXX",
+                        "number": "0022112161"
                     },
-                    "damage": {
-                        "raw": "Бампер передний"
+                    "actuality": {
+                        "date": "2021-07-14 09:58:32"
                     }
                 }
             ],
@@ -1172,7 +1393,8 @@
                     "restrict": {
                         "type": "Запрет на регистрационные действия",
                         "reason": "Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015",
-                        "number": "90129308-0060"
+                        "number": "90129308-0060",
+                        "executive_procedure": "90129308/0060-ИП"
                     },
                     "actuality": {
                         "date": "2015-07-13 00:00:00"
@@ -1224,6 +1446,18 @@
         "is_wanted": true,
         "items": [
             {
+                "actuality": {
+                    "date": "2015-07-13 00:00:00"
+                },
+                "entry": 1,
+                "vehicle": {
+                    "brand": {
+                        "name": "ГАЗ302ГАЗЕЛЬ"
+                    },
+                    "vin": "EXAMPL0V1N1000000",
+                    "body": "KCA275-9673180",
+                    "year": 2013
+                },
                 "date": {
                     "stealing": "2014-02-06 00:00:00"
                 },
@@ -1235,7 +1469,10 @@
                     "house": null
                 }
             }
-        ]
+        ],
+        "date": {
+            "update": "2020-12-11 11:10:00"
+        }
     },
     "ownership": {
         "history": {
@@ -1260,6 +1497,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2021-01-12 11:12:00"
+            },
             "count": 1
         }
     },
@@ -1295,9 +1535,15 @@
                 "inspection": {
                     "place": "ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
                 },
-                "reg_num": "А332АВ177"
+                "reg_num": "А332АВ177",
+                "actuality": {
+                    "date": "2009-10-09 00:00:00"
+                }
             }
         ],
+        "date": {
+            "update": "2020-02-12 22:10:00"
+        },
         "count": 1
     },
     "utilizations": {
@@ -1315,6 +1561,9 @@
             }
         ],
         "was_utilized": true,
+        "date": {
+            "update": "2020-11-16 11:10:00"
+        },
         "count": 1
     },
     "images": {
@@ -1335,6 +1584,9 @@
                     "uri": "https:\/\/lorempixel.com\/1024\/740\/transport\/?73445"
                 }
             ],
+            "date": {
+                "update": "2020-12-22 22:10:00"
+            },
             "count": 1
         }
     },
@@ -1344,6 +1596,7 @@
                 {
                     "title": "Opel Monterey, 2018",
                     "text": "Продаю семейный автомобиль в отличном состоянии, вложений никаких не требует. Все работает без нареканий.",
+                    "uri": "https://example.com",
                     "date": {
                         "publish": "2019-01-14 11:57:00"
                     },
@@ -1435,6 +1688,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": "2020-02-19 21:10:00"
+            },
             "count": 1
         }
     },
@@ -1541,6 +1797,9 @@
                 }
             }
         ],
+        "date": {
+            "update": "2019-05-12 22:10:00"
+        },
         "count": 1
     },
     "market_prices": {
@@ -1583,13 +1842,16 @@
                                 "year": 2018,
                                 "condition": "Не битый",
                                 "wheel": {
-                                    "position": "LEFT"
+                                    "position": "LEFT",
+                                    "position_id": "ID_STEERING_WHEEL_TYPE_LEFT"
                                 },
                                 "transmission": {
-                                    "type": "MANUAL"
+                                    "type": "MANUAL",
+                                    "type_id": "ID_TRANSMISSION_TYPE_MANUAL"
                                 },
                                 "drive": {
-                                    "type": "Передний"
+                                    "type": "Передний",
+                                    "type_id": "ID_DRIVING_WHEELS_TYPE_FRONT"
                                 },
                                 "owners": {
                                     "count": 2
@@ -1600,11 +1862,13 @@
                                     },
                                     "volume": 2793.2,
                                     "fuel": {
-                                        "type": "Бензиновый"
+                                        "type": "Бензиновый",
+                                        "type_id": "ID_ENGINE_TYPE_PETROL"
                                     }
                                 },
                                 "body": {
-                                    "type": "Седан"
+                                    "type": "Седан",
+                                    "type_id": "ID_BODY_TYPE_SEDAN"
                                 },
                                 "mileage": 79000
                             }
@@ -1633,7 +1897,29 @@
                         ]
                     }
                 }
-            ]
+            ],
+            "date": {
+                "update": "2019-07-06 22:10:00"
+            }
+        },
+        "appraisal": {
+            "amount": {
+                "min": 581938,
+                "max": 862961,
+                "optimal": 722450
+            },
+            "reasons": {
+                "used_in_taxi": false,
+                "accidents": {
+                    "count": 3
+                },
+                "ownerships": {
+                    "count": 4
+                }
+            },
+            "date": {
+                "update": "2019-05-12 22:10:00"
+            }
         }
     },
     "commercial_use": {
@@ -1650,6 +1936,9 @@
                 }
             }
         ],
+        "date": {
+            "update": "2020-03-09 21:10:00"
+        },
         "count": 1
     },
     "recall_campaigns": {
@@ -1672,6 +1961,78 @@
                 }
             }
         ],
+        "date": {
+            "update": "2019-11-14 12:10:00"
+        },
+        "count": 1
+    },
+    "arbitration": {
+        "count": 1,
+        "items": [
+            {
+                "date": {
+                    "registration": "2012-12-12"
+                },
+                "court": {
+                    "name": "AС Челябинской области"
+                },
+                "number": "А76-4565/2020",
+                "type": "Решения и постановления",
+                "description": "Решение суда первой инстанции",
+                "url": "https://example.com"
+            }
+        ],
+        "date": {
+            "update": "2019-11-14 12:10:00"
+        }
+    },
+    "driver_licenses": {
+        "items": [
+            {
+                "actuality": {
+                    "date": "2016-03-16 00:00:00"
+                },
+                "number": "9921430111",
+                "status": "А",
+                "date": {
+                    "start": "2016-03-16",
+                    "end": "2031-03-16"
+                },
+                "categories": [
+                    "B",
+                    "B1",
+                    "M"
+                ],
+                "experience": {
+                    "year_start": 2012
+                },
+                "operation": {
+                    "description": "Замена ВУ в связи со сменой фамилии",
+                    "code": "38"
+                },
+                "deprivations": [
+                    {
+                        "date": {
+                            "start": "2017-07-26",
+                            "end": "2018-12-16"
+                        },
+                        "state": {
+                            "code": "79",
+                            "description": "Окончено исчисление срока лишения права управления (возвращено ВУ)"
+                        },
+                        "offense": {
+                            "place": "1140 Г. САНКТ - ПЕТЕРБУРГ",
+                            "decision": "ЛИШЕНИЕ ПРАВА УПРАВЛЕНИЯ ТС+ШТРАФ"
+                        },
+                        "registration_place": "МОСКВА Г."
+                    }
+                ]
+            }
+        ],
+        "has_deprivations": true,
+        "date": {
+            "update": "2019-11-14 12:10:00"
+        },
         "count": 1
     }
 }

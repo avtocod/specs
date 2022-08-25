@@ -1,25 +1,5 @@
 [
     {
-        "name": "base.tech",
-        "description": "Базовая техническая информация о ТС и данные по таможне",
-        "enabled": false
-    },
-    {
-        "name": "base.moscow",
-        "description": "Комплексные данные по ТС эксплуатируемых в Москве и МО",
-        "enabled": false
-    },
-    {
-        "name": "carprice",
-        "description": "Данные о рыночной стоимости ТС",
-        "enabled": false
-    },
-    {
-        "name": "tech.ext",
-        "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
-        "enabled": true
-    },
-    {
         "name": "gibdd.eaisto",
         "description": "Данные о диагностических картах и пробегах ТС из базы ЕАИСТО",
         "enabled": true
@@ -50,11 +30,6 @@
         "enabled": true
     },
     {
-        "name": "calc.osago",
-        "description": "Данные о стоимости страховки ОСАГО",
-        "enabled": true
-    },
-    {
         "name": "pledge",
         "description": "Данные о нахождении ТС в залоге",
         "enabled": true
@@ -67,26 +42,11 @@
     {
         "name": "ramiosago.base",
         "description": "Данные о полисах ОСАГО, оформленных на ТС",
-        "enabled": true
-    },
-    {
-        "name": "ramiosago.alt",
-        "description": "Данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
         "enabled": false
     },
     {
         "name": "ramiosago.base.ext",
         "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС",
-        "enabled": true
-    },
-    {
-        "name": "ramiosago.alt.ext",
-        "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС. Альтернативный источник",
-        "enabled": false
-    },
-    {
-        "name": "base.taxi",
-        "description": "Базовая информация о ТС и признак использования в такси",
         "enabled": false
     },
     {
@@ -103,16 +63,6 @@
         "name": "base.alt",
         "description": "Базовая информация о ТС и данные регистрационных действий. Альтернативный источник",
         "enabled": true
-    },
-    {
-        "name": "carfax.check",
-        "description": "Наличие данных об отчете о ТС в сервисе CarFax",
-        "enabled": false
-    },
-    {
-        "name": "carfax.ext",
-        "description": "Данных из отчета о ТС из сервиса CarFax",
-        "enabled": false
     },
     {
         "name": "customs.base",
@@ -145,11 +95,6 @@
         "enabled": true
     },
     {
-        "name": "tech.base",
-        "description": null,
-        "enabled": false
-    },
-    {
         "name": "pledge.house",
         "description": "Данные о нахождении ТС в залоге (история залогов)",
         "enabled": true
@@ -172,7 +117,7 @@
     {
         "name": "references.transdekra",
         "description": "Справочник ТС Трансдекра",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "service.history",
@@ -182,6 +127,11 @@
     {
         "name": "ads.price",
         "description": "Рыночная стоимость ТС",
+        "enabled": true
+    },
+    {
+        "name": "ads.price.base",
+        "description": "Рыночная стоимость ТС без учета пробега",
         "enabled": true
     },
     {
@@ -197,11 +147,6 @@
     {
         "name": "regactions.registry",
         "description": "Реестр Регистрационных действий",
-        "enabled": true
-    },
-    {
-        "name": "pledge.fnp",
-        "description": "Обременения на ТС по данным ФНП",
         "enabled": true
     },
     {
@@ -230,11 +175,6 @@
         "enabled": true
     },
     {
-        "name": "references.tecdoc",
-        "description": "Каталог TecDoc",
-        "enabled": true
-    },
-    {
         "name": "mileages.registry",
         "description": "Архивные данные о пробегах",
         "enabled": true
@@ -245,6 +185,16 @@
         "enabled": true
     },
     {
+        "name": "service.history.filter",
+        "description": "История сервисного обслуживания ТС сетью СТО Фильтр",
+        "enabled": true
+    },
+    {
+        "name": "service.history.wilgood",
+        "description": "История сервисного обслуживания ТС сетью СТО Вилгуд",
+        "enabled": true
+    },
+    {
         "name": "fines.base.ext",
         "description": "Расширенные данные о штрафах, оформленных на ТС",
         "enabled": true
@@ -252,6 +202,96 @@
     {
         "name": "gots.history",
         "description": "Размещение ТС на аукционах ГОТС",
+        "enabled": true
+    },
+    {
+        "name": "fssp.base",
+        "description": "Данные об исполнительных производствах в базе ФССП",
+        "enabled": true
+    },
+    {
+        "name": "rsaosago.base.ext",
+        "description": "Расширенная информация о полисах ОСАГО оформленных на ТС, по данным РСА",
+        "enabled": false
+    },
+    {
+        "name": "rsaosago.base.history",
+        "description": "Информация о всех полисах ОСАГО оформленных на ТС, по данным РСА",
+        "enabled": true
+    },
+    {
+        "name": "rsaosago.base",
+        "description": "Информация о всех полисах ОСАГО оформленных на ТC, по данным РСА",
+        "enabled": true
+    },
+    {
+        "name": "gibdd.diagnostic.cards",
+        "description": "Данные о диагностических картах и пробегах ТС из базы ГИБДД",
+        "enabled": false
+    },
+    {
+        "name": "insurance.dtp",
+        "description": "Информация о ДТП из РСА (европротоколы)",
+        "enabled": true
+    },
+    {
+        "name": "arbitration.history",
+        "description": "История судебных дел с участием ТС",
+        "enabled": true
+    },
+    {
+        "name": "base.registry",
+        "description": "Базовая информация о ТС",
+        "enabled": true
+    },
+    {
+        "name": "base.registry.retry",
+        "description": "Базовая информация о ТС",
+        "enabled": true
+    },
+    {
+        "name": "osago.registry",
+        "description": "Реестр полисов ОСАГО",
+        "enabled": true
+    },
+    {
+        "name": "gibdd.stat.registry",
+        "description": "Реестр статистики по ДТП",
+        "enabled": true
+    },
+    {
+        "name": "vehicle.price",
+        "description": "Рыночная стоимость ТС c учётом дополнительных факторов",
+        "enabled": true
+    },
+    {
+        "name": "gibdd.wanted.registry",
+        "description": "Реестр истории розысков ТС",
+        "enabled": true
+    },
+    {
+        "name": "gibdd.driver.registry",
+        "description": "Реестр водительских удостоверений",
+        "enabled": true
+    },
+    {
+        "name": "eaisto.registry",
+        "description": "Реестр данных о диагностических картах и пробегах ТС",
+        "enabled": true
+    },
+    {
+        "name": "insurance.dtp.basalt",
+        "description": "Информация о ДТП (европротоколы)",
+        "enabled": true
+    },
+    {
+        "name": "fines.registry",
+        "description": "Реестр штрафов",
+        "enabled": true
+    },
+    {
+        "name": "eaisto.basalt",
+        "description": "Диагностические карты (ЕАИСТО)",
         "enabled": true
     }
 ]

@@ -4,6 +4,735 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.114.0
+
+### Added
+
+- Source `eaisto.basalt`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `eaisto.basalt`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `eaisto.basalt`
+- Field with path `identifiers.vehicle.body` also fillable by `eaisto.basalt`
+- Field with path `identifiers.vehicle.chassis` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].reg_num` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].actuality.date` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.date.update` also fillable by `eaisto.basalt`
+- Field with path `mileages.items[].date.event` also fillable by `eaisto.basalt`
+- Field with path `mileages.items[].mileage` also fillable by `eaisto.basalt`
+- Field with path `mileages.items[].actuality.date` also fillable by `eaisto.basalt`
+- Extend enum with `eaisto.basalt` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+
+## v3.113.0
+
+### Added
+
+- Source `fines.registry`
+- Field with path `fines.items[].vendor.type`
+- Field with path `fines.items[].payer.name`
+- Field with path `fines.items[].payer.identifier.type`
+- Field with path `fines.items[].payer.identifier.number`
+- Field with path `fines.items[].fssp.enforcement_proceeding.number`
+- Field with path `fines.items[].fssp.enforcement_proceeding.contact`
+
+### Changed
+
+- Field with path `fines.items[].uin` also fillable by `fines.registry`
+- Field with path `fines.items[].description` also fillable by `fines.registry`
+- Field with path `fines.items[].date.event` also fillable by `fines.registry`
+- Field with path `fines.items[].vendor.name` also fillable by `fines.registry`
+- Field with path `fines.items[].amount.total` also fillable by `fines.registry`
+- Field with path `fines.items[].article.code` also fillable by `fines.registry`
+- Field with path `fines.items[].article.description` also fillable by `fines.registry`
+- Field with path `fines.items[].discount.percent` also fillable by `fines.registry`
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.registry`
+- Field with path `fines.items[].is_paid` also fillable by `fines.registry`
+- Field with path `fines.items[].need_payment` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.user.name` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.user.tin` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.user.kpp` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.bank.name` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.bank.bik` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.bank.account.number` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.payment.purpose` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.kbk` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.okato` also fillable by `fines.registry`
+- Field with path `fines.has_fines` also fillable by `fines.registry`
+- Field with path `fines.items[].location.raw` also fillable by `fines.registry`
+- Field with path `fines.items[].fssp.date` also fillable by `fines.registry`
+- Field with path `fines.items[].fssp.is_proceed` also fillable by `fines.registry`
+- Field with path `fines.date.update` also fillable by `fines.registry`
+
+## v3.112.0
+
+### Changed
+
+- Description for a field with path `accidents.insurance.date.update` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].date.event` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].insurer.name` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.series` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.number` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].actuality.date` in `./fields/default/fields_list.json`
+
+## v3.111.0
+
+### Added
+
+- Source `insurance.dtp.basalt`
+
+### Changed
+
+- Field with path `accidents.insurance.date.update` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].date.event` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].insurer.name` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.series` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.number` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].actuality.date` also fillable by `insurance.dtp.basalt`
+
+## v3.110.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.109.0
+
+### Added
+
+- Field with path `restrictions.registration_actions.items[].restrict.executive_procedure`
+
+## v3.108.0
+
+### Changed
+
+- Field with path `mileages.items[].mileage` also fillable by `repairs.history`
+- Field with path `mileages.items[].date.event` also fillable by `repairs.history`
+- Field with path `mileages.items[].actuality.date` also fillable by `repairs.history`
+
+## v3.107.0
+
+### Added
+
+- Source `eaisto.registry`
+- Field with path `diagnostic_cards.items[].actuality.date`
+- Field with path `additional_info.vehicle.techreglament_category.code`
+- Field with path `additional_info.vehicle.techreglament_category.description`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `eaisto.registry`
+- Field with path `identifiers.vehicle.body` also fillable by `eaisto.registry`
+- Field with path `identifiers.vehicle.chassis` also fillable by `eaisto.registry`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `eaisto.registry`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `eaisto.registry`
+- Field with path `tech_data.year` also fillable by `eaisto.registry`
+- Field with path `tech_data.date.update` also fillable by `eaisto.registry`
+- Field with path `tech_data.brand.name.original` also fillable by `eaisto.registry`
+- Field with path `tech_data.model.name.original` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.date.update` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].reg_num` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].doc.serial` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `eaisto.registry`
+- Field with path `diagnostic_cards.items[].inspection.place` also fillable by `eaisto.registry`
+- Field with path `mileages.items[].mileage` also fillable by `eaisto.registry`
+- Field with path `mileages.items[].date.event` also fillable by `eaisto.registry`
+- Field with path `mileages.items[].actuality.date` also fillable by `eaisto.registry`
+
+## v3.106.0
+
+### Added
+
+- Source `gibdd.driver.registry`
+- Field with path `driver_licenses.date.update`
+- Field with path `driver_licenses.has_deprivations`
+- Field with path `driver_licenses.items[].number`
+- Field with path `driver_licenses.items[].status`
+- Field with path `driver_licenses.items[].date.end`
+- Field with path `driver_licenses.items[].date.start`
+- Field with path `driver_licenses.items[].categories[]`
+- Field with path `driver_licenses.items[].actuality.date`
+- Field with path `driver_licenses.items[].operation.code`
+- Field with path `driver_licenses.items[].operation.description`
+- Field with path `driver_licenses.items[].experience.year_start`
+- Field with path `driver_licenses.items[].deprivations[].date.end`
+- Field with path `driver_licenses.items[].deprivations[].date.start`
+- Field with path `driver_licenses.items[].deprivations[].state.code`
+- Field with path `driver_licenses.items[].deprivations[].offense.place`
+- Field with path `driver_licenses.items[].deprivations[].offense.decision`
+- Field with path `driver_licenses.items[].deprivations[].state.description`
+- Field with path `driver_licenses.items[].deprivations[].registration_place`
+
+## v3.105.0
+
+### Added
+
+- Source `gibdd.wanted.registry`
+- Field with path `stealings.items[].entry`
+- Field with path `stealings.items[].vehicle.vin`
+- Field with path `stealings.items[].vehicle.body`
+- Field with path `stealings.items[].vehicle.year`
+- Field with path `stealings.items[].actuality.date`
+- Field with path `stealings.items[].vehicle.brand.name`
+
+### Changed
+
+- Field with path `stealings.is_wanted` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.date.update` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.items[].geo.region` also fillable by `gibdd.wanted.registry`
+- Field with path `stealings.items[].date.stealing` also fillable by `gibdd.wanted.registry`
+
+## v3.104.0
+
+### Changed
+
+- Field with path `identifiers.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+- Field with path `identifiers_masked.vehicle.reg_num` not fillable by `gibdd.eaisto` anymore
+
+## v3.103.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.102.0
+
+### Added
+
+- Source `vehicle.price`
+- Field with path `market_prices.appraisal.amount.max`
+- Field with path `market_prices.appraisal.amount.min`
+- Field with path `market_prices.appraisal.amount.optimal`
+- Field with path `market_prices.appraisal.reasons.used_in_taxi`
+- Field with path `market_prices.appraisal.reasons.accidents.count`
+- Field with path `market_prices.appraisal.reasons.ownerships.count`
+- Field with path `market_prices.appraisal.date.update`
+
+## v3.101.0
+
+### Changed
+
+- Source `references.transdekra` marked as disabled
+
+## v3.100.0
+
+### Added
+
+- Source `gibdd.stat.registry`
+- Field with path `accidents.statistics.date.update`
+- Field with path `accidents.statistics.items[].number`
+- Field with path `accidents.statistics.items[].date`
+- Field with path `accidents.statistics.items[].type`
+- Field with path `accidents.statistics.items[].car_in_accident`
+- Field with path `accidents.statistics.items[].causers[].identifier`
+- Field with path `accidents.statistics.items[].people_in_accident`
+- Field with path `accidents.statistics.items[].geo`
+- Field with path `accidents.statistics.items[].participants.vehicles[].vin`
+- Field with path `accidents.statistics.items[].participants.vehicles[].body`
+- Field with path `accidents.statistics.items[].participants.vehicles[].chassis`
+- Field with path `accidents.statistics.items[].participants.vehicles[].brand.name`
+- Field with path `accidents.statistics.items[].participants.vehicles[].model.name`
+- Field with path `accidents.statistics.items[].participants.vehicles[].year`
+- Field with path `accidents.statistics.items[].participants.vehicles[].category`
+- Field with path `accidents.statistics.items[].participants.vehicles[].color`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.gender`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.offense.main`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.offense.addition`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.drive_experience`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.damage`
+- Field with path `accidents.statistics.items[].participants.vehicles[].driver.used_seat_belt`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].gender`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].damage`
+- Field with path `accidents.statistics.items[].participants.vehicles[].passengers[].used_seat_belt`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].gender`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].offense.main`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].offense.addition`
+- Field with path `accidents.statistics.items[].participants.pedestrians[].damage`
+
+## v3.99.0
+
+### Changed
+
+- Field with path `insurance.osago.items[].owner.tin` also fillable by `osago.registry`
+- Field with path `insurance.osago.items[].number` also fillable by `osago.registry`
+
+## v3.98.0
+
+### Changed
+
+- Sources `ramiosago.base.ext`, `ramiosago.base`, `rsaosago.base.ext`, `gibdd.diagnostic.cards` marked as disabled
+
+## v3.97.0
+
+### Added
+
+- Source `osago.registry`
+- Field with path `insurance.osago.items[].actuality_date`
+- Field with path `insurance.osago.items[].vehicle.model.category`
+
+## v3.96.0
+
+### Changed
+
+- Field with path `tech_data.model.name.original` not fillable by `base.registry` and `base.registry.retry` anymore
+
+## v3.95.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.94.1
+
+### Fixed
+
+- Value `МИНИВЭН` in enum `service_history.items[].vehicle.body.type`
+
+## v3.94.0
+
+### Added
+
+- Source `base.registry`
+- Source `base.registry.retry`
+- Field with path `identifiers.vehicle.vin` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers.vehicle.body` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers.vehicle.chassis` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.weight.max` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.engine.power.hp` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.engine.power.kw` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.brand.name.original` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `tech_data.model.name.original` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `additional_info.vehicle.category.code` also fillable by `base.registry`, `base.registry.retry`
+- Field with path `additional_info.vehicle.category.description` also fillable by `base.registry`, `base.registry.retry`
+
+## v3.93.0
+
+### Added
+
+- Field with path `accidents.history[].other_participants[].geo`
+- Field with path `accidents.history[].other_participants[].type`
+- Field with path `accidents.history[].other_participants[].state`
+- Field with path `accidents.history[].other_participants[].number`
+- Field with path `accidents.history[].other_participants[].vehicle.year`
+- Field with path `accidents.history[].other_participants[].damage.codes`
+- Field with path `accidents.history[].other_participants[].accident.date`
+- Field with path `accidents.history[].other_participants[].damage.points`
+- Field with path `accidents.history[].other_participants[].vehicle.model.name`
+- Field with path `accidents.history[].other_participants[].vehicle.brand.name`
+- Field with path `accidents.history[].other_participants[].vehicle.identifiers.vin`
+- Field with path `accidents.history[].other_participants[].vehicle.identifiers.body`
+- Field with path `accidents.history[].other_participants[].vehicle.identifiers.chassis`
+
+## v3.92.0
+
+### Added
+
+- Source `rsaosago.base`
+- Fields with path `insurance.osago.items[].date.periods[].start`
+- Fields with path `insurance.osago.items[].date.periods[].end`
+- Fields with path `insurance.osago.*` also fillable by `rsaosago.base`
+
+## v3.91.0
+
+### Added
+
+- Field with path `accidents.insurance.date.update`
+
+## v3.90.0
+
+### Added
+
+- Field with path `tech_data.type.code`
+- Field with path `tech_data.wheel.position_code`
+- Field with path `additional_info.vehicle.exported`
+
+## v3.89.0
+
+### Added
+
+- Source `rsaosago.base.history`
+- Fields with path `insurance.osago.*` also fillable by `rsaosago.base.history`
+
+## v3.88.0
+
+### Added
+
+- Field with path `pledges.items[].pledge_managers[].*`
+
+## v3.87.0
+
+### Removed
+
+- Source `rsaosago.base.alt`
+
+## v3.86.0
+
+### Added
+
+- Field with path `fines.items[].fssp.date`
+- Field with path `fines.items[].fssp.is_proceed`
+
+## v3.85.0
+
+### Added
+
+- Source `rsaosago.base.alt`
+- Field with path `insurance.osago.items[].date.created`
+
+### Changed
+
+- Field with path `insurance.osago.*` also fillable by `rsaosago.base.alt`
+- Field with path `insurance.osago.items[].date.created` also fillable by `rsaosago.base.ext`
+
+## v3.84.0
+
+### Added
+
+- Source `arbitration.history`
+- Field with path `arbitration.items[].url`
+- Field with path `arbitration.items[].type`
+- Field with path `arbitration.items[].number`
+- Field with path `arbitration.items[].court.name`
+- Field with path `arbitration.items[].description`
+- Field with path `arbitration.items[].date.registration`
+
+## v3.83.0
+
+### Added
+
+- Source `insurance.dtp`
+- Field with path `accidents.insurance.items[].insurer.name` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].policy.series` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].policy.number` fillable by `insurance.dtp`
+- Field with path `accidents.insurance.items[].actuality.date` fillable by `insurance.dtp`
+
+### Changed
+
+- Field with path `accidents.insurance.items[].date.event` fillable by `insurance.dtp`
+
+### Removed
+
+- Field with path `accidents.insurance.items[].insurer.type`
+- Field with path `accidents.insurance.items[].accident.description`
+- Field with path `accidents.insurance.items[].damage.raw`
+
+## v3.82.0
+
+### Removed
+
+- Source `base.moscow`, `base.taxi`, `base.tech`, `carfax.check`, `carprice`, `tech.ext`, `tech.base`, `ramiosago.alt`, `ramiosago.alt.ext`, `pledge.fnp`, `references.tecdoc`, `calc.osago`, `carfax.ext`
+
+## v3.81.1
+
+### Fixed
+
+- Extended enum with `service.history.wilgood` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+
+## v3.81.0
+
+### Added
+
+- Source `service.history.wilgood`
+
+### Changed
+
+- Field with path `service_history.items[].vehicle.identifiers.vin` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].vehicle.brand.name` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].vehicle.year` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].vehicle.equipment.type` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].geo` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].dealer.branch.name` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].date.end` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].service.recommendations` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].service.spare_parts` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].service.content` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].dealer.name` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].type` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].service.type` also fillable by `service.history.wilgood`
+- Field with path `service_history.items[].service.is_planned` also fillable by `service.history.wilgood`
+- Field with path `mileages.items[].date.event` also fillable by `service.history.wilgood`
+- Field with path `mileages.items[].mileage` also fillable by `service.history.wilgood`
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.wilgood`
+
+## v3.80.0
+
+### Added
+
+- Source `ads.price.base`
+- Field with path `market_prices.ads.*` also fillable by `ads.price.base`
+
+## v3.79.0
+
+### Changed
+
+- Sources `calc.osago`, `pledge.fnp`, `tech.ext` marked as disabled
+
+## v3.78.0
+
+### Changed
+
+- Extend enum with `UNKNOWN` value for fields `insurance.osago.items[].insurant.type`, `insurance.osago.items[].owner.type` in `./reports/default/json-schema.json`
+
+## v3.77.0
+
+### Added
+
+- Source `service.history.filter`
+- Field with path `registration_actions.items[].code`
+
+### Changed
+
+- Field with path `service_history.date.update` also fillable by `service.history.filter`
+- Field with path `service_history.items[].type` also fillable by `service.history.filter`
+- Field with path `service_history.items[].dealer.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].date.end` also fillable by `service.history.filter`
+- Field with path `service_history.items[].amount.value` also fillable by `service.history.filter`
+- Field with path `service_history.items[].amount.currency` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.type` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.content` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.spare_parts` also fillable by `service.history.filter`
+- Field with path `service_history.items[].service.is_planned` also fillable by `service.history.filter`
+- Field with path `service_history.items[].geo` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.brand.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.model.name` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.year` also fillable by `service.history.filter`
+- Field with path `service_history.items[].vehicle.mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].date.event` also fillable by `service.history.filter`
+- Field with path `mileages.items[].mileage` also fillable by `service.history.filter`
+- Field with path `mileages.items[].actuality.date` also fillable by `service.history.filter`
+
+## v3.76.0
+
+### Added
+
+- Field with path `tech_data.generations[].id`
+- Field with path `tech_data.generations[].bodies[].id`
+- Field with path `tech_data.generations[].bodies[].modifications[].id`
+
+## v3.75.0
+
+### Added
+
+- Field with path `fines.items[].uin`
+- Field with path `fines.items[].need_payment`
+
+### Changed
+
+- Field with path `fines.items[].location.raw` also fillable by `fines.base`
+
+## v3.74.0
+
+### Added
+
+- Vehicle marks `logotype_uri` field in `./vehicle/default/marks.json`
+
+## v3.73.0
+
+### Added
+
+- Field with path `insurance.osago.items[].vehicle.seats.count`
+- Field with path `accidents.history.items[].damage.raw` also fillable by `gibdd.dtp`
+- Field with path `accidents.history.items[].damage.raw` is not fillable by `base.moscow` source now
+
+## v3.72.0
+
+### Added
+
+- Source `gibdd.diagnostic.cards`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers.vehicle.body` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers.vehicle.chassis` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `gibdd.diagnostic.cards`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.items[].inspection.place` also fillable by `gibdd.diagnostic.cards`
+- Field with path `diagnostic_cards.date.update` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.brand.name.original` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.model.name.original` also fillable by `gibdd.diagnostic.cards`
+- Field with path `tech_data.date.update` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].date.event` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].mileage` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].filled_by.source` also fillable by `gibdd.diagnostic.cards`
+- Field with path `mileages.items[].actuality.date` also fillable by `gibdd.diagnostic.cards`
+
+## v3.71.0
+
+### Added
+
+- Field with path `identifiers.manufacture.vin`
+
+## v3.70.0
+
+### Added
+
+- Field with path `identifiers_masked.vehicle.vin`
+- Field with path `identifiers_masked.vehicle.reg_num`
+- Field with path `identifiers_masked.vehicle.sts`
+- Field with path `identifiers_masked.vehicle.pts`
+- Field with path `identifiers_masked.vehicle.body`
+- Field with path `identifiers_masked.vehicle.chassis`
+- Definition `vin_code_masked` in `./reports/default/json-schema.json`
+- Definition `grz_code_masked` in `./reports/default/json-schema.json`
+- Definition `sts_code_masked` in `./reports/default/json-schema.json`
+- Definition `pts_code_masked` in `./reports/default/json-schema.json`
+- Definition `body_code_masked` in `./reports/default/json-schema.json`
+- Definition `chassis_code_masked` in `./reports/default/json-schema.json`
+
+## v3.69.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
+## v3.68.0
+
+### Added
+
+- Source `rsaosago.base.ext`
+
+### Changed
+
+- Field with path `insurance.osago.items[].insurer.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].date.start` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].date.end` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].restrictions.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].restrictions.drivers` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.series` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.number` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.is_active` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.expired` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].policy.status` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.is_active` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.using_type.status` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.using_type.description` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.amount.value` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.amount.currency` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.kbm` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.is_follow_to_registration` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].contract.has_trailer` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.model.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.reg_num` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.vin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.identifiers.body` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.engine.power.hp` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].vehicle.weight.max` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.dob` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].insurant.tin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.type` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.dob` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.name` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].owner.tin` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.items[].geo` also fillable by `rsaosago.base.ext`
+- Field with path `insurance.osago.date.update` also fillable by `rsaosago.base.ext`
+
+## v3.67.0
+
+### Added
+
+- Field with path `pledges.date.update`
+
+## v3.66.0
+
+### Added
+
+- Source `fssp.base`
+- Field with path `additional_info.vehicle.owner.enforcement_proceedings.has_proceedings`
+
+## v3.65.0
+
+### Added
+
+- Field with path `ads.history.date.update`
+- Field with path `commercial_use.date.update`
+- Field with path `customs.history.date.update`
+- Field with path `diagnostic_cards.date.update`
+- Field with path `fines.date.update`
+- Field with path `gots_auctions.date.update`
+- Field with path `images.photos.date.update`
+- Field with path `insurance.osago.date.update`
+- Field with path `leasings.date.update`
+- Field with path `market_prices.ads.date.update`
+- Field with path `ownership.history.date.update`
+- Field with path `pledges_nbki.date.update`
+- Field with path `recall_campaigns.date.update`
+- Field with path `registration_actions.date.update`
+- Field with path `repairs.history.date.update`
+- Field with path `service_history.date.update`
+- Field with path `stealings.date.update`
+- Field with path `tech_data.date.update`
+- Field with path `utilizations.date.update`
+- Extend enum with `E` value for definition `additional_info.vehicle.category.code` in `./reports/default/json-schema.json`
+
+## v3.64.0
+
+### Added
+
+- Field with path `tech_data.type.type_id`
+- Field with path `tech_data.drive.type_id`
+- Field with path `tech_data.wheel.position_id`
+- Field with path `tech_data.engine.fuel.type_id`
+- Field with path `tech_data.transmission.type_id`
+
+## v3.63.0
+
+### Added
+
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.body.type_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.drive.type_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.wheel.position_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.engine.fuel.type_id`
+- Field with path `market_prices.ads.items[].related_ads[].vehicle.transmission.type_id`
+
+### Changed
+
+- Extend enum with `Газовый`, `Гибридный` and `Электрический` values for definition `engine_fuel_type` in `./reports/default/json-schema.json`
+
+## v3.62.0
+
+### Added
+
+- References `./vehicles/default/body_types.json`
+- References `./vehicles/default/engine_types.json`
+- References `./vehicles/default/transmission_types.json`
+- References `./vehicles/default/driving_wheels_types.json`
+- References `./vehicles/default/steering_wheel_types.json`
+
+## v3.61.0
+
+### Added
+
+- Field with path `ads.history.items[].uri` in `./reports/default/json-schema.json`
+
 ## v3.60.1
 
 ### Fixed

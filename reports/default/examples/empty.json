@@ -7,6 +7,19 @@
             "pts": null,
             "body": null,
             "chassis": null
+        },
+        "manufacture": {
+            "vin": null
+        }
+    },
+    "identifiers_masked": {
+        "vehicle": {
+            "vin": null,
+            "reg_num": null,
+            "sts": null,
+            "pts": null,
+            "body": null,
+            "chassis": null
         }
     },
     "tech_data": {
@@ -32,7 +45,9 @@
             }
         },
         "type": {
-            "name": null
+            "name": null,
+            "type_id": null,
+            "code": null
         },
         "body": {
             "number": null,
@@ -47,7 +62,8 @@
         },
         "engine": {
             "fuel": {
-                "type": null
+                "type": null,
+                "type_id": null
             },
             "number": null,
             "model": {
@@ -69,16 +85,21 @@
             "max": null
         },
         "transmission": {
-            "type": null
+            "type": null,
+            "type_id": null
         },
         "drive": {
-            "type": null
+            "type": null,
+            "type_id": null
         },
         "wheel": {
-            "position": null
+            "position": null,
+            "position_id": null,
+            "position_code": null
         },
         "generations": [
             {
+                "id": null,
                 "name": null,
                 "is_restyling": null,
                 "years": {
@@ -87,9 +108,11 @@
                 },
                 "bodies": [
                     {
+                        "id": null,
                         "type": null,
                         "modifications": [
                             {
+                                "id": null,
                                 "name": null,
                                 "engine": {
                                     "fuel": {
@@ -111,7 +134,10 @@
                     }
                 ]
             }
-        ]
+        ],
+        "date": {
+            "update": null
+        }
     },
     "additional_info": {
         "vehicle": {
@@ -122,6 +148,9 @@
             "owner": {
                 "type": null,
                 "phone_number": null,
+                "enforcement_proceedings": {
+                    "has_proceedings": null
+                },
                 "geo": {
                     "country": null,
                     "region": null,
@@ -155,6 +184,11 @@
                     "code": null,
                     "description": null
                 }
+            },
+            "exported": null,
+            "techreglament_category": {
+                "code": null,
+                "description": null
             }
         },
         "catalog": {
@@ -303,6 +337,7 @@
                     },
                     "phone_number": null
                 },
+                "code": null,
                 "type": null,
                 "geo": {
                     "country": null,
@@ -318,6 +353,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1,
         "has_annulment": null
     },
@@ -369,6 +407,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -399,7 +440,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "date": {
+            "update": null
+        }
     },
     "carfax": {
         "check": {
@@ -496,9 +540,11 @@
                     "code": null,
                     "description": null
                 },
+                "uin": null,
                 "description": null,
                 "vendor": {
-                    "name": null
+                    "name": null,
+                    "type": null
                 },
                 "amount": {
                     "value": null,
@@ -510,6 +556,7 @@
                         "end": null
                     }
                 },
+                "need_payment": null,
                 "is_paid": null,
                 "wire": {
                     "user": {
@@ -533,6 +580,21 @@
                 "location": {
                     "raw": null
                 },
+                "fssp": {
+                    "date": null,
+                    "is_proceed": null,
+                    "enforcement_proceeding": {
+                        "number": null,
+                        "contact": null
+                    }
+                },
+                "payer": {
+                    "name": null,
+                    "identifier": {
+                        "type": null,
+                        "number": null
+                    }
+                },
                 "photos": [
                     {
                         "type": null,
@@ -542,6 +604,9 @@
             }
         ],
         "has_fines": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "leasings": {
@@ -562,6 +627,9 @@
             }
         ],
         "used_in_leasing": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "customs": {
@@ -609,6 +677,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -695,11 +766,21 @@
                         "dob": null
                     }
                 ],
+                "pledge_managers": [
+                    {
+                        "name": null,
+                        "type": null,
+                        "dob": null
+                    }
+                ],
                 "type": null,
                 "in_pledge": null,
                 "data": null
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "pledges_nbki": {
@@ -728,6 +809,9 @@
                 "in_pledge": null
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "insurance": {
@@ -740,8 +824,16 @@
                     },
                     "date": {
                         "start": null,
-                        "end": null
+                        "end": null,
+                        "created": null,
+                        "periods": [
+                            {
+                                "start": null,
+                                "end": null
+                            }
+                        ]
                     },
+                    "actuality_date": null,
                     "restrictions": {
                         "type": null,
                         "drivers": null
@@ -769,7 +861,8 @@
                     },
                     "vehicle": {
                         "model": {
-                            "name": null
+                            "name": null,
+                            "category": null
                         },
                         "identifiers": {
                             "reg_num": null,
@@ -783,6 +876,9 @@
                         },
                         "weight": {
                             "max": null
+                        },
+                        "seats": {
+                            "count": null
                         }
                     },
                     "insurant": {
@@ -806,10 +902,85 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
     "accidents": {
+        "statistics": {
+            "date": {
+                "update": null
+            },
+            "items": [
+                {
+                    "number": null,
+                    "type": null,
+                    "car_in_accident": null,
+                    "people_in_accident": null,
+                    "causers": [
+                        {
+                            "identifier": null
+                        }
+                    ],
+                    "geo": {
+                        "country": null,
+                        "region": null,
+                        "city": null,
+                        "street": null,
+                        "house": null
+                    },
+                    "participants": {
+                        "vehicles": [
+                            {
+                                "vin": null,
+                                "body": null,
+                                "chassis": null,
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                },
+                                "year": null,
+                                "category": null,
+                                "color": null,
+                                "driver": {
+                                    "gender": null,
+                                    "drive_experience": null,
+                                    "damage": null,
+                                    "used_seat_belt": null,
+                                    "offense": {
+                                        "main": null,
+                                        "addition": []
+                                    }
+                                },
+                                "passengers": [
+                                    {
+                                        "gender": null,
+                                        "damage": null,
+                                        "used_seat_belt": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "pedestrians": [
+                            {
+                                "gender": null,
+                                "damage": null,
+                                "offense": {
+                                    "main": null,
+                                    "addition": []
+                                }
+                            }
+                        ]
+                    },
+                    "date": null
+                }
+            ],
+            "count": 1
+        },
         "history": {
             "date": {
                 "update": null
@@ -851,25 +1022,64 @@
                         "city": null,
                         "street": null,
                         "house": null
-                    }
+                    },
+                    "other_participants": [
+                        {
+                            "number": null,
+                            "accident": {
+                                "date": null
+                            },
+                            "type": null,
+                            "state": null,
+                            "damage": {
+                                "points": null,
+                                "codes": null
+                            },
+                            "vehicle": {
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                },
+                                "year": null,
+                                "identifiers": {
+                                    "vin": null,
+                                    "body": null,
+                                    "chassis": null
+                                }
+                            },
+                            "geo": {
+                                "country": null,
+                                "region": null,
+                                "city": null,
+                                "street": null,
+                                "house": null
+                            }
+                        }
+                    ]
                 }
             ],
             "count": 1
         },
         "insurance": {
+            "date": {
+                "update": null
+            },
             "items": [
                 {
                     "date": {
                         "event": null
                     },
                     "insurer": {
-                        "type": null
+                        "name": null
                     },
-                    "accident": {
-                        "description": null
+                    "policy": {
+                        "series": null,
+                        "number": null
                     },
-                    "damage": {
-                        "raw": null
+                    "actuality": {
+                        "date": null
                     }
                 }
             ],
@@ -904,7 +1114,8 @@
                     "restrict": {
                         "type": null,
                         "reason": null,
-                        "number": null
+                        "number": null,
+                        "executive_procedure": null
                     },
                     "actuality": {
                         "date": null
@@ -955,6 +1166,18 @@
         "is_wanted": null,
         "items": [
             {
+                "actuality": {
+                    "date": null
+                },
+                "entry": null,
+                "vehicle": {
+                    "brand": {
+                        "name": null
+                    },
+                    "vin": null,
+                    "body": null,
+                    "year": null
+                },
                 "date": {
                     "stealing": null
                 },
@@ -967,6 +1190,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "ownership": {
@@ -992,6 +1218,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1027,9 +1256,15 @@
                 "inspection": {
                     "place": null
                 },
-                "reg_num": null
+                "reg_num": null,
+                "actuality": {
+                    "date": null
+                }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "utilizations": {
@@ -1047,6 +1282,9 @@
             }
         ],
         "was_utilized": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "images": {
@@ -1067,6 +1305,9 @@
                     "uri": null
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1079,6 +1320,7 @@
                     "date": {
                         "publish": null
                     },
+                    "uri": null,
                     "seller": {
                         "name": null,
                         "phones": [
@@ -1153,6 +1395,9 @@
                     }
                 }
             ],
+            "date": {
+                "update": null
+            },
             "count": 1
         }
     },
@@ -1248,6 +1493,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "market_prices": {
@@ -1290,13 +1538,16 @@
                                 "year": null,
                                 "condition": null,
                                 "wheel": {
-                                    "position": null
+                                    "position": null,
+                                    "position_id": null
                                 },
                                 "transmission": {
-                                    "type": null
+                                    "type": null,
+                                    "type_id": null
                                 },
                                 "drive": {
-                                    "type": null
+                                    "type": null,
+                                    "type_id": null
                                 },
                                 "owners": {
                                     "count": null
@@ -1307,11 +1558,13 @@
                                     },
                                     "volume": null,
                                     "fuel": {
-                                        "type": null
+                                        "type": null,
+                                        "type_id": null
                                     }
                                 },
                                 "body": {
-                                    "type": null
+                                    "type": null,
+                                    "type_id": null
                                 },
                                 "mileage": null
                             }
@@ -1337,7 +1590,29 @@
                         ]
                     }
                 }
-            ]
+            ],
+            "date": {
+                "update": null
+            }
+        },
+        "appraisal": {
+            "amount": {
+                "min": null,
+                "max": null,
+                "optimal": null
+            },
+            "reasons": {
+                "used_in_taxi": null,
+                "accidents": {
+                    "count": null
+                },
+                "ownerships": {
+                    "count": null
+                }
+            },
+            "date": {
+                "update": null
+            }
         }
     },
     "commercial_use": {
@@ -1354,6 +1629,9 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
         "count": 1
     },
     "recall_campaigns": {
@@ -1376,6 +1654,74 @@
                 }
             }
         ],
+        "date": {
+            "update": null
+        },
+        "count": 1
+    },
+    "arbitration": {
+        "count": 1,
+        "items": [
+            {
+                "date": {
+                    "registration": null
+                },
+                "court": {
+                    "name": null
+                },
+                "number": null,
+                "type": null,
+                "description": null,
+                "url": null
+            }
+        ],
+        "date": {
+            "update": null
+        }
+    },
+    "driver_licenses": {
+        "items": [
+            {
+                "actuality": {
+                    "date": null
+                },
+                "number": null,
+                "status": null,
+                "date": {
+                    "start": null,
+                    "end": null
+                },
+                "categories": [],
+                "experience": {
+                    "year_start": null
+                },
+                "operation": {
+                    "description": null,
+                    "code": null
+                },
+                "deprivations": [
+                    {
+                        "date": {
+                            "start": null,
+                            "end": null
+                        },
+                        "state": {
+                            "code": null,
+                            "description": null
+                        },
+                        "offense": {
+                            "place": null,
+                            "decision": null
+                        },
+                        "registration_place": null
+                    }
+                ]
+            }
+        ],
+        "has_deprivations": null,
+        "date": {
+            "update": null
+        },
         "count": 1
     }
 }

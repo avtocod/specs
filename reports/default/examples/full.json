@@ -317,6 +317,26 @@
             "vin": {
                 "checksum_validated": true
             }
+        },
+        "driver": {
+            "mileages": {
+                "average_annual": {
+                    "value": 81130,
+                    "calculation_options": {
+                        "period": {
+                            "start": "2008-07-26 00:00:00",
+                            "end": "2022-08-29 00:00:00"
+                        },
+                        "vehicle": {
+                            "count": 118
+                        },
+                        "mileages": {
+                            "count": 596
+                        }
+                    },
+                    "is_calculated": true
+                }
+            }
         }
     },
     "registration_actions": {

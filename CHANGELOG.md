@@ -4,6 +4,106 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.114.0
+
+### Added
+
+- Source `eaisto.basalt`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `eaisto.basalt`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `eaisto.basalt`
+- Field with path `identifiers.vehicle.body` also fillable by `eaisto.basalt`
+- Field with path `identifiers.vehicle.chassis` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `eaisto.basalt`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].date.to` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].date.from` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].doc.type` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].doc.number` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].reg_num` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.items[].actuality.date` also fillable by `eaisto.basalt`
+- Field with path `diagnostic_cards.date.update` also fillable by `eaisto.basalt`
+- Field with path `mileages.items[].date.event` also fillable by `eaisto.basalt`
+- Field with path `mileages.items[].mileage` also fillable by `eaisto.basalt`
+- Field with path `mileages.items[].actuality.date` also fillable by `eaisto.basalt`
+- Extend enum with `eaisto.basalt` value for field `mileages.items[].filled_by.source` in `./reports/default/json-schema.json`
+
+## v3.113.0
+
+### Added
+
+- Source `fines.registry`
+- Field with path `fines.items[].vendor.type`
+- Field with path `fines.items[].payer.name`
+- Field with path `fines.items[].payer.identifier.type`
+- Field with path `fines.items[].payer.identifier.number`
+- Field with path `fines.items[].fssp.enforcement_proceeding.number`
+- Field with path `fines.items[].fssp.enforcement_proceeding.contact`
+
+### Changed
+
+- Field with path `fines.items[].uin` also fillable by `fines.registry`
+- Field with path `fines.items[].description` also fillable by `fines.registry`
+- Field with path `fines.items[].date.event` also fillable by `fines.registry`
+- Field with path `fines.items[].vendor.name` also fillable by `fines.registry`
+- Field with path `fines.items[].amount.total` also fillable by `fines.registry`
+- Field with path `fines.items[].article.code` also fillable by `fines.registry`
+- Field with path `fines.items[].article.description` also fillable by `fines.registry`
+- Field with path `fines.items[].discount.percent` also fillable by `fines.registry`
+- Field with path `fines.items[].discount.date.end` also fillable by `fines.registry`
+- Field with path `fines.items[].is_paid` also fillable by `fines.registry`
+- Field with path `fines.items[].need_payment` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.user.name` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.user.tin` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.user.kpp` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.bank.name` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.bank.bik` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.bank.account.number` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.payment.purpose` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.kbk` also fillable by `fines.registry`
+- Field with path `fines.items[].wire.okato` also fillable by `fines.registry`
+- Field with path `fines.has_fines` also fillable by `fines.registry`
+- Field with path `fines.items[].location.raw` also fillable by `fines.registry`
+- Field with path `fines.items[].fssp.date` also fillable by `fines.registry`
+- Field with path `fines.items[].fssp.is_proceed` also fillable by `fines.registry`
+- Field with path `fines.date.update` also fillable by `fines.registry`
+
+## v3.112.0
+
+### Changed
+
+- Description for a field with path `accidents.insurance.date.update` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].date.event` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].insurer.name` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.series` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].policy.number` in `./fields/default/fields_list.json`
+- Description for a field with path `accidents.insurance.items[].actuality.date` in `./fields/default/fields_list.json`
+
+## v3.111.0
+
+### Added
+
+- Source `insurance.dtp.basalt`
+
+### Changed
+
+- Field with path `accidents.insurance.date.update` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].date.event` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].insurer.name` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.series` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.number` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].actuality.date` also fillable by `insurance.dtp.basalt`
+
+## v3.110.0
+
+### Changed
+
+- Updated vehicles marks and models specs
+
 ## v3.109.0
 
 ### Added

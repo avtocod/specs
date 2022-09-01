@@ -48,6 +48,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `tech_data.date.update` also fillable by `gibdd.history.registry`
 - Field with path `additional_info.vehicle.category.code` also fillable by `gibdd.history.registry`
 - Field with path `additional_info.vehicle.category.description` also fillable by `gibdd.history.registry`
+- Field with path `additional_info.vehicle.passport.org.name` also fillable by `gibdd.history.registry`
+- Field with path `additional_info.vehicle.passport.number` also fillable by `gibdd.history.registry`
 - Field with path `registration_actions.items[].code` also fillable by `gibdd.history.registry`
 - Field with path `registration_actions.items[].type` also fillable by `gibdd.history.registry`
 - Field with path `registration_actions.items[].date.start` also fillable by `gibdd.history.registry`

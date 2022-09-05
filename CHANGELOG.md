@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Source `gibdd.history.registory`
+- Source `gibdd.history.registry`
 
 ### Changed
 

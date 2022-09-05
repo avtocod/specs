@@ -313,6 +313,26 @@
             "vin": {
                 "checksum_validated": null
             }
+        },
+        "driver": {
+            "mileages": {
+                "average_annual": {
+                    "value": null,
+                    "calculation_options": {
+                        "period": {
+                            "start": null,
+                            "end": null
+                        },
+                        "vehicle": {
+                            "count": null
+                        },
+                        "mileages": {
+                            "count": null
+                        }
+                    },
+                    "is_calculated": false
+                }
+            }
         }
     },
     "registration_actions": {

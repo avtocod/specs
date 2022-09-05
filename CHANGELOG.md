@@ -67,6 +67,18 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `ownership.history.items[].last_operation.description` also fillable by `gibdd.history.registry`
 - Field with path `ownership.history.date.update` also fillable by `gibdd.history.registry`
 
+## v3.115.0
+
+### Added
+
+- Source `driver.mileages`
+- Field with path `additional_info.driver.mileages.average_annual.value`
+- Field with path `additional_info.driver.mileages.average_annual.is_calculated`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.period.start`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.period.end`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.vehicle.count`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.mileages.count`
+
 ## v3.114.0
 
 ### Added

@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `driver.mileages`
+- Field with path `additional_info.driver.mileages.average_annual.value`
+- Field with path `additional_info.driver.mileages.average_annual.is_calculated`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.period.start`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.period.end`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.vehicle.count`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.mileages.count`
+
 ## v3.114.0
 
 ### Added

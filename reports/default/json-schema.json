@@ -2894,6 +2894,133 @@
                             }
                         }
                     }
+                },
+                "driver": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "mileages": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "average_annual": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "value": {
+                                            "description": "Средний пробег на всех ТС за год, без учета промежутков между периодами автовладений",
+                                            "type": [
+                                                "integer",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                14995
+                                            ],
+                                            "fillable_by": [
+                                                "driver.mileages"
+                                            ]
+                                        },
+                                        "calculation_options": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "period": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "start": {
+                                                            "description": "Дата начала периода первого автовладения",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/datetime"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2015-05-15 00:00:00"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "driver.mileages"
+                                                            ]
+                                                        },
+                                                        "end": {
+                                                            "description": "Дата конца последнего периода автовладения (текущая дата, если хотя бы один период не закрыт)",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/datetime"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2015-05-15 00:00:00"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "driver.mileages"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "vehicle": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "count": {
+                                                            "description": "Количество ТС, по которым был произведен расчет среднегодового пробега (наката) водителя",
+                                                            "type": [
+                                                                "integer",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                2
+                                                            ],
+                                                            "fillable_by": [
+                                                                "driver.mileages"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "mileages": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "count": {
+                                                            "description": "Количество зафиксированных пробегов, на основании которых был произведен расчет среднегодового пробега (наката) водителя",
+                                                            "type": [
+                                                                "integer",
+                                                                "null"
+                                                            ],
+                                                            "examples": [
+                                                                2
+                                                            ],
+                                                            "fillable_by": [
+                                                                "driver.mileages"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "is_calculated": {
+                                            "description": "Флаг успешности расчета",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "examples": [
+                                                true
+                                            ],
+                                            "fillable_by": [
+                                                "driver.mileages"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },

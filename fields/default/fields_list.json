@@ -16,7 +16,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -32,7 +33,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -44,7 +46,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -57,7 +60,8 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -76,7 +80,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -94,7 +99,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -105,7 +111,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -125,7 +132,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -141,7 +149,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -153,7 +162,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -166,7 +176,8 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -185,7 +196,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -203,7 +215,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "eaisto.basalt"
+            "eaisto.basalt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -241,7 +254,8 @@
             "gibdd.diagnostic.cards",
             "base.registry",
             "eaisto.registry",
-            "base.registry.retry"
+            "base.registry.retry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -315,7 +329,8 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -328,7 +343,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "gibdd.history"
+            "gibdd.history",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -339,7 +355,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -366,7 +383,8 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -394,7 +412,8 @@
             "gibdd.history",
             "base.alt",
             "eaisto.registry",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -420,7 +439,8 @@
             "base.ext",
             "customs.base",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -434,7 +454,8 @@
             "base.ext",
             "base.alt",
             "customs.base",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -447,7 +468,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -459,7 +481,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -473,7 +496,8 @@
             "base.ext",
             "gibdd.history",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -489,7 +513,8 @@
             "base.alt",
             "regactions.registry",
             "base.registry",
-            "base.registry.retry"
+            "base.registry.retry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -504,7 +529,8 @@
             "gibdd.history",
             "base.alt",
             "base.registry",
-            "base.registry.retry"
+            "base.registry.retry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -514,7 +540,8 @@
             "string"
         ],
         "fillable_by": [
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -553,7 +580,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "gibdd.history.registry"
+        ]
     },
     {
         "path": "tech_data.transmission.type_id",
@@ -561,7 +590,9 @@
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "gibdd.history.registry"
+        ]
     },
     {
         "path": "tech_data.drive.type",
@@ -572,7 +603,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -584,7 +616,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -597,7 +630,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -610,7 +644,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -621,7 +656,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -780,7 +816,8 @@
             "base.alt",
             "regactions.registry",
             "gibdd.diagnostic.cards",
-            "eaisto.registry"
+            "eaisto.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -796,7 +833,8 @@
             "base.alt",
             "regactions.registry",
             "base.registry",
-            "base.registry.retry"
+            "base.registry.retry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -811,7 +849,8 @@
             "gibdd.eaisto",
             "regactions.registry",
             "base.registry",
-            "base.registry.retry"
+            "base.registry.retry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -907,7 +946,8 @@
             "gibdd.history",
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -920,7 +960,8 @@
             "gibdd.history",
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1583,7 +1624,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1596,7 +1638,8 @@
             "gibdd.history",
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1610,7 +1653,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1669,7 +1713,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "gibdd.history"
+            "gibdd.history",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1682,7 +1727,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "gibdd.history"
+            "gibdd.history",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1696,7 +1742,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1709,7 +1756,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1722,7 +1770,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1734,7 +1783,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1746,7 +1796,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1758,7 +1809,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1771,7 +1823,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1846,7 +1899,8 @@
             "base.ext",
             "base",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1859,7 +1913,8 @@
             "base.ext",
             "base",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1894,7 +1949,8 @@
         ],
         "fillable_by": [
             "base",
-            "base.ext"
+            "base.ext",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1904,7 +1960,8 @@
             "string"
         ],
         "fillable_by": [
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {
@@ -1928,7 +1985,8 @@
             "base",
             "base.ext",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "gibdd.history.registry"
         ]
     },
     {

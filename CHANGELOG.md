@@ -41,6 +41,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `tech_data.year` also fillable by `gibdd.history.registry`
 - Field with path `tech_data.wheel.position` also fillable by `gibdd.history.registry`
 - Field with path `tech_data.wheel.position_id` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.wheel.position_code` also fillable by `gibdd.history.registry`
 - Field with path `tech_data.drive.type` also fillable by `gibdd.history.registry`
 - Field with path `tech_data.drive.type_id` also fillable by `gibdd.history.registry`
 - Field with path `tech_data.transmission.type` also fillable by `gibdd.history.registry`
@@ -59,6 +60,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `registration_actions.items[].identifiers.sts` also fillable by `gibdd.history.registry`
 - Field with path `registration_actions.items[].owner.type` also fillable by `gibdd.history.registry`
 - Field with path `registration_actions.items[].usage_allowed` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].actuality.date` also fillable by `gibdd.history.registry`
 - Field with path `registration_actions.date.update` also fillable by `gibdd.history.registry`
 - Field with path `ownership.history.items[].date.start` also fillable by `gibdd.history.registry`
 - Field with path `ownership.history.items[].date.end` also fillable by `gibdd.history.registry`

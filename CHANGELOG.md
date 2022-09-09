@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Field with path `tech_data.transmission.type` also fillable by `base` and `base.ext`
+- Field with path `tech_data.transmission.type_id` also fillable by `base` and `base.ext`
+- Field with path `additional_info.vehicle.techreglament_category.code` also fillable by `base` and `base.ext`
+- Field with path `additional_info.vehicle.techreglament_category.description` also fillable by `base` and `base.ext`
+
 ## v3.116.0
 
 ### Added

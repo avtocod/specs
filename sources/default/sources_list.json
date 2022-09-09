@@ -293,5 +293,15 @@
         "name": "eaisto.basalt",
         "description": "Диагностические карты (ЕАИСТО)",
         "enabled": true
+    },
+    {
+        "name": "driver.mileages",
+        "description": "Среднегодовой пробег по водителю",
+        "enabled": true
+    },
+    {
+        "name": "gibdd.history.registry",
+        "description": "Реестр характеристик ТС и регистрационных действий",
+        "enabled": true
     }
 ]

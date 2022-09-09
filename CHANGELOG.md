@@ -4,6 +4,83 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v3.116.0
+
+### Added
+
+- Source `gibdd.history.registry`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `gibdd.history.registry`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `gibdd.history.registry`
+- Field with path `identifiers.vehicle.sts` also fillable by `gibdd.history.registry`
+- Field with path `identifiers.vehicle.pts` also fillable by `gibdd.history.registry`
+- Field with path `identifiers.vehicle.body` also fillable by `gibdd.history.registry`
+- Field with path `identifiers.vehicle.chassis` also fillable by `gibdd.history.registry`
+- Field with path `identifiers.manufacture.vin` also fillable by `gibdd.history.registry`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `gibdd.history.registry`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `gibdd.history.registry`
+- Field with path `identifiers_masked.vehicle.sts` also fillable by `gibdd.history.registry`
+- Field with path `identifiers_masked.vehicle.pts` also fillable by `gibdd.history.registry`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `gibdd.history.registry`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.fuel.type` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.fuel.type_id` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.number` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.model.name` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.volume` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.power.hp` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.power.kw` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.body.color.name` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.engine.standarts.emission.euro` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.brand.name.original` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.type.code` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.type.name` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.type.type_id` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.year` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.wheel.position` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.wheel.position_id` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.wheel.position_code` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.drive.type` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.drive.type_id` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.transmission.type` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.transmission.type_id` also fillable by `gibdd.history.registry`
+- Field with path `tech_data.date.update` also fillable by `gibdd.history.registry`
+- Field with path `additional_info.vehicle.category.code` also fillable by `gibdd.history.registry`
+- Field with path `additional_info.vehicle.category.description` also fillable by `gibdd.history.registry`
+- Field with path `additional_info.vehicle.passport.org.name` also fillable by `gibdd.history.registry`
+- Field with path `additional_info.vehicle.passport.number` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].code` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].type` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].date.start` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].date.end` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].reg_num` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].identifiers.pts` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].identifiers.sts` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].owner.type` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].usage_allowed` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.items[].actuality.date` also fillable by `gibdd.history.registry`
+- Field with path `registration_actions.date.update` also fillable by `gibdd.history.registry`
+- Field with path `ownership.history.items[].date.start` also fillable by `gibdd.history.registry`
+- Field with path `ownership.history.items[].date.end` also fillable by `gibdd.history.registry`
+- Field with path `ownership.history.items[].owner.type1` also fillable by `gibdd.history.registry`
+- Field with path `ownership.history.items[].last_operation.code` also fillable by `gibdd.history.registry`
+- Field with path `ownership.history.items[].last_operation.description` also fillable by `gibdd.history.registry`
+- Field with path `ownership.history.date.update` also fillable by `gibdd.history.registry`
+
+## v3.115.0
+
+### Added
+
+- Source `driver.mileages`
+- Field with path `additional_info.driver.mileages.average_annual.value`
+- Field with path `additional_info.driver.mileages.average_annual.is_calculated`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.period.start`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.period.end`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.vehicle.count`
+- Field with path `additional_info.driver.mileages.average_annual.calculation_options.mileages.count`
+
 ## v3.114.0
 
 ### Added

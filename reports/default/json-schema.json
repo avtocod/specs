@@ -1285,6 +1285,8 @@
                                 "AUTOMATIC"
                             ],
                             "fillable_by": [
+                                "base",
+                                "base.ext",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -1302,6 +1304,8 @@
                                 "ID_TRANSMISSION_TYPE_AUTOMATIC"
                             ],
                             "fillable_by": [
+                                "base",
+                                "base.ext",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -2149,6 +2153,8 @@
                                         "O4"
                                     ],
                                     "fillable_by": [
+                                        "base",
+                                        "base.ext",
                                         "eaisto.registry"
                                     ]
                                 },
@@ -2162,6 +2168,8 @@
                                         "Мототранспортные средства"
                                     ],
                                     "fillable_by": [
+                                        "base",
+                                        "base.ext",
                                         "eaisto.registry"
                                     ]
                                 }

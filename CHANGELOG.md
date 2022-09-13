@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Field with path `tech_data.engine.standarts.emission.euro` also fillable by `base` and `base.ext`
+
 ## v3.117.0
 
 ### Changed

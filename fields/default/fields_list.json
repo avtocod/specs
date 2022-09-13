@@ -540,6 +540,8 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
             "regactions.registry",
             "gibdd.history.registry"
         ]

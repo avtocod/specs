@@ -581,6 +581,8 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
             "gibdd.history.registry"
         ]
     },
@@ -591,6 +593,8 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
             "gibdd.history.registry"
         ]
     },
@@ -982,6 +986,8 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
             "eaisto.registry"
         ]
     },
@@ -992,6 +998,8 @@
             "string"
         ],
         "fillable_by": [
+            "base",
+            "base.ext",
             "eaisto.registry"
         ]
     },

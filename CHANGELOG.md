@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Changed
+
+- Extended enum with `M1G`, `M2G`, `M3G`, `N1G`, `N2G` и `N3G` values for field `additional_info.vehicle.techreglament_category.code` in `./reports/default/json-schema.json`
+
 ## v3.118.0
 
 ### Changed

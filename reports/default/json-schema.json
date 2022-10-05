@@ -352,6 +352,7 @@
                                 "gibdd.history",
                                 "gibdd.eaisto",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
@@ -382,6 +383,7 @@
                                 "base.ext",
                                 "base.alt",
                                 "base.registry",
+                                "base.basalt",
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
@@ -430,6 +432,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
+                                "base.basalt",
                                 "gibdd.history",
                                 "base.alt",
                                 "gibdd.history.registry"
@@ -456,6 +459,7 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
@@ -552,6 +556,7 @@
                                 "gibdd.history",
                                 "gibdd.eaisto",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
@@ -578,6 +583,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "base.registry",
                                 "eaisto.registry",
                                 "base.registry.retry",
@@ -621,6 +627,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
+                                "base.basalt",
                                 "gibdd.history",
                                 "base.alt",
                                 "gibdd.history.registry"
@@ -644,6 +651,7 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
                                 "base.registry",
@@ -701,7 +709,9 @@
                             "examples": [
                                 "N\/A"
                             ],
-                            "fillable_by": []
+                            "fillable_by": [
+                                "base.basalt"
+                            ]
                         }
                     }
                 },
@@ -746,6 +756,7 @@
                                         "customs.base",
                                         "gibdd.eaisto",
                                         "base.alt",
+                                        "base.basalt",
                                         "regactions.registry",
                                         "gibdd.diagnostic.cards",
                                         "base.registry",
@@ -838,6 +849,7 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "gibdd.eaisto",
+                                        "base.basalt",
                                         "eaisto.registry",
                                         "gibdd.diagnostic.cards"
                                     ]
@@ -876,6 +888,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
+                                "base.basalt",
                                 "gibdd.history",
                                 "base.alt",
                                 "gibdd.history.registry"
@@ -898,6 +911,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "gibdd.history",
                                 "gibdd.history.registry"
                             ]
@@ -914,6 +928,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
+                                "base.basalt",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -962,6 +977,7 @@
                                         "base.ext",
                                         "gibdd.history",
                                         "base.alt",
+                                        "base.basalt",
                                         "gibdd.history.registry"
                                     ]
                                 },
@@ -1000,6 +1016,7 @@
                         "gibdd.eaisto",
                         "gibdd.history",
                         "base.alt",
+                        "base.basalt",
                         "eaisto.registry",
                         "regactions.registry",
                         "gibdd.history.registry"
@@ -1056,6 +1073,7 @@
                                         "base.ext",
                                         "customs.base",
                                         "base.alt",
+                                        "base.basalt",
                                         "regactions.registry",
                                         "gibdd.history.registry"
                                     ]
@@ -1077,6 +1095,7 @@
                                         "base",
                                         "base.ext",
                                         "base.alt",
+                                        "base.basalt",
                                         "customs.base",
                                         "regactions.registry",
                                         "gibdd.history.registry"
@@ -1103,6 +1122,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry"
                             ]
@@ -1124,6 +1144,7 @@
                                         "base",
                                         "base.ext",
                                         "base.alt",
+                                        "base.basalt",
                                         "gibdd.history.registry"
                                     ]
                                 }
@@ -1144,6 +1165,7 @@
                                 "base.ext",
                                 "gibdd.history",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry"
                             ]
@@ -1167,6 +1189,7 @@
                                         "base.ext",
                                         "gibdd.history",
                                         "base.alt",
+                                        "base.basalt",
                                         "regactions.registry",
                                         "base.registry",
                                         "base.registry.retry",
@@ -1188,6 +1211,7 @@
                                         "base.ext",
                                         "gibdd.history",
                                         "base.alt",
+                                        "base.basalt",
                                         "base.registry",
                                         "base.registry.retry",
                                         "gibdd.history.registry"
@@ -1215,6 +1239,7 @@
                                             "fillable_by": [
                                                 "base",
                                                 "base.ext",
+                                                "base.basalt",
                                                 "regactions.registry",
                                                 "gibdd.history.registry"
                                             ]
@@ -1244,6 +1269,7 @@
                                 "base.ext",
                                 "gibdd.eaisto",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry"
                             ]
                         },
@@ -1262,6 +1288,7 @@
                                 "base.ext",
                                 "gibdd.eaisto",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "base.registry",
                                 "base.registry.retry"
@@ -1289,6 +1316,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
+                                "base.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -1308,6 +1336,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
+                                "base.basalt",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -1337,6 +1366,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -1357,6 +1387,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -1383,6 +1414,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry"
                             ]
@@ -1404,6 +1436,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry"
                             ]
@@ -1766,6 +1799,7 @@
                                         "base.ext",
                                         "gibdd.eaisto",
                                         "base.alt",
+                                        "base.basalt",
                                         "regactions.registry",
                                         "base.registry",
                                         "base.registry.retry",
@@ -1787,6 +1821,7 @@
                                         "gibdd.eaisto",
                                         "regactions.registry",
                                         "base.registry",
+                                        "base.basalt",
                                         "base.registry.retry",
                                         "gibdd.history.registry"
                                     ]
@@ -1972,6 +2007,7 @@
                                         "base",
                                         "base.ext",
                                         "base.alt",
+                                        "base.basalt",
                                         "gibdd.history.registry"
                                     ]
                                 },
@@ -2163,6 +2199,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
+                                        "base.basalt",
                                         "eaisto.registry"
                                     ]
                                 },
@@ -2178,6 +2215,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
+                                        "base.basalt",
                                         "eaisto.registry"
                                     ]
                                 }
@@ -3113,6 +3151,7 @@
                                             "base",
                                             "base.ext",
                                             "base.alt",
+                                            "base.basalt",
                                             "regactions.registry",
                                             "gibdd.history.registry"
                                         ]
@@ -3181,6 +3220,7 @@
                                             "base",
                                             "base.ext",
                                             "base.alt",
+                                            "base.basalt",
                                             "gibdd.history.registry"
                                         ]
                                     },
@@ -3363,6 +3403,7 @@
                                     "base.ext",
                                     "base",
                                     "base.alt",
+                                    "base.basalt",
                                     "regactions.registry",
                                     "gibdd.history.registry"
                                 ]
@@ -5497,7 +5538,8 @@
                                                     "2016-04-05 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base"
+                                                    "customs.base",
+                                                    "base.basalt"
                                                 ]
                                             }
                                         }
@@ -5529,7 +5571,8 @@
                                                     "50302382\/017119\/0003860"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base"
+                                                    "customs.base",
+                                                    "base.basalt"
                                                 ]
                                             }
                                         }
@@ -5548,7 +5591,8 @@
                                                     "ТАМОЖЕННОЕ УПРАВЛЕНИЕ"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base"
+                                                    "customs.base",
+                                                    "base.basalt"
                                                 ]
                                             }
                                         }
@@ -5732,7 +5776,8 @@
                                                             "Тайланд"
                                                         ],
                                                         "fillable_by": [
-                                                            "customs.base"
+                                                            "customs.base",
+                                                            "base.basalt"
                                                         ]
                                                     }
                                                 }
@@ -5755,6 +5800,30 @@
                                                         ]
                                                     }
                                                 }
+                                            }
+                                        }
+                                    },
+                                    "utilization_tax": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "status": {
+                                                "description": "Статус оплаты утилизационного сбора",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "enum": [
+                                                    "Уплачен",
+                                                    "Не уплачен",
+                                                    null
+                                                ],
+                                                "examples": [
+                                                    "Уплачен"
+                                                ],
+                                                "fillable_by": [
+                                                    "base.basalt"
+                                                ]
                                             }
                                         }
                                     }
@@ -9120,7 +9189,8 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "base.basalt"
                                                 ]
                                             },
                                             "start": {
@@ -9212,7 +9282,8 @@
                                                     "Судебные Органы"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "base.basalt"
                                                 ]
                                             },
                                             "region": {
@@ -9229,7 +9300,8 @@
                                                             "Брянская"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.restrict"
+                                                            "gibdd.restrict",
+                                                            "base.basalt"
                                                         ]
                                                     }
                                                 }
@@ -9250,7 +9322,8 @@
                                                     "Запрет на регистрационные действия"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "base.basalt"
                                                 ]
                                             },
                                             "reason": {
@@ -9263,7 +9336,8 @@
                                                     "Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "base.basalt"
                                                 ]
                                             },
                                             "number": {
@@ -9289,7 +9363,21 @@
                                                     "90129308/0060-ИП"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "base.basalt"
+                                                ]
+                                            },
+                                            "contact": {
+                                                "description": "Контакты судебного пристава",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "652050, Россия, Кемеровская обл., г. Юрга, ул. Ленинградская, д. 31"
+                                                ],
+                                                "fillable_by": [
+                                                    "base.basalt"
                                                 ]
                                             }
                                         }
@@ -9336,7 +9424,8 @@
                                 null
                             ],
                             "fillable_by": [
-                                "gibdd.restrict"
+                                "gibdd.restrict",
+                                "base.basalt"
                             ]
                         }
                     }
@@ -9847,6 +9936,7 @@
                                                     "base",
                                                     "base.ext",
                                                     "base.alt",
+                                                    "base.basalt",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
                                                 ]
@@ -9869,6 +9959,7 @@
                                                     "base",
                                                     "base.ext",
                                                     "base.alt",
+                                                    "base.basalt",
                                                     "gibdd.history.registry"
                                                 ]
                                             }
@@ -9900,6 +9991,7 @@
                                                     "base",
                                                     "base.ext",
                                                     "base.alt",
+                                                    "base.basalt",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
                                                 ]
@@ -9999,6 +10091,7 @@
                                                     "base",
                                                     "base.ext",
                                                     "base.alt",
+                                                    "base.basalt",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
                                                 ]
@@ -10016,6 +10109,7 @@
                                                     "base",
                                                     "base.ext",
                                                     "base.alt",
+                                                    "base.basalt",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
                                                 ]

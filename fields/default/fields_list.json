@@ -1838,6 +1838,7 @@
             "base",
             "base.ext",
             "base.alt",
+            "base.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -1954,6 +1955,7 @@
             "base.ext",
             "base",
             "base.alt",
+            "base.basalt",
             "regactions.registry",
             "gibdd.history.registry"
         ]
@@ -2016,6 +2018,7 @@
             "string"
         ],
         "fillable_by": [
+            "base.basalt",
             "regactions.registry",
             "gibdd.history.registry"
         ]
@@ -3706,7 +3709,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.restrict"
+            "gibdd.restrict",
+            "base.basalt"
         ]
     },
     {
@@ -3727,6 +3731,7 @@
             "string"
         ],
         "fillable_by": [
+            "base.basalt",
             "gibdd.restrict"
         ]
     },

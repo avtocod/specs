@@ -3196,6 +3196,7 @@
                                     "base",
                                     "base.ext",
                                     "base.alt",
+                                    "base.basalt",
                                     "gibdd.history.registry"
                                 ]
                             },
@@ -3386,6 +3387,7 @@
                                     "base.ext",
                                     "base",
                                     "base.alt",
+                                    "base.basalt",
                                     "regactions.registry",
                                     "gibdd.history.registry"
                                 ]
@@ -3483,6 +3485,7 @@
                                             "2020-02-11 05:24:00"
                                         ],
                                         "fillable_by": [
+                                            "base.basalt",
                                             "regactions.registry",
                                             "gibdd.history.registry"
                                         ]
@@ -9350,7 +9353,8 @@
                                                     "90129308-0060"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict"
+                                                    "gibdd.restrict",
+                                                    "base.basalt"
                                                 ]
                                             },
                                             "executive_procedure": {
@@ -9400,6 +9404,7 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
+                                                    "base.basalt",
                                                     "gibdd.restrict"
                                                 ]
                                             }

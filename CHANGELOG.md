@@ -4,6 +4,78 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `base.basalt`
+- Field with path `restrictions.registration_actions.items[].restrict.contact`
+- Field with path `customs.history.items[].utilization_tax.status`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `base.basalt`
+- Field with path `identifiers.vehicle.reg_num` also fillable by `base.basalt`
+- Field with path `identifiers.vehicle.pts` also fillable by `base.basalt`
+- Field with path `identifiers.vehicle.body` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.pts` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `base.basalt`
+- Field with path `tech_data.manufacturer.name` also fillable by `base.basalt`
+- Field with path `tech_data.brand.name.original` also fillable by `base.basalt`
+- Field with path `tech_data.model.name.original` also fillable by `base.basalt`
+- Field with path `tech_data.type.name` also fillable by `base.basalt`
+- Field with path `tech_data.type.type_id` also fillable by `base.basalt`
+- Field with path `tech_data.type.code` also fillable by `base.basalt`
+- Field with path `tech_data.body.color.name` also fillable by `base.basalt`
+- Field with path `tech_data.year` also fillable by `base.basalt`
+- Field with path `tech_data.engine.fuel.type` also fillable by `base.basalt`
+- Field with path `tech_data.engine.fuel.type_id` also fillable by `base.basalt`
+- Field with path `tech_data.engine.number` also fillable by `base.basalt`
+- Field with path `tech_data.engine.model.name` also fillable by `base.basalt`
+- Field with path `tech_data.engine.volume` also fillable by `base.basalt`
+- Field with path `tech_data.engine.power.hp` also fillable by `base.basalt`
+- Field with path `tech_data.engine.power.kw` also fillable by `base.basalt`
+- Field with path `tech_data.engine.standarts.emission.euro` also fillable by `base.basalt`
+- Field with path `tech_data.weight.netto` also fillable by `base.basalt`
+- Field with path `tech_data.weight.max` also fillable by `base.basalt`
+- Field with path `tech_data.transmission.type` also fillable by `base.basalt`
+- Field with path `tech_data.transmission.type_id` also fillable by `base.basalt`
+- Field with path `tech_data.drive.type` also fillable by `base.basalt`
+- Field with path `tech_data.drive.type_id` also fillable by `base.basalt`
+- Field with path `tech_data.wheel.position` also fillable by `base.basalt`
+- Field with path `tech_data.wheel.position_id` also fillable by `base.basalt`
+- Field with path `additional_info.vehicle.category.code` also fillable by `base.basalt`
+- Field with path `additional_info.vehicle.category.description` also fillable by `base.basalt`
+- Field with path `additional_info.vehicle.passport.number` also fillable by `base.basalt`
+- Field with path `additional_info.vehicle.techreglament_category.code` also fillable by `base.basalt`
+- Field with path `additional_info.vehicle.techreglament_category.description` also fillable by `base.basalt`
+- Field with path `ownership.history.items[].date.start` also fillable by `base.basalt`
+- Field with path `ownership.history.items[].date.end` also fillable by `base.basalt`
+- Field with path `ownership.history.items[].owner.type` also fillable by `base.basalt`
+- Field with path `ownership.history.items[].last_operation.code` also fillable by `base.basalt`
+- Field with path `ownership.history.items[].last_operation.description` also fillable by `base.basalt`
+- Field with path `registration_actions.items[].date.start` also fillable by `base.basalt`
+- Field with path `registration_actions.items[].identifiers.pts` also fillable by `base.basalt`
+- Field with path `registration_actions.items[].reg_num` also fillable by `base.basalt`
+- Field with path `registration_actions.items[].type` also fillable by `base.basalt`
+- Field with path `registration_actions.items[].code` also fillable by `base.basalt`
+- Field with path `registration_actions.items[].actuality.date` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].date.added` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].initiator.name` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].initiator.region.name` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].restrict.type` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].restrict.reason` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].restrict.number` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].restrict.executive_procedure` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.items[].actuality.date` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.has_restrictions` also fillable by `base.basalt`
+- Field with path `customs.history.items[].date.event` also fillable by `base.basalt`
+- Field with path `customs.history.items[].document.number` also fillable by `base.basalt`
+- Field with path `customs.history.items[].org.name` also fillable by `base.basalt`
+- Field with path `customs.history.items[].country.from.name` also fillable by `base.basalt`
+
 ## v3.119.0
 
 ### Changed

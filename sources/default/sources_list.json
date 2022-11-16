@@ -303,5 +303,10 @@
         "name": "gibdd.history.registry",
         "description": "Реестр характеристик ТС и регистрационных действий",
         "enabled": true
+    },
+    {
+        "name": "base.basalt",
+        "description": "Базовая информация о ТС и данные регистрационных действий",
+        "enabled": true
     }
 ]

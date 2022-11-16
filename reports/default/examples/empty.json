@@ -694,6 +694,9 @@
                         "to": {
                             "name": null
                         }
+                    },
+                    "utilization_tax": {
+                        "status": null
                     }
                 }
             ],
@@ -1135,7 +1138,8 @@
                         "type": null,
                         "reason": null,
                         "number": null,
-                        "executive_procedure": null
+                        "executive_procedure": null,
+                        "contact": null
                     },
                     "actuality": {
                         "date": null

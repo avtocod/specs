@@ -18,6 +18,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `identifiers.vehicle.reg_num` also fillable by `base.basalt`
 - Field with path `identifiers.vehicle.pts` also fillable by `base.basalt`
 - Field with path `identifiers.vehicle.body` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.reg_num` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.pts` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `base.basalt`
 - Field with path `tech_data.manufacturer.name` also fillable by `base.basalt`
 - Field with path `tech_data.brand.name.original` also fillable by `base.basalt`
 - Field with path `tech_data.model.name.original` also fillable by `base.basalt`
@@ -57,7 +61,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `registration_actions.items[].reg_num` also fillable by `base.basalt`
 - Field with path `registration_actions.items[].type` also fillable by `base.basalt`
 - Field with path `registration_actions.items[].code` also fillable by `base.basalt`
-- Field with path `registration_actions.items[].actuality_date` also fillable by `base.basalt`
+- Field with path `registration_actions.items[].actuality.date` also fillable by `base.basalt`
 - Field with path `restrictions.registration_actions.items[].date.added` also fillable by `base.basalt`
 - Field with path `restrictions.registration_actions.items[].initiator.name` also fillable by `base.basalt`
 - Field with path `restrictions.registration_actions.items[].initiator.region.name` also fillable by `base.basalt`

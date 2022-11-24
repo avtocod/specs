@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Fixed
+
+- Field with path `tech_data.date.update` also fillable by `base.basalt`
+- Field with path `customs.history.date.update` also fillable by `base.basalt`
+- Field with path `ownership.history.date.update` also fillable by `base.basalt`
+- Field with path `registration_actions.date.update` also fillable by `base.basalt`
+- Field with path `restrictions.registration_actions.date.update` also fillable by `base.basalt`
+
 ## v3.120.0
 
 ### Added

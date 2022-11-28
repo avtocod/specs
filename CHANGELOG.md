@@ -9,9 +9,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Fixed
 
 - Field with path `tech_data.date.update` also fillable by `base.basalt`
+- Field with path `identifiers.vehicle.chassis` also fillable by `base.basalt`
 - Field with path `customs.history.date.update` also fillable by `base.basalt`
 - Field with path `ownership.history.date.update` also fillable by `base.basalt`
 - Field with path `registration_actions.date.update` also fillable by `base.basalt`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `base.basalt`
 - Field with path `restrictions.registration_actions.date.update` also fillable by `base.basalt`
 
 ## v3.120.0

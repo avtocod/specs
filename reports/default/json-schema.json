@@ -491,6 +491,7 @@
                                 "base.alt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
+                                "base.basalt",
                                 "base.registry",
                                 "eaisto.registry",
                                 "base.registry.retry",
@@ -680,6 +681,7 @@
                                 "base.alt",
                                 "regactions.registry",
                                 "gibdd.diagnostic.cards",
+                                "base.basalt",
                                 "base.registry",
                                 "eaisto.registry",
                                 "base.registry.retry",
@@ -1742,6 +1744,7 @@
                                 "customs.base",
                                 "gibdd.eaisto",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.diagnostic.cards",
@@ -3515,6 +3518,7 @@
                                 "base",
                                 "base.ext",
                                 "base.alt",
+                                "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry"
                             ]
@@ -5850,7 +5854,8 @@
                                         "2020-02-11 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "customs.base"
+                                        "customs.base",
+                                        "base.basalt"
                                     ]
                                 }
                             }
@@ -9163,7 +9168,8 @@
                                         "2015-07-13 00:00:00"
                                     ],
                                     "fillable_by": [
-                                        "gibdd.restrict"
+                                        "gibdd.restrict",
+                                        "base.basalt"
                                     ]
                                 }
                             }
@@ -10145,6 +10151,7 @@
                                         "base",
                                         "base.ext",
                                         "base.alt",
+                                        "base.basalt",
                                         "regactions.registry",
                                         "gibdd.history.registry"
                                     ]

@@ -854,7 +854,8 @@
                                 "start": null,
                                 "end": null
                             }
-                        ]
+                        ],
+                        "cancel": null
                     },
                     "actuality_date": null,
                     "restrictions": {
@@ -867,6 +868,14 @@
                         "is_active": null,
                         "expired": null,
                         "status": null
+                    },
+                    "policy_replaced": {
+                        "series": null,
+                        "number": null
+                    },
+                    "policy_replacement": {
+                        "series": null,
+                        "number": null
                     },
                     "contract": {
                         "is_active": null,

@@ -2157,6 +2157,16 @@
         ]
     },
     {
+        "path": "insurance.osago.items[].date.cancel",
+        "description": "ОСАГО: Дата отмены полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
+        ]
+    },
+    {
         "path": "insurance.osago.items[].actuality_date",
         "description": "ОСАГО: Дата актуализации данных",
         "types": [
@@ -2271,6 +2281,46 @@
             "rsaosago.base",
             "rsaosago.base.ext",
             "rsaosago.base.history",
+            "osago.registry"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].policy_replaced.series",
+        "description": "ОСАГО: Серия замененного полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].policy_replaced.number",
+        "description": "ОСАГО: Номер замененного полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].policy_replacement.series",
+        "description": "ОСАГО: Серия заменяющего полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "osago.registry"
+        ]
+    },
+    {
+        "path": "insurance.osago.items[].policy_replacement.number",
+        "description": "ОСАГО: Номер заменяющего полиса",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
             "osago.registry"
         ]
     },

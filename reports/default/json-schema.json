@@ -7133,7 +7133,7 @@
                                                 }
                                             },
                                             "cancel": {
-                                                "description": "Дата отмены полиса",
+                                                "description": "ОСАГО: Дата отмены полиса",
                                                 "oneOf": [
                                                     {
                                                         "type": "null"
@@ -7320,7 +7320,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "series": {
-                                                "description": "Серия полиса",
+                                                "description": "ОСАГО: Серия замененного полиса",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -7333,7 +7333,7 @@
                                                 ]
                                             },
                                             "number": {
-                                                "description": "Номер полиса",
+                                                "description": "ОСАГО: Номер замененного полиса",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -7352,7 +7352,7 @@
                                         "additionalProperties": false,
                                         "properties": {
                                             "series": {
-                                                "description": "Серия полиса",
+                                                "description": "ОСАГО: Серия заменяющего полиса",
                                                 "type": [
                                                     "string",
                                                     "null"
@@ -7365,7 +7365,7 @@
                                                 ]
                                             },
                                             "number": {
-                                                "description": "Номер полиса",
+                                                "description": "ОСАГО: Номер заменяющего полиса",
                                                 "type": [
                                                     "string",
                                                     "null"

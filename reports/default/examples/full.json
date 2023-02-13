@@ -1102,7 +1102,8 @@
                                 "start": "2021-01-03",
                                 "end": "2022-01-02"
                             }
-                        ]
+                        ],
+                        "cancel": "2016-05-02 00:00:00"
                     },
                     "actuality_date": "2016-07-07 00:00:00",
                     "restrictions": {
@@ -1115,6 +1116,14 @@
                         "is_active": false,
                         "expired": false,
                         "status": "Выдан страхователю"
+                    },
+                    "policy_replaced": {
+                        "series": "AAA",
+                        "number": "0318541420"
+                    },
+                    "policy_replacement": {
+                        "series": "BBB",
+                        "number": "1318543220"
                     },
                     "contract": {
                         "is_active": false,

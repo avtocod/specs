@@ -2285,7 +2285,7 @@
         ]
     },
     {
-        "path": "insurance.osago.items[].policy_replaced.series",
+        "path": "insurance.osago.items[].policy_replaced[].series",
         "description": "ОСАГО: Серия замененного полиса",
         "types": [
             "string"
@@ -2295,7 +2295,7 @@
         ]
     },
     {
-        "path": "insurance.osago.items[].policy_replaced.number",
+        "path": "insurance.osago.items[].policy_replaced[].number",
         "description": "ОСАГО: Номер замененного полиса",
         "types": [
             "string"

@@ -7316,34 +7316,37 @@
                                         }
                                     },
                                     "policy_replaced": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "properties": {
-                                            "series": {
-                                                "description": "ОСАГО: Серия замененного полиса",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "AAA"
-                                                ],
-                                                "fillable_by": [
-                                                    "osago.registry"
-                                                ]
-                                            },
-                                            "number": {
-                                                "description": "ОСАГО: Номер замененного полиса",
-                                                "type": [
-                                                    "string",
-                                                    "null"
-                                                ],
-                                                "examples": [
-                                                    "1880091420"
-                                                ],
-                                                "fillable_by": [
-                                                    "osago.registry"
-                                                ]
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "series": {
+                                                    "description": "ОСАГО: Серия замененного полиса",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "AAA"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "osago.registry"
+                                                    ]
+                                                },
+                                                "number": {
+                                                    "description": "ОСАГО: Номер замененного полиса",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "1880091420"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "osago.registry"
+                                                    ]
+                                                }
                                             }
                                         }
                                     },

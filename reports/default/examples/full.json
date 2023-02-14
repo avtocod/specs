@@ -1117,10 +1117,12 @@
                         "expired": false,
                         "status": "Выдан страхователю"
                     },
-                    "policy_replaced": {
-                        "series": "AAA",
-                        "number": "0318541420"
-                    },
+                    "policy_replaced": [
+                        {
+                            "series": "AAA",
+                            "number": "0318541420"
+                        }
+                    ],
                     "policy_replacement": {
                         "series": "BBB",
                         "number": "1318543220"

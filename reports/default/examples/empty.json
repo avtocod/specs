@@ -869,10 +869,12 @@
                         "expired": null,
                         "status": null
                     },
-                    "policy_replaced": {
-                        "series": null,
-                        "number": null
-                    },
+                    "policy_replaced": [
+                        {
+                            "series": null,
+                            "number": null
+                        }
+                    ],
                     "policy_replacement": {
                         "series": null,
                         "number": null

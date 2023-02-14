@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `insurance.osago.items[].policy_replaced[].series`
+- Field with path `insurance.osago.items[].policy_replaced[].number`
+
+### Removed
+
+- Field with path `insurance.osago.items[].policy_replaced.series`
+- Field with path `insurance.osago.items[].policy_replaced.number`
+
 ## v3.124.0
 
 ### Added

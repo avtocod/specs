@@ -4817,7 +4817,8 @@
                                             "OTHER_GISGMP"
                                         ],
                                         "fillable_by": [
-                                            "fines.registry"
+                                            "fines.registry",
+                                            "fines.base"
                                         ]
                                     }
                                 }
@@ -5200,7 +5201,8 @@
                                                     "30696/21/63004-ИП от 13.10.2021"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.registry"
+                                                    "fines.registry",
+                                                    "fines.base"
                                                 ]
                                             },
                                             "contact": {
@@ -5213,7 +5215,8 @@
                                                     "БИЦАДЗЕ О. А., тел: +7(84673)2-12-65//ОСП Большеглушицкого района (код отдела: 63004)"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.registry"
+                                                    "fines.registry",
+                                                    "fines.base"
                                                 ]
                                             }
                                         }
@@ -5234,7 +5237,8 @@
                                             "Иванов Иван Иванович"
                                         ],
                                         "fillable_by": [
-                                            "fines.registry"
+                                            "fines.registry",
+                                            "fines.base"
                                         ]
                                     },
                                     "identifier": {
@@ -5251,7 +5255,8 @@
                                                     "STS"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.registry"
+                                                    "fines.registry",
+                                                    "fines.base"
                                                 ]
                                             },
                                             "number": {
@@ -5264,7 +5269,8 @@
                                                     "1111111111"
                                                 ],
                                                 "fillable_by": [
-                                                    "fines.registry"
+                                                    "fines.registry",
+                                                    "fines.base"
                                                 ]
                                             }
                                         }

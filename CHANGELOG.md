@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Field with path `fines.items[].vendor.type` also fillable by `fines.base`
+- Field with path `fines.items[].payer.name` also fillable by `fines.base`
+- Field with path `fines.items[].payer.identifier.type` also fillable by `fines.base`
+- Field with path `fines.items[].payer.identifier.number` also fillable by `fines.base`
+- Field with path `fines.items[].fssp.enforcement_proceeding.number` also fillable by `fines.base`
+- Field with path `fines.items[].fssp.enforcement_proceeding.contact` also fillable by `fines.base`
+
 ## v3.125.0
 
 ### Added

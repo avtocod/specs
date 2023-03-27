@@ -6371,6 +6371,33 @@
                 }
             }
         },
+        "taxi_analytics": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Такси, аналитика",
+            "properties": {
+                "probable_use": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "is_used": {
+                            "description": "ТС вероятно использовалось в качестве такси?",
+                            "type": [
+                                "boolean",
+                                "null"
+                            ],
+                            "examples": [
+                                true,
+                                null
+                            ],
+                            "fillable_by": [
+                                "hl.taxi"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
         "pledges": {
             "type": "object",
             "additionalProperties": false,

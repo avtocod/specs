@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `hl.taxi`
+- Field with path `taxi_analytics.probable_use.is_used` fillable by `hl.taxi`
+
 ## v3.126.0
 
 ### Changed

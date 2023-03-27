@@ -308,5 +308,10 @@
         "name": "base.basalt",
         "description": "Базовая информация о ТС и данные регистрационных действий",
         "enabled": true
+    },
+    {
+        "name": "hl.taxi",
+        "description": "Вероятное использование в такси",
+        "enabled": true
     }
 ]

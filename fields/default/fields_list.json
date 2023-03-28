@@ -4741,6 +4741,16 @@
         ]
     },
     {
+        "path": "taxi_analytics.probable_use.is_used",
+        "description": "Вероятное использование в такси: ТС вероятно использовалось в качестве такси?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "hl.taxi"
+        ]
+    },
+    {
         "path": "fines.items[].date.event",
         "description": "Штрафы: Дата инициации штрафа",
         "types": [

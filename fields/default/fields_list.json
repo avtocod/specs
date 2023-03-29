@@ -4860,6 +4860,16 @@
         ]
     },
     {
+        "path": "fines.items[].vendor.code",
+        "description": "Штрафы: Код организации наложившей штраф",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base"
+        ]
+    },
+    {
         "path": "fines.items[].amount.value",
         "description": "Штрафы: Сумма штрафа",
         "types": [
@@ -5089,6 +5099,16 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry"
+        ]
+    },
+    {
+        "path": "fines.items[].location.coordinates",
+        "description": "Штрафы: Координаты совершения правонарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fines.base"
         ]
     },
     {

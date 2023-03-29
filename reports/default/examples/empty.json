@@ -564,7 +564,8 @@
                 "description": null,
                 "vendor": {
                     "name": null,
-                    "type": null
+                    "type": null,
+                    "code": null
                 },
                 "amount": {
                     "value": null,
@@ -598,7 +599,8 @@
                     "okato": null
                 },
                 "location": {
-                    "raw": null
+                    "raw": null,
+                    "coordinates": null
                 },
                 "fssp": {
                     "date": null,

@@ -4820,6 +4820,19 @@
                                             "fines.registry",
                                             "fines.base"
                                         ]
+                                    },
+                                    "code": {
+                                        "description": "Код организации наложившей штраф",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "1165080"
+                                        ],
+                                        "fillable_by": [
+                                            "fines.base"
+                                        ]
                                     }
                                 }
                             },
@@ -5147,6 +5160,19 @@
                                             "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry"
+                                        ]
+                                    },
+                                    "coordinates": {
+                                        "description": "Координаты совершения правонарушения",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "56.900455,60.613899"
+                                        ],
+                                        "fillable_by": [
+                                            "fines.base"
                                         ]
                                     }
                                 }

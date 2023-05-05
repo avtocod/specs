@@ -1553,6 +1553,16 @@
         ]
     },
     {
+        "path": "additional_info.driver.kbm.value",
+        "description": "Коэффициент бонус-малус",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.dtp.basalt"
+        ]
+    },
+    {
         "path": "diagnostic_cards.items[].date.from",
         "description": "Диагностические карты: Дата начала действия диагностической карты",
         "types": [

@@ -3117,6 +3117,25 @@
                                     }
                                 }
                             }
+                        },
+                        "kbm": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "value": {
+                                    "description": "Коэффициент бонус-малус",
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        2.25
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.dtp.basalt"
+                                    ]
+                                }
+                            }
                         }
                     }
                 }

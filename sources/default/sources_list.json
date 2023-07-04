@@ -313,5 +313,10 @@
         "name": "hl.taxi",
         "description": "Вероятное использование в такси",
         "enabled": true
+    },
+    {
+        "name": "leasing.registry",
+        "description": "Реестр лизингов",
+        "enabled": true
     }
 ]

@@ -5500,6 +5500,82 @@
                                     "base.ext",
                                     "leasing.registry"
                                 ]
+                            },
+                            "contract_info": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "number": {
+                                        "description": "Номер контракта",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "AA0354698"
+                                        ],
+                                        "fillable_by": [
+                                            "leasing.registry"
+                                        ]
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "event": {
+                                                "description": "Дата подписания контракта",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2017-11-22 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "leasing.registry"
+                                                ]
+                                            },
+                                            "start": {
+                                                "description": "Дата начала действия контракта",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2017-11-22 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "leasing.registry"
+                                                ]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания действия контракта",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2017-11-22 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "leasing.registry"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

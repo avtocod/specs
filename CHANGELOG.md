@@ -9,6 +9,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `leasing.registry`
+- Field with path `leasings.items[].contract_info.number`
+- Field with path `leasings.items[].contract_info.date.event`
+- Field with path `leasings.items[].contract_info.date.start`
+- Field with path `leasings.items[].contract_info.date.end`
 
 ### Changed
 

@@ -4453,6 +4453,46 @@
         ]
     },
     {
+        "path": "leasings.items[].contract_info.number",
+        "description": "Лизинг: Номер контракта",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].contract_info.date.event",
+        "description": "Лизинг: Дата подписания контракта",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].contract_info.date.start",
+        "description": "Лизинг: Дата начала действия контракта",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].contract_info.date.end",
+        "description": "Лизинг: Дата окончания действия контракта",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
         "path": "leasings.used_in_leasing",
         "description": "Лизинг: Приобреталось ли ТС в лизинг?",
         "types": [

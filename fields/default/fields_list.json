@@ -4493,6 +4493,176 @@
         ]
     },
     {
+        "path": "leasings.items[].lessors[].company.name",
+        "description": "Лизинг: Наименование компании-лизингодателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessors[].company.type",
+        "description": "Лизинг: Тип компании-лизингодателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessors[].company.tin",
+        "description": "Лизинг: Номер ИНН компании-лизингодателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessors[].company.ogrn",
+        "description": "Лизинг: Номер ОГРН компании-лизингодателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessees[].company.name",
+        "description": "Лизинг: Наименование компании-лизингополучателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessees[].company.type",
+        "description": "Лизинг: Тип компании-лизингополучателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessees[].company.tin",
+        "description": "Лизинг: Номер ИНН компании-лизингополучателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].lessees[].company.ogrn",
+        "description": "Лизинг: Номер ОГРН компании-лизингополучателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].date",
+        "description": "Лизинг: Дата публикации сообщения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].number",
+        "description": "Лизинг: Номер сообщения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].type",
+        "description": "Лизинг: Тип сообщения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].content.description",
+        "description": "Лизинг: Текст сообщения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].content.subject.is_subleasing",
+        "description": "Лизинг: Есть ли договор сублизинга?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].content.subject.identifier",
+        "description": "Лизинг: Идентификатор ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].content.subject.type",
+        "description": "Лизинг: Тип ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].content.subject.description",
+        "description": "Лизинг: Описание типа ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].in_leasing",
+        "description": "Лизинг: Находится ли ТС в лизинге?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
         "path": "leasings.used_in_leasing",
         "description": "Лизинг: Приобреталось ли ТС в лизинг?",
         "types": [

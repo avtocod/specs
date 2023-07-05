@@ -13,6 +13,23 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `leasings.items[].contract_info.date.event`
 - Field with path `leasings.items[].contract_info.date.start`
 - Field with path `leasings.items[].contract_info.date.end`
+- Field with path `leasings.items[].lessors[].company.name`
+- Field with path `leasings.items[].lessors[].company.type`
+- Field with path `leasings.items[].lessors[].company.tin`
+- Field with path `leasings.items[].lessors[].company.ogrn`
+- Field with path `leasings.items[].lessees[].company.name`
+- Field with path `leasings.items[].lessees[].company.type`
+- Field with path `leasings.items[].lessees[].company.tin`
+- Field with path `leasings.items[].lessees[].company.ogrn`
+- Field with path `leasings.items[].messages[].date`
+- Field with path `leasings.items[].messages[].number`
+- Field with path `leasings.items[].messages[].type`
+- Field with path `leasings.items[].messages[].content.description`
+- Field with path `leasings.items[].messages[].content.subject.is_subleasing`
+- Field with path `leasings.items[].messages[].content.subject.identifier`
+- Field with path `leasings.items[].messages[].content.subject.type`
+- Field with path `leasings.items[].messages[].content.subject.description`
+- Field with path `leasings.items[].in_leasing`
 
 ### Changed
 

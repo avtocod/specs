@@ -25,10 +25,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `leasings.items[].messages[].number`
 - Field with path `leasings.items[].messages[].type`
 - Field with path `leasings.items[].messages[].content.description`
-- Field with path `leasings.items[].messages[].content.subject.is_subleasing`
-- Field with path `leasings.items[].messages[].content.subject.identifier`
-- Field with path `leasings.items[].messages[].content.subject.type`
-- Field with path `leasings.items[].messages[].content.subject.description`
+- Field with path `leasings.items[].messages[].content.is_subleasing`
+- Field with path `leasings.items[].messages[].content.subjects[].identifier`
+- Field with path `leasings.items[].messages[].content.subjects[].type`
+- Field with path `leasings.items[].messages[].content.subjects[].description`
 - Field with path `leasings.items[].in_leasing`
 
 ### Changed

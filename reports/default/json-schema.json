@@ -5777,65 +5777,68 @@
                                                         "leasing.registry"
                                                     ]
                                                 },
-                                                "subject": {
-                                                    "type": "object",
-                                                    "additionalProperties": false,
-                                                    "properties": {
-                                                        "is_subleasing": {
-                                                            "description": "Есть ли договор сублизинга?",
-                                                            "type": [
-                                                                "boolean",
-                                                                "null"
-                                                            ],
-                                                            "examples": [
-                                                                true,
-                                                                null
-                                                            ],
-                                                            "fillable_by": [
-                                                                "leasing.registry"
-                                                            ]
-                                                        },
-                                                        "identifier": {
-                                                            "description": "Идентификатор ТС",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
-                                                            ],
-                                                            "examples": [
-                                                                "EXAMPL0V1N1000000",
-                                                                null
-                                                            ],
-                                                            "fillable_by": [
-                                                                "leasing.registry"
-                                                            ]
-                                                        },
-                                                        "type": {
-                                                            "description": "Тип ТС",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
-                                                            ],
-                                                            "examples": [
-                                                                "Автомобили",
-                                                                null
-                                                            ],
-                                                            "fillable_by": [
-                                                                "leasing.registry"
-                                                            ]
-                                                        },
-                                                        "description": {
-                                                            "description": "Описание типа ТС",
-                                                            "type": [
-                                                                "string",
-                                                                "null"
-                                                            ],
-                                                            "examples": [
-                                                                "Грузовой автотранспорт",
-                                                                null
-                                                            ],
-                                                            "fillable_by": [
-                                                                "leasing.registry"
-                                                            ]
+                                                "is_subleasing": {
+                                                    "description": "Есть ли договор сублизинга?",
+                                                    "type": [
+                                                        "boolean",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        true,
+                                                        null
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "subjects": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "identifier": {
+                                                                "description": "Идентификатор ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "EXAMPL0V1N1000000",
+                                                                    null
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            },
+                                                            "type": {
+                                                                "description": "Тип ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Автомобили",
+                                                                    null
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            },
+                                                            "description": {
+                                                                "description": "Описание типа ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Грузовой автотранспорт",
+                                                                    null
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            }
                                                         }
                                                     }
                                                 }

@@ -4613,7 +4613,7 @@
         ]
     },
     {
-        "path": "leasings.items[].messages[].content.subject.is_subleasing",
+        "path": "leasings.items[].messages[].content.is_subleasing",
         "description": "Лизинг: Есть ли договор сублизинга?",
         "types": [
             "boolean"
@@ -4623,7 +4623,7 @@
         ]
     },
     {
-        "path": "leasings.items[].messages[].content.subject.identifier",
+        "path": "leasings.items[].messages[].content.subjects[].identifier",
         "description": "Лизинг: Идентификатор ТС",
         "types": [
             "string"
@@ -4633,7 +4633,7 @@
         ]
     },
     {
-        "path": "leasings.items[].messages[].content.subject.type",
+        "path": "leasings.items[].messages[].content.subjects[].type",
         "description": "Лизинг: Тип ТС",
         "types": [
             "string"
@@ -4643,7 +4643,7 @@
         ]
     },
     {
-        "path": "leasings.items[].messages[].content.subject.description",
+        "path": "leasings.items[].messages[].content.subjects[].description",
         "description": "Лизинг: Описание типа ТС",
         "types": [
             "string"

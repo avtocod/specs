@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
-### Added
+## v3.130.0
 
 - Source `leasing.registry`
 - Field with path `leasings.items[].contract_info.number`

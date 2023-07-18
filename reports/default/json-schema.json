@@ -5432,7 +5432,8 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext"
+                                            "base.ext",
+                                            "leasing.registry"
                                         ]
                                     }
                                 }
@@ -5452,7 +5453,8 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext"
+                                            "base.ext",
+                                            "leasing.registry"
                                         ]
                                     }
                                 }
@@ -5476,7 +5478,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext"
+                                                    "base.ext",
+                                                    "leasing.registry"
                                                 ]
                                             }
                                         }
@@ -5494,7 +5497,368 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext"
+                                    "base.ext",
+                                    "leasing.registry"
+                                ]
+                            },
+                            "contract_info": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "number": {
+                                        "description": "Номер контракта",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "AA0354698"
+                                        ],
+                                        "fillable_by": [
+                                            "leasing.registry"
+                                        ]
+                                    },
+                                    "date": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "event": {
+                                                "description": "Дата подписания контракта",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2017-11-22 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "leasing.registry"
+                                                ]
+                                            },
+                                            "start": {
+                                                "description": "Дата начала действия контракта",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2017-11-22 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "leasing.registry"
+                                                ]
+                                            },
+                                            "end": {
+                                                "description": "Дата окончания действия контракта",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2017-11-22 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "leasing.registry"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "lessors": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "company": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "name": {
+                                                    "description": "Наименование компании-лизингодателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "АО ВТБ ЛИЗИНГ"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "type": {
+                                                    "description": "Тип компании-лизингодателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "Company"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "tin": {
+                                                    "description": "Номер ИНН компании-лизингодателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "6297557802"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "ogrn": {
+                                                    "description": "Номер ОГРН компании-лизингодателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "1877354634195"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "lessees": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "company": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "name": {
+                                                    "description": "Наименование компании-лизингополучателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "АО ВТБ ЛИЗИНГ"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "type": {
+                                                    "description": "Тип компании-лизингополучателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "Company"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "tin": {
+                                                    "description": "Номер ИНН компании-лизингополучателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "6297557802"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "ogrn": {
+                                                    "description": "Номер ОГРН компании-лизингополучателя",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "1877354634195"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "messages": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "date": {
+                                            "description": "Дата публикации сообщения",
+                                            "oneOf": [
+                                                {
+                                                    "type": "null"
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/datetime"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "2017-11-22 00:00:00"
+                                            ],
+                                            "fillable_by": [
+                                                "leasing.registry"
+                                            ]
+                                        },
+                                        "number": {
+                                            "description": "Номер сообщения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "13883222"
+                                            ],
+                                            "fillable_by": [
+                                                "leasing.registry"
+                                            ]
+                                        },
+                                        "type": {
+                                            "description": "Тип сообщения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                "Заключение договора финансовой аренды (лизинга)"
+                                            ],
+                                            "fillable_by": [
+                                                "leasing.registry"
+                                            ]
+                                        },
+                                        "content": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "description": {
+                                                    "description": "Текст сообщения",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        "В дополнение к ранее опубликованному сообщению о заключении договора финансовой аренды (лизинга) № AA000001 от 20.09.2022 сообщаем об изменениях по указанному договору финансовой аренды (лизинга)."
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "is_subleasing": {
+                                                    "description": "Есть ли договор сублизинга?",
+                                                    "type": [
+                                                        "boolean",
+                                                        "null"
+                                                    ],
+                                                    "examples": [
+                                                        true,
+                                                        null
+                                                    ],
+                                                    "fillable_by": [
+                                                        "leasing.registry"
+                                                    ]
+                                                },
+                                                "subjects": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "identifier": {
+                                                                "description": "Идентификатор ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "EXAMPL0V1N1000000",
+                                                                    null
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            },
+                                                            "type": {
+                                                                "description": "Тип ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Автомобили",
+                                                                    null
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            },
+                                                            "description": {
+                                                                "description": "Описание типа ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Грузовой автотранспорт",
+                                                                    null
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "in_leasing": {
+                                "description": "Находится ли ТС в лизинге?",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    true,
+                                    null
+                                ],
+                                "fillable_by": [
+                                    "leasing.registry"
                                 ]
                             }
                         }
@@ -5512,7 +5876,8 @@
                     ],
                     "fillable_by": [
                         "base",
-                        "base.ext"
+                        "base.ext",
+                        "leasing.registry"
                     ]
                 },
                 "date": {
@@ -5533,7 +5898,8 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext"
+                                "base.ext",
+                                "leasing.registry"
                             ]
                         }
                     }

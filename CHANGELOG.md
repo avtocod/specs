@@ -4,6 +4,42 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `leasing.registry`
+- Field with path `leasings.items[].contract_info.number`
+- Field with path `leasings.items[].contract_info.date.event`
+- Field with path `leasings.items[].contract_info.date.start`
+- Field with path `leasings.items[].contract_info.date.end`
+- Field with path `leasings.items[].lessors[].company.name`
+- Field with path `leasings.items[].lessors[].company.type`
+- Field with path `leasings.items[].lessors[].company.tin`
+- Field with path `leasings.items[].lessors[].company.ogrn`
+- Field with path `leasings.items[].lessees[].company.name`
+- Field with path `leasings.items[].lessees[].company.type`
+- Field with path `leasings.items[].lessees[].company.tin`
+- Field with path `leasings.items[].lessees[].company.ogrn`
+- Field with path `leasings.items[].messages[].date`
+- Field with path `leasings.items[].messages[].number`
+- Field with path `leasings.items[].messages[].type`
+- Field with path `leasings.items[].messages[].content.description`
+- Field with path `leasings.items[].messages[].content.is_subleasing`
+- Field with path `leasings.items[].messages[].content.subjects[].identifier`
+- Field with path `leasings.items[].messages[].content.subjects[].type`
+- Field with path `leasings.items[].messages[].content.subjects[].description`
+- Field with path `leasings.items[].in_leasing`
+
+### Changed
+
+- Field with path `leasings.items[].tin` also fillable by `leasing.registry`
+- Field with path `leasings.items[].company.name` also fillable by `leasing.registry`
+- Field with path `leasings.items[].lessor.company.name` also fillable by `leasing.registry`
+- Field with path `leasings.items[].date.event` also fillable by `leasing.registry`
+- Field with path `leasings.used_in_leasing` also fillable by `leasing.registry`
+- Field with path `leasings.date.update` also fillable by `leasing.registry`
+
 ## v3.129.0
 
 ### Changed

@@ -645,7 +645,54 @@
                         "name": null
                     }
                 },
-                "tin": null
+                "tin": null,
+                "contract_info": {
+                    "number": null,
+                    "date": {
+                        "event": null,
+                        "start": null,
+                        "end": null
+                    }
+                },
+                "lessors": [
+                    {
+                        "company": {
+                            "name": null,
+                            "type": null,
+                            "tin": null,
+                            "ogrn": null
+                        }
+                    }
+                ],
+                "lessees": [
+                    {
+                        "company": {
+                            "name": null,
+                            "type": null,
+                            "tin": null,
+                            "ogrn": null
+                        }
+                    }
+                ],
+                "messages": [
+                    {
+                        "date": null,
+                        "number": null,
+                        "type": null,
+                        "content": {
+                            "description": null,
+                            "is_subleasing": null,
+                            "subjects": [
+                                {
+                                    "identifier": null,
+                                    "type": null,
+                                    "description": null
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "in_leasing": null
             }
         ],
         "used_in_leasing": null,

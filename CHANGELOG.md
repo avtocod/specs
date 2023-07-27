@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
+### Changed
+
+- Vehicle marks and models specs
+
 ## v3.130.0
 
 - Source `leasing.registry`

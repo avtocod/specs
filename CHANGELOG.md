@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `insurance.registry`
+- Field with path `accidents.insurance.items[].date.event` also fillable by `insurance.registry`
+- Field with path `accidents.insurance.items[].policy.series` also fillable by `insurance.registry`
+- Field with path `accidents.insurance.items[].policy.number` also fillable by `insurance.registry`
+- Field with path `accidents.insurance.items[].insurer.name` also fillable by `insurance.registry`
+- Field with path `accidents.insurance.items[].actuality.date` also fillable by `insurance.registry`
+- Field with path `accidents.insurance.date.update` also fillable by `insurance.registry`
+
 ## v3.131.0
 
 ### Changed
@@ -11,6 +23,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Vehicle marks and models specs
 
 ## v3.130.0
+
+### Added
 
 - Source `leasing.registry`
 - Field with path `leasings.items[].contract_info.number`

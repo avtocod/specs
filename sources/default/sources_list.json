@@ -318,5 +318,10 @@
         "name": "leasing.registry",
         "description": "Реестр лизингов",
         "enabled": true
+    },
+    {
+        "name": "insurance.registry",
+        "description": "Реестр европротоколов",
+        "enabled": true
     }
 ]

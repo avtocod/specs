@@ -14410,6 +14410,165 @@
                     }
                 }
             }
+        },
+        "executive_procedures": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Исполнительные производства",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "number": {
+                                "description": "Номер исполнительного производства",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "231948/23/38030-ИП"
+                                ],
+                                "fillable_by": [
+                                    "fssp.base.executive"
+                                ]
+                            },
+                            "description": {
+                                "description": "Описание кода предмета исполнения",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "Задолженность по платежам за услуги связи"
+                                ],
+                                "fillable_by": [
+                                    "fssp.base.executive"
+                                ]
+                            },
+                            "debt": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "amount": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "value": {
+                                                "description": "Остаток долга по исполнительному сбору",
+                                                "type": [
+                                                    "number",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    130.00
+                                                ],
+                                                "fillable_by": [
+                                                    "fssp.base.executive"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "bailiff": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "description": "ФИО пристава",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "СЕРГЕЕВ А. В."
+                                        ],
+                                        "fillable_by": [
+                                            "fssp.base.executive"
+                                        ]
+                                    },
+                                    "phone": {
+                                        "description": "Телефонный номер пристава",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "+7(999)12-35-798"
+                                        ],
+                                        "fillable_by": [
+                                            "fssp.base.executive"
+                                        ]
+                                    },
+                                    "department": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Название отдела судебных приставов",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "г. Иркутск УФССП России по Иркутской области"
+                                                ],
+                                                "fillable_by": [
+                                                    "fssp.base.executive"
+                                                ]
+                                            },
+                                            "address": {
+                                                "description": "Адрес отдела судебных приставов",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "664033, Россия, г. Иркутск, ул. Улан-Баторская, д. 2"
+                                                ],
+                                                "fillable_by": [
+                                                    "fssp.base.executive"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "create": {
+                                        "description": "Дата создания документа",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2023-12-12 12:10:00"
+                                        ],
+                                        "fillable_by": [
+                                            "fssp.base.executive"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
         }
     }
 }

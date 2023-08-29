@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `fssp.base.executive`
+- Field with path `executive_procedures.items[].number`
+- Field with path `executive_procedures.items[].description`
+- Field with path `executive_procedures.items[].debt.amount.value`
+- Field with path `executive_procedures.items[].bailiff.name`
+- Field with path `executive_procedures.items[].bailiff.phone`
+- Field with path `executive_procedures.items[].bailiff.department.name`
+- Field with path `executive_procedures.items[].bailiff.department.address`
+- Field with path `executive_procedures.items[].date.create`
+
 ## v3.132.0
 
 ### Added

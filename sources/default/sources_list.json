@@ -323,5 +323,10 @@
         "name": "insurance.registry",
         "description": "Реестр европротоколов",
         "enabled": true
+    },
+    {
+        "name": "fssp.base.executive",
+        "description": "Данные об исполнительных производствах в базе ФССП",
+        "enabled": true
     }
 ]

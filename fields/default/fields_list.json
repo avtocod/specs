@@ -7629,5 +7629,85 @@
         "fillable_by": [
             "gibdd.driver.registry"
         ]
+    },
+    {
+        "path": "executive_procedures.items[].number",
+        "description": "Исполнительные производства: Номер исполнительного производства",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
+    },
+    {
+        "path": "executive_procedures.items[].description",
+        "description": "Исполнительные производства: Описание кода предмета исполнения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
+    },
+    {
+        "path": "executive_procedures.items[].debt.amount.value",
+        "description": "Исполнительные производства: Остаток долга по исполнительному сбору",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
+    },
+    {
+        "path": "executive_procedures.items[].bailiff.name",
+        "description": "Исполнительные производства: ФИО пристава",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
+    },
+    {
+        "path": "executive_procedures.items[].bailiff.phone",
+        "description": "Исполнительные производства: Телефонный номер пристава",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
+    },
+    {
+        "path": "executive_procedures.items[].bailiff.department.name",
+        "description": "Исполнительные производства: Название отдела судебных приставов",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
+    },
+    {
+        "path": "executive_procedures.items[].bailiff.department.address",
+        "description": "Исполнительные производства: Адрес отдела судебных приставов",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
+    },
+    {
+        "path": "executive_procedures.items[].date.create",
+        "description": "Исполнительные производства: Дата создания документа",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "fssp.base.executive"
+        ]
     }
 ]

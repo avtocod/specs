@@ -1812,5 +1812,30 @@
             "update": null
         },
         "count": 1
+    },
+    "executive_procedures": {
+        "items": [
+            {
+                "number": null,
+                "description": null,
+                "debt": {
+                    "amount": {
+                        "value": null
+                    }
+                },
+                "bailiff": {
+                    "name": null,
+                    "phone": null,
+                    "department": {
+                        "name": null,
+                        "address": null
+                    }
+                },
+                "date": {
+                    "create": null
+                }
+            }
+        ],
+        "count": 1
     }
 }

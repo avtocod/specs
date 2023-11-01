@@ -268,7 +268,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.fts"
         ]
     },
     {
@@ -4249,6 +4250,7 @@
         ],
         "fillable_by": [
             "customs.base",
+            "customs.fts",
             "base.basalt"
         ]
     },
@@ -4382,6 +4384,7 @@
         ],
         "fillable_by": [
             "customs.base",
+            "customs.fts",
             "base.basalt"
         ]
     },
@@ -4413,6 +4416,7 @@
         ],
         "fillable_by": [
             "customs.base",
+            "customs.fts",
             "base.basalt"
         ]
     },

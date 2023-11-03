@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `customs.history.items[].country.from.name` also fillable by `customs.fts`
 - Field with path `customs.history.date.update` also fillable by `customs.fts`
 - Field with path `tech_data.brand.name.original` also fillable by `customs.fts`
+- Field with path `tech_data.date.update` also fillable by `customs.fts`
 
 ## v3.135.0
 

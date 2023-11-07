@@ -333,5 +333,10 @@
         "name": "insurance.vehicle.registry",
         "description": "Реестр европротоколов по ТС",
         "enabled": true
+    },
+    {
+        "name": "customs.fts",
+        "description": "Данные о таможенном оформлении в базе ФТС",
+        "enabled": true
     }
 ]

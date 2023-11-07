@@ -268,7 +268,8 @@
             "base.registry",
             "eaisto.registry",
             "base.registry.retry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.fts"
         ]
     },
     {
@@ -859,7 +860,8 @@
             "regactions.registry",
             "gibdd.diagnostic.cards",
             "eaisto.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.fts"
         ]
     },
     {
@@ -4249,6 +4251,7 @@
         ],
         "fillable_by": [
             "customs.base",
+            "customs.fts",
             "base.basalt"
         ]
     },
@@ -4382,6 +4385,7 @@
         ],
         "fillable_by": [
             "customs.base",
+            "customs.fts",
             "base.basalt"
         ]
     },
@@ -4413,6 +4417,7 @@
         ],
         "fillable_by": [
             "customs.base",
+            "customs.fts",
             "base.basalt"
         ]
     },

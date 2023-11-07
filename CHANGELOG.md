@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `customs.fts`
+- Field with path `customs.history.items[].date.event` also fillable by `customs.fts`
+- Field with path `customs.history.items[].country.from.name` also fillable by `customs.fts`
+- Field with path `customs.history.date.update` also fillable by `customs.fts`
+- Field with path `tech_data.brand.name.original` also fillable by `customs.fts`
+- Field with path `tech_data.date.update` also fillable by `customs.fts`
+
 ## v3.135.0
 
 ### Changed

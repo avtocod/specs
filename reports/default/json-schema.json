@@ -10657,6 +10657,49 @@
                                 }
                             }
                         },
+                        "usage": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "duration_iso": {
+                                    "description": "Общая длительность владения ТС формат ISO",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "P1Y1M"
+                                    ],
+                                    "fillable_by":  [
+                                        "gibdd.history",
+                                        "base",
+                                        "base.ext",
+                                        "base.alt",
+                                        "base.basalt",
+                                        "gibdd.history.registry"
+                                    ]
+                                },
+                                "days": {
+                                    "description": "Общая длительность владения ТС в днях",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        365
+                                    ],
+                                    "minimum": 0,
+                                    "fillable_by":  [
+                                        "gibdd.history",
+                                        "base",
+                                        "base.ext",
+                                        "base.alt",
+                                        "base.basalt",
+                                        "gibdd.history.registry"
+                                    ]
+                                }
+                            }
+                        },
                         "date": {
                             "type": "object",
                             "properties": {

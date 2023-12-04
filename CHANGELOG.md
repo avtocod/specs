@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `ownership.history.usage.duration_iso`
+- Field with path `ownership.history.usage.days`
+
 ## v3.137.0
 
 ### Changed

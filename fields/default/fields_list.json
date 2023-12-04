@@ -1790,6 +1790,36 @@
         ]
     },
     {
+        "path": "ownership.history.usage.duration_iso",
+        "description": "История владения: Общая длительность владения ТС формат ISO",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.history",
+            "base",
+            "base.ext",
+            "base.alt",
+            "base.basalt",
+            "gibdd.history.registry"
+        ]
+    },
+    {
+        "path": "ownership.history.usage.days",
+        "description": "История владения: Общая длительность владения ТС в днях",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "gibdd.history",
+            "base",
+            "base.ext",
+            "base.alt",
+            "base.basalt",
+            "gibdd.history.registry"
+        ]
+    },
+    {
         "path": "ownership.history.date.update",
         "description": "История владения: Дата обновления данных",
         "types": [

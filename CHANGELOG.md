@@ -11,6 +11,18 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `ownership.history.usage.duration_iso`
 - Field with path `ownership.history.usage.days`
 
+## v3.139.0
+
+### Changed
+
+- Vehicle models and marks names
+
+## v3.138.0
+
+### Changed
+
+- Vehicle models specs
+
 ## v3.137.0
 
 ### Changed

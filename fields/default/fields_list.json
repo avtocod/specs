@@ -1791,7 +1791,7 @@
     },
     {
         "path": "ownership.history.usage.duration_iso",
-        "description": "История владения: Общая длительность владения ТС формат ISO",
+        "description": "История владения: Общая продолжительность владения ТС в формате ISO 8601",
         "types": [
             "string"
         ],
@@ -1804,7 +1804,7 @@
     },
     {
         "path": "ownership.history.usage.days",
-        "description": "История владения: Общая длительность владения ТС в днях",
+        "description": "История владения: Общая продолжительность владения ТС в днях",
         "types": [
             "integer"
         ],

@@ -10662,13 +10662,13 @@
                             "additionalProperties": false,
                             "properties": {
                                 "duration_iso": {
-                                    "description": "Общая длительность владения ТС формат ISO",
+                                    "description": "Общая продолжительность владения ТС в формате ISO 8601",
                                     "type": [
                                         "string",
                                         "null"
                                     ],
                                     "examples": [
-                                        "P1Y1M"
+                                        "P1Y3M24D"
                                     ],
                                     "fillable_by":  [
                                         "gibdd.history",
@@ -10678,7 +10678,7 @@
                                     ]
                                 },
                                 "days": {
-                                    "description": "Общая длительность владения ТС в днях",
+                                    "description": "Общая продолжительность владения ТС в днях",
                                     "type": [
                                         "integer",
                                         "null"

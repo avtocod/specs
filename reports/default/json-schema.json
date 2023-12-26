@@ -10657,6 +10657,45 @@
                                 }
                             }
                         },
+                        "usage": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "duration_iso": {
+                                    "description": "Общая продолжительность владения ТС в формате ISO 8601",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "P1Y3M24D"
+                                    ],
+                                    "fillable_by":  [
+                                        "gibdd.history",
+                                        "base",
+                                        "base.basalt",
+                                        "gibdd.history.registry"
+                                    ]
+                                },
+                                "days": {
+                                    "description": "Общая продолжительность владения ТС в днях",
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        365
+                                    ],
+                                    "minimum": 0,
+                                    "fillable_by":  [
+                                        "gibdd.history",
+                                        "base",
+                                        "base.basalt",
+                                        "gibdd.history.registry"
+                                    ]
+                                }
+                            }
+                        },
                         "date": {
                             "type": "object",
                             "properties": {

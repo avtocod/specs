@@ -338,5 +338,10 @@
         "name": "customs.fts",
         "description": "Данные о таможенном оформлении в базе ФТС",
         "enabled": true
+    },
+    {
+        "name": "owner.taxi.history",
+        "description": "История такси владельца ТС",
+        "enabled": true
     }
 ]

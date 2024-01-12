@@ -1948,6 +1948,215 @@
                                         "base.alt",
                                         "regactions.registry"
                                     ]
+                                },
+                                "taxi_history": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "probable_taxi_driver": {
+                                            "description": "Возможная работа в такси",
+                                            "type": [
+                                                "boolean",
+                                                "null"
+                                            ],
+                                            "examples": [
+                                                false
+                                            ],
+                                            "fillable_by": [
+                                                "owner.taxi.history"
+                                            ]
+                                        },
+                                        "taxi_licenses": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "actuality": {
+                                                    "type": "object",
+                                                    "additionalProperties": false,
+                                                    "properties": {
+                                                        "date": {
+                                                            "description": "Дата актуальности данных",
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "null"
+                                                                },
+                                                                {
+                                                                    "$ref": "#/definitions/datetime"
+                                                                }
+                                                            ],
+                                                            "examples": [
+                                                                "2018-08-05 00:00:00"
+                                                            ],
+                                                            "fillable_by": [
+                                                                "owner.taxi.history"
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                "items": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "vehicle": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "reg_num": {
+                                                                        "description": "Государственный регистрационный знак",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "A111AA196"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "owner.taxi.history"
+                                                                        ]
+                                                                    },
+                                                                    "brand_name_original": {
+                                                                        "description": "Марка автомобиля",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Hyundai"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "owner.taxi.history"
+                                                                        ]
+                                                                    },
+                                                                    "model_name_original": {
+                                                                        "description": "Модель автомобиля",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Sonata"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "owner.taxi.history"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "full_number": {
+                                                                "description": "Регистрационный номер разрешения",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "91480"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "owner.taxi.history"
+                                                                ]
+                                                            },
+                                                            "number": {
+                                                                "description": "Регистрационный номер разрешения",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "91480"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "owner.taxi.history"
+                                                                ]
+                                                            },
+                                                            "issued": {
+                                                                "description": "Дата выдачи разрешения",
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "null"
+                                                                    },
+                                                                    {
+                                                                        "$ref": "#/definitions/datetime"
+                                                                    }
+                                                                ],
+                                                                "examples": [
+                                                                    "2018-08-05 00:00:00"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "owner.taxi.history"
+                                                                ]
+                                                            },
+                                                            "region": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "code": {
+                                                                        "description": "Код региона выдачи лицензии",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "23"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "owner.taxi.history"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "probable_use": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "items": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "reg_num": {
+                                                                "description": "Вероятный государственный регистрационный зна",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "A111AA196"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "owner.taxi.history"
+                                                                ]
+                                                            },
+                                                            "date": {
+                                                                "description": "Вероятная дата",
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "null"
+                                                                    },
+                                                                    {
+                                                                        "$ref": "#/definitions/datetime"
+                                                                    }
+                                                                ],
+                                                                "examples": [
+                                                                    "2018-08-05 00:00:00"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "owner.taxi.history"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         },

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## UNRELEASED
+
+### Added
+
+- Source `owner.taxi.history`
+- Field with path `additional_info.vehicle.owner.taxi_history.probable_taxi_driver`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.actuality.date`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.reg_num`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.brand_name_original`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.model_name_original`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].full_number`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].number`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].issued`
+- Field with path `additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].region.code`
+- Field with path `additional_info.vehicle.owner.taxi_history.probable_use.items[].reg_num`
+- Field with path `additional_info.vehicle.owner.taxi_history.probable_use.items[].date`
+
 ## v3.140.0
 
 ### Added

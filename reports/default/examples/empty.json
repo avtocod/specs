@@ -158,6 +158,37 @@
                     "street": null,
                     "house": null,
                     "postal_code": null
+                },
+                "taxi_history": {
+                    "probable_taxi_driver": null,
+                    "taxi_licenses": {
+                        "items": [
+                            {
+                                "vehicle": {
+                                    "reg_num": null,
+                                    "brand_name_original": null,
+                                    "model_name_original": null
+                                },
+                                "full_number": null,
+                                "number": null,
+                                "issued": null,
+                                "region": {
+                                    "code": null
+                                }
+                            }
+                        ],
+                        "actuality": {
+                            "date": null
+                        }
+                    },
+                    "probable_use": {
+                        "items": [
+                            {
+                                "reg_num": null,
+                                "date": null
+                            }
+                        ]
+                    }
                 }
             },
             "passport": {

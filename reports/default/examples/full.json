@@ -158,6 +158,37 @@
                     "street": null,
                     "house": null,
                     "postal_code": "141207"
+                },
+                "taxi_history": {
+                    "probable_taxi_driver": true,
+                    "taxi_licenses": {
+                        "items": [
+                            {
+                                "vehicle": {
+                                    "reg_num": "A111AA196",
+                                    "brand_name_original": "Hyundai",
+                                    "model_name_original": "Sonata"
+                                },
+                                "full_number": "91480",
+                                "number": "91480",
+                                "issued": "2022-05-25 00:00:00",
+                                "region": {
+                                    "code": "23"
+                                }
+                            }
+                        ],
+                        "actuality": {
+                            "date": "2023-11-02 00:00:00"
+                        }
+                    },
+                    "probable_use": {
+                        "items": [
+                            {
+                                "reg_num": "О196АМ196",
+                                "date": "2020-08-11 00:00:00"
+                            }
+                        ]
+                    }
                 }
             },
             "passport": {

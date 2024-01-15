@@ -948,6 +948,116 @@
         ]
     },
     {
+        "path": "additional_info.vehicle.owner.taxi_history.probable_taxi_driver",
+        "description": "История владельца в такси: Возможная работа в такси",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.actuality.date",
+        "description": "История владельца в такси: Дата актуальности данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.reg_num",
+        "description": "История владельца в такси: Государственный регистрационный знак",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.brand_name_original",
+        "description": "История владельца в такси: Марка автомобиля",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.model_name_original",
+        "description": "История владельца в такси: Модель автомобиля",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].full_number",
+        "description": "История владельца в такси: Регистрационный номер разрешения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].number",
+        "description": "История владельца в такси: Регистрационный номер разрешения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].issued",
+        "description": "История владельца в такси: Дата выдачи разрешения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].region.code",
+        "description": "История владельца в такси: Код региона выдачи лицензии",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.probable_use.items[].reg_num",
+        "description": "История владельца в такси: Вероятный государственный регистрационный знак",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.owner.taxi_history.probable_use.items[].date",
+        "description": "История владельца в такси: Вероятная дата",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "owner.taxi.history"
+        ]
+    },
+    {
         "path": "additional_info.vehicle.sts.date.receive",
         "description": "Дополнительная информация: Дата выдачи СТС",
         "types": [

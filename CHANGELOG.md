@@ -10,6 +10,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Vehicle models specs
 
+### Fixed
+
+- Vehicle marks spec
+
 ## v3.141.0
 
 ### Added

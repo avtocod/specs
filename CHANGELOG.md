@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Vehicle models specs
+
+### Fixed
+
+- Vehicle marks spec
+
 ## v3.141.0
 
 ### Added

@@ -18,7 +18,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -85,7 +86,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -105,7 +107,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -139,7 +142,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -206,7 +210,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -226,7 +231,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -269,7 +275,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "gibdd.history.registry",
-            "customs.fts"
+            "customs.fts",
+            "customs.base"
         ]
     },
     {
@@ -321,7 +328,8 @@
             "gibdd.eaisto",
             "gibdd.diagnostic.cards",
             "base.basalt",
-            "eaisto.registry"
+            "eaisto.registry",
+            "customs.base"
         ]
     },
     {
@@ -415,7 +423,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt"
+            "base.alt",
+            "customs.base"
         ]
     },
     {
@@ -461,7 +470,8 @@
             "base.alt",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -477,7 +487,8 @@
             "base.basalt",
             "customs.base",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -492,7 +503,8 @@
             "base.alt",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -506,7 +518,8 @@
             "base.ext",
             "base.basalt",
             "base.alt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -522,7 +535,8 @@
             "base.basalt",
             "base.alt",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -540,7 +554,8 @@
             "regactions.registry",
             "base.registry",
             "base.registry.retry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -557,7 +572,8 @@
             "base.basalt",
             "base.registry",
             "base.registry.retry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -571,7 +587,8 @@
             "base.ext",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -586,7 +603,8 @@
             "gibdd.eaisto",
             "base.basalt",
             "base.alt",
-            "regactions.registry"
+            "regactions.registry",
+            "customs.base"
         ]
     },
     {
@@ -603,7 +621,8 @@
             "base.basalt",
             "regactions.registry",
             "base.registry",
-            "base.registry.retry"
+            "base.registry.retry",
+            "customs.base"
         ]
     },
     {
@@ -643,7 +662,8 @@
             "base.ext",
             "base.alt",
             "base.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -657,7 +677,8 @@
             "base.ext",
             "base.alt",
             "base.basalt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "customs.base"
         ]
     },
     {
@@ -4514,6 +4535,16 @@
         ]
     },
     {
+        "path": "customs.history.items[].owner.tin",
+        "description": "История по таможне: ИНН владельца ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
         "path": "customs.history.items[].country.from.name",
         "description": "История по таможне: Наименование страны экспортера",
         "types": [
@@ -4526,8 +4557,28 @@
         ]
     },
     {
+        "path": "customs.history.items[].country.from.code",
+        "description": "История по таможне: Код страны экспортера",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
         "path": "customs.history.items[].country.to.name",
         "description": "История по таможне: Наименование страны импортера",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
+        "path": "customs.history.items[].country.to.code",
+        "description": "История по таможне: Код страны импортера",
         "types": [
             "string"
         ],
@@ -4543,6 +4594,66 @@
         ],
         "fillable_by": [
             "base.basalt"
+        ]
+    },
+    {
+        "path": "customs.history.items[].sender.name",
+        "description": "История по таможне: Наименование отправителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
+        "path": "customs.history.items[].sender.tin",
+        "description": "История по таможне: ИНН отправителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
+        "path": "customs.history.items[].direction.type",
+        "description": "История по таможне: Тип таможенной операции",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
+        "path": "customs.history.items[].country.original.name",
+        "description": "История по таможне: Наименование страны происхождения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
+        "path": "customs.history.items[].country.original.code",
+        "description": "История по таможне: Код страны происхождения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
+        ]
+    },
+    {
+        "path": "customs.history.items[].manufacturer.name",
+        "description": "История по таможне: Наименование производителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.base"
         ]
     },
     {

@@ -990,18 +990,35 @@
                     },
                     "owner": {
                         "type": "LEGAL",
-                        "value": "ЗАО ВекторРечПив"
+                        "value": "ЗАО ВекторРечПив",
+                        "tin": "1363519987"
                     },
                     "country": {
                         "from": {
-                            "name": "Тайланд"
+                            "name": "Бразилия",
+                            "code": " BR"
                         },
                         "to": {
-                            "name": "RU"
+                            "name": "Россия",
+                            "code": "RU"
+                        },
+                        "original": {
+                            "name": "Румыния",
+                            "code": "RO"
                         }
                     },
                     "utilization_tax": {
                         "status": "Уплачен"
+                    },
+                    "sender": {
+                        "name": "ООО Автоторг",
+                        "tin": "1363519988"
+                    },
+                    "direction": {
+                        "type": "IMPORT"
+                    },
+                    "manufacturer": {
+                        "name": "AUDI AG"
                     }
                 }
             ],

@@ -359,7 +359,8 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         },
                         "reg_num": {
@@ -466,7 +467,8 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         },
                         "chassis": {
@@ -496,7 +498,8 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         }
                     }
@@ -564,7 +567,8 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         },
                         "reg_num": {
@@ -659,7 +663,8 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         },
                         "chassis": {
@@ -686,7 +691,8 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         }
                     }
@@ -765,7 +771,8 @@
                                         "eaisto.registry",
                                         "base.registry.retry",
                                         "gibdd.history.registry",
-                                        "customs.fts"
+                                        "customs.fts",
+                                        "customs.base"
                                     ]
                                 },
                                 "rus": {
@@ -854,7 +861,8 @@
                                         "gibdd.eaisto",
                                         "base.basalt",
                                         "eaisto.registry",
-                                        "gibdd.diagnostic.cards"
+                                        "gibdd.diagnostic.cards",
+                                        "customs.base"
                                     ]
                                 },
                                 "normalized": {
@@ -996,7 +1004,8 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "base.alt"
+                                        "base.alt",
+                                        "customs.base"
                                     ]
                                 }
                             }
@@ -1078,7 +1087,8 @@
                                         "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "customs.base"
                                     ]
                                 },
                                 "type_id": {
@@ -1101,7 +1111,8 @@
                                         "base.basalt",
                                         "customs.base",
                                         "regactions.registry",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "customs.base"
                                     ]
                                 }
                             }
@@ -1127,7 +1138,8 @@
                                 "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         },
                         "model": {
@@ -1148,7 +1160,8 @@
                                         "base.ext",
                                         "base.alt",
                                         "base.basalt",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "customs.base"
                                     ]
                                 }
                             }
@@ -1170,7 +1183,8 @@
                                 "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         },
                         "power": {
@@ -1196,7 +1210,8 @@
                                         "regactions.registry",
                                         "base.registry",
                                         "base.registry.retry",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "customs.base"
                                     ]
                                 },
                                 "kw": {
@@ -1217,7 +1232,8 @@
                                         "base.basalt",
                                         "base.registry",
                                         "base.registry.retry",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "customs.base"
                                     ]
                                 }
                             }
@@ -1244,7 +1260,8 @@
                                                 "base.ext",
                                                 "base.basalt",
                                                 "regactions.registry",
-                                                "gibdd.history.registry"
+                                                "gibdd.history.registry",
+                                                "customs.base"
                                             ]
                                         }
                                     }
@@ -1273,7 +1290,8 @@
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "base.basalt",
-                                "regactions.registry"
+                                "regactions.registry",
+                                "customs.base"
                             ]
                         },
                         "max": {
@@ -1294,7 +1312,8 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "base.registry",
-                                "base.registry.retry"
+                                "base.registry.retry",
+                                "customs.base"
                             ]
                         }
                     }
@@ -1370,7 +1389,8 @@
                                 "base.ext",
                                 "base.alt",
                                 "base.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         },
                         "type_id": {
@@ -1391,7 +1411,8 @@
                                 "base.ext",
                                 "base.alt",
                                 "base.basalt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "customs.base"
                             ]
                         }
                     }
@@ -6373,6 +6394,19 @@
                                                 "fillable_by": [
                                                     "customs.base"
                                                 ]
+                                            },
+                                            "tin": {
+                                                "description": "ИНН владельца ТС",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "1363519987"
+                                                ],
+                                                "fillable_by": [
+                                                    "customs.base"
+                                                ]
                                             }
                                         }
                                     },
@@ -6391,12 +6425,25 @@
                                                             "null"
                                                         ],
                                                         "examples": [
-                                                            "Тайланд"
+                                                            "Бразилия"
                                                         ],
                                                         "fillable_by": [
                                                             "customs.base",
                                                             "customs.fts",
                                                             "base.basalt"
+                                                        ]
+                                                    },
+                                                    "code": {
+                                                        "description": "Код страны экспортера",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "BR"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "customs.base"
                                                         ]
                                                     }
                                                 }
@@ -6407,6 +6454,51 @@
                                                 "properties": {
                                                     "name": {
                                                         "description": "Наименование страны импортера",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Россия"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "customs.base"
+                                                        ]
+                                                    },
+                                                    "code": {
+                                                        "description": "Код страны импортера",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "RU"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "customs.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "original": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "Наименование страны происхождения",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Россия"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "customs.base"
+                                                        ]
+                                                    },
+                                                    "code": {
+                                                        "description": "Код страны происхождения",
                                                         "type": [
                                                             "string",
                                                             "null"
@@ -6442,6 +6534,78 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base.basalt"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "sender": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование отправителя",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "ООО Автоторг"
+                                                ],
+                                                "fillable_by": [
+                                                    "customs.base"
+                                                ]
+                                            },
+                                            "tin": {
+                                                "description": "ИНН отправителя",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "1363519987"
+                                                ],
+                                                "fillable_by": [
+                                                    "customs.base"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "direction": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип таможенной операции",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "EXPORT",
+                                                    "IMPORT",
+                                                    "REEXPORT"
+                                                ],
+                                                "fillable_by": [
+                                                    "customs.base"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "manufacturer": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "name": {
+                                                "description": "Наименование производителя",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "AUDI AG"
+                                                ],
+                                                "fillable_by": [
+                                                    "customs.base"
                                                 ]
                                             }
                                         }

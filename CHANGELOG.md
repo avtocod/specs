@@ -4,6 +4,44 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `customs.history.items[].owner.tin`
+- Field with path `customs.history.items[].country.from.code`
+- Field with path `customs.history.items[].country.to.code`
+- Field with path `customs.history.items[].sender.name`
+- Field with path `customs.history.items[].sender.tin`
+- Field with path `customs.history.items[].direction.type`
+- Field with path `customs.history.items[].country.original.name`
+- Field with path `customs.history.items[].country.original.code`
+- Field with path `customs.history.items[].manufacturer.name`
+
+### Changed
+
+- Field with path `identifiers.vehicle.vin` also fillable by `customs.base`
+- Field with path `identifiers.vehicle.body` also fillable by `customs.base`
+- Field with path `identifiers.vehicle.chassis` also fillable by `customs.base`
+- Field with path `identifiers_masked.vehicle.vin` also fillable by `customs.base`
+- Field with path `identifiers_masked.vehicle.body` also fillable by `customs.base`
+- Field with path `identifiers_masked.vehicle.chassis` also fillable by `customs.base`
+- Field with path `tech_data.brand.name.original` also fillable by `customs.base`
+- Field with path `tech_data.model.name.original` also fillable by `customs.base`
+- Field with path `tech_data.engine.fuel.type` also fillable by `customs.base`
+- Field with path `tech_data.engine.fuel.type_id` also fillable by `customs.base`
+- Field with path `tech_data.engine.number` also fillable by `customs.base`
+- Field with path `tech_data.engine.model.name` also fillable by `customs.base`
+- Field with path `tech_data.engine.volume` also fillable by `customs.base`
+- Field with path `tech_data.engine.power.hp` also fillable by `customs.base`
+- Field with path `tech_data.engine.power.kw` also fillable by `customs.base`
+- Field with path `tech_data.engine.standarts.emission.euro` also fillable by `customs.base`
+- Field with path `tech_data.weight.netto` also fillable by `customs.base`
+- Field with path `tech_data.weight.max` also fillable by `customs.base`
+- Field with path `tech_data.body.color.type` also fillable by `customs.base`
+- Field with path `tech_data.drive.type` also fillable by `customs.base`
+- Field with path `tech_data.drive.type_id` also fillable by `customs.base`
+
 ## v3.143.0
 
 ### Changed

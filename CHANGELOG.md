@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `customs.history.items[].country.to.code`
 - Field with path `customs.history.items[].sender.name`
 - Field with path `customs.history.items[].sender.tin`
-- Field with path `customs.history.items[].direction.type`
+- Field with path `customs.history.items[].operation.type`
 - Field with path `customs.history.items[].country.original.name`
 - Field with path `customs.history.items[].country.original.code`
 - Field with path `customs.history.items[].manufacturer.name`

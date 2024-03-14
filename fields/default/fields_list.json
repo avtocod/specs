@@ -4617,7 +4617,7 @@
         ]
     },
     {
-        "path": "customs.history.items[].direction.type",
+        "path": "customs.history.items[].operation.type",
         "description": "История по таможне: Тип таможенной операции",
         "types": [
             "string"

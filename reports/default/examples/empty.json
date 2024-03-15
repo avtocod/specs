@@ -765,18 +765,35 @@
                     },
                     "owner": {
                         "type": null,
-                        "value": null
+                        "value": null,
+                        "tin": null
                     },
                     "country": {
                         "from": {
-                            "name": null
+                            "name": null,
+                            "code": null
                         },
                         "to": {
-                            "name": null
+                            "name": null,
+                            "code": null
+                        },
+                        "original": {
+                            "name": null,
+                            "code": null
                         }
                     },
                     "utilization_tax": {
                         "status": null
+                    },
+                    "sender": {
+                        "name": null,
+                        "tin": null
+                    },
+                    "operation": {
+                        "type": null
+                    },
+                    "manufacturer": {
+                        "name": null
                     }
                 }
             ],

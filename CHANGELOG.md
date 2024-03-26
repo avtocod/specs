@@ -8,11 +8,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Fixed
 
-- Duplicates of source names in `fields_list.json`.
+- Duplicates of source names in `fields_list.json`
 
 ### Added
 
-- Tests on preventing duplicates of source names in `fields_list.json`.
+- Tests on preventing duplicates of source names in `fields_list.json`
 
 ## v3.144.0
 

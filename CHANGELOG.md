@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Fixed
+
+- Duplicates of source names in `fields_list.json`
+
+### Added
+
+- Tests on preventing duplicates of source names in `fields_list.json`
+
 ## v3.144.0
 
 ### Added

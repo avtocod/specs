@@ -92,6 +92,12 @@ describe.each(groups_list)(`${fields_file_name} file in %s group of fields specs
             expect(get(report_schema, specs_field_path.join('.') + '.fillable_by')).toIncludeSameMembers(field.fillable_by);
         });
 
+        // check that field has unique set of sources that can fill it in fields_list.json file
+        test.concurrent(`should have unique set of values in "fillable_by" property`, async () => {
+            let unique = Array.from(new Set(field.fillable_by));
+            expect(field.fillable_by.length).toEqual(unique.length)
+        });
+
         // check that any of source in fillable_by property listed in sources_list.json
         test.concurrent(`should have all sources in "fillable_by" property are listed in source_list.json`, async () => {
             expect(sources_list).toIncludeAllMembers(field.fillable_by);

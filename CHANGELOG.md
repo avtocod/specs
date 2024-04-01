@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Field with path `tech_data.year` also fillable by `customs.base`
+
 ## v3.144.1
 
 ### Fixed

@@ -5586,7 +5586,8 @@
             "string"
         ],
         "fillable_by": [
-            "fines.base"
+            "fines.base",
+            "fines.registry"
         ]
     },
     {

@@ -343,5 +343,10 @@
         "name": "owner.taxi.history",
         "description": "История такси владельца ТС",
         "enabled": true
+    },
+    {
+        "name": "repairs.history.registry",
+        "description": "Реестр истории ремонтных работ",
+        "enabled": true
     }
 ]

@@ -3807,7 +3807,8 @@
                                                     "084/08/617"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             },
                                             "claim": {
@@ -3843,7 +3844,8 @@
                                                     "2010-12-17"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -3877,7 +3879,8 @@
                                                     395280
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             },
                                             "labour": {
@@ -3891,7 +3894,8 @@
                                                     45910
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             },
                                             "parts": {
@@ -3905,7 +3909,8 @@
                                                     339670
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             },
                                             "paint": {
@@ -3919,7 +3924,8 @@
                                                     9700
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -3938,7 +3944,8 @@
                                                     "OPEL [V] [61] [R]"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             },
                                             "model": {
@@ -3951,7 +3958,8 @@
                                                     "MONTEREY [V] [XA] [S] [36] [M]"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             },
                                             "sub_model": {
@@ -3964,7 +3972,8 @@
                                                     "Monterey"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -4024,7 +4033,8 @@
                                             "KASKO"
                                         ],
                                         "fillable_by": [
-                                            "repairs.history"
+                                            "repairs.history",
+                                            "repairs.history.registry"
                                         ]
                                     },
                                     "repairer": {
@@ -4049,7 +4059,8 @@
                                                     "Assessor"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             },
                                             "description": {
@@ -4068,7 +4079,8 @@
                                                     "Оценщик"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -4093,7 +4105,8 @@
                                                                 "Запасная часть для частичной замены"
                                                             ],
                                                             "fillable_by": [
-                                                                "repairs.history"
+                                                                "repairs.history",
+                                                                "repairs.history.registry"
                                                             ]
                                                         },
                                                         "repair": {
@@ -4113,7 +4126,8 @@
                                                                         "LE4"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "repairs.history"
+                                                                        "repairs.history",
+                                                                        "repairs.history.registry"
                                                                     ]
                                                                 },
                                                                 "description": {
@@ -4126,7 +4140,8 @@
                                                                         "Окраска новой детали K1N (ступень AZT окраски пластиковой детали)"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "repairs.history"
+                                                                        "repairs.history",
+                                                                        "repairs.history.registry"
                                                                     ]
                                                                 }
                                                             }
@@ -4170,7 +4185,8 @@
                                         "2021-01-11 12:54:00"
                                     ],
                                     "fillable_by": [
-                                        "repairs.history"
+                                        "repairs.history",
+                                        "repairs.history.registry"
                                     ]
                                 }
                             }

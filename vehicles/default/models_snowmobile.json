@@ -1,18 +1,793 @@
 [
     {
+        "name": "Ка-30",
+        "id": "ID_MARK_AAK_PROGRESS_MODEL_KA_30",
+        "mark_id": "ID_MARK_AAK_PROGRESS"
+    },
+    {
+        "name": "Apache Track",
+        "id": "ID_MARK_ABM_MODEL_APACHE_TRACK",
+        "mark_id": "ID_MARK_ABM"
+    },
+    {
+        "name": "Ladoga",
+        "id": "ID_MARK_ABM_MODEL_LADOGA",
+        "mark_id": "ID_MARK_ABM"
+    },
+    {
+        "name": "Wind 320",
+        "id": "ID_MARK_ABM_MODEL_WIND_320",
+        "mark_id": "ID_MARK_ABM"
+    },
+    {
+        "name": "Snow Hawk 800",
+        "id": "ID_MARK_AD_BOIVIN_MODEL_SNOW_HAWK_800",
+        "mark_id": "ID_MARK_AD_BOIVIN"
+    },
+    {
+        "name": "Sherpa",
+        "id": "ID_MARK_ALPINA_MODEL_SHERPA",
+        "mark_id": "ID_MARK_ALPINA"
+    },
+    {
+        "name": "ZR-Series",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_ZR_SERIES",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "Bearcat",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_BEARCAT",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "F-Series",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_F_SERIES",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "M-Series",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_M_SERIES",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "Pantera",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_PANTERA",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "Panther",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_PANTHER",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "Sabercat",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_SABERCAT",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "Sno Pro",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_SNO_PRO",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "T660",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_T660",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "TZ1",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_TZ1",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "XF-Series",
+        "id": "ID_MARK_ARCTIC_CAT_MODEL_XF_SERIES",
+        "mark_id": "ID_MARK_ARCTIC_CAT"
+    },
+    {
+        "name": "PD150",
+        "id": "ID_MARK_ARMADA_MODEL_PD150",
+        "mark_id": "ID_MARK_ARMADA"
+    },
+    {
+        "name": "PD250",
+        "id": "ID_MARK_ARMADA_MODEL_PD250",
+        "mark_id": "ID_MARK_ARMADA"
+    },
+    {
+        "name": "SR150",
+        "id": "ID_MARK_ARMADA_MODEL_SR150",
+        "mark_id": "ID_MARK_ARMADA"
+    },
+    {
+        "name": "Snow Scooter 305",
+        "id": "ID_MARK_ASA_MODEL_SNOW_SCOOTER_305",
+        "mark_id": "ID_MARK_ASA"
+    },
+    {
+        "name": "Snow Scooter 301",
+        "id": "ID_MARK_ASA_MODEL_SNOW_SCOOTER_301",
+        "mark_id": "ID_MARK_ASA"
+    },
+    {
+        "name": "Barboss",
+        "id": "ID_MARK_BALTMOTORS_MODEL_BARBOSS",
+        "mark_id": "ID_MARK_BALTMOTORS"
+    },
+    {
+        "name": "SnowDog",
+        "id": "ID_MARK_BALTMOTORS_MODEL_SNOWDOG",
+        "mark_id": "ID_MARK_BALTMOTORS"
+    },
+    {
+        "name": "Партизан",
+        "id": "ID_MARK_BARS_MODEL_PARTIZAN",
+        "mark_id": "ID_MARK_BARS"
+    },
+    {
+        "name": "Следопыт",
+        "id": "ID_MARK_BARS_MODEL_SLEDOPYT",
+        "mark_id": "ID_MARK_BARS"
+    },
+    {
+        "name": "SUPERCLASS Mk2 Xtreme",
+        "id": "ID_MARK_BMW_ALPINA_MODEL_SUPERCLASS_MK2_XTREME",
+        "mark_id": "ID_MARK_BMW_ALPINA"
+    },
+    {
+        "name": "Sherpa",
+        "id": "ID_MARK_BMW_ALPINA_MODEL_SHERPA",
+        "mark_id": "ID_MARK_BMW_ALPINA"
+    },
+    {
+        "name": "Lynx 49 Ranger",
+        "id": "ID_MARK_BRP_MODEL_LYNX_49_RANGER",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx 59 YetI 600",
+        "id": "ID_MARK_BRP_MODEL_LYNX_59_YETI_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx 6900",
+        "id": "ID_MARK_BRP_MODEL_LYNX_6900",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx 69 Alpine",
+        "id": "ID_MARK_BRP_MODEL_LYNX_69_ALPINE",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx 69 Ranger",
+        "id": "ID_MARK_BRP_MODEL_LYNX_69_RANGER",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Adventure",
+        "id": "ID_MARK_BRP_MODEL_LYNX_ADVENTURE",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx BoonDocker",
+        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx BoonDocker 600",
+        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx BoonDocker 800",
+        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx BoonDocker 850",
+        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER_850",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Commander",
+        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Commander 1200",
+        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_1200",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Commander 600",
+        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Commander 800",
+        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Commander 900",
+        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_900",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Explorer",
+        "id": "ID_MARK_BRP_MODEL_LYNX_EXPLORER",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Forest Fox",
+        "id": "ID_MARK_BRP_MODEL_LYNX_FOREST_FOX",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx GLX 5900",
+        "id": "ID_MARK_BRP_MODEL_LYNX_GLX_5900",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Rave",
+        "id": "ID_MARK_BRP_MODEL_LYNX_RAVE",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Safari",
+        "id": "ID_MARK_BRP_MODEL_LYNX_SAFARI",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx ST",
+        "id": "ID_MARK_BRP_MODEL_LYNX_ST",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xterrain",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTERRAIN",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim 550",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_550",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim 600",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim Commander 600",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_COMMANDER_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim Commander 800",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_COMMANDER_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim RE 600",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_RE_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim RE 800",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_RE_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim RE 850",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_RE_850",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim SC 600",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_SC_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim SC 800",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_SC_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Xtrim SC 900",
+        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_SC_900",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Yeti",
+        "id": "ID_MARK_BRP_MODEL_LYNX_YETI",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Lynx Yeti Pro Army",
+        "id": "ID_MARK_BRP_MODEL_LYNX_YETI_PRO_ARMY",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Backcountry X 850",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_BACKCOUNTRY_X_850",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Elite",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_ELITE",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition 1000",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_1000",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition 1300",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_1300",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition 900",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_900",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition SE 1200",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_SE_1200",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition Sport 550F",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_SPORT_550F",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Expedition Xtreme 850",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_XTREME_850",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Formula",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_FORMULA",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Freeride",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_FREERIDE",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Freestyle",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_FREESTYLE",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Grand Touring",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Grand Touring 500",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_500",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Grand Touring 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Grand Touring 700",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_700",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Grand Touring 900 ACE",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_900_ACE",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo GSX",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GSX",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo GTX 1200",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_1200",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo GTX 380",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_380",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo GTX 500",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_500",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo GTX 550",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_550",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo GTX 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo GTX 800",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Legend",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_LEGEND",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Mach Z",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MACH_Z",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ Renegade X 1000",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_1000",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ Renegade X 1200",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_1200",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ Renegade X 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ Renegade X 800",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ Sport 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_SPORT_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ X-racing 440",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_X_RACING_440",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ X-RS 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_X_RS_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo MXZ X-RS 850",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_X_RS_850",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Renegade X-RS 850",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_RENEGADE_X_RS_850",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Renegade X-RS 900",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_RENEGADE_X_RS_900",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Skandic 500",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_500",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Skandic 550",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_550",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Skandic 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Skandic 900",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_900",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Summit 1000",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_1000",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Summit 500",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_500",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Summit 550",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_550",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Summit 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Summit 700",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_700",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Summit 800",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Summit 850",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_850",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Touring",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TOURING",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Tundra 300F",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_300F",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Tundra 550",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_550",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Tundra 600",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_600",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "Ski-Doo Tundra 800",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_800",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
+        "name": "СТАНДАРТ 500",
+        "id": "ID_MARK_BTS_MODEL_STANDART_500",
+        "mark_id": "ID_MARK_BTS"
+    },
+    {
         "name": "2Х2 ФЕРМЕР",
         "id": "ID_MARK_BTS_MODEL_2KH2_FERMER",
         "mark_id": "ID_MARK_BTS"
     },
     {
-        "name": "113",
-        "id": "ID_MARK_RYS_MODEL_113",
-        "mark_id": "ID_MARK_RYS"
+        "name": "БТС LONG",
+        "id": "ID_MARK_BTS_MODEL_BTS_LONG",
+        "mark_id": "ID_MARK_BTS"
     },
     {
-        "name": "119",
-        "id": "ID_MARK_RYS_MODEL_119",
-        "mark_id": "ID_MARK_RYS"
+        "name": "КОМПАКТ 500",
+        "id": "ID_MARK_BTS_MODEL_KOMPAKT_500",
+        "mark_id": "ID_MARK_BTS"
+    },
+    {
+        "name": "МАЛЕК 380",
+        "id": "ID_MARK_BTS_MODEL_MALEK_380",
+        "mark_id": "ID_MARK_BTS"
+    },
+    {
+        "name": "Бурлак",
+        "id": "ID_MARK_BURLAK_MODEL_BURLAK",
+        "mark_id": "ID_MARK_BURLAK"
+    },
+    {
+        "name": "CF250",
+        "id": "ID_MARK_CFMOTO_MODEL_CF250",
+        "mark_id": "ID_MARK_CFMOTO"
+    },
+    {
+        "name": "TT200P",
+        "id": "ID_MARK_CRONUS_MODEL_TT200P",
+        "mark_id": "ID_MARK_CRONUS"
+    },
+    {
+        "name": "CR9V",
+        "id": "ID_MARK_CRONUS_MODEL_CR9V",
+        "mark_id": "ID_MARK_CRONUS"
+    },
+    {
+        "name": "Снегоходы (Другие)",
+        "id": "ID_MARK_DRUGIE_MODEL_SNEGOKHODY_DRUGIE",
+        "mark_id": "ID_MARK_DRUGIE"
+    },
+    {
+        "name": "Джек",
+        "id": "ID_MARK_DZHEK_MODEL_DZHEK",
+        "mark_id": "ID_MARK_DZHEK"
+    },
+    {
+        "name": "Snow",
+        "id": "ID_MARK_FIGHTER_MODEL_SNOW",
+        "mark_id": "ID_MARK_FIGHTER"
+    },
+    {
+        "name": "Компакт",
+        "id": "ID_MARK_FISHRIDE_MODEL_KOMPAKT",
+        "mark_id": "ID_MARK_FISHRIDE"
+    },
+    {
+        "name": "Эксклюзив+",
+        "id": "ID_MARK_FISHRIDE_MODEL_EKSKLYUZIV_P",
+        "mark_id": "ID_MARK_FISHRIDE"
+    },
+    {
+        "name": "Классика",
+        "id": "ID_MARK_FISHRIDE_MODEL_KLASSIKA",
+        "mark_id": "ID_MARK_FISHRIDE"
+    },
+    {
+        "name": "Классика+",
+        "id": "ID_MARK_FISHRIDE_MODEL_KLASSIKA_P",
+        "mark_id": "ID_MARK_FISHRIDE"
+    },
+    {
+        "name": "Snow Fly",
+        "id": "ID_MARK_FUN_TEC_MODEL_SNOW_FLY",
+        "mark_id": "ID_MARK_FUN_TEC"
+    },
+    {
+        "name": "Лайка",
+        "id": "ID_MARK_FUN_TEC_MODEL_LAYKA",
+        "mark_id": "ID_MARK_FUN_TEC"
+    },
+    {
+        "name": "Dingo",
+        "id": "ID_MARK_IRBIS_MODEL_DINGO",
+        "mark_id": "ID_MARK_IRBIS"
+    },
+    {
+        "name": "Мухтар",
+        "id": "ID_MARK_IRBIS_MODEL_MUKHTAR",
+        "mark_id": "ID_MARK_IRBIS"
+    },
+    {
+        "name": "SF150L",
+        "id": "ID_MARK_IRBIS_MODEL_SF150L",
+        "mark_id": "ID_MARK_IRBIS"
+    },
+    {
+        "name": "Tungus",
+        "id": "ID_MARK_IRBIS_MODEL_TUNGUS",
+        "mark_id": "ID_MARK_IRBIS"
+    },
+    {
+        "name": "Каюр",
+        "id": "ID_MARK_ITLAN_MODEL_KAYUR",
+        "mark_id": "ID_MARK_ITLAN"
+    },
+    {
+        "name": "400",
+        "id": "ID_MARK_JOHN_DEERE_MODEL_400",
+        "mark_id": "ID_MARK_JOHN_DEERE"
+    },
+    {
+        "name": "Хаски",
+        "id": "ID_MARK_KHASKI_MODEL_KHASKI",
+        "mark_id": "ID_MARK_KHASKI"
+    },
+    {
+        "name": "TR",
+        "id": "ID_MARK_KOIRA_MODEL_TR",
+        "mark_id": "ID_MARK_KOIRA"
+    },
+    {
+        "name": "Богатырь",
+        "id": "ID_MARK_KOIRA_MODEL_BOGATYR",
+        "mark_id": "ID_MARK_KOIRA"
+    },
+    {
+        "name": "Богатырь Mini",
+        "id": "ID_MARK_KOIRA_MODEL_BOGATYR_MINI",
+        "mark_id": "ID_MARK_KOIRA"
+    },
+    {
+        "name": "T 15",
+        "id": "ID_MARK_KOIRA_MODEL_T_15",
+        "mark_id": "ID_MARK_KOIRA"
+    },
+    {
+        "name": "Волкодав POWER",
+        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_VOLKODAV_POWER",
+        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
+    },
+    {
+        "name": "LVR500",
+        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_LVR500",
+        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
+    },
+    {
+        "name": "Рекс LA/LV",
+        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_REKS_LA_LV",
+        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
+    },
+    {
+        "name": "Рекс RA/RV",
+        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_REKS_RA_RV",
+        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
+    },
+    {
+        "name": "Волкодав",
+        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_VOLKODAV",
+        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
+    },
+    {
+        "name": "250",
+        "id": "ID_MARK_MANFRED_MODEL_250",
+        "mark_id": "ID_MARK_MANFRED"
+    },
+    {
+        "name": "NIX",
+        "id": "ID_MARK_MINSK_MINSK_MODEL_NIX",
+        "mark_id": "ID_MARK_MINSK_MINSK"
+    },
+    {
+        "name": "S1",
+        "id": "ID_MARK_MOTOLAND_MODEL_S1",
+        "mark_id": "ID_MARK_MOTOLAND"
+    },
+    {
+        "name": "S2",
+        "id": "ID_MARK_MOTOLAND_MODEL_S2",
+        "mark_id": "ID_MARK_MOTOLAND"
+    },
+    {
+        "name": "500",
+        "id": "ID_MARK_MVP_MODEL_500",
+        "mark_id": "ID_MARK_MVP"
+    },
+    {
+        "name": "Мотобуксировщики",
+        "id": "ID_MARK_PAXUS_MODEL_MOTOBUKSIROVSHCHIKI",
+        "mark_id": "ID_MARK_PAXUS"
+    },
+    {
+        "name": "СМТ-001",
+        "id": "ID_MARK_PEGAS_MODEL_SMT_001",
+        "mark_id": "ID_MARK_PEGAS"
+    },
+    {
+        "name": "Пилигрим",
+        "id": "ID_MARK_PELETS_MODEL_PILIGRIM_SNOWMOBILE",
+        "mark_id": "ID_MARK_PELETS"
+    },
+    {
+        "name": "250",
+        "id": "ID_MARK_PHANTOM_SNOWMOBILES_MODEL_250",
+        "mark_id": "ID_MARK_PHANTOM_SNOWMOBILES"
     },
     {
         "name": "120 Assault",
@@ -40,26 +815,6 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "121",
-        "id": "ID_MARK_RYS_MODEL_121",
-        "mark_id": "ID_MARK_RYS"
-    },
-    {
-        "name": "200RS",
-        "id": "ID_MARK_WELS_MODEL_200RS",
-        "mark_id": "ID_MARK_WELS"
-    },
-    {
-        "name": "250",
-        "id": "ID_MARK_MANFRED_MODEL_250",
-        "mark_id": "ID_MARK_MANFRED"
-    },
-    {
-        "name": "250",
-        "id": "ID_MARK_PHANTOM_SNOWMOBILES_MODEL_250",
-        "mark_id": "ID_MARK_PHANTOM_SNOWMOBILES"
-    },
-    {
         "name": "340 Edge",
         "id": "ID_MARK_POLARIS_MODEL_340_EDGE",
         "mark_id": "ID_MARK_POLARIS"
@@ -70,34 +825,9 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "380",
-        "id": "ID_MARK_POMOR_MODEL_380",
-        "mark_id": "ID_MARK_POMOR"
-    },
-    {
-        "name": "400",
-        "id": "ID_MARK_JOHN_DEERE_MODEL_400",
-        "mark_id": "ID_MARK_JOHN_DEERE"
-    },
-    {
         "name": "440 INDY",
         "id": "ID_MARK_POLARIS_MODEL_440_INDY",
         "mark_id": "ID_MARK_POLARIS"
-    },
-    {
-        "name": "500",
-        "id": "ID_MARK_MVP_MODEL_500",
-        "mark_id": "ID_MARK_MVP"
-    },
-    {
-        "name": "500",
-        "id": "ID_MARK_POMOR_MODEL_500",
-        "mark_id": "ID_MARK_POMOR"
-    },
-    {
-        "name": "500",
-        "id": "ID_MARK_RYS_MODEL_500",
-        "mark_id": "ID_MARK_RYS"
     },
     {
         "name": "500 INDY",
@@ -108,11 +838,6 @@
         "name": "500 IQ",
         "id": "ID_MARK_POLARIS_MODEL_500_IQ",
         "mark_id": "ID_MARK_POLARIS"
-    },
-    {
-        "name": "500 LT",
-        "id": "ID_MARK_SNOW_HAWK_MODEL_500_LT",
-        "mark_id": "ID_MARK_SNOW_HAWK"
     },
     {
         "name": "550 Classic",
@@ -160,11 +885,6 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "600 LT",
-        "id": "ID_MARK_SNOW_HAWK_MODEL_600_LT",
-        "mark_id": "ID_MARK_SNOW_HAWK"
-    },
-    {
         "name": "600 PRO-RMK",
         "id": "ID_MARK_POLARIS_MODEL_600_PRO_RMK",
         "mark_id": "ID_MARK_POLARIS"
@@ -188,11 +908,6 @@
         "name": "600 Switchback",
         "id": "ID_MARK_POLARIS_MODEL_600_SWITCHBACK",
         "mark_id": "ID_MARK_POLARIS"
-    },
-    {
-        "name": "600\/650",
-        "id": "ID_MARK_POMOR_MODEL_600_650",
-        "mark_id": "ID_MARK_POMOR"
     },
     {
         "name": "700 Classic",
@@ -310,56 +1025,6 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "Apache Track",
-        "id": "ID_MARK_ABM_MODEL_APACHE_TRACK",
-        "mark_id": "ID_MARK_ABM"
-    },
-    {
-        "name": "Apex",
-        "id": "ID_MARK_YAMAHA_MODEL_APEX",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "Barboss",
-        "id": "ID_MARK_BALTMOTORS_MODEL_BARBOSS",
-        "mark_id": "ID_MARK_BALTMOTORS"
-    },
-    {
-        "name": "Bearcat",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_BEARCAT",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "Bravo BR250T",
-        "id": "ID_MARK_YAMAHA_MODEL_BRAVO_BR250T",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "CF250",
-        "id": "ID_MARK_CFMOTO_MODEL_CF250",
-        "mark_id": "ID_MARK_CFMOTO"
-    },
-    {
-        "name": "CR9V",
-        "id": "ID_MARK_CRONUS_MODEL_CR9V",
-        "mark_id": "ID_MARK_CRONUS"
-    },
-    {
-        "name": "CSZ",
-        "id": "ID_MARK_PSKOVSKAYA_MEKHANIKA_MODEL_CSZ",
-        "mark_id": "ID_MARK_PSKOVSKAYA_MEKHANIKA"
-    },
-    {
-        "name": "Dingo",
-        "id": "ID_MARK_IRBIS_MODEL_DINGO",
-        "mark_id": "ID_MARK_IRBIS"
-    },
-    {
-        "name": "F-Series",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_F_SERIES",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
         "name": "FS",
         "id": "ID_MARK_POLARIS_MODEL_FS",
         "mark_id": "ID_MARK_POLARIS"
@@ -370,719 +1035,14 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "FX-170",
-        "id": "ID_MARK_SIMBEL_MODEL_FX_170",
-        "mark_id": "ID_MARK_SIMBEL"
-    },
-    {
-        "name": "FXNytro",
-        "id": "ID_MARK_YAMAHA_MODEL_FXNYTRO",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "LVR500",
-        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_LVR500",
-        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
-    },
-    {
-        "name": "Ladoga",
-        "id": "ID_MARK_ABM_MODEL_LADOGA",
-        "mark_id": "ID_MARK_ABM"
-    },
-    {
-        "name": "Lynx 49 Ranger",
-        "id": "ID_MARK_BRP_MODEL_LYNX_49_RANGER",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx 59 YetI 600",
-        "id": "ID_MARK_BRP_MODEL_LYNX_59_YETI_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx 69 Alpine",
-        "id": "ID_MARK_BRP_MODEL_LYNX_69_ALPINE",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx 69 Ranger",
-        "id": "ID_MARK_BRP_MODEL_LYNX_69_RANGER",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx 6900",
-        "id": "ID_MARK_BRP_MODEL_LYNX_6900",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Adventure",
-        "id": "ID_MARK_BRP_MODEL_LYNX_ADVENTURE",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx BoonDocker",
-        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx BoonDocker 600",
-        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx BoonDocker 800",
-        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx BoonDocker 850",
-        "id": "ID_MARK_BRP_MODEL_LYNX_BOONDOCKER_850",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Commander",
-        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Commander 600",
-        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Commander 800",
-        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Commander 900",
-        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_900",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Commander 1200",
-        "id": "ID_MARK_BRP_MODEL_LYNX_COMMANDER_1200",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Explorer",
-        "id": "ID_MARK_BRP_MODEL_LYNX_EXPLORER",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Forest Fox",
-        "id": "ID_MARK_BRP_MODEL_LYNX_FOREST_FOX",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx GLX 5900",
-        "id": "ID_MARK_BRP_MODEL_LYNX_GLX_5900",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Rave",
-        "id": "ID_MARK_BRP_MODEL_LYNX_RAVE",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx ST",
-        "id": "ID_MARK_BRP_MODEL_LYNX_ST",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Safari",
-        "id": "ID_MARK_BRP_MODEL_LYNX_SAFARI",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xterrain",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTERRAIN",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim 550",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_550",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim 600",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim Commander 600",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_COMMANDER_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim Commander 800",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_COMMANDER_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim RE 600",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_RE_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim RE 800",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_RE_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim RE 850",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_RE_850",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim SC 600",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_SC_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim SC 800",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_SC_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Xtrim SC 900",
-        "id": "ID_MARK_BRP_MODEL_LYNX_XTRIM_SC_900",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Yeti",
-        "id": "ID_MARK_BRP_MODEL_LYNX_YETI",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Lynx Yeti Pro Army",
-        "id": "ID_MARK_BRP_MODEL_LYNX_YETI_PRO_ARMY",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "M-Series",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_M_SERIES",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "Mountain Max",
-        "id": "ID_MARK_YAMAHA_MODEL_MOUNTAIN_MAX",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "NIX",
-        "id": "ID_MARK_MINSK_MINSK_MODEL_NIX",
-        "mark_id": "ID_MARK_MINSK_MINSK"
-    },
-    {
-        "name": "PD150",
-        "id": "ID_MARK_ARMADA_MODEL_PD150",
-        "mark_id": "ID_MARK_ARMADA"
-    },
-    {
-        "name": "PD250",
-        "id": "ID_MARK_ARMADA_MODEL_PD250",
-        "mark_id": "ID_MARK_ARMADA"
-    },
-    {
-        "name": "Pantera",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_PANTERA",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "Panther",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_PANTHER",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "Phantom",
-        "id": "ID_MARK_WELS_MODEL_PHANTOM",
-        "mark_id": "ID_MARK_WELS"
-    },
-    {
-        "name": "Phazer",
-        "id": "ID_MARK_YAMAHA_MODEL_PHAZER",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
         "name": "RMK EVO ES",
         "id": "ID_MARK_POLARIS_MODEL_RMK_EVO_ES",
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "RM Vector 551i",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_RM_VECTOR_551I",
-        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
-    },
-    {
-        "name": "RSRage",
-        "id": "ID_MARK_YAMAHA_MODEL_RSRAGE",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "RSVector",
-        "id": "ID_MARK_YAMAHA_MODEL_RSVECTOR",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "RSVenture",
-        "id": "ID_MARK_YAMAHA_MODEL_RSVENTURE",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "RSViking",
-        "id": "ID_MARK_YAMAHA_MODEL_RSVIKING",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "RX-1",
-        "id": "ID_MARK_YAMAHA_MODEL_RX_1",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "RXWarrior",
-        "id": "ID_MARK_YAMAHA_MODEL_RXWARRIOR",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "S1",
-        "id": "ID_MARK_MOTOLAND_MODEL_S1",
-        "mark_id": "ID_MARK_MOTOLAND"
-    },
-    {
-        "name": "S2",
-        "id": "ID_MARK_MOTOLAND_MODEL_S2",
-        "mark_id": "ID_MARK_MOTOLAND"
-    },
-    {
-        "name": "S380",
-        "id": "ID_MARK_SHARMAX_MODEL_S380",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "S500",
-        "id": "ID_MARK_SHARMAX_MODEL_S500",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "S650",
-        "id": "ID_MARK_SHARMAX_MODEL_S650",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "SF150L",
-        "id": "ID_MARK_IRBIS_MODEL_SF150L",
-        "mark_id": "ID_MARK_IRBIS"
-    },
-    {
-        "name": "SN-210 Forester",
-        "id": "ID_MARK_SHARMAX_MODEL_SN_210_FORESTER",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "SN-240PRO Landcrafter",
-        "id": "ID_MARK_SHARMAX_MODEL_SN_240PRO_LANDCRAFTER",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "SN-280",
-        "id": "ID_MARK_SHARMAX_MODEL_SN_280",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "SN-420",
-        "id": "ID_MARK_SHARMAX_MODEL_SN_420",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "SNOW HAWK",
-        "id": "ID_MARK_SNOW_HAWK_MODEL_SNOW_HAWK",
-        "mark_id": "ID_MARK_SNOW_HAWK"
-    },
-    {
-        "name": "SR150",
-        "id": "ID_MARK_ARMADA_MODEL_SR150",
-        "mark_id": "ID_MARK_ARMADA"
-    },
-    {
-        "name": "SRX120",
-        "id": "ID_MARK_YAMAHA_MODEL_SRX120",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "SRX700",
-        "id": "ID_MARK_YAMAHA_MODEL_SRX700",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "SUPERCLASS Mk2 Xtreme",
-        "id": "ID_MARK_BMW_ALPINA_MODEL_SUPERCLASS_MK2_XTREME",
-        "mark_id": "ID_MARK_BMW_ALPINA"
-    },
-    {
-        "name": "SXViper",
-        "id": "ID_MARK_YAMAHA_MODEL_SXVIPER",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "Sabercat",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_SABERCAT",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "Sherpa",
-        "id": "ID_MARK_ALPINA_MODEL_SHERPA",
-        "mark_id": "ID_MARK_ALPINA"
-    },
-    {
-        "name": "Sherpa",
-        "id": "ID_MARK_BMW_ALPINA_MODEL_SHERPA",
-        "mark_id": "ID_MARK_BMW_ALPINA"
-    },
-    {
-        "name": "Sidewinder",
-        "id": "ID_MARK_YAMAHA_MODEL_SIDEWINDER",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "Ski-Doo Backcountry X 850",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_BACKCOUNTRY_X_850",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Elite",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_ELITE",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition 900",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_900",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition 1000",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_1000",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition 1300",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_1300",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition SE 1200",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_SE_1200",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition Sport 550F",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_SPORT_550F",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Expedition Xtreme 850",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_EXPEDITION_XTREME_850",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Formula",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_FORMULA",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Freeride",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_FREERIDE",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Freestyle",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_FREESTYLE",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo GSX",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GSX",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo GTX 380",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_380",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo GTX 500",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_500",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo GTX 550",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_550",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo GTX 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo GTX 800",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo GTX 1200",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_1200",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Grand Touring",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Grand Touring 500",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_500",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Grand Touring 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Grand Touring 700",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_700",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Grand Touring 900 ACE",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GRAND_TOURING_900_ACE",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Legend",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_LEGEND",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ Renegade X 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ Renegade X 800",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ Renegade X 1000",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_1000",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ Renegade X 1200",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_RENEGADE_X_1200",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ Sport 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_SPORT_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ X-RS 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_X_RS_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ X-RS 850",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_X_RS_850",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo MXZ X-racing 440",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MXZ_X_RACING_440",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Mach Z",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_MACH_Z",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Renegade X-RS 850",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_RENEGADE_X_RS_850",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Renegade X-RS 900",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_RENEGADE_X_RS_900",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Skandic 500",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_500",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Skandic 550",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_550",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Skandic 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Skandic 900",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SKANDIC_900",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Summit 500",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_500",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Summit 550",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_550",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Summit 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Summit 700",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_700",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Summit 800",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Summit 850",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_850",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Summit 1000",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_1000",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Touring",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TOURING",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Tundra 300F",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_300F",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Tundra 550",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_550",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Tundra 600",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_600",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Ski-Doo Tundra 800",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_TUNDRA_800",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
-        "name": "Sno Pro",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_SNO_PRO",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "Snow",
-        "id": "ID_MARK_FIGHTER_MODEL_SNOW",
-        "mark_id": "ID_MARK_FIGHTER"
-    },
-    {
-        "name": "SnowDog",
-        "id": "ID_MARK_BALTMOTORS_MODEL_SNOWDOG",
-        "mark_id": "ID_MARK_BALTMOTORS"
-    },
-    {
-        "name": "Snow Fly",
-        "id": "ID_MARK_FUN_TEC_MODEL_SNOW_FLY",
-        "mark_id": "ID_MARK_FUN_TEC"
-    },
-    {
-        "name": "Snow Hawk 800",
-        "id": "ID_MARK_AD_BOIVIN_MODEL_SNOW_HAWK_800",
-        "mark_id": "ID_MARK_AD_BOIVIN"
-    },
-    {
-        "name": "Snow Scooter 301",
-        "id": "ID_MARK_ASA_MODEL_SNOW_SCOOTER_301",
-        "mark_id": "ID_MARK_ASA"
-    },
-    {
-        "name": "Snow Scooter 305",
-        "id": "ID_MARK_ASA_MODEL_SNOW_SCOOTER_305",
-        "mark_id": "ID_MARK_ASA"
-    },
-    {
-        "name": "T 15",
-        "id": "ID_MARK_KOIRA_MODEL_T_15",
-        "mark_id": "ID_MARK_KOIRA"
-    },
-    {
-        "name": "T660",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_T660",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "TR",
-        "id": "ID_MARK_KOIRA_MODEL_TR",
-        "mark_id": "ID_MARK_KOIRA"
-    },
-    {
-        "name": "TT200P",
-        "id": "ID_MARK_CRONUS_MODEL_TT200P",
-        "mark_id": "ID_MARK_CRONUS"
-    },
-    {
-        "name": "TZ1",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_TZ1",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
-    },
-    {
-        "name": "Tiksy",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TIKSY",
-        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
-    },
-    {
         "name": "Trail RMK",
         "id": "ID_MARK_POLARIS_MODEL_TRAIL_RMK",
         "mark_id": "ID_MARK_POLARIS"
-    },
-    {
-        "name": "Tungus",
-        "id": "ID_MARK_IRBIS_MODEL_TUNGUS",
-        "mark_id": "ID_MARK_IRBIS"
     },
     {
         "name": "Turbo IQ",
@@ -1095,41 +1055,6 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "VK540",
-        "id": "ID_MARK_YAMAHA_MODEL_VK540",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "VK Professional",
-        "id": "ID_MARK_YAMAHA_MODEL_VK_PROFESSIONAL",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "VMAX",
-        "id": "ID_MARK_YAMAHA_MODEL_VMAX",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "Venture",
-        "id": "ID_MARK_YAMAHA_MODEL_VENTURE",
-        "mark_id": "ID_MARK_YAMAHA"
-    },
-    {
-        "name": "Viking 600",
-        "id": "ID_MARK_STELS_MODEL_VIKING_600",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Viking 600 ST",
-        "id": "ID_MARK_STELS_MODEL_VIKING_600_ST",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Viking 800",
-        "id": "ID_MARK_STELS_MODEL_VIKING_800",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
         "name": "Widetrak IQ",
         "id": "ID_MARK_POLARIS_MODEL_WIDETRAK_IQ",
         "mark_id": "ID_MARK_POLARIS"
@@ -1140,199 +1065,24 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "Wind 320",
-        "id": "ID_MARK_ABM_MODEL_WIND_320",
-        "mark_id": "ID_MARK_ABM"
-    },
-    {
         "name": "X2",
         "id": "ID_MARK_POMOR_MODEL_X2",
         "mark_id": "ID_MARK_POMOR"
     },
     {
-        "name": "XF-Series",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_XF_SERIES",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
+        "name": "380",
+        "id": "ID_MARK_POMOR_MODEL_380",
+        "mark_id": "ID_MARK_POMOR"
     },
     {
-        "name": "ZR-Series",
-        "id": "ID_MARK_ARCTIC_CAT_MODEL_ZR_SERIES",
-        "mark_id": "ID_MARK_ARCTIC_CAT"
+        "name": "500",
+        "id": "ID_MARK_POMOR_MODEL_500",
+        "mark_id": "ID_MARK_POMOR"
     },
     {
-        "name": "БТС LONG",
-        "id": "ID_MARK_BTS_MODEL_BTS_LONG",
-        "mark_id": "ID_MARK_BTS"
-    },
-    {
-        "name": "Богатырь",
-        "id": "ID_MARK_KOIRA_MODEL_BOGATYR",
-        "mark_id": "ID_MARK_KOIRA"
-    },
-    {
-        "name": "Богатырь Mini",
-        "id": "ID_MARK_KOIRA_MODEL_BOGATYR_MINI",
-        "mark_id": "ID_MARK_KOIRA"
-    },
-    {
-        "name": "Буран",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_BURAN",
-        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
-    },
-    {
-        "name": "Бурлак",
-        "id": "ID_MARK_BURLAK_MODEL_BURLAK",
-        "mark_id": "ID_MARK_BURLAK"
-    },
-    {
-        "name": "Витязь 800",
-        "id": "ID_MARK_STELS_MODEL_VITYAZ_800",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Волкодав",
-        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_VOLKODAV",
-        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
-    },
-    {
-        "name": "Волкодав POWER",
-        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_VOLKODAV_POWER",
-        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
-    },
-    {
-        "name": "Д-1",
-        "id": "ID_MARK_SHIKHAN_MODEL_D_1",
-        "mark_id": "ID_MARK_SHIKHAN"
-    },
-    {
-        "name": "Д-2",
-        "id": "ID_MARK_SHIKHAN_MODEL_D_2",
-        "mark_id": "ID_MARK_SHIKHAN"
-    },
-    {
-        "name": "Джек",
-        "id": "ID_MARK_DZHEK_MODEL_DZHEK",
-        "mark_id": "ID_MARK_DZHEK"
-    },
-    {
-        "name": "Ермак 600L",
-        "id": "ID_MARK_STELS_MODEL_ERMAK_600L",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Ермак 600S",
-        "id": "ID_MARK_STELS_MODEL_ERMAK_600S",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Ермак 800",
-        "id": "ID_MARK_STELS_MODEL_ERMAK_800",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Ирбис",
-        "id": "ID_MARK_YAVT_MODEL_IRBIS",
-        "mark_id": "ID_MARK_YAVT"
-    },
-    {
-        "name": "К-1",
-        "id": "ID_MARK_SHIKHAN_MODEL_K_1",
-        "mark_id": "ID_MARK_SHIKHAN"
-    },
-    {
-        "name": "К-2",
-        "id": "ID_MARK_SHIKHAN_MODEL_K_2",
-        "mark_id": "ID_MARK_SHIKHAN"
-    },
-    {
-        "name": "КБ-48",
-        "id": "ID_MARK_RAYDA_MODEL_KB_48",
-        "mark_id": "ID_MARK_RAYDA"
-    },
-    {
-        "name": "КОМПАКТ 500",
-        "id": "ID_MARK_BTS_MODEL_KOMPAKT_500",
-        "mark_id": "ID_MARK_BTS"
-    },
-    {
-        "name": "Ка-30",
-        "id": "ID_MARK_AAK_PROGRESS_MODEL_KA_30",
-        "mark_id": "ID_MARK_AAK_PROGRESS"
-    },
-    {
-        "name": "Капитан S150",
-        "id": "ID_MARK_STELS_MODEL_KAPITAN_S150",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Каюр",
-        "id": "ID_MARK_ITLAN_MODEL_KAYUR",
-        "mark_id": "ID_MARK_ITLAN"
-    },
-    {
-        "name": "Классика",
-        "id": "ID_MARK_FISHRIDE_MODEL_KLASSIKA",
-        "mark_id": "ID_MARK_FISHRIDE"
-    },
-    {
-        "name": "Классика+",
-        "id": "ID_MARK_FISHRIDE_MODEL_KLASSIKA_P",
-        "mark_id": "ID_MARK_FISHRIDE"
-    },
-    {
-        "name": "Компакт",
-        "id": "ID_MARK_FISHRIDE_MODEL_KOMPAKT",
-        "mark_id": "ID_MARK_FISHRIDE"
-    },
-    {
-        "name": "Лайка",
-        "id": "ID_MARK_FUN_TEC_MODEL_LAYKA",
-        "mark_id": "ID_MARK_FUN_TEC"
-    },
-    {
-        "name": "МАЛЕК 380",
-        "id": "ID_MARK_BTS_MODEL_MALEK_380",
-        "mark_id": "ID_MARK_BTS"
-    },
-    {
-        "name": "МБГ-1 Фишкар",
-        "id": "ID_MARK_ZID_MODEL_MBG_1_FISHKAR",
-        "mark_id": "ID_MARK_ZID"
-    },
-    {
-        "name": "МБГ-2 Вьюга",
-        "id": "ID_MARK_ZID_MODEL_MBG_2_VYUGA",
-        "mark_id": "ID_MARK_ZID"
-    },
-    {
-        "name": "Мороз 600L",
-        "id": "ID_MARK_STELS_MODEL_MOROZ_600L",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Мороз 600S",
-        "id": "ID_MARK_STELS_MODEL_MOROZ_600S",
-        "mark_id": "ID_MARK_STELS"
-    },
-    {
-        "name": "Мотобуксировщики",
-        "id": "ID_MARK_PAXUS_MODEL_MOTOBUKSIROVSHCHIKI",
-        "mark_id": "ID_MARK_PAXUS"
-    },
-    {
-        "name": "Мухтар",
-        "id": "ID_MARK_IRBIS_MODEL_MUKHTAR",
-        "mark_id": "ID_MARK_IRBIS"
-    },
-    {
-        "name": "Партизан",
-        "id": "ID_MARK_BARS_MODEL_PARTIZAN",
-        "mark_id": "ID_MARK_BARS"
-    },
-    {
-        "name": "Пилигрим",
-        "id": "ID_MARK_PELETS_MODEL_PILIGRIM_SNOWMOBILE",
-        "mark_id": "ID_MARK_PELETS"
+        "name": "600/650",
+        "id": "ID_MARK_POMOR_MODEL_600_650",
+        "mark_id": "ID_MARK_POMOR"
     },
     {
         "name": "Прогресс 9S",
@@ -1340,54 +1090,34 @@
         "mark_id": "ID_MARK_PROGRESS"
     },
     {
-        "name": "Разборный",
-        "id": "ID_MARK_URAGAN_MODEL_RAZBORNYY",
-        "mark_id": "ID_MARK_URAGAN"
+        "name": "CSZ",
+        "id": "ID_MARK_PSKOVSKAYA_MEKHANIKA_MODEL_CSZ",
+        "mark_id": "ID_MARK_PSKOVSKAYA_MEKHANIKA"
     },
     {
-        "name": "Рекс LA\/LV",
-        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_REKS_LA_LV",
-        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
+        "name": "КБ-48",
+        "id": "ID_MARK_RAYDA_MODEL_KB_48",
+        "mark_id": "ID_MARK_RAYDA"
     },
     {
-        "name": "Рекс RA\/RV",
-        "id": "ID_MARK_LEBEDEV_GARAGE_MODEL_REKS_RA_RV",
-        "mark_id": "ID_MARK_LEBEDEV_GARAGE"
+        "name": "Tiksy",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TIKSY",
+        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
-        "name": "Росомаха",
-        "id": "ID_MARK_STELS_MODEL_ROSOMAKHA",
-        "mark_id": "ID_MARK_STELS"
+        "name": "Буран",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_BURAN",
+        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
+    },
+    {
+        "name": "RM Vector 551i",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_RM_VECTOR_551I",
+        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
         "name": "Рыбинка",
         "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_RYBINKA",
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
-    },
-    {
-        "name": "СМТ-001",
-        "id": "ID_MARK_PEGAS_MODEL_SMT_001",
-        "mark_id": "ID_MARK_PEGAS"
-    },
-    {
-        "name": "СТАНДАРТ 500",
-        "id": "ID_MARK_BTS_MODEL_STANDART_500",
-        "mark_id": "ID_MARK_BTS"
-    },
-    {
-        "name": "Следопыт",
-        "id": "ID_MARK_BARS_MODEL_SLEDOPYT",
-        "mark_id": "ID_MARK_BARS"
-    },
-    {
-        "name": "Снегоскутер",
-        "id": "ID_MARK_TURIST_MODEL_SNEGOSKUTER",
-        "mark_id": "ID_MARK_TURIST"
-    },
-    {
-        "name": "Снегоходы (Другие)",
-        "id": "ID_MARK_DRUGIE_MODEL_SNEGOKHODY_DRUGIE",
-        "mark_id": "ID_MARK_DRUGIE"
     },
     {
         "name": "Тайга Атака",
@@ -1397,16 +1127,6 @@
     {
         "name": "Тайга Барс 850",
         "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_BARS_850",
-        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
-    },
-    {
-        "name": "Тайга Варяг 500",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_VARYAG_500",
-        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
-    },
-    {
-        "name": "Тайга Варяг 550",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_VARYAG_550",
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
@@ -1435,13 +1155,293 @@
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
-        "name": "Хаски",
-        "id": "ID_MARK_KHASKI_MODEL_KHASKI",
-        "mark_id": "ID_MARK_KHASKI"
+        "name": "Тайга Варяг 500",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_VARYAG_500",
+        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
-        "name": "Эксклюзив+",
-        "id": "ID_MARK_FISHRIDE_MODEL_EKSKLYUZIV_P",
-        "mark_id": "ID_MARK_FISHRIDE"
+        "name": "Тайга Варяг 550",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_VARYAG_550",
+        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
+    },
+    {
+        "name": "500",
+        "id": "ID_MARK_RYS_MODEL_500",
+        "mark_id": "ID_MARK_RYS"
+    },
+    {
+        "name": "113",
+        "id": "ID_MARK_RYS_MODEL_113",
+        "mark_id": "ID_MARK_RYS"
+    },
+    {
+        "name": "119",
+        "id": "ID_MARK_RYS_MODEL_119",
+        "mark_id": "ID_MARK_RYS"
+    },
+    {
+        "name": "121",
+        "id": "ID_MARK_RYS_MODEL_121",
+        "mark_id": "ID_MARK_RYS"
+    },
+    {
+        "name": "SN-420",
+        "id": "ID_MARK_SHARMAX_MODEL_SN_420",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "S380",
+        "id": "ID_MARK_SHARMAX_MODEL_S380",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "S500",
+        "id": "ID_MARK_SHARMAX_MODEL_S500",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "S650",
+        "id": "ID_MARK_SHARMAX_MODEL_S650",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "SN-210 Forester",
+        "id": "ID_MARK_SHARMAX_MODEL_SN_210_FORESTER",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "SN-240PRO Landcrafter",
+        "id": "ID_MARK_SHARMAX_MODEL_SN_240PRO_LANDCRAFTER",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "SN-280",
+        "id": "ID_MARK_SHARMAX_MODEL_SN_280",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "К-2",
+        "id": "ID_MARK_SHIKHAN_MODEL_K_2",
+        "mark_id": "ID_MARK_SHIKHAN"
+    },
+    {
+        "name": "Д-1",
+        "id": "ID_MARK_SHIKHAN_MODEL_D_1",
+        "mark_id": "ID_MARK_SHIKHAN"
+    },
+    {
+        "name": "Д-2",
+        "id": "ID_MARK_SHIKHAN_MODEL_D_2",
+        "mark_id": "ID_MARK_SHIKHAN"
+    },
+    {
+        "name": "К-1",
+        "id": "ID_MARK_SHIKHAN_MODEL_K_1",
+        "mark_id": "ID_MARK_SHIKHAN"
+    },
+    {
+        "name": "FX-170",
+        "id": "ID_MARK_SIMBEL_MODEL_FX_170",
+        "mark_id": "ID_MARK_SIMBEL"
+    },
+    {
+        "name": "SNOW HAWK",
+        "id": "ID_MARK_SNOW_HAWK_MODEL_SNOW_HAWK",
+        "mark_id": "ID_MARK_SNOW_HAWK"
+    },
+    {
+        "name": "500 LT",
+        "id": "ID_MARK_SNOW_HAWK_MODEL_500_LT",
+        "mark_id": "ID_MARK_SNOW_HAWK"
+    },
+    {
+        "name": "600 LT",
+        "id": "ID_MARK_SNOW_HAWK_MODEL_600_LT",
+        "mark_id": "ID_MARK_SNOW_HAWK"
+    },
+    {
+        "name": "Ермак 600L",
+        "id": "ID_MARK_STELS_MODEL_ERMAK_600L",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Ермак 600S",
+        "id": "ID_MARK_STELS_MODEL_ERMAK_600S",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Ермак 800",
+        "id": "ID_MARK_STELS_MODEL_ERMAK_800",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Капитан S150",
+        "id": "ID_MARK_STELS_MODEL_KAPITAN_S150",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Мороз 600L",
+        "id": "ID_MARK_STELS_MODEL_MOROZ_600L",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Мороз 600S",
+        "id": "ID_MARK_STELS_MODEL_MOROZ_600S",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Росомаха",
+        "id": "ID_MARK_STELS_MODEL_ROSOMAKHA",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Viking 600",
+        "id": "ID_MARK_STELS_MODEL_VIKING_600",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Viking 600 ST",
+        "id": "ID_MARK_STELS_MODEL_VIKING_600_ST",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Viking 800",
+        "id": "ID_MARK_STELS_MODEL_VIKING_800",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Витязь 800",
+        "id": "ID_MARK_STELS_MODEL_VITYAZ_800",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Снегоскутер",
+        "id": "ID_MARK_TURIST_MODEL_SNEGOSKUTER",
+        "mark_id": "ID_MARK_TURIST"
+    },
+    {
+        "name": "Разборный",
+        "id": "ID_MARK_URAGAN_MODEL_RAZBORNYY",
+        "mark_id": "ID_MARK_URAGAN"
+    },
+    {
+        "name": "200RS",
+        "id": "ID_MARK_WELS_MODEL_200RS",
+        "mark_id": "ID_MARK_WELS"
+    },
+    {
+        "name": "Phantom",
+        "id": "ID_MARK_WELS_MODEL_PHANTOM",
+        "mark_id": "ID_MARK_WELS"
+    },
+    {
+        "name": "Apex",
+        "id": "ID_MARK_YAMAHA_MODEL_APEX",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "Bravo BR250T",
+        "id": "ID_MARK_YAMAHA_MODEL_BRAVO_BR250T",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "FXNytro",
+        "id": "ID_MARK_YAMAHA_MODEL_FXNYTRO",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "Mountain Max",
+        "id": "ID_MARK_YAMAHA_MODEL_MOUNTAIN_MAX",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "Phazer",
+        "id": "ID_MARK_YAMAHA_MODEL_PHAZER",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "RSRage",
+        "id": "ID_MARK_YAMAHA_MODEL_RSRAGE",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "RSVector",
+        "id": "ID_MARK_YAMAHA_MODEL_RSVECTOR",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "RSVenture",
+        "id": "ID_MARK_YAMAHA_MODEL_RSVENTURE",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "RSViking",
+        "id": "ID_MARK_YAMAHA_MODEL_RSVIKING",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "RXWarrior",
+        "id": "ID_MARK_YAMAHA_MODEL_RXWARRIOR",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "RX-1",
+        "id": "ID_MARK_YAMAHA_MODEL_RX_1",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "Sidewinder",
+        "id": "ID_MARK_YAMAHA_MODEL_SIDEWINDER",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "SRX120",
+        "id": "ID_MARK_YAMAHA_MODEL_SRX120",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "SRX700",
+        "id": "ID_MARK_YAMAHA_MODEL_SRX700",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "SXViper",
+        "id": "ID_MARK_YAMAHA_MODEL_SXVIPER",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "Venture",
+        "id": "ID_MARK_YAMAHA_MODEL_VENTURE",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "VK540",
+        "id": "ID_MARK_YAMAHA_MODEL_VK540",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "VK Professional",
+        "id": "ID_MARK_YAMAHA_MODEL_VK_PROFESSIONAL",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "VMAX",
+        "id": "ID_MARK_YAMAHA_MODEL_VMAX",
+        "mark_id": "ID_MARK_YAMAHA"
+    },
+    {
+        "name": "Ирбис",
+        "id": "ID_MARK_YAVT_MODEL_IRBIS",
+        "mark_id": "ID_MARK_YAVT"
+    },
+    {
+        "name": "МБГ-1 Фишкар",
+        "id": "ID_MARK_ZID_MODEL_MBG_1_FISHKAR",
+        "mark_id": "ID_MARK_ZID"
+    },
+    {
+        "name": "МБГ-2 Вьюга",
+        "id": "ID_MARK_ZID_MODEL_MBG_2_VYUGA",
+        "mark_id": "ID_MARK_ZID"
     }
 ]

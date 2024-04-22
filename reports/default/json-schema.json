@@ -3861,7 +3861,8 @@
                                             54900
                                         ],
                                         "fillable_by": [
-                                            "repairs.history"
+                                            "repairs.history",
+                                            "repairs.history.registry"
                                         ]
                                     },
                                     "cost": {
@@ -3992,7 +3993,8 @@
                                                     "Ресо-Гарантия"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -4011,7 +4013,8 @@
                                                     "ООО АвтоАсбоцемент"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -4156,7 +4159,8 @@
                                                     "null"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history"
+                                                    "repairs.history",
+                                                    "repairs.history.registry"
                                                 ],
                                                 "examples": [
                                                     0,
@@ -11162,7 +11166,8 @@
                                             "service.history.wilgood",
                                             "gibdd.diagnostic.cards",
                                             "eaisto.registry",
-                                            "eaisto.basalt"
+                                            "eaisto.basalt",
+                                            "repairs.history.registry"
                                         ]
                                     }
                                 }
@@ -11190,7 +11195,8 @@
                                     "service.history.wilgood",
                                     "gibdd.diagnostic.cards",
                                     "eaisto.registry",
-                                    "eaisto.basalt"
+                                    "eaisto.basalt",
+                                    "repairs.history.registry"
                                 ]
                             },
                             "filled_by": {
@@ -11255,7 +11261,8 @@
                                             "service.history.wilgood",
                                             "gibdd.diagnostic.cards",
                                             "eaisto.registry",
-                                            "eaisto.basalt"
+                                            "eaisto.basalt",
+                                            "repairs.history.registry"
                                         ]
                                     }
                                 }

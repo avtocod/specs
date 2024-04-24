@@ -4,6 +4,38 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `repairs.history.registry`
+
+### Changed
+
+- Field with path `repairs.history.date.update` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].number.calculation` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].date.calculation` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].cost.total` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].cost.parts` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].cost.paint` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].cost.labour` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].car.manufacturer` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].car.model` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].car.sub_model` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].task_process` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].repairer.type` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].repairer.description` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].assessor.name` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].insurer.name` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].mileage` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].details.count` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].details.items[].name` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].details.items[].repair.method` also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].details.items[].repair.description` also fillable by `repairs.history.registry`
+- Field with path `mileages.items[].date.event` also fillable by `repairs.history.registry`
+- Field with path `mileages.items[].mileage` also fillable by `repairs.history.registry`
+- Field with path `mileages.items[].actuality.date` also fillable by `repairs.history.registry`
+
 ## v3.147.0
 
 ### Changed

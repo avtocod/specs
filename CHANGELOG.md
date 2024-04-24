@@ -28,7 +28,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `repairs.history.items[].assessor.name` also fillable by `repairs.history.registry`
 - Field with path `repairs.history.items[].insurer.name` also fillable by `repairs.history.registry`
 - Field with path `repairs.history.items[].mileage` also fillable by `repairs.history.registry`
-- Field with path `repairs.history.items[].details.count also fillable by `repairs.history.registry`
+- Field with path `repairs.history.items[].details.count` also fillable by `repairs.history.registry`
 - Field with path `repairs.history.items[].details.items[].name` also fillable by `repairs.history.registry`
 - Field with path `repairs.history.items[].details.items[].repair.method` also fillable by `repairs.history.registry`
 - Field with path `repairs.history.items[].details.items[].repair.description` also fillable by `repairs.history.registry`

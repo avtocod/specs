@@ -36,6 +36,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `mileages.items[].mileage` also fillable by `repairs.history.registry`
 - Field with path `mileages.items[].actuality.date` also fillable by `repairs.history.registry`
 
+## v3.147.0
+
+### Changed
+
+- Vehicle marks and models specs
+
 ## v3.146.0
 
 ### Changed

@@ -9,18 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Changed 
 
 - Disabled source with name `references.oats`
-- Field with path `additional_info.catalog.oats.items[].code` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.brand.name` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.model.name` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.modification.name` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.engine.model.name` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.engine.type` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.engine.power.hp` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.engine.power.kw` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.engine.volume` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.category.name` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.start` not fillable by `references.oats` anymore
-- Field with path `additional_info.catalog.oats.items[].vehicle.manufactured.year.end` not fillable by `references.oats` anymore
+- Field with path `additional_info.catalog.oats.*` not fillable by `references.oats` anymore
 
 ## v3.148.0
 

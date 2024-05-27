@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Disabled source with name `references.oats`
+- Field with path `additional_info.catalog.oats.*` not fillable by `references.oats` anymore
+
 ## v3.148.0
 
 ### Added

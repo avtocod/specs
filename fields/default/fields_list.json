@@ -1413,9 +1413,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.brand.name",
@@ -1423,9 +1421,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.model.name",
@@ -1433,9 +1429,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.modification.name",
@@ -1443,9 +1437,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.engine.model.name",
@@ -1453,9 +1445,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.engine.type",
@@ -1463,9 +1453,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.engine.power.hp",
@@ -1473,9 +1461,7 @@
         "types": [
             "float"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.engine.power.kw",
@@ -1483,9 +1469,7 @@
         "types": [
             "float"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.engine.volume",
@@ -1493,9 +1477,7 @@
         "types": [
             "float"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.category.name",
@@ -1503,9 +1485,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.manufactured.year.start",
@@ -1513,9 +1493,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.oats.items[].vehicle.manufactured.year.end",
@@ -1523,9 +1501,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-            "references.oats"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.tecdoc.items[].manufacturer_id",
@@ -1533,8 +1509,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.tecdoc.items[].model_id",
@@ -1542,8 +1517,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.tecdoc.items[].id",
@@ -1551,8 +1525,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.tecdoc.items[].name",
@@ -1560,8 +1533,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.catalog.tecdoc.items[].description",
@@ -1569,8 +1541,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.identifiers.vin.checksum_validated",
@@ -1578,8 +1549,7 @@
         "types": [
             "boolean"
         ],
-        "fillable_by": [
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.modifications.was_modificated",

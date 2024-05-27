@@ -2983,9 +2983,7 @@
                                                 "examples": [
                                                     "366013880"
                                                 ],
-                                                "fillable_by": [
-                                                    "references.oats"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "vehicle": {
                                                 "type": "object",
@@ -3004,9 +3002,7 @@
                                                                 "examples": [
                                                                     "Skoda"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "references.oats"
-                                                                ]
+                                                                "fillable_by": []
                                                             }
                                                         }
                                                     },
@@ -3023,9 +3019,7 @@
                                                                 "examples": [
                                                                     "Octavia III"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "references.oats"
-                                                                ]
+                                                                "fillable_by": []
                                                             }
                                                         }
                                                     },
@@ -3042,9 +3036,7 @@
                                                                 "examples": [
                                                                     "1.8TSI Elegance"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "references.oats"
-                                                                ]
+                                                                "fillable_by": []
                                                             }
                                                         }
                                                     },
@@ -3065,9 +3057,7 @@
                                                                         "examples": [
                                                                             "G4ED"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "references.oats"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     }
                                                                 }
                                                             },
@@ -3084,9 +3074,7 @@
                                                                 "examples": [
                                                                     "Бензиновый"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "references.oats"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "power": {
                                                                 "type": "object",
@@ -3100,9 +3088,7 @@
                                                                         "examples": [
                                                                             104.0
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "references.oats"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     },
                                                                     "kw": {
                                                                         "description": "Мощность двигателя ТС (кВ)",
@@ -3113,9 +3099,7 @@
                                                                         "examples": [
                                                                             77.0
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "references.oats"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     }
                                                                 }
                                                             },
@@ -3128,9 +3112,7 @@
                                                                 "examples": [
                                                                     1800.0
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "references.oats"
-                                                                ]
+                                                                "fillable_by": []
                                                             }
                                                         }
                                                     },
@@ -3147,9 +3129,7 @@
                                                                 "examples": [
                                                                     "Passenger"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "references.oats"
-                                                                ]
+                                                                "fillable_by": []
                                                             }
                                                         }
                                                     },
@@ -3169,9 +3149,7 @@
                                                                         "examples": [
                                                                             2014
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "references.oats"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     },
                                                                     "end": {
                                                                         "description": "Год окончания производства ТС",
@@ -3182,9 +3160,7 @@
                                                                         "examples": [
                                                                             2015
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "references.oats"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     }
                                                                 }
                                                             }
@@ -3216,8 +3192,7 @@
                                     "examples": [
                                         true
                                     ],
-                                    "fillable_by": [
-                                    ]
+                                    "fillable_by": []
                                 }
                             }
                         }

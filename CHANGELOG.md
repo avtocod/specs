@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
-### Changed 
+### Changed
 
 - Disabled source with name `references.oats`
 - Field with path `additional_info.catalog.oats.*` not fillable by `references.oats` anymore

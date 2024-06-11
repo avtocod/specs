@@ -348,5 +348,10 @@
         "name": "repairs.history.registry",
         "description": "Реестр истории ремонтных работ",
         "enabled": true
+    },
+    {
+        "name": "pledge.online",
+        "description": "Данные о нахождении ТС в залоге Онлайн",
+        "enabled": true
     }
 ]

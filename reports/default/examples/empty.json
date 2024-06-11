@@ -939,6 +939,33 @@
         },
         "count": 1
     },
+    "pledges_online": {
+        "items": [
+            {
+                "date": {
+                    "event": null
+                },
+                "number": null,
+                "pledgors": [
+                    {
+                        "name": null,
+                        "type": null,
+                        "dob": null
+                    }
+                ],
+                "pledgees": [
+                    {
+                        "name": null,
+                        "type": null,
+                        "dob": null
+                    }
+                ],
+                "type": null
+            }
+        ],
+        "count": 1,
+        "in_pledge": null
+    },
     "insurance": {
         "osago": {
             "items": [

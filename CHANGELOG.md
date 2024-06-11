@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `pledge.online`
+- Field with path `pledges_online.count`
+- Field with path `pledges_online.in_pledge`
+- Field with path `pledges_online.date.update`
+- Field with path `pledges_online.intems[].type`
+- Field with path `pledges_online.intems[].number`
+- Field with path `pledges_online.intems[].date.event`
+- Field with path `pledges_online.intems[].pledgors[].name`
+- Field with path `pledges_online.intems[].pledgors[].type`
+- Field with path `pledges_online.intems[].pledgors[].dob`
+- Field with path `pledges_online.intems[].pledgees[].name`
+- Field with path `pledges_online.intems[].pledgees[].type`
+- Field with path `pledges_online.intems[].pledgees[].dob`
+
 ## v3.149.0
 
 ### Changed

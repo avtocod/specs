@@ -4369,6 +4369,116 @@
         ]
     },
     {
+        "path": "pledges_online.items[].date.event",
+        "description": "Обременения на ТС Онлайн: Дата наложения обременения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].number",
+        "description": "Обременения на ТС Онлайн: Номер документа устанавливающего обременение",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].type",
+        "description": "Обременения на ТС Онлайн: Тип события [Возникновение]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].pledgors[].name",
+        "description": "Обременения на ТС Онлайн: Залогодатель (имя) [REFUSE, Евгений Сергеевич Дроздов, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].pledgors[].type",
+        "description": "Обременения на ТС Онлайн: Тип залогодателя [PERSON, LEGAL]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].pledgors[].dob",
+        "description": "Обременения на ТС Онлайн: Дата рождения залогодателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].pledgees[].name",
+        "description": "Обременения на ТС Онлайн: Имя залогодержателя [REFUSE, ЗАО ГлавЭлектро, ...]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].pledgees[].type",
+        "description": "Обременения на ТС Онлайн: Тип залогодержателя [PERSON, LEGAL]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.items[].pledgees[].dob",
+        "description": "Обременения на ТС Онлайн: Дата рождения залогодержателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.date.update",
+        "description": "Обременения на ТС Онлайн: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
+        "path": "pledges_online.in_pledge",
+        "description": "Обременения на ТС Онлайн: Находится ли ТС в залоге?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "pledge.online"
+        ]
+    },
+    {
         "path": "customs.history.items[].date.event",
         "description": "История по таможне: Дата получения таможенной декларации",
         "types": [

@@ -197,6 +197,8 @@
                 },
                 "has_dublicate": null,
                 "number": null,
+                "type": null,
+                "status": null,
                 "org": {
                     "name": null
                 }
@@ -217,6 +219,12 @@
                 }
             },
             "exported": null,
+            "car_scrappage_fees": null,
+            "custom_registration": null,
+            "restriction": {
+                "customs": null,
+                "other": null
+            },
             "techreglament_category": {
                 "code": null,
                 "description": null

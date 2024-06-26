@@ -436,7 +436,8 @@
                                 "base.basalt",
                                 "gibdd.history",
                                 "base.alt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "elpts.online"
                             ]
                         },
                         "body": {
@@ -635,7 +636,8 @@
                                 "base.basalt",
                                 "gibdd.history",
                                 "base.alt",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "elpts.online"
                             ]
                         },
                         "body": {
@@ -2241,7 +2243,34 @@
                                         "base.ext",
                                         "base.alt",
                                         "base.basalt",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "elpts.online"
+                                    ]
+                                },
+                                "type": {
+                                    "description": "Вид электронного паспорта",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "Электронный паспорт транспортного средства"
+                                    ],
+                                    "fillable_by": [
+                                        "elpts.online"
+                                    ]
+                                },
+                                "status": {
+                                    "description": "Статус электронного паспорта",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "действующий"
+                                    ],
+                                    "fillable_by": [
+                                        "elpts.online"
                                     ]
                                 },
                                 "org": {
@@ -2385,6 +2414,64 @@
                                 "base",
                                 "base.ext"
                             ]
+                        },
+                        "car_scrappage_fees": {
+                            "description": "Сведения об уплате утилизационного сбора",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "examples": [
+                                "РФ уплачен"
+                            ],
+                            "fillable_by": [
+                                "elpts.online"
+                            ]
+                        },
+                        "custom_registration": {
+                            "description": "Сведения о выпуске (таможенное оформление)",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "examples": [
+                                "Отсутствуют"
+                            ],
+                            "fillable_by": [
+                                "elpts.online"
+                            ]
+                        },
+                        "restriction": {
+                             "type": "object",
+                             "additionalProperties": false,
+                             "properties": {
+                                 "customs": {
+                                     "description": "Таможенные ограничения",
+                                     "type": [
+                                         "string",
+                                         "null"
+                                     ],
+                                     "examples": [
+                                         "Отсутствуют"
+                                     ],
+                                     "fillable_by": [
+                                         "elpts.online"
+                                     ]
+                                 },
+                                 "other": {
+                                     "description": "Ограничения (обременения) за исключением таможенных",
+                                     "type": [
+                                         "string",
+                                         "null"
+                                     ],
+                                     "examples": [
+                                         "Отсутствуют"
+                                     ],
+                                     "fillable_by": [
+                                         "elpts.online"
+                                     ]
+                                 }
+                             }
                         },
                         "techreglament_category": {
                             "type": "object",

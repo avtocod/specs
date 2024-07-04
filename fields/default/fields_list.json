@@ -1131,7 +1131,7 @@
     },
     {
         "path": "additional_info.vehicle.passport.type",
-        "description": "Дополнительная информация: Вид электронного паспорта",
+        "description": "Дополнительная информация: Вид паспорта ТС",
         "types": [
             "string"
         ],
@@ -1141,7 +1141,7 @@
     },
     {
         "path": "additional_info.vehicle.passport.status",
-        "description": "Дополнительная информация: Статус электронного паспорта",
+        "description": "Дополнительная информация: Статус паспорта ТС",
         "types": [
             "string"
         ],
@@ -1617,7 +1617,7 @@
         ]
     },
     {
-        "path": "additional_info.vehicle.car_scrappage_fees",
+        "path": "additional_info.vehicle.utilization_tax",
         "description": "Дополнительная информация: Сведения об уплате утилизационного сбора",
         "types": [
             "string"
@@ -1627,7 +1627,7 @@
         ]
     },
     {
-        "path": "additional_info.vehicle.custom_registration",
+        "path": "additional_info.vehicle.customs_registration",
         "description": "Дополнительная информация: Сведения о выпуске (таможенное оформление)",
         "types": [
             "string"

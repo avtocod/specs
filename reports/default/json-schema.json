@@ -2248,7 +2248,7 @@
                                     ]
                                 },
                                 "type": {
-                                    "description": "Вид электронного паспорта",
+                                    "description": "Вид паспорта ТС",
                                     "type": [
                                         "string",
                                         "null"
@@ -2261,7 +2261,7 @@
                                     ]
                                 },
                                 "status": {
-                                    "description": "Статус электронного паспорта",
+                                    "description": "Статус паспорта ТС",
                                     "type": [
                                         "string",
                                         "null"
@@ -2415,7 +2415,7 @@
                                 "base.ext"
                             ]
                         },
-                        "car_scrappage_fees": {
+                        "utilization_tax": {
                             "description": "Сведения об уплате утилизационного сбора",
                             "type": [
                                 "string",
@@ -2428,7 +2428,7 @@
                                 "elpts.online"
                             ]
                         },
-                        "custom_registration": {
+                        "customs_registration": {
                             "description": "Сведения о выпуске (таможенное оформление)",
                             "type": [
                                 "string",

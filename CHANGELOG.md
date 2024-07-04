@@ -10,8 +10,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Field with path `additional_info.vehicle.passport.type`
 - Field with path `additional_info.vehicle.passport.status`
-- Field with path `additional_info.vehicle.car_scrappage_fees`
-- Field with path `additional_info.vehicle.custom_registration`
+- Field with path `additional_info.vehicle.utilization_tax`
+- Field with path `additional_info.vehicle.customs_registration`
 - Field with path `additional_info.vehicle.restriction.customs`
 - Field with path `additional_info.vehicle.restriction.other`
 

@@ -348,5 +348,10 @@
         "name": "repairs.history.registry",
         "description": "Реестр истории ремонтных работ",
         "enabled": true
+    },
+    {
+        "name": "elpts.online",
+        "description": "Данные по ЭПТС",
+        "enabled": true
     }
 ]

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `additional_info.vehicle.passport.type`
+- Field with path `additional_info.vehicle.passport.status`
+- Field with path `additional_info.vehicle.utilization_tax`
+- Field with path `additional_info.vehicle.customs_registration`
+- Field with path `additional_info.vehicle.restriction.customs`
+- Field with path `additional_info.vehicle.restriction.other`
+
+### Changed
+
+- Field with path `identifiers.vehicle.pts` also fillable by `elpts.online`
+- Field with path `identifiers_masked.vehicle.pts` also fillable by `elpts.online`
+- Field with path `additional_info.vehicle.passport.number` also fillable by `elpts.online`
+
 ## v3.149.0
 
 ### Changed

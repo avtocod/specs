@@ -65,7 +65,8 @@
             "gibdd.history",
             "base.basalt",
             "base.alt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "elpts.online"
         ]
     },
     {
@@ -189,7 +190,8 @@
             "gibdd.history",
             "base.basalt",
             "base.alt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "elpts.online"
         ]
     },
     {
@@ -1123,7 +1125,28 @@
             "base.basalt",
             "base.ext",
             "base.alt",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "elpts.online"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.passport.type",
+        "description": "Дополнительная информация: Вид паспорта ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "elpts.online"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.passport.status",
+        "description": "Дополнительная информация: Статус паспорта ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "elpts.online"
         ]
     },
     {
@@ -1591,6 +1614,46 @@
         "fillable_by": [
             "base",
             "base.ext"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.utilization_tax",
+        "description": "Дополнительная информация: Сведения об уплате утилизационного сбора",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "elpts.online"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.customs_registration",
+        "description": "Дополнительная информация: Сведения о выпуске (таможенное оформление)",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "elpts.online"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.restriction.customs",
+        "description": "Дополнительная информация: Таможенные ограничения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "elpts.online"
+        ]
+    },
+    {
+        "path": "additional_info.vehicle.restriction.other",
+        "description": "Дополнительная информация: Ограничения (обременения) за исключением таможенных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "elpts.online"
         ]
     },
     {

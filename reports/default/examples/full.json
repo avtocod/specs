@@ -197,6 +197,8 @@
                 },
                 "has_dublicate": false,
                 "number": "8047307033",
+                "type": "Электронный паспорт транспортного средства",
+                "status": "действующий",
                 "org": {
                     "name": "ОАО СервисКазань"
                 }
@@ -221,6 +223,12 @@
                 }
             },
             "exported": true,
+            "utilization_tax": "РФ уплачен",
+            "customs_registration": "Отсутствуют",
+            "restriction": {
+                "customs": "Отсутствуют",
+                "other": "СВЕДЕНИЯ ОБ ОГРАНИЧЕНИЯХ ОТСУТСТВУЮТ"
+            },
             "techreglament_category": {
                 "code": "L",
                 "description": "Мототранспортные средства"

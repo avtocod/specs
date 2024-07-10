@@ -35,18 +35,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `fines.items[].wire.okato` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].location.raw` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].location.coordinates` also fillable by `fines.base.uin` and `fines.base.dln`
-- Field with path `fines.items[].fssp.date` also fillable by `fines.base.uin` and `fines.base.dln`
-- Field with path `fines.items[].fssp.is_proceed` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].fssp.enforcement_proceeding.number` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].fssp.enforcement_proceeding.contact` also fillable by `fines.base.uin` and `fines.base.dln`
-- Field with path `fines.items[].photos[].type` also fillable by `fines.base.uin` and `fines.base.dln`
-- Field with path `fines.items[].photos[].uri` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].payer.name` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].payer.identifier.type` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].payer.identifier.number` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.date.update` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.has_fines` also fillable by `fines.base.uin` and `fines.base.dln`
-
 
 ## v3.150.0
 

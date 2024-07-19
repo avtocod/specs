@@ -7791,7 +7791,7 @@
     },
     {
         "path": "arbitration.items[].type",
-        "description": "История арбитражей: Тип судебного дела",
+        "description": "История арбитражей: Тип судебного решения",
         "types": [
             "string"
         ],
@@ -7801,7 +7801,7 @@
     },
     {
         "path": "arbitration.items[].description",
-        "description": "История арбитражей: Описание судебного дела",
+        "description": "История арбитражей: Описание судебного решения",
         "types": [
             "string"
         ],
@@ -7811,7 +7811,7 @@
     },
     {
         "path": "arbitration.items[].url",
-        "description": "История арбитражей: Ссылка на судебное дело",
+        "description": "История арбитражей: Ссылка на судебное решение",
         "types": [
             "string"
         ],

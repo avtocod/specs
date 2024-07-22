@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `vin.decoder`
+
+### Changed
+
+- Field with path `tech_data.brand.id` also fillable by `vin.decoder`
+- Field with path `tech_data.brand.name.original` also fillable by `vin.decoder`
+- Field with path `tech_data.brand.name.normalized` also fillable by `vin.decoder`
+- Field with path `tech_data.model.id` also fillable by `vin.decoder`
+- Field with path `tech_data.model.name.original` also fillable by `vin.decoder`
+- Field with path `tech_data.model.name.normalized` also fillable by `vin.decoder`
+- Field with path `tech_data.year` also fillable by `vin.decoder`
+- Field with path `tech_data.engine.fuel.type` also fillable by `vin.decoder`
+- Field with path `tech_data.engine.fuel.type_id` also fillable by `vin.decoder`
+- Field with path `tech_data.engine.volume` also fillable by `vin.decoder`
+- Field with path `tech_data.engine.power.hp` also fillable by `vin.decoder`
+- Field with path `tech_data.engine.power.kw` also fillable by `vin.decoder`
+- Field with path `tech_data.wheel.position` also fillable by `vin.decoder`
+- Field with path `tech_data.wheel.position_id` also fillable by `vin.decoder`
+- Field with path `tech_data.wheel.position_code` also fillable by `vin.decoder`
+- Field with path `tech_data.date.update` also fillable by `vin.decoder`
+
 ## v3.151.1
 
 ### Changed
@@ -16,6 +41,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Source `fines.base.uin`
 - Source `fines.base.dln`
+
+### Changed
+
 - Field with path `fines.items[].date.event` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].date.accident` also fillable by `fines.base.uin` and `fines.base.dln`
 - Field with path `fines.items[].article.code` also fillable by `fines.base.uin` and `fines.base.dln`

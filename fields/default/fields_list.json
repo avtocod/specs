@@ -254,7 +254,8 @@
             "string"
         ],
         "fillable_by": [
-            "references.base"
+            "references.base",
+            "vin.decoder"
         ]
     },
     {
@@ -277,7 +278,8 @@
             "eaisto.registry",
             "base.registry.retry",
             "gibdd.history.registry",
-            "customs.fts"
+            "customs.fts",
+            "vin.decoder"
         ]
     },
     {
@@ -287,7 +289,8 @@
             "string"
         ],
         "fillable_by": [
-            "references.base"
+            "references.base",
+            "vin.decoder"
         ]
     },
     {
@@ -315,7 +318,8 @@
             "string"
         ],
         "fillable_by": [
-            "references.base"
+            "references.base",
+            "vin.decoder"
         ]
     },
     {
@@ -330,7 +334,8 @@
             "gibdd.diagnostic.cards",
             "base.basalt",
             "eaisto.registry",
-            "customs.base"
+            "customs.base",
+            "vin.decoder"
         ]
     },
     {
@@ -340,7 +345,8 @@
             "string"
         ],
         "fillable_by": [
-            "references.base"
+            "references.base",
+            "vin.decoder"
         ]
     },
     {
@@ -444,7 +450,8 @@
             "eaisto.registry",
             "regactions.registry",
             "gibdd.history.registry",
-            "customs.base"
+            "customs.base",
+            "vin.decoder"
         ]
     },
     {
@@ -472,7 +479,8 @@
             "base.alt",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "vin.decoder"
         ]
     },
     {
@@ -488,7 +496,8 @@
             "base.basalt",
             "customs.base",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "vin.decoder"
         ]
     },
     {
@@ -536,7 +545,8 @@
             "base.alt",
             "regactions.registry",
             "gibdd.history.registry",
-            "customs.base"
+            "customs.base",
+            "vin.decoder"
         ]
     },
     {
@@ -555,7 +565,8 @@
             "base.registry",
             "base.registry.retry",
             "gibdd.history.registry",
-            "customs.base"
+            "customs.base",
+            "vin.decoder"
         ]
     },
     {
@@ -573,7 +584,8 @@
             "base.registry",
             "base.registry.retry",
             "gibdd.history.registry",
-            "customs.base"
+            "customs.base",
+            "vin.decoder"
         ]
     },
     {
@@ -693,7 +705,8 @@
             "base.alt",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "vin.decoder"
         ]
     },
     {
@@ -708,7 +721,8 @@
             "base.alt",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "vin.decoder"
         ]
     },
     {
@@ -720,7 +734,8 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "gibdd.history.registry"
+            "gibdd.history.registry",
+            "vin.decoder"
         ]
     },
     {
@@ -882,7 +897,8 @@
             "gibdd.diagnostic.cards",
             "eaisto.registry",
             "gibdd.history.registry",
-            "customs.fts"
+            "customs.fts",
+            "vin.decoder"
         ]
     },
     {

@@ -363,5 +363,10 @@
         "name": "fines.base.dln",
         "description": "Данные о штрафах, оформленных на ТС по ВУ",
         "enabled": true
+    },
+    {
+        "name": "vin.decoder",
+        "description": "Вин декодер",
+        "enabled": true
     }
 ]

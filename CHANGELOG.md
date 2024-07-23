@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 ### Added
 
 - Source `vin.decoder`
+- Field with path `tech_data.filled_by.provider`
 
 ### Changed
 

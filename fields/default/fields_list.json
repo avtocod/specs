@@ -879,6 +879,14 @@
         ]
     },
     {
+        "path": "tech_data.filled_by.provider",
+        "description": "Характеристики ТС: Поставщик данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": []
+    },
+    {
         "path": "tech_data.date.update",
         "description": "Характеристики ТС: Дата обновления данных",
         "types": [

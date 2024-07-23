@@ -316,6 +316,13 @@
             "pattern": "^\\d{4}\\-\\d{1,2}\\-\\d{1,2}$",
             "minLength": 8,
             "maxLength": 10
+        },
+        "tech_data_provider": {
+            "type": "string",
+            "enum": [
+                "GIBDD",
+                "VIN_DECODER"
+            ]
         }
     },
     "type": "object",
@@ -1754,6 +1761,27 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                },
+                "filled_by": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "provider": {
+                            "description": "Поставщик данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/tech_data_provider"
+                                }
+                            ],
+                            "examples": [
+                                "GIBDD"
+                            ],
+                            "fillable_by": []
                         }
                     }
                 },

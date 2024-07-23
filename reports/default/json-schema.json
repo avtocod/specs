@@ -316,6 +316,13 @@
             "pattern": "^\\d{4}\\-\\d{1,2}\\-\\d{1,2}$",
             "minLength": 8,
             "maxLength": 10
+        },
+        "tech_data_provider": {
+            "type": "string",
+            "enum": [
+                "GIBDD",
+                "VIN_DECODER"
+            ]
         }
     },
     "type": "object",
@@ -743,7 +750,8 @@
                                 "ID_MARK_OPEL"
                             ],
                             "fillable_by": [
-                                "references.base"
+                                "references.base",
+                                "vin.decoder"
                             ]
                         },
                         "name": {
@@ -773,7 +781,8 @@
                                         "eaisto.registry",
                                         "base.registry.retry",
                                         "gibdd.history.registry",
-                                        "customs.fts"
+                                        "customs.fts",
+                                        "vin.decoder"
                                     ]
                                 },
                                 "rus": {
@@ -797,7 +806,8 @@
                                         "Opel"
                                     ],
                                     "fillable_by": [
-                                        "references.base"
+                                        "references.base",
+                                        "vin.decoder"
                                     ]
                                 }
                             }
@@ -841,7 +851,8 @@
                                 "ID_MARK_OPEL_MODEL_MONTEREY"
                             ],
                             "fillable_by": [
-                                "references.base"
+                                "references.base",
+                                "vin.decoder"
                             ]
                         },
                         "name": {
@@ -863,7 +874,8 @@
                                         "base.basalt",
                                         "eaisto.registry",
                                         "gibdd.diagnostic.cards",
-                                        "customs.base"
+                                        "customs.base",
+                                        "vin.decoder"
                                     ]
                                 },
                                 "normalized": {
@@ -876,7 +888,8 @@
                                         "Monterey"
                                     ],
                                     "fillable_by": [
-                                        "references.base"
+                                        "references.base",
+                                        "vin.decoder"
                                     ]
                                 }
                             }
@@ -1033,7 +1046,8 @@
                         "eaisto.registry",
                         "regactions.registry",
                         "gibdd.history.registry",
-                        "customs.base"
+                        "customs.base",
+                        "vin.decoder"
                     ]
                 },
                 "chassis": {
@@ -1089,7 +1103,8 @@
                                         "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "vin.decoder"
                                     ]
                                 },
                                 "type_id": {
@@ -1112,7 +1127,8 @@
                                         "base.basalt",
                                         "customs.base",
                                         "regactions.registry",
-                                        "gibdd.history.registry"
+                                        "gibdd.history.registry",
+                                        "vin.decoder"
                                     ]
                                 }
                             }
@@ -1184,7 +1200,8 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry",
-                                "customs.base"
+                                "customs.base",
+                                "vin.decoder"
                             ]
                         },
                         "power": {
@@ -1211,7 +1228,8 @@
                                         "base.registry",
                                         "base.registry.retry",
                                         "gibdd.history.registry",
-                                        "customs.base"
+                                        "customs.base",
+                                        "vin.decoder"
                                     ]
                                 },
                                 "kw": {
@@ -1233,7 +1251,8 @@
                                         "base.registry",
                                         "base.registry.retry",
                                         "gibdd.history.registry",
-                                        "customs.base"
+                                        "customs.base",
+                                        "vin.decoder"
                                     ]
                                 }
                             }
@@ -1440,7 +1459,8 @@
                                 "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "vin.decoder"
                             ]
                         },
                         "position_id": {
@@ -1462,7 +1482,8 @@
                                 "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "vin.decoder"
                             ]
                         },
                         "position_code": {
@@ -1477,7 +1498,8 @@
                             "fillable_by": [
                                 "base",
                                 "base.ext",
-                                "gibdd.history.registry"
+                                "gibdd.history.registry",
+                                "vin.decoder"
                             ]
                         }
                     }
@@ -1742,6 +1764,27 @@
                         }
                     }
                 },
+                "filled_by": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "provider": {
+                            "description": "Поставщик данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/tech_data_provider"
+                                }
+                            ],
+                            "examples": [
+                                "GIBDD"
+                            ],
+                            "fillable_by": []
+                        }
+                    }
+                },
                 "date": {
                     "type": "object",
                     "properties": {
@@ -1771,7 +1814,8 @@
                                 "eaisto.registry",
                                 "gibdd.diagnostic.cards",
                                 "gibdd.history.registry",
-                                "customs.fts"
+                                "customs.fts",
+                                "vin.decoder"
                             ]
                         }
                     }

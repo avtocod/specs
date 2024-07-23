@@ -15,6 +15,7 @@ const non_fillable_fields: {[k: string]: string[]} = {
         'tech_data.manufacturer.name',
         'tech_data.brand.name.rus',
         'tech_data.transmission.type',
+        'tech_data.filled_by.provider',
         'calculate.tax.moscow.yearly.amount',
         'calculate.tax.regions.yearly.amount',
         'utilizations.items[].org.name',

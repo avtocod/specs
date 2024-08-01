@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `carsharing.base`
+- Field with path `carsharing.items[].company.tin`
+- Field with path `carsharing.items[].company.type`
+- Field with path `carsharing.used_in_carsharing`
+- Field with path `carsharing.date.update`
+
 ## v3.153.0
 
 ### Changed

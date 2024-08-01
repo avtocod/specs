@@ -7704,6 +7704,46 @@
         ]
     },
     {
+        "path": "carsharing.items[].company.tin",
+        "description": "Использование ТС в каршеринге: ИНН компании сервиса каршеринга",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.base"
+        ]
+    },
+    {
+        "path": "carsharing.items[].company.name",
+        "description": "Использование ТС в каршеринге: Наименование компании сервиса каршеринга",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.base"
+        ]
+    },
+    {
+        "path": "carsharing.used_in_carsharing",
+        "description": "Использование ТС в каршеринге: Использовалось ли ТС в каршеринге?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "carsharing.base"
+        ]
+    },
+    {
+        "path": "carsharing.date.update",
+        "description": "Использование ТС в каршеринге: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "carsharing.base"
+        ]
+    },
+    {
         "path": "recall_campaigns.items[].date",
         "description": "Отзывные кампании: Дата начала отзывной кампании",
         "types": [

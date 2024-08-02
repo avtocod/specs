@@ -368,5 +368,10 @@
         "name": "vin.decoder",
         "description": "Данные о ТС полученные по результатам расшифровки VIN кода",
         "enabled": true
+    },
+    {
+        "name": "carsharing.base",
+        "description": "Использование ТС в каршеринге",
+        "enabled": true
     }
 ]

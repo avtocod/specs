@@ -14391,6 +14391,99 @@
                 }
             }
         },
+        "carsharing": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Использование ТС в каршеринге",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "company": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "tin": {
+                                        "description": "ИНН компании сервиса каршеринга",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/tin_code"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "7407081193"
+                                        ],
+                                        "fillable_by": [
+                                            "carsharing.base"
+                                        ]
+                                    },
+                                    "name": {
+                                        "description": "Наименование компании сервиса каршеринга",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                           "ООО Каршеринг"
+                                        ],
+                                        "fillable_by": [
+                                            "carsharing.base"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "used_in_carsharing": {
+                    "description": "Использовалось ли ТС в каршеринге?",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "examples": [
+                        true,
+                        null
+                    ],
+                    "fillable_by": [
+                        "carsharing.base"
+                    ]
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-03-09 21:10:00"
+                            ],
+                            "fillable_by": [
+                                "carsharing.base"
+                            ]
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
         "recall_campaigns": {
             "type": "object",
             "additionalProperties": false,

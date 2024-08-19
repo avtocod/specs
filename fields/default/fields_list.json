@@ -2925,6 +2925,16 @@
         ]
     },
     {
+        "path": "insurance_scores.accident_probability.value",
+        "description": "Страховые скоринги: Частота страхового случая",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.event.probability.score"
+        ]
+    },
+    {
         "path": "calculate.tax.moscow.yearly.amount",
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
         "types": [

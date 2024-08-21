@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `insurance.event.probability.score`
+- Field with path `insurance_scores.accident_probability.value`
+
 ## v3.154.0
 
 ### Added

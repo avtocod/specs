@@ -8991,6 +8991,33 @@
                 }
             }
         },
+        "insurance_scores": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Страховые скоринги",
+            "properties": {
+                "accident_probability": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "value": {
+                            "description": "Частота страхового случая",
+                            "type": [
+                                "number",
+                                "null"
+                            ],
+                            "examples": [
+                                0.08444489,
+                                null
+                            ],
+                            "fillable_by": [
+                                "insurance.event.probability.score"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
         "accidents": {
             "type": "object",
             "additionalProperties": false,

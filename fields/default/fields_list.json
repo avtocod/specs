@@ -8144,16 +8144,6 @@
         ]
     },
     {
-        "path": "deprivations.items[].registration_place",
-        "description": "Водительские удостоверения: Адрес регистрации владельца ВУ на момент лишения прав",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "gibdd.driver.registry"
-        ]
-    },
-    {
         "path": "executive_procedures.items[].number",
         "description": "Исполнительные производства: Номер исполнительного производства",
         "types": [

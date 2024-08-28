@@ -14,7 +14,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `deprivations.items[].state.description`
 - Field with path `deprivations.items[].offense.place`
 - Field with path `deprivations.items[].offense.decision`
-- Field with path `deprivations.items[].registration_place`
 
 ## v3.155.0
 

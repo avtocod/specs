@@ -15263,19 +15263,6 @@
                                         ]
                                     }
                                 }
-                            },
-                            "registration_place": {
-                                "type": [
-                                    "string",
-                                    "null"
-                                ],
-                                "description": "Адрес регистрации владельца ВУ на момент лишения прав",
-                                "examples": [
-                                    "МОСКВА Г."
-                                ],
-                                "fillable_by": [
-                                    "gibdd.driver.registry"
-                                ]
                             }
                         }
                     }

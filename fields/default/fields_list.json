@@ -8084,6 +8084,76 @@
         ]
     },
     {
+        "path": "deprivations.items[].date.start",
+        "description": "Водительские удостоверения: Дата лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "deprivations.items[].date.end",
+        "description": "Водительские удостоверения: Дата окончания лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "deprivations.items[].state.code",
+        "description": "Водительские удостоверения: Код статуса лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "deprivations.items[].state.description",
+        "description": "Водительские удостоверения: Статус лишения права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "deprivations.items[].offense.place",
+        "description": "Водительские удостоверения: Место совершения нарушения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "deprivations.items[].offense.decision",
+        "description": "Водительские удостоверения: Решение о лишении права управления ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
+        "path": "deprivations.items[].registration_place",
+        "description": "Водительские удостоверения: Адрес регистрации владельца ВУ на момент лишения прав",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "gibdd.driver.registry"
+        ]
+    },
+    {
         "path": "executive_procedures.items[].number",
         "description": "Исполнительные производства: Номер исполнительного производства",
         "types": [

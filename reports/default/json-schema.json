@@ -15279,6 +15279,11 @@
                             }
                         }
                     }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
                 }
             }
         },

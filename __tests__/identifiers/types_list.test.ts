@@ -15,6 +15,7 @@ const expected_identifiers_types: {[k: string]: string[]} = {
         'CHASSIS',
         'BODY',
         'DLN',
+        'SEN',
         'NONE'
     ]
 };

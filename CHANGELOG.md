@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Source `pledge.basalt`
+- Source `pledge.online`
 - Field with path `pledges_online.count`
 - Field with path `pledges_online.in_pledge`
 - Field with path `pledges_online.date.update`

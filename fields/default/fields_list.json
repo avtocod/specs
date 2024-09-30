@@ -5308,6 +5308,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5338,6 +5339,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5355,6 +5357,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5370,6 +5373,7 @@
             "gibdd.fines",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5387,6 +5391,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5403,6 +5408,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5415,6 +5421,7 @@
         ],
         "fillable_by": [
             "fines.registry",
+            "fines.registry.batch",
             "fines.base",
             "fines.base.dln",
             "fines.base.uin"
@@ -5460,6 +5467,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5477,6 +5485,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5494,6 +5503,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5509,6 +5519,7 @@
             "gibdd.fines",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5526,6 +5537,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5541,6 +5553,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5556,6 +5569,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5571,6 +5585,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5586,6 +5601,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5601,6 +5617,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5616,6 +5633,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5631,6 +5649,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5647,6 +5666,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5662,6 +5682,7 @@
             "fines.alt",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5679,6 +5700,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5694,6 +5716,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5707,6 +5730,7 @@
         "fillable_by": [
             "fines.base",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]
@@ -5719,7 +5743,8 @@
         ],
         "fillable_by": [
             "gibdd.fines",
-            "fines.registry"
+            "fines.registry",
+            "fines.registry.batch"
         ]
     },
     {
@@ -5730,7 +5755,8 @@
         ],
         "fillable_by": [
             "gibdd.fines",
-            "fines.registry"
+            "fines.registry",
+            "fines.registry.batch"
         ]
     },
     {
@@ -5741,6 +5767,7 @@
         ],
         "fillable_by": [
             "fines.registry",
+            "fines.registry.batch",
             "fines.base",
             "fines.base.dln",
             "fines.base.uin"
@@ -5754,6 +5781,7 @@
         ],
         "fillable_by": [
             "fines.registry",
+            "fines.registry.batch",
             "fines.base",
             "fines.base.dln",
             "fines.base.uin"
@@ -5789,6 +5817,7 @@
         ],
         "fillable_by": [
             "fines.registry",
+            "fines.registry.batch",
             "fines.base",
             "fines.base.dln",
             "fines.base.uin"
@@ -5802,6 +5831,7 @@
         ],
         "fillable_by": [
             "fines.registry",
+            "fines.registry.batch",
             "fines.base",
             "fines.base.dln",
             "fines.base.uin"
@@ -5815,6 +5845,7 @@
         ],
         "fillable_by": [
             "fines.registry",
+            "fines.registry.batch",
             "fines.base",
             "fines.base.dln",
             "fines.base.uin"
@@ -5833,6 +5864,7 @@
             "fines.madiampp",
             "fines.base.ext",
             "fines.registry",
+            "fines.registry.batch",
             "fines.base.dln",
             "fines.base.uin"
         ]

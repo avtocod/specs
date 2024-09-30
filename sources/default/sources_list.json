@@ -378,5 +378,10 @@
         "name": "insurance.event.probability.score",
         "description": "Страховые скоринги: Частота страхового случая",
         "enabled": true
+    },
+    {
+        "name": "fines.registry.batch",
+        "description": "Реестр штрафов (Batch)",
+        "enabled": true
     }
 ]

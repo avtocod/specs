@@ -2486,36 +2486,36 @@
                             ]
                         },
                         "restriction": {
-                             "type": "object",
-                             "additionalProperties": false,
-                             "properties": {
-                                 "customs": {
-                                     "description": "Таможенные ограничения",
-                                     "type": [
-                                         "string",
-                                         "null"
-                                     ],
-                                     "examples": [
-                                         "Отсутствуют"
-                                     ],
-                                     "fillable_by": [
-                                         "elpts.online"
-                                     ]
-                                 },
-                                 "other": {
-                                     "description": "Ограничения (обременения) за исключением таможенных",
-                                     "type": [
-                                         "string",
-                                         "null"
-                                     ],
-                                     "examples": [
-                                         "Отсутствуют"
-                                     ],
-                                     "fillable_by": [
-                                         "elpts.online"
-                                     ]
-                                 }
-                             }
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "customs": {
+                                    "description": "Таможенные ограничения",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "Отсутствуют"
+                                    ],
+                                    "fillable_by": [
+                                        "elpts.online"
+                                    ]
+                                },
+                                "other": {
+                                    "description": "Ограничения (обременения) за исключением таможенных",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "Отсутствуют"
+                                    ],
+                                    "fillable_by": [
+                                        "elpts.online"
+                                    ]
+                                }
+                            }
                         },
                         "techreglament_category": {
                             "type": "object",
@@ -2567,7 +2567,7 @@
                                         "eaisto.registry"
                                     ]
                                 },
-                                "description":  {
+                                "description": {
                                     "description": "Описание категории ТС по техническому регламенту",
                                     "type": [
                                         "string",
@@ -5037,9 +5037,9 @@
                                             "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
-
                                         ]
                                     },
                                     "accident": {
@@ -5084,6 +5084,7 @@
                                             "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5104,6 +5105,7 @@
                                             "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5124,6 +5126,7 @@
                                     "gibdd.fines",
                                     "fines.base.ext",
                                     "fines.registry",
+                                    "fines.registry.batch",
                                     "fines.base.dln",
                                     "fines.base.uin"
                                 ]
@@ -5144,6 +5147,7 @@
                                     "fines.madiampp",
                                     "fines.base.ext",
                                     "fines.registry",
+                                    "fines.registry.batch",
                                     "fines.base.dln",
                                     "fines.base.uin"
                                 ]
@@ -5167,6 +5171,7 @@
                                             "fines.alt",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5189,6 +5194,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base",
                                             "fines.base.dln",
                                             "fines.base.uin"
@@ -5249,6 +5255,7 @@
                                             "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5276,6 +5283,7 @@
                                             "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5304,6 +5312,7 @@
                                                     "fines.madiampp",
                                                     "fines.base.ext",
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
                                                 ]
@@ -5326,6 +5335,7 @@
                                     "gibdd.fines",
                                     "fines.base.ext",
                                     "fines.registry",
+                                    "fines.registry.batch",
                                     "fines.base.dln",
                                     "fines.base.uin"
                                 ]
@@ -5346,6 +5356,7 @@
                                     "fines.madiampp",
                                     "fines.base.ext",
                                     "fines.registry",
+                                    "fines.registry.batch",
                                     "fines.base.dln",
                                     "fines.base.uin"
                                 ]
@@ -5372,6 +5383,7 @@
                                                     "fines.alt",
                                                     "fines.base.ext",
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
                                                 ]
@@ -5390,6 +5402,7 @@
                                                     "fines.alt",
                                                     "fines.base.ext",
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
                                                 ]
@@ -5412,6 +5425,7 @@
                                                     "fines.alt",
                                                     "fines.base.ext",
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
                                                 ]
@@ -5440,6 +5454,7 @@
                                                             "fines.alt",
                                                             "fines.base.ext",
                                                             "fines.registry",
+                                                            "fines.registry.batch",
                                                             "fines.base.dln",
                                                             "fines.base.uin"
                                                         ]
@@ -5460,6 +5475,7 @@
                                                     "fines.alt",
                                                     "fines.base.ext",
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
                                                 ]
@@ -5478,6 +5494,7 @@
                                                     "fines.alt",
                                                     "fines.base.ext",
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
                                                 ]
@@ -5502,6 +5519,7 @@
                                                     "fines.alt",
                                                     "fines.base.ext",
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
                                                 ]
@@ -5523,6 +5541,7 @@
                                             "fines.alt",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5541,6 +5560,7 @@
                                             "fines.alt",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5565,6 +5585,7 @@
                                             "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5581,6 +5602,7 @@
                                         "fillable_by": [
                                             "fines.base",
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base.dln",
                                             "fines.base.uin"
                                         ]
@@ -5606,7 +5628,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.fines",
-                                            "fines.registry"
+                                            "fines.registry",
+                                            "fines.registry.batch"
                                         ]
                                     },
                                     "is_proceed": {
@@ -5620,7 +5643,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.fines",
-                                            "fines.registry"
+                                            "fines.registry",
+                                            "fines.registry.batch"
                                         ]
                                     },
                                     "enforcement_proceeding": {
@@ -5638,6 +5662,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
@@ -5654,6 +5679,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
@@ -5678,6 +5704,7 @@
                                         ],
                                         "fillable_by": [
                                             "fines.registry",
+                                            "fines.registry.batch",
                                             "fines.base",
                                             "fines.base.dln",
                                             "fines.base.uin"
@@ -5698,6 +5725,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
@@ -5714,6 +5742,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "fines.registry",
+                                                    "fines.registry.batch",
                                                     "fines.base",
                                                     "fines.base.dln",
                                                     "fines.base.uin"
@@ -5786,6 +5815,7 @@
                         "fines.madiampp",
                         "fines.base.ext",
                         "fines.registry",
+                        "fines.registry.batch",
                         "fines.base.dln",
                         "fines.base.uin"
                     ]
@@ -5813,6 +5843,7 @@
                                 "fines.madiampp",
                                 "fines.base.ext",
                                 "fines.registry",
+                                "fines.registry.batch",
                                 "fines.base.dln",
                                 "fines.base.uin"
                             ]
@@ -11262,7 +11293,7 @@
                                     "examples": [
                                         "P1Y3M24D"
                                     ],
-                                    "fillable_by":  [
+                                    "fillable_by": [
                                         "gibdd.history",
                                         "base",
                                         "base.basalt",
@@ -11279,7 +11310,7 @@
                                         365
                                     ],
                                     "minimum": 0,
-                                    "fillable_by":  [
+                                    "fillable_by": [
                                         "gibdd.history",
                                         "base",
                                         "base.basalt",
@@ -14457,7 +14488,7 @@
                                             "null"
                                         ],
                                         "examples": [
-                                           "ООО Каршеринг"
+                                            "ООО Каршеринг"
                                         ],
                                         "fillable_by": [
                                             "carsharing.base"

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `fines.registry.batch`
+- Fields with path `fines.*` also fillable by `fines.registry.batch`
+
 ## v3.156.0
 
 ### Added

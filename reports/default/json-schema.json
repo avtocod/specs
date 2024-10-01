@@ -7703,6 +7703,242 @@
                 }
             }
         },
+        "pledges_online": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Обременения на ТС Онлайн",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "event": {
+                                        "description": "Дата наложения обременения",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/datetime"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2024-05-30 00:00:00"
+                                        ],
+                                        "fillable_by": [
+                                            "pledge.online"
+                                        ]
+                                    }
+                                }
+                            },
+                            "number": {
+                                "description": "Номер документа устанавливающего обременение",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "2024-001-406288-623\/241"
+                                ],
+                                "fillable_by": [
+                                    "pledge.online"
+                                ]
+                            },
+                            "pledgors": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Залогодатель (имя)",
+                                            "anyOf": [
+                                                {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/refuse_type"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "Евгений Сергеевич Дроздов",
+                                                "REFUSE"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge.online"
+                                            ]
+                                        },
+                                        "type": {
+                                            "description": "Тип залогодателя",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "enum": [
+                                                "PERSON",
+                                                "LEGAL",
+                                                null
+                                            ],
+                                            "examples": [
+                                                "PERSON"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge.online"
+                                            ]
+                                        },
+                                        "dob": {
+                                            "description": "Дата рождения залогодателя",
+                                            "oneOf": [
+                                                {
+                                                    "type": "null"
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/date"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "1973-08-31"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge.online"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "pledgees": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Имя залогодержателя",
+                                            "anyOf": [
+                                                {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/refuse_type"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "ПАО ГлавСвет",
+                                                "REFUSE"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge.online"
+                                            ]
+                                        },
+                                        "type": {
+                                            "description": "Тип залогодержателя",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "enum": [
+                                                "PERSON",
+                                                "LEGAL",
+                                                null
+                                            ],
+                                            "examples": [
+                                                "LEGAL"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge.online"
+                                            ]
+                                        },
+                                        "dob": {
+                                            "description": "Дата рождения залогодержателя",
+                                            "oneOf": [
+                                                {
+                                                    "type": "null"
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/date"
+                                                }
+                                            ],
+                                            "examples": [
+                                                null
+                                            ],
+                                            "fillable_by": [
+                                                "pledge.online"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "type": {
+                                "description": "Тип события",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "Возникновение"
+                                ],
+                                "fillable_by": [
+                                    "pledge.online"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-10-17 00:20:00"
+                            ],
+                            "fillable_by": [
+                                "pledge.online"
+                            ]
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "in_pledge": {
+                    "description": "Находится ли ТС в залоге?",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "examples": [
+                        true,
+                        null
+                    ],
+                    "fillable_by": [
+                        "pledge.online"
+                    ]
+                }
+            }
+        },
         "pledges_nbki": {
             "type": "object",
             "additionalProperties": false,

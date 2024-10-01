@@ -378,5 +378,10 @@
         "name": "insurance.event.probability.score",
         "description": "Страховые скоринги: Частота страхового случая",
         "enabled": true
+    },
+    {
+        "name": "pledge.online",
+        "description": "Данные о нахождении ТС в залоге Онлайн",
+        "enabled": true
     }
 ]

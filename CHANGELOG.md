@@ -10,6 +10,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Identifier type `SEN` renamed to `PIN`
 
+## v3.158.0
+
+### Added
+
+- Source `fines.registry.batch`
+- Fields with path `fines.*` also fillable by `fines.registry.batch`
+
 ## v3.157.0
 
 ### Added

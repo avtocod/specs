@@ -383,5 +383,10 @@
         "name": "pledge.online",
         "description": "Данные о нахождении ТС в залоге Онлайн",
         "enabled": true
+    },
+    {
+        "name": "fines.registry.batch",
+        "description": "Реестр штрафов (Batch)",
+        "enabled": true
     }
 ]

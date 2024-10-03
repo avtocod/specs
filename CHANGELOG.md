@@ -6,9 +6,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
-### Changed
+### Added
 
-- Identifier type `SEN` renamed to `PIN`
+- Identifier type `PIN`
 
 ## v3.158.0
 

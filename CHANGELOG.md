@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Field `accidents.has_accidents` also fillable by:
+  - `gibdd.dtp`
+  - `dtp.registry`
+  - `insurance.dtp`
+  - `insurance.dtp.basalt`
+  - `insurance.registry`
+  - `insurance.vehicle.registry`
+  - `gibdd.stat.registry`
+
 ## v3.159.0
 
 ### Added

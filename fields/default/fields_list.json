@@ -3727,7 +3727,13 @@
             "boolean"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "dtp.registry",
+            "insurance.dtp",
+            "insurance.dtp.basalt",
+            "insurance.registry",
+            "insurance.vehicle.registry",
+            "gibdd.stat.registry"
         ]
     },
     {

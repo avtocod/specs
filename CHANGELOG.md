@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Popular marks list in `./vehicle/default/marks_popular.json`
+
 ## v3.160.0
 
 ### Changed

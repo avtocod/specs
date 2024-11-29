@@ -31,6 +31,7 @@ export const required_files_map: FilesMap = {
     ],
     vehicles: [
         'marks.json',
+        'marks_popular.json',
         'models.json',
         'models_agricultural.json',
         'models_artic.json',

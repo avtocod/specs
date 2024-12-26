@@ -10,6 +10,11 @@
         "mark_id": "ID_MARK_ALIFT"
     },
     {
+        "name": "451",
+        "id": "ID_MARK_AMKODOR_MODEL_451",
+        "mark_id": "ID_MARK_AMKODOR"
+    },
+    {
         "name": "134",
         "id": "ID_MARK_AMKODOR_MODEL_134",
         "mark_id": "ID_MARK_AMKODOR"
@@ -85,19 +90,9 @@
         "mark_id": "ID_MARK_AMKODOR"
     },
     {
-        "name": "451",
-        "id": "ID_MARK_AMKODOR_MODEL_451",
-        "mark_id": "ID_MARK_AMKODOR"
-    },
-    {
         "name": "527",
         "id": "ID_MARK_AMKODOR_MODEL_527",
         "mark_id": "ID_MARK_AMKODOR"
-    },
-    {
-        "name": "RK630",
-        "id": "ID_MARK_AMUR_MODEL_RK630",
-        "mark_id": "ID_MARK_AMUR"
     },
     {
         "name": "DK620",
@@ -117,6 +112,11 @@
     {
         "name": "RK620",
         "id": "ID_MARK_AMUR_MODEL_RK620",
+        "mark_id": "ID_MARK_AMUR"
+    },
+    {
+        "name": "RK630",
+        "id": "ID_MARK_AMUR_MODEL_RK630",
         "mark_id": "ID_MARK_AMUR"
     },
     {
@@ -165,11 +165,6 @@
         "mark_id": "ID_MARK_AUSA"
     },
     {
-        "name": "600",
-        "id": "ID_MARK_AVANT_MODEL_600",
-        "mark_id": "ID_MARK_AVANT"
-    },
-    {
         "name": "216",
         "id": "ID_MARK_AVANT_MODEL_216",
         "mark_id": "ID_MARK_AVANT"
@@ -190,8 +185,13 @@
         "mark_id": "ID_MARK_AVANT"
     },
     {
-        "name": "Рекорд 3",
-        "id": "ID_MARK_BALKANCAR_MODEL_REKORD_3",
+        "name": "600",
+        "id": "ID_MARK_AVANT_MODEL_600",
+        "mark_id": "ID_MARK_AVANT"
+    },
+    {
+        "name": "ЕВ",
+        "id": "ID_MARK_BALKANCAR_MODEL_EV",
         "mark_id": "ID_MARK_BALKANCAR"
     },
     {
@@ -220,11 +220,6 @@
         "mark_id": "ID_MARK_BALKANCAR"
     },
     {
-        "name": "ЕВ",
-        "id": "ID_MARK_BALKANCAR_MODEL_EV",
-        "mark_id": "ID_MARK_BALKANCAR"
-    },
-    {
         "name": "Оптимал",
         "id": "ID_MARK_BALKANCAR_MODEL_OPTIMAL",
         "mark_id": "ID_MARK_BALKANCAR"
@@ -237,6 +232,11 @@
     {
         "name": "Рекорд 2",
         "id": "ID_MARK_BALKANCAR_MODEL_REKORD_2",
+        "mark_id": "ID_MARK_BALKANCAR"
+    },
+    {
+        "name": "Рекорд 3",
+        "id": "ID_MARK_BALKANCAR_MODEL_REKORD_3",
         "mark_id": "ID_MARK_BALKANCAR"
     },
     {
@@ -260,13 +260,13 @@
         "mark_id": "ID_MARK_BALTIETS"
     },
     {
-        "name": "CPD",
-        "id": "ID_MARK_BAOLI_MODEL_CPD",
+        "name": "CPCD",
+        "id": "ID_MARK_BAOLI_MODEL_CPCD",
         "mark_id": "ID_MARK_BAOLI"
     },
     {
-        "name": "CPCD",
-        "id": "ID_MARK_BAOLI_MODEL_CPCD",
+        "name": "CPD",
+        "id": "ID_MARK_BAOLI_MODEL_CPD",
         "mark_id": "ID_MARK_BAOLI"
     },
     {
@@ -280,8 +280,8 @@
         "mark_id": "ID_MARK_BAUMANN"
     },
     {
-        "name": "TL470",
-        "id": "ID_MARK_BOBCAT_MODEL_TL470",
+        "name": "T40170",
+        "id": "ID_MARK_BOBCAT_MODEL_T40170",
         "mark_id": "ID_MARK_BOBCAT"
     },
     {
@@ -470,11 +470,6 @@
         "mark_id": "ID_MARK_BOBCAT"
     },
     {
-        "name": "T40170",
-        "id": "ID_MARK_BOBCAT_MODEL_T40170",
-        "mark_id": "ID_MARK_BOBCAT"
-    },
-    {
         "name": "T590",
         "id": "ID_MARK_BOBCAT_MODEL_T590",
         "mark_id": "ID_MARK_BOBCAT"
@@ -495,8 +490,13 @@
         "mark_id": "ID_MARK_BOBCAT"
     },
     {
-        "name": "WL56",
-        "id": "ID_MARK_BOULDER_MODEL_WL56",
+        "name": "TL470",
+        "id": "ID_MARK_BOBCAT_MODEL_TL470",
+        "mark_id": "ID_MARK_BOBCAT"
+    },
+    {
+        "name": "WL12",
+        "id": "ID_MARK_BOULDER_MODEL_WL12",
         "mark_id": "ID_MARK_BOULDER"
     },
     {
@@ -645,11 +645,6 @@
         "mark_id": "ID_MARK_BOULDER"
     },
     {
-        "name": "WL12",
-        "id": "ID_MARK_BOULDER_MODEL_WL12",
-        "mark_id": "ID_MARK_BOULDER"
-    },
-    {
         "name": "WL20",
         "id": "ID_MARK_BOULDER_MODEL_WL20",
         "mark_id": "ID_MARK_BOULDER"
@@ -675,14 +670,14 @@
         "mark_id": "ID_MARK_BOULDER"
     },
     {
+        "name": "WL56",
+        "id": "ID_MARK_BOULDER_MODEL_WL56",
+        "mark_id": "ID_MARK_BOULDER"
+    },
+    {
         "name": "936",
         "id": "ID_MARK_BRENNER_MODEL_936",
         "mark_id": "ID_MARK_BRENNER"
-    },
-    {
-        "name": "1500-Z",
-        "id": "ID_MARK_BRONT_MODEL_1500_Z",
-        "mark_id": "ID_MARK_BRONT"
     },
     {
         "name": "1000-Z",
@@ -690,8 +685,13 @@
         "mark_id": "ID_MARK_BRONT"
     },
     {
-        "name": "Газовые",
-        "id": "ID_MARK_BT_CARGO_MODEL_GAZOVYE",
+        "name": "1500-Z",
+        "id": "ID_MARK_BRONT_MODEL_1500_Z",
+        "mark_id": "ID_MARK_BRONT"
+    },
+    {
+        "name": "Электрические",
+        "id": "ID_MARK_BT_CARGO_MODEL_ELEKTRICHESKIE",
         "mark_id": "ID_MARK_BT_CARGO"
     },
     {
@@ -700,13 +700,13 @@
         "mark_id": "ID_MARK_BT_CARGO"
     },
     {
-        "name": "Электрические",
-        "id": "ID_MARK_BT_CARGO_MODEL_ELEKTRICHESKIE",
+        "name": "Газовые",
+        "id": "ID_MARK_BT_CARGO_MODEL_GAZOVYE",
         "mark_id": "ID_MARK_BT_CARGO"
     },
     {
-        "name": "SL932",
-        "id": "ID_MARK_BULL_MODEL_SL932",
+        "name": "SL380",
+        "id": "ID_MARK_BULL_MODEL_SL380",
         "mark_id": "ID_MARK_BULL"
     },
     {
@@ -895,11 +895,6 @@
         "mark_id": "ID_MARK_BULL"
     },
     {
-        "name": "SL380",
-        "id": "ID_MARK_BULL_MODEL_SL380",
-        "mark_id": "ID_MARK_BULL"
-    },
-    {
         "name": "SL700",
         "id": "ID_MARK_BULL_MODEL_SL700",
         "mark_id": "ID_MARK_BULL"
@@ -930,13 +925,18 @@
         "mark_id": "ID_MARK_BULL"
     },
     {
+        "name": "SL932",
+        "id": "ID_MARK_BULL_MODEL_SL932",
+        "mark_id": "ID_MARK_BULL"
+    },
+    {
         "name": "LQE",
         "id": "ID_MARK_BULMOR_MODEL_LQE",
         "mark_id": "ID_MARK_BULMOR"
     },
     {
-        "name": "TX170",
-        "id": "ID_MARK_CASE_MODEL_TX170",
+        "name": "SV300",
+        "id": "ID_MARK_CASE_MODEL_SV300",
         "mark_id": "ID_MARK_CASE"
     },
     {
@@ -990,11 +990,6 @@
         "mark_id": "ID_MARK_CASE"
     },
     {
-        "name": "SV300",
-        "id": "ID_MARK_CASE_MODEL_SV300",
-        "mark_id": "ID_MARK_CASE"
-    },
-    {
         "name": "TX130",
         "id": "ID_MARK_CASE_MODEL_TX130",
         "mark_id": "ID_MARK_CASE"
@@ -1005,9 +1000,9 @@
         "mark_id": "ID_MARK_CASE"
     },
     {
-        "name": "TH580B",
-        "id": "ID_MARK_CATERPILLAR_MODEL_TH580B",
-        "mark_id": "ID_MARK_CATERPILLAR"
+        "name": "TX170",
+        "id": "ID_MARK_CASE_MODEL_TX170",
+        "mark_id": "ID_MARK_CASE"
     },
     {
         "name": "216B",
@@ -1180,6 +1175,11 @@
         "mark_id": "ID_MARK_CATERPILLAR"
     },
     {
+        "name": "TH580B",
+        "id": "ID_MARK_CATERPILLAR_MODEL_TH580B",
+        "mark_id": "ID_MARK_CATERPILLAR"
+    },
+    {
         "name": "246D",
         "id": "ID_MARK_CATHEFENG_MODEL_246D",
         "mark_id": "ID_MARK_CATHEFENG"
@@ -1220,11 +1220,6 @@
         "mark_id": "ID_MARK_CHAMP"
     },
     {
-        "name": "ZLM",
-        "id": "ID_MARK_CHANGLIN_MODEL_ZLM",
-        "mark_id": "ID_MARK_CHANGLIN"
-    },
-    {
         "name": "936",
         "id": "ID_MARK_CHANGLIN_MODEL_936",
         "mark_id": "ID_MARK_CHANGLIN"
@@ -1240,6 +1235,11 @@
         "mark_id": "ID_MARK_CHANGLIN"
     },
     {
+        "name": "ZLM",
+        "id": "ID_MARK_CHANGLIN_MODEL_ZLM",
+        "mark_id": "ID_MARK_CHANGLIN"
+    },
+    {
         "name": "Фронтальный погрузчик",
         "id": "ID_MARK_CHENGGONG_MODEL_FRONTALNYY_POGRUZCHIK",
         "mark_id": "ID_MARK_CHENGGONG"
@@ -1248,11 +1248,6 @@
         "name": "МКСМ-800",
         "id": "ID_MARK_CHETRA_MODEL_MKSM_800",
         "mark_id": "ID_MARK_CHETRA"
-    },
-    {
-        "name": "ТО-40",
-        "id": "ID_MARK_CHSDM_MODEL_TO_40",
-        "mark_id": "ID_MARK_CHSDM"
     },
     {
         "name": "B-125",
@@ -1267,6 +1262,11 @@
     {
         "name": "B-160",
         "id": "ID_MARK_CHSDM_MODEL_B_160",
+        "mark_id": "ID_MARK_CHSDM"
+    },
+    {
+        "name": "ТО-40",
+        "id": "ID_MARK_CHSDM_MODEL_TO_40",
         "mark_id": "ID_MARK_CHSDM"
     },
     {
@@ -1285,8 +1285,8 @@
         "mark_id": "ID_MARK_CLAAS"
     },
     {
-        "name": "GTX20",
-        "id": "ID_MARK_CLARK_MODEL_GTX20",
+        "name": "GEX16",
+        "id": "ID_MARK_CLARK_MODEL_GEX16",
         "mark_id": "ID_MARK_CLARK"
     },
     {
@@ -1340,11 +1340,6 @@
         "mark_id": "ID_MARK_CLARK"
     },
     {
-        "name": "GEX16",
-        "id": "ID_MARK_CLARK_MODEL_GEX16",
-        "mark_id": "ID_MARK_CLARK"
-    },
-    {
         "name": "GEX20",
         "id": "ID_MARK_CLARK_MODEL_GEX20",
         "mark_id": "ID_MARK_CLARK"
@@ -1362,6 +1357,11 @@
     {
         "name": "GTX16",
         "id": "ID_MARK_CLARK_MODEL_GTX16",
+        "mark_id": "ID_MARK_CLARK"
+    },
+    {
+        "name": "GTX20",
+        "id": "ID_MARK_CLARK_MODEL_GTX20",
         "mark_id": "ID_MARK_CLARK"
     },
     {
@@ -1425,8 +1425,8 @@
         "mark_id": "ID_MARK_DETVA"
     },
     {
-        "name": "XR",
-        "id": "ID_MARK_DIECI_MODEL_XR",
+        "name": "Dedalus",
+        "id": "ID_MARK_DIECI_MODEL_DEDALUS",
         "mark_id": "ID_MARK_DIECI"
     },
     {
@@ -1445,13 +1445,13 @@
         "mark_id": "ID_MARK_DIECI"
     },
     {
-        "name": "Dedalus",
-        "id": "ID_MARK_DIECI_MODEL_DEDALUS",
+        "name": "Icarus",
+        "id": "ID_MARK_DIECI_MODEL_ICARUS",
         "mark_id": "ID_MARK_DIECI"
     },
     {
-        "name": "Icarus",
-        "id": "ID_MARK_DIECI_MODEL_ICARUS",
+        "name": "XR",
+        "id": "ID_MARK_DIECI_MODEL_XR",
         "mark_id": "ID_MARK_DIECI"
     },
     {
@@ -1465,13 +1465,13 @@
         "mark_id": "ID_MARK_DIMEX"
     },
     {
-        "name": "SD300",
-        "id": "ID_MARK_DISD_MODEL_SD300",
+        "name": "SD200",
+        "id": "ID_MARK_DISD_MODEL_SD200",
         "mark_id": "ID_MARK_DISD"
     },
     {
-        "name": "SD200",
-        "id": "ID_MARK_DISD_MODEL_SD200",
+        "name": "SD300",
+        "id": "ID_MARK_DISD_MODEL_SD300",
         "mark_id": "ID_MARK_DISD"
     },
     {
@@ -1560,8 +1560,8 @@
         "mark_id": "ID_MARK_EUROCOMACH"
     },
     {
-        "name": "ER40",
-        "id": "ID_MARK_EVERUN_MODEL_ER40",
+        "name": "ER20",
+        "id": "ID_MARK_EVERUN_MODEL_ER20",
         "mark_id": "ID_MARK_EVERUN"
     },
     {
@@ -1585,13 +1585,13 @@
         "mark_id": "ID_MARK_EVERUN"
     },
     {
-        "name": "ER20",
-        "id": "ID_MARK_EVERUN_MODEL_ER20",
+        "name": "ER35",
+        "id": "ID_MARK_EVERUN_MODEL_ER35",
         "mark_id": "ID_MARK_EVERUN"
     },
     {
-        "name": "ER35",
-        "id": "ID_MARK_EVERUN_MODEL_ER35",
+        "name": "ER40",
+        "id": "ID_MARK_EVERUN_MODEL_ER40",
         "mark_id": "ID_MARK_EVERUN"
     },
     {
@@ -1600,13 +1600,13 @@
         "mark_id": "ID_MARK_FARESIN_HANDLERS"
     },
     {
-        "name": "FG",
-        "id": "ID_MARK_FEELER_MODEL_FG",
+        "name": "FD",
+        "id": "ID_MARK_FEELER_MODEL_FD",
         "mark_id": "ID_MARK_FEELER"
     },
     {
-        "name": "FD",
-        "id": "ID_MARK_FEELER_MODEL_FD",
+        "name": "FG",
+        "id": "ID_MARK_FEELER_MODEL_FG",
         "mark_id": "ID_MARK_FEELER"
     },
     {
@@ -1615,19 +1615,24 @@
         "mark_id": "ID_MARK_FIAT_HITACHI"
     },
     {
-        "name": "W231",
-        "id": "ID_MARK_FIAT_KOBELCO_MODEL_W231",
+        "name": "W170",
+        "id": "ID_MARK_FIAT_KOBELCO_MODEL_W170",
         "mark_id": "ID_MARK_FIAT_KOBELCO"
     },
     {
-        "name": "W170",
-        "id": "ID_MARK_FIAT_KOBELCO_MODEL_W170",
+        "name": "W231",
+        "id": "ID_MARK_FIAT_KOBELCO_MODEL_W231",
         "mark_id": "ID_MARK_FIAT_KOBELCO"
     },
     {
         "name": "FL3000",
         "id": "ID_MARK_FIRST_MACHINERY_GROUP_MODEL_FL3000",
         "mark_id": "ID_MARK_FIRST_MACHINERY_GROUP"
+    },
+    {
+        "name": "903D",
+        "id": "ID_MARK_FORWARD_MODEL_903D",
+        "mark_id": "ID_MARK_FORWARD"
     },
     {
         "name": "701D",
@@ -1645,23 +1650,18 @@
         "mark_id": "ID_MARK_FORWARD"
     },
     {
-        "name": "903D",
-        "id": "ID_MARK_FORWARD_MODEL_903D",
-        "mark_id": "ID_MARK_FORWARD"
-    },
-    {
         "name": "903R",
         "id": "ID_MARK_FORWARD_MODEL_903R",
         "mark_id": "ID_MARK_FORWARD"
     },
     {
-        "name": "WS85",
-        "id": "ID_MARK_FORWAY_MODEL_WS85",
+        "name": "WS50",
+        "id": "ID_MARK_FORWAY_MODEL_WS50",
         "mark_id": "ID_MARK_FORWAY"
     },
     {
-        "name": "WS50",
-        "id": "ID_MARK_FORWAY_MODEL_WS50",
+        "name": "WS85",
+        "id": "ID_MARK_FORWAY_MODEL_WS85",
         "mark_id": "ID_MARK_FORWAY"
     },
     {
@@ -1670,8 +1670,8 @@
         "mark_id": "ID_MARK_FOTON"
     },
     {
-        "name": "300",
-        "id": "ID_MARK_FRONTAL_MODEL_300",
+        "name": "250",
+        "id": "ID_MARK_FRONTAL_MODEL_250",
         "mark_id": "ID_MARK_FRONTAL"
     },
     {
@@ -1710,18 +1710,18 @@
         "mark_id": "ID_MARK_FRONTAL"
     },
     {
-        "name": "250",
-        "id": "ID_MARK_FRONTAL_MODEL_250",
-        "mark_id": "ID_MARK_FRONTAL"
-    },
-    {
         "name": "260",
         "id": "ID_MARK_FRONTAL_MODEL_260",
         "mark_id": "ID_MARK_FRONTAL"
     },
     {
-        "name": "RHL340",
-        "id": "ID_MARK_FUCHS_MODEL_RHL340",
+        "name": "300",
+        "id": "ID_MARK_FRONTAL_MODEL_300",
+        "mark_id": "ID_MARK_FRONTAL"
+    },
+    {
+        "name": "MHL714",
+        "id": "ID_MARK_FUCHS_MODEL_MHL714",
         "mark_id": "ID_MARK_FUCHS"
     },
     {
@@ -1765,8 +1765,8 @@
         "mark_id": "ID_MARK_FUCHS"
     },
     {
-        "name": "MHL714",
-        "id": "ID_MARK_FUCHS_MODEL_MHL714",
+        "name": "RHL340",
+        "id": "ID_MARK_FUCHS_MODEL_RHL340",
         "mark_id": "ID_MARK_FUCHS"
     },
     {
@@ -1775,8 +1775,8 @@
         "mark_id": "ID_MARK_FUKAI"
     },
     {
-        "name": "SL",
-        "id": "ID_MARK_GEHL_MODEL_SL",
+        "name": "AL",
+        "id": "ID_MARK_GEHL_MODEL_AL",
         "mark_id": "ID_MARK_GEHL"
     },
     {
@@ -1785,13 +1785,13 @@
         "mark_id": "ID_MARK_GEHL"
     },
     {
-        "name": "AL",
-        "id": "ID_MARK_GEHL_MODEL_AL",
+        "name": "SL",
+        "id": "ID_MARK_GEHL_MODEL_SL",
         "mark_id": "ID_MARK_GEHL"
     },
     {
-        "name": "V6004T",
-        "id": "ID_MARK_GIANT_MODEL_V6004T",
+        "name": "V362",
+        "id": "ID_MARK_GIANT_MODEL_V362",
         "mark_id": "ID_MARK_GIANT"
     },
     {
@@ -1820,11 +1820,6 @@
         "mark_id": "ID_MARK_GIANT"
     },
     {
-        "name": "V362",
-        "id": "ID_MARK_GIANT_MODEL_V362",
-        "mark_id": "ID_MARK_GIANT"
-    },
-    {
         "name": "V4502T",
         "id": "ID_MARK_GIANT_MODEL_V4502T",
         "mark_id": "ID_MARK_GIANT"
@@ -1840,8 +1835,13 @@
         "mark_id": "ID_MARK_GIANT"
     },
     {
-        "name": "FD50B",
-        "id": "ID_MARK_GOODSENSE_MODEL_FD50B",
+        "name": "V6004T",
+        "id": "ID_MARK_GIANT_MODEL_V6004T",
+        "mark_id": "ID_MARK_GIANT"
+    },
+    {
+        "name": "FD35B",
+        "id": "ID_MARK_GOODSENSE_MODEL_FD35B",
         "mark_id": "ID_MARK_GOODSENSE"
     },
     {
@@ -1860,8 +1860,8 @@
         "mark_id": "ID_MARK_GOODSENSE"
     },
     {
-        "name": "FD35B",
-        "id": "ID_MARK_GOODSENSE_MODEL_FD35B",
+        "name": "FD50B",
+        "id": "ID_MARK_GOODSENSE_MODEL_FD50B",
         "mark_id": "ID_MARK_GOODSENSE"
     },
     {
@@ -2125,8 +2125,8 @@
         "mark_id": "ID_MARK_HECHA"
     },
     {
-        "name": "CQD",
-        "id": "ID_MARK_HELI_MODEL_CQD",
+        "name": "CPQD",
+        "id": "ID_MARK_HELI_MODEL_CPQD",
         "mark_id": "ID_MARK_HELI"
     },
     {
@@ -2165,18 +2165,18 @@
         "mark_id": "ID_MARK_HELI"
     },
     {
-        "name": "CPQD",
-        "id": "ID_MARK_HELI_MODEL_CPQD",
+        "name": "CQD",
+        "id": "ID_MARK_HELI_MODEL_CQD",
         "mark_id": "ID_MARK_HELI"
-    },
-    {
-        "name": "LX110-7",
-        "id": "ID_MARK_HITACHI_MODEL_LX110_7",
-        "mark_id": "ID_MARK_HITACHI"
     },
     {
         "name": "LX130-7",
         "id": "ID_MARK_HITACHI_MODEL_LX130_7",
+        "mark_id": "ID_MARK_HITACHI"
+    },
+    {
+        "name": "LX110-7",
+        "id": "ID_MARK_HITACHI_MODEL_LX110_7",
         "mark_id": "ID_MARK_HITACHI"
     },
     {
@@ -2205,8 +2205,8 @@
         "mark_id": "ID_MARK_HYSOON"
     },
     {
-        "name": "J1.6XN",
-        "id": "ID_MARK_HYSTER_MODEL_J1_6XN",
+        "name": "H3.0TX",
+        "id": "ID_MARK_HYSTER_MODEL_H3_0TX",
         "mark_id": "ID_MARK_HYSTER"
     },
     {
@@ -2242,11 +2242,6 @@
     {
         "name": "H3.00XM",
         "id": "ID_MARK_HYSTER_MODEL_H3_00XM",
-        "mark_id": "ID_MARK_HYSTER"
-    },
-    {
-        "name": "H3.0TX",
-        "id": "ID_MARK_HYSTER_MODEL_H3_0TX",
         "mark_id": "ID_MARK_HYSTER"
     },
     {
@@ -2287,6 +2282,11 @@
     {
         "name": "H7.0FT",
         "id": "ID_MARK_HYSTER_MODEL_H7_0FT",
+        "mark_id": "ID_MARK_HYSTER"
+    },
+    {
+        "name": "J1.6XN",
+        "id": "ID_MARK_HYSTER_MODEL_J1_6XN",
         "mark_id": "ID_MARK_HYSTER"
     },
     {
@@ -2455,8 +2455,8 @@
         "mark_id": "ID_MARK_HYUNDAI"
     },
     {
-        "name": "XC36",
-        "id": "ID_MARK_HZM_MODEL_XC36",
+        "name": "S908",
+        "id": "ID_MARK_HZM_MODEL_S908",
         "mark_id": "ID_MARK_HZM"
     },
     {
@@ -2540,11 +2540,6 @@
         "mark_id": "ID_MARK_HZM"
     },
     {
-        "name": "S908",
-        "id": "ID_MARK_HZM_MODEL_S908",
-        "mark_id": "ID_MARK_HZM"
-    },
-    {
         "name": "XC16",
         "id": "ID_MARK_HZM_MODEL_XC16",
         "mark_id": "ID_MARK_HZM"
@@ -2582,6 +2577,11 @@
     {
         "name": "XC33",
         "id": "ID_MARK_HZM_MODEL_XC33",
+        "mark_id": "ID_MARK_HZM"
+    },
+    {
+        "name": "XC36",
+        "id": "ID_MARK_HZM_MODEL_XC36",
         "mark_id": "ID_MARK_HZM"
     },
     {
@@ -2628,11 +2628,6 @@
         "name": "CPD16",
         "id": "ID_MARK_JAC_MODEL_CPD16",
         "mark_id": "ID_MARK_JAC"
-    },
-    {
-        "name": "TLT",
-        "id": "ID_MARK_JCB_MODEL_TLT",
-        "mark_id": "ID_MARK_JCB"
     },
     {
         "name": "135",
@@ -2725,14 +2720,14 @@
         "mark_id": "ID_MARK_JCB"
     },
     {
+        "name": "TLT",
+        "id": "ID_MARK_JCB_MODEL_TLT",
+        "mark_id": "ID_MARK_JCB"
+    },
+    {
         "name": "CPCD",
         "id": "ID_MARK_JJCC_MODEL_CPCD",
         "mark_id": "ID_MARK_JJCC"
-    },
-    {
-        "name": "Compact",
-        "id": "ID_MARK_JLG_MODEL_COMPACT",
-        "mark_id": "ID_MARK_JLG"
     },
     {
         "name": "4013 PS",
@@ -2740,9 +2735,9 @@
         "mark_id": "ID_MARK_JLG"
     },
     {
-        "name": "WL56",
-        "id": "ID_MARK_JOHN_DEERE_MODEL_WL56",
-        "mark_id": "ID_MARK_JOHN_DEERE"
+        "name": "Compact",
+        "id": "ID_MARK_JLG_MODEL_COMPACT",
+        "mark_id": "ID_MARK_JLG"
     },
     {
         "name": "315SL",
@@ -2805,8 +2800,13 @@
         "mark_id": "ID_MARK_JOHN_DEERE"
     },
     {
-        "name": "TFG",
-        "id": "ID_MARK_JUNGHEINRICH_MODEL_TFG",
+        "name": "WL56",
+        "id": "ID_MARK_JOHN_DEERE_MODEL_WL56",
+        "mark_id": "ID_MARK_JOHN_DEERE"
+    },
+    {
+        "name": "ETV",
+        "id": "ID_MARK_JUNGHEINRICH_MODEL_ETV",
         "mark_id": "ID_MARK_JUNGHEINRICH"
     },
     {
@@ -2825,8 +2825,8 @@
         "mark_id": "ID_MARK_JUNGHEINRICH"
     },
     {
-        "name": "ETV",
-        "id": "ID_MARK_JUNGHEINRICH_MODEL_ETV",
+        "name": "TFG",
+        "id": "ID_MARK_JUNGHEINRICH_MODEL_TFG",
         "mark_id": "ID_MARK_JUNGHEINRICH"
     },
     {
@@ -2835,8 +2835,8 @@
         "mark_id": "ID_MARK_JUN_GONG"
     },
     {
-        "name": "FE",
-        "id": "ID_MARK_KALMAR_MODEL_FE",
+        "name": "DRF",
+        "id": "ID_MARK_KALMAR_MODEL_DRF",
         "mark_id": "ID_MARK_KALMAR"
     },
     {
@@ -2855,8 +2855,8 @@
         "mark_id": "ID_MARK_KALMAR"
     },
     {
-        "name": "DRF",
-        "id": "ID_MARK_KALMAR_MODEL_DRF",
+        "name": "FE",
+        "id": "ID_MARK_KALMAR_MODEL_FE",
         "mark_id": "ID_MARK_KALMAR"
     },
     {
@@ -2895,11 +2895,6 @@
         "mark_id": "ID_MARK_KIPOR"
     },
     {
-        "name": "SL750",
-        "id": "ID_MARK_KIROVETS_MODEL_SL750",
-        "mark_id": "ID_MARK_KIROVETS"
-    },
-    {
         "name": "К-700",
         "id": "ID_MARK_KIROVETS_MODEL_K_700_AUTOLOADER",
         "mark_id": "ID_MARK_KIROVETS"
@@ -2920,8 +2915,13 @@
         "mark_id": "ID_MARK_KIROVETS"
     },
     {
-        "name": "TK30",
-        "id": "ID_MARK_KOLMAN_MODEL_TK30",
+        "name": "SL750",
+        "id": "ID_MARK_KIROVETS_MODEL_SL750",
+        "mark_id": "ID_MARK_KIROVETS"
+    },
+    {
+        "name": "K-2.5t",
+        "id": "ID_MARK_KOLMAN_MODEL_K_2_5T",
         "mark_id": "ID_MARK_KOLMAN"
     },
     {
@@ -2942,11 +2942,6 @@
     {
         "name": "K-2.0t",
         "id": "ID_MARK_KOLMAN_MODEL_K_2_0T",
-        "mark_id": "ID_MARK_KOLMAN"
-    },
-    {
-        "name": "K-2.5t",
-        "id": "ID_MARK_KOLMAN_MODEL_K_2_5T",
         "mark_id": "ID_MARK_KOLMAN"
     },
     {
@@ -2995,9 +2990,9 @@
         "mark_id": "ID_MARK_KOLMAN"
     },
     {
-        "name": "WR11-1",
-        "id": "ID_MARK_KOMATSU_MODEL_WR11_1",
-        "mark_id": "ID_MARK_KOMATSU"
+        "name": "TK30",
+        "id": "ID_MARK_KOLMAN_MODEL_TK30",
+        "mark_id": "ID_MARK_KOLMAN"
     },
     {
         "name": "AX50",
@@ -3100,6 +3095,11 @@
         "mark_id": "ID_MARK_KOMATSU"
     },
     {
+        "name": "WR11-1",
+        "id": "ID_MARK_KOMATSU_MODEL_WR11_1",
+        "mark_id": "ID_MARK_KOMATSU"
+    },
+    {
         "name": "1150",
         "id": "ID_MARK_KRAMER_MODEL_1150",
         "mark_id": "ID_MARK_KRAMER"
@@ -3195,8 +3195,8 @@
         "mark_id": "ID_MARK_LIEBHERR"
     },
     {
-        "name": "K",
-        "id": "ID_MARK_LINDE_MODEL_K",
+        "name": "HT25",
+        "id": "ID_MARK_LINDE_MODEL_HT25",
         "mark_id": "ID_MARK_LINDE"
     },
     {
@@ -3235,18 +3235,18 @@
         "mark_id": "ID_MARK_LINDE"
     },
     {
-        "name": "HT25",
-        "id": "ID_MARK_LINDE_MODEL_HT25",
-        "mark_id": "ID_MARK_LINDE"
-    },
-    {
         "name": "HT30",
         "id": "ID_MARK_LINDE_MODEL_HT30",
         "mark_id": "ID_MARK_LINDE"
     },
     {
-        "name": "ZL 50",
-        "id": "ID_MARK_LIUGONG_MODEL_ZL_50",
+        "name": "K",
+        "id": "ID_MARK_LINDE_MODEL_K",
+        "mark_id": "ID_MARK_LINDE"
+    },
+    {
+        "name": "ZL 30 E",
+        "id": "ID_MARK_LIUGONG_MODEL_ZL_30_E",
         "mark_id": "ID_MARK_LIUGONG"
     },
     {
@@ -3370,23 +3370,18 @@
         "mark_id": "ID_MARK_LIUGONG"
     },
     {
-        "name": "ZL 30 E",
-        "id": "ID_MARK_LIUGONG_MODEL_ZL_30_E",
+        "name": "ZL 50",
+        "id": "ID_MARK_LIUGONG_MODEL_ZL_50",
         "mark_id": "ID_MARK_LIUGONG"
     },
     {
-        "name": "903",
-        "id": "ID_MARK_LOCUST_MODEL_903",
+        "name": "750",
+        "id": "ID_MARK_LOCUST_MODEL_750",
         "mark_id": "ID_MARK_LOCUST"
     },
     {
         "name": "1203",
         "id": "ID_MARK_LOCUST_MODEL_1203",
-        "mark_id": "ID_MARK_LOCUST"
-    },
-    {
-        "name": "750",
-        "id": "ID_MARK_LOCUST_MODEL_750",
         "mark_id": "ID_MARK_LOCUST"
     },
     {
@@ -3405,6 +3400,11 @@
         "mark_id": "ID_MARK_LOCUST"
     },
     {
+        "name": "903",
+        "id": "ID_MARK_LOCUST_MODEL_903",
+        "mark_id": "ID_MARK_LOCUST"
+    },
+    {
         "name": "CDM 855 E",
         "id": "ID_MARK_LONGGONG_MODEL_CDM_855_E",
         "mark_id": "ID_MARK_LONGGONG"
@@ -3413,11 +3413,6 @@
         "name": "CDM 843",
         "id": "ID_MARK_LONGGONG_MODEL_CDM_843",
         "mark_id": "ID_MARK_LONGGONG"
-    },
-    {
-        "name": "LK - series",
-        "id": "ID_MARK_LONKING_MODEL_LK_SERIES",
-        "mark_id": "ID_MARK_LONKING"
     },
     {
         "name": "CDM",
@@ -3430,13 +3425,18 @@
         "mark_id": "ID_MARK_LONKING"
     },
     {
+        "name": "LK - series",
+        "id": "ID_MARK_LONKING_MODEL_LK_SERIES",
+        "mark_id": "ID_MARK_LONKING"
+    },
+    {
         "name": "LQ",
         "id": "ID_MARK_LUQING_MODEL_LQ",
         "mark_id": "ID_MARK_LUQING"
     },
     {
-        "name": "М-40814",
-        "id": "ID_MARK_LVOVSKIY_AVTOPOGRUZCHIK_MODEL_M_40814",
+        "name": "ЛЕВ ЛА07",
+        "id": "ID_MARK_LVOVSKIY_AVTOPOGRUZCHIK_MODEL_LEV_LA07",
         "mark_id": "ID_MARK_LVOVSKIY_AVTOPOGRUZCHIK"
     },
     {
@@ -3480,13 +3480,13 @@
         "mark_id": "ID_MARK_LVOVSKIY_AVTOPOGRUZCHIK"
     },
     {
-        "name": "ЛЕВ ЛА07",
-        "id": "ID_MARK_LVOVSKIY_AVTOPOGRUZCHIK_MODEL_LEV_LA07",
+        "name": "М-40814",
+        "id": "ID_MARK_LVOVSKIY_AVTOPOGRUZCHIK_MODEL_M_40814",
         "mark_id": "ID_MARK_LVOVSKIY_AVTOPOGRUZCHIK"
     },
     {
-        "name": "TH 6.20",
-        "id": "ID_MARK_MAGNI_MODEL_TH_6_20",
+        "name": "RTH 6.26 SH",
+        "id": "ID_MARK_MAGNI_MODEL_RTH_6_26_SH",
         "mark_id": "ID_MARK_MAGNI"
     },
     {
@@ -3550,11 +3550,6 @@
         "mark_id": "ID_MARK_MAGNI"
     },
     {
-        "name": "RTH 6.26 SH",
-        "id": "ID_MARK_MAGNI_MODEL_RTH_6_26_SH",
-        "mark_id": "ID_MARK_MAGNI"
-    },
-    {
         "name": "RTH 6.30 SH",
         "id": "ID_MARK_MAGNI_MODEL_RTH_6_30_SH",
         "mark_id": "ID_MARK_MAGNI"
@@ -3580,18 +3575,18 @@
         "mark_id": "ID_MARK_MAGNI"
     },
     {
-        "name": "MT",
-        "id": "ID_MARK_MANITOU_MODEL_MT",
+        "name": "TH 6.20",
+        "id": "ID_MARK_MAGNI_MODEL_TH_6_20",
+        "mark_id": "ID_MARK_MAGNI"
+    },
+    {
+        "name": "Maniscopic",
+        "id": "ID_MARK_MANITOU_MODEL_MANISCOPIC",
         "mark_id": "ID_MARK_MANITOU"
     },
     {
         "name": "M",
         "id": "ID_MARK_MANITOU_MODEL_M",
-        "mark_id": "ID_MARK_MANITOU"
-    },
-    {
-        "name": "Maniscopic",
-        "id": "ID_MARK_MANITOU_MODEL_MANISCOPIC",
         "mark_id": "ID_MARK_MANITOU"
     },
     {
@@ -3620,14 +3615,14 @@
         "mark_id": "ID_MARK_MANITOU"
     },
     {
+        "name": "MT",
+        "id": "ID_MARK_MANITOU_MODEL_MT",
+        "mark_id": "ID_MARK_MANITOU"
+    },
+    {
         "name": "ML 526",
         "id": "ID_MARK_MATTSON_MODEL_ML_526",
         "mark_id": "ID_MARK_MATTSON"
-    },
-    {
-        "name": "FGL",
-        "id": "ID_MARK_MAXIMAL_MODEL_FGL",
-        "mark_id": "ID_MARK_MAXIMAL"
     },
     {
         "name": "FB",
@@ -3637,6 +3632,11 @@
     {
         "name": "FD",
         "id": "ID_MARK_MAXIMAL_MODEL_FD",
+        "mark_id": "ID_MARK_MAXIMAL"
+    },
+    {
+        "name": "FGL",
+        "id": "ID_MARK_MAXIMAL_MODEL_FGL",
         "mark_id": "ID_MARK_MAXIMAL"
     },
     {
@@ -3665,11 +3665,6 @@
         "mark_id": "ID_MARK_MERLO"
     },
     {
-        "name": "MSS90 Magdeburg",
-        "id": "ID_MARK_MITSUBER_MODEL_MSS90_MAGDEBURG",
-        "mark_id": "ID_MARK_MITSUBER"
-    },
-    {
         "name": "ML333",
         "id": "ID_MARK_MITSUBER_MODEL_ML333",
         "mark_id": "ID_MARK_MITSUBER"
@@ -3682,6 +3677,11 @@
     {
         "name": "ML541N MUNICH",
         "id": "ID_MARK_MITSUBER_MODEL_ML541N_MUNICH",
+        "mark_id": "ID_MARK_MITSUBER"
+    },
+    {
+        "name": "MSS90 Magdeburg",
+        "id": "ID_MARK_MITSUBER_MODEL_MSS90_MAGDEBURG",
         "mark_id": "ID_MARK_MITSUBER"
     },
     {
@@ -3710,8 +3710,8 @@
         "mark_id": "ID_MARK_MOAZ"
     },
     {
-        "name": "ZL30",
-        "id": "ID_MARK_MOLOT_MODEL_ZL30",
+        "name": "936",
+        "id": "ID_MARK_MOLOT_MODEL_936",
         "mark_id": "ID_MARK_MOLOT"
     },
     {
@@ -3755,19 +3755,14 @@
         "mark_id": "ID_MARK_MOLOT"
     },
     {
-        "name": "936",
-        "id": "ID_MARK_MOLOT_MODEL_936",
-        "mark_id": "ID_MARK_MOLOT"
-    },
-    {
         "name": "ZL20",
         "id": "ID_MARK_MOLOT_MODEL_ZL20",
         "mark_id": "ID_MARK_MOLOT"
     },
     {
-        "name": "ST 9.40",
-        "id": "ID_MARK_MST_MODEL_ST_9_40",
-        "mark_id": "ID_MARK_MST"
+        "name": "ZL30",
+        "id": "ID_MARK_MOLOT_MODEL_ZL30",
+        "mark_id": "ID_MARK_MOLOT"
     },
     {
         "name": "ST 13.35",
@@ -3782,6 +3777,11 @@
     {
         "name": "ST 7.40",
         "id": "ID_MARK_MST_MODEL_ST_7_40",
+        "mark_id": "ID_MARK_MST"
+    },
+    {
+        "name": "ST 9.40",
+        "id": "ID_MARK_MST_MODEL_ST_9_40",
         "mark_id": "ID_MARK_MST"
     },
     {
@@ -3805,8 +3805,8 @@
         "mark_id": "ID_MARK_MTZ"
     },
     {
-        "name": "S series",
-        "id": "ID_MARK_MULTIONE_MODEL_S_SERIES",
+        "name": "Series 9",
+        "id": "ID_MARK_MULTIONE_MODEL_SERIES_9",
         "mark_id": "ID_MARK_MULTIONE"
     },
     {
@@ -3820,8 +3820,8 @@
         "mark_id": "ID_MARK_MULTIONE"
     },
     {
-        "name": "Series 9",
-        "id": "ID_MARK_MULTIONE_MODEL_SERIES_9",
+        "name": "S series",
+        "id": "ID_MARK_MULTIONE_MODEL_S_SERIES",
         "mark_id": "ID_MARK_MULTIONE"
     },
     {
@@ -3835,8 +3835,8 @@
         "mark_id": "ID_MARK_MULTIX"
     },
     {
-        "name": "V",
-        "id": "ID_MARK_MUSTANG_MODEL_V",
+        "name": "2056",
+        "id": "ID_MARK_MUSTANG_MODEL_2056",
         "mark_id": "ID_MARK_MUSTANG"
     },
     {
@@ -3867,11 +3867,6 @@
     {
         "name": "2054",
         "id": "ID_MARK_MUSTANG_MODEL_2054",
-        "mark_id": "ID_MARK_MUSTANG"
-    },
-    {
-        "name": "2056",
-        "id": "ID_MARK_MUSTANG_MODEL_2056",
         "mark_id": "ID_MARK_MUSTANG"
     },
     {
@@ -3915,9 +3910,19 @@
         "mark_id": "ID_MARK_MUSTANG"
     },
     {
+        "name": "V",
+        "id": "ID_MARK_MUSTANG_MODEL_V",
+        "mark_id": "ID_MARK_MUSTANG"
+    },
+    {
         "name": "ZL938",
         "id": "ID_MARK_MYZG_MODEL_ZL938",
         "mark_id": "ID_MARK_MYZG"
+    },
+    {
+        "name": "Электро",
+        "id": "ID_MARK_MZIK_MODEL_ELEKTRO",
+        "mark_id": "ID_MARK_MZIK"
     },
     {
         "name": "ДП-1604",
@@ -3930,13 +3935,8 @@
         "mark_id": "ID_MARK_MZIK"
     },
     {
-        "name": "Электро",
-        "id": "ID_MARK_MZIK_MODEL_ELEKTRO",
-        "mark_id": "ID_MARK_MZIK"
-    },
-    {
-        "name": "TL100",
-        "id": "ID_MARK_NEO_MODEL_TL100",
+        "name": "S180",
+        "id": "ID_MARK_NEO_MODEL_S180",
         "mark_id": "ID_MARK_NEO"
     },
     {
@@ -3965,19 +3965,14 @@
         "mark_id": "ID_MARK_NEO"
     },
     {
-        "name": "S180",
-        "id": "ID_MARK_NEO_MODEL_S180",
-        "mark_id": "ID_MARK_NEO"
-    },
-    {
         "name": "S300",
         "id": "ID_MARK_NEO_MODEL_S300",
         "mark_id": "ID_MARK_NEO"
     },
     {
-        "name": "W - Series",
-        "id": "ID_MARK_NEW_HOLLAND_MODEL_W_SERIES",
-        "mark_id": "ID_MARK_NEW_HOLLAND"
+        "name": "TL100",
+        "id": "ID_MARK_NEO_MODEL_TL100",
+        "mark_id": "ID_MARK_NEO"
     },
     {
         "name": "LM1330",
@@ -4015,13 +4010,18 @@
         "mark_id": "ID_MARK_NEW_HOLLAND"
     },
     {
-        "name": "FBT15P",
-        "id": "ID_MARK_NICHIYU_MODEL_FBT15P",
-        "mark_id": "ID_MARK_NICHIYU"
+        "name": "W - Series",
+        "id": "ID_MARK_NEW_HOLLAND_MODEL_W_SERIES",
+        "mark_id": "ID_MARK_NEW_HOLLAND"
     },
     {
         "name": "Электрические погрузчики",
         "id": "ID_MARK_NICHIYU_MODEL_ELEKTRICHESKIE_POGRUZCHIKI",
+        "mark_id": "ID_MARK_NICHIYU"
+    },
+    {
+        "name": "FBT15P",
+        "id": "ID_MARK_NICHIYU_MODEL_FBT15P",
         "mark_id": "ID_MARK_NICHIYU"
     },
     {
@@ -4080,18 +4080,13 @@
         "mark_id": "ID_MARK_NMZ"
     },
     {
-        "name": "XD40",
-        "id": "ID_MARK_OM_PIMESPO_MODEL_XD40",
+        "name": "E10N",
+        "id": "ID_MARK_OM_PIMESPO_MODEL_E10N",
         "mark_id": "ID_MARK_OM_PIMESPO"
     },
     {
         "name": "DI 50C500",
         "id": "ID_MARK_OM_PIMESPO_MODEL_DI_50C500",
-        "mark_id": "ID_MARK_OM_PIMESPO"
-    },
-    {
-        "name": "E10N",
-        "id": "ID_MARK_OM_PIMESPO_MODEL_E10N",
         "mark_id": "ID_MARK_OM_PIMESPO"
     },
     {
@@ -4105,8 +4100,13 @@
         "mark_id": "ID_MARK_OM_PIMESPO"
     },
     {
-        "name": "ТО-6",
-        "id": "ID_MARK_ORLOVSKIY_POGRUZCHIK_MODEL_TO_6",
+        "name": "XD40",
+        "id": "ID_MARK_OM_PIMESPO_MODEL_XD40",
+        "mark_id": "ID_MARK_OM_PIMESPO"
+    },
+    {
+        "name": "ТО-30",
+        "id": "ID_MARK_ORLOVSKIY_POGRUZCHIK_MODEL_TO_30",
         "mark_id": "ID_MARK_ORLOVSKIY_POGRUZCHIK"
     },
     {
@@ -4130,8 +4130,8 @@
         "mark_id": "ID_MARK_ORLOVSKIY_POGRUZCHIK"
     },
     {
-        "name": "ТО-30",
-        "id": "ID_MARK_ORLOVSKIY_POGRUZCHIK_MODEL_TO_30",
+        "name": "ТО-6",
+        "id": "ID_MARK_ORLOVSKIY_POGRUZCHIK_MODEL_TO_6",
         "mark_id": "ID_MARK_ORLOVSKIY_POGRUZCHIK"
     },
     {
@@ -4170,8 +4170,8 @@
         "mark_id": "ID_MARK_RATEP"
     },
     {
-        "name": "CPD50",
-        "id": "ID_MARK_REDDOT_MODEL_CPD50",
+        "name": "CPD15TVR5",
+        "id": "ID_MARK_REDDOT_MODEL_CPD15TVR5",
         "mark_id": "ID_MARK_REDDOT"
     },
     {
@@ -4230,11 +4230,6 @@
         "mark_id": "ID_MARK_REDDOT"
     },
     {
-        "name": "CPD15TVR5",
-        "id": "ID_MARK_REDDOT_MODEL_CPD15TVR5",
-        "mark_id": "ID_MARK_REDDOT"
-    },
-    {
         "name": "CPD18TVS",
         "id": "ID_MARK_REDDOT_MODEL_CPD18TVS",
         "mark_id": "ID_MARK_REDDOT"
@@ -4247,6 +4242,11 @@
     {
         "name": "CPD40",
         "id": "ID_MARK_REDDOT_MODEL_CPD40",
+        "mark_id": "ID_MARK_REDDOT"
+    },
+    {
+        "name": "CPD50",
+        "id": "ID_MARK_REDDOT_MODEL_CPD50",
         "mark_id": "ID_MARK_REDDOT"
     },
     {
@@ -4275,8 +4275,8 @@
         "mark_id": "ID_MARK_ROYAL_FORKLIFT"
     },
     {
-        "name": "970E",
-        "id": "ID_MARK_RUNMAX_MODEL_970E",
+        "name": "882E",
+        "id": "ID_MARK_RUNMAX_MODEL_882E",
         "mark_id": "ID_MARK_RUNMAX"
     },
     {
@@ -4295,13 +4295,13 @@
         "mark_id": "ID_MARK_RUNMAX"
     },
     {
-        "name": "882E",
-        "id": "ID_MARK_RUNMAX_MODEL_882E",
+        "name": "884E",
+        "id": "ID_MARK_RUNMAX_MODEL_884E",
         "mark_id": "ID_MARK_RUNMAX"
     },
     {
-        "name": "884E",
-        "id": "ID_MARK_RUNMAX_MODEL_884E",
+        "name": "970E",
+        "id": "ID_MARK_RUNMAX_MODEL_970E",
         "mark_id": "ID_MARK_RUNMAX"
     },
     {
@@ -4310,14 +4310,19 @@
         "mark_id": "ID_MARK_SANDVIK"
     },
     {
+        "name": "4350",
+        "id": "ID_MARK_SCHAFFER_MODEL_4350",
+        "mark_id": "ID_MARK_SCHAFFER"
+    },
+    {
         "name": "5370",
         "id": "ID_MARK_SCHAFFER_MODEL_5370",
         "mark_id": "ID_MARK_SCHAFFER"
     },
     {
-        "name": "4350",
-        "id": "ID_MARK_SCHAFFER_MODEL_4350",
-        "mark_id": "ID_MARK_SCHAFFER"
+        "name": "LG 978",
+        "id": "ID_MARK_SDLG_MODEL_LG_978",
+        "mark_id": "ID_MARK_SDLG"
     },
     {
         "name": "LGB",
@@ -4370,13 +4375,8 @@
         "mark_id": "ID_MARK_SDLG"
     },
     {
-        "name": "LG 978",
-        "id": "ID_MARK_SDLG_MODEL_LG_978",
-        "mark_id": "ID_MARK_SDLG"
-    },
-    {
-        "name": "ZL30F-I",
-        "id": "ID_MARK_SEM_MODEL_ZL30F_I",
+        "name": "656",
+        "id": "ID_MARK_SEM_MODEL_656",
         "mark_id": "ID_MARK_SEM"
     },
     {
@@ -4425,11 +4425,6 @@
         "mark_id": "ID_MARK_SEM"
     },
     {
-        "name": "656",
-        "id": "ID_MARK_SEM_MODEL_656",
-        "mark_id": "ID_MARK_SEM"
-    },
-    {
         "name": "656 D",
         "id": "ID_MARK_SEM_MODEL_656_D",
         "mark_id": "ID_MARK_SEM"
@@ -4447,6 +4442,11 @@
     {
         "name": "669",
         "id": "ID_MARK_SEM_MODEL_669",
+        "mark_id": "ID_MARK_SEM"
+    },
+    {
+        "name": "ZL30F-I",
+        "id": "ID_MARK_SEM_MODEL_ZL30F_I",
         "mark_id": "ID_MARK_SEM"
     },
     {
@@ -4470,18 +4470,18 @@
         "mark_id": "ID_MARK_SHANTUI"
     },
     {
-        "name": "6FB25",
-        "id": "ID_MARK_SHINKO_MODEL_6FB25",
-        "mark_id": "ID_MARK_SHINKO"
-    },
-    {
         "name": "6FB15",
         "id": "ID_MARK_SHINKO_MODEL_6FB15",
         "mark_id": "ID_MARK_SHINKO"
     },
     {
-        "name": "ZL08",
-        "id": "ID_MARK_SIBIRYAK_MODEL_ZL08",
+        "name": "6FB25",
+        "id": "ID_MARK_SHINKO_MODEL_6FB25",
+        "mark_id": "ID_MARK_SHINKO"
+    },
+    {
+        "name": "3000",
+        "id": "ID_MARK_SIBIRYAK_MODEL_3000",
         "mark_id": "ID_MARK_SIBIRYAK"
     },
     {
@@ -4495,11 +4495,6 @@
         "mark_id": "ID_MARK_SIBIRYAK"
     },
     {
-        "name": "3000",
-        "id": "ID_MARK_SIBIRYAK_MODEL_3000",
-        "mark_id": "ID_MARK_SIBIRYAK"
-    },
-    {
         "name": "9320",
         "id": "ID_MARK_SIBIRYAK_MODEL_9320",
         "mark_id": "ID_MARK_SIBIRYAK"
@@ -4507,6 +4502,11 @@
     {
         "name": "9360",
         "id": "ID_MARK_SIBIRYAK_MODEL_9360",
+        "mark_id": "ID_MARK_SIBIRYAK"
+    },
+    {
+        "name": "ZL08",
+        "id": "ID_MARK_SIBIRYAK_MODEL_ZL08",
         "mark_id": "ID_MARK_SIBIRYAK"
     },
     {
@@ -4540,8 +4540,8 @@
         "mark_id": "ID_MARK_STALOWA_WOLA"
     },
     {
-        "name": "Вилочный погрузчик",
-        "id": "ID_MARK_STILL_MODEL_VILOCHNYY_POGRUZCHIK",
+        "name": "RX 60",
+        "id": "ID_MARK_STILL_MODEL_RX_60",
         "mark_id": "ID_MARK_STILL"
     },
     {
@@ -4560,13 +4560,13 @@
         "mark_id": "ID_MARK_STILL"
     },
     {
-        "name": "RX 60",
-        "id": "ID_MARK_STILL_MODEL_RX_60",
+        "name": "RX 70",
+        "id": "ID_MARK_STILL_MODEL_RX_70",
         "mark_id": "ID_MARK_STILL"
     },
     {
-        "name": "RX 70",
-        "id": "ID_MARK_STILL_MODEL_RX_70",
+        "name": "Вилочный погрузчик",
+        "id": "ID_MARK_STILL_MODEL_VILOCHNYY_POGRUZCHIK",
         "mark_id": "ID_MARK_STILL"
     },
     {
@@ -4640,19 +4640,14 @@
         "mark_id": "ID_MARK_SZM"
     },
     {
-        "name": "TL150",
-        "id": "ID_MARK_TAKEUCHI_MODEL_TL150",
-        "mark_id": "ID_MARK_TAKEUCHI"
-    },
-    {
         "name": "TL140",
         "id": "ID_MARK_TAKEUCHI_MODEL_TL140",
         "mark_id": "ID_MARK_TAKEUCHI"
     },
     {
-        "name": "SSL",
-        "id": "ID_MARK_TCM_MODEL_SSL",
-        "mark_id": "ID_MARK_TCM"
+        "name": "TL150",
+        "id": "ID_MARK_TAKEUCHI_MODEL_TL150",
+        "mark_id": "ID_MARK_TAKEUCHI"
     },
     {
         "name": "808",
@@ -4845,6 +4840,11 @@
         "mark_id": "ID_MARK_TCM"
     },
     {
+        "name": "SSL",
+        "id": "ID_MARK_TCM_MODEL_SSL",
+        "mark_id": "ID_MARK_TCM"
+    },
+    {
         "name": "SSL 709",
         "id": "ID_MARK_TCM_MODEL_SSL_709",
         "mark_id": "ID_MARK_TCM"
@@ -4905,19 +4905,14 @@
         "mark_id": "ID_MARK_TEREX"
     },
     {
-        "name": "FD",
-        "id": "ID_MARK_TEU_MODEL_FD",
-        "mark_id": "ID_MARK_TEU"
-    },
-    {
         "name": "FB",
         "id": "ID_MARK_TEU_MODEL_FB",
         "mark_id": "ID_MARK_TEU"
     },
     {
-        "name": "Грузоподъемность 5 - 5.5 т",
-        "id": "ID_MARK_TFN_MODEL_GRUZOPODEMNOST_5_5_5_T",
-        "mark_id": "ID_MARK_TFN"
+        "name": "FD",
+        "id": "ID_MARK_TEU_MODEL_FD",
+        "mark_id": "ID_MARK_TEU"
     },
     {
         "name": "Грузоподъемность 1 - 1.5 т",
@@ -4932,6 +4927,11 @@
     {
         "name": "Грузоподъемность 3 - 3.5 т",
         "id": "ID_MARK_TFN_MODEL_GRUZOPODEMNOST_3_3_5_T",
+        "mark_id": "ID_MARK_TFN"
+    },
+    {
+        "name": "Грузоподъемность 5 - 5.5 т",
+        "id": "ID_MARK_TFN_MODEL_GRUZOPODEMNOST_5_5_5_T",
         "mark_id": "ID_MARK_TFN"
     },
     {
@@ -4953,11 +4953,6 @@
         "name": "Электро",
         "id": "ID_MARK_TOYOTA_MODEL_ELEKTRO",
         "mark_id": "ID_MARK_TOYOTA"
-    },
-    {
-        "name": "70 RT",
-        "id": "ID_MARK_TSM_MODEL_70_RT",
-        "mark_id": "ID_MARK_TSM"
     },
     {
         "name": "100 RT",
@@ -5000,13 +4995,18 @@
         "mark_id": "ID_MARK_TSM"
     },
     {
-        "name": "ВП-05",
-        "id": "ID_MARK_TVEKS_MODEL_VP_05",
-        "mark_id": "ID_MARK_TVEKS"
+        "name": "70 RT",
+        "id": "ID_MARK_TSM_MODEL_70_RT",
+        "mark_id": "ID_MARK_TSM"
     },
     {
         "name": "ВП-03",
         "id": "ID_MARK_TVEKS_MODEL_VP_03",
+        "mark_id": "ID_MARK_TVEKS"
+    },
+    {
+        "name": "ВП-05",
+        "id": "ID_MARK_TVEKS_MODEL_VP_05",
         "mark_id": "ID_MARK_TVEKS"
     },
     {
@@ -5040,13 +5040,13 @@
         "mark_id": "ID_MARK_UTILEV"
     },
     {
-        "name": "VF 9015",
-        "id": "ID_MARK_VENIERI_MODEL_VF_9015",
+        "name": "VF 7.63",
+        "id": "ID_MARK_VENIERI_MODEL_VF_7_63",
         "mark_id": "ID_MARK_VENIERI"
     },
     {
-        "name": "VF 7.63",
-        "id": "ID_MARK_VENIERI_MODEL_VF_7_63",
+        "name": "VF 9015",
+        "id": "ID_MARK_VENIERI_MODEL_VF_9015",
         "mark_id": "ID_MARK_VENIERI"
     },
     {
@@ -5055,8 +5055,8 @@
         "mark_id": "ID_MARK_VIGORBULL"
     },
     {
-        "name": "CPCD70",
-        "id": "ID_MARK_VMAX_MODEL_CPCD70",
+        "name": "CPCD50",
+        "id": "ID_MARK_VMAX_MODEL_CPCD50",
         "mark_id": "ID_MARK_VMAX"
     },
     {
@@ -5070,8 +5070,8 @@
         "mark_id": "ID_MARK_VMAX"
     },
     {
-        "name": "CPCD50",
-        "id": "ID_MARK_VMAX_MODEL_CPCD50",
+        "name": "CPCD70",
+        "id": "ID_MARK_VMAX_MODEL_CPCD70",
         "mark_id": "ID_MARK_VMAX"
     },
     {
@@ -5165,8 +5165,8 @@
         "mark_id": "ID_MARK_VOLVO"
     },
     {
-        "name": "FD 50",
-        "id": "ID_MARK_VP_MODEL_FD_50",
+        "name": "FD 15",
+        "id": "ID_MARK_VP_MODEL_FD_15",
         "mark_id": "ID_MARK_VP"
     },
     {
@@ -5175,13 +5175,13 @@
         "mark_id": "ID_MARK_VP"
     },
     {
-        "name": "FD 15",
-        "id": "ID_MARK_VP_MODEL_FD_15",
+        "name": "FD 30",
+        "id": "ID_MARK_VP_MODEL_FD_30",
         "mark_id": "ID_MARK_VP"
     },
     {
-        "name": "FD 30",
-        "id": "ID_MARK_VP_MODEL_FD_30",
+        "name": "FD 50",
+        "id": "ID_MARK_VP_MODEL_FD_50",
         "mark_id": "ID_MARK_VP"
     },
     {
@@ -5203,11 +5203,6 @@
         "name": "W136",
         "id": "ID_MARK_WORLD_MODEL_W136",
         "mark_id": "ID_MARK_WORLD"
-    },
-    {
-        "name": "ZL - series",
-        "id": "ID_MARK_XCMG_MODEL_ZL_SERIES",
-        "mark_id": "ID_MARK_XCMG"
     },
     {
         "name": "ZL",
@@ -5232,6 +5227,11 @@
     {
         "name": "XT870",
         "id": "ID_MARK_XCMG_MODEL_XT870",
+        "mark_id": "ID_MARK_XCMG"
+    },
+    {
+        "name": "ZL - series",
+        "id": "ID_MARK_XCMG_MODEL_ZL_SERIES",
         "mark_id": "ID_MARK_XCMG"
     },
     {

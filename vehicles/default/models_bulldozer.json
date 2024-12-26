@@ -80,6 +80,11 @@
         "mark_id": "ID_MARK_CATHEFENG"
     },
     {
+        "name": "Т330",
+        "id": "ID_MARK_CHETRA_MODEL_T330",
+        "mark_id": "ID_MARK_CHETRA"
+    },
+    {
         "name": "Т11",
         "id": "ID_MARK_CHETRA_MODEL_T11",
         "mark_id": "ID_MARK_CHETRA"
@@ -100,11 +105,6 @@
         "mark_id": "ID_MARK_CHETRA"
     },
     {
-        "name": "Т330",
-        "id": "ID_MARK_CHETRA_MODEL_T330",
-        "mark_id": "ID_MARK_CHETRA"
-    },
-    {
         "name": "Т9",
         "id": "ID_MARK_CHETRA_MODEL_T9",
         "mark_id": "ID_MARK_CHETRA"
@@ -113,6 +113,11 @@
         "name": "Т-35",
         "id": "ID_MARK_CHETRA_MODEL_T_35",
         "mark_id": "ID_MARK_CHETRA"
+    },
+    {
+        "name": "ДЗ-171",
+        "id": "ID_MARK_CHTZ_MODEL_DZ_171",
+        "mark_id": "ID_MARK_CHTZ"
     },
     {
         "name": "Б10.0001-1Е",
@@ -167,11 +172,6 @@
     {
         "name": "ДЭТ-350",
         "id": "ID_MARK_CHTZ_MODEL_DET_350",
-        "mark_id": "ID_MARK_CHTZ"
-    },
-    {
-        "name": "ДЗ-171",
-        "id": "ID_MARK_CHTZ_MODEL_DZ_171",
         "mark_id": "ID_MARK_CHTZ"
     },
     {
@@ -465,13 +465,13 @@
         "mark_id": "ID_MARK_MITSUBISHI"
     },
     {
-        "name": "ДТ-75",
-        "id": "ID_MARK_MTZ_MODEL_DT_75",
+        "name": "МТЗ",
+        "id": "ID_MARK_MTZ_MODEL_MTZ",
         "mark_id": "ID_MARK_MTZ"
     },
     {
-        "name": "МТЗ",
-        "id": "ID_MARK_MTZ_MODEL_MTZ",
+        "name": "ДТ-75",
+        "id": "ID_MARK_MTZ_MODEL_DT_75",
         "mark_id": "ID_MARK_MTZ"
     },
     {
@@ -520,18 +520,18 @@
         "mark_id": "ID_MARK_SEM"
     },
     {
-        "name": "T",
-        "id": "ID_MARK_SHANTUI_MODEL_T",
-        "mark_id": "ID_MARK_SHANTUI"
-    },
-    {
         "name": "SD",
         "id": "ID_MARK_SHANTUI_MODEL_SD",
         "mark_id": "ID_MARK_SHANTUI"
     },
     {
-        "name": "TYS 165-3",
-        "id": "ID_MARK_SHEHWA_MODEL_TYS_165_3",
+        "name": "T",
+        "id": "ID_MARK_SHANTUI_MODEL_T",
+        "mark_id": "ID_MARK_SHANTUI"
+    },
+    {
+        "name": "SD 9",
+        "id": "ID_MARK_SHEHWA_MODEL_SD_9",
         "mark_id": "ID_MARK_SHEHWA"
     },
     {
@@ -555,11 +555,6 @@
         "mark_id": "ID_MARK_SHEHWA"
     },
     {
-        "name": "SD 9",
-        "id": "ID_MARK_SHEHWA_MODEL_SD_9",
-        "mark_id": "ID_MARK_SHEHWA"
-    },
-    {
         "name": "TS 165-2",
         "id": "ID_MARK_SHEHWA_MODEL_TS_165_2",
         "mark_id": "ID_MARK_SHEHWA"
@@ -577,6 +572,11 @@
     {
         "name": "TYS 165-2HW",
         "id": "ID_MARK_SHEHWA_MODEL_TYS_165_2HW",
+        "mark_id": "ID_MARK_SHEHWA"
+    },
+    {
+        "name": "TYS 165-3",
+        "id": "ID_MARK_SHEHWA_MODEL_TYS_165_3",
         "mark_id": "ID_MARK_SHEHWA"
     },
     {
@@ -615,19 +615,24 @@
         "mark_id": "ID_MARK_XCMG"
     },
     {
-        "name": "TY320",
-        "id": "ID_MARK_XGMA_MODEL_TY320",
+        "name": "XG4161",
+        "id": "ID_MARK_XGMA_MODEL_XG4161",
         "mark_id": "ID_MARK_XGMA"
     },
     {
-        "name": "XG4161",
-        "id": "ID_MARK_XGMA_MODEL_XG4161",
+        "name": "TY320",
+        "id": "ID_MARK_XGMA_MODEL_TY320",
         "mark_id": "ID_MARK_XGMA"
     },
     {
         "name": "XG",
         "id": "ID_MARK_XIAGONG_MODEL_XG",
         "mark_id": "ID_MARK_XIAGONG"
+    },
+    {
+        "name": "ZD320-3",
+        "id": "ID_MARK_ZOOMLION_MODEL_ZD320_3",
+        "mark_id": "ID_MARK_ZOOMLION"
     },
     {
         "name": "ZD",
@@ -642,11 +647,6 @@
     {
         "name": "ZD220-3",
         "id": "ID_MARK_ZOOMLION_MODEL_ZD220_3",
-        "mark_id": "ID_MARK_ZOOMLION"
-    },
-    {
-        "name": "ZD320-3",
-        "id": "ID_MARK_ZOOMLION_MODEL_ZD320_3",
         "mark_id": "ID_MARK_ZOOMLION"
     }
 ]

@@ -5,13 +5,13 @@
         "mark_id": "ID_MARK_ATLAS"
     },
     {
-        "name": "Самопогрузчики",
-        "id": "ID_MARK_AVIA_MODEL_SAMOPOGRUZCHIKI",
+        "name": "D - Series",
+        "id": "ID_MARK_AVIA_MODEL_D_SERIES_SELF_LOADER",
         "mark_id": "ID_MARK_AVIA"
     },
     {
-        "name": "D - Series",
-        "id": "ID_MARK_AVIA_MODEL_D_SERIES_SELF_LOADER",
+        "name": "Самопогрузчики",
+        "id": "ID_MARK_AVIA_MODEL_SAMOPOGRUZCHIKI",
         "mark_id": "ID_MARK_AVIA"
     },
     {
@@ -25,13 +25,13 @@
         "mark_id": "ID_MARK_BOBLIFT"
     },
     {
-        "name": "ГАЗ-33104 Валдай",
-        "id": "ID_MARK_CHAYKA_SERVIS_MODEL_GAZ_33104_VALDAY",
+        "name": "Hyundai 120 с КМУ Amcoveba",
+        "id": "ID_MARK_CHAYKA_SERVIS_MODEL_HYUNDAI_120_S_KMU_AMCOVEBA",
         "mark_id": "ID_MARK_CHAYKA_SERVIS"
     },
     {
-        "name": "Hyundai 120 с КМУ Amcoveba",
-        "id": "ID_MARK_CHAYKA_SERVIS_MODEL_HYUNDAI_120_S_KMU_AMCOVEBA",
+        "name": "ГАЗ-33104 Валдай",
+        "id": "ID_MARK_CHAYKA_SERVIS_MODEL_GAZ_33104_VALDAY",
         "mark_id": "ID_MARK_CHAYKA_SERVIS"
     },
     {
@@ -60,13 +60,13 @@
         "mark_id": "ID_MARK_DAEWOO"
     },
     {
-        "name": "XF",
-        "id": "ID_MARK_DAF_MODEL_XF",
+        "name": "CF",
+        "id": "ID_MARK_DAF_MODEL_CF",
         "mark_id": "ID_MARK_DAF"
     },
     {
-        "name": "CF",
-        "id": "ID_MARK_DAF_MODEL_CF",
+        "name": "XF",
+        "id": "ID_MARK_DAF_MODEL_XF",
         "mark_id": "ID_MARK_DAF"
     },
     {
@@ -80,13 +80,13 @@
         "mark_id": "ID_MARK_DINEX_CRANE"
     },
     {
-        "name": "LS2056",
-        "id": "ID_MARK_DINTEK_MODEL_LS2056",
+        "name": "LS1256",
+        "id": "ID_MARK_DINTEK_MODEL_LS1256",
         "mark_id": "ID_MARK_DINTEK"
     },
     {
-        "name": "LS1256",
-        "id": "ID_MARK_DINTEK_MODEL_LS1256",
+        "name": "LS2056",
+        "id": "ID_MARK_DINTEK_MODEL_LS2056",
         "mark_id": "ID_MARK_DINTEK"
     },
     {
@@ -100,11 +100,6 @@
         "mark_id": "ID_MARK_DONGFENG"
     },
     {
-        "name": "M30A",
-        "id": "ID_MARK_FASSI_MODEL_M30A",
-        "mark_id": "ID_MARK_FASSI"
-    },
-    {
         "name": "F65",
         "id": "ID_MARK_FASSI_MODEL_F65",
         "mark_id": "ID_MARK_FASSI"
@@ -112,6 +107,11 @@
     {
         "name": "F85",
         "id": "ID_MARK_FASSI_MODEL_F85",
+        "mark_id": "ID_MARK_FASSI"
+    },
+    {
+        "name": "M30A",
+        "id": "ID_MARK_FASSI_MODEL_M30A",
         "mark_id": "ID_MARK_FASSI"
     },
     {
@@ -305,8 +305,8 @@
         "mark_id": "ID_MARK_HYUNDAI"
     },
     {
-        "name": "ИМ95",
-        "id": "ID_MARK_INMAN_MODEL_IM95",
+        "name": "ИМ55",
+        "id": "ID_MARK_INMAN_MODEL_IM55",
         "mark_id": "ID_MARK_INMAN"
     },
     {
@@ -320,8 +320,8 @@
         "mark_id": "ID_MARK_INMAN"
     },
     {
-        "name": "ИМ55",
-        "id": "ID_MARK_INMAN_MODEL_IM55",
+        "name": "ИМ95",
+        "id": "ID_MARK_INMAN_MODEL_IM95",
         "mark_id": "ID_MARK_INMAN"
     },
     {
@@ -450,11 +450,6 @@
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
-        "name": "KS2056",
-        "id": "ID_MARK_KANGLIM_MODEL_KS2056",
-        "mark_id": "ID_MARK_KANGLIM"
-    },
-    {
         "name": "KS1056",
         "id": "ID_MARK_KANGLIM_MODEL_KS1056",
         "mark_id": "ID_MARK_KANGLIM"
@@ -462,6 +457,11 @@
     {
         "name": "KS1256",
         "id": "ID_MARK_KANGLIM_MODEL_KS1256",
+        "mark_id": "ID_MARK_KANGLIM"
+    },
+    {
+        "name": "KS2056",
+        "id": "ID_MARK_KANGLIM_MODEL_KS2056",
         "mark_id": "ID_MARK_KANGLIM"
     },
     {
@@ -645,8 +645,8 @@
         "mark_id": "ID_MARK_NISSAN"
     },
     {
-        "name": "ST20",
-        "id": "ID_MARK_PALFINGER_MODEL_ST20",
+        "name": "PK-18500",
+        "id": "ID_MARK_PALFINGER_MODEL_PK_18500",
         "mark_id": "ID_MARK_PALFINGER"
     },
     {
@@ -670,11 +670,6 @@
         "mark_id": "ID_MARK_PALFINGER"
     },
     {
-        "name": "PK-18500",
-        "id": "ID_MARK_PALFINGER_MODEL_PK_18500",
-        "mark_id": "ID_MARK_PALFINGER"
-    },
-    {
         "name": "PK-23500",
         "id": "ID_MARK_PALFINGER_MODEL_PK_23500",
         "mark_id": "ID_MARK_PALFINGER"
@@ -682,6 +677,11 @@
     {
         "name": "ST15",
         "id": "ID_MARK_PALFINGER_MODEL_ST15",
+        "mark_id": "ID_MARK_PALFINGER"
+    },
+    {
+        "name": "ST20",
+        "id": "ID_MARK_PALFINGER_MODEL_ST20",
         "mark_id": "ID_MARK_PALFINGER"
     },
     {
@@ -725,6 +725,11 @@
         "mark_id": "ID_MARK_SISU"
     },
     {
+        "name": "SCS866",
+        "id": "ID_MARK_SOOSAN_MODEL_SCS866",
+        "mark_id": "ID_MARK_SOOSAN"
+    },
+    {
         "name": "SCS335",
         "id": "ID_MARK_SOOSAN_MODEL_SCS335",
         "mark_id": "ID_MARK_SOOSAN"
@@ -737,11 +742,6 @@
     {
         "name": "SCS746",
         "id": "ID_MARK_SOOSAN_MODEL_SCS746",
-        "mark_id": "ID_MARK_SOOSAN"
-    },
-    {
-        "name": "SCS866",
-        "id": "ID_MARK_SOOSAN_MODEL_SCS866",
         "mark_id": "ID_MARK_SOOSAN"
     },
     {
@@ -855,18 +855,13 @@
         "mark_id": "ID_MARK_YUEJIN"
     },
     {
-        "name": "ZK",
-        "id": "ID_MARK_ZAGORETS_MODEL_ZK",
+        "name": "КАМАЗ-65117 с КМУ SQ 5SK2Q",
+        "id": "ID_MARK_ZAGORETS_MODEL_KAMAZ_65117_S_KMU_SQ_5SK2Q",
         "mark_id": "ID_MARK_ZAGORETS"
     },
     {
         "name": "Hyundai HD-78 с КМУ SQ 3.2SK2Q",
         "id": "ID_MARK_ZAGORETS_MODEL_HYUNDAI_HD_78_S_KMU_SQ_3_2SK2Q",
-        "mark_id": "ID_MARK_ZAGORETS"
-    },
-    {
-        "name": "КАМАЗ-65117 с КМУ SQ 5SK2Q",
-        "id": "ID_MARK_ZAGORETS_MODEL_KAMAZ_65117_S_KMU_SQ_5SK2Q",
         "mark_id": "ID_MARK_ZAGORETS"
     },
     {
@@ -887,6 +882,11 @@
     {
         "name": "SK",
         "id": "ID_MARK_ZAGORETS_MODEL_SK",
+        "mark_id": "ID_MARK_ZAGORETS"
+    },
+    {
+        "name": "ZK",
+        "id": "ID_MARK_ZAGORETS_MODEL_ZK",
         "mark_id": "ID_MARK_ZAGORETS"
     },
     {

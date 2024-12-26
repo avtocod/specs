@@ -5,8 +5,8 @@
         "mark_id": "ID_MARK_AKT"
     },
     {
-        "name": "1925-M (Онега)",
-        "id": "ID_MARK_AS_MODEL_1925_M_ONEGA",
+        "name": "1913 (Ладога)",
+        "id": "ID_MARK_AS_MODEL_1913_LADOGA",
         "mark_id": "ID_MARK_AS"
     },
     {
@@ -15,8 +15,8 @@
         "mark_id": "ID_MARK_ASKAM_DESOTO"
     },
     {
-        "name": "1913 (Ладога)",
-        "id": "ID_MARK_AS_MODEL_1913_LADOGA",
+        "name": "1925-M (Онега)",
+        "id": "ID_MARK_AS_MODEL_1925_M_ONEGA",
         "mark_id": "ID_MARK_AS"
     },
     {
@@ -30,13 +30,13 @@
         "mark_id": "ID_MARK_BARKAS"
     },
     {
-        "name": "Fenix 1044",
-        "id": "ID_MARK_BAW_MODEL_FENIX_1044",
+        "name": "Fenix 1065",
+        "id": "ID_MARK_BAW_MODEL_FENIX_1065",
         "mark_id": "ID_MARK_BAW"
     },
     {
-        "name": "Fenix 1065",
-        "id": "ID_MARK_BAW_MODEL_FENIX_1065",
+        "name": "Fenix 1044",
+        "id": "ID_MARK_BAW_MODEL_FENIX_1044",
         "mark_id": "ID_MARK_BAW"
     },
     {
@@ -180,11 +180,6 @@
         "mark_id": "ID_MARK_DAIHATSU"
     },
     {
-        "name": "V27",
-        "id": "ID_MARK_DFSK_MODEL_V27",
-        "mark_id": "ID_MARK_DFSK"
-    },
-    {
         "name": "V21",
         "id": "ID_MARK_DFSK_MODEL_V21",
         "mark_id": "ID_MARK_DFSK"
@@ -197,6 +192,11 @@
     {
         "name": "V25",
         "id": "ID_MARK_DFSK_MODEL_V25",
+        "mark_id": "ID_MARK_DFSK"
+    },
+    {
+        "name": "V27",
+        "id": "ID_MARK_DFSK_MODEL_V27",
         "mark_id": "ID_MARK_DFSK"
     },
     {
@@ -280,8 +280,8 @@
         "mark_id": "ID_MARK_FIAT"
     },
     {
-        "name": "Talento",
-        "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_TALENTO",
+        "name": "Fiorino",
+        "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_FIORINO",
         "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
     },
     {
@@ -300,11 +300,6 @@
         "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
     },
     {
-        "name": "Fiorino",
-        "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_FIORINO",
-        "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
-    },
-    {
         "name": "Fullback",
         "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_FULLBACK",
         "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
@@ -318,6 +313,16 @@
         "name": "Scudo",
         "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_SCUDO",
         "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
+    },
+    {
+        "name": "Talento",
+        "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_TALENTO",
+        "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
+    },
+    {
+        "name": "Transit Kombi",
+        "id": "ID_MARK_FORD_MODEL_TRANSIT_KOMBI",
+        "mark_id": "ID_MARK_FORD"
     },
     {
         "name": "Aerostar",
@@ -360,11 +365,6 @@
         "mark_id": "ID_MARK_FORD"
     },
     {
-        "name": "Transit Kombi",
-        "id": "ID_MARK_FORD_MODEL_TRANSIT_KOMBI",
-        "mark_id": "ID_MARK_FORD"
-    },
-    {
         "name": "Transit",
         "id": "ID_MARK_FORD_MODEL_TRANSIT_LIGHT_TRUCK",
         "mark_id": "ID_MARK_FORD"
@@ -385,19 +385,24 @@
         "mark_id": "ID_MARK_FOTON"
     },
     {
-        "name": "Walk-in Van",
-        "id": "ID_MARK_FREIGHTLINER_MODEL_WALK_IN_VAN",
+        "name": "Sprinter",
+        "id": "ID_MARK_FREIGHTLINER_MODEL_SPRINTER",
         "mark_id": "ID_MARK_FREIGHTLINER"
     },
     {
-        "name": "Sprinter",
-        "id": "ID_MARK_FREIGHTLINER_MODEL_SPRINTER",
+        "name": "Walk-in Van",
+        "id": "ID_MARK_FREIGHTLINER_MODEL_WALK_IN_VAN",
         "mark_id": "ID_MARK_FREIGHTLINER"
     },
     {
         "name": "Way",
         "id": "ID_MARK_GAC_MODEL_WAY",
         "mark_id": "ID_MARK_GAC"
+    },
+    {
+        "name": "Соболь NN",
+        "id": "ID_MARK_GAZ_MODEL_SOBOL_NN",
+        "mark_id": "ID_MARK_GAZ"
     },
     {
         "name": "ГАЗель (2705)",
@@ -452,11 +457,6 @@
     {
         "name": "Соболь (2752) Комби",
         "id": "ID_MARK_GAZ_MODEL_SOBOL_2752_KOMBI",
-        "mark_id": "ID_MARK_GAZ"
-    },
-    {
-        "name": "Соболь NN",
-        "id": "ID_MARK_GAZ_MODEL_SOBOL_NN",
         "mark_id": "ID_MARK_GAZ"
     },
     {
@@ -665,13 +665,13 @@
         "mark_id": "ID_MARK_LADA_VAZ"
     },
     {
-        "name": "Maxus",
-        "id": "ID_MARK_LDV_MODEL_MAXUS",
+        "name": "Convoy",
+        "id": "ID_MARK_LDV_MODEL_CONVOY",
         "mark_id": "ID_MARK_LDV"
     },
     {
-        "name": "Convoy",
-        "id": "ID_MARK_LDV_MODEL_CONVOY",
+        "name": "Maxus",
+        "id": "ID_MARK_LDV_MODEL_MAXUS",
         "mark_id": "ID_MARK_LDV"
     },
     {
@@ -685,6 +685,11 @@
         "mark_id": "ID_MARK_LUBLIN"
     },
     {
+        "name": "Titan",
+        "id": "ID_MARK_MAZDA_MODEL_TITAN_LIGHT_TRUCK",
+        "mark_id": "ID_MARK_MAZDA"
+    },
+    {
         "name": "Bongo",
         "id": "ID_MARK_MAZDA_MODEL_BONGO_LIGHT_TRUCK",
         "mark_id": "ID_MARK_MAZDA"
@@ -692,11 +697,6 @@
     {
         "name": "Scrum",
         "id": "ID_MARK_MAZDA_MODEL_SCRUM_LIGHT_TRUCK",
-        "mark_id": "ID_MARK_MAZDA"
-    },
-    {
-        "name": "Titan",
-        "id": "ID_MARK_MAZDA_MODEL_TITAN_LIGHT_TRUCK",
         "mark_id": "ID_MARK_MAZDA"
     },
     {
@@ -790,6 +790,11 @@
         "mark_id": "ID_MARK_MUDAN"
     },
     {
+        "name": "M 26",
+        "id": "ID_MARK_MULTICAR_MODEL_M_26",
+        "mark_id": "ID_MARK_MULTICAR"
+    },
+    {
         "name": "M 24",
         "id": "ID_MARK_MULTICAR_MODEL_M_24",
         "mark_id": "ID_MARK_MULTICAR"
@@ -797,11 +802,6 @@
     {
         "name": "M 25",
         "id": "ID_MARK_MULTICAR_MODEL_M_25",
-        "mark_id": "ID_MARK_MULTICAR"
-    },
-    {
-        "name": "M 26",
-        "id": "ID_MARK_MULTICAR_MODEL_M_26",
         "mark_id": "ID_MARK_MULTICAR"
     },
     {
@@ -890,13 +890,13 @@
         "mark_id": "ID_MARK_NISSAN"
     },
     {
-        "name": "522",
-        "id": "ID_MARK_NYSA_MODEL_522",
+        "name": "521",
+        "id": "ID_MARK_NYSA_MODEL_521",
         "mark_id": "ID_MARK_NYSA"
     },
     {
-        "name": "521",
-        "id": "ID_MARK_NYSA_MODEL_521",
+        "name": "522",
+        "id": "ID_MARK_NYSA_MODEL_522",
         "mark_id": "ID_MARK_NYSA"
     },
     {
@@ -955,13 +955,13 @@
         "mark_id": "ID_MARK_PEUGEOT"
     },
     {
-        "name": "Ape",
-        "id": "ID_MARK_PIAGGIO_MODEL_APE",
+        "name": "Porter",
+        "id": "ID_MARK_PIAGGIO_MODEL_PORTER_LIGHT_TRUCK",
         "mark_id": "ID_MARK_PIAGGIO"
     },
     {
-        "name": "Porter",
-        "id": "ID_MARK_PIAGGIO_MODEL_PORTER_LIGHT_TRUCK",
+        "name": "Ape",
+        "id": "ID_MARK_PIAGGIO_MODEL_APE",
         "mark_id": "ID_MARK_PIAGGIO"
     },
     {
@@ -1115,11 +1115,6 @@
         "mark_id": "ID_MARK_TOYOTA"
     },
     {
-        "name": "Профи",
-        "id": "ID_MARK_UAZ_MODEL_PROFI",
-        "mark_id": "ID_MARK_UAZ"
-    },
-    {
         "name": "2206",
         "id": "ID_MARK_UAZ_MODEL_2206",
         "mark_id": "ID_MARK_UAZ"
@@ -1165,13 +1160,18 @@
         "mark_id": "ID_MARK_UAZ"
     },
     {
+        "name": "Профи",
+        "id": "ID_MARK_UAZ_MODEL_PROFI",
+        "mark_id": "ID_MARK_UAZ"
+    },
+    {
         "name": "Профи (двухрядная кабина)",
         "id": "ID_MARK_UAZ_MODEL_PROFI_DVUKHRYADNAYA_KABINA",
         "mark_id": "ID_MARK_UAZ"
     },
     {
-        "name": "2349",
-        "id": "ID_MARK_VIS_MODEL_2349",
+        "name": "2347",
+        "id": "ID_MARK_VIS_MODEL_2347",
         "mark_id": "ID_MARK_VIS"
     },
     {
@@ -1195,13 +1195,13 @@
         "mark_id": "ID_MARK_VIS"
     },
     {
-        "name": "2347",
-        "id": "ID_MARK_VIS_MODEL_2347",
+        "name": "2348",
+        "id": "ID_MARK_VIS_MODEL_2348",
         "mark_id": "ID_MARK_VIS"
     },
     {
-        "name": "2348",
-        "id": "ID_MARK_VIS_MODEL_2348",
+        "name": "2349",
+        "id": "ID_MARK_VIS_MODEL_2349",
         "mark_id": "ID_MARK_VIS"
     },
     {

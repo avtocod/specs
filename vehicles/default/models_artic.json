@@ -40,6 +40,11 @@
         "mark_id": "ID_MARK_DAEWOO"
     },
     {
+        "name": "XF106 series",
+        "id": "ID_MARK_DAF_MODEL_XF106_SERIES",
+        "mark_id": "ID_MARK_DAF"
+    },
+    {
         "name": "95",
         "id": "ID_MARK_DAF_MODEL_95",
         "mark_id": "ID_MARK_DAF"
@@ -62,11 +67,6 @@
     {
         "name": "XF105",
         "id": "ID_MARK_DAF_MODEL_XF105",
-        "mark_id": "ID_MARK_DAF"
-    },
-    {
-        "name": "XF106 series",
-        "id": "ID_MARK_DAF_MODEL_XF106_SERIES",
         "mark_id": "ID_MARK_DAF"
     },
     {
@@ -145,6 +145,11 @@
         "mark_id": "ID_MARK_FOTON"
     },
     {
+        "name": "FLC",
+        "id": "ID_MARK_FREIGHTLINER_MODEL_FLC",
+        "mark_id": "ID_MARK_FREIGHTLINER"
+    },
+    {
         "name": "Argosy",
         "id": "ID_MARK_FREIGHTLINER_MODEL_ARGOSY",
         "mark_id": "ID_MARK_FREIGHTLINER"
@@ -172,11 +177,6 @@
     {
         "name": "FLA/FLB",
         "id": "ID_MARK_FREIGHTLINER_MODEL_FLA_FLB",
-        "mark_id": "ID_MARK_FREIGHTLINER"
-    },
-    {
-        "name": "FLC",
-        "id": "ID_MARK_FREIGHTLINER_MODEL_FLC",
         "mark_id": "ID_MARK_FREIGHTLINER"
     },
     {
@@ -215,13 +215,13 @@
         "mark_id": "ID_MARK_HINO"
     },
     {
-        "name": "4X2",
-        "id": "ID_MARK_HOWO_MODEL_4X2",
+        "name": "6X4",
+        "id": "ID_MARK_HOWO_MODEL_6X4",
         "mark_id": "ID_MARK_HOWO"
     },
     {
-        "name": "6X4",
-        "id": "ID_MARK_HOWO_MODEL_6X4",
+        "name": "4X2",
+        "id": "ID_MARK_HOWO_MODEL_4X2",
         "mark_id": "ID_MARK_HOWO"
     },
     {
@@ -735,6 +735,11 @@
         "mark_id": "ID_MARK_NISSAN"
     },
     {
+        "name": "Class 8",
+        "id": "ID_MARK_PETERBILT_MODEL_CLASS_8",
+        "mark_id": "ID_MARK_PETERBILT"
+    },
+    {
         "name": "362",
         "id": "ID_MARK_PETERBILT_MODEL_362",
         "mark_id": "ID_MARK_PETERBILT"
@@ -752,11 +757,6 @@
     {
         "name": "587",
         "id": "ID_MARK_PETERBILT_MODEL_587",
-        "mark_id": "ID_MARK_PETERBILT"
-    },
-    {
-        "name": "Class 8",
-        "id": "ID_MARK_PETERBILT_MODEL_CLASS_8",
         "mark_id": "ID_MARK_PETERBILT"
     },
     {
@@ -810,6 +810,11 @@
         "mark_id": "ID_MARK_RUSICH_KZKT"
     },
     {
+        "name": "P-series",
+        "id": "ID_MARK_SCANIA_MODEL_P_SERIES",
+        "mark_id": "ID_MARK_SCANIA"
+    },
+    {
         "name": "2-Series",
         "id": "ID_MARK_SCANIA_MODEL_2_SERIES",
         "mark_id": "ID_MARK_SCANIA"
@@ -837,11 +842,6 @@
     {
         "name": "M",
         "id": "ID_MARK_SCANIA_MODEL_M",
-        "mark_id": "ID_MARK_SCANIA"
-    },
-    {
-        "name": "P-series",
-        "id": "ID_MARK_SCANIA_MODEL_P_SERIES",
         "mark_id": "ID_MARK_SCANIA"
     },
     {
@@ -1055,13 +1055,13 @@
         "mark_id": "ID_MARK_VOLVO"
     },
     {
-        "name": "4900",
-        "id": "ID_MARK_WESTERN_STAR_MODEL_4900",
+        "name": "6900",
+        "id": "ID_MARK_WESTERN_STAR_MODEL_6900",
         "mark_id": "ID_MARK_WESTERN_STAR"
     },
     {
-        "name": "6900",
-        "id": "ID_MARK_WESTERN_STAR_MODEL_6900",
+        "name": "4900",
+        "id": "ID_MARK_WESTERN_STAR_MODEL_4900",
         "mark_id": "ID_MARK_WESTERN_STAR"
     },
     {

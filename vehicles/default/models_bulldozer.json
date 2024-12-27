@@ -80,8 +80,8 @@
         "mark_id": "ID_MARK_CATHEFENG"
     },
     {
-        "name": "Т330",
-        "id": "ID_MARK_CHETRA_MODEL_T330",
+        "name": "T20",
+        "id": "ID_MARK_CHETRA_MODEL_T20",
         "mark_id": "ID_MARK_CHETRA"
     },
     {
@@ -95,13 +95,13 @@
         "mark_id": "ID_MARK_CHETRA"
     },
     {
-        "name": "T20",
-        "id": "ID_MARK_CHETRA_MODEL_T20",
+        "name": "T25",
+        "id": "ID_MARK_CHETRA_MODEL_T25",
         "mark_id": "ID_MARK_CHETRA"
     },
     {
-        "name": "T25",
-        "id": "ID_MARK_CHETRA_MODEL_T25",
+        "name": "Т330",
+        "id": "ID_MARK_CHETRA_MODEL_T330",
         "mark_id": "ID_MARK_CHETRA"
     },
     {
@@ -115,8 +115,8 @@
         "mark_id": "ID_MARK_CHETRA"
     },
     {
-        "name": "ДЗ-171",
-        "id": "ID_MARK_CHTZ_MODEL_DZ_171",
+        "name": "Т-170",
+        "id": "ID_MARK_CHTZ_MODEL_T_170",
         "mark_id": "ID_MARK_CHTZ"
     },
     {
@@ -175,6 +175,11 @@
         "mark_id": "ID_MARK_CHTZ"
     },
     {
+        "name": "ДЗ-171",
+        "id": "ID_MARK_CHTZ_MODEL_DZ_171",
+        "mark_id": "ID_MARK_CHTZ"
+    },
+    {
         "name": "Т-100",
         "id": "ID_MARK_CHTZ_MODEL_T_100",
         "mark_id": "ID_MARK_CHTZ"
@@ -182,11 +187,6 @@
     {
         "name": "Т-130",
         "id": "ID_MARK_CHTZ_MODEL_T_130",
-        "mark_id": "ID_MARK_CHTZ"
-    },
-    {
-        "name": "Т-170",
-        "id": "ID_MARK_CHTZ_MODEL_T_170",
         "mark_id": "ID_MARK_CHTZ"
     },
     {
@@ -215,13 +215,13 @@
         "mark_id": "ID_MARK_DST_URAL"
     },
     {
-        "name": "ДЗ-109",
-        "id": "ID_MARK_DZ_MODEL_DZ_109",
+        "name": "ДЗ-110",
+        "id": "ID_MARK_DZ_MODEL_DZ_110",
         "mark_id": "ID_MARK_DZ"
     },
     {
-        "name": "ДЗ-110",
-        "id": "ID_MARK_DZ_MODEL_DZ_110",
+        "name": "ДЗ-109",
+        "id": "ID_MARK_DZ_MODEL_DZ_109",
         "mark_id": "ID_MARK_DZ"
     },
     {
@@ -465,13 +465,13 @@
         "mark_id": "ID_MARK_MITSUBISHI"
     },
     {
-        "name": "МТЗ",
-        "id": "ID_MARK_MTZ_MODEL_MTZ",
+        "name": "ДТ-75",
+        "id": "ID_MARK_MTZ_MODEL_DT_75",
         "mark_id": "ID_MARK_MTZ"
     },
     {
-        "name": "ДТ-75",
-        "id": "ID_MARK_MTZ_MODEL_DT_75",
+        "name": "МТЗ",
+        "id": "ID_MARK_MTZ_MODEL_MTZ",
         "mark_id": "ID_MARK_MTZ"
     },
     {
@@ -530,8 +530,8 @@
         "mark_id": "ID_MARK_SHANTUI"
     },
     {
-        "name": "SD 9",
-        "id": "ID_MARK_SHEHWA_MODEL_SD_9",
+        "name": "TY 165-2",
+        "id": "ID_MARK_SHEHWA_MODEL_TY_165_2",
         "mark_id": "ID_MARK_SHEHWA"
     },
     {
@@ -552,6 +552,11 @@
     {
         "name": "SD 8B",
         "id": "ID_MARK_SHEHWA_MODEL_SD_8B",
+        "mark_id": "ID_MARK_SHEHWA"
+    },
+    {
+        "name": "SD 9",
+        "id": "ID_MARK_SHEHWA_MODEL_SD_9",
         "mark_id": "ID_MARK_SHEHWA"
     },
     {
@@ -577,11 +582,6 @@
     {
         "name": "TYS 165-3",
         "id": "ID_MARK_SHEHWA_MODEL_TYS_165_3",
-        "mark_id": "ID_MARK_SHEHWA"
-    },
-    {
-        "name": "TY 165-2",
-        "id": "ID_MARK_SHEHWA_MODEL_TY_165_2",
         "mark_id": "ID_MARK_SHEHWA"
     },
     {
@@ -615,24 +615,19 @@
         "mark_id": "ID_MARK_XCMG"
     },
     {
-        "name": "XG4161",
-        "id": "ID_MARK_XGMA_MODEL_XG4161",
+        "name": "TY320",
+        "id": "ID_MARK_XGMA_MODEL_TY320",
         "mark_id": "ID_MARK_XGMA"
     },
     {
-        "name": "TY320",
-        "id": "ID_MARK_XGMA_MODEL_TY320",
+        "name": "XG4161",
+        "id": "ID_MARK_XGMA_MODEL_XG4161",
         "mark_id": "ID_MARK_XGMA"
     },
     {
         "name": "XG",
         "id": "ID_MARK_XIAGONG_MODEL_XG",
         "mark_id": "ID_MARK_XIAGONG"
-    },
-    {
-        "name": "ZD320-3",
-        "id": "ID_MARK_ZOOMLION_MODEL_ZD320_3",
-        "mark_id": "ID_MARK_ZOOMLION"
     },
     {
         "name": "ZD",
@@ -647,6 +642,11 @@
     {
         "name": "ZD220-3",
         "id": "ID_MARK_ZOOMLION_MODEL_ZD220_3",
+        "mark_id": "ID_MARK_ZOOMLION"
+    },
+    {
+        "name": "ZD320-3",
+        "id": "ID_MARK_ZOOMLION_MODEL_ZD320_3",
         "mark_id": "ID_MARK_ZOOMLION"
     }
 ]

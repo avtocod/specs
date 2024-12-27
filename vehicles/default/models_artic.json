@@ -40,11 +40,6 @@
         "mark_id": "ID_MARK_DAEWOO"
     },
     {
-        "name": "XF106 series",
-        "id": "ID_MARK_DAF_MODEL_XF106_SERIES",
-        "mark_id": "ID_MARK_DAF"
-    },
-    {
         "name": "95",
         "id": "ID_MARK_DAF_MODEL_95",
         "mark_id": "ID_MARK_DAF"
@@ -67,6 +62,11 @@
     {
         "name": "XF105",
         "id": "ID_MARK_DAF_MODEL_XF105",
+        "mark_id": "ID_MARK_DAF"
+    },
+    {
+        "name": "XF106 series",
+        "id": "ID_MARK_DAF_MODEL_XF106_SERIES",
         "mark_id": "ID_MARK_DAF"
     },
     {
@@ -145,8 +145,8 @@
         "mark_id": "ID_MARK_FOTON"
     },
     {
-        "name": "FLC",
-        "id": "ID_MARK_FREIGHTLINER_MODEL_FLC",
+        "name": "Columbia",
+        "id": "ID_MARK_FREIGHTLINER_MODEL_COLUMBIA",
         "mark_id": "ID_MARK_FREIGHTLINER"
     },
     {
@@ -165,11 +165,6 @@
         "mark_id": "ID_MARK_FREIGHTLINER"
     },
     {
-        "name": "Columbia",
-        "id": "ID_MARK_FREIGHTLINER_MODEL_COLUMBIA",
-        "mark_id": "ID_MARK_FREIGHTLINER"
-    },
-    {
         "name": "Coronado",
         "id": "ID_MARK_FREIGHTLINER_MODEL_CORONADO",
         "mark_id": "ID_MARK_FREIGHTLINER"
@@ -177,6 +172,11 @@
     {
         "name": "FLA/FLB",
         "id": "ID_MARK_FREIGHTLINER_MODEL_FLA_FLB",
+        "mark_id": "ID_MARK_FREIGHTLINER"
+    },
+    {
+        "name": "FLC",
+        "id": "ID_MARK_FREIGHTLINER_MODEL_FLC",
         "mark_id": "ID_MARK_FREIGHTLINER"
     },
     {
@@ -215,13 +215,13 @@
         "mark_id": "ID_MARK_HINO"
     },
     {
-        "name": "6X4",
-        "id": "ID_MARK_HOWO_MODEL_6X4",
+        "name": "4X2",
+        "id": "ID_MARK_HOWO_MODEL_4X2",
         "mark_id": "ID_MARK_HOWO"
     },
     {
-        "name": "4X2",
-        "id": "ID_MARK_HOWO_MODEL_4X2",
+        "name": "6X4",
+        "id": "ID_MARK_HOWO_MODEL_6X4",
         "mark_id": "ID_MARK_HOWO"
     },
     {
@@ -470,6 +470,11 @@
         "mark_id": "ID_MARK_KENWORTH"
     },
     {
+        "name": "6140",
+        "id": "ID_MARK_KRAZ_MODEL_6140",
+        "mark_id": "ID_MARK_KRAZ"
+    },
+    {
         "name": "255",
         "id": "ID_MARK_KRAZ_MODEL_255",
         "mark_id": "ID_MARK_KRAZ"
@@ -487,11 +492,6 @@
     {
         "name": "5444",
         "id": "ID_MARK_KRAZ_MODEL_5444",
-        "mark_id": "ID_MARK_KRAZ"
-    },
-    {
-        "name": "6140",
-        "id": "ID_MARK_KRAZ_MODEL_6140",
         "mark_id": "ID_MARK_KRAZ"
     },
     {
@@ -590,6 +590,16 @@
         "mark_id": "ID_MARK_MAN"
     },
     {
+        "name": "5433",
+        "id": "ID_MARK_MAZ_MODEL_5433",
+        "mark_id": "ID_MARK_MAZ"
+    },
+    {
+        "name": "640168",
+        "id": "ID_MARK_MAZ_MAN_MODEL_640168",
+        "mark_id": "ID_MARK_MAZ_MAN"
+    },
+    {
         "name": "5405",
         "id": "ID_MARK_MAZ_MAN_MODEL_5405",
         "mark_id": "ID_MARK_MAZ_MAN"
@@ -597,11 +607,6 @@
     {
         "name": "54326",
         "id": "ID_MARK_MAZ_MAN_MODEL_54326",
-        "mark_id": "ID_MARK_MAZ_MAN"
-    },
-    {
-        "name": "640168",
-        "id": "ID_MARK_MAZ_MAN_MODEL_640168",
         "mark_id": "ID_MARK_MAZ_MAN"
     },
     {
@@ -637,11 +642,6 @@
     {
         "name": "5432",
         "id": "ID_MARK_MAZ_MODEL_5432",
-        "mark_id": "ID_MARK_MAZ"
-    },
-    {
-        "name": "5433",
-        "id": "ID_MARK_MAZ_MODEL_5433",
         "mark_id": "ID_MARK_MAZ"
     },
     {
@@ -705,6 +705,11 @@
         "mark_id": "ID_MARK_MITSUBISHI_FUSO"
     },
     {
+        "name": "7416",
+        "id": "ID_MARK_MZKT_MODEL_7416",
+        "mark_id": "ID_MARK_MZKT"
+    },
+    {
         "name": "6923",
         "id": "ID_MARK_MZKT_MODEL_6923",
         "mark_id": "ID_MARK_MZKT"
@@ -720,11 +725,6 @@
         "mark_id": "ID_MARK_MZKT"
     },
     {
-        "name": "7416",
-        "id": "ID_MARK_MZKT_MODEL_7416",
-        "mark_id": "ID_MARK_MZKT"
-    },
-    {
         "name": "7429",
         "id": "ID_MARK_MZKT_MODEL_7429",
         "mark_id": "ID_MARK_MZKT"
@@ -733,11 +733,6 @@
         "name": "Diesel",
         "id": "ID_MARK_NISSAN_MODEL_DIESEL",
         "mark_id": "ID_MARK_NISSAN"
-    },
-    {
-        "name": "Class 8",
-        "id": "ID_MARK_PETERBILT_MODEL_CLASS_8",
-        "mark_id": "ID_MARK_PETERBILT"
     },
     {
         "name": "362",
@@ -757,6 +752,11 @@
     {
         "name": "587",
         "id": "ID_MARK_PETERBILT_MODEL_587",
+        "mark_id": "ID_MARK_PETERBILT"
+    },
+    {
+        "name": "Class 8",
+        "id": "ID_MARK_PETERBILT_MODEL_CLASS_8",
         "mark_id": "ID_MARK_PETERBILT"
     },
     {
@@ -810,11 +810,6 @@
         "mark_id": "ID_MARK_RUSICH_KZKT"
     },
     {
-        "name": "P-series",
-        "id": "ID_MARK_SCANIA_MODEL_P_SERIES",
-        "mark_id": "ID_MARK_SCANIA"
-    },
-    {
         "name": "2-Series",
         "id": "ID_MARK_SCANIA_MODEL_2_SERIES",
         "mark_id": "ID_MARK_SCANIA"
@@ -842,6 +837,11 @@
     {
         "name": "M",
         "id": "ID_MARK_SCANIA_MODEL_M",
+        "mark_id": "ID_MARK_SCANIA"
+    },
+    {
+        "name": "P-series",
+        "id": "ID_MARK_SCANIA_MODEL_P_SERIES",
         "mark_id": "ID_MARK_SCANIA"
     },
     {
@@ -905,11 +905,6 @@
         "mark_id": "ID_MARK_SKODA_LIAZ"
     },
     {
-        "name": "SC7000/8000",
-        "id": "ID_MARK_STERLING_MODEL_SC7000_8000",
-        "mark_id": "ID_MARK_STERLING"
-    },
-    {
         "name": "Acterra",
         "id": "ID_MARK_STERLING_MODEL_ACTERRA",
         "mark_id": "ID_MARK_STERLING"
@@ -922,6 +917,11 @@
     {
         "name": "L-line",
         "id": "ID_MARK_STERLING_MODEL_L_LINE",
+        "mark_id": "ID_MARK_STERLING"
+    },
+    {
+        "name": "SC7000/8000",
+        "id": "ID_MARK_STERLING_MODEL_SC7000_8000",
         "mark_id": "ID_MARK_STERLING"
     },
     {
@@ -1055,13 +1055,13 @@
         "mark_id": "ID_MARK_VOLVO"
     },
     {
-        "name": "6900",
-        "id": "ID_MARK_WESTERN_STAR_MODEL_6900",
+        "name": "4900",
+        "id": "ID_MARK_WESTERN_STAR_MODEL_4900",
         "mark_id": "ID_MARK_WESTERN_STAR"
     },
     {
-        "name": "4900",
-        "id": "ID_MARK_WESTERN_STAR_MODEL_4900",
+        "name": "6900",
+        "id": "ID_MARK_WESTERN_STAR_MODEL_6900",
         "mark_id": "ID_MARK_WESTERN_STAR"
     },
     {

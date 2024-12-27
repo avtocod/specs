@@ -120,13 +120,13 @@
         "mark_id": "ID_MARK_BALTMOTORS"
     },
     {
-        "name": "Следопыт",
-        "id": "ID_MARK_BARS_MODEL_SLEDOPYT",
+        "name": "Партизан",
+        "id": "ID_MARK_BARS_MODEL_PARTIZAN",
         "mark_id": "ID_MARK_BARS"
     },
     {
-        "name": "Партизан",
-        "id": "ID_MARK_BARS_MODEL_PARTIZAN",
+        "name": "Следопыт",
+        "id": "ID_MARK_BARS_MODEL_SLEDOPYT",
         "mark_id": "ID_MARK_BARS"
     },
     {
@@ -140,8 +140,8 @@
         "mark_id": "ID_MARK_BMW_ALPINA"
     },
     {
-        "name": "Ski-Doo Summit 700",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_700",
+        "name": "Ski-Doo GTX 500",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_500",
         "mark_id": "ID_MARK_BRP"
     },
     {
@@ -420,11 +420,6 @@
         "mark_id": "ID_MARK_BRP"
     },
     {
-        "name": "Ski-Doo GTX 500",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_500",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
         "name": "Ski-Doo GTX 550",
         "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_550",
         "mark_id": "ID_MARK_BRP"
@@ -540,6 +535,11 @@
         "mark_id": "ID_MARK_BRP"
     },
     {
+        "name": "Ski-Doo Summit 700",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_700",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
         "name": "Ski-Doo Summit 800",
         "id": "ID_MARK_BRP_MODEL_SKI_DOO_SUMMIT_800",
         "mark_id": "ID_MARK_BRP"
@@ -575,8 +575,8 @@
         "mark_id": "ID_MARK_BRP"
     },
     {
-        "name": "СТАНДАРТ 500",
-        "id": "ID_MARK_BTS_MODEL_STANDART_500",
+        "name": "КОМПАКТ 500",
+        "id": "ID_MARK_BTS_MODEL_KOMPAKT_500",
         "mark_id": "ID_MARK_BTS"
     },
     {
@@ -590,13 +590,13 @@
         "mark_id": "ID_MARK_BTS"
     },
     {
-        "name": "КОМПАКТ 500",
-        "id": "ID_MARK_BTS_MODEL_KOMPAKT_500",
+        "name": "МАЛЕК 380",
+        "id": "ID_MARK_BTS_MODEL_MALEK_380",
         "mark_id": "ID_MARK_BTS"
     },
     {
-        "name": "МАЛЕК 380",
-        "id": "ID_MARK_BTS_MODEL_MALEK_380",
+        "name": "СТАНДАРТ 500",
+        "id": "ID_MARK_BTS_MODEL_STANDART_500",
         "mark_id": "ID_MARK_BTS"
     },
     {
@@ -1065,11 +1065,6 @@
         "mark_id": "ID_MARK_POLARIS"
     },
     {
-        "name": "600/650",
-        "id": "ID_MARK_POMOR_MODEL_600_650",
-        "mark_id": "ID_MARK_POMOR"
-    },
-    {
         "name": "380",
         "id": "ID_MARK_POMOR_MODEL_380",
         "mark_id": "ID_MARK_POMOR"
@@ -1077,6 +1072,11 @@
     {
         "name": "500",
         "id": "ID_MARK_POMOR_MODEL_500",
+        "mark_id": "ID_MARK_POMOR"
+    },
+    {
+        "name": "600/650",
+        "id": "ID_MARK_POMOR_MODEL_600_650",
         "mark_id": "ID_MARK_POMOR"
     },
     {
@@ -1100,8 +1100,8 @@
         "mark_id": "ID_MARK_RAYDA"
     },
     {
-        "name": "Тайга СТ500Д",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_ST500D",
+        "name": "Tiksy",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TIKSY",
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
@@ -1150,6 +1150,11 @@
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
+        "name": "Тайга СТ500Д",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_ST500D",
+        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
+    },
+    {
         "name": "Тайга Варяг 500",
         "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TAYGA_VARYAG_500",
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
@@ -1160,18 +1165,13 @@
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
-        "name": "Tiksy",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TIKSY",
-        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
+        "name": "113",
+        "id": "ID_MARK_RYS_MODEL_113",
+        "mark_id": "ID_MARK_RYS"
     },
     {
         "name": "119",
         "id": "ID_MARK_RYS_MODEL_119",
-        "mark_id": "ID_MARK_RYS"
-    },
-    {
-        "name": "113",
-        "id": "ID_MARK_RYS_MODEL_113",
         "mark_id": "ID_MARK_RYS"
     },
     {
@@ -1183,6 +1183,11 @@
         "name": "500",
         "id": "ID_MARK_RYS_MODEL_500",
         "mark_id": "ID_MARK_RYS"
+    },
+    {
+        "name": "SN-210 Forester",
+        "id": "ID_MARK_SHARMAX_MODEL_SN_210_FORESTER",
+        "mark_id": "ID_MARK_SHARMAX"
     },
     {
         "name": "S380",
@@ -1197,11 +1202,6 @@
     {
         "name": "S650",
         "id": "ID_MARK_SHARMAX_MODEL_S650",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
-        "name": "SN-210 Forester",
-        "id": "ID_MARK_SHARMAX_MODEL_SN_210_FORESTER",
         "mark_id": "ID_MARK_SHARMAX"
     },
     {
@@ -1220,8 +1220,8 @@
         "mark_id": "ID_MARK_SHARMAX"
     },
     {
-        "name": "К-1",
-        "id": "ID_MARK_SHIKHAN_MODEL_K_1",
+        "name": "Д-2",
+        "id": "ID_MARK_SHIKHAN_MODEL_D_2",
         "mark_id": "ID_MARK_SHIKHAN"
     },
     {
@@ -1230,8 +1230,8 @@
         "mark_id": "ID_MARK_SHIKHAN"
     },
     {
-        "name": "Д-2",
-        "id": "ID_MARK_SHIKHAN_MODEL_D_2",
+        "name": "К-1",
+        "id": "ID_MARK_SHIKHAN_MODEL_K_1",
         "mark_id": "ID_MARK_SHIKHAN"
     },
     {
@@ -1258,11 +1258,6 @@
         "name": "600 LT",
         "id": "ID_MARK_SNOW_HAWK_MODEL_600_LT",
         "mark_id": "ID_MARK_SNOW_HAWK"
-    },
-    {
-        "name": "Витязь 800",
-        "id": "ID_MARK_STELS_MODEL_VITYAZ_800",
-        "mark_id": "ID_MARK_STELS"
     },
     {
         "name": "Ермак 600L",
@@ -1312,6 +1307,11 @@
     {
         "name": "Viking 800",
         "id": "ID_MARK_STELS_MODEL_VIKING_800",
+        "mark_id": "ID_MARK_STELS"
+    },
+    {
+        "name": "Витязь 800",
+        "id": "ID_MARK_STELS_MODEL_VITYAZ_800",
         "mark_id": "ID_MARK_STELS"
     },
     {

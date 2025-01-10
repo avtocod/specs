@@ -5,14 +5,14 @@
         "mark_id": "ID_MARK_AKT"
     },
     {
-        "name": "1913 (Ладога)",
-        "id": "ID_MARK_AS_MODEL_1913_LADOGA",
-        "mark_id": "ID_MARK_AS"
-    },
-    {
         "name": "AS250",
         "id": "ID_MARK_ASKAM_DESOTO_MODEL_AS250",
         "mark_id": "ID_MARK_ASKAM_DESOTO"
+    },
+    {
+        "name": "1913 (Ладога)",
+        "id": "ID_MARK_AS_MODEL_1913_LADOGA",
+        "mark_id": "ID_MARK_AS"
     },
     {
         "name": "1925-M (Онега)",
@@ -170,19 +170,14 @@
         "mark_id": "ID_MARK_DAF"
     },
     {
-        "name": "Hijet",
-        "id": "ID_MARK_DAIHATSU_MODEL_HIJET_LIGHT_TRUCK",
-        "mark_id": "ID_MARK_DAIHATSU"
-    },
-    {
         "name": "Gran Max",
         "id": "ID_MARK_DAIHATSU_MODEL_GRAN_MAX",
         "mark_id": "ID_MARK_DAIHATSU"
     },
     {
-        "name": "V25",
-        "id": "ID_MARK_DFSK_MODEL_V25",
-        "mark_id": "ID_MARK_DFSK"
+        "name": "Hijet",
+        "id": "ID_MARK_DAIHATSU_MODEL_HIJET_LIGHT_TRUCK",
+        "mark_id": "ID_MARK_DAIHATSU"
     },
     {
         "name": "V21",
@@ -192,6 +187,11 @@
     {
         "name": "V22",
         "id": "ID_MARK_DFSK_MODEL_V22",
+        "mark_id": "ID_MARK_DFSK"
+    },
+    {
+        "name": "V25",
+        "id": "ID_MARK_DFSK_MODEL_V25",
         "mark_id": "ID_MARK_DFSK"
     },
     {
@@ -280,11 +280,6 @@
         "mark_id": "ID_MARK_FIAT"
     },
     {
-        "name": "Fullback",
-        "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_FULLBACK",
-        "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
-    },
-    {
         "name": "242-serie",
         "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_242_SERIE",
         "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
@@ -302,6 +297,11 @@
     {
         "name": "Fiorino",
         "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_FIORINO",
+        "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
+    },
+    {
+        "name": "Fullback",
+        "id": "ID_MARK_FIAT_PROFESSIONAL_MODEL_FULLBACK",
         "mark_id": "ID_MARK_FIAT_PROFESSIONAL"
     },
     {
@@ -665,19 +665,14 @@
         "mark_id": "ID_MARK_LADA_VAZ"
     },
     {
-        "name": "Maxus",
-        "id": "ID_MARK_LDV_MODEL_MAXUS",
-        "mark_id": "ID_MARK_LDV"
-    },
-    {
         "name": "Convoy",
         "id": "ID_MARK_LDV_MODEL_CONVOY",
         "mark_id": "ID_MARK_LDV"
     },
     {
-        "name": "3352",
-        "id": "ID_MARK_LUBLIN_MODEL_3352",
-        "mark_id": "ID_MARK_LUBLIN"
+        "name": "Maxus",
+        "id": "ID_MARK_LDV_MODEL_MAXUS",
+        "mark_id": "ID_MARK_LDV"
     },
     {
         "name": "3",
@@ -685,9 +680,9 @@
         "mark_id": "ID_MARK_LUBLIN"
     },
     {
-        "name": "Titan",
-        "id": "ID_MARK_MAZDA_MODEL_TITAN_LIGHT_TRUCK",
-        "mark_id": "ID_MARK_MAZDA"
+        "name": "3352",
+        "id": "ID_MARK_LUBLIN_MODEL_3352",
+        "mark_id": "ID_MARK_LUBLIN"
     },
     {
         "name": "Bongo",
@@ -697,6 +692,11 @@
     {
         "name": "Scrum",
         "id": "ID_MARK_MAZDA_MODEL_SCRUM_LIGHT_TRUCK",
+        "mark_id": "ID_MARK_MAZDA"
+    },
+    {
+        "name": "Titan",
+        "id": "ID_MARK_MAZDA_MODEL_TITAN_LIGHT_TRUCK",
         "mark_id": "ID_MARK_MAZDA"
     },
     {
@@ -790,13 +790,13 @@
         "mark_id": "ID_MARK_MUDAN"
     },
     {
-        "name": "M 25",
-        "id": "ID_MARK_MULTICAR_MODEL_M_25",
+        "name": "M 24",
+        "id": "ID_MARK_MULTICAR_MODEL_M_24",
         "mark_id": "ID_MARK_MULTICAR"
     },
     {
-        "name": "M 24",
-        "id": "ID_MARK_MULTICAR_MODEL_M_24",
+        "name": "M 25",
+        "id": "ID_MARK_MULTICAR_MODEL_M_25",
         "mark_id": "ID_MARK_MULTICAR"
     },
     {
@@ -890,13 +890,13 @@
         "mark_id": "ID_MARK_NISSAN"
     },
     {
-        "name": "522",
-        "id": "ID_MARK_NYSA_MODEL_522",
+        "name": "521",
+        "id": "ID_MARK_NYSA_MODEL_521",
         "mark_id": "ID_MARK_NYSA"
     },
     {
-        "name": "521",
-        "id": "ID_MARK_NYSA_MODEL_521",
+        "name": "522",
+        "id": "ID_MARK_NYSA_MODEL_522",
         "mark_id": "ID_MARK_NYSA"
     },
     {
@@ -1015,13 +1015,13 @@
         "mark_id": "ID_MARK_RENAULT"
     },
     {
-        "name": "Terra",
-        "id": "ID_MARK_SEAT_MODEL_TERRA",
+        "name": "Inca",
+        "id": "ID_MARK_SEAT_MODEL_INCA_LIGHT_TRUCK",
         "mark_id": "ID_MARK_SEAT"
     },
     {
-        "name": "Inca",
-        "id": "ID_MARK_SEAT_MODEL_INCA_LIGHT_TRUCK",
+        "name": "Terra",
+        "id": "ID_MARK_SEAT_MODEL_TERRA",
         "mark_id": "ID_MARK_SEAT"
     },
     {
@@ -1050,13 +1050,13 @@
         "mark_id": "ID_MARK_SOKON"
     },
     {
-        "name": "Atlant",
-        "id": "ID_MARK_SOLLERS_MODEL_ATLANT_LIGHT_TRUCK",
+        "name": "Argo",
+        "id": "ID_MARK_SOLLERS_MODEL_ARGO_LIGHT_TRUCK",
         "mark_id": "ID_MARK_SOLLERS"
     },
     {
-        "name": "Argo",
-        "id": "ID_MARK_SOLLERS_MODEL_ARGO_LIGHT_TRUCK",
+        "name": "Atlant",
+        "id": "ID_MARK_SOLLERS_MODEL_ATLANT_LIGHT_TRUCK",
         "mark_id": "ID_MARK_SOLLERS"
     },
     {

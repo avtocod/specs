@@ -50,13 +50,13 @@
         "mark_id": "ID_MARK_BOMFORD_TURNER"
     },
     {
-        "name": "Jetbroom",
-        "id": "ID_MARK_BOSCHUNG_MODEL_JETBROOM",
+        "name": "B4",
+        "id": "ID_MARK_BOSCHUNG_MODEL_B4",
         "mark_id": "ID_MARK_BOSCHUNG"
     },
     {
-        "name": "B4",
-        "id": "ID_MARK_BOSCHUNG_MODEL_B4",
+        "name": "Jetbroom",
+        "id": "ID_MARK_BOSCHUNG_MODEL_JETBROOM",
         "mark_id": "ID_MARK_BOSCHUNG"
     },
     {
@@ -285,11 +285,6 @@
         "mark_id": "ID_MARK_GAZ_SAZ"
     },
     {
-        "name": "N3",
-        "id": "ID_MARK_GEESINKNORBA_MODEL_N3",
-        "mark_id": "ID_MARK_GEESINKNORBA"
-    },
-    {
         "name": "GPM",
         "id": "ID_MARK_GEESINKNORBA_MODEL_GPM",
         "mark_id": "ID_MARK_GEESINKNORBA"
@@ -297,6 +292,11 @@
     {
         "name": "Mini",
         "id": "ID_MARK_GEESINKNORBA_MODEL_MINI",
+        "mark_id": "ID_MARK_GEESINKNORBA"
+    },
+    {
+        "name": "N3",
+        "id": "ID_MARK_GEESINKNORBA_MODEL_N3",
         "mark_id": "ID_MARK_GEESINKNORBA"
     },
     {
@@ -350,11 +350,6 @@
         "mark_id": "ID_MARK_HAKO"
     },
     {
-        "name": "HS 4570",
-        "id": "ID_MARK_HANSIN_MODEL_HS_4570",
-        "mark_id": "ID_MARK_HANSIN"
-    },
-    {
         "name": "HS 2750",
         "id": "ID_MARK_HANSIN_MODEL_HS_2750",
         "mark_id": "ID_MARK_HANSIN"
@@ -362,6 +357,11 @@
     {
         "name": "HS 450A",
         "id": "ID_MARK_HANSIN_MODEL_HS_450A",
+        "mark_id": "ID_MARK_HANSIN"
+    },
+    {
+        "name": "HS 4570",
+        "id": "ID_MARK_HANSIN_MODEL_HS_4570",
         "mark_id": "ID_MARK_HANSIN"
     },
     {
@@ -595,11 +595,6 @@
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
-        "name": "MIC 50",
-        "id": "ID_MARK_KARCHER_MODEL_MIC_50",
-        "mark_id": "ID_MARK_KARCHER"
-    },
-    {
         "name": "ICC 1S/D",
         "id": "ID_MARK_KARCHER_MODEL_ICC_1S_D",
         "mark_id": "ID_MARK_KARCHER"
@@ -617,6 +612,11 @@
     {
         "name": "MIC 34C",
         "id": "ID_MARK_KARCHER_MODEL_MIC_34C",
+        "mark_id": "ID_MARK_KARCHER"
+    },
+    {
+        "name": "MIC 50",
+        "id": "ID_MARK_KARCHER_MODEL_MIC_50",
         "mark_id": "ID_MARK_KARCHER"
     },
     {
@@ -665,19 +665,14 @@
         "mark_id": "ID_MARK_KIROVETS"
     },
     {
-        "name": "КМ-82БГ",
-        "id": "ID_MARK_KM_MODEL_KM_82BG",
-        "mark_id": "ID_MARK_KM"
-    },
-    {
         "name": "КМ-32001",
         "id": "ID_MARK_KM_MODEL_KM_32001",
         "mark_id": "ID_MARK_KM"
     },
     {
-        "name": "КО-442",
-        "id": "ID_MARK_KO_MODEL_KO_442",
-        "mark_id": "ID_MARK_KO"
+        "name": "КМ-82БГ",
+        "id": "ID_MARK_KM_MODEL_KM_82BG",
+        "mark_id": "ID_MARK_KM"
     },
     {
         "name": "Presko",
@@ -685,13 +680,13 @@
         "mark_id": "ID_MARK_KOBIT"
     },
     {
-        "name": "КО-449",
-        "id": "ID_MARK_KOMMASH_ARZAMAS_MODEL_KO_449",
+        "name": "КО-440",
+        "id": "ID_MARK_KOMMASH_ARZAMAS_MODEL_KO_440",
         "mark_id": "ID_MARK_KOMMASH_ARZAMAS"
     },
     {
-        "name": "КО-440",
-        "id": "ID_MARK_KOMMASH_ARZAMAS_MODEL_KO_440",
+        "name": "КО-449",
+        "id": "ID_MARK_KOMMASH_ARZAMAS_MODEL_KO_449",
         "mark_id": "ID_MARK_KOMMASH_ARZAMAS"
     },
     {
@@ -728,11 +723,6 @@
         "name": "КО-829",
         "id": "ID_MARK_KOMMASH_ARZAMAS_MODEL_KO_829",
         "mark_id": "ID_MARK_KOMMASH_ARZAMAS"
-    },
-    {
-        "name": "КО-823",
-        "id": "ID_MARK_KOMMASH_MTSENSK_MODEL_KO_823",
-        "mark_id": "ID_MARK_KOMMASH_MTSENSK"
     },
     {
         "name": "КО-427",
@@ -775,18 +765,23 @@
         "mark_id": "ID_MARK_KOMMASH_MTSENSK"
     },
     {
+        "name": "КО-823",
+        "id": "ID_MARK_KOMMASH_MTSENSK_MODEL_KO_823",
+        "mark_id": "ID_MARK_KOMMASH_MTSENSK"
+    },
+    {
         "name": "МКС",
         "id": "ID_MARK_KOMMUNAL_AVTO_MODEL_MKS",
         "mark_id": "ID_MARK_KOMMUNAL_AVTO"
     },
     {
-        "name": "ДМК-40",
-        "id": "ID_MARK_KORMZ_MODEL_DMK_40",
+        "name": "ДМК-30",
+        "id": "ID_MARK_KORMZ_MODEL_DMK_30",
         "mark_id": "ID_MARK_KORMZ"
     },
     {
-        "name": "ДМК-30",
-        "id": "ID_MARK_KORMZ_MODEL_DMK_30",
+        "name": "ДМК-40",
+        "id": "ID_MARK_KORMZ_MODEL_DMK_40",
         "mark_id": "ID_MARK_KORMZ"
     },
     {
@@ -822,6 +817,11 @@
     {
         "name": "Комбинированные универсальные машины",
         "id": "ID_MARK_KO_MODEL_KOMBINIROVANNYE_UNIVERSALNYE_MASHINY",
+        "mark_id": "ID_MARK_KO"
+    },
+    {
+        "name": "КО-442",
+        "id": "ID_MARK_KO_MODEL_KO_442",
         "mark_id": "ID_MARK_KO"
     },
     {
@@ -870,13 +870,13 @@
         "mark_id": "ID_MARK_LZMKM"
     },
     {
-        "name": "150 AETJ-C",
-        "id": "ID_MARK_MANITOU_MODEL_150_AETJ_C",
+        "name": "120 AETJ-C",
+        "id": "ID_MARK_MANITOU_MODEL_120_AETJ_C",
         "mark_id": "ID_MARK_MANITOU"
     },
     {
-        "name": "120 AETJ-C",
-        "id": "ID_MARK_MANITOU_MODEL_120_AETJ_C",
+        "name": "150 AETJ-C",
+        "id": "ID_MARK_MANITOU_MODEL_150_AETJ_C",
         "mark_id": "ID_MARK_MANITOU"
     },
     {
@@ -950,13 +950,13 @@
         "mark_id": "ID_MARK_MAN"
     },
     {
-        "name": "Mars/18",
-        "id": "ID_MARK_MARS_MODEL_MARS_18",
+        "name": "Mars/15",
+        "id": "ID_MARK_MARS_MODEL_MARS_15",
         "mark_id": "ID_MARK_MARS"
     },
     {
-        "name": "Mars/15",
-        "id": "ID_MARK_MARS_MODEL_MARS_15",
+        "name": "Mars/18",
+        "id": "ID_MARK_MARS_MODEL_MARS_18",
         "mark_id": "ID_MARK_MARS"
     },
     {
@@ -1100,19 +1100,14 @@
         "mark_id": "ID_MARK_MKM"
     },
     {
-        "name": "МКС-3501",
-        "id": "ID_MARK_MKS_MODEL_MKS_3501",
-        "mark_id": "ID_MARK_MKS"
-    },
-    {
         "name": "МКС-1",
         "id": "ID_MARK_MKS_MODEL_MKS_1",
         "mark_id": "ID_MARK_MKS"
     },
     {
-        "name": "МКЗ-4704",
-        "id": "ID_MARK_MKZ_MODEL_MKZ_4704",
-        "mark_id": "ID_MARK_MKZ"
+        "name": "МКС-3501",
+        "id": "ID_MARK_MKS_MODEL_MKS_3501",
+        "mark_id": "ID_MARK_MKS"
     },
     {
         "name": "МКЗ-10",
@@ -1132,6 +1127,11 @@
     {
         "name": "МКЗ-4701",
         "id": "ID_MARK_MKZ_MODEL_MKZ_4701",
+        "mark_id": "ID_MARK_MKZ"
+    },
+    {
+        "name": "МКЗ-4704",
+        "id": "ID_MARK_MKZ_MODEL_MKZ_4704",
         "mark_id": "ID_MARK_MKZ"
     },
     {
@@ -1185,13 +1185,13 @@
         "mark_id": "ID_MARK_NICHIJYO"
     },
     {
-        "name": "Park Ranger",
-        "id": "ID_MARK_NILFISK_MODEL_PARK_RANGER",
+        "name": "City Ranger",
+        "id": "ID_MARK_NILFISK_MODEL_CITY_RANGER",
         "mark_id": "ID_MARK_NILFISK"
     },
     {
-        "name": "City Ranger",
-        "id": "ID_MARK_NILFISK_MODEL_CITY_RANGER",
+        "name": "Park Ranger",
+        "id": "ID_MARK_NILFISK_MODEL_PARK_RANGER",
         "mark_id": "ID_MARK_NILFISK"
     },
     {
@@ -1225,11 +1225,6 @@
         "mark_id": "ID_MARK_PISTENBULLY"
     },
     {
-        "name": "СнП-20",
-        "id": "ID_MARK_PLAVSKIY_MODEL_SNP_20",
-        "mark_id": "ID_MARK_PLAVSKIY"
-    },
-    {
         "name": "ММД-1",
         "id": "ID_MARK_PLAVSKIY_MODEL_MMD_1",
         "mark_id": "ID_MARK_PLAVSKIY"
@@ -1250,9 +1245,9 @@
         "mark_id": "ID_MARK_PLAVSKIY"
     },
     {
-        "name": "ПМС-2815",
-        "id": "ID_MARK_PZSMM_MODEL_PMS_2815",
-        "mark_id": "ID_MARK_PZSMM"
+        "name": "СнП-20",
+        "id": "ID_MARK_PLAVSKIY_MODEL_SNP_20",
+        "mark_id": "ID_MARK_PLAVSKIY"
     },
     {
         "name": "ПМС-2010",
@@ -1272,6 +1267,11 @@
     {
         "name": "ПМС-2311",
         "id": "ID_MARK_PZSMM_MODEL_PMS_2311",
+        "mark_id": "ID_MARK_PZSMM"
+    },
+    {
+        "name": "ПМС-2815",
+        "id": "ID_MARK_PZSMM_MODEL_PMS_2815",
         "mark_id": "ID_MARK_PZSMM"
     },
     {
@@ -1310,11 +1310,6 @@
         "mark_id": "ID_MARK_PZSMM"
     },
     {
-        "name": "МКМ",
-        "id": "ID_MARK_RARZ_MODEL_MKM",
-        "mark_id": "ID_MARK_RARZ"
-    },
-    {
         "name": "МБС",
         "id": "ID_MARK_RARZ_MODEL_MBS",
         "mark_id": "ID_MARK_RARZ"
@@ -1322,6 +1317,11 @@
     {
         "name": "МКДС",
         "id": "ID_MARK_RARZ_MODEL_MKDS",
+        "mark_id": "ID_MARK_RARZ"
+    },
+    {
+        "name": "МКМ",
+        "id": "ID_MARK_RARZ_MODEL_MKM",
         "mark_id": "ID_MARK_RARZ"
     },
     {
@@ -1385,13 +1385,13 @@
         "mark_id": "ID_MARK_SEVDORMASH"
     },
     {
-        "name": "SX3316",
-        "id": "ID_MARK_SHACMAN_SHAANXI_MODEL_SX3316_MUNICIPAL",
+        "name": "SX1256",
+        "id": "ID_MARK_SHACMAN_SHAANXI_MODEL_SX1256_MUNICIPAL",
         "mark_id": "ID_MARK_SHACMAN_SHAANXI"
     },
     {
-        "name": "SX1256",
-        "id": "ID_MARK_SHACMAN_SHAANXI_MODEL_SX1256_MUNICIPAL",
+        "name": "SX3316",
+        "id": "ID_MARK_SHACMAN_SHAANXI_MODEL_SX3316_MUNICIPAL",
         "mark_id": "ID_MARK_SHACMAN_SHAANXI"
     },
     {
@@ -1445,13 +1445,13 @@
         "mark_id": "ID_MARK_TVERKOMMASH"
     },
     {
-        "name": "T433",
-        "id": "ID_MARK_TYM_MODEL_T433_MUNICIPAL",
+        "name": "T233",
+        "id": "ID_MARK_TYM_MODEL_T233_MUNICIPAL",
         "mark_id": "ID_MARK_TYM"
     },
     {
-        "name": "T233",
-        "id": "ID_MARK_TYM_MODEL_T233_MUNICIPAL",
+        "name": "T433",
+        "id": "ID_MARK_TYM_MODEL_T433_MUNICIPAL",
         "mark_id": "ID_MARK_TYM"
     },
     {
@@ -1468,11 +1468,6 @@
         "name": "ПМС",
         "id": "ID_MARK_URAL_MODEL_PMS",
         "mark_id": "ID_MARK_URAL"
-    },
-    {
-        "name": "36",
-        "id": "ID_MARK_VIPO_MODEL_36",
-        "mark_id": "ID_MARK_VIPO"
     },
     {
         "name": "12",
@@ -1507,6 +1502,11 @@
     {
         "name": "32",
         "id": "ID_MARK_VIPO_MODEL_32",
+        "mark_id": "ID_MARK_VIPO"
+    },
+    {
+        "name": "36",
+        "id": "ID_MARK_VIPO_MODEL_36",
         "mark_id": "ID_MARK_VIPO"
     },
     {
@@ -1545,11 +1545,6 @@
         "mark_id": "ID_MARK_WILLE"
     },
     {
-        "name": "ПР-КС",
-        "id": "ID_MARK_ZDS_MODEL_PR_KS",
-        "mark_id": "ID_MARK_ZDS"
-    },
-    {
         "name": "АО-Ш",
         "id": "ID_MARK_ZDS_MODEL_AO_SH",
         "mark_id": "ID_MARK_ZDS"
@@ -1567,6 +1562,11 @@
     {
         "name": "ПР-К",
         "id": "ID_MARK_ZDS_MODEL_PR_K",
+        "mark_id": "ID_MARK_ZDS"
+    },
+    {
+        "name": "ПР-КС",
+        "id": "ID_MARK_ZDS_MODEL_PR_KS",
         "mark_id": "ID_MARK_ZDS"
     },
     {
@@ -1660,13 +1660,13 @@
         "mark_id": "ID_MARK_ZIL"
     },
     {
-        "name": "Medium XXL",
-        "id": "ID_MARK_ZOELLER_MODEL_MEDIUM_XXL",
+        "name": "Medium XLS",
+        "id": "ID_MARK_ZOELLER_MODEL_MEDIUM_XLS",
         "mark_id": "ID_MARK_ZOELLER"
     },
     {
-        "name": "Medium XLS",
-        "id": "ID_MARK_ZOELLER_MODEL_MEDIUM_XLS",
+        "name": "Medium XXL",
+        "id": "ID_MARK_ZOELLER_MODEL_MEDIUM_XXL",
         "mark_id": "ID_MARK_ZOELLER"
     }
 ]

@@ -140,11 +140,6 @@
         "mark_id": "ID_MARK_BMW_ALPINA"
     },
     {
-        "name": "Ski-Doo GTX 500",
-        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_500",
-        "mark_id": "ID_MARK_BRP"
-    },
-    {
         "name": "Lynx 49 Ranger",
         "id": "ID_MARK_BRP_MODEL_LYNX_49_RANGER",
         "mark_id": "ID_MARK_BRP"
@@ -420,6 +415,11 @@
         "mark_id": "ID_MARK_BRP"
     },
     {
+        "name": "Ski-Doo GTX 500",
+        "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_500",
+        "mark_id": "ID_MARK_BRP"
+    },
+    {
         "name": "Ski-Doo GTX 550",
         "id": "ID_MARK_BRP_MODEL_SKI_DOO_GTX_550",
         "mark_id": "ID_MARK_BRP"
@@ -575,11 +575,6 @@
         "mark_id": "ID_MARK_BRP"
     },
     {
-        "name": "КОМПАКТ 500",
-        "id": "ID_MARK_BTS_MODEL_KOMPAKT_500",
-        "mark_id": "ID_MARK_BTS"
-    },
-    {
         "name": "2Х2 ФЕРМЕР",
         "id": "ID_MARK_BTS_MODEL_2KH2_FERMER",
         "mark_id": "ID_MARK_BTS"
@@ -587,6 +582,11 @@
     {
         "name": "БТС LONG",
         "id": "ID_MARK_BTS_MODEL_BTS_LONG",
+        "mark_id": "ID_MARK_BTS"
+    },
+    {
+        "name": "КОМПАКТ 500",
+        "id": "ID_MARK_BTS_MODEL_KOMPAKT_500",
         "mark_id": "ID_MARK_BTS"
     },
     {
@@ -700,11 +700,6 @@
         "mark_id": "ID_MARK_KHASKI"
     },
     {
-        "name": "T 15",
-        "id": "ID_MARK_KOIRA_MODEL_T_15",
-        "mark_id": "ID_MARK_KOIRA"
-    },
-    {
         "name": "Богатырь",
         "id": "ID_MARK_KOIRA_MODEL_BOGATYR",
         "mark_id": "ID_MARK_KOIRA"
@@ -717,6 +712,11 @@
     {
         "name": "TR",
         "id": "ID_MARK_KOIRA_MODEL_TR",
+        "mark_id": "ID_MARK_KOIRA"
+    },
+    {
+        "name": "T 15",
+        "id": "ID_MARK_KOIRA_MODEL_T_15",
         "mark_id": "ID_MARK_KOIRA"
     },
     {
@@ -1100,11 +1100,6 @@
         "mark_id": "ID_MARK_RAYDA"
     },
     {
-        "name": "Tiksy",
-        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TIKSY",
-        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
-    },
-    {
         "name": "Буран",
         "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_BURAN",
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
@@ -1165,6 +1160,11 @@
         "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
     },
     {
+        "name": "Tiksy",
+        "id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM_MODEL_TIKSY",
+        "mark_id": "ID_MARK_RUSSKAYA_MEKHANIKA_RM"
+    },
+    {
         "name": "113",
         "id": "ID_MARK_RYS_MODEL_113",
         "mark_id": "ID_MARK_RYS"
@@ -1185,11 +1185,6 @@
         "mark_id": "ID_MARK_RYS"
     },
     {
-        "name": "SN-210 Forester",
-        "id": "ID_MARK_SHARMAX_MODEL_SN_210_FORESTER",
-        "mark_id": "ID_MARK_SHARMAX"
-    },
-    {
         "name": "S380",
         "id": "ID_MARK_SHARMAX_MODEL_S380",
         "mark_id": "ID_MARK_SHARMAX"
@@ -1202,6 +1197,11 @@
     {
         "name": "S650",
         "id": "ID_MARK_SHARMAX_MODEL_S650",
+        "mark_id": "ID_MARK_SHARMAX"
+    },
+    {
+        "name": "SN-210 Forester",
+        "id": "ID_MARK_SHARMAX_MODEL_SN_210_FORESTER",
         "mark_id": "ID_MARK_SHARMAX"
     },
     {
@@ -1220,13 +1220,13 @@
         "mark_id": "ID_MARK_SHARMAX"
     },
     {
-        "name": "Д-2",
-        "id": "ID_MARK_SHIKHAN_MODEL_D_2",
+        "name": "Д-1",
+        "id": "ID_MARK_SHIKHAN_MODEL_D_1",
         "mark_id": "ID_MARK_SHIKHAN"
     },
     {
-        "name": "Д-1",
-        "id": "ID_MARK_SHIKHAN_MODEL_D_1",
+        "name": "Д-2",
+        "id": "ID_MARK_SHIKHAN_MODEL_D_2",
         "mark_id": "ID_MARK_SHIKHAN"
     },
     {
@@ -1245,11 +1245,6 @@
         "mark_id": "ID_MARK_SIMBEL"
     },
     {
-        "name": "SNOW HAWK",
-        "id": "ID_MARK_SNOW_HAWK_MODEL_SNOW_HAWK",
-        "mark_id": "ID_MARK_SNOW_HAWK"
-    },
-    {
         "name": "500 LT",
         "id": "ID_MARK_SNOW_HAWK_MODEL_500_LT",
         "mark_id": "ID_MARK_SNOW_HAWK"
@@ -1257,6 +1252,11 @@
     {
         "name": "600 LT",
         "id": "ID_MARK_SNOW_HAWK_MODEL_600_LT",
+        "mark_id": "ID_MARK_SNOW_HAWK"
+    },
+    {
+        "name": "SNOW HAWK",
+        "id": "ID_MARK_SNOW_HAWK_MODEL_SNOW_HAWK",
         "mark_id": "ID_MARK_SNOW_HAWK"
     },
     {

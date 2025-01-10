@@ -5,13 +5,13 @@
         "mark_id": "ID_MARK_ATLAS"
     },
     {
-        "name": "Самопогрузчики",
-        "id": "ID_MARK_AVIA_MODEL_SAMOPOGRUZCHIKI",
+        "name": "D - Series",
+        "id": "ID_MARK_AVIA_MODEL_D_SERIES_SELF_LOADER",
         "mark_id": "ID_MARK_AVIA"
     },
     {
-        "name": "D - Series",
-        "id": "ID_MARK_AVIA_MODEL_D_SERIES_SELF_LOADER",
+        "name": "Самопогрузчики",
+        "id": "ID_MARK_AVIA_MODEL_SAMOPOGRUZCHIKI",
         "mark_id": "ID_MARK_AVIA"
     },
     {
@@ -60,19 +60,14 @@
         "mark_id": "ID_MARK_DAEWOO"
     },
     {
-        "name": "XF",
-        "id": "ID_MARK_DAF_MODEL_XF",
-        "mark_id": "ID_MARK_DAF"
-    },
-    {
         "name": "CF",
         "id": "ID_MARK_DAF_MODEL_CF",
         "mark_id": "ID_MARK_DAF"
     },
     {
-        "name": "DH 86",
-        "id": "ID_MARK_DINEX_CRANE_MODEL_DH_86",
-        "mark_id": "ID_MARK_DINEX_CRANE"
+        "name": "XF",
+        "id": "ID_MARK_DAF_MODEL_XF",
+        "mark_id": "ID_MARK_DAF"
     },
     {
         "name": "DH 76",
@@ -80,13 +75,18 @@
         "mark_id": "ID_MARK_DINEX_CRANE"
     },
     {
-        "name": "LS2056",
-        "id": "ID_MARK_DINTEK_MODEL_LS2056",
-        "mark_id": "ID_MARK_DINTEK"
+        "name": "DH 86",
+        "id": "ID_MARK_DINEX_CRANE_MODEL_DH_86",
+        "mark_id": "ID_MARK_DINEX_CRANE"
     },
     {
         "name": "LS1256",
         "id": "ID_MARK_DINTEK_MODEL_LS1256",
+        "mark_id": "ID_MARK_DINTEK"
+    },
+    {
+        "name": "LS2056",
+        "id": "ID_MARK_DINTEK_MODEL_LS2056",
         "mark_id": "ID_MARK_DINTEK"
     },
     {
@@ -100,11 +100,6 @@
         "mark_id": "ID_MARK_DONGFENG"
     },
     {
-        "name": "M30A",
-        "id": "ID_MARK_FASSI_MODEL_M30A",
-        "mark_id": "ID_MARK_FASSI"
-    },
-    {
         "name": "F65",
         "id": "ID_MARK_FASSI_MODEL_F65",
         "mark_id": "ID_MARK_FASSI"
@@ -112,6 +107,11 @@
     {
         "name": "F85",
         "id": "ID_MARK_FASSI_MODEL_F85",
+        "mark_id": "ID_MARK_FASSI"
+    },
+    {
+        "name": "M30A",
+        "id": "ID_MARK_FASSI_MODEL_M30A",
         "mark_id": "ID_MARK_FASSI"
     },
     {
@@ -305,11 +305,6 @@
         "mark_id": "ID_MARK_HYUNDAI"
     },
     {
-        "name": "ИМ95",
-        "id": "ID_MARK_INMAN_MODEL_IM95",
-        "mark_id": "ID_MARK_INMAN"
-    },
-    {
         "name": "ИМ20",
         "id": "ID_MARK_INMAN_MODEL_IM20",
         "mark_id": "ID_MARK_INMAN"
@@ -322,6 +317,11 @@
     {
         "name": "ИМ55",
         "id": "ID_MARK_INMAN_MODEL_IM55",
+        "mark_id": "ID_MARK_INMAN"
+    },
+    {
+        "name": "ИМ95",
+        "id": "ID_MARK_INMAN_MODEL_IM95",
         "mark_id": "ID_MARK_INMAN"
     },
     {
@@ -450,11 +450,6 @@
         "mark_id": "ID_MARK_KAMAZ"
     },
     {
-        "name": "KS2056",
-        "id": "ID_MARK_KANGLIM_MODEL_KS2056",
-        "mark_id": "ID_MARK_KANGLIM"
-    },
-    {
         "name": "KS1056",
         "id": "ID_MARK_KANGLIM_MODEL_KS1056",
         "mark_id": "ID_MARK_KANGLIM"
@@ -462,6 +457,11 @@
     {
         "name": "KS1256",
         "id": "ID_MARK_KANGLIM_MODEL_KS1256",
+        "mark_id": "ID_MARK_KANGLIM"
+    },
+    {
+        "name": "KS2056",
+        "id": "ID_MARK_KANGLIM_MODEL_KS2056",
         "mark_id": "ID_MARK_KANGLIM"
     },
     {
@@ -645,11 +645,6 @@
         "mark_id": "ID_MARK_NISSAN"
     },
     {
-        "name": "ST20",
-        "id": "ID_MARK_PALFINGER_MODEL_ST20",
-        "mark_id": "ID_MARK_PALFINGER"
-    },
-    {
         "name": "INMAN IT 120",
         "id": "ID_MARK_PALFINGER_MODEL_INMAN_IT_120",
         "mark_id": "ID_MARK_PALFINGER"
@@ -682,6 +677,11 @@
     {
         "name": "ST15",
         "id": "ID_MARK_PALFINGER_MODEL_ST15",
+        "mark_id": "ID_MARK_PALFINGER"
+    },
+    {
+        "name": "ST20",
+        "id": "ID_MARK_PALFINGER_MODEL_ST20",
         "mark_id": "ID_MARK_PALFINGER"
     },
     {
@@ -765,11 +765,6 @@
         "mark_id": "ID_MARK_TOYOTA"
     },
     {
-        "name": "URV630",
-        "id": "ID_MARK_UNIC_MODEL_URV630",
-        "mark_id": "ID_MARK_UNIC"
-    },
-    {
         "name": "URV370",
         "id": "ID_MARK_UNIC_MODEL_URV370",
         "mark_id": "ID_MARK_UNIC"
@@ -782,6 +777,11 @@
     {
         "name": "URV550",
         "id": "ID_MARK_UNIC_MODEL_URV550",
+        "mark_id": "ID_MARK_UNIC"
+    },
+    {
+        "name": "URV630",
+        "id": "ID_MARK_UNIC_MODEL_URV630",
         "mark_id": "ID_MARK_UNIC"
     },
     {
@@ -855,11 +855,6 @@
         "mark_id": "ID_MARK_YUEJIN"
     },
     {
-        "name": "ZK",
-        "id": "ID_MARK_ZAGORETS_MODEL_ZK",
-        "mark_id": "ID_MARK_ZAGORETS"
-    },
-    {
         "name": "Hyundai HD-78 с КМУ SQ 3.2SK2Q",
         "id": "ID_MARK_ZAGORETS_MODEL_HYUNDAI_HD_78_S_KMU_SQ_3_2SK2Q",
         "mark_id": "ID_MARK_ZAGORETS"
@@ -887,6 +882,11 @@
     {
         "name": "SK",
         "id": "ID_MARK_ZAGORETS_MODEL_SK",
+        "mark_id": "ID_MARK_ZAGORETS"
+    },
+    {
+        "name": "ZK",
+        "id": "ID_MARK_ZAGORETS_MODEL_ZK",
         "mark_id": "ID_MARK_ZAGORETS"
     },
     {

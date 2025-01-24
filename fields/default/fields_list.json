@@ -973,9 +973,7 @@
         "types": [
             "boolean"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.actuality.date",
@@ -983,9 +981,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.reg_num",
@@ -993,9 +989,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.brand_name_original",
@@ -1003,9 +997,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.model_name_original",
@@ -1013,9 +1005,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].full_number",
@@ -1023,9 +1013,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].number",
@@ -1033,9 +1021,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].issued",
@@ -1043,9 +1029,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].region.code",
@@ -1053,9 +1037,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.probable_use.items[].reg_num",
@@ -1063,9 +1045,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.probable_use.items[].date",
@@ -1073,9 +1053,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.sts.date.receive",

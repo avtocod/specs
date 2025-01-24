@@ -2002,9 +2002,7 @@
                                             "examples": [
                                                 false
                                             ],
-                                            "fillable_by": [
-                                                "owner.taxi.history"
-                                            ]
+                                            "fillable_by": []
                                         },
                                         "taxi_licenses": {
                                             "type": "object",
@@ -2027,9 +2025,7 @@
                                                             "examples": [
                                                                 "2018-08-05 00:00:00"
                                                             ],
-                                                            "fillable_by": [
-                                                                "owner.taxi.history"
-                                                            ]
+                                                            "fillable_by": []
                                                         }
                                                     }
                                                 },
@@ -2052,9 +2048,7 @@
                                                                         "examples": [
                                                                             "A111AA196"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     },
                                                                     "brand_name_original": {
                                                                         "description": "Марка автомобиля",
@@ -2065,9 +2059,7 @@
                                                                         "examples": [
                                                                             "Hyundai"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     },
                                                                     "model_name_original": {
                                                                         "description": "Модель автомобиля",
@@ -2078,9 +2070,7 @@
                                                                         "examples": [
                                                                             "Sonata"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     }
                                                                 }
                                                             },
@@ -2093,9 +2083,7 @@
                                                                 "examples": [
                                                                     "91480"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "number": {
                                                                 "description": "Регистрационный номер разрешения",
@@ -2106,9 +2094,7 @@
                                                                 "examples": [
                                                                     "91480"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "issued": {
                                                                 "description": "Дата выдачи разрешения",
@@ -2123,9 +2109,7 @@
                                                                 "examples": [
                                                                     "2018-08-05 00:00:00"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "region": {
                                                                 "type": "object",
@@ -2140,9 +2124,7 @@
                                                                         "examples": [
                                                                             "23"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     }
                                                                 }
                                                             }
@@ -2170,9 +2152,7 @@
                                                                 "examples": [
                                                                     "A111AA196"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "date": {
                                                                 "description": "Вероятная дата",
@@ -2187,9 +2167,7 @@
                                                                 "examples": [
                                                                     "2018-08-05 00:00:00"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             }
                                                         }
                                                     }

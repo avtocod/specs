@@ -17,7 +17,8 @@ const disabled_sources: {[k: string]: string[]} = {
         "customs.base",
         "insurance.dtp",
         "insurance.dtp.basalt",
-        "insurance.registry"
+        "insurance.registry",
+        "owner.taxi.history"
     ]
 };
 // for each group of specifications...

@@ -227,7 +227,7 @@
     {
         "name": "insurance.dtp",
         "description": "Информация о ДТП из РСА (европротоколы)",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "arbitration.history",
@@ -277,7 +277,7 @@
     {
         "name": "insurance.dtp.basalt",
         "description": "Информация о ДТП (европротоколы)",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "fines.registry",
@@ -317,7 +317,7 @@
     {
         "name": "insurance.registry",
         "description": "Реестр европротоколов",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "fssp.base.executive",

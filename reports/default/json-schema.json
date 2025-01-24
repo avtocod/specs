@@ -10305,9 +10305,6 @@
                                         "2019-05-16 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "insurance.dtp",
-                                        "insurance.dtp.basalt",
-                                        "insurance.registry",
                                         "insurance.vehicle.registry"
                                     ]
                                 }
@@ -10337,9 +10334,6 @@
                                                     "2010-02-10 18:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10359,9 +10353,6 @@
                                                     "АСКО-Страхование"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10381,9 +10372,6 @@
                                                     "XXX"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             },
@@ -10397,9 +10385,6 @@
                                                     "0023231246"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10423,9 +10408,6 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10454,9 +10436,6 @@
                     "fillable_by": [
                         "gibdd.dtp",
                         "dtp.registry",
-                        "insurance.dtp",
-                        "insurance.dtp.basalt",
-                        "insurance.registry",
                         "insurance.vehicle.registry",
                         "gibdd.stat.registry"
                     ]

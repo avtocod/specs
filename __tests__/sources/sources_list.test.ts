@@ -12,7 +12,8 @@ const disabled_sources: {[k: string]: string[]} = {
         "references.transdekra",
         "rsaosago.base.ext",
         "gibdd.diagnostic.cards",
-        'references.oats'
+        "references.oats",
+        "customs.base"
     ]
 };
 // for each group of specifications...

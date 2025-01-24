@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Source `fssp.base`
+
+### Changed
+
+- Disabled source with name `customs.base`
+- Field `additional_info.vehicle.owner.enforcement_proceedings.has_proceedings` not fillable by `fssp.base` anymore
+- Field `tech_data.brand.name.original` not fillable by `customs.base` anymore
+- Fields `identifiers.*` not fillable by `customs.base` anymore
+- Fields `identifiers_masked.*` not fillable by `customs.base` anymore
+- Fields `tech_data.*` not fillable by `customs.base` anymore
+- Fields `customs.history.*` not fillable by `customs.base` anymore
+- Fields `mileages.items[].*` not fillable by `customs.base` anymore
+
 ## v3.161.0
 
 ### Changed

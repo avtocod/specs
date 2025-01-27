@@ -18,8 +18,7 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -87,8 +86,7 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -108,8 +106,7 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -143,8 +140,7 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -212,8 +208,7 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -233,8 +228,7 @@
             "eaisto.registry",
             "base.registry.retry",
             "eaisto.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -268,7 +262,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "customs.base",
             "gibdd.eaisto",
             "base.alt",
             "regactions.registry",
@@ -334,7 +327,6 @@
             "gibdd.diagnostic.cards",
             "base.basalt",
             "eaisto.registry",
-            "customs.base",
             "vin.decoder"
         ]
     },
@@ -430,8 +422,7 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "base.alt",
-            "customs.base"
+            "base.alt"
         ]
     },
     {
@@ -450,7 +441,6 @@
             "eaisto.registry",
             "regactions.registry",
             "gibdd.history.registry",
-            "customs.base",
             "vin.decoder"
         ]
     },
@@ -475,7 +465,6 @@
         "fillable_by": [
             "base",
             "base.ext",
-            "customs.base",
             "base.alt",
             "base.basalt",
             "regactions.registry",
@@ -494,7 +483,6 @@
             "base.ext",
             "base.alt",
             "base.basalt",
-            "customs.base",
             "regactions.registry",
             "gibdd.history.registry",
             "vin.decoder"
@@ -512,8 +500,7 @@
             "base.alt",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -527,8 +514,7 @@
             "base.ext",
             "base.basalt",
             "base.alt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -545,7 +531,6 @@
             "base.alt",
             "regactions.registry",
             "gibdd.history.registry",
-            "customs.base",
             "vin.decoder"
         ]
     },
@@ -565,7 +550,6 @@
             "base.registry",
             "base.registry.retry",
             "gibdd.history.registry",
-            "customs.base",
             "vin.decoder"
         ]
     },
@@ -584,7 +568,6 @@
             "base.registry",
             "base.registry.retry",
             "gibdd.history.registry",
-            "customs.base",
             "vin.decoder"
         ]
     },
@@ -599,8 +582,7 @@
             "base.ext",
             "base.basalt",
             "regactions.registry",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -615,8 +597,7 @@
             "gibdd.eaisto",
             "base.basalt",
             "base.alt",
-            "regactions.registry",
-            "customs.base"
+            "regactions.registry"
         ]
     },
     {
@@ -633,8 +614,7 @@
             "base.basalt",
             "regactions.registry",
             "base.registry",
-            "base.registry.retry",
-            "customs.base"
+            "base.registry.retry"
         ]
     },
     {
@@ -674,8 +654,7 @@
             "base.ext",
             "base.alt",
             "base.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -689,8 +668,7 @@
             "base.ext",
             "base.alt",
             "base.basalt",
-            "gibdd.history.registry",
-            "customs.base"
+            "gibdd.history.registry"
         ]
     },
     {
@@ -897,7 +875,6 @@
             "base",
             "base.ext",
             "gibdd.history",
-            "customs.base",
             "gibdd.eaisto",
             "base.alt",
             "base.basalt",
@@ -975,9 +952,7 @@
         "types": [
             "boolean"
         ],
-        "fillable_by": [
-            "fssp.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.geo",
@@ -998,9 +973,7 @@
         "types": [
             "boolean"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.actuality.date",
@@ -1008,9 +981,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.reg_num",
@@ -1018,9 +989,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.brand_name_original",
@@ -1028,9 +997,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].vehicle.model_name_original",
@@ -1038,9 +1005,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].full_number",
@@ -1048,9 +1013,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].number",
@@ -1058,9 +1021,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].issued",
@@ -1068,9 +1029,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.taxi_licenses.items[].region.code",
@@ -1078,9 +1037,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.probable_use.items[].reg_num",
@@ -1088,9 +1045,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.owner.taxi_history.probable_use.items[].date",
@@ -1098,9 +1053,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "owner.taxi.history"
-        ]
+        "fillable_by": []
     },
     {
         "path": "additional_info.vehicle.sts.date.receive",
@@ -3649,9 +3602,6 @@
             "string"
         ],
         "fillable_by": [
-            "insurance.dtp",
-            "insurance.dtp.basalt",
-            "insurance.registry",
             "insurance.vehicle.registry"
         ]
     },
@@ -3662,9 +3612,6 @@
             "string"
         ],
         "fillable_by": [
-            "insurance.dtp",
-            "insurance.dtp.basalt",
-            "insurance.registry",
             "insurance.vehicle.registry"
         ]
     },
@@ -3675,9 +3622,6 @@
             "string"
         ],
         "fillable_by": [
-            "insurance.dtp",
-            "insurance.dtp.basalt",
-            "insurance.registry",
             "insurance.vehicle.registry"
         ]
     },
@@ -3688,9 +3632,6 @@
             "string"
         ],
         "fillable_by": [
-            "insurance.dtp",
-            "insurance.dtp.basalt",
-            "insurance.registry",
             "insurance.vehicle.registry"
         ]
     },
@@ -3701,9 +3642,6 @@
             "string"
         ],
         "fillable_by": [
-            "insurance.dtp",
-            "insurance.dtp.basalt",
-            "insurance.registry",
             "insurance.vehicle.registry"
         ]
     },
@@ -3714,9 +3652,6 @@
             "string"
         ],
         "fillable_by": [
-            "insurance.dtp",
-            "insurance.dtp.basalt",
-            "insurance.registry",
             "insurance.vehicle.registry"
         ]
     },
@@ -3729,9 +3664,6 @@
         "fillable_by": [
             "gibdd.dtp",
             "dtp.registry",
-            "insurance.dtp",
-            "insurance.dtp.basalt",
-            "insurance.registry",
             "insurance.vehicle.registry",
             "gibdd.stat.registry"
         ]
@@ -4588,7 +4520,6 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
             "customs.fts",
             "base.basalt"
         ]
@@ -4599,9 +4530,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].document.number",
@@ -4610,7 +4539,6 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
             "base.basalt"
         ]
     },
@@ -4621,7 +4549,6 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
             "base.basalt"
         ]
     },
@@ -4631,9 +4558,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].tax.amount",
@@ -4641,9 +4566,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].price.amount",
@@ -4651,9 +4574,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].mileage",
@@ -4661,9 +4582,7 @@
         "types": [
             "integer"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].ecology.type",
@@ -4671,9 +4590,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].specification.type",
@@ -4681,9 +4598,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].specification.raw",
@@ -4691,9 +4606,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].owner.type",
@@ -4701,9 +4614,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].owner.value",
@@ -4711,9 +4622,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].owner.tin",
@@ -4721,9 +4630,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].country.from.name",
@@ -4732,7 +4639,6 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
             "customs.fts",
             "base.basalt"
         ]
@@ -4743,9 +4649,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].country.to.name",
@@ -4753,9 +4657,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].country.to.code",
@@ -4763,9 +4665,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].utilization_tax.status",
@@ -4783,9 +4683,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].sender.tin",
@@ -4793,9 +4691,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].operation.type",
@@ -4803,9 +4699,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].country.original.name",
@@ -4813,9 +4707,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].country.original.code",
@@ -4823,9 +4715,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.items[].manufacturer.name",
@@ -4833,9 +4723,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "customs.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "customs.history.date.update",
@@ -4844,7 +4732,6 @@
             "string"
         ],
         "fillable_by": [
-            "customs.base",
             "customs.fts",
             "base.basalt"
         ]
@@ -5996,7 +5883,6 @@
             "ads.base",
             "service.history",
             "repairs.history",
-            "customs.base",
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
@@ -6019,7 +5905,6 @@
             "ads.base",
             "service.history",
             "repairs.history",
-            "customs.base",
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",
@@ -6050,7 +5935,6 @@
             "ads.base",
             "service.history",
             "repairs.history",
-            "customs.base",
             "images.archive",
             "mileages.registry",
             "service.history.fitservice",

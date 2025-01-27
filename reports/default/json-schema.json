@@ -366,8 +366,7 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         },
                         "reg_num": {
@@ -475,8 +474,7 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         },
                         "chassis": {
@@ -506,8 +504,7 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         }
                     }
@@ -575,8 +572,7 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         },
                         "reg_num": {
@@ -672,8 +668,7 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         },
                         "chassis": {
@@ -700,8 +695,7 @@
                                 "eaisto.registry",
                                 "base.registry.retry",
                                 "eaisto.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         }
                     }
@@ -771,7 +765,6 @@
                                         "base",
                                         "base.ext",
                                         "gibdd.history",
-                                        "customs.base",
                                         "gibdd.eaisto",
                                         "base.alt",
                                         "base.basalt",
@@ -874,7 +867,6 @@
                                         "base.basalt",
                                         "eaisto.registry",
                                         "gibdd.diagnostic.cards",
-                                        "customs.base",
                                         "vin.decoder"
                                     ]
                                 },
@@ -1018,8 +1010,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "base.alt",
-                                        "customs.base"
+                                        "base.alt"
                                     ]
                                 }
                             }
@@ -1046,7 +1037,6 @@
                         "eaisto.registry",
                         "regactions.registry",
                         "gibdd.history.registry",
-                        "customs.base",
                         "vin.decoder"
                     ]
                 },
@@ -1099,7 +1089,6 @@
                                     "fillable_by": [
                                         "base",
                                         "base.ext",
-                                        "customs.base",
                                         "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
@@ -1125,7 +1114,6 @@
                                         "base.ext",
                                         "base.alt",
                                         "base.basalt",
-                                        "customs.base",
                                         "regactions.registry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
@@ -1154,8 +1142,7 @@
                                 "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         },
                         "model": {
@@ -1176,8 +1163,7 @@
                                         "base.ext",
                                         "base.alt",
                                         "base.basalt",
-                                        "gibdd.history.registry",
-                                        "customs.base"
+                                        "gibdd.history.registry"
                                     ]
                                 }
                             }
@@ -1200,7 +1186,6 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry",
-                                "customs.base",
                                 "vin.decoder"
                             ]
                         },
@@ -1228,7 +1213,6 @@
                                         "base.registry",
                                         "base.registry.retry",
                                         "gibdd.history.registry",
-                                        "customs.base",
                                         "vin.decoder"
                                     ]
                                 },
@@ -1251,7 +1235,6 @@
                                         "base.registry",
                                         "base.registry.retry",
                                         "gibdd.history.registry",
-                                        "customs.base",
                                         "vin.decoder"
                                     ]
                                 }
@@ -1279,8 +1262,7 @@
                                                 "base.ext",
                                                 "base.basalt",
                                                 "regactions.registry",
-                                                "gibdd.history.registry",
-                                                "customs.base"
+                                                "gibdd.history.registry"
                                             ]
                                         }
                                     }
@@ -1309,8 +1291,7 @@
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "base.basalt",
-                                "regactions.registry",
-                                "customs.base"
+                                "regactions.registry"
                             ]
                         },
                         "max": {
@@ -1331,8 +1312,7 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "base.registry",
-                                "base.registry.retry",
-                                "customs.base"
+                                "base.registry.retry"
                             ]
                         }
                     }
@@ -1408,8 +1388,7 @@
                                 "base.ext",
                                 "base.alt",
                                 "base.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         },
                         "type_id": {
@@ -1430,8 +1409,7 @@
                                 "base.ext",
                                 "base.alt",
                                 "base.basalt",
-                                "gibdd.history.registry",
-                                "customs.base"
+                                "gibdd.history.registry"
                             ]
                         }
                     }
@@ -1806,7 +1784,6 @@
                                 "base",
                                 "base.ext",
                                 "gibdd.history",
-                                "customs.base",
                                 "gibdd.eaisto",
                                 "base.alt",
                                 "base.basalt",
@@ -1960,9 +1937,7 @@
                                             "examples": [
                                                 true
                                             ],
-                                            "fillable_by": [
-                                                "fssp.base"
-                                            ]
+                                            "fillable_by": []
                                         }
                                     }
                                 },
@@ -2027,9 +2002,7 @@
                                             "examples": [
                                                 false
                                             ],
-                                            "fillable_by": [
-                                                "owner.taxi.history"
-                                            ]
+                                            "fillable_by": []
                                         },
                                         "taxi_licenses": {
                                             "type": "object",
@@ -2052,9 +2025,7 @@
                                                             "examples": [
                                                                 "2018-08-05 00:00:00"
                                                             ],
-                                                            "fillable_by": [
-                                                                "owner.taxi.history"
-                                                            ]
+                                                            "fillable_by": []
                                                         }
                                                     }
                                                 },
@@ -2077,9 +2048,7 @@
                                                                         "examples": [
                                                                             "A111AA196"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     },
                                                                     "brand_name_original": {
                                                                         "description": "Марка автомобиля",
@@ -2090,9 +2059,7 @@
                                                                         "examples": [
                                                                             "Hyundai"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     },
                                                                     "model_name_original": {
                                                                         "description": "Модель автомобиля",
@@ -2103,9 +2070,7 @@
                                                                         "examples": [
                                                                             "Sonata"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     }
                                                                 }
                                                             },
@@ -2118,9 +2083,7 @@
                                                                 "examples": [
                                                                     "91480"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "number": {
                                                                 "description": "Регистрационный номер разрешения",
@@ -2131,9 +2094,7 @@
                                                                 "examples": [
                                                                     "91480"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "issued": {
                                                                 "description": "Дата выдачи разрешения",
@@ -2148,9 +2109,7 @@
                                                                 "examples": [
                                                                     "2018-08-05 00:00:00"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "region": {
                                                                 "type": "object",
@@ -2165,9 +2124,7 @@
                                                                         "examples": [
                                                                             "23"
                                                                         ],
-                                                                        "fillable_by": [
-                                                                            "owner.taxi.history"
-                                                                        ]
+                                                                        "fillable_by": []
                                                                     }
                                                                 }
                                                             }
@@ -2195,9 +2152,7 @@
                                                                 "examples": [
                                                                     "A111AA196"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             },
                                                             "date": {
                                                                 "description": "Вероятная дата",
@@ -2212,9 +2167,7 @@
                                                                 "examples": [
                                                                     "2018-08-05 00:00:00"
                                                                 ],
-                                                                "fillable_by": [
-                                                                    "owner.taxi.history"
-                                                                ]
+                                                                "fillable_by": []
                                                             }
                                                         }
                                                     }
@@ -6399,7 +6352,6 @@
                                                     "2016-04-05 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base",
                                                     "customs.fts",
                                                     "base.basalt"
                                                 ]
@@ -6419,9 +6371,7 @@
                                                 "examples": [
                                                     "Таможенная выписка"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "number": {
                                                 "description": "Номер документа (декларации)",
@@ -6433,7 +6383,6 @@
                                                     "50302382\/017119\/0003860"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base",
                                                     "base.basalt"
                                                 ]
                                             }
@@ -6453,7 +6402,6 @@
                                                     "ТАМОЖЕННОЕ УПРАВЛЕНИЕ"
                                                 ],
                                                 "fillable_by": [
-                                                    "customs.base",
                                                     "base.basalt"
                                                 ]
                                             }
@@ -6472,9 +6420,7 @@
                                                 "examples": [
                                                     "фуксия"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6491,9 +6437,7 @@
                                                 "examples": [
                                                     45690
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6510,9 +6454,7 @@
                                                 "examples": [
                                                     117400
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6525,9 +6467,7 @@
                                         "examples": [
                                             120
                                         ],
-                                        "fillable_by": [
-                                            "customs.base"
-                                        ]
+                                        "fillable_by": []
                                     },
                                     "ecology": {
                                         "type": "object",
@@ -6542,9 +6482,7 @@
                                                 "examples": [
                                                     "ЕВРО 0"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6561,9 +6499,7 @@
                                                 "examples": [
                                                     "Honda CR-X"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "raw": {
                                                 "description": "Спецификация, сырая строка",
@@ -6574,9 +6510,7 @@
                                                 "examples": [
                                                     "ЛЕГ.А\\\/М HONDA CR-X 3OZ53\/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6601,9 +6535,7 @@
                                                 "examples": [
                                                     "LEGAL"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "value": {
                                                 "description": "Владелец ТС",
@@ -6614,9 +6546,7 @@
                                                 "examples": [
                                                     "ЗАО ВекторРечПив"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "tin": {
                                                 "description": "ИНН владельца ТС",
@@ -6627,9 +6557,7 @@
                                                 "examples": [
                                                     "1363519987"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6651,7 +6579,6 @@
                                                             "Бразилия"
                                                         ],
                                                         "fillable_by": [
-                                                            "customs.base",
                                                             "customs.fts",
                                                             "base.basalt"
                                                         ]
@@ -6665,9 +6592,7 @@
                                                         "examples": [
                                                             "BR"
                                                         ],
-                                                        "fillable_by": [
-                                                            "customs.base"
-                                                        ]
+                                                        "fillable_by": []
                                                     }
                                                 }
                                             },
@@ -6684,9 +6609,7 @@
                                                         "examples": [
                                                             "Россия"
                                                         ],
-                                                        "fillable_by": [
-                                                            "customs.base"
-                                                        ]
+                                                        "fillable_by": []
                                                     },
                                                     "code": {
                                                         "description": "Код страны импортера",
@@ -6697,9 +6620,7 @@
                                                         "examples": [
                                                             "RU"
                                                         ],
-                                                        "fillable_by": [
-                                                            "customs.base"
-                                                        ]
+                                                        "fillable_by": []
                                                     }
                                                 }
                                             },
@@ -6716,9 +6637,7 @@
                                                         "examples": [
                                                             "Россия"
                                                         ],
-                                                        "fillable_by": [
-                                                            "customs.base"
-                                                        ]
+                                                        "fillable_by": []
                                                     },
                                                     "code": {
                                                         "description": "Код страны происхождения",
@@ -6729,9 +6648,7 @@
                                                         "examples": [
                                                             "RU"
                                                         ],
-                                                        "fillable_by": [
-                                                            "customs.base"
-                                                        ]
+                                                        "fillable_by": []
                                                     }
                                                 }
                                             }
@@ -6774,9 +6691,7 @@
                                                 "examples": [
                                                     "ООО Автоторг"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "tin": {
                                                 "description": "ИНН отправителя",
@@ -6787,9 +6702,7 @@
                                                 "examples": [
                                                     "1363519987"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6808,9 +6721,7 @@
                                                     "IMPORT",
                                                     "REEXPORT"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -6827,9 +6738,7 @@
                                                 "examples": [
                                                     "AUDI AG"
                                                 ],
-                                                "fillable_by": [
-                                                    "customs.base"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     }
@@ -6853,7 +6762,6 @@
                                         "2020-02-11 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "customs.base",
                                         "customs.fts",
                                         "base.basalt"
                                     ]
@@ -10375,9 +10283,6 @@
                                         "2019-05-16 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "insurance.dtp",
-                                        "insurance.dtp.basalt",
-                                        "insurance.registry",
                                         "insurance.vehicle.registry"
                                     ]
                                 }
@@ -10407,9 +10312,6 @@
                                                     "2010-02-10 18:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10429,9 +10331,6 @@
                                                     "АСКО-Страхование"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10451,9 +10350,6 @@
                                                     "XXX"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             },
@@ -10467,9 +10363,6 @@
                                                     "0023231246"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10493,9 +10386,6 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "insurance.dtp",
-                                                    "insurance.dtp.basalt",
-                                                    "insurance.registry",
                                                     "insurance.vehicle.registry"
                                                 ]
                                             }
@@ -10524,9 +10414,6 @@
                     "fillable_by": [
                         "gibdd.dtp",
                         "dtp.registry",
-                        "insurance.dtp",
-                        "insurance.dtp.basalt",
-                        "insurance.registry",
                         "insurance.vehicle.registry",
                         "gibdd.stat.registry"
                     ]
@@ -11631,7 +11518,6 @@
                                             "ads.base",
                                             "service.history",
                                             "repairs.history",
-                                            "customs.base",
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",
@@ -11660,7 +11546,6 @@
                                     "ads.base",
                                     "service.history",
                                     "repairs.history",
-                                    "customs.base",
                                     "images.archive",
                                     "mileages.registry",
                                     "service.history.fitservice",
@@ -11687,7 +11572,6 @@
                                             "ads.base",
                                             "service.history",
                                             "repairs.history",
-                                            "customs.base",
                                             "images.archive",
                                             "service.history.fitservice",
                                             "service.history.filter",
@@ -11726,7 +11610,6 @@
                                             "ads.base",
                                             "service.history",
                                             "repairs.history",
-                                            "customs.base",
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",

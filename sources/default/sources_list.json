@@ -67,7 +67,7 @@
     {
         "name": "customs.base",
         "description": "Данные о ТС содержащиеся в таможенной декларации",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "images.avtonomer",
@@ -205,11 +205,6 @@
         "enabled": true
     },
     {
-        "name": "fssp.base",
-        "description": "Данные об исполнительных производствах в базе ФССП",
-        "enabled": true
-    },
-    {
         "name": "rsaosago.base.ext",
         "description": "Расширенная информация о полисах ОСАГО оформленных на ТС, по данным РСА",
         "enabled": false
@@ -232,7 +227,7 @@
     {
         "name": "insurance.dtp",
         "description": "Информация о ДТП из РСА (европротоколы)",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "arbitration.history",
@@ -282,7 +277,7 @@
     {
         "name": "insurance.dtp.basalt",
         "description": "Информация о ДТП (европротоколы)",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "fines.registry",
@@ -322,7 +317,7 @@
     {
         "name": "insurance.registry",
         "description": "Реестр европротоколов",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "fssp.base.executive",
@@ -342,7 +337,7 @@
     {
         "name": "owner.taxi.history",
         "description": "История такси владельца ТС",
-        "enabled": true
+        "enabled": false
     },
     {
         "name": "repairs.history.registry",

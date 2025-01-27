@@ -11,8 +11,14 @@ const disabled_sources: {[k: string]: string[]} = {
         "ramiosago.base",
         "references.transdekra",
         "rsaosago.base.ext",
+        "rsaosago.base.ext",
         "gibdd.diagnostic.cards",
-        'references.oats'
+        "references.oats",
+        "customs.base",
+        "insurance.dtp",
+        "insurance.dtp.basalt",
+        "insurance.registry",
+        "owner.taxi.history"
     ]
 };
 // for each group of specifications...

@@ -355,16 +355,11 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards",
-                                "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -387,12 +382,8 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
-                                "base.registry",
                                 "base.basalt",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -415,8 +406,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -438,10 +427,8 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "base.basalt",
                                 "gibdd.history",
-                                "base.alt",
                                 "gibdd.history.registry",
                                 "elpts.online"
                             ]
@@ -464,15 +451,10 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards",
-                                "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -495,14 +477,9 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards",
                                 "base.basalt",
-                                "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -529,7 +506,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -561,16 +537,11 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards",
-                                "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -590,12 +561,8 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
-                                "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -615,8 +582,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -635,10 +600,8 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "base.basalt",
                                 "gibdd.history",
-                                "base.alt",
                                 "gibdd.history.registry",
                                 "elpts.online"
                             ]
@@ -658,15 +621,10 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards",
-                                "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -686,14 +644,9 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "regactions.registry",
-                                "gibdd.diagnostic.cards",
                                 "base.basalt",
-                                "base.registry",
                                 "eaisto.registry",
-                                "base.registry.retry",
                                 "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -763,16 +716,11 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "gibdd.history",
                                         "gibdd.eaisto",
-                                        "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
-                                        "gibdd.diagnostic.cards",
-                                        "base.registry",
                                         "eaisto.registry",
-                                        "base.registry.retry",
                                         "gibdd.history.registry",
                                         "customs.fts",
                                         "vin.decoder"
@@ -866,7 +814,6 @@
                                         "gibdd.eaisto",
                                         "base.basalt",
                                         "eaisto.registry",
-                                        "gibdd.diagnostic.cards",
                                         "vin.decoder"
                                     ]
                                 },
@@ -904,10 +851,8 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "base.basalt",
                                 "gibdd.history",
-                                "base.alt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -926,8 +871,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
                                 "gibdd.history",
                                 "gibdd.history.registry"
@@ -944,7 +887,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "base.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -970,9 +912,7 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history",
-                                "base.alt",
                                 "regactions.registry"
                             ]
                         },
@@ -991,9 +931,7 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "gibdd.history",
-                                        "base.alt",
                                         "base.basalt",
                                         "gibdd.history.registry"
                                     ]
@@ -1008,9 +946,7 @@
                                         "Зеленый"
                                     ],
                                     "fillable_by": [
-                                        "base",
-                                        "base.ext",
-                                        "base.alt"
+                                        "base"
                                     ]
                                 }
                             }
@@ -1029,10 +965,8 @@
                     ],
                     "fillable_by": [
                         "base",
-                        "base.ext",
                         "gibdd.eaisto",
                         "gibdd.history",
-                        "base.alt",
                         "base.basalt",
                         "eaisto.registry",
                         "regactions.registry",
@@ -1058,9 +992,7 @@
                                 "LFPVBM6819793"
                             ],
                             "fillable_by": [
-                                "base",
-                                "base.ext",
-                                "base.alt"
+                                "base"
                             ]
                         }
                     }
@@ -1088,8 +1020,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
                                         "gibdd.history.registry",
@@ -1111,8 +1041,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
                                         "gibdd.history.registry",
@@ -1138,8 +1066,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry"
@@ -1160,8 +1086,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "base.basalt",
                                         "gibdd.history.registry"
                                     ]
@@ -1180,9 +1104,7 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry",
@@ -1205,13 +1127,9 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "gibdd.history",
-                                        "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
-                                        "base.registry",
-                                        "base.registry.retry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
                                     ]
@@ -1228,12 +1146,8 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "gibdd.history",
-                                        "base.alt",
                                         "base.basalt",
-                                        "base.registry",
-                                        "base.registry.retry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
                                     ]
@@ -1259,7 +1173,6 @@
                                             ],
                                             "fillable_by": [
                                                 "base",
-                                                "base.ext",
                                                 "base.basalt",
                                                 "regactions.registry",
                                                 "gibdd.history.registry"
@@ -1287,9 +1200,7 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.eaisto",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry"
                             ]
@@ -1306,13 +1217,9 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.eaisto",
-                                "base.alt",
                                 "base.basalt",
-                                "regactions.registry",
-                                "base.registry",
-                                "base.registry.retry"
+                                "regactions.registry"
                             ]
                         }
                     }
@@ -1336,7 +1243,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "base.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -1356,7 +1262,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "base.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -1385,8 +1290,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -1406,8 +1309,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
                                 "gibdd.history.registry"
                             ]
@@ -1433,8 +1334,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry",
@@ -1456,8 +1355,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry",
@@ -1475,7 +1372,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "gibdd.history.registry",
                                 "vin.decoder"
                             ]
@@ -1782,14 +1678,11 @@
                             "fillable_by": [
                                 "references.base",
                                 "base",
-                                "base.ext",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
                                 "eaisto.registry",
-                                "gibdd.diagnostic.cards",
                                 "gibdd.history.registry",
                                 "customs.fts",
                                 "vin.decoder"
@@ -1843,13 +1736,9 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "gibdd.eaisto",
-                                        "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
-                                        "base.registry",
-                                        "base.registry.retry",
                                         "gibdd.history.registry"
                                     ]
                                 },
@@ -1864,12 +1753,9 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "gibdd.eaisto",
                                         "regactions.registry",
-                                        "base.registry",
                                         "base.basalt",
-                                        "base.registry.retry",
                                         "gibdd.history.registry"
                                     ]
                                 }
@@ -1898,8 +1784,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "regactions.registry"
                                     ]
                                 },
@@ -1918,9 +1802,7 @@
                                         "9123456789"
                                     ],
                                     "fillable_by": [
-                                        "base",
-                                        "base.ext",
-                                        "base.alt"
+                                        "base"
                                     ]
                                 },
                                 "enforcement_proceedings": {
@@ -1972,9 +1854,7 @@
                                                                 null
                                                             ],
                                                             "fillable_by": [
-                                                                "base",
-                                                                "base.ext",
-                                                                "base.alt"
+                                                                "base"
                                                             ]
                                                         }
                                                     }
@@ -1984,8 +1864,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "regactions.registry"
                                     ]
                                 },
@@ -2200,9 +2078,7 @@
                                                 "2018-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
-                                                "base",
-                                                "base.ext",
-                                                "base.alt"
+                                                "base"
                                             ]
                                         }
                                     }
@@ -2217,8 +2093,7 @@
                                         false
                                     ],
                                     "fillable_by": [
-                                        "base",
-                                        "base.ext"
+                                        "base"
                                     ]
                                 },
                                 "number": {
@@ -2237,8 +2112,6 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "base.basalt",
                                         "gibdd.history.registry",
                                         "elpts.online"
@@ -2286,8 +2159,6 @@
                                             "fillable_by": [
                                                 "gibdd.history",
                                                 "base",
-                                                "base.ext",
-                                                "base.alt",
                                                 "gibdd.history.registry"
                                             ]
                                         }
@@ -2317,9 +2188,7 @@
                                                 "2021-08-05 00:00:00"
                                             ],
                                             "fillable_by": [
-                                                "base",
-                                                "base.ext",
-                                                "base.alt"
+                                                "base"
                                             ]
                                         }
                                     }
@@ -2340,8 +2209,7 @@
                                         true
                                     ],
                                     "fillable_by": [
-                                        "base",
-                                        "base.ext"
+                                        "base"
                                     ]
                                 }
                             }
@@ -2356,8 +2224,7 @@
                                 "type": "string"
                             },
                             "fillable_by": [
-                                "base",
-                                "base.ext"
+                                "base"
                             ]
                         },
                         "segment": {
@@ -2408,8 +2275,7 @@
                                 true
                             ],
                             "fillable_by": [
-                                "base",
-                                "base.ext"
+                                "base"
                             ]
                         },
                         "utilization_tax": {
@@ -2515,7 +2381,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "base.basalt",
                                         "eaisto.registry"
                                     ]
@@ -2531,7 +2396,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.ext",
                                         "base.basalt",
                                         "eaisto.registry"
                                     ]
@@ -3441,8 +3305,6 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext",
-                                            "base.alt",
                                             "base.basalt",
                                             "regactions.registry",
                                             "gibdd.history.registry"
@@ -3463,8 +3325,6 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext",
-                                            "base.alt",
                                             "regactions.registry",
                                             "gibdd.history.registry"
                                         ]
@@ -3486,8 +3346,6 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext",
-                                    "base.alt",
                                     "base.basalt",
                                     "gibdd.history.registry"
                                 ]
@@ -3511,8 +3369,6 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext",
-                                            "base.alt",
                                             "base.basalt",
                                             "gibdd.history.registry"
                                         ]
@@ -3532,8 +3388,6 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext",
-                                            "base.alt",
                                             "gibdd.history.registry"
                                         ]
                                     }
@@ -3562,8 +3416,6 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext",
-                                            "base.alt",
                                             "regactions.registry",
                                             "gibdd.history.registry"
                                         ]
@@ -3583,8 +3435,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
                                                     "regactions.registry"
                                                 ]
                                             },
@@ -3599,8 +3449,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
                                                     "regactions.registry"
                                                 ]
                                             },
@@ -3618,9 +3466,7 @@
                                                     "773301001"
                                                 ],
                                                 "fillable_by": [
-                                                    "base",
-                                                    "base.ext",
-                                                    "base.alt"
+                                                    "base"
                                                 ]
                                             },
                                             "ogrn": {
@@ -3637,9 +3483,7 @@
                                                     "1053600591197"
                                                 ],
                                                 "fillable_by": [
-                                                    "base",
-                                                    "base.ext",
-                                                    "base.alt"
+                                                    "base"
                                                 ]
                                             }
                                         }
@@ -3659,9 +3503,7 @@
                                             "9123456789"
                                         ],
                                         "fillable_by": [
-                                            "base",
-                                            "base.ext",
-                                            "base.alt"
+                                            "base"
                                         ]
                                     }
                                 }
@@ -3676,9 +3518,7 @@
                                     "11"
                                 ],
                                 "fillable_by": [
-                                    "base.ext",
                                     "base",
-                                    "base.alt",
                                     "base.basalt",
                                     "regactions.registry",
                                     "gibdd.history.registry"
@@ -3694,9 +3534,7 @@
                                     "Учет нарушений ПДД"
                                 ],
                                 "fillable_by": [
-                                    "base.ext",
                                     "base",
-                                    "base.alt",
                                     "base.basalt",
                                     "regactions.registry",
                                     "gibdd.history.registry"
@@ -3714,8 +3552,6 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext",
-                                    "base.alt",
                                     "regactions.registry"
                                 ]
                             },
@@ -3740,8 +3576,7 @@
                                     null
                                 ],
                                 "fillable_by": [
-                                    "base",
-                                    "base.ext"
+                                    "base"
                                 ]
                             },
                             "usage_allowed": {
@@ -3755,7 +3590,6 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext",
                                     "base.basalt",
                                     "gibdd.history.registry"
                                 ]
@@ -3806,8 +3640,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
-                                "base.alt",
                                 "base.basalt",
                                 "regactions.registry",
                                 "gibdd.history.registry"
@@ -3831,8 +3663,7 @@
                         null
                     ],
                     "fillable_by": [
-                        "base",
-                        "base.ext"
+                        "base"
                     ]
                 }
             }
@@ -3866,7 +3697,6 @@
                                                     "084/08/617"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             },
@@ -3879,9 +3709,7 @@
                                                 "examples": [
                                                     "ХAY1E37S50167"
                                                 ],
-                                                "fillable_by": [
-                                                    "repairs.history"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -3903,7 +3731,6 @@
                                                     "2010-12-17"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             }
@@ -3920,7 +3747,6 @@
                                             54900
                                         ],
                                         "fillable_by": [
-                                            "repairs.history",
                                             "repairs.history.registry"
                                         ]
                                     },
@@ -3939,7 +3765,6 @@
                                                     395280
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             },
@@ -3954,7 +3779,6 @@
                                                     45910
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             },
@@ -3969,7 +3793,6 @@
                                                     339670
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             },
@@ -3984,7 +3807,6 @@
                                                     9700
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             }
@@ -4004,7 +3826,6 @@
                                                     "OPEL [V] [61] [R]"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             },
@@ -4018,7 +3839,6 @@
                                                     "MONTEREY [V] [XA] [S] [36] [M]"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             },
@@ -4032,7 +3852,6 @@
                                                     "Monterey"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             }
@@ -4052,7 +3871,6 @@
                                                     "Ресо-Гарантия"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             }
@@ -4072,7 +3890,6 @@
                                                     "ООО АвтоАсбоцемент"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             }
@@ -4095,7 +3912,6 @@
                                             "KASKO"
                                         ],
                                         "fillable_by": [
-                                            "repairs.history",
                                             "repairs.history.registry"
                                         ]
                                     },
@@ -4121,7 +3937,6 @@
                                                     "Assessor"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             },
@@ -4141,7 +3956,6 @@
                                                     "Оценщик"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ]
                                             }
@@ -4167,7 +3981,6 @@
                                                                 "Запасная часть для частичной замены"
                                                             ],
                                                             "fillable_by": [
-                                                                "repairs.history",
                                                                 "repairs.history.registry"
                                                             ]
                                                         },
@@ -4188,7 +4001,6 @@
                                                                         "LE4"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "repairs.history",
                                                                         "repairs.history.registry"
                                                                     ]
                                                                 },
@@ -4202,7 +4014,6 @@
                                                                         "Окраска новой детали K1N (ступень AZT окраски пластиковой детали)"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "repairs.history",
                                                                         "repairs.history.registry"
                                                                     ]
                                                                 }
@@ -4218,7 +4029,6 @@
                                                     "null"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history",
                                                     "repairs.history.registry"
                                                 ],
                                                 "examples": [
@@ -4248,7 +4058,6 @@
                                         "2021-01-11 12:54:00"
                                     ],
                                     "fillable_by": [
-                                        "repairs.history",
                                         "repairs.history.registry"
                                     ]
                                 }
@@ -4287,9 +4096,7 @@
                                         "examples": [
                                             132222
                                         ],
-                                        "fillable_by": [
-                                            "gots.history"
-                                        ]
+                                        "fillable_by": []
                                     },
                                     "damage": {
                                         "type": "object",
@@ -4304,9 +4111,7 @@
                                                 "examples": [
                                                     20562.5
                                                 ],
-                                                "fillable_by": [
-                                                    "gots.history"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "descriptions": {
                                                 "description": "Описание повреждений ТС",
@@ -4324,9 +4129,7 @@
                                                             "examples": [
                                                                 "front"
                                                             ],
-                                                            "fillable_by": [
-                                                                "gots.history"
-                                                            ]
+                                                            "fillable_by": []
                                                         },
                                                         "value": {
                                                             "description": "Описание повреждений ТС",
@@ -4337,9 +4140,7 @@
                                                             "examples": [
                                                                 "Передняя часть"
                                                             ],
-                                                            "fillable_by": [
-                                                                "gots.history"
-                                                            ]
+                                                            "fillable_by": []
                                                         }
                                                     }
                                                 }
@@ -4365,9 +4166,7 @@
                                         "examples": [
                                             "2014-08-15 00:00:00"
                                         ],
-                                        "fillable_by": [
-                                            "gots.history"
-                                        ]
+                                        "fillable_by": []
                                     },
                                     "number": {
                                         "description": "Внутренний номер аукциона",
@@ -4379,9 +4178,7 @@
                                             "2014-08-15.AON.1201408151047029",
                                             "null"
                                         ],
-                                        "fillable_by": [
-                                            "gots.history"
-                                        ]
+                                        "fillable_by": []
                                     },
                                     "client": {
                                         "type": "object",
@@ -4397,9 +4194,7 @@
                                                     "ЗАО МАКС",
                                                     "null"
                                                 ],
-                                                "fillable_by": [
-                                                    "gots.history"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "postal_code": {
                                                 "description": "Почтовый индекс клиента разместившего лот",
@@ -4411,9 +4206,7 @@
                                                     "115184",
                                                     "null"
                                                 ],
-                                                "fillable_by": [
-                                                    "gots.history"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "city": {
                                                 "description": "Город клиента разместившего лот",
@@ -4425,9 +4218,7 @@
                                                     "Москва",
                                                     "null"
                                                 ],
-                                                "fillable_by": [
-                                                    "gots.history"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "address_line": {
                                                 "description": "Адрес клиента разместившего лот",
@@ -4439,9 +4230,7 @@
                                                     "Большая Ордынка 50",
                                                     "null"
                                                 ],
-                                                "fillable_by": [
-                                                    "gots.history"
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "phone_number": {
                                                 "description": "Телефонный номер клиента разместившего лот",
@@ -4453,9 +4242,7 @@
                                                     "91234567890",
                                                     "null"
                                                 ],
-                                                "fillable_by": [
-                                                    "gots.history"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     }
@@ -4480,9 +4267,7 @@
                             "examples": [
                                 "2020-12-16 22:11:00"
                             ],
-                            "fillable_by": [
-                                "gots.history"
-                            ]
+                            "fillable_by": []
                         }
                     }
                 }
@@ -4634,9 +4419,7 @@
                                                 65.31
                                             ],
                                             "fillable_by": [
-                                                "base",
-                                                "base.ext",
-                                                "base.alt"
+                                                "base"
                                             ]
                                         }
                                     }
@@ -4987,7 +4770,6 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
                                             "fines.registry.batch",
@@ -5034,7 +4816,6 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
                                             "fines.registry.batch",
@@ -5055,7 +4836,6 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
                                             "fines.registry.batch",
@@ -5097,7 +4877,6 @@
                                     "fines.base",
                                     "gibdd.fines",
                                     "fines.alt",
-                                    "fines.madiampp",
                                     "fines.base.ext",
                                     "fines.registry",
                                     "fines.registry.batch",
@@ -5205,7 +4984,6 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
                                             "fines.registry.batch",
@@ -5233,7 +5011,6 @@
                                             "fines.base",
                                             "gibdd.fines",
                                             "fines.alt",
-                                            "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
                                             "fines.registry.batch",
@@ -5262,7 +5039,6 @@
                                                     "fines.base",
                                                     "gibdd.fines",
                                                     "fines.alt",
-                                                    "fines.madiampp",
                                                     "fines.base.ext",
                                                     "fines.registry",
                                                     "fines.registry.batch",
@@ -5306,7 +5082,6 @@
                                     "fines.base",
                                     "gibdd.fines",
                                     "fines.alt",
-                                    "fines.madiampp",
                                     "fines.base.ext",
                                     "fines.registry",
                                     "fines.registry.batch",
@@ -5535,7 +5310,6 @@
                                         ],
                                         "fillable_by": [
                                             "fines.base",
-                                            "fines.madiampp",
                                             "fines.base.ext",
                                             "fines.registry",
                                             "fines.registry.batch",
@@ -5765,7 +5539,6 @@
                         "fines.base",
                         "gibdd.fines",
                         "fines.alt",
-                        "fines.madiampp",
                         "fines.base.ext",
                         "fines.registry",
                         "fines.registry.batch",
@@ -5793,7 +5566,6 @@
                                 "fines.base",
                                 "gibdd.fines",
                                 "fines.alt",
-                                "fines.madiampp",
                                 "fines.base.ext",
                                 "fines.registry",
                                 "fines.registry.batch",
@@ -5840,7 +5612,6 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext",
                                             "leasing.registry"
                                         ]
                                     }
@@ -5861,7 +5632,6 @@
                                         ],
                                         "fillable_by": [
                                             "base",
-                                            "base.ext",
                                             "leasing.registry"
                                         ]
                                     }
@@ -5886,7 +5656,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
                                                     "leasing.registry"
                                                 ]
                                             }
@@ -5905,7 +5674,6 @@
                                 ],
                                 "fillable_by": [
                                     "base",
-                                    "base.ext",
                                     "leasing.registry"
                                 ]
                             },
@@ -6284,7 +6052,6 @@
                     ],
                     "fillable_by": [
                         "base",
-                        "base.ext",
                         "leasing.registry"
                     ]
                 },
@@ -6306,7 +6073,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.ext",
                                 "leasing.registry"
                             ]
                         }
@@ -8151,8 +7917,6 @@
                                         ],
                                         "fillable_by": [
                                             "rsaosago.base",
-                                            "ramiosago.base",
-                                            "ramiosago.base.ext",
                                             "osago.registry"
                                         ]
                                     },
@@ -8171,13 +7935,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             }
@@ -8202,13 +7960,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8227,13 +7979,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8252,8 +7998,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8358,11 +8102,7 @@
                                                     "WITHOUT RESTRICTIONS"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8376,11 +8116,7 @@
                                                     3
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             }
@@ -8401,13 +8137,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8422,13 +8152,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8442,10 +8166,7 @@
                                                     false
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8459,10 +8180,7 @@
                                                     false
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8476,10 +8194,7 @@
                                                     "Выдан страхователю"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             }
@@ -8566,11 +8281,7 @@
                                                     false
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8600,11 +8311,7 @@
                                                             "TAXI"
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     },
@@ -8618,11 +8325,7 @@
                                                             "Такси"
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     }
@@ -8642,11 +8345,7 @@
                                                             12000
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     },
@@ -8664,11 +8363,7 @@
                                                             "RUB"
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     }
@@ -8684,11 +8379,7 @@
                                                     0.95
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8702,11 +8393,7 @@
                                                     false
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8720,11 +8407,7 @@
                                                     false
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             }
@@ -8748,11 +8431,7 @@
                                                             "Skoda Yeti (категория «B»)"
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     },
@@ -8789,11 +8468,7 @@
                                                             "А332АВ177"
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     },
@@ -8811,11 +8486,7 @@
                                                             "EXAMPL0V1N1000000"
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     },
@@ -8833,11 +8504,7 @@
                                                             "KCA275-9673180"
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     }
@@ -8861,11 +8528,7 @@
                                                                     213
                                                                 ],
                                                                 "fillable_by": [
-                                                                    "ramiosago.base",
-                                                                    "ramiosago.base.ext",
                                                                     "rsaosago.base",
-                                                                    "rsaosago.base.ext",
-                                                                    "rsaosago.base.history",
                                                                     "osago.registry"
                                                                 ]
                                                             }
@@ -8887,11 +8550,7 @@
                                                             1233
                                                         ],
                                                         "fillable_by": [
-                                                            "ramiosago.base",
-                                                            "ramiosago.base.ext",
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     }
@@ -8912,8 +8571,6 @@
                                                         ],
                                                         "fillable_by": [
                                                             "rsaosago.base",
-                                                            "rsaosago.base.ext",
-                                                            "rsaosago.base.history",
                                                             "osago.registry"
                                                         ]
                                                     }
@@ -8941,11 +8598,7 @@
                                                     "PERSON"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8963,11 +8616,7 @@
                                                     "2001-01-30"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -8981,11 +8630,7 @@
                                                     "Ива*** Иван"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -9003,11 +8648,7 @@
                                                     "1233423534"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             }
@@ -9033,11 +8674,7 @@
                                                     "PERSON"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -9055,11 +8692,7 @@
                                                     "2001-01-30"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -9073,11 +8706,7 @@
                                                     "Ива*** Иван"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             },
@@ -9095,11 +8724,7 @@
                                                     "1233423534"
                                                 ],
                                                 "fillable_by": [
-                                                    "ramiosago.base",
-                                                    "ramiosago.base.ext",
                                                     "rsaosago.base",
-                                                    "rsaosago.base.ext",
-                                                    "rsaosago.base.history",
                                                     "osago.registry"
                                                 ]
                                             }
@@ -9116,11 +8741,7 @@
                                             }
                                         ],
                                         "fillable_by": [
-                                            "ramiosago.base",
-                                            "ramiosago.base.ext",
                                             "rsaosago.base",
-                                            "rsaosago.base.ext",
-                                            "rsaosago.base.history",
                                             "osago.registry"
                                         ]
                                     }
@@ -9144,14 +8765,8 @@
                                         "2020-07-10 22:10:00"
                                     ],
                                     "fillable_by": [
-                                        "ramiosago.base",
-                                        "ramiosago.base.ext",
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "rsaosago.base",
-                                        "rsaosago.base.ext",
-                                        "rsaosago.base.history",
                                         "osago.registry"
                                     ]
                                 }
@@ -11224,8 +10839,6 @@
                                                 "fillable_by": [
                                                     "gibdd.history",
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
                                                     "base.basalt",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
@@ -11247,8 +10860,6 @@
                                                 "fillable_by": [
                                                     "gibdd.history",
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
                                                     "base.basalt",
                                                     "gibdd.history.registry"
                                                 ]
@@ -11279,8 +10890,6 @@
                                                 "fillable_by": [
                                                     "gibdd.history",
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
                                                     "base.basalt",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
@@ -11301,7 +10910,6 @@
                                                         ],
                                                         "fillable_by": [
                                                             "base",
-                                                            "base.ext",
                                                             "regactions.registry"
                                                         ]
                                                     },
@@ -11320,7 +10928,6 @@
                                                         ],
                                                         "fillable_by": [
                                                             "base",
-                                                            "base.ext",
                                                             "regactions.registry"
                                                         ]
                                                     },
@@ -11338,8 +10945,7 @@
                                                             "773301001"
                                                         ],
                                                         "fillable_by": [
-                                                            "base",
-                                                            "base.ext"
+                                                            "base"
                                                         ]
                                                     },
                                                     "ogrn": {
@@ -11356,8 +10962,7 @@
                                                             "1053600591197"
                                                         ],
                                                         "fillable_by": [
-                                                            "base",
-                                                            "base.ext"
+                                                            "base"
                                                         ]
                                                     }
                                                 }
@@ -11379,8 +10984,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
                                                     "base.basalt",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
@@ -11397,8 +11000,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.ext",
-                                                    "base.alt",
                                                     "base.basalt",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
@@ -11467,8 +11068,6 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "base",
-                                        "base.ext",
-                                        "base.alt",
                                         "base.basalt",
                                         "regactions.registry",
                                         "gibdd.history.registry"
@@ -11517,13 +11116,11 @@
                                             "gibdd.eaisto",
                                             "ads.base",
                                             "service.history",
-                                            "repairs.history",
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",
                                             "service.history.filter",
                                             "service.history.wilgood",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry",
                                             "eaisto.basalt",
                                             "repairs.history.registry"
@@ -11545,13 +11142,11 @@
                                     "gibdd.eaisto",
                                     "ads.base",
                                     "service.history",
-                                    "repairs.history",
                                     "images.archive",
                                     "mileages.registry",
                                     "service.history.fitservice",
                                     "service.history.filter",
                                     "service.history.wilgood",
-                                    "gibdd.diagnostic.cards",
                                     "eaisto.registry",
                                     "eaisto.basalt",
                                     "repairs.history.registry"
@@ -11576,7 +11171,6 @@
                                             "service.history.fitservice",
                                             "service.history.filter",
                                             "service.history.wilgood",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry",
                                             "eaisto.basalt",
                                             null
@@ -11609,13 +11203,11 @@
                                             "gibdd.eaisto",
                                             "ads.base",
                                             "service.history",
-                                            "repairs.history",
                                             "images.archive",
                                             "mileages.registry",
                                             "service.history.fitservice",
                                             "service.history.filter",
                                             "service.history.wilgood",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry",
                                             "eaisto.basalt",
                                             "repairs.history.registry"
@@ -11663,7 +11255,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry",
                                             "eaisto.basalt"
                                         ]
@@ -11683,7 +11274,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry",
                                             "eaisto.basalt"
                                         ]
@@ -11719,7 +11309,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry",
                                             "eaisto.basalt"
                                         ]
@@ -11735,7 +11324,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry",
                                             "eaisto.basalt"
                                         ]
@@ -11757,7 +11345,6 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "gibdd.diagnostic.cards",
                                             "eaisto.registry"
                                         ]
                                     }
@@ -11828,7 +11415,6 @@
                             ],
                             "fillable_by": [
                                 "gibdd.eaisto",
-                                "gibdd.diagnostic.cards",
                                 "eaisto.registry",
                                 "eaisto.basalt"
                             ]
@@ -11871,8 +11457,7 @@
                                             "2013-06-20 00:00:00"
                                         ],
                                         "fillable_by": [
-                                            "base",
-                                            "base.ext"
+                                            "base"
                                         ]
                                     }
                                 }
@@ -11930,8 +11515,7 @@
                         null
                     ],
                     "fillable_by": [
-                        "base",
-                        "base.ext"
+                        "base"
                     ]
                 },
                 "date": {
@@ -11951,8 +11535,7 @@
                                 "2020-11-16 11:10:00"
                             ],
                             "fillable_by": [
-                                "base",
-                                "base.ext"
+                                "base"
                             ]
                         }
                     }

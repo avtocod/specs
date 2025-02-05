@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Sources:
+  - `base.alt`
+  - `base.ext`
+  - `base.registry`
+  - `base.registry.retry`
+  - `fines.madiampp`
+  - `gibdd.diagnostic.cards`
+  - `gots.history`
+  - `ramiosago.base`
+  - `ramiosago.base.ext`
+  - `repairs.history`
+  - `rsaosago.base.ext`
+  - `rsaosago.base.history`
+
 ## v3.162.0
 
 ### Removed

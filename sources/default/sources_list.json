@@ -40,28 +40,8 @@
         "enabled": true
     },
     {
-        "name": "ramiosago.base",
-        "description": "Данные о полисах ОСАГО, оформленных на ТС",
-        "enabled": false
-    },
-    {
-        "name": "ramiosago.base.ext",
-        "description": "Расширенные данные о полисах ОСАГО, оформленных на ТС",
-        "enabled": false
-    },
-    {
         "name": "base",
         "description": "Базовая информация о ТС и данные регистрационных действий",
-        "enabled": true
-    },
-    {
-        "name": "base.ext",
-        "description": "Расширенная информация о ТС и расширенные данные регистрационных действий",
-        "enabled": true
-    },
-    {
-        "name": "base.alt",
-        "description": "Базовая информация о ТС и данные регистрационных действий. Альтернативный источник",
         "enabled": true
     },
     {
@@ -72,11 +52,6 @@
     {
         "name": "images.avtonomer",
         "description": "Фотографии ТС от \"Автономера\"",
-        "enabled": true
-    },
-    {
-        "name": "repairs.history",
-        "description": "Данные расчетов ремонтных работ",
         "enabled": true
     },
     {
@@ -155,11 +130,6 @@
         "enabled": true
     },
     {
-        "name": "fines.madiampp",
-        "description": "Данные о штрафах, оформленных на ТС, по данным МАДИ",
-        "enabled": true
-    },
-    {
         "name": "carsharing.registry",
         "description": "Данные о коммерческом использовании ТС",
         "enabled": true
@@ -200,29 +170,9 @@
         "enabled": true
     },
     {
-        "name": "gots.history",
-        "description": "Размещение ТС на аукционах ГОТС",
-        "enabled": true
-    },
-    {
-        "name": "rsaosago.base.ext",
-        "description": "Расширенная информация о полисах ОСАГО оформленных на ТС, по данным РСА",
-        "enabled": false
-    },
-    {
-        "name": "rsaosago.base.history",
-        "description": "Информация о всех полисах ОСАГО оформленных на ТС, по данным РСА",
-        "enabled": true
-    },
-    {
         "name": "rsaosago.base",
         "description": "Информация о всех полисах ОСАГО оформленных на ТC, по данным РСА",
         "enabled": true
-    },
-    {
-        "name": "gibdd.diagnostic.cards",
-        "description": "Данные о диагностических картах и пробегах ТС из базы ГИБДД",
-        "enabled": false
     },
     {
         "name": "insurance.dtp",
@@ -232,16 +182,6 @@
     {
         "name": "arbitration.history",
         "description": "История судебных дел с участием ТС",
-        "enabled": true
-    },
-    {
-        "name": "base.registry",
-        "description": "Базовая информация о ТС",
-        "enabled": true
-    },
-    {
-        "name": "base.registry.retry",
-        "description": "Базовая информация о ТС",
         "enabled": true
     },
     {

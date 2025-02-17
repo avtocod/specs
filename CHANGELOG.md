@@ -17,7 +17,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Sources:
   - `base.alt`
   - `base.ext`
-  - `base.registry`ё
+  - `base.registry`
   - `base.registry.retry`
   - `fines.madiampp`
   - `gibdd.diagnostic.cards`

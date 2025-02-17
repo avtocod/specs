@@ -17,7 +17,7 @@ install: ## Install all dependencies
 	docker-compose run $(RUN_ARGS) node yarn install
 
 test: ## Execute tests
-	docker-compose run $(RUN_ARGS) node yarn test
+	docker compose run $(RUN_ARGS) node yarn test
 
 shell: ## Start shell into container with node
 	docker-compose run $(RUN_ARGS) node sh

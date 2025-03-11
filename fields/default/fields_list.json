@@ -1912,10 +1912,32 @@
         ]
     },
     {
-        "path": "registration_actions.items[].geo",
-        "description": "Регистрационные действия: Гео-данные места совершения рег. действия",
+        "path": "registration_actions.items[].geo.country",
+        "description": "Регистрационные действия: Страна совершения рег. действия",
         "types": [
-            "object"
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].geo.region",
+        "description": "Регистрационные действия: Регион (область) совершения рег. действия",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].geo.city",
+        "description": "Регистрационные действия: Город совершения рег. действия",
+        "types": [
+            "string"
         ],
         "fillable_by": [
             "base",

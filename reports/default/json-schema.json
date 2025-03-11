@@ -3447,18 +3447,52 @@
                             },
                             "geo": {
                                 "description": "Гео-данные места совершения рег. действия",
-                                "oneOf": [
-                                    {
-                                        "type": "null"
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "country": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "description": "Страна совершения рег. действия",
+                                        "examples": [
+                                            "Россия"
+                                        ],
+                                        "fillable_by": [
+                                            "base",
+                                            "regactions.registry"
+                                        ]
                                     },
-                                    {
-                                        "$ref": "#/definitions/geo_raw_data"
+                                    "region": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "description": "Регион (область) совершения рег. действия",
+                                        "examples": [
+                                            "Пензенская"
+                                        ],
+                                        "fillable_by": [
+                                            "base",
+                                            "regactions.registry"
+                                        ]
+                                    },
+                                    "city": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "description": "Город совершения рег. действия",
+                                        "examples": [
+                                            "Пушкино"
+                                        ],
+                                        "fillable_by": [
+                                            "base",
+                                            "regactions.registry"
+                                        ]
                                     }
-                                ],
-                                "fillable_by": [
-                                    "base",
-                                    "regactions.registry"
-                                ]
+                                }
                             },
                             "attributes": {
                                 "description": "Вероятный признак рег. действия [LEASING, ANNULMENT, ...]",

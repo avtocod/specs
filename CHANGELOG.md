@@ -827,7 +827,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `accidents.insurance.date.update` also fillable by `insurance.dtp.basalt`
 - Field with path `accidents.insurance.items[].date.event` also fillable by `insurance.dtp.basalt`
 - Field with path `accidents.insurance.items[].insurer.name` also fillable by `insurance.dtp.basalt`
-- Field with path `accidents.insurance.items[].policy.series` also fillable by `insurance.dtp.basalt`
+- Field with path `accidents.insurance.items[].policy.series` also fillable by `insurance.dtp.basalt`ага
 - Field with path `accidents.insurance.items[].policy.number` also fillable by `insurance.dtp.basalt`
 - Field with path `accidents.insurance.items[].actuality.date` also fillable by `insurance.dtp.basalt`
 

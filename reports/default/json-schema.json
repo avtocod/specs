@@ -485,31 +485,6 @@
                             ]
                         }
                     }
-                },
-                "manufacture": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "description": "Производственные идентификаторы ТС",
-                    "properties": {
-                        "vin": {
-                            "description": "Производственный VIN код ТС",
-                            "oneOf": [
-                                {
-                                    "type": "null"
-                                },
-                                {
-                                    "$ref": "#/definitions/vin_code"
-                                }
-                            ],
-                            "examples": [
-                                "EXAMPL0V1N1000002"
-                            ],
-                            "fillable_by": [
-                                "base",
-                                "gibdd.history.registry"
-                            ]
-                        }
-                    }
                 }
             }
         },
@@ -1787,24 +1762,6 @@
                                         "regactions.registry"
                                     ]
                                 },
-                                "phone_number": {
-                                    "description": "Номер телефона владельца из открытых источников",
-                                    "oneOf": [
-                                        {
-                                            "type": "null"
-                                        },
-                                        {
-                                            "$ref": "#/definitions/phone_number"
-                                        }
-                                    ],
-                                    "examples": [
-                                        null,
-                                        "9123456789"
-                                    ],
-                                    "fillable_by": [
-                                        "base"
-                                    ]
-                                },
                                 "enforcement_proceedings": {
                                     "type": "object",
                                     "description": "Исполнительные производства",
@@ -2142,27 +2099,6 @@
                                     "fillable_by": [
                                         "elpts.online"
                                     ]
-                                },
-                                "org": {
-                                    "type": "object",
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "name": {
-                                            "description": "Кто выдал паспорт ТС",
-                                            "type": [
-                                                "string",
-                                                "null"
-                                            ],
-                                            "examples": [
-                                                "ОАО СервисКазань"
-                                            ],
-                                            "fillable_by": [
-                                                "gibdd.history",
-                                                "base",
-                                                "gibdd.history.registry"
-                                            ]
-                                        }
-                                    }
                                 }
                             }
                         },
@@ -2213,19 +2149,6 @@
                                     ]
                                 }
                             }
-                        },
-                        "notes": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
-                            "description": "Заметки по ТС",
-                            "items": {
-                                "type": "string"
-                            },
-                            "fillable_by": [
-                                "base"
-                            ]
                         },
                         "segment": {
                             "type": "object",
@@ -3487,24 +3410,6 @@
                                                 ]
                                             }
                                         }
-                                    },
-                                    "phone_number": {
-                                        "description": "Предполагаемый номер телефона владельца",
-                                        "oneOf": [
-                                            {
-                                                "type": "null"
-                                            },
-                                            {
-                                                "$ref": "#/definitions/phone_number"
-                                            }
-                                        ],
-                                        "examples": [
-                                            null,
-                                            "9123456789"
-                                        ],
-                                        "fillable_by": [
-                                            "base"
-                                        ]
                                     }
                                 }
                             },
@@ -5611,7 +5516,6 @@
                                             "2017-11-22 00:00:00"
                                         ],
                                         "fillable_by": [
-                                            "base",
                                             "leasing.registry"
                                         ]
                                     }
@@ -5631,7 +5535,6 @@
                                             "ОАО ТекстильРыбБухСнос"
                                         ],
                                         "fillable_by": [
-                                            "base",
                                             "leasing.registry"
                                         ]
                                     }
@@ -5655,7 +5558,6 @@
                                                     "АО ВТБ ЛИЗИНГ"
                                                 ],
                                                 "fillable_by": [
-                                                    "base",
                                                     "leasing.registry"
                                                 ]
                                             }
@@ -5673,7 +5575,6 @@
                                     "6297557802"
                                 ],
                                 "fillable_by": [
-                                    "base",
                                     "leasing.registry"
                                 ]
                             },
@@ -6051,7 +5952,6 @@
                         null
                     ],
                     "fillable_by": [
-                        "base",
                         "leasing.registry"
                     ]
                 },
@@ -6072,7 +5972,6 @@
                                 "2020-10-16 22:10:00"
                             ],
                             "fillable_by": [
-                                "base",
                                 "leasing.registry"
                             ]
                         }

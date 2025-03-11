@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Field `leasings.items[].tin` not fillable by `base` anymore
+- Field `leasings.items[].company.name` not fillable by `base` anymore
+- Field `leasings.items[].lessor.company.name` not fillable by `base` anymore
+- Field `leasings.items[].date.event` not fillable by `base` anymore
+- Field `leasings.used_in_leasing` not fillable by `base` anymore
+- Field `leasings.date.update` not fillable by `base` anymore
+
+### Removed
+
+- Field with path `registration_actions.items[].owner.phone_number`
+- Field with path `registration_actions.items[].geo.street`
+- Field with path `registration_actions.items[].geo.house`
+- Field with path `additional_info.vehicle.owner.phone_number`
+- Field with path `additional_info.vehicle.passport.org.name`
+- Field with path `additional_info.vehicle.notes`
+- Field with path `identifiers.manufacture.vin`
+
 ## v3.164.0
 
 ### Fixed

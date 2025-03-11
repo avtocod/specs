@@ -7,9 +7,6 @@
             "pts": null,
             "body": null,
             "chassis": null
-        },
-        "manufacture": {
-            "vin": null
         }
     },
     "identifiers_masked": {
@@ -150,7 +147,6 @@
             },
             "owner": {
                 "type": null,
-                "phone_number": null,
                 "enforcement_proceedings": {
                     "has_proceedings": null
                 },
@@ -201,10 +197,7 @@
                 "has_dublicate": null,
                 "number": null,
                 "type": null,
-                "status": null,
-                "org": {
-                    "name": null
-                }
+                "status": null
             },
             "sts": {
                 "date": {
@@ -214,7 +207,6 @@
             "modifications": {
                 "was_modificated": null
             },
-            "notes": null,
             "segment": {
                 "euro": {
                     "code": null,
@@ -396,8 +388,7 @@
                         "tin": null,
                         "kpp": null,
                         "ogrn": null
-                    },
-                    "phone_number": null
+                    }
                 },
                 "code": null,
                 "type": null,

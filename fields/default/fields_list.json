@@ -87,17 +87,6 @@
         ]
     },
     {
-        "path": "identifiers.manufacture.vin",
-        "description": "Идентификатор ТС: Производственный VIN код ТС",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base",
-            "gibdd.history.registry"
-        ]
-    },
-    {
         "path": "identifiers_masked.vehicle.vin",
         "description": "Маскированный идентификатор ТС: VIN код",
         "types": [
@@ -819,16 +808,6 @@
         ]
     },
     {
-        "path": "additional_info.vehicle.owner.phone_number",
-        "description": "Дополнительная информация: Номер телефона владельца из открытых источников",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base"
-        ]
-    },
-    {
         "path": "additional_info.vehicle.owner.enforcement_proceedings.has_proceedings",
         "description": "Исполнительные производства: Признак наличия исполнительных производств",
         "types": [
@@ -997,28 +976,6 @@
         ],
         "fillable_by": [
             "elpts.online"
-        ]
-    },
-    {
-        "path": "additional_info.vehicle.passport.org.name",
-        "description": "Дополнительная информация: Кто выдал паспорт ТС",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "gibdd.history",
-            "base",
-            "gibdd.history.registry"
-        ]
-    },
-    {
-        "path": "additional_info.vehicle.notes",
-        "description": "Дополнительная информация: Заметки по ТС",
-        "types": [
-            "array"
-        ],
-        "fillable_by": [
-            "base"
         ]
     },
     {
@@ -1929,16 +1886,6 @@
         ]
     },
     {
-        "path": "registration_actions.items[].owner.phone_number",
-        "description": "Регистрационные действия: Предполагаемый номер телефона владельца",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base"
-        ]
-    },
-    {
         "path": "registration_actions.items[].code",
         "description": "Регистрационные действия: Код операции",
         "types": [
@@ -1965,10 +1912,32 @@
         ]
     },
     {
-        "path": "registration_actions.items[].geo",
-        "description": "Регистрационные действия: Гео-данные места совершения рег. действия",
+        "path": "registration_actions.items[].geo.country",
+        "description": "Регистрационные действия: Страна совершения рег. действия",
         "types": [
-            "object"
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].geo.region",
+        "description": "Регистрационные действия: Регион (область) совершения рег. действия",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "base",
+            "regactions.registry"
+        ]
+    },
+    {
+        "path": "registration_actions.items[].geo.city",
+        "description": "Регистрационные действия: Город совершения рег. действия",
+        "types": [
+            "string"
         ],
         "fillable_by": [
             "base",
@@ -4396,7 +4365,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "leasing.registry"
         ]
     },
@@ -4407,7 +4375,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "leasing.registry"
         ]
     },
@@ -4418,7 +4385,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "leasing.registry"
         ]
     },
@@ -4429,7 +4395,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "leasing.registry"
         ]
     },
@@ -4650,7 +4615,6 @@
             "boolean"
         ],
         "fillable_by": [
-            "base",
             "leasing.registry"
         ]
     },
@@ -4661,7 +4625,6 @@
             "string"
         ],
         "fillable_by": [
-            "base",
             "leasing.registry"
         ]
     },

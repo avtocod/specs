@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Source `fines.base.ext`
+
+### Changed
+
+- Field `fines.has_fines` not fillable by `fines.base.ext` anymore
+- Field `fines.date.update` not fillable by `fines.base.ext` anymore
+- Fields `fines.items[].*` not fillable by `fines.base.ext` anymore
+
 ## v4.0.0
 
 ### Changed

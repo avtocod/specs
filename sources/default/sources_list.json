@@ -318,5 +318,10 @@
         "name": "fines.registry.batch",
         "description": "Реестр штрафов (Batch)",
         "enabled": true
+    },
+    {
+        "name": "gots.online",
+        "description": "Размещение на аукционе битых ТС (онлайн)",
+        "enabled": true
     }
 ]

@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `gots.online`
+- Field with path `gots_auctions.is_placed`
+
+### Changed
+
+- Field with path `gots_auctions.date.update` also fillable by `gots.online`
+
 ## v4.1.0
 
 ### Removed

@@ -4190,6 +4190,19 @@
                         }
                     }
                 },
+                "is_placed": {
+                    "description": "Размещался ли на аукционе битых ТС?",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ],
+                    "examples": [
+                        false
+                    ],
+                    "fillable_by": [
+                        "gots.online"
+                    ]
+                },
                 "date": {
                     "type": "object",
                     "properties": {
@@ -4206,7 +4219,9 @@
                             "examples": [
                                 "2020-12-16 22:11:00"
                             ],
-                            "fillable_by": []
+                            "fillable_by": [
+                                "gots.online"
+                            ]
                         }
                     }
                 }

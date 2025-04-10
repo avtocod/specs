@@ -6288,12 +6288,24 @@
         "fillable_by": []
     },
     {
+        "path": "gots_auctions.is_placed",
+        "description": "Размещение ТС на аукционах ГОТС: Размещался ли на аукционе битых ТС?",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "gots.online"
+        ]
+    },
+    {
         "path": "gots_auctions.date.update",
         "description": "Размещение ТС на аукционах ГОТС: Дата обновления данных",
         "types": [
             "string"
         ],
-        "fillable_by": []
+        "fillable_by": [
+            "gots.online"
+        ]
     },
     {
         "path": "service_history.items[].dealer.name",

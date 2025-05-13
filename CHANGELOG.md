@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Source `eaisto.basalt`
+- Source `pledge.online`
+- Fields `identifiers.*` not fillable by `eaisto.basalt` anymore
+- Fields `identifiers_masked.*` not fillable by `eaisto.basalt` anymore
+- Fields `diagnostic_cards.*` not fillable by `eaisto.basalt` anymore
+- Fields `mileages.*` not fillable by `eaisto.basalt` anymore
+- Fields `pledges_online.*` not fillable by `pledge.online` anymore
+
 ## v4.2.0
 
 ### Added

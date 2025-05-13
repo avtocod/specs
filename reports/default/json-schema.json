@@ -360,7 +360,6 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -384,7 +383,6 @@
                                 "base",
                                 "base.basalt",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -455,7 +453,6 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -480,7 +477,6 @@
                                 "regactions.registry",
                                 "base.basalt",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -517,7 +513,6 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -538,7 +533,6 @@
                                 "base",
                                 "base.basalt",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -600,7 +594,6 @@
                                 "base.basalt",
                                 "regactions.registry",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -622,7 +615,6 @@
                                 "regactions.registry",
                                 "base.basalt",
                                 "eaisto.registry",
-                                "eaisto.basalt",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -7358,9 +7350,7 @@
                                         "examples": [
                                             "2024-05-30 00:00:00"
                                         ],
-                                        "fillable_by": [
-                                            "pledge.online"
-                                        ]
+                                        "fillable_by": []
                                     }
                                 }
                             },
@@ -7373,9 +7363,7 @@
                                 "examples": [
                                     "2024-001-406288-623\/241"
                                 ],
-                                "fillable_by": [
-                                    "pledge.online"
-                                ]
+                                "fillable_by": []
                             },
                             "pledgors": {
                                 "type": "array",
@@ -7400,9 +7388,7 @@
                                                 "Евгений Сергеевич Дроздов",
                                                 "REFUSE"
                                             ],
-                                            "fillable_by": [
-                                                "pledge.online"
-                                            ]
+                                            "fillable_by": []
                                         },
                                         "type": {
                                             "description": "Тип залогодателя",
@@ -7418,9 +7404,7 @@
                                             "examples": [
                                                 "PERSON"
                                             ],
-                                            "fillable_by": [
-                                                "pledge.online"
-                                            ]
+                                            "fillable_by": []
                                         },
                                         "dob": {
                                             "description": "Дата рождения залогодателя",
@@ -7435,9 +7419,7 @@
                                             "examples": [
                                                 "1973-08-31"
                                             ],
-                                            "fillable_by": [
-                                                "pledge.online"
-                                            ]
+                                            "fillable_by": []
                                         }
                                     }
                                 }
@@ -7465,9 +7447,7 @@
                                                 "ПАО ГлавСвет",
                                                 "REFUSE"
                                             ],
-                                            "fillable_by": [
-                                                "pledge.online"
-                                            ]
+                                            "fillable_by": []
                                         },
                                         "type": {
                                             "description": "Тип залогодержателя",
@@ -7483,9 +7463,7 @@
                                             "examples": [
                                                 "LEGAL"
                                             ],
-                                            "fillable_by": [
-                                                "pledge.online"
-                                            ]
+                                            "fillable_by": []
                                         },
                                         "dob": {
                                             "description": "Дата рождения залогодержателя",
@@ -7500,9 +7478,7 @@
                                             "examples": [
                                                 null
                                             ],
-                                            "fillable_by": [
-                                                "pledge.online"
-                                            ]
+                                            "fillable_by": []
                                         }
                                     }
                                 }
@@ -7516,9 +7492,7 @@
                                 "examples": [
                                     "Возникновение"
                                 ],
-                                "fillable_by": [
-                                    "pledge.online"
-                                ]
+                                "fillable_by": []
                             }
                         }
                     }
@@ -7539,9 +7513,7 @@
                             "examples": [
                                 "2019-10-17 00:20:00"
                             ],
-                            "fillable_by": [
-                                "pledge.online"
-                            ]
+                            "fillable_by": []
                         }
                     }
                 },
@@ -7560,9 +7532,7 @@
                         true,
                         null
                     ],
-                    "fillable_by": [
-                        "pledge.online"
-                    ]
+                    "fillable_by": []
                 }
             }
         },
@@ -11044,7 +11014,6 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "eaisto.registry",
-                                            "eaisto.basalt",
                                             "repairs.history.registry"
                                         ]
                                     }
@@ -11070,7 +11039,6 @@
                                     "service.history.filter",
                                     "service.history.wilgood",
                                     "eaisto.registry",
-                                    "eaisto.basalt",
                                     "repairs.history.registry"
                                 ]
                             },
@@ -11094,7 +11062,6 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "eaisto.registry",
-                                            "eaisto.basalt",
                                             "customs.base",
                                             null
                                         ],
@@ -11132,7 +11099,6 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "eaisto.registry",
-                                            "eaisto.basalt",
                                             "repairs.history.registry"
                                         ]
                                     }
@@ -11178,8 +11144,7 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "eaisto.registry",
-                                            "eaisto.basalt"
+                                            "eaisto.registry"
                                         ]
                                     },
                                     "to": {
@@ -11197,8 +11162,7 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "eaisto.registry",
-                                            "eaisto.basalt"
+                                            "eaisto.registry"
                                         ]
                                     }
                                 }
@@ -11232,8 +11196,7 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "eaisto.registry",
-                                            "eaisto.basalt"
+                                            "eaisto.registry"
                                         ]
                                     },
                                     "type": {
@@ -11247,8 +11210,7 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
-                                            "eaisto.registry",
-                                            "eaisto.basalt"
+                                            "eaisto.registry"
                                         ]
                                     }
                                 }
@@ -11288,8 +11250,7 @@
                                 ],
                                 "fillable_by": [
                                     "gibdd.eaisto",
-                                    "eaisto.registry",
-                                    "eaisto.basalt"
+                                    "eaisto.registry"
                                 ]
                             },
                             "actuality": {
@@ -11311,8 +11272,7 @@
                                         ],
                                         "fillable_by": [
                                             "eaisto.registry",
-                                            "gibdd.eaisto",
-                                            "eaisto.basalt"
+                                            "gibdd.eaisto"
                                         ]
                                     }
                                 }
@@ -11338,8 +11298,7 @@
                             ],
                             "fillable_by": [
                                 "gibdd.eaisto",
-                                "eaisto.registry",
-                                "eaisto.basalt"
+                                "eaisto.registry"
                             ]
                         }
                     }

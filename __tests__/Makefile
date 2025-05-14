@@ -14,10 +14,10 @@ help: ## Show this help
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  \033[32m%-14s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 install: ## Install all dependencies
-	docker-compose run $(RUN_ARGS) node yarn install
+	docker compose run $(RUN_ARGS) node yarn install
 
 test: ## Execute tests
-	docker-compose run $(RUN_ARGS) node yarn test
+	docker compose run $(RUN_ARGS) node yarn test
 
 shell: ## Start shell into container with node
-	docker-compose run $(RUN_ARGS) node sh
+	docker compose run $(RUN_ARGS) node sh

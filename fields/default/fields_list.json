@@ -12,7 +12,6 @@
             "regactions.registry",
             "base.basalt",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -26,7 +25,6 @@
             "base",
             "base.basalt",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -67,7 +65,6 @@
             "regactions.registry",
             "base.basalt",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -82,7 +79,6 @@
             "base.basalt",
             "regactions.registry",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -99,7 +95,6 @@
             "regactions.registry",
             "base.basalt",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -113,7 +108,6 @@
             "base",
             "base.basalt",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -154,7 +148,6 @@
             "regactions.registry",
             "base.basalt",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -169,7 +162,6 @@
             "regactions.registry",
             "base.basalt",
             "eaisto.registry",
-            "eaisto.basalt",
             "gibdd.history.registry"
         ]
     },
@@ -1524,8 +1516,7 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "eaisto.registry",
-            "eaisto.basalt"
+            "eaisto.registry"
         ]
     },
     {
@@ -1536,8 +1527,7 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "eaisto.registry",
-            "eaisto.basalt"
+            "eaisto.registry"
         ]
     },
     {
@@ -1559,8 +1549,7 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "eaisto.registry",
-            "eaisto.basalt"
+            "eaisto.registry"
         ]
     },
     {
@@ -1571,8 +1560,7 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "eaisto.registry",
-            "eaisto.basalt"
+            "eaisto.registry"
         ]
     },
     {
@@ -1594,8 +1582,7 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "eaisto.registry",
-            "eaisto.basalt"
+            "eaisto.registry"
         ]
     },
     {
@@ -1606,8 +1593,7 @@
         ],
         "fillable_by": [
             "eaisto.registry",
-            "gibdd.eaisto",
-            "eaisto.basalt"
+            "gibdd.eaisto"
         ]
     },
     {
@@ -1618,8 +1604,7 @@
         ],
         "fillable_by": [
             "gibdd.eaisto",
-            "eaisto.registry",
-            "eaisto.basalt"
+            "eaisto.registry"
         ]
     },
     {
@@ -3911,9 +3896,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].number",
@@ -3921,9 +3904,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].type",
@@ -3931,9 +3912,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].pledgors[].name",
@@ -3941,9 +3920,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].pledgors[].type",
@@ -3951,9 +3928,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].pledgors[].dob",
@@ -3961,9 +3936,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].pledgees[].name",
@@ -3971,9 +3944,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].pledgees[].type",
@@ -3981,9 +3952,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.items[].pledgees[].dob",
@@ -3991,9 +3960,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.date.update",
@@ -4001,9 +3968,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_online.in_pledge",
@@ -4011,9 +3976,7 @@
         "types": [
             "boolean"
         ],
-        "fillable_by": [
-            "pledge.online"
-        ]
+        "fillable_by": []
     },
     {
         "path": "pledges_nbki.items[].date.end",
@@ -5461,7 +5424,6 @@
             "service.history.filter",
             "service.history.wilgood",
             "eaisto.registry",
-            "eaisto.basalt",
             "repairs.history.registry"
         ]
     },
@@ -5481,7 +5443,6 @@
             "service.history.filter",
             "service.history.wilgood",
             "eaisto.registry",
-            "eaisto.basalt",
             "repairs.history.registry"
         ]
     },
@@ -5509,7 +5470,6 @@
             "service.history.filter",
             "service.history.wilgood",
             "eaisto.registry",
-            "eaisto.basalt",
             "repairs.history.registry"
         ]
     },

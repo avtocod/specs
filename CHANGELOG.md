@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
+### Added
+
+- Field with path `leasings.items[].messages[].lessees[].company.name`
+- Field with path `leasings.items[].messages[].lessees[].company.type`
+- Field with path `leasings.items[].messages[].lessees[].company.tin`
+- Field with path `leasings.items[].messages[].lessees[].company.ogrn`
+
+## v4.4.0
+
 ### Changed
 
 - Vehicle marks and models specs

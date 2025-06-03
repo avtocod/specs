@@ -8,8 +8,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
-- Field with path `ownership.history.items[].duration_iso`
 - Field with path `ownership.history.items[].days`
+- Field with path `ownership.history.items[].duration_iso`
 
 ## v4.4.0
 

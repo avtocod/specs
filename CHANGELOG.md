@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `leasings.items[].messages[].lessees[].company.name`
+- Field with path `leasings.items[].messages[].lessees[].company.type`
+- Field with path `leasings.items[].messages[].lessees[].company.tin`
+- Field with path `leasings.items[].messages[].lessees[].company.ogrn`
+
 ## v4.4.0
 
 ### Changed

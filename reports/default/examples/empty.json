@@ -721,7 +721,17 @@
                                     "description": null
                                 }
                             ]
-                        }
+                        },
+                        "lessees": [
+                            {
+                                "company": {
+                                    "name": null,
+                                    "type": null,
+                                    "tin": null,
+                                    "ogrn": null
+                                }
+                            }
+                        ]
                     }
                 ],
                 "in_leasing": null

@@ -4588,6 +4588,46 @@
         ]
     },
     {
+        "path": "leasings.items[].messages[].lessees[].company.name",
+        "description": "Лизинг: Наименование компании-лизингополучателя в сообщении",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].lessees[].company.type",
+        "description": "Лизинг: Тип компании-лизингополучателя в сообщении",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].lessees[].company.tin",
+        "description": "Лизинг: Номер ИНН компании-лизингополучателя в сообщении",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
+        "path": "leasings.items[].messages[].lessees[].company.ogrn",
+        "description": "Лизинг: Номер ОГРН компании-лизингополучателя в сообщении",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "leasing.registry"
+        ]
+    },
+    {
         "path": "leasings.items[].in_leasing",
         "description": "Лизинг: Находится ли ТС в лизинге?",
         "types": [

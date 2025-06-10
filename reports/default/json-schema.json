@@ -5935,6 +5935,73 @@
                                                     }
                                                 }
                                             }
+                                        },
+                                        "lessees": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "company": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "Наименование компании-лизингополучателя в сообщении",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "АО ВТБ ЛИЗИНГ"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            },
+                                                            "type": {
+                                                                "description": "Тип компании-лизингополучателя в сообщении",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Company"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            },
+                                                            "tin": {
+                                                                "description": "Номер ИНН компании-лизингополучателя в сообщении",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "6297557802"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            },
+                                                            "ogrn": {
+                                                                "description": "Номер ОГРН компании-лизингополучателя в сообщении",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "1877354634195"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "leasing.registry"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }

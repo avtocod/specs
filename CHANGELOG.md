@@ -11,6 +11,15 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `ownership.history.items[].days`
 - Field with path `ownership.history.items[].duration_iso`
 
+## v4.5.0
+
+### Added
+
+- Field with path `leasings.items[].messages[].lessees[].company.name`
+- Field with path `leasings.items[].messages[].lessees[].company.type`
+- Field with path `leasings.items[].messages[].lessees[].company.tin`
+- Field with path `leasings.items[].messages[].lessees[].company.ogrn`
+
 ## v4.4.0
 
 ### Changed

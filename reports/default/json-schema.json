@@ -427,8 +427,7 @@
                                 "base",
                                 "base.basalt",
                                 "gibdd.history",
-                                "gibdd.history.registry",
-                                "elpts.online"
+                                "gibdd.history.registry"
                             ]
                         },
                         "body": {
@@ -571,8 +570,7 @@
                                 "base",
                                 "base.basalt",
                                 "gibdd.history",
-                                "gibdd.history.registry",
-                                "elpts.online"
+                                "gibdd.history.registry"
                             ]
                         },
                         "body": {
@@ -2062,8 +2060,7 @@
                                         "gibdd.history",
                                         "base",
                                         "base.basalt",
-                                        "gibdd.history.registry",
-                                        "elpts.online"
+                                        "gibdd.history.registry"
                                     ]
                                 },
                                 "type": {
@@ -2075,9 +2072,7 @@
                                     "examples": [
                                         "Электронный паспорт транспортного средства"
                                     ],
-                                    "fillable_by": [
-                                        "elpts.online"
-                                    ]
+                                    "fillable_by": []
                                 },
                                 "status": {
                                     "description": "Статус паспорта ТС",
@@ -2088,9 +2083,7 @@
                                     "examples": [
                                         "действующий"
                                     ],
-                                    "fillable_by": [
-                                        "elpts.online"
-                                    ]
+                                    "fillable_by": []
                                 }
                             }
                         },
@@ -2202,9 +2195,7 @@
                             "examples": [
                                 "РФ уплачен"
                             ],
-                            "fillable_by": [
-                                "elpts.online"
-                            ]
+                            "fillable_by": []
                         },
                         "customs_registration": {
                             "description": "Сведения о выпуске (таможенное оформление)",
@@ -2215,9 +2206,7 @@
                             "examples": [
                                 "Отсутствуют"
                             ],
-                            "fillable_by": [
-                                "elpts.online"
-                            ]
+                            "fillable_by": []
                         },
                         "restriction": {
                             "type": "object",
@@ -2232,9 +2221,7 @@
                                     "examples": [
                                         "Отсутствуют"
                                     ],
-                                    "fillable_by": [
-                                        "elpts.online"
-                                    ]
+                                    "fillable_by": []
                                 },
                                 "other": {
                                     "description": "Ограничения (обременения) за исключением таможенных",
@@ -2245,9 +2232,7 @@
                                     "examples": [
                                         "Отсутствуют"
                                     ],
-                                    "fillable_by": [
-                                        "elpts.online"
-                                    ]
+                                    "fillable_by": []
                                 }
                             }
                         },

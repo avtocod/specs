@@ -3,7 +3,6 @@
         "vehicle": {
             "vin": null,
             "reg_num": null,
-            "sts": null,
             "pts": null,
             "body": null,
             "chassis": null
@@ -13,7 +12,6 @@
         "vehicle": {
             "vin": null,
             "reg_num": null,
-            "sts": null,
             "pts": null,
             "body": null,
             "chassis": null
@@ -199,11 +197,6 @@
                 "type": null,
                 "status": null
             },
-            "sts": {
-                "date": {
-                    "receive": null
-                }
-            },
             "modifications": {
                 "was_modificated": null
             },
@@ -368,47 +361,6 @@
                 }
             }
         }
-    },
-    "registration_actions": {
-        "items": [
-            {
-                "date": {
-                    "start": null,
-                    "end": null
-                },
-                "reg_num": null,
-                "identifiers": {
-                    "pts": null,
-                    "sts": null
-                },
-                "owner": {
-                    "type": null,
-                    "org": {
-                        "name": null,
-                        "tin": null,
-                        "kpp": null,
-                        "ogrn": null
-                    }
-                },
-                "code": null,
-                "type": null,
-                "geo": {
-                    "country": null,
-                    "region": null,
-                    "city": null
-                },
-                "attributes": null,
-                "usage_allowed": null,
-                "actuality": {
-                    "date": null
-                }
-            }
-        ],
-        "date": {
-            "update": null
-        },
-        "count": 1,
-        "has_annulment": null
     },
     "repairs": {
         "history": {

@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Fields with path `registration_actions.*`
+- Field with path `identifiers.vehicle.sts`
+- Field with path `identifiers_masked.vehicle.sts`
+- Field with path `additional_info.vehicle.sts.date.receive`
+
 ## v4.7.0
 
 ### Removed

@@ -3,7 +3,6 @@
         "vehicle": {
             "vin": "EXAMPL0V1N1000000",
             "reg_num": "А332АВ177",
-            "sts": "3104847107",
             "pts": "36КС619977",
             "body": "KCA275-9673180",
             "chassis": "LFPVBM6819793"
@@ -13,7 +12,6 @@
         "vehicle": {
             "vin": "EXAM************0",
             "reg_num": "А******77",
-            "sts": "310*****07",
             "pts": "36К*****77",
             "body": "KCA**********0",
             "chassis": "LF**********3"
@@ -199,11 +197,6 @@
                 "type": "Электронный паспорт транспортного средства",
                 "status": "действующий"
             },
-            "sts": {
-                "date": {
-                    "receive": "2021-08-05 00:00:00"
-                }
-            },
             "modifications": {
                 "was_modificated": false
             },
@@ -368,50 +361,6 @@
                 }
             }
         }
-    },
-    "registration_actions": {
-        "items": [
-            {
-                "date": {
-                    "start": "2015-05-15 00:00:00",
-                    "end": "2015-12-15 00:00:00"
-                },
-                "reg_num": "А332АВ177",
-                "identifiers": {
-                    "pts": "10ЕС040762",
-                    "sts": "24ХТ429962"
-                },
-                "owner": {
-                    "type": "PERSONLEGAL",
-                    "org": {
-                        "name": "ООО ОблМотор",
-                        "tin": "3664069397",
-                        "kpp": "773301001",
-                        "ogrn": "1053600591197"
-                    }
-                },
-                "code": "11",
-                "type": "Учет нарушений ПДД",
-                "geo": {
-                    "country": "Россия",
-                    "region": "Архангельская",
-                    "city": "Домодедово"
-                },
-                "attributes": [
-                    "LEASING",
-                    "ANNULMENT"
-                ],
-                "usage_allowed": true,
-                "actuality": {
-                    "date": "2019-04-16 22:10:00"
-                }
-            }
-        ],
-        "date": {
-            "update": "2020-01-17 19:11:00"
-        },
-        "count": 1,
-        "has_annulment": false
     },
     "repairs": {
         "history": {

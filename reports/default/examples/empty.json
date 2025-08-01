@@ -1754,6 +1754,23 @@
             "date": {
                 "update": null
             }
+        },
+        "new_vehicle": {
+            "items": [
+                {
+                    "amount": {
+                        "min": null,
+                        "max": null,
+                        "optimal": null
+                    },
+                    "currency": {
+                        "type": null
+                    }
+                }
+            ],
+            "date": {
+                "update": null
+            }
         }
     },
     "commercial_use": {

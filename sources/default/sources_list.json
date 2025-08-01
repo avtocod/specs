@@ -308,5 +308,10 @@
         "name": "gots.online",
         "description": "Размещение на аукционе битых ТС (онлайн)",
         "enabled": true
+    },
+    {
+        "name": "new.vehicle.price",
+        "description": "Рыночная стоимость нового ТС",
+        "enabled": true
     }
 ]

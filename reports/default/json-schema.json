@@ -13515,6 +13515,114 @@
                             }
                         }
                     }
+                },
+                "new_vehicle": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "amount": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "max": {
+                                                "description": "Максимальное значение стоимости нового ТС, рассчитанное на основе объявлений о продаже ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 0,
+                                                "examples": [
+                                                    630000
+                                                ],
+                                                "fillable_by": [
+                                                    "new.vehicle.price"
+                                                ]
+                                            },
+                                            "min": {
+                                                "description": "Минимальное значение стоимости нового ТС, рассчитанное на основе объявлений о продаже ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 0,
+                                                "examples": [
+                                                    430000
+                                                ],
+                                                "fillable_by": [
+                                                    "new.vehicle.price"
+                                                ]
+                                            },
+                                            "optimal": {
+                                                "description": "Оптимальное значение стоимости нового ТС, рассчитанное на основе объявлений о продаже ТС",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "minimum": 0,
+                                                "examples": [
+                                                    530000
+                                                ],
+                                                "fillable_by": [
+                                                    "new.vehicle.price"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "currency": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "type": {
+                                                "description": "Тип валюты в расчете стоимости нового ТС",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/currency_type"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "RUB"
+                                                ],
+                                                "fillable_by": [
+                                                    "new.vehicle.price"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2019-05-12 22:10:00"
+                                    ],
+                                    "fillable_by": [
+                                        "new.vehicle.price"
+                                    ]
+                                }
+                            }
+                        }
+                    }
                 }
             }
         },

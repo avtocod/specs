@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `new.vehicle.price`
+- Field with path `market_prices.new_vehicle.items[].amount.max`
+- Field with path `market_prices.new_vehicle.items[].amount.min`
+- Field with path `market_prices.new_vehicle.items[].amount.optimal`
+- Field with path `market_prices.new_vehicle.items[].currency.type`
+- Field with path `market_prices.new_vehicle.date.update`
+
 ## v5.0.0
 
 ### Removed

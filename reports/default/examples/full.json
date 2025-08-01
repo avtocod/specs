@@ -2075,6 +2075,23 @@
             "date": {
                 "update": "2019-05-12 22:10:00"
             }
+        },
+        "new_vehicle": {
+            "items": [
+                {
+                    "amount": {
+                        "min": 581938,
+                        "max": 862961,
+                        "optimal": 722450
+                    },
+                    "currency": {
+                        "type": "RUB"
+                    }
+                }
+            ],
+            "date": {
+                "update": "2019-05-12 22:10:00"
+            }
         }
     },
     "commercial_use": {

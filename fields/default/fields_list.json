@@ -6968,6 +6968,56 @@
         ]
     },
     {
+        "path": "market_prices.new_vehicle.items[].amount.max",
+        "description": "Рыночная стоимость ТС: Максимальное значение стоимости нового ТС, рассчитанное на основе объявлений о продаже ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "new.vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.new_vehicle.items[].amount.min",
+        "description": "Рыночная стоимость ТС: Минимальное значение стоимости нового ТС, рассчитанное на основе объявлений о продаже ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "new.vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.new_vehicle.items[].amount.optimal",
+        "description": "Рыночная стоимость ТС: Оптимальное значение стоимости нового ТС, рассчитанное на основе объявлений о продаже ТС",
+        "types": [
+            "integer"
+        ],
+        "fillable_by": [
+            "new.vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.new_vehicle.items[].currency.type",
+        "description": "Рыночная стоимость ТС: Тип валюты в расчете стоимости нового ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "new.vehicle.price"
+        ]
+    },
+    {
+        "path": "market_prices.new_vehicle.date.update",
+        "description": "Рыночная стоимость ТС c учетом дополнительных факторов: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "new.vehicle.price"
+        ]
+    },
+    {
         "path": "commercial_use.items[].service.name",
         "description": "Коммерческое использование ТС: Название сервиса",
         "types": [

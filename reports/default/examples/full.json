@@ -148,14 +148,6 @@
                 "enforcement_proceedings": {
                     "has_proceedings": true
                 },
-                "geo": {
-                    "country": null,
-                    "region": "Пензенская",
-                    "city": "Пушкино",
-                    "street": null,
-                    "house": null,
-                    "postal_code": "141207"
-                },
                 "taxi_history": {
                     "probable_taxi_driver": true,
                     "taxi_licenses": {
@@ -189,9 +181,6 @@
                 }
             },
             "passport": {
-                "date": {
-                    "receive": "2018-08-05 00:00:00"
-                },
                 "has_dublicate": false,
                 "number": "8047307033",
                 "type": "Электронный паспорт транспортного средства",

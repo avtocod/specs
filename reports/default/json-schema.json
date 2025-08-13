@@ -1731,50 +1731,6 @@
                                         }
                                     }
                                 },
-                                "geo": {
-                                    "description": "Гео-данные владельца (техники)",
-                                    "oneOf": [
-                                        {
-                                            "type": "null"
-                                        },
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "$ref": "#/definitions/geo_raw_data"
-                                                },
-                                                {
-                                                    "properties": {
-                                                        "postal_code": {
-                                                            "description": "Почтовый индекс",
-                                                            "oneOf": [
-                                                                {
-                                                                    "type": "null"
-                                                                },
-                                                                {
-                                                                    "type": "string",
-                                                                    "pattern": "^[0-9]+$",
-                                                                    "minLength": 6,
-                                                                    "maxLength": 6
-                                                                }
-                                                            ],
-                                                            "examples": [
-                                                                "141207",
-                                                                null
-                                                            ],
-                                                            "fillable_by": [
-                                                                "base"
-                                                            ]
-                                                        }
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    "fillable_by": [
-                                        "base",
-                                        "regactions.registry"
-                                    ]
-                                },
                                 "taxi_history": {
                                     "type": "object",
                                     "additionalProperties": false,
@@ -1968,29 +1924,6 @@
                             "type": "object",
                             "additionalProperties": false,
                             "properties": {
-                                "date": {
-                                    "type": "object",
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "receive": {
-                                            "description": "Дата выдачи паспорта ТС",
-                                            "oneOf": [
-                                                {
-                                                    "type": "null"
-                                                },
-                                                {
-                                                    "$ref": "#/definitions/datetime"
-                                                }
-                                            ],
-                                            "examples": [
-                                                "2018-08-05 00:00:00"
-                                            ],
-                                            "fillable_by": [
-                                                "base"
-                                            ]
-                                        }
-                                    }
-                                },
                                 "has_dublicate": {
                                     "description": "Была ли замена ПТС?",
                                     "type": [

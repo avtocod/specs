@@ -784,17 +784,6 @@
         "fillable_by": []
     },
     {
-        "path": "additional_info.vehicle.owner.geo",
-        "description": "Дополнительная информация: Гео-данные владельца (техники)",
-        "types": [
-            "object"
-        ],
-        "fillable_by": [
-            "base",
-            "regactions.registry"
-        ]
-    },
-    {
         "path": "additional_info.vehicle.owner.taxi_history.probable_taxi_driver",
         "description": "История владельца в такси: Возможная работа в такси",
         "types": [
@@ -881,16 +870,6 @@
             "string"
         ],
         "fillable_by": []
-    },
-    {
-        "path": "additional_info.vehicle.passport.date.receive",
-        "description": "Дополнительная информация: Дата выдачи паспорта ТС",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "base"
-        ]
     },
     {
         "path": "additional_info.vehicle.passport.has_dublicate",

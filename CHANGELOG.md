@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Field with path `additional_info.vehicle.passport.date.receive`
+- Fields with path `additional_info.vehicle.owner.geo.*`
+
 ## v5.1.0
 
 ### Added

@@ -148,14 +148,6 @@
                 "enforcement_proceedings": {
                     "has_proceedings": null
                 },
-                "geo": {
-                    "country": null,
-                    "region": null,
-                    "city": null,
-                    "street": null,
-                    "house": null,
-                    "postal_code": null
-                },
                 "taxi_history": {
                     "probable_taxi_driver": null,
                     "taxi_licenses": {
@@ -189,9 +181,6 @@
                 }
             },
             "passport": {
-                "date": {
-                    "receive": null
-                },
                 "has_dublicate": null,
                 "number": null,
                 "type": null,

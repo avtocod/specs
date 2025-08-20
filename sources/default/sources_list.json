@@ -313,5 +313,10 @@
         "name": "new.vehicle.price",
         "description": "Рыночная стоимость нового ТС",
         "enabled": true
+    },
+    {
+        "name": "elpts.online",
+        "description": "Данные по ЭПТС",
+        "enabled": true
     }
 ]

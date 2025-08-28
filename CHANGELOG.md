@@ -10,6 +10,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 - Vehicle marks and models specs
 
+## v5.4.0
+
+### Changed
+
+- Field with path `images.photos.items[].vehicle.brand.name` also fillable by `images.archive`
+- Field with path `images.photos.items[].vehicle.model.name` also fillable by `images.archive`
+
 ## v5.3.0
 
 ### Changed

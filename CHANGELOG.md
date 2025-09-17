@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `additional_info.vehicle.restriction.customs` also fillable by `elpts.online`
 - Field with path `additional_info.vehicle.restriction.other` also fillable by `elpts.online`
 
+## v5.3.0
+
+### Changed
+
+- Vehicle marks and models specs
+
 ## v5.2.0
 
 ### Removed

@@ -2245,6 +2245,36 @@
         ]
     },
     {
+        "path": "insurance_scores.payout.value",
+        "description": "Страховые скоринги: Предполагаемый размер страховой выплаты",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.event.probability.score"
+        ]
+    },
+    {
+        "path": "insurance_scores.pvu_payout_delta.value",
+        "description": "Страховые скоринги: Дельта ПВУ",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.event.probability.score"
+        ]
+    },
+    {
+        "path": "insurance_scores.pvu_accident_probability.value",
+        "description": "Страховые скоринги: Частота страхового случая без вины страхователя",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.event.probability.score"
+        ]
+    },
+    {
         "path": "calculate.tax.moscow.yearly.amount",
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
         "types": [

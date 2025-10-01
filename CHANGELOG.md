@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `insurance_scores.payout.value`
+- Field with path `insurance_scores.pvu_payout_delta.value`
+- Field with path `insurance_scores.pvu_accident_probability.value`
+
 ## v5.7.0
 
 ### Added

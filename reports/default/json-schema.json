@@ -8220,6 +8220,66 @@
                             ]
                         }
                     }
+                },
+                "payout": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "value": {
+                            "description": "Предполагаемый размер страховой выплаты",
+                            "type": [
+                                "number",
+                                "null"
+                            ],
+                            "examples": [
+                                116163.83,
+                                null
+                            ],
+                            "fillable_by": [
+                                "insurance.event.probability.score"
+                            ]
+                        }
+                    }
+                },
+                "pvu_payout_delta": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "value": {
+                            "description": "Дельта ПВУ",
+                            "type": [
+                                "number",
+                                "null"
+                            ],
+                            "examples": [
+                                -3042.4348,
+                                null
+                            ],
+                            "fillable_by": [
+                                "insurance.event.probability.score"
+                            ]
+                        }
+                    }
+                },
+                "pvu_accident_probability": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "value": {
+                            "description": "Частота страхового случая без вины страхователя",
+                            "type": [
+                                "number",
+                                "null"
+                            ],
+                            "examples": [
+                                0.065631576,
+                                null
+                            ],
+                            "fillable_by": [
+                                "insurance.event.probability.score"
+                            ]
+                        }
+                    }
                 }
             }
         },

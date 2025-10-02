@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `insurance_scores.pvu_payout_delta.value`
 - Field with path `insurance_scores.pvu_accident_probability.value`
 
+## v5.8.0
+
+### Changed
+
+- Vehicle marks and models specs
+
 ## v5.7.0
 
 ### Added

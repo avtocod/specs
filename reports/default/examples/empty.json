@@ -1029,6 +1029,15 @@
     "insurance_scores": {
         "accident_probability": {
             "value": null
+        },
+        "payout": {
+            "value": null
+        },
+        "pvu_payout_delta": {
+            "value": null
+        },
+        "pvu_accident_probability": {
+            "value": null
         }
     },
     "accidents": {

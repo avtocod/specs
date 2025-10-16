@@ -318,5 +318,10 @@
         "name": "elpts.online",
         "description": "Данные по ЭПТС",
         "enabled": true
+    },
+    {
+        "name": "ads.exposition",
+        "description": "Время экспозиции объявлений",
+        "enabled": true
     }
 ]

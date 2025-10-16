@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `ads_exposition`
+- Field with path `ads_exposition.min_seconds`
+- Field with path `ads_exposition.max_seconds`
+- Field with path `ads_exposition.avg_seconds`
+- Field with path `ads_exposition.median_seconds`
+- Field with path `ads_exposition.date.update`
+
 ## v5.9.0
 
 ### Added

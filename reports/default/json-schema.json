@@ -14654,6 +14654,87 @@
                     "minimum": 0
                 }
             }
+        },
+        "ads_exposition": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Время экспозиции объявлений",
+            "properties": {
+                "min_seconds": {
+                    "description": "Минимальное время экспозиции",
+                    "type": [
+                        "number",
+                        "null"
+                    ],
+                    "examples": [
+                        176.9
+                    ],
+                    "fillable_by": [
+                        "ads.exposition"
+                    ]
+                },
+                "max_seconds": {
+                    "description": "Максимальное время экспозиции",
+                    "type": [
+                        "number",
+                        "null"
+                    ],
+                    "examples": [
+                        176.9
+                    ],
+                    "fillable_by": [
+                        "ads.exposition"
+                    ]
+                },
+                "avg_seconds": {
+                    "description": "Среднее время экспозиции",
+                    "type": [
+                        "number",
+                        "null"
+                    ],
+                    "examples": [
+                        176.9
+                    ],
+                    "fillable_by": [
+                        "ads.exposition"
+                    ]
+                },
+                "median_seconds": {
+                    "description": "Медианное время экспозиции",
+                    "type": [
+                        "number",
+                        "null"
+                    ],
+                    "examples": [
+                        176.9
+                    ],
+                    "fillable_by": [
+                        "ads.exposition"
+                    ]
+                },
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2019-11-14 12:10:00"
+                            ],
+                            "fillable_by": [
+                                "ads.exposition"
+                            ]
+                        }
+                    }
+                }
+            }
         }
     }
 }

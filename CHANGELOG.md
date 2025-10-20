@@ -15,6 +15,13 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `ads_exposition.median_seconds`
 - Field with path `ads_exposition.date.update`
 
+## v5.10.0
+
+### Removed
+
+- Source `driver.mileages`
+- Fields with path `additional_info.driver.*`
+
 ## v5.9.0
 
 ### Added

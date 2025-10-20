@@ -1396,66 +1396,6 @@
         ]
     },
     {
-        "path": "additional_info.driver.mileages.average_annual.value",
-        "description": "Средний пробег на всех ТС за год, без учета промежутков между периодами автовладений",
-        "types": [
-            "integer"
-        ],
-        "fillable_by": [
-            "driver.mileages"
-        ]
-    },
-    {
-        "path": "additional_info.driver.mileages.average_annual.calculation_options.period.start",
-        "description": "Дата начала периода первого автовладения",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "driver.mileages"
-        ]
-    },
-    {
-        "path": "additional_info.driver.mileages.average_annual.calculation_options.period.end",
-        "description": "Дата конца последнего периода автовладения (текущая дата, если хотя бы один период не закрыт)",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "driver.mileages"
-        ]
-    },
-    {
-        "path": "additional_info.driver.mileages.average_annual.calculation_options.vehicle.count",
-        "description": "Количество ТС, по которым был произведен расчет среднегодового пробега (наката) водителя",
-        "types": [
-            "integer"
-        ],
-        "fillable_by": [
-            "driver.mileages"
-        ]
-    },
-    {
-        "path": "additional_info.driver.mileages.average_annual.calculation_options.mileages.count",
-        "description": "Количество зафиксированных пробегов, на основании которых был произведен расчет среднегодового пробега (наката) водителя",
-        "types": [
-            "integer"
-        ],
-        "fillable_by": [
-            "driver.mileages"
-        ]
-    },
-    {
-        "path": "additional_info.driver.mileages.average_annual.is_calculated",
-        "description": "Флаг успешности расчета",
-        "types": [
-            "boolean"
-        ],
-        "fillable_by": [
-            "driver.mileages"
-        ]
-    },
-    {
         "path": "diagnostic_cards.items[].date.from",
         "description": "Диагностические карты: Дата начала действия диагностической карты",
         "types": [

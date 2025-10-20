@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Source `driver.mileages`
+- Fields with path `additional_info.driver.*`
+
 ## v5.9.0
 
 ### Added

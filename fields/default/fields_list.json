@@ -7492,5 +7492,55 @@
         "fillable_by": [
             "fssp.base.executive"
         ]
+    },
+    {
+        "path": "ads_exposition.min_seconds",
+        "description": "Время экспозиции объявлений: Минимальное время экспозиции",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.exposition"
+        ]
+    },
+    {
+        "path": "ads_exposition.max_seconds",
+        "description": "Время экспозиции объявлений: Максимальное время экспозиции",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.exposition"
+        ]
+    },
+    {
+        "path": "ads_exposition.avg_seconds",
+        "description": "Время экспозиции объявлений: Среднее время экспозиции",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.exposition"
+        ]
+    },
+    {
+        "path": "ads_exposition.median_seconds",
+        "description": "Время экспозиции объявлений: Медианное время экспозиции",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "ads.exposition"
+        ]
+    },
+    {
+        "path": "ads_exposition.date.update",
+        "description": "Время экспозиции объявлений: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "ads.exposition"
+        ]
     }
 ]

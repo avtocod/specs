@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `pledges.items[].pledgors[].tin`
+- Field with path `pledges.items[].pledgees[].tin`
+
 ## v5.11.0
 
 ### Added

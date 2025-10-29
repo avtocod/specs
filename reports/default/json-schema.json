@@ -6491,6 +6491,24 @@
                                                 "pledge",
                                                 "pledge.house"
                                             ]
+                                        },
+                                        "tin": {
+                                            "description": "ИНН залогодателя",
+                                            "oneOf": [
+                                                {
+                                                    "type": "null"
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/tin_code"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "1233423534"
+                                            ],
+                                            "fillable_by": [
+                                                "pledge",
+                                                "pledge.house"
+                                            ]
                                         }
                                     }
                                 }
@@ -6557,6 +6575,24 @@
                                             ],
                                             "examples": [
                                                 null
+                                            ],
+                                            "fillable_by": [
+                                                "pledge",
+                                                "pledge.house"
+                                            ]
+                                        },
+                                        "tin": {
+                                            "description": "ИНН залогодержателя",
+                                            "oneOf": [
+                                                {
+                                                    "type": "null"
+                                                },
+                                                {
+                                                    "$ref": "#/definitions/tin_code"
+                                                }
+                                            ],
+                                            "examples": [
+                                                "1233423534"
                                             ],
                                             "fillable_by": [
                                                 "pledge",

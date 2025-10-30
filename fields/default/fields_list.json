@@ -3515,6 +3515,17 @@
         ]
     },
     {
+        "path": "pledges.items[].pledgors[].tin",
+        "description": "Обременения на ТС: ИНН залогодателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
+    },
+    {
         "path": "pledges.items[].pledgees[].name",
         "description": "Обременения на ТС: Имя залогодержателя [REFUSE, ЗАО ГлавЭлектро, ...]",
         "types": [
@@ -3539,6 +3550,17 @@
     {
         "path": "pledges.items[].pledgees[].dob",
         "description": "Обременения на ТС: Дата рождения залогодержателя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledge",
+            "pledge.house"
+        ]
+    },
+    {
+        "path": "pledges.items[].pledgees[].tin",
+        "description": "Обременения на ТС: ИНН залогодержателя",
         "types": [
             "string"
         ],

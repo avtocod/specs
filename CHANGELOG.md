@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `insurance.antifraud.probability.score`
+- Field with path `insurance_antifraud_scores.pre_insurance_osago.victim_score.value`
+- Field with path `insurance_antifraud_scores.pre_insurance_osago.guilty_score.value`
+- Field with path `insurance_antifraud_scores.pre_insurance_osago.fraud_category_segmentations.value`
+- Field with path `insurance_antifraud_scores.pre_insurance_osago.fraud_category_segmentations.reason`
+
 ## v5.13.0
 
 ### Changed

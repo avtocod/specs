@@ -1284,6 +1284,20 @@
             "value": 0.066888586
         }
     },
+    "insurance_antifraud_scores": {
+        "pre_insurance_osago": {
+            "victim_score": {
+                "value": 3.21
+            },
+            "guilty_score": {
+                "value": 1.23
+            },
+            "fraud_category_segmentations": {
+                "value": "GREEN",
+                "reason": "Low probability of fraud"
+            }
+        }
+    },
     "accidents": {
         "statistics": {
             "date": {

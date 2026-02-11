@@ -2215,6 +2215,46 @@
         ]
     },
     {
+        "path": "insurance_antifraud_scores.pre_insurance_osago.victim_score.value",
+        "description": "Предстраховой антифрод: Результат предсказания модели предстрахового антифрода для потерпевшего",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.antifraud.probability.score"
+        ]
+    },
+    {
+        "path": "insurance_antifraud_scores.pre_insurance_osago.guilty_score.value",
+        "description": "Предстраховой антифрод: Результат предсказания модели предстрахового антифрода для виновника",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.antifraud.probability.score"
+        ]
+    },
+    {
+        "path": "insurance_antifraud_scores.pre_insurance_osago.fraud_category_segmentations.value",
+        "description": "Предстраховой антифрод: Значение сегмента «Категория фрода»",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.antifraud.probability.score"
+        ]
+    },
+    {
+        "path": "insurance_antifraud_scores.pre_insurance_osago.fraud_category_segmentations.reason",
+        "description": "Предстраховой антифрод: Причина присвоения категории",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.antifraud.probability.score"
+        ]
+    },
+    {
         "path": "calculate.tax.moscow.yearly.amount",
         "description": "Калькулятор налога: Сумма налога за 12 месяцев (для Москвы)",
         "types": [

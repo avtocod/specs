@@ -8192,6 +8192,90 @@
                 }
             }
         },
+        "insurance_antifraud_scores": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Предстраховой антифрод",
+            "properties": {
+                "pre_insurance_osago": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "victim_score": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "value": {
+                                    "description": "Результат предсказания модели предстрахового антифрода для потерпевшего",
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        3.21
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.antifraud.probability.score"
+                                    ]
+                                }
+                            }
+                        },
+                        "guilty_score": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "value": {
+                                    "description": "Результат предсказания модели предстрахового антифрода для виновника",
+                                    "type": [
+                                        "number",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        1.23
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.antifraud.probability.score"
+                                    ]
+                                }
+                            }
+                        },
+                        "fraud_category_segmentations": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "value": {
+                                    "description": "Значение сегмента «Категория фрода»",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "RED",
+                                        "GREEN"
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.antifraud.probability.score"
+                                    ]
+                                },
+                                "reason": {
+                                    "description": "Причина присвоения категории",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ],
+                                    "examples": [
+                                        "Low probability of fraud"
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.antifraud.probability.score"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "accidents": {
             "type": "object",
             "additionalProperties": false,
@@ -8207,13 +8291,9 @@
                             "properties": {
                                 "update": {
                                     "description": "Дата обновления данных",
-                                    "oneOf": [
-                                        {
-                                            "type": "null"
-                                        },
-                                        {
-                                            "$ref": "#/definitions/datetime"
-                                        }
+                                    "type": [
+                                        "string",
+                                        "null"
                                     ],
                                     "examples": [
                                         "2021-12-31 11:30:20"

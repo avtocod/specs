@@ -1022,6 +1022,20 @@
             "value": null
         }
     },
+    "insurance_antifraud_scores": {
+        "pre_insurance_osago": {
+            "victim_score": {
+                "value": null
+            },
+            "guilty_score": {
+                "value": null
+            },
+            "fraud_category_segmentations": {
+                "value": null,
+                "reason": null
+            }
+        }
+    },
     "accidents": {
         "statistics": {
             "date": {

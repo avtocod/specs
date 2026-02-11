@@ -318,5 +318,10 @@
         "name": "ads.exposition",
         "description": "Время экспозиции объявлений",
         "enabled": true
+    },
+    {
+        "name": "insurance.antifraud.probability.score",
+        "description": "Предстраховой антифрод",
+        "enabled": true
     }
 ]

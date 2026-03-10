@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Added
 
+- Source `autobase.repairs.history.registry`
+- Fields with path `repairs.history.*` also fillable by `autobase.repairs.history.registry`
+- Fields with path `mileages.*` also fillable by `autobase.repairs.history.registry`
+
 ## v5.14.0
 
 ### Added

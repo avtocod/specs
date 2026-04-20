@@ -10207,7 +10207,8 @@
                     ],
                     "fillable_by": [
                         "gibdd.wanted",
-                        "gibdd.wanted.registry"
+                        "gibdd.wanted.registry",
+                        "base.basalt"
                     ]
                 },
                 "date": {
@@ -10228,7 +10229,8 @@
                             ],
                             "fillable_by": [
                                 "gibdd.wanted",
-                                "gibdd.wanted.registry"
+                                "gibdd.wanted.registry",
+                                "base.basalt"
                             ]
                         }
                     }

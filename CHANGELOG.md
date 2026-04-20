@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `stealings.is_wanted` also fillable by `base.basalt`
+- Field with path `stealings.date.update` also fillable by `base.basalt`
+
 ## v5.16.0
 
 ### Removed

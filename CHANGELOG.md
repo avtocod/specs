@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Vehicle marks spec. Motorcycle models specs.
+- Vehicle marks spec. Motorcycle models specs
 
 ## v5.16.0
 

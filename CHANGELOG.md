@@ -11,6 +11,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `stealings.is_wanted` also fillable by `base.basalt`
 - Field with path `stealings.date.update` also fillable by `base.basalt`
 
+## v5.17.0
+
+### Changed
+
+- Vehicle marks spec. Motorcycle models specs
+
 ## v5.16.0
 
 ### Removed

@@ -11,6 +11,14 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Field with path `stealings.is_wanted` also fillable by `base.basalt`
 - Field with path `stealings.date.update` also fillable by `base.basalt`
 
+## v5.18.0
+
+### Added
+
+- Source `autobase.repairs.history.registry`
+- Fields with path `repairs.history.*` also fillable by `autobase.repairs.history.registry`
+- Fields with path `mileages.*` also fillable by `autobase.repairs.history.registry`
+
 ## v5.17.0
 
 ### Changed

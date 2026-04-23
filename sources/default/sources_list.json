@@ -318,5 +318,10 @@
         "name": "insurance.antifraud.probability.score",
         "description": "Предстраховой антифрод",
         "enabled": true
+    },
+    {
+        "name": "autobase.repairs.history.registry",
+        "description": "Реестр истории ремонтных работ (Автобаза)",
+        "enabled": true
     }
 ]

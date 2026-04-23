@@ -2957,7 +2957,8 @@
                                                     "084/08/617"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             },
                                             "claim": {
@@ -2991,7 +2992,8 @@
                                                     "2010-12-17"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -3007,7 +3009,8 @@
                                             54900
                                         ],
                                         "fillable_by": [
-                                            "repairs.history.registry"
+                                            "repairs.history.registry",
+                                            "autobase.repairs.history.registry"
                                         ]
                                     },
                                     "cost": {
@@ -3025,7 +3028,8 @@
                                                     395280
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             },
                                             "labour": {
@@ -3039,7 +3043,8 @@
                                                     45910
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             },
                                             "parts": {
@@ -3053,7 +3058,8 @@
                                                     339670
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             },
                                             "paint": {
@@ -3067,7 +3073,8 @@
                                                     9700
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -3086,7 +3093,8 @@
                                                     "OPEL [V] [61] [R]"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             },
                                             "model": {
@@ -3099,7 +3107,8 @@
                                                     "MONTEREY [V] [XA] [S] [36] [M]"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             },
                                             "sub_model": {
@@ -3112,7 +3121,8 @@
                                                     "Monterey"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ]
                                             }
                                         }
@@ -3172,7 +3182,8 @@
                                             "KASKO"
                                         ],
                                         "fillable_by": [
-                                            "repairs.history.registry"
+                                            "repairs.history.registry",
+                                            "autobase.repairs.history.registry"
                                         ]
                                     },
                                     "repairer": {
@@ -3241,7 +3252,8 @@
                                                                 "Запасная часть для частичной замены"
                                                             ],
                                                             "fillable_by": [
-                                                                "repairs.history.registry"
+                                                                "repairs.history.registry",
+                                                                "autobase.repairs.history.registry"
                                                             ]
                                                         },
                                                         "repair": {
@@ -3289,7 +3301,8 @@
                                                     "null"
                                                 ],
                                                 "fillable_by": [
-                                                    "repairs.history.registry"
+                                                    "repairs.history.registry",
+                                                    "autobase.repairs.history.registry"
                                                 ],
                                                 "examples": [
                                                     0,
@@ -3318,7 +3331,8 @@
                                         "2021-01-11 12:54:00"
                                     ],
                                     "fillable_by": [
-                                        "repairs.history.registry"
+                                        "repairs.history.registry",
+                                        "autobase.repairs.history.registry"
                                     ]
                                 }
                             }
@@ -10586,7 +10600,8 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "eaisto.registry",
-                                            "repairs.history.registry"
+                                            "repairs.history.registry",
+                                            "autobase.repairs.history.registry"
                                         ]
                                     }
                                 }
@@ -10611,7 +10626,8 @@
                                     "service.history.filter",
                                     "service.history.wilgood",
                                     "eaisto.registry",
-                                    "repairs.history.registry"
+                                    "repairs.history.registry",
+                                    "autobase.repairs.history.registry"
                                 ]
                             },
                             "filled_by": {
@@ -10635,6 +10651,7 @@
                                             "service.history.wilgood",
                                             "eaisto.registry",
                                             "customs.base",
+                                            "autobase.repairs.history.registry",
                                             null
                                         ],
                                         "examples": [
@@ -10671,7 +10688,8 @@
                                             "service.history.filter",
                                             "service.history.wilgood",
                                             "eaisto.registry",
-                                            "repairs.history.registry"
+                                            "repairs.history.registry",
+                                            "autobase.repairs.history.registry"
                                         ]
                                     }
                                 }

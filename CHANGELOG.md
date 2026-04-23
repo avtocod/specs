@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `autobase.repairs.history.registry`
+- Fields with path `repairs.history.*` also fillable by `autobase.repairs.history.registry`
+- Fields with path `mileages.*` also fillable by `autobase.repairs.history.registry`
+
 ## v5.17.0
 
 ### Changed

@@ -12,6 +12,24 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Fields with path `repairs.history.*` also fillable by `autobase.repairs.history.registry`
 - Fields with path `mileages.*` also fillable by `autobase.repairs.history.registry`
 
+## v5.17.0
+
+### Changed
+
+- Vehicle marks spec. Motorcycle models specs
+
+## v5.16.0
+
+### Removed
+
+- Source `fines.base.dln`
+
+## v5.15.0
+
+### Changed
+
+- Vehicle marks and models specs
+
 ## v5.14.0
 
 ### Added

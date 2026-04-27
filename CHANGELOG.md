@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `pledge.online`
+- Fields with path `pledges.*` also fillable by `pledge.online`
+
 ## v5.19.0
 
 ### Added

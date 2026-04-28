@@ -358,6 +358,7 @@
                                 "gibdd.history",
                                 "gibdd.eaisto",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -382,6 +383,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
                             ]
@@ -405,6 +407,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history",
                                 "gibdd.history.registry",
                                 "elpts.online"
@@ -430,6 +433,7 @@
                                 "base",
                                 "gibdd.history",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -455,6 +459,7 @@
                                 "base",
                                 "regactions.registry",
                                 "base.basalt",
+                                "base.granit",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
                             ]
@@ -490,6 +495,7 @@
                                 "gibdd.history",
                                 "gibdd.eaisto",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -511,6 +517,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
                             ]
@@ -531,6 +538,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history",
                                 "gibdd.history.registry",
                                 "elpts.online"
@@ -553,6 +561,7 @@
                                 "base",
                                 "gibdd.history",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -575,6 +584,7 @@
                                 "base",
                                 "regactions.registry",
                                 "base.basalt",
+                                "base.granit",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
                             ]
@@ -599,10 +609,11 @@
                                 "null"
                             ],
                             "examples": [
-                                "N\/A"
+                                "N/A"
                             ],
                             "fillable_by": [
-                                "base.basalt"
+                                "base.basalt",
+                                "base.granit"
                             ]
                         }
                     }
@@ -647,6 +658,7 @@
                                         "gibdd.history",
                                         "gibdd.eaisto",
                                         "base.basalt",
+                                        "base.granit",
                                         "regactions.registry",
                                         "eaisto.registry",
                                         "gibdd.history.registry",
@@ -741,6 +753,7 @@
                                         "gibdd.history",
                                         "gibdd.eaisto",
                                         "base.basalt",
+                                        "base.granit",
                                         "eaisto.registry",
                                         "vin.decoder"
                                     ]
@@ -780,6 +793,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history",
                                 "gibdd.history.registry"
                             ]
@@ -800,6 +814,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history",
                                 "gibdd.history.registry"
                             ]
@@ -816,6 +831,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -861,6 +877,7 @@
                                         "base",
                                         "gibdd.history",
                                         "base.basalt",
+                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 },
@@ -896,6 +913,7 @@
                         "gibdd.eaisto",
                         "gibdd.history",
                         "base.basalt",
+                        "base.granit",
                         "eaisto.registry",
                         "regactions.registry",
                         "gibdd.history.registry",
@@ -949,6 +967,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
@@ -970,6 +989,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
@@ -995,6 +1015,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry"
                             ]
@@ -1015,6 +1036,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 }
@@ -1034,6 +1056,7 @@
                                 "base",
                                 "gibdd.history",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry",
                                 "vin.decoder"
@@ -1057,6 +1080,7 @@
                                         "base",
                                         "gibdd.history",
                                         "base.basalt",
+                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
@@ -1076,6 +1100,7 @@
                                         "base",
                                         "gibdd.history",
                                         "base.basalt",
+                                        "base.granit",
                                         "gibdd.history.registry",
                                         "vin.decoder"
                                     ]
@@ -1102,6 +1127,7 @@
                                             "fillable_by": [
                                                 "base",
                                                 "base.basalt",
+                                                "base.granit",
                                                 "regactions.registry",
                                                 "gibdd.history.registry"
                                             ]
@@ -1130,6 +1156,7 @@
                                 "base",
                                 "gibdd.eaisto",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry"
                             ]
                         },
@@ -1147,6 +1174,7 @@
                                 "base",
                                 "gibdd.eaisto",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry"
                             ]
                         }
@@ -1172,6 +1200,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -1191,6 +1220,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -1219,6 +1249,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -1238,6 +1269,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -1263,6 +1295,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry",
                                 "vin.decoder"
@@ -1284,6 +1317,7 @@
                             "fillable_by": [
                                 "base",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry",
                                 "vin.decoder"
@@ -1609,6 +1643,7 @@
                                 "gibdd.history",
                                 "gibdd.eaisto",
                                 "base.basalt",
+                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry",
@@ -1666,6 +1701,7 @@
                                         "base",
                                         "gibdd.eaisto",
                                         "base.basalt",
+                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry"
                                     ]
@@ -1684,6 +1720,7 @@
                                         "gibdd.eaisto",
                                         "regactions.registry",
                                         "base.basalt",
+                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 }
@@ -1956,6 +1993,7 @@
                                         "gibdd.history",
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "gibdd.history.registry",
                                         "elpts.online"
                                     ]
@@ -2162,6 +2200,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "eaisto.registry"
                                     ]
                                 },
@@ -2177,6 +2216,7 @@
                                     "fillable_by": [
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "eaisto.registry"
                                     ]
                                 }
@@ -2634,8 +2674,7 @@
                                                 "examples": [
                                                     5
                                                 ],
-                                                "fillable_by": [
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "model_id": {
                                                 "description": "Код модели ТС в каталоге TecDoc",
@@ -2647,8 +2686,7 @@
                                                 "examples": [
                                                     9154
                                                 ],
-                                                "fillable_by": [
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "id": {
                                                 "description": "Код ТС в каталоге TecDoc",
@@ -2660,8 +2698,7 @@
                                                 "examples": [
                                                     9308
                                                 ],
-                                                "fillable_by": [
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "name": {
                                                 "description": "Наименование ТС в каталоге TecDoc",
@@ -2672,8 +2709,7 @@
                                                 "examples": [
                                                     "AUDI A6 (4G2, 4GC, C7) 2.0 TDI"
                                                 ],
-                                                "fillable_by": [
-                                                ]
+                                                "fillable_by": []
                                             },
                                             "description": {
                                                 "description": "Описание ТС в каталоге TecDoc",
@@ -2684,8 +2720,7 @@
                                                 "examples": [
                                                     "2.0 TDI"
                                                 ],
-                                                "fillable_by": [
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     }
@@ -3580,8 +3615,7 @@
                             "examples": [
                                 false
                             ],
-                            "fillable_by": [
-                            ]
+                            "fillable_by": []
                         },
                         "records": {
                             "type": "object",
@@ -3596,8 +3630,7 @@
                                     "examples": [
                                         1
                                     ],
-                                    "fillable_by": [
-                                    ]
+                                    "fillable_by": []
                                 }
                             }
                         },
@@ -3618,8 +3651,7 @@
                                             "examples": [
                                                 "Opel Monterey"
                                             ],
-                                            "fillable_by": [
-                                            ]
+                                            "fillable_by": []
                                         }
                                     }
                                 }
@@ -3736,8 +3768,7 @@
                                                     "examples": [
                                                         "Владимирская"
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 }
                                             }
                                         },
@@ -3754,8 +3785,7 @@
                                                     "examples": [
                                                         "Шатура"
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 }
                                             }
                                         },
@@ -3772,8 +3802,7 @@
                                                     "examples": [
                                                         7800
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 },
                                                 "min": {
                                                     "description": "Минимальная стоимость ОСАГО для регионов",
@@ -3784,8 +3813,7 @@
                                                     "examples": [
                                                         6400
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 },
                                                 "max": {
                                                     "description": "Максимальная стоимость ОСАГО для регионов",
@@ -3796,8 +3824,7 @@
                                                     "examples": [
                                                         9200
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 }
                                             }
                                         }
@@ -3820,8 +3847,7 @@
                                                     "examples": [
                                                         12800
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 },
                                                 "min": {
                                                     "description": "Минимальная стоимость ОСАГО за 12 мес. (для Москвы)",
@@ -3832,8 +3858,7 @@
                                                     "examples": [
                                                         10700
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 },
                                                 "max": {
                                                     "description": "Максимальная стоимость ОСАГО за 12 мес. (для Москвы)",
@@ -3844,8 +3869,7 @@
                                                     "examples": [
                                                         14900
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 }
                                             }
                                         }
@@ -3868,8 +3892,7 @@
                                                     "examples": [
                                                         12000
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 },
                                                 "min": {
                                                     "description": "Минимальная стоимость ОСАГО за 12 мес. (для Московской Области)",
@@ -3880,8 +3903,7 @@
                                                     "examples": [
                                                         9400
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 },
                                                 "max": {
                                                     "description": "Максимальная стоимость ОСАГО за 12 мес. (для Московской Области)",
@@ -3892,8 +3914,7 @@
                                                     "examples": [
                                                         14600
                                                     ],
-                                                    "fillable_by": [
-                                                    ]
+                                                    "fillable_by": []
                                                 }
                                             }
                                         }
@@ -3933,8 +3954,7 @@
                                         "examples": [
                                             null
                                         ],
-                                        "fillable_by": [
-                                        ]
+                                        "fillable_by": []
                                     }
                                 }
                             },
@@ -3948,8 +3968,7 @@
                                     709200
                                 ],
                                 "minimum": 0,
-                                "fillable_by": [
-                                ]
+                                "fillable_by": []
                             },
                             "model": {
                                 "type": "object",
@@ -3964,8 +3983,7 @@
                                         "examples": [
                                             "EX"
                                         ],
-                                        "fillable_by": [
-                                        ]
+                                        "fillable_by": []
                                     }
                                 }
                             },
@@ -3982,8 +4000,7 @@
                                         "examples": [
                                             "I Restyling"
                                         ],
-                                        "fillable_by": [
-                                        ]
+                                        "fillable_by": []
                                     }
                                 }
                             },
@@ -4000,8 +4017,7 @@
                                         "examples": [
                                             2704.9
                                         ],
-                                        "fillable_by": [
-                                        ]
+                                        "fillable_by": []
                                     }
                                 }
                             },
@@ -4014,8 +4030,7 @@
                                 "examples": [
                                     2018
                                 ],
-                                "fillable_by": [
-                                ]
+                                "fillable_by": []
                             }
                         }
                     }
@@ -4366,7 +4381,7 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "УФК по ИО (ГУ МВД России по Новгородская область, л\/с 04475979720)"
+                                                    "УФК по ИО (ГУ МВД России по Новгородская область, л/с 04475979720)"
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
@@ -5410,7 +5425,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "customs.fts",
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             }
                                         }
@@ -5437,10 +5453,11 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "50302382\/017119\/0003860"
+                                                    "50302382/017119/0003860"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             }
                                         }
@@ -5459,7 +5476,8 @@
                                                     "ТАМОЖЕННОЕ УПРАВЛЕНИЕ"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             }
                                         }
@@ -5565,7 +5583,7 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "ЛЕГ.А\\\/М HONDA CR-X 3OZ53\/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
+                                                    "ЛЕГ.А\\/М HONDA CR-X 3OZ53/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
                                                 ],
                                                 "fillable_by": []
                                             }
@@ -5637,7 +5655,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "customs.fts",
-                                                            "base.basalt"
+                                                            "base.basalt",
+                                                            "base.granit"
                                                         ]
                                                     },
                                                     "code": {
@@ -5730,7 +5749,8 @@
                                                     "Уплачен"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             }
                                         }
@@ -5820,7 +5840,8 @@
                                     ],
                                     "fillable_by": [
                                         "customs.fts",
-                                        "base.basalt"
+                                        "base.basalt",
+                                        "base.granit"
                                     ]
                                 }
                             }
@@ -6398,7 +6419,7 @@
                                     "null"
                                 ],
                                 "examples": [
-                                    "2013-001-406288-623\/241"
+                                    "2013-001-406288-623/241"
                                 ],
                                 "fillable_by": [
                                     "pledge",
@@ -6774,7 +6795,7 @@
                                     "null"
                                 ],
                                 "examples": [
-                                    "2024-001-406288-623\/241"
+                                    "2024-001-406288-623/241"
                                 ],
                                 "fillable_by": []
                             },
@@ -8888,8 +8909,7 @@
                                                 "examples": [
                                                     "ОДД ГИБДД ГУ МВД России, Новгородская область"
                                                 ],
-                                                "fillable_by": [
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -9508,7 +9528,8 @@
                                     ],
                                     "fillable_by": [
                                         "gibdd.restrict",
-                                        "base.basalt"
+                                        "base.basalt",
+                                        "base.granit"
                                     ]
                                 }
                             }
@@ -9538,7 +9559,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.restrict",
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             },
                                             "start": {
@@ -9631,7 +9653,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.restrict",
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             },
                                             "region": {
@@ -9649,7 +9672,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "gibdd.restrict",
-                                                            "base.basalt"
+                                                            "base.basalt",
+                                                            "base.granit"
                                                         ]
                                                     }
                                                 }
@@ -9671,7 +9695,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.restrict",
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             },
                                             "reason": {
@@ -9685,7 +9710,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.restrict",
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             },
                                             "number": {
@@ -9699,7 +9725,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.restrict",
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             },
                                             "executive_procedure": {
@@ -9713,7 +9740,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.restrict",
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             },
                                             "contact": {
@@ -9726,7 +9754,8 @@
                                                     "652050, Россия, Кемеровская обл., г. Юрга, ул. Ленинградская, д. 31"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "base.granit"
                                                 ]
                                             }
                                         }
@@ -9750,6 +9779,7 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base.basalt",
+                                                    "base.granit",
                                                     "gibdd.restrict"
                                                 ]
                                             }
@@ -9775,7 +9805,8 @@
                             ],
                             "fillable_by": [
                                 "gibdd.restrict",
-                                "base.basalt"
+                                "base.basalt",
+                                "base.granit"
                             ]
                         }
                     }
@@ -10222,7 +10253,8 @@
                     "fillable_by": [
                         "gibdd.wanted",
                         "gibdd.wanted.registry",
-                        "base.basalt"
+                        "base.basalt",
+                        "base.granit"
                     ]
                 },
                 "date": {
@@ -10244,7 +10276,8 @@
                             "fillable_by": [
                                 "gibdd.wanted",
                                 "gibdd.wanted.registry",
-                                "base.basalt"
+                                "base.basalt",
+                                "base.granit"
                             ]
                         }
                     }
@@ -10287,6 +10320,7 @@
                                                     "gibdd.history",
                                                     "base",
                                                     "base.basalt",
+                                                    "base.granit",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
                                                 ]
@@ -10308,6 +10342,7 @@
                                                     "gibdd.history",
                                                     "base",
                                                     "base.basalt",
+                                                    "base.granit",
                                                     "gibdd.history.registry"
                                                 ]
                                             }
@@ -10338,6 +10373,7 @@
                                                     "gibdd.history",
                                                     "base",
                                                     "base.basalt",
+                                                    "base.granit",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
                                                 ]
@@ -10432,6 +10468,7 @@
                                                 "fillable_by": [
                                                     "base",
                                                     "base.basalt",
+                                                    "base.granit",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
                                                 ]
@@ -10448,6 +10485,7 @@
                                                 "fillable_by": [
                                                     "base",
                                                     "base.basalt",
+                                                    "base.granit",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
                                                 ]
@@ -10467,6 +10505,7 @@
                                             "gibdd.history",
                                             "base",
                                             "base.basalt",
+                                            "base.granit",
                                             "gibdd.history.registry"
                                         ]
                                     },
@@ -10484,6 +10523,7 @@
                                             "gibdd.history",
                                             "base",
                                             "base.basalt",
+                                            "base.granit",
                                             "gibdd.history.registry"
                                         ]
                                     }
@@ -10507,6 +10547,7 @@
                                         "gibdd.history",
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 },
@@ -10524,6 +10565,7 @@
                                         "gibdd.history",
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 }
@@ -10549,6 +10591,7 @@
                                         "gibdd.history",
                                         "base",
                                         "base.basalt",
+                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry"
                                     ]
@@ -10818,7 +10861,7 @@
                                             "null"
                                         ],
                                         "examples": [
-                                            "ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
+                                            "ГОРОД ЩЁЛКОВО/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",
@@ -14524,7 +14567,7 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    130.00
+                                                    130.0
                                                 ],
                                                 "fillable_by": [
                                                     "fssp.base.executive"

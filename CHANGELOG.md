@@ -11,6 +11,12 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Source `pledge.online`
 - Fields with path `pledges.*` also fillable by `pledge.online`
 
+## v5.20.0
+
+### Added
+
+- Source `base.granit`
+
 ## v5.19.0
 
 ### Added

@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Field `identifiers.vehicle.reg_num` not fillable by `base.granit`
+- Field `identifiers.vehicle.pts` not fillable by `base.granit`
+- Field `identifiers.vehicle.chassis` not fillable by `base.granit`
+- Field `identifiers_masked.vehicle.reg_num` not fillable by `base.granit`
+- Field `identifiers_masked.vehicle.pts` not fillable by `base.granit`
+- Field `identifiers_masked.vehicle.chassis` not fillable by `base.granit`
+- Field `tech_data.engine.model.name` not fillable by `base.granit`
+- Field `additional_info.vehicle.passport.number` not fillable by `base.granit`
+
 ## v5.21.0
 
 ### Added

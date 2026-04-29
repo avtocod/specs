@@ -323,5 +323,10 @@
         "name": "autobase.repairs.history.registry",
         "description": "Реестр истории ремонтных работ (Автобаза)",
         "enabled": true
+    },
+    {
+        "name": "base.granit",
+        "description": "Базовая информация о ТС и данные регистрационных действий",
+        "enabled": true
     }
 ]

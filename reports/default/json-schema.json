@@ -609,7 +609,7 @@
                                 "null"
                             ],
                             "examples": [
-                                "N/A"
+                                "N\/A"
                             ],
                             "fillable_by": [
                                 "base.basalt",
@@ -4381,7 +4381,7 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "УФК по ИО (ГУ МВД России по Новгородская область, л/с 04475979720)"
+                                                    "УФК по ИО (ГУ МВД России по Новгородская область, л\/с 04475979720)"
                                                 ],
                                                 "fillable_by": [
                                                     "fines.base",
@@ -5452,7 +5452,7 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "50302382/017119/0003860"
+                                                    "50302382\/017119\/0003860"
                                                 ],
                                                 "fillable_by": [
                                                     "base.basalt"
@@ -5580,7 +5580,7 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    "ЛЕГ.А\\/М HONDA CR-X 3OZ53/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
+                                                    "ЛЕГ.А\\\/М HONDA CR-X 3OZ53\/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
                                                 ],
                                                 "fillable_by": []
                                             }
@@ -6401,7 +6401,8 @@
                                         ],
                                         "fillable_by": [
                                             "pledge",
-                                            "pledge.house"
+                                            "pledge.house",
+                                            "pledge.online"
                                         ]
                                     }
                                 }
@@ -6413,11 +6414,12 @@
                                     "null"
                                 ],
                                 "examples": [
-                                    "2013-001-406288-623/241"
+                                    "2013-001-406288-623\/241"
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.online"
                                 ]
                             },
                             "pledgors": {
@@ -6445,7 +6447,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "type": {
@@ -6467,7 +6470,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "dob": {
@@ -6485,7 +6489,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "tin": {
@@ -6503,7 +6508,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         }
                                     }
@@ -6534,7 +6540,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "type": {
@@ -6556,7 +6563,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "dob": {
@@ -6574,7 +6582,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "tin": {
@@ -6592,7 +6601,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         }
                                     }
@@ -6623,7 +6633,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "type": {
@@ -6645,7 +6656,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         },
                                         "dob": {
@@ -6664,7 +6676,8 @@
                                             ],
                                             "fillable_by": [
                                                 "pledge",
-                                                "pledge.house"
+                                                "pledge.house",
+                                                "pledge.online"
                                             ]
                                         }
                                     }
@@ -6682,7 +6695,8 @@
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.online"
                                 ]
                             },
                             "in_pledge": {
@@ -6697,7 +6711,8 @@
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.online"
                                 ]
                             },
                             "data": {
@@ -6714,7 +6729,8 @@
                                 ],
                                 "fillable_by": [
                                     "pledge",
-                                    "pledge.house"
+                                    "pledge.house",
+                                    "pledge.online"
                                 ]
                             }
                         }
@@ -6738,7 +6754,8 @@
                             ],
                             "fillable_by": [
                                 "pledge",
-                                "pledge.house"
+                                "pledge.house",
+                                "pledge.online"
                             ]
                         }
                     }
@@ -6789,7 +6806,7 @@
                                     "null"
                                 ],
                                 "examples": [
-                                    "2024-001-406288-623/241"
+                                    "2024-001-406288-623\/241"
                                 ],
                                 "fillable_by": []
                             },
@@ -10855,7 +10872,7 @@
                                             "null"
                                         ],
                                         "examples": [
-                                            "ГОРОД ЩЁЛКОВО/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
+                                            "ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
                                         ],
                                         "fillable_by": [
                                             "gibdd.eaisto",

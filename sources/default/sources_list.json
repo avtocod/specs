@@ -325,6 +325,11 @@
         "enabled": true
     },
     {
+        "name": "pledge.online",
+        "description": "Данные о нахождении ТС в залоге Онлайн",
+        "enabled": true
+    },
+    {
         "name": "base.granit",
         "description": "Базовая информация о ТС и данные регистрационных действий",
         "enabled": true

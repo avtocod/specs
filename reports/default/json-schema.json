@@ -8110,6 +8110,2049 @@
                 }
             }
         },
+        "insurance_history": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "История страхования ОСАГО и КАСКО",
+            "properties": {
+                "osago": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "contracts": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "insurer": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "История страхования ОСАГО: Наименование страховщика",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "СПАО \"Ингосстрах\""
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "date": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "start": {
+                                                        "description": "История страхования ОСАГО: Дата начала действия договора",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "2025-08-04 00:00:00"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "end": {
+                                                        "description": "История страхования ОСАГО: Дата окончания действия договора",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "2025-08-04 00:00:00"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "actuality_date": {
+                                                "description": "История страхования ОСАГО: Дата актуальности записи",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "2025-08-04 00:00:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "contract": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "using_type": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "code": {
+                                                                "description": "История страхования ОСАГО: Код типа использования по договору",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "1"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            },
+                                                            "name": {
+                                                                "description": "История страхования ОСАГО: Наименование типа использования по договору",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Личная"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "kbm": {
+                                                        "description": "История страхования ОСАГО: КБМ по договору",
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            0.74,
+                                                            87404.67
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "owner": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "tin": {
+                                                        "description": "История страхования ОСАГО: ИНН владельца",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/tin_code"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "7707083893"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "dob": {
+                                                        "description": "История страхования ОСАГО: Дата рождения владельца",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "****-05-14"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "first_name": {
+                                                        "description": "История страхования ОСАГО: Имя владельца",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Н******"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "last_name": {
+                                                        "description": "История страхования ОСАГО: Фамилия владельца",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "С********"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "middle_name": {
+                                                        "description": "История страхования ОСАГО: Отчество владельца",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Д*********"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "insurant": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "tin": {
+                                                        "description": "История страхования ОСАГО: ИНН страхователя",
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "null"
+                                                            },
+                                                            {
+                                                                "$ref": "#/definitions/tin_code"
+                                                            }
+                                                        ],
+                                                        "examples": [
+                                                            "7707083893"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "dob": {
+                                                        "description": "История страхования ОСАГО: Дата рождения страхователя",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "****-05-14"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "first_name": {
+                                                        "description": "История страхования ОСАГО: Имя страхователя",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Пример"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "last_name": {
+                                                        "description": "История страхования ОСАГО: Фамилия страхователя",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "С********"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "middle_name": {
+                                                        "description": "История страхования ОСАГО: Отчество страхователя",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Д*********"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "vehicle": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "brand": {
+                                                        "description": "История страхования ОСАГО: Марка ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Toyota"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "model": {
+                                                        "description": "История страхования ОСАГО: Модель ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Camry"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "statements": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "items": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "accident": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "address": {
+                                                                            "description": "История страхования ОСАГО: Адрес страхового случая",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж/Р)"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        },
+                                                                        "date": {
+                                                                            "description": "История страхования ОСАГО: Дата страхового случая",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "2025-08-04 00:00:00"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        },
+                                                                        "is_europrotocol": {
+                                                                            "description": "История страхования ОСАГО: Признак оформления по европротоколу",
+                                                                            "type": [
+                                                                                "boolean",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                true,
+                                                                                false
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "decisions": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "additionalProperties": false,
+                                                                                "properties": {
+                                                                                    "is_total": {
+                                                                                        "description": "История страхования ОСАГО: Признак тотального ущерба",
+                                                                                        "type": [
+                                                                                            "boolean",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            true,
+                                                                                            false
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    },
+                                                                                    "payments": {
+                                                                                        "type": "object",
+                                                                                        "additionalProperties": false,
+                                                                                        "properties": {
+                                                                                            "items": {
+                                                                                                "type": "array",
+                                                                                                "items": {
+                                                                                                    "type": "object",
+                                                                                                    "additionalProperties": false,
+                                                                                                    "properties": {
+                                                                                                        "court_status": {
+                                                                                                            "description": "История страхования ОСАГО: Статус судебной выплаты",
+                                                                                                            "type": [
+                                                                                                                "string",
+                                                                                                                "null"
+                                                                                                            ],
+                                                                                                            "examples": [
+                                                                                                                "Досудебная"
+                                                                                                            ],
+                                                                                                            "fillable_by": [
+                                                                                                                "insurance.history.base"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        "is_ombudsman_decision": {
+                                                                                                            "description": "История страхования ОСАГО: Признак решения финансового уполномоченного",
+                                                                                                            "type": [
+                                                                                                                "boolean",
+                                                                                                                "null"
+                                                                                                            ],
+                                                                                                            "examples": [
+                                                                                                                true,
+                                                                                                                false
+                                                                                                            ],
+                                                                                                            "fillable_by": [
+                                                                                                                "insurance.history.base"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        "amount": {
+                                                                                                            "description": "История страхования ОСАГО: Сумма выплаты",
+                                                                                                            "type": [
+                                                                                                                "number",
+                                                                                                                "null"
+                                                                                                            ],
+                                                                                                            "examples": [
+                                                                                                                0.74,
+                                                                                                                87404.67
+                                                                                                            ],
+                                                                                                            "fillable_by": [
+                                                                                                                "insurance.history.base"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        "settlement_type": {
+                                                                                                            "description": "История страхования ОСАГО: Тип урегулирования выплаты",
+                                                                                                            "type": [
+                                                                                                                "string",
+                                                                                                                "null"
+                                                                                                            ],
+                                                                                                            "examples": [
+                                                                                                                "В денежной форме"
+                                                                                                            ],
+                                                                                                            "fillable_by": [
+                                                                                                                "insurance.history.base"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "insurer": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "name": {
+                                                                            "description": "История страхования ОСАГО: Наименование страховщика по страховому случаю",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "СПАО \"Ингосстрах\""
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "victim_insurer": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "name": {
+                                                                            "description": "История страхования ОСАГО: Наименование страховщика потерпевшей стороны",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "СПАО \"Ингосстрах\""
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "culprit": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "vehicle": {
+                                                                            "type": "object",
+                                                                            "additionalProperties": false,
+                                                                            "properties": {
+                                                                                "identifiers": {
+                                                                                    "type": "object",
+                                                                                    "additionalProperties": false,
+                                                                                    "properties": {
+                                                                                        "body": {
+                                                                                            "description": "История страхования ОСАГО: Номер кузова ТС виновника",
+                                                                                            "type": [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ],
+                                                                                            "examples": [
+                                                                                                "Пример"
+                                                                                            ],
+                                                                                            "fillable_by": [
+                                                                                                "insurance.history.base"
+                                                                                            ]
+                                                                                        },
+                                                                                        "chassis": {
+                                                                                            "description": "История страхования ОСАГО: Номер шасси ТС виновника",
+                                                                                            "type": [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ],
+                                                                                            "examples": [
+                                                                                                "Пример"
+                                                                                            ],
+                                                                                            "fillable_by": [
+                                                                                                "insurance.history.base"
+                                                                                            ]
+                                                                                        },
+                                                                                        "reg_num": {
+                                                                                            "description": "История страхования ОСАГО: Госномер ТС виновника",
+                                                                                            "type": [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ],
+                                                                                            "examples": [
+                                                                                                "Т333АХ38"
+                                                                                            ],
+                                                                                            "fillable_by": [
+                                                                                                "insurance.history.base"
+                                                                                            ]
+                                                                                        },
+                                                                                        "vin": {
+                                                                                            "description": "История страхования ОСАГО: VIN ТС виновника",
+                                                                                            "type": [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ],
+                                                                                            "examples": [
+                                                                                                "XW7BF4FK90S129987"
+                                                                                            ],
+                                                                                            "fillable_by": [
+                                                                                                "insurance.history.base"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "brand": {
+                                                                                    "type": "object",
+                                                                                    "additionalProperties": false,
+                                                                                    "properties": {
+                                                                                        "name": {
+                                                                                            "description": "История страхования ОСАГО: Марка ТС виновника",
+                                                                                            "type": [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ],
+                                                                                            "examples": [
+                                                                                                "Пример"
+                                                                                            ],
+                                                                                            "fillable_by": [
+                                                                                                "insurance.history.base"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "model": {
+                                                                                    "type": "object",
+                                                                                    "additionalProperties": false,
+                                                                                    "properties": {
+                                                                                        "name": {
+                                                                                            "description": "История страхования ОСАГО: Модель ТС виновника",
+                                                                                            "type": [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ],
+                                                                                            "examples": [
+                                                                                                "Пример"
+                                                                                            ],
+                                                                                            "fillable_by": [
+                                                                                                "insurance.history.base"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "victims": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "additionalProperties": false,
+                                                                                "properties": {
+                                                                                    "vehicle": {
+                                                                                        "type": "object",
+                                                                                        "additionalProperties": false,
+                                                                                        "properties": {
+                                                                                            "identifiers": {
+                                                                                                "type": "object",
+                                                                                                "additionalProperties": false,
+                                                                                                "properties": {
+                                                                                                    "body": {
+                                                                                                        "description": "История страхования ОСАГО: Номер кузова ТС потерпевшего",
+                                                                                                        "type": [
+                                                                                                            "string",
+                                                                                                            "null"
+                                                                                                        ],
+                                                                                                        "examples": [
+                                                                                                            "Пример"
+                                                                                                        ],
+                                                                                                        "fillable_by": [
+                                                                                                            "insurance.history.base"
+                                                                                                        ]
+                                                                                                    },
+                                                                                                    "chassis": {
+                                                                                                        "description": "История страхования ОСАГО: Номер шасси ТС потерпевшего",
+                                                                                                        "type": [
+                                                                                                            "string",
+                                                                                                            "null"
+                                                                                                        ],
+                                                                                                        "examples": [
+                                                                                                            "Пример"
+                                                                                                        ],
+                                                                                                        "fillable_by": [
+                                                                                                            "insurance.history.base"
+                                                                                                        ]
+                                                                                                    },
+                                                                                                    "reg_num": {
+                                                                                                        "description": "История страхования ОСАГО: Госномер ТС потерпевшего",
+                                                                                                        "type": [
+                                                                                                            "string",
+                                                                                                            "null"
+                                                                                                        ],
+                                                                                                        "examples": [
+                                                                                                            "Т333АХ38"
+                                                                                                        ],
+                                                                                                        "fillable_by": [
+                                                                                                            "insurance.history.base"
+                                                                                                        ]
+                                                                                                    },
+                                                                                                    "vin": {
+                                                                                                        "description": "История страхования ОСАГО: VIN ТС потерпевшего",
+                                                                                                        "type": [
+                                                                                                            "string",
+                                                                                                            "null"
+                                                                                                        ],
+                                                                                                        "examples": [
+                                                                                                            "XW7BF4FK90S129987"
+                                                                                                        ],
+                                                                                                        "fillable_by": [
+                                                                                                            "insurance.history.base"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "brand": {
+                                                                                                "type": "object",
+                                                                                                "additionalProperties": false,
+                                                                                                "properties": {
+                                                                                                    "name": {
+                                                                                                        "description": "История страхования ОСАГО: Марка ТС потерпевшего",
+                                                                                                        "type": [
+                                                                                                            "string",
+                                                                                                            "null"
+                                                                                                        ],
+                                                                                                        "examples": [
+                                                                                                            "Пример"
+                                                                                                        ],
+                                                                                                        "fillable_by": [
+                                                                                                            "insurance.history.base"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "model": {
+                                                                                                "type": "object",
+                                                                                                "additionalProperties": false,
+                                                                                                "properties": {
+                                                                                                    "name": {
+                                                                                                        "description": "История страхования ОСАГО: Модель ТС потерпевшего",
+                                                                                                        "type": [
+                                                                                                            "string",
+                                                                                                            "null"
+                                                                                                        ],
+                                                                                                        "examples": [
+                                                                                                            "Пример"
+                                                                                                        ],
+                                                                                                        "fillable_by": [
+                                                                                                            "insurance.history.base"
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "statements": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "accident": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "address": {
+                                                        "description": "История страхования ОСАГО: Адрес страхового случая",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж/Р)"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "date": {
+                                                        "description": "История страхования ОСАГО: Дата страхового случая",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "2025-08-04 00:00:00"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "is_europrotocol": {
+                                                        "description": "История страхования ОСАГО: Признак оформления по европротоколу",
+                                                        "type": [
+                                                            "boolean",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            true,
+                                                            false
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "decisions": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "items": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "is_total": {
+                                                                    "description": "История страхования ОСАГО: Признак тотального ущерба",
+                                                                    "type": [
+                                                                        "boolean",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
+                                                                },
+                                                                "payments": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "additionalProperties": false,
+                                                                                "properties": {
+                                                                                    "court_status": {
+                                                                                        "description": "История страхования ОСАГО: Статус судебной выплаты",
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            "Досудебная"
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    },
+                                                                                    "is_ombudsman_decision": {
+                                                                                        "description": "История страхования ОСАГО: Признак решения финансового уполномоченного",
+                                                                                        "type": [
+                                                                                            "boolean",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            true,
+                                                                                            false
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    },
+                                                                                    "amount": {
+                                                                                        "description": "История страхования ОСАГО: Сумма выплаты",
+                                                                                        "type": [
+                                                                                            "number",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            0.74,
+                                                                                            87404.67
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    },
+                                                                                    "settlement_type": {
+                                                                                        "description": "История страхования ОСАГО: Тип урегулирования выплаты",
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            "В денежной форме"
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "insurer": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "История страхования ОСАГО: Наименование страховщика по страховому случаю",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "СПАО \"Ингосстрах\""
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "victim_insurer": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "История страхования ОСАГО: Наименование страховщика потерпевшей стороны",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "СПАО \"Ингосстрах\""
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "culprit": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "vehicle": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "identifiers": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "body": {
+                                                                        "description": "История страхования ОСАГО: Номер кузова ТС виновника",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Пример"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "insurance.history.base"
+                                                                        ]
+                                                                    },
+                                                                    "chassis": {
+                                                                        "description": "История страхования ОСАГО: Номер шасси ТС виновника",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Пример"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "insurance.history.base"
+                                                                        ]
+                                                                    },
+                                                                    "reg_num": {
+                                                                        "description": "История страхования ОСАГО: Госномер ТС виновника",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Т333АХ38"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "insurance.history.base"
+                                                                        ]
+                                                                    },
+                                                                    "vin": {
+                                                                        "description": "История страхования ОСАГО: VIN ТС виновника",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "XW7BF4FK90S129987"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "insurance.history.base"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "brand": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "name": {
+                                                                        "description": "История страхования ОСАГО: Марка ТС виновника",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Пример"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "insurance.history.base"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "model": {
+                                                                "type": "object",
+                                                                "additionalProperties": false,
+                                                                "properties": {
+                                                                    "name": {
+                                                                        "description": "История страхования ОСАГО: Модель ТС виновника",
+                                                                        "type": [
+                                                                            "string",
+                                                                            "null"
+                                                                        ],
+                                                                        "examples": [
+                                                                            "Пример"
+                                                                        ],
+                                                                        "fillable_by": [
+                                                                            "insurance.history.base"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "victims": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "items": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "vehicle": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "identifiers": {
+                                                                            "type": "object",
+                                                                            "additionalProperties": false,
+                                                                            "properties": {
+                                                                                "body": {
+                                                                                    "description": "История страхования ОСАГО: Номер кузова ТС потерпевшего",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "Пример"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                },
+                                                                                "chassis": {
+                                                                                    "description": "История страхования ОСАГО: Номер шасси ТС потерпевшего",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "Пример"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                },
+                                                                                "reg_num": {
+                                                                                    "description": "История страхования ОСАГО: Госномер ТС потерпевшего",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "Т333АХ38"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                },
+                                                                                "vin": {
+                                                                                    "description": "История страхования ОСАГО: VIN ТС потерпевшего",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "XW7BF4FK90S129987"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "brand": {
+                                                                            "type": "object",
+                                                                            "additionalProperties": false,
+                                                                            "properties": {
+                                                                                "name": {
+                                                                                    "description": "История страхования ОСАГО: Марка ТС потерпевшего",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "Пример"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "model": {
+                                                                            "type": "object",
+                                                                            "additionalProperties": false,
+                                                                            "properties": {
+                                                                                "name": {
+                                                                                    "description": "История страхования ОСАГО: Модель ТС потерпевшего",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "Пример"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "kasko": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "contracts": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "date": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "start": {
+                                                        "description": "История страхования КАСКО: Дата начала действия договора",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "2025-08-04 00:00:00"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "end": {
+                                                        "description": "История страхования КАСКО: Дата окончания действия договора",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "2025-08-04 00:00:00"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "insurer": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "name": {
+                                                        "description": "История страхования КАСКО: Наименование страховщика",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "СПАО \"Ингосстрах\""
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "statements": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "items": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "vehicle_count": {
+                                                                    "description": "История страхования КАСКО: Количество транспортных средств в страховом случае",
+                                                                    "type": [
+                                                                        "integer",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        1
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
+                                                                },
+                                                                "vehicle_role": {
+                                                                    "description": "История страхования КАСКО: Роль транспортного средства в страховом случае",
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        "contract_vehicle"
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
+                                                                },
+                                                                "accident": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "date": {
+                                                                            "description": "История страхования КАСКО: Дата страхового случая",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "2025-08-04 00:00:00"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        },
+                                                                        "type": {
+                                                                            "description": "История страхования КАСКО: Тип страхового случая",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "ДТП"
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "decision": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "description": {
+                                                                            "description": "История страхования КАСКО: Описание решения по страховому случаю",
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "examples": [
+                                                                                "СПАО \"Ингосстрах\""
+                                                                            ],
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "decisions": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "additionalProperties": false,
+                                                                                "properties": {
+                                                                                    "is_total": {
+                                                                                        "description": "История страхования КАСКО: Признак тотального ущерба",
+                                                                                        "type": [
+                                                                                            "boolean",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            true,
+                                                                                            false
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    },
+                                                                                    "payments": {
+                                                                                        "type": "object",
+                                                                                        "additionalProperties": false,
+                                                                                        "properties": {
+                                                                                            "items": {
+                                                                                                "type": "array",
+                                                                                                "items": {
+                                                                                                    "type": "object",
+                                                                                                    "additionalProperties": false,
+                                                                                                    "properties": {
+                                                                                                        "court_status": {
+                                                                                                            "description": "История страхования КАСКО: Статус судебной выплаты",
+                                                                                                            "type": [
+                                                                                                                "string",
+                                                                                                                "null"
+                                                                                                            ],
+                                                                                                            "examples": [
+                                                                                                                "Досудебная"
+                                                                                                            ],
+                                                                                                            "fillable_by": [
+                                                                                                                "insurance.history.base"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        "amount": {
+                                                                                                            "description": "История страхования КАСКО: Сумма выплаты",
+                                                                                                            "type": [
+                                                                                                                "number",
+                                                                                                                "null"
+                                                                                                            ],
+                                                                                                            "examples": [
+                                                                                                                0.74,
+                                                                                                                87404.67
+                                                                                                            ],
+                                                                                                            "fillable_by": [
+                                                                                                                "insurance.history.base"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        "settlement_type": {
+                                                                                                            "description": "История страхования КАСКО: Тип урегулирования выплаты",
+                                                                                                            "type": [
+                                                                                                                "string",
+                                                                                                                "null"
+                                                                                                            ],
+                                                                                                            "examples": [
+                                                                                                                "В денежной форме"
+                                                                                                            ],
+                                                                                                            "fillable_by": [
+                                                                                                                "insurance.history.base"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "is_offender_liable": {
+                                                                    "description": "История страхования КАСКО: Признак ответственности виновника",
+                                                                    "type": [
+                                                                        "boolean",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
+                                                                },
+                                                                "is_subrogation": {
+                                                                    "description": "История страхования КАСКО: Признак суброгации",
+                                                                    "type": [
+                                                                        "boolean",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
+                                                                },
+                                                                "is_transfer_right_claim": {
+                                                                    "description": "История страхования КАСКО: Признак перехода права требования",
+                                                                    "type": [
+                                                                        "boolean",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
+                                                                },
+                                                                "vehicle": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "identifiers": {
+                                                                            "type": "object",
+                                                                            "additionalProperties": false,
+                                                                            "properties": {
+                                                                                "chassis": {
+                                                                                    "description": "История страхования КАСКО: Номер шасси застрахованного ТС по страховому случаю",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "СПАО \"Ингосстрах\""
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                },
+                                                                                "reg_num": {
+                                                                                    "description": "История страхования КАСКО: Госномер застрахованного ТС по страховому случаю",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "Т333АХ38"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                },
+                                                                                "vin": {
+                                                                                    "description": "История страхования КАСКО: VIN застрахованного ТС по страховому случаю",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "XW7BF4FK90S129987"
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "brand": {
+                                                                            "type": "object",
+                                                                            "additionalProperties": false,
+                                                                            "properties": {
+                                                                                "name": {
+                                                                                    "description": "История страхования КАСКО: Марка застрахованного ТС по страховому случаю",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "СПАО \"Ингосстрах\""
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "model": {
+                                                                            "type": "object",
+                                                                            "additionalProperties": false,
+                                                                            "properties": {
+                                                                                "name": {
+                                                                                    "description": "История страхования КАСКО: Модель застрахованного ТС по страховому случаю",
+                                                                                    "type": [
+                                                                                        "string",
+                                                                                        "null"
+                                                                                    ],
+                                                                                    "examples": [
+                                                                                        "СПАО \"Ингосстрах\""
+                                                                                    ],
+                                                                                    "fillable_by": [
+                                                                                        "insurance.history.base"
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "other_vehicles": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "additionalProperties": false,
+                                                                                "properties": {
+                                                                                    "identifiers": {
+                                                                                        "type": "object",
+                                                                                        "additionalProperties": false,
+                                                                                        "properties": {
+                                                                                            "reg_num": {
+                                                                                                "description": "История страхования КАСКО: Госномер иного ТС по страховому случаю",
+                                                                                                "type": [
+                                                                                                    "string",
+                                                                                                    "null"
+                                                                                                ],
+                                                                                                "examples": [
+                                                                                                    "Т333АХ38"
+                                                                                                ],
+                                                                                                "fillable_by": [
+                                                                                                    "insurance.history.base"
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "brand": {
+                                                                                        "type": "object",
+                                                                                        "additionalProperties": false,
+                                                                                        "properties": {
+                                                                                            "name": {
+                                                                                                "description": "История страхования КАСКО: Марка иного ТС по страховому случаю",
+                                                                                                "type": [
+                                                                                                    "string",
+                                                                                                    "null"
+                                                                                                ],
+                                                                                                "examples": [
+                                                                                                    "СПАО \"Ингосстрах\""
+                                                                                                ],
+                                                                                                "fillable_by": [
+                                                                                                    "insurance.history.base"
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "model": {
+                                                                                        "type": "object",
+                                                                                        "additionalProperties": false,
+                                                                                        "properties": {
+                                                                                            "name": {
+                                                                                                "description": "История страхования КАСКО: Модель иного ТС по страховому случаю",
+                                                                                                "type": [
+                                                                                                    "string",
+                                                                                                    "null"
+                                                                                                ],
+                                                                                                "examples": [
+                                                                                                    "СПАО \"Ингосстрах\""
+                                                                                                ],
+                                                                                                "fillable_by": [
+                                                                                                    "insurance.history.base"
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "contract": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "using_type": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "code": {
+                                                                "description": "История страхования КАСКО: Код типа использования ТС по договору",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "1"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            },
+                                                            "status": {
+                                                                "description": "История страхования КАСКО: Наименование типа использования ТС по договору",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Личная"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "vehicle": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "identifiers": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "body": {
+                                                                "description": "История страхования КАСКО: Номер кузова ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Пример"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            },
+                                                            "chassis": {
+                                                                "description": "История страхования КАСКО: Номер шасси ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Пример"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            },
+                                                            "reg_num": {
+                                                                "description": "История страхования КАСКО: Госномер ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Т333АХ38"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            },
+                                                            "vin": {
+                                                                "description": "История страхования КАСКО: VIN ТС",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "XW7BF4FK90S129987"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "brand": {
+                                                        "description": "История страхования КАСКО: Марка ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Toyota"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "model": {
+                                                        "description": "История страхования КАСКО: Модель ТС",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "Camry"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "statements": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "vehicle_count": {
+                                                "description": "История страхования КАСКО: Количество транспортных средств в страховом случае",
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    1
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "vehicle_role": {
+                                                "description": "История страхования КАСКО: Роль транспортного средства в страховом случае",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "contract_vehicle"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "accident": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "date": {
+                                                        "description": "История страхования КАСКО: Дата страхового случая",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "2025-08-04 00:00:00"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    },
+                                                    "type": {
+                                                        "description": "История страхования КАСКО: Тип страхового случая",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "ДТП"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "decision": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "description": {
+                                                        "description": "История страхования КАСКО: Описание решения по страховому случаю",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "СПАО \"Ингосстрах\""
+                                                        ],
+                                                        "fillable_by": [
+                                                            "insurance.history.base"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "decisions": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "items": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "additionalProperties": false,
+                                                            "properties": {
+                                                                "is_total": {
+                                                                    "description": "История страхования КАСКО: Признак тотального ущерба",
+                                                                    "type": [
+                                                                        "boolean",
+                                                                        "null"
+                                                                    ],
+                                                                    "examples": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
+                                                                },
+                                                                "payments": {
+                                                                    "type": "object",
+                                                                    "additionalProperties": false,
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "additionalProperties": false,
+                                                                                "properties": {
+                                                                                    "court_status": {
+                                                                                        "description": "История страхования КАСКО: Статус выплаты по отношению к суду",
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            "Досудебная"
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    },
+                                                                                    "amount": {
+                                                                                        "description": "История страхования КАСКО: Сумма выплаты",
+                                                                                        "type": [
+                                                                                            "number",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            0.74,
+                                                                                            87404.67
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    },
+                                                                                    "settlement_type": {
+                                                                                        "description": "История страхования КАСКО: Тип урегулирования выплаты",
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            "В денежной форме"
+                                                                                        ],
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "is_offender_liable": {
+                                                "description": "История страхования КАСКО: Признак ответственности виновника",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    true,
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "is_subrogation": {
+                                                "description": "История страхования КАСКО: Признак суброгации",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    true,
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "is_transfer_right_claim": {
+                                                "description": "История страхования КАСКО: Признак перехода права требования",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    true,
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "vehicle": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "identifiers": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "reg_num": {
+                                                                "description": "История страхования КАСКО: Госномер застрахованного ТС по страховому случаю",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "Т333АХ38"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            },
+                                                            "vin": {
+                                                                "description": "История страхования КАСКО: VIN застрахованного ТС по страховому случаю",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "XW7BF4FK90S129987"
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "brand": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "История страхования КАСКО: Марка застрахованного ТС по страховому случаю",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "СПАО \"Ингосстрах\""
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "model": {
+                                                        "type": "object",
+                                                        "additionalProperties": false,
+                                                        "properties": {
+                                                            "name": {
+                                                                "description": "История страхования КАСКО: Модель застрахованного ТС по страховому случаю",
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "examples": [
+                                                                    "СПАО \"Ингосстрах\""
+                                                                ],
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "insurance_scores": {
             "type": "object",
             "additionalProperties": false,

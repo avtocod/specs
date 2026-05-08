@@ -1008,6 +1008,432 @@
             "count": 1
         }
     },
+    "insurance_history": {
+        "osago": {
+            "contracts": {
+                "items": [
+                    {
+                        "insurer": {
+                            "name": null
+                        },
+                        "date": {
+                            "start": null,
+                            "end": null
+                        },
+                        "actuality_date": null,
+                        "contract": {
+                            "using_type": {
+                                "code": null,
+                                "name": null
+                            },
+                            "kbm": null
+                        },
+                        "owner": {
+                            "tin": null,
+                            "dob": null,
+                            "first_name": null,
+                            "last_name": null,
+                            "middle_name": null
+                        },
+                        "insurant": {
+                            "tin": null,
+                            "dob": null,
+                            "first_name": null,
+                            "last_name": null,
+                            "middle_name": null
+                        },
+                        "vehicle": {
+                            "brand": null,
+                            "model": null
+                        },
+                        "statements": {
+                            "items": [
+                                {
+                                    "accident": {
+                                        "address": null,
+                                        "date": null,
+                                        "is_europrotocol": null
+                                    },
+                                    "decisions": {
+                                        "items": [
+                                            {
+                                                "is_total": null,
+                                                "payments": {
+                                                    "items": [
+                                                        {
+                                                            "court_status": null,
+                                                            "is_ombudsman_decision": null,
+                                                            "amount": null,
+                                                            "settlement_type": null
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "insurer": {
+                                        "name": null
+                                    },
+                                    "victim_insurer": {
+                                        "name": null
+                                    },
+                                    "culprit": {
+                                        "vehicle": {
+                                            "identifiers": {
+                                                "body": null,
+                                                "chassis": null,
+                                                "reg_num": null,
+                                                "vin": null
+                                            },
+                                            "brand": {
+                                                "name": null
+                                            },
+                                            "model": {
+                                                "name": null
+                                            }
+                                        }
+                                    },
+                                    "victims": {
+                                        "items": [
+                                            {
+                                                "vehicle": {
+                                                    "identifiers": {
+                                                        "body": null,
+                                                        "chassis": null,
+                                                        "reg_num": null,
+                                                        "vin": null
+                                                    },
+                                                    "brand": {
+                                                        "name": null
+                                                    },
+                                                    "model": {
+                                                        "name": null
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "insurer": {
+                            "name": null
+                        },
+                        "date": {
+                            "start": null,
+                            "end": null
+                        },
+                        "actuality_date": null,
+                        "contract": {
+                            "using_type": {
+                                "code": null,
+                                "name": null
+                            },
+                            "kbm": null
+                        },
+                        "owner": {
+                            "tin": null,
+                            "dob": null,
+                            "first_name": null,
+                            "last_name": null,
+                            "middle_name": null
+                        },
+                        "insurant": {
+                            "tin": null,
+                            "dob": null,
+                            "first_name": null,
+                            "last_name": null,
+                            "middle_name": null
+                        },
+                        "vehicle": {
+                            "brand": null,
+                            "model": null
+                        },
+                        "statements": {
+                            "items": []
+                        }
+                    }
+                ]
+            },
+            "statements": {
+                "items": [
+                    {
+                        "accident": {
+                            "address": null,
+                            "date": null,
+                            "is_europrotocol": null
+                        },
+                        "decisions": {
+                            "items": [
+                                {
+                                    "is_total": null,
+                                    "payments": {
+                                        "items": [
+                                            {
+                                                "court_status": null,
+                                                "is_ombudsman_decision": null,
+                                                "amount": null,
+                                                "settlement_type": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "insurer": {
+                            "name": null
+                        },
+                        "victim_insurer": {
+                            "name": null
+                        },
+                        "culprit": {
+                            "vehicle": {
+                                "identifiers": {
+                                    "body": null,
+                                    "chassis": null,
+                                    "reg_num": null,
+                                    "vin": null
+                                },
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                }
+                            }
+                        },
+                        "victims": {
+                            "items": [
+                                {
+                                    "vehicle": {
+                                        "identifiers": {
+                                            "body": null,
+                                            "chassis": null,
+                                            "reg_num": null,
+                                            "vin": null
+                                        },
+                                        "brand": {
+                                            "name": null
+                                        },
+                                        "model": {
+                                            "name": null
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "accident": {
+                            "address": null,
+                            "date": null,
+                            "is_europrotocol": null
+                        },
+                        "decisions": {
+                            "items": [
+                                {
+                                    "is_total": null,
+                                    "payments": {
+                                        "items": [
+                                            {
+                                                "court_status": null,
+                                                "is_ombudsman_decision": null,
+                                                "amount": null,
+                                                "settlement_type": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "insurer": {
+                            "name": null
+                        },
+                        "victim_insurer": {
+                            "name": null
+                        },
+                        "culprit": {
+                            "vehicle": {
+                                "identifiers": {
+                                    "body": null,
+                                    "chassis": null,
+                                    "reg_num": null,
+                                    "vin": null
+                                },
+                                "brand": {
+                                    "name": null
+                                },
+                                "model": {
+                                    "name": null
+                                }
+                            }
+                        },
+                        "victims": {
+                            "items": [
+                                {
+                                    "vehicle": {
+                                        "identifiers": {
+                                            "body": null,
+                                            "chassis": null,
+                                            "reg_num": null,
+                                            "vin": null
+                                        },
+                                        "brand": {
+                                            "name": null
+                                        },
+                                        "model": {
+                                            "name": null
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "kasko": {
+            "contracts": {
+                "items": [
+                    {
+                        "date": {
+                            "start": null,
+                            "end": null
+                        },
+                        "insurer": {
+                            "name": null
+                        },
+                        "statements": {
+                            "items": [
+                                {
+                                    "vehicle_count": null,
+                                    "vehicle_role": null,
+                                    "accident": {
+                                        "date": null,
+                                        "type": null
+                                    },
+                                    "decision": {
+                                        "description": null
+                                    },
+                                    "decisions": {
+                                        "items": [
+                                            {
+                                                "is_total": null,
+                                                "payments": {
+                                                    "items": [
+                                                        {
+                                                            "court_status": null,
+                                                            "amount": null,
+                                                            "settlement_type": null
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "is_offender_liable": null,
+                                    "is_subrogation": null,
+                                    "is_transfer_right_claim": null,
+                                    "vehicle": {
+                                        "identifiers": {
+                                            "chassis": null,
+                                            "reg_num": null,
+                                            "vin": null
+                                        },
+                                        "brand": {
+                                            "name": null
+                                        },
+                                        "model": {
+                                            "name": null
+                                        }
+                                    },
+                                    "other_vehicles": {
+                                        "items": [
+                                            {
+                                                "identifiers": {
+                                                    "reg_num": null
+                                                },
+                                                "brand": {
+                                                    "name": null
+                                                },
+                                                "model": {
+                                                    "name": null
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "contract": {
+                            "using_type": {
+                                "code": null,
+                                "status": null
+                            }
+                        },
+                        "vehicle": {
+                            "identifiers": {
+                                "body": null,
+                                "chassis": null,
+                                "reg_num": null,
+                                "vin": null
+                            },
+                            "brand": null,
+                            "model": null
+                        }
+                    }
+                ]
+            },
+            "statements": {
+                "items": [
+                    {
+                        "vehicle_count": null,
+                        "vehicle_role": null,
+                        "accident": {
+                            "date": null,
+                            "type": null
+                        },
+                        "decision": {
+                            "description": null
+                        },
+                        "decisions": {
+                            "items": [
+                                {
+                                    "is_total": null,
+                                    "payments": {
+                                        "items": [
+                                            {
+                                                "court_status": null,
+                                                "amount": null,
+                                                "settlement_type": null
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "is_offender_liable": null,
+                        "is_subrogation": null,
+                        "is_transfer_right_claim": null,
+                        "vehicle": {
+                            "identifiers": {
+                                "reg_num": null,
+                                "vin": null
+                            },
+                            "brand": {
+                                "name": null
+                            },
+                            "model": {
+                                "name": null
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
     "insurance_scores": {
         "accident_probability": {
             "value": null

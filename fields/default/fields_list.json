@@ -2217,6 +2217,16 @@
         ]
     },
     {
+        "path": "insurance_history.actuality_date",
+        "description": "История страхования ОСАГО: Дата актуальности записи",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
         "path": "insurance_history.osago.contracts.items[].insurer.name",
         "description": "История страхования ОСАГО: Наименование страховщика",
         "types": [
@@ -2239,16 +2249,6 @@
     {
         "path": "insurance_history.osago.contracts.items[].date.end",
         "description": "История страхования ОСАГО: Дата окончания действия договора",
-        "types": [
-            "string"
-        ],
-        "fillable_by": [
-            "insurance.history.base"
-        ]
-    },
-    {
-        "path": "insurance_history.osago.contracts.items[].actuality_date",
-        "description": "История страхования ОСАГО: Дата актуальности записи",
         "types": [
             "string"
         ],
@@ -2947,8 +2947,8 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].statements.items[].decisions.items[].payments.items[].amount",
-        "description": "История страхования КАСКО: Сумма выплаты",
+        "path": "insurance_history.kasko.contracts.items[].statements.items[].decisions.items[].payments.items[].reparation_info.items[].amount",
+        "description": "История страхования КАСКО: Сумма выплаты в составе возмещения",
         "types": [
             "float"
         ],
@@ -3077,7 +3077,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].contract.using_type.code",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].contract.using_type.code",
         "description": "История страхования КАСКО: Код типа использования ТС по договору",
         "types": [
             "string"
@@ -3087,7 +3087,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].contract.using_type.status",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].contract.using_type.name",
         "description": "История страхования КАСКО: Наименование типа использования ТС по договору",
         "types": [
             "string"
@@ -3097,7 +3097,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].vehicle.identifiers.body",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].identifiers.body",
         "description": "История страхования КАСКО: Номер кузова ТС",
         "types": [
             "string"
@@ -3107,7 +3107,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].vehicle.identifiers.chassis",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].identifiers.chassis",
         "description": "История страхования КАСКО: Номер шасси ТС",
         "types": [
             "string"
@@ -3117,7 +3117,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].vehicle.identifiers.reg_num",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].identifiers.reg_num",
         "description": "История страхования КАСКО: Госномер ТС",
         "types": [
             "string"
@@ -3127,7 +3127,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].vehicle.brand",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].brand",
         "description": "История страхования КАСКО: Марка ТС",
         "types": [
             "string"
@@ -3137,7 +3137,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].vehicle.model",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].model",
         "description": "История страхования КАСКО: Модель ТС",
         "types": [
             "string"
@@ -3147,8 +3147,28 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.contracts.items[].vehicle.identifiers.vin",
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].identifiers.vin",
         "description": "История страхования КАСКО: VIN ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].risks_by_insurance_kind.items[].risks.items[].deductible_sum",
+        "description": "История страхования КАСКО: Размер франшизы по риску",
+        "types": [
+            "float"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].risks_by_insurance_kind.items[].risks.items[].type_info.items[].type_name",
+        "description": "История страхования КАСКО: Наименование типа риска",
         "types": [
             "string"
         ],
@@ -3227,8 +3247,8 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.statements.items[].decisions.items[].payments.items[].amount",
-        "description": "История страхования КАСКО: Сумма выплаты",
+        "path": "insurance_history.kasko.statements.items[].decisions.items[].payments.items[].reparation_info.items[].amount",
+        "description": "История страхования КАСКО: Сумма выплаты в составе возмещения",
         "types": [
             "float"
         ],

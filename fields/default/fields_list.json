@@ -2217,8 +2217,18 @@
         ]
     },
     {
-        "path": "insurance_history.actuality_date",
-        "description": "История страхования: Дата актуальности записи",
+        "path": "insurance_history.date.update",
+        "description": "История страхования: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.actuality_date",
+        "description": "История страхования ОСАГО: Дата актуальности записи",
         "types": [
             "string"
         ],
@@ -2839,6 +2849,16 @@
     {
         "path": "insurance_history.osago.statements.items[].victims.items[].vehicle.identifiers.vin",
         "description": "История страхования ОСАГО: VIN ТС потерпевшего",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.actuality_date",
+        "description": "История страхования КАСКО: Дата актуальности записи",
         "types": [
             "string"
         ],

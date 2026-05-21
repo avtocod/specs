@@ -8115,23 +8115,45 @@
             "additionalProperties": false,
             "description": "История страхования ОСАГО и КАСКО",
             "properties": {
-                "actuality_date": {
-                    "description": "История страхования: Дата актуальности записи",
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "examples": [
-                        "2025-08-04 00:00:00"
-                    ],
-                    "fillable_by": [
-                        "insurance.history.base"
-                    ]
+                "date": {
+                    "type": "object",
+                    "properties": {
+                        "update": {
+                            "description": "История страхования: Дата обновления данных",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2020-07-10 22:10:00"
+                            ],
+                            "fillable_by": [
+                                "insurance.history.base"
+                            ]
+                        }
+                    }
                 },
                 "osago": {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "actuality_date": {
+                            "description": "История страхования ОСАГО: Дата актуальности записи",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "examples": [
+                                "2025-08-04 00:00:00"
+                            ],
+                            "fillable_by": [
+                                "insurance.history.base"
+                            ]
+                        },
                         "contracts": {
                             "type": "object",
                             "additionalProperties": false,
@@ -9282,6 +9304,19 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
+                        "actuality_date": {
+                            "description": "История страхования КАСКО: Дата актуальности записи",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "examples": [
+                                "2025-08-04 00:00:00"
+                            ],
+                            "fillable_by": [
+                                "insurance.history.base"
+                            ]
+                        },
                         "contracts": {
                             "type": "object",
                             "additionalProperties": false,

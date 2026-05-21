@@ -1009,7 +1009,11 @@
         }
     },
     "insurance_history": {
+        "date": {
+            "update": null
+        },
         "osago": {
+            "actuality_date": null,
             "contracts": {
                 "items": [
                     {
@@ -1190,6 +1194,7 @@
             }
         },
         "kasko": {
+            "actuality_date": null,
             "contracts": {
                 "items": [
                     {
@@ -1363,8 +1368,7 @@
                     }
                 ]
             }
-        },
-        "actuality_date": null
+        }
     },
     "insurance_scores": {
         "accident_probability": {

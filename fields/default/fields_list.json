@@ -2227,7 +2227,7 @@
         ]
     },
     {
-        "path": "insurance_history.osago.actuality_date",
+        "path": "insurance_history.osago.actuality.date",
         "description": "История страхования ОСАГО: Дата актуальности записи",
         "types": [
             "string"
@@ -2857,7 +2857,7 @@
         ]
     },
     {
-        "path": "insurance_history.kasko.actuality_date",
+        "path": "insurance_history.kasko.actuality.date",
         "description": "История страхования КАСКО: Дата актуальности записи",
         "types": [
             "string"

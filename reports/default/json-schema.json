@@ -8141,18 +8141,28 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
-                        "actuality_date": {
-                            "description": "История страхования ОСАГО: Дата актуальности записи",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "examples": [
-                                "2025-08-04 00:00:00"
-                            ],
-                            "fillable_by": [
-                                "insurance.history.base"
-                            ]
+                        "actuality": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "date": {
+                                    "description": "История страхования ОСАГО: Дата актуальности записи",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2025-08-04 00:00:00"
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.history.base"
+                                    ]
+                                }
+                            }
                         },
                         "contracts": {
                             "type": "object",
@@ -9304,18 +9314,28 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
-                        "actuality_date": {
-                            "description": "История страхования КАСКО: Дата актуальности записи",
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "examples": [
-                                "2025-08-04 00:00:00"
-                            ],
-                            "fillable_by": [
-                                "insurance.history.base"
-                            ]
+                        "actuality": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "date": {
+                                    "description": "История страхования КАСКО: Дата актуальности записи",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2025-08-04 00:00:00"
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.history.base"
+                                    ]
+                                }
+                            }
                         },
                         "contracts": {
                             "type": "object",

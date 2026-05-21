@@ -1013,7 +1013,9 @@
             "update": null
         },
         "osago": {
-            "actuality_date": null,
+            "actuality": {
+                "date": null
+            },
             "contracts": {
                 "items": [
                     {
@@ -1194,7 +1196,9 @@
             }
         },
         "kasko": {
-            "actuality_date": null,
+            "actuality": {
+                "date": null
+            },
             "contracts": {
                 "items": [
                     {

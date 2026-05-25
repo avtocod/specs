@@ -11,6 +11,11 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Source `insurance.history.base`
 - Fields with path `insurance_history.*`
 
+### Changed
+
+- Update `nodejs` version in CI to `20`
+- Update `actions/setup-node` in CI to `v4`
+
 ## v5.22.0
 
 ### Removed

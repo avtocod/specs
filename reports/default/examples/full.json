@@ -1270,6 +1270,372 @@
             "count": 1
         }
     },
+    "insurance_history": {
+        "date": {
+            "update": "2024-07-10 09:30:00"
+        },
+        "osago": {
+            "actuality": {
+                "date": "2024-07-10 09:30:00"
+            },
+            "contracts": {
+                "items": [
+                    {
+                        "insurer": {
+                            "name": "СПАО \"Ингосстрах\""
+                        },
+                        "date": {
+                            "start": "2025-08-04 00:00:00",
+                            "end": "2026-08-03 23:59:59"
+                        },
+                        "contract": {
+                            "using_type": {
+                                "code": "1",
+                                "name": "Личная"
+                            },
+                            "kbm": 0.74
+                        },
+                        "owner": {
+                            "tin": "1233423534",
+                            "dob": "****-05-14",
+                            "first_name": "Н******",
+                            "last_name": "С********",
+                            "middle_name": "Д*********"
+                        },
+                        "insurant": {
+                            "tin": "1233423534",
+                            "dob": "****-05-14",
+                            "first_name": "Н******",
+                            "last_name": "С********",
+                            "middle_name": "Д*********"
+                        },
+                        "vehicle": {
+                            "brand": "Опель",
+                            "model": "Монтарей"
+                        },
+                        "statements": {
+                            "items": [
+                                {
+                                    "accident": {
+                                        "address": "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж\/Р)",
+                                        "date": "2022-09-14 20:12:00",
+                                        "is_europrotocol": true
+                                    },
+                                    "decisions": {
+                                        "items": [
+                                            {
+                                                "is_total": false,
+                                                "payments": {
+                                                    "items": [
+                                                        {
+                                                            "court_status": "Досудебная",
+                                                            "is_ombudsman_decision": false,
+                                                            "amount": 87404.67,
+                                                            "settlement_type": "В денежной форме"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "insurer": {
+                                        "name": "СПАО \"Ингосстрах\""
+                                    },
+                                    "victim_insurer": {
+                                        "name": "ПАО СК \"Росгосстрах\""
+                                    },
+                                    "culprit": {
+                                        "vehicle": {
+                                            "identifiers": {
+                                                "body": "KCA275-9673180",
+                                                "chassis": "LFPVBM6819793",
+                                                "reg_num": "A111AA196",
+                                                "vin": "Z94C251BBLR111455"
+                                            },
+                                            "brand": {
+                                                "name": "Kia"
+                                            },
+                                            "model": {
+                                                "name": "Rio"
+                                            }
+                                        }
+                                    },
+                                    "victims": {
+                                        "items": [
+                                            {
+                                                "vehicle": {
+                                                    "identifiers": {
+                                                        "body": "KCA275-9673180",
+                                                        "chassis": "LFPVBM6819793",
+                                                        "reg_num": "А332АВ177",
+                                                        "vin": "EXAMPL0V1N1000000"
+                                                    },
+                                                    "brand": {
+                                                        "name": "Опель"
+                                                    },
+                                                    "model": {
+                                                        "name": "Монтарей"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "statements": {
+                "items": [
+                    {
+                        "accident": {
+                            "address": "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж\/Р)",
+                            "date": "2022-09-14 20:12:00",
+                            "is_europrotocol": true
+                        },
+                        "decisions": {
+                            "items": [
+                                {
+                                    "is_total": false,
+                                    "payments": {
+                                        "items": [
+                                            {
+                                                "court_status": "Досудебная",
+                                                "is_ombudsman_decision": false,
+                                                "amount": 87404.67,
+                                                "settlement_type": "В денежной форме"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "insurer": {
+                            "name": "СПАО \"Ингосстрах\""
+                        },
+                        "victim_insurer": {
+                            "name": "ПАО СК \"Росгосстрах\""
+                        },
+                        "culprit": {
+                            "vehicle": {
+                                "identifiers": {
+                                    "body": "KCA275-9673180",
+                                    "chassis": "LFPVBM6819793",
+                                    "reg_num": "A111AA196",
+                                    "vin": "Z94C251BBLR111455"
+                                },
+                                "brand": {
+                                    "name": "Kia"
+                                },
+                                "model": {
+                                    "name": "Rio"
+                                }
+                            }
+                        },
+                        "victims": {
+                            "items": [
+                                {
+                                    "vehicle": {
+                                        "identifiers": {
+                                            "body": "KCA275-9673180",
+                                            "chassis": "LFPVBM6819793",
+                                            "reg_num": "А332АВ177",
+                                            "vin": "EXAMPL0V1N1000000"
+                                        },
+                                        "brand": {
+                                            "name": "Опель"
+                                        },
+                                        "model": {
+                                            "name": "Монтарей"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "kasko": {
+            "actuality": {
+                "date": "2024-07-10 09:30:00"
+            },
+            "contracts": {
+                "items": [
+                    {
+                        "date": {
+                            "start": "2020-01-01 00:00:00",
+                            "end": "2021-01-01 00:00:00"
+                        },
+                        "insurer": {
+                            "name": "САО \"ВСК\""
+                        },
+                        "statements": {
+                            "items": [
+                                {
+                                    "vehicle_count": 1,
+                                    "vehicle_role": "contract_vehicle",
+                                    "accident": {
+                                        "date": "2020-05-28 12:30:00",
+                                        "type": "ДТП"
+                                    },
+                                    "decision": {
+                                        "description": "Выплата"
+                                    },
+                                    "decisions": {
+                                        "items": [
+                                            {
+                                                "is_total": false,
+                                                "payments": {
+                                                    "items": [
+                                                        {
+                                                            "court_status": "Досудебная",
+                                                            "settlement_type": "В натуральной форме",
+                                                            "reparation_info": {
+                                                                "items": [
+                                                                    {
+                                                                        "amount": 10700
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "is_offender_liable": false,
+                                    "is_subrogation": false,
+                                    "is_transfer_right_claim": false,
+                                    "vehicle": {
+                                        "identifiers": {
+                                            "chassis": "LFPVBM6819793",
+                                            "reg_num": "А332АВ177",
+                                            "vin": "EXAMPL0V1N1000000"
+                                        },
+                                        "brand": {
+                                            "name": "Опель"
+                                        },
+                                        "model": {
+                                            "name": "Монтарей"
+                                        }
+                                    },
+                                    "other_vehicles": {
+                                        "items": [
+                                            {
+                                                "identifiers": {
+                                                    "reg_num": "A111AA196"
+                                                },
+                                                "brand": {
+                                                    "name": "Kia"
+                                                },
+                                                "model": {
+                                                    "name": "Rio"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vehicles": {
+                            "items": [
+                                {
+                                    "contract": {
+                                        "using_type": {
+                                            "code": "1",
+                                            "name": "Личная"
+                                        }
+                                    },
+                                    "identifiers": {
+                                        "body": "KCA275-9673180",
+                                        "chassis": "LFPVBM6819793",
+                                        "reg_num": "А332АВ177",
+                                        "vin": "EXAMPL0V1N1000000"
+                                    },
+                                    "brand": "Опель",
+                                    "model": "Монтарей",
+                                    "risks_by_insurance_kind": {
+                                        "items": [
+                                            {
+                                                "risks": {
+                                                    "items": [
+                                                        {
+                                                            "deductible_sum": 5000.0,
+                                                            "type_info": {
+                                                                "items": [
+                                                                    {
+                                                                        "type_name": "Ущерб"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "statements": {
+                "items": [
+                    {
+                        "vehicle_count": 1,
+                        "vehicle_role": "contract_vehicle",
+                        "accident": {
+                            "date": "2019-10-24 07:40:00",
+                            "type": "ДТП"
+                        },
+                        "decision": {
+                            "description": "Выплата"
+                        },
+                        "decisions": {
+                            "items": [
+                                {
+                                    "is_total": false,
+                                    "payments": {
+                                        "items": [
+                                            {
+                                                "court_status": "Досудебная",
+                                                "settlement_type": "В натуральной форме",
+                                                "reparation_info": {
+                                                    "items": [
+                                                        {
+                                                            "amount": 25996.3
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "is_offender_liable": false,
+                        "is_subrogation": false,
+                        "is_transfer_right_claim": false,
+                        "vehicle": {
+                            "identifiers": {
+                                "reg_num": "А332АВ177",
+                                "vin": "EXAMPL0V1N1000000"
+                            },
+                            "brand": {
+                                "name": "Опель"
+                            },
+                            "model": {
+                                "name": "Монтарей"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
     "insurance_scores": {
         "accident_probability": {
             "value": 0.08444489

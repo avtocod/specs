@@ -333,5 +333,10 @@
         "name": "base.granit",
         "description": "Базовая информация о ТС и данные регистрационных действий",
         "enabled": true
+    },
+    {
+        "name": "insurance.history.base",
+        "description": "История страхования",
+        "enabled": true
     }
 ]

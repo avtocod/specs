@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleqased
+
+### Added
+
+- Field with path `insurance_history.osago.contracts.items[].drivers.items[].last_name`
+- Field with path `insurance_history.osago.contracts.items[].drivers.items[].first_name`
+- Field with path `insurance_history.osago.contracts.items[].drivers.items[].middle_name`
+- Field with path `insurance_history.osago.contracts.items[].drivers.items[].dob`
+- Field with path `insurance_history.osago.contracts.items[].drivers.items[].country_info`
+- Field with path `insurance_history.osago.contracts.items[].drivers.items[].doc_type_info`
+- Field with path `insurance_history.osago.contracts.items[].vehicle.identifiers.body`
+- Field with path `insurance_history.osago.contracts.items[].vehicle.identifiers.chassis`
+- Field with path `insurance_history.osago.contracts.items[].vehicle.identifiers.vin`
+- Field with path `insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].last_name`
+- Field with path `insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].first_name`
+- Field with path `insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].middle_name`
+- Field with path `insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].dob`
+- Field with path `insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].country_info`
+- Field with path `insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].doc_type_info`
+- Field with path `insurance_history.kasko.contracts.items[].statements.items[].accident.address`
+- Field with path `insurance_history.kasko.contracts.items[].statements.items[].loss_types.items[].name`
+- Field with path `insurance_history.kasko.contracts.items[].statements.items[].vehicle_damaged_parts.items[].name`
+- Field with path `insurance_history.kasko.contracts.items[].vehicles.items[].risks_by_insurance_kind.items[].risks.items[].type_info.items[].type`
+
 ## v5.23.0
 
 ### Added

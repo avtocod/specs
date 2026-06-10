@@ -8603,5 +8603,195 @@
         "fillable_by": [
             "ads.exposition"
         ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].drivers.items[].last_name",
+        "description": "История страхования ОСАГО: Фамилия водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].drivers.items[].first_name",
+        "description": "История страхования ОСАГО: Имя водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].drivers.items[].middle_name",
+        "description": "История страхования ОСАГО: Отчество водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].drivers.items[].dob",
+        "description": "История страхования ОСАГО: Дата рождения водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].drivers.items[].country_info",
+        "description": "История страхования ОСАГО: Страна водительского удостоверения",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].drivers.items[].doc_type_info",
+        "description": "История страхования ОСАГО: Тип водительского удостоверения",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].vehicle.identifiers.body",
+        "description": "История страхования ОСАГО: Номер кузова ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].vehicle.identifiers.chassis",
+        "description": "История страхования ОСАГО: Номер шасси ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].vehicle.identifiers.vin",
+        "description": "История страхования ОСАГО: VIN ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].last_name",
+        "description": "История страхования КАСКО: Фамилия водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].first_name",
+        "description": "История страхования КАСКО: Имя водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].middle_name",
+        "description": "История страхования КАСКО: Отчество водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].dob",
+        "description": "История страхования КАСКО: Дата рождения водителя",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].country_info",
+        "description": "История страхования КАСКО: Страна водительского удостоверения",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].drivers.items[].doc_type_info",
+        "description": "История страхования КАСКО: Тип водительского удостоверения",
+        "types": [
+            "object"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].statements.items[].accident.address",
+        "description": "История страхования КАСКО: Адрес страхового случая",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].statements.items[].loss_types.items[].name",
+        "description": "История страхования КАСКО: Наименование типа ущерба",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].statements.items[].vehicle_damaged_parts.items[].name",
+        "description": "История страхования КАСКО: Наименование поврежденной части ТС",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
+    },
+    {
+        "path": "insurance_history.kasko.contracts.items[].vehicles.items[].risks_by_insurance_kind.items[].risks.items[].type_info.items[].type",
+        "description": "История страхования КАСКО: Код типа риска",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history"
+        ]
     }
 ]

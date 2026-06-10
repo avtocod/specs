@@ -8772,6 +8772,65 @@
                                                         }
                                                     }
                                                 }
+                                            },
+                                            "vehicle": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "identifiers": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "body": {
+                                                                "type": "string",
+                                                                "nullable": true
+                                                            },
+                                                            "chassis": {
+                                                                "type": "string",
+                                                                "nullable": true
+                                                            },
+                                                            "vin": {
+                                                                "type": "string",
+                                                                "nullable": true
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "drivers": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "items": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "last_name": {
+                                                                    "type": "string",
+                                                                    "nullable": true
+                                                                },
+                                                                "first_name": {
+                                                                    "type": "string",
+                                                                    "nullable": true
+                                                                },
+                                                                "middle_name": {
+                                                                    "type": "string",
+                                                                    "nullable": true
+                                                                },
+                                                                "dob": {
+                                                                    "type": "string",
+                                                                    "nullable": true
+                                                                },
+                                                                "country_info": {
+                                                                    "type": "object",
+                                                                    "nullable": true
+                                                                },
+                                                                "doc_type_info": {
+                                                                    "type": "object",
+                                                                    "nullable": true
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -9279,6 +9338,10 @@
                                                                             "fillable_by": [
                                                                                 "insurance.history.base"
                                                                             ]
+                                                                        },
+                                                                        "address": {
+                                                                            "type": "string",
+                                                                            "nullable": true
                                                                         }
                                                                     }
                                                                 },
@@ -9526,6 +9589,40 @@
                                                                             }
                                                                         }
                                                                     }
+                                                                },
+                                                                "loss_types": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                    "name": {
+                                                                                        "type": "string",
+                                                                                        "nullable": true
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "vehicle_damaged_parts": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                    "name": {
+                                                                                        "type": "string",
+                                                                                        "nullable": true
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -9694,6 +9791,10 @@
                                                                                                                                 "fillable_by": [
                                                                                                                                     "insurance.history.base"
                                                                                                                                 ]
+                                                                                                                            },
+                                                                                                                            "type": {
+                                                                                                                                "type": "string",
+                                                                                                                                "nullable": true
                                                                                                                             }
                                                                                                                         }
                                                                                                                     }
@@ -9704,6 +9805,43 @@
                                                                                                 }
                                                                                             }
                                                                                         }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "drivers": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "items": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                    "last_name": {
+                                                                                        "type": "string",
+                                                                                        "nullable": true
+                                                                                    },
+                                                                                    "first_name": {
+                                                                                        "type": "string",
+                                                                                        "nullable": true
+                                                                                    },
+                                                                                    "middle_name": {
+                                                                                        "type": "string",
+                                                                                        "nullable": true
+                                                                                    },
+                                                                                    "dob": {
+                                                                                        "type": "string",
+                                                                                        "nullable": true
+                                                                                    },
+                                                                                    "country_info": {
+                                                                                        "type": "object",
+                                                                                        "nullable": true
+                                                                                    },
+                                                                                    "doc_type_info": {
+                                                                                        "type": "object",
+                                                                                        "nullable": true
                                                                                     }
                                                                                 }
                                                                             }

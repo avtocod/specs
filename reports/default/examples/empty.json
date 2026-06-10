@@ -1104,6 +1104,25 @@
                                     }
                                 }
                             ]
+                        },
+                        "vehicle": {
+                            "identifiers": {
+                                "body": null,
+                                "chassis": null,
+                                "vin": null
+                            }
+                        },
+                        "drivers": {
+                            "items": [
+                                {
+                                    "last_name": null,
+                                    "first_name": null,
+                                    "middle_name": null,
+                                    "dob": null,
+                                    "country_info": {},
+                                    "doc_type_info": {}
+                                }
+                            ]
                         }
                     }
                 ]
@@ -1188,7 +1207,8 @@
                                     "vehicle_role": null,
                                     "accident": {
                                         "date": null,
-                                        "type": null
+                                        "type": null,
+                                        "address": null
                                     },
                                     "decision": {
                                         "description": null
@@ -1233,6 +1253,20 @@
                                                 }
                                             }
                                         ]
+                                    },
+                                    "loss_types": {
+                                        "items": [
+                                            {
+                                                "name": null
+                                            }
+                                        ]
+                                    },
+                                    "vehicle_damaged_parts": {
+                                        "items": [
+                                            {
+                                                "name": null
+                                            }
+                                        ]
                                     }
                                 }
                             ]
@@ -1262,13 +1296,26 @@
                                                             "type_info": {
                                                                 "items": [
                                                                     {
-                                                                        "type_name": null
+                                                                        "type_name": null,
+                                                                        "type": null
                                                                     }
                                                                 ]
                                                             }
                                                         }
                                                     ]
                                                 }
+                                            }
+                                        ]
+                                    },
+                                    "drivers": {
+                                        "items": [
+                                            {
+                                                "last_name": null,
+                                                "first_name": null,
+                                                "middle_name": null,
+                                                "dob": null,
+                                                "country_info": {},
+                                                "doc_type_info": {}
                                             }
                                         ]
                                     }

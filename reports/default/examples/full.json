@@ -1366,6 +1366,31 @@
                                     }
                                 }
                             ]
+                        },
+                        "vehicle": {
+                            "identifiers": {
+                                "body": "KCA275-9673180",
+                                "chassis": "LFPVBM6819793",
+                                "vin": "EXAMPL0V1N1000000"
+                            }
+                        },
+                        "drivers": {
+                            "items": [
+                                {
+                                    "last_name": "Иванов",
+                                    "first_name": "Иван",
+                                    "middle_name": "Иванович",
+                                    "dob": "****-01-01",
+                                    "country_info": {
+                                        "countryCode": "643",
+                                        "countryName": "Россия"
+                                    },
+                                    "doc_type_info": {
+                                        "docType": "01",
+                                        "docTypeName": "Национальное ВУ"
+                                    }
+                                }
+                            ]
                         }
                     }
                 ]
@@ -1450,7 +1475,8 @@
                                     "vehicle_role": "contract_vehicle",
                                     "accident": {
                                         "date": "2020-05-28 12:30:00",
-                                        "type": "ДТП"
+                                        "type": "ДТП",
+                                        "address": "г. Москва, ул. Примерная, д. 1"
                                     },
                                     "decision": {
                                         "description": "Выплата"
@@ -1495,6 +1521,20 @@
                                                 }
                                             }
                                         ]
+                                    },
+                                    "loss_types": {
+                                        "items": [
+                                            {
+                                                "name": "Ущерб ТС"
+                                            }
+                                        ]
+                                    },
+                                    "vehicle_damaged_parts": {
+                                        "items": [
+                                            {
+                                                "name": "Иное"
+                                            }
+                                        ]
                                     }
                                 }
                             ]
@@ -1524,12 +1564,31 @@
                                                             "type_info": {
                                                                 "items": [
                                                                     {
-                                                                        "type_name": "Ущерб"
+                                                                        "type_name": "Ущерб",
+                                                                        "type": "1"
                                                                     }
                                                                 ]
                                                             }
                                                         }
                                                     ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "drivers": {
+                                        "items": [
+                                            {
+                                                "last_name": "Петров",
+                                                "first_name": "Пётр",
+                                                "middle_name": "Петрович",
+                                                "dob": "****-02-02",
+                                                "country_info": {
+                                                    "countryCode": "643",
+                                                    "countryName": "Россия"
+                                                },
+                                                "doc_type_info": {
+                                                    "docType": "01",
+                                                    "docTypeName": "Национальное ВУ"
                                                 }
                                             }
                                         ]

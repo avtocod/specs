@@ -1047,10 +1047,6 @@
                             "last_name": null,
                             "middle_name": null
                         },
-                        "vehicle": {
-                            "brand": null,
-                            "model": null
-                        },
                         "statements": {
                             "items": [
                                 {
@@ -1089,12 +1085,6 @@
                                                 "chassis": null,
                                                 "reg_num": null,
                                                 "vin": null
-                                            },
-                                            "brand": {
-                                                "name": null
-                                            },
-                                            "model": {
-                                                "name": null
                                             }
                                         }
                                     },
@@ -1107,12 +1097,6 @@
                                                         "chassis": null,
                                                         "reg_num": null,
                                                         "vin": null
-                                                    },
-                                                    "brand": {
-                                                        "name": null
-                                                    },
-                                                    "model": {
-                                                        "name": null
                                                     }
                                                 }
                                             }
@@ -1162,12 +1146,6 @@
                                     "chassis": null,
                                     "reg_num": null,
                                     "vin": null
-                                },
-                                "brand": {
-                                    "name": null
-                                },
-                                "model": {
-                                    "name": null
                                 }
                             }
                         },
@@ -1180,12 +1158,6 @@
                                             "chassis": null,
                                             "reg_num": null,
                                             "vin": null
-                                        },
-                                        "brand": {
-                                            "name": null
-                                        },
-                                        "model": {
-                                            "name": null
                                         }
                                     }
                                 }
@@ -1251,12 +1223,6 @@
                                             "chassis": null,
                                             "reg_num": null,
                                             "vin": null
-                                        },
-                                        "brand": {
-                                            "name": null
-                                        },
-                                        "model": {
-                                            "name": null
                                         }
                                     },
                                     "other_vehicles": {
@@ -1264,12 +1230,6 @@
                                             {
                                                 "identifiers": {
                                                     "reg_num": null
-                                                },
-                                                "brand": {
-                                                    "name": null
-                                                },
-                                                "model": {
-                                                    "name": null
                                                 }
                                             }
                                         ]
@@ -1292,8 +1252,6 @@
                                         "reg_num": null,
                                         "vin": null
                                     },
-                                    "brand": null,
-                                    "model": null,
                                     "risks_by_insurance_kind": {
                                         "items": [
                                             {
@@ -1361,12 +1319,6 @@
                             "identifiers": {
                                 "reg_num": null,
                                 "vin": null
-                            },
-                            "brand": {
-                                "name": null
-                            },
-                            "model": {
-                                "name": null
                             }
                         }
                     }

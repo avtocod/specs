@@ -8427,38 +8427,6 @@
                                                     }
                                                 }
                                             },
-                                            "vehicle": {
-                                                "type": "object",
-                                                "additionalProperties": false,
-                                                "properties": {
-                                                    "brand": {
-                                                        "description": "История страхования ОСАГО: Марка ТС",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ],
-                                                        "examples": [
-                                                            "Toyota"
-                                                        ],
-                                                        "fillable_by": [
-                                                            "insurance.history.base"
-                                                        ]
-                                                    },
-                                                    "model": {
-                                                        "description": "История страхования ОСАГО: Модель ТС",
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ],
-                                                        "examples": [
-                                                            "Camry"
-                                                        ],
-                                                        "fillable_by": [
-                                                            "insurance.history.base"
-                                                        ]
-                                                    }
-                                                }
-                                            },
                                             "statements": {
                                                 "type": "object",
                                                 "additionalProperties": false,
@@ -8716,44 +8684,6 @@
                                                                                             ]
                                                                                         }
                                                                                     }
-                                                                                },
-                                                                                "brand": {
-                                                                                    "type": "object",
-                                                                                    "additionalProperties": false,
-                                                                                    "properties": {
-                                                                                        "name": {
-                                                                                            "description": "История страхования ОСАГО: Марка ТС виновника",
-                                                                                            "type": [
-                                                                                                "string",
-                                                                                                "null"
-                                                                                            ],
-                                                                                            "examples": [
-                                                                                                "Пример"
-                                                                                            ],
-                                                                                            "fillable_by": [
-                                                                                                "insurance.history.base"
-                                                                                            ]
-                                                                                        }
-                                                                                    }
-                                                                                },
-                                                                                "model": {
-                                                                                    "type": "object",
-                                                                                    "additionalProperties": false,
-                                                                                    "properties": {
-                                                                                        "name": {
-                                                                                            "description": "История страхования ОСАГО: Модель ТС виновника",
-                                                                                            "type": [
-                                                                                                "string",
-                                                                                                "null"
-                                                                                            ],
-                                                                                            "examples": [
-                                                                                                "Пример"
-                                                                                            ],
-                                                                                            "fillable_by": [
-                                                                                                "insurance.history.base"
-                                                                                            ]
-                                                                                        }
-                                                                                    }
                                                                                 }
                                                                             }
                                                                         }
@@ -8824,44 +8754,6 @@
                                                                                                         ],
                                                                                                         "examples": [
                                                                                                             "XW7BF4FK90S129987"
-                                                                                                        ],
-                                                                                                        "fillable_by": [
-                                                                                                            "insurance.history.base"
-                                                                                                        ]
-                                                                                                    }
-                                                                                                }
-                                                                                            },
-                                                                                            "brand": {
-                                                                                                "type": "object",
-                                                                                                "additionalProperties": false,
-                                                                                                "properties": {
-                                                                                                    "name": {
-                                                                                                        "description": "История страхования ОСАГО: Марка ТС потерпевшего",
-                                                                                                        "type": [
-                                                                                                            "string",
-                                                                                                            "null"
-                                                                                                        ],
-                                                                                                        "examples": [
-                                                                                                            "Пример"
-                                                                                                        ],
-                                                                                                        "fillable_by": [
-                                                                                                            "insurance.history.base"
-                                                                                                        ]
-                                                                                                    }
-                                                                                                }
-                                                                                            },
-                                                                                            "model": {
-                                                                                                "type": "object",
-                                                                                                "additionalProperties": false,
-                                                                                                "properties": {
-                                                                                                    "name": {
-                                                                                                        "description": "История страхования ОСАГО: Модель ТС потерпевшего",
-                                                                                                        "type": [
-                                                                                                            "string",
-                                                                                                            "null"
-                                                                                                        ],
-                                                                                                        "examples": [
-                                                                                                            "Пример"
                                                                                                         ],
                                                                                                         "fillable_by": [
                                                                                                             "insurance.history.base"
@@ -9143,44 +9035,6 @@
                                                                         ]
                                                                     }
                                                                 }
-                                                            },
-                                                            "brand": {
-                                                                "type": "object",
-                                                                "additionalProperties": false,
-                                                                "properties": {
-                                                                    "name": {
-                                                                        "description": "История страхования ОСАГО: Марка ТС виновника",
-                                                                        "type": [
-                                                                            "string",
-                                                                            "null"
-                                                                        ],
-                                                                        "examples": [
-                                                                            "Пример"
-                                                                        ],
-                                                                        "fillable_by": [
-                                                                            "insurance.history.base"
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            },
-                                                            "model": {
-                                                                "type": "object",
-                                                                "additionalProperties": false,
-                                                                "properties": {
-                                                                    "name": {
-                                                                        "description": "История страхования ОСАГО: Модель ТС виновника",
-                                                                        "type": [
-                                                                            "string",
-                                                                            "null"
-                                                                        ],
-                                                                        "examples": [
-                                                                            "Пример"
-                                                                        ],
-                                                                        "fillable_by": [
-                                                                            "insurance.history.base"
-                                                                        ]
-                                                                    }
-                                                                }
                                                             }
                                                         }
                                                     }
@@ -9251,44 +9105,6 @@
                                                                                     ],
                                                                                     "examples": [
                                                                                         "XW7BF4FK90S129987"
-                                                                                    ],
-                                                                                    "fillable_by": [
-                                                                                        "insurance.history.base"
-                                                                                    ]
-                                                                                }
-                                                                            }
-                                                                        },
-                                                                        "brand": {
-                                                                            "type": "object",
-                                                                            "additionalProperties": false,
-                                                                            "properties": {
-                                                                                "name": {
-                                                                                    "description": "История страхования ОСАГО: Марка ТС потерпевшего",
-                                                                                    "type": [
-                                                                                        "string",
-                                                                                        "null"
-                                                                                    ],
-                                                                                    "examples": [
-                                                                                        "Пример"
-                                                                                    ],
-                                                                                    "fillable_by": [
-                                                                                        "insurance.history.base"
-                                                                                    ]
-                                                                                }
-                                                                            }
-                                                                        },
-                                                                        "model": {
-                                                                            "type": "object",
-                                                                            "additionalProperties": false,
-                                                                            "properties": {
-                                                                                "name": {
-                                                                                    "description": "История страхования ОСАГО: Модель ТС потерпевшего",
-                                                                                    "type": [
-                                                                                        "string",
-                                                                                        "null"
-                                                                                    ],
-                                                                                    "examples": [
-                                                                                        "Пример"
                                                                                     ],
                                                                                     "fillable_by": [
                                                                                         "insurance.history.base"
@@ -9674,44 +9490,6 @@
                                                                                     ]
                                                                                 }
                                                                             }
-                                                                        },
-                                                                        "brand": {
-                                                                            "type": "object",
-                                                                            "additionalProperties": false,
-                                                                            "properties": {
-                                                                                "name": {
-                                                                                    "description": "История страхования КАСКО: Марка застрахованного ТС по страховому случаю",
-                                                                                    "type": [
-                                                                                        "string",
-                                                                                        "null"
-                                                                                    ],
-                                                                                    "examples": [
-                                                                                        "СПАО \"Ингосстрах\""
-                                                                                    ],
-                                                                                    "fillable_by": [
-                                                                                        "insurance.history.base"
-                                                                                    ]
-                                                                                }
-                                                                            }
-                                                                        },
-                                                                        "model": {
-                                                                            "type": "object",
-                                                                            "additionalProperties": false,
-                                                                            "properties": {
-                                                                                "name": {
-                                                                                    "description": "История страхования КАСКО: Модель застрахованного ТС по страховому случаю",
-                                                                                    "type": [
-                                                                                        "string",
-                                                                                        "null"
-                                                                                    ],
-                                                                                    "examples": [
-                                                                                        "СПАО \"Ингосстрах\""
-                                                                                    ],
-                                                                                    "fillable_by": [
-                                                                                        "insurance.history.base"
-                                                                                    ]
-                                                                                }
-                                                                            }
                                                                         }
                                                                     }
                                                                 },
@@ -9737,44 +9515,6 @@
                                                                                                 ],
                                                                                                 "examples": [
                                                                                                     "Т333АХ38"
-                                                                                                ],
-                                                                                                "fillable_by": [
-                                                                                                    "insurance.history.base"
-                                                                                                ]
-                                                                                            }
-                                                                                        }
-                                                                                    },
-                                                                                    "brand": {
-                                                                                        "type": "object",
-                                                                                        "additionalProperties": false,
-                                                                                        "properties": {
-                                                                                            "name": {
-                                                                                                "description": "История страхования КАСКО: Марка иного ТС по страховому случаю",
-                                                                                                "type": [
-                                                                                                    "string",
-                                                                                                    "null"
-                                                                                                ],
-                                                                                                "examples": [
-                                                                                                    "СПАО \"Ингосстрах\""
-                                                                                                ],
-                                                                                                "fillable_by": [
-                                                                                                    "insurance.history.base"
-                                                                                                ]
-                                                                                            }
-                                                                                        }
-                                                                                    },
-                                                                                    "model": {
-                                                                                        "type": "object",
-                                                                                        "additionalProperties": false,
-                                                                                        "properties": {
-                                                                                            "name": {
-                                                                                                "description": "История страхования КАСКО: Модель иного ТС по страховому случаю",
-                                                                                                "type": [
-                                                                                                    "string",
-                                                                                                    "null"
-                                                                                                ],
-                                                                                                "examples": [
-                                                                                                    "СПАО \"Ингосстрах\""
                                                                                                 ],
                                                                                                 "fillable_by": [
                                                                                                     "insurance.history.base"
@@ -9897,32 +9637,6 @@
                                                                             ]
                                                                         }
                                                                     }
-                                                                },
-                                                                "brand": {
-                                                                    "description": "История страхования КАСКО: Марка ТС",
-                                                                    "type": [
-                                                                        "string",
-                                                                        "null"
-                                                                    ],
-                                                                    "examples": [
-                                                                        "Toyota"
-                                                                    ],
-                                                                    "fillable_by": [
-                                                                        "insurance.history.base"
-                                                                    ]
-                                                                },
-                                                                "model": {
-                                                                    "description": "История страхования КАСКО: Модель ТС",
-                                                                    "type": [
-                                                                        "string",
-                                                                        "null"
-                                                                    ],
-                                                                    "examples": [
-                                                                        "Camry"
-                                                                    ],
-                                                                    "fillable_by": [
-                                                                        "insurance.history.base"
-                                                                    ]
                                                                 },
                                                                 "risks_by_insurance_kind": {
                                                                     "type": "object",
@@ -10263,44 +9977,6 @@
                                                                 ],
                                                                 "examples": [
                                                                     "XW7BF4FK90S129987"
-                                                                ],
-                                                                "fillable_by": [
-                                                                    "insurance.history.base"
-                                                                ]
-                                                            }
-                                                        }
-                                                    },
-                                                    "brand": {
-                                                        "type": "object",
-                                                        "additionalProperties": false,
-                                                        "properties": {
-                                                            "name": {
-                                                                "description": "История страхования КАСКО: Марка застрахованного ТС по страховому случаю",
-                                                                "type": [
-                                                                    "string",
-                                                                    "null"
-                                                                ],
-                                                                "examples": [
-                                                                    "СПАО \"Ингосстрах\""
-                                                                ],
-                                                                "fillable_by": [
-                                                                    "insurance.history.base"
-                                                                ]
-                                                            }
-                                                        }
-                                                    },
-                                                    "model": {
-                                                        "type": "object",
-                                                        "additionalProperties": false,
-                                                        "properties": {
-                                                            "name": {
-                                                                "description": "История страхования КАСКО: Модель застрахованного ТС по страховому случаю",
-                                                                "type": [
-                                                                    "string",
-                                                                    "null"
-                                                                ],
-                                                                "examples": [
-                                                                    "СПАО \"Ингосстрах\""
                                                                 ],
                                                                 "fillable_by": [
                                                                     "insurance.history.base"

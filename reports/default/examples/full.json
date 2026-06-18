@@ -19,7 +19,7 @@
     },
     "tech_data": {
         "manufacturer": {
-            "name": "N\/A"
+            "name": "N/A"
         },
         "brand": {
             "id": "ID_MARK_OPEL",
@@ -336,7 +336,7 @@
             "items": [
                 {
                     "number": {
-                        "calculation": "084\/08\/617",
+                        "calculation": "084/08/617",
                         "claim": "ХAY1E37S50167"
                     },
                     "date": {
@@ -389,10 +389,10 @@
                                 }
                             },
                             {
-                                "name": "Окраска новой детали K1G\/PUR (ступень AZT окраски пластиковой детали)",
+                                "name": "Окраска новой детали K1G/PUR (ступень AZT окраски пластиковой детали)",
                                 "repair": {
                                     "method": "LE4",
-                                    "description": "Окраска новой детали K1G\/PUR (ступень AZT окраски пластиковой детали)"
+                                    "description": "Окраска новой детали K1G/PUR (ступень AZT окраски пластиковой детали)"
                                 }
                             },
                             {
@@ -429,7 +429,7 @@
                 },
                 {
                     "number": {
-                        "calculation": "6592\/046\/0",
+                        "calculation": "6592/046/0",
                         "claim": null
                     },
                     "date": {
@@ -509,7 +509,7 @@
                     },
                     "car": {
                         "manufacturer": "BMW [V] [R] [01]",
-                        "model": "X3 Replacement (F25) 11\/10- [V] [M] [S] [E] [XC]",
+                        "model": "X3 Replacement (F25) 11/10- [V] [M] [S] [E] [XC]",
                         "sub_model": "X3 xDrive20d"
                     },
                     "insurer": {
@@ -748,7 +748,7 @@
                 "is_paid": true,
                 "wire": {
                     "user": {
-                        "name": "УФК по ИО (ГУ МВД России по Новгородская область, л\/с 04475979720)",
+                        "name": "УФК по ИО (ГУ МВД России по Новгородская область, л/с 04475979720)",
                         "tin": "0592311114",
                         "kpp": "059201001"
                     },
@@ -891,7 +891,7 @@
                     },
                     "document": {
                         "name": "Таможенная выписка",
-                        "number": "50302382\/017119\/0003860"
+                        "number": "50302382/017119/0003860"
                     },
                     "org": {
                         "name": "ТАМОЖЕННОЕ УПРАВЛЕНИЕ"
@@ -911,7 +911,7 @@
                     },
                     "specification": {
                         "type": "Honda CR-X",
-                        "raw": "ЛЕГ.А\\\/М HONDA CR-X 3OZ53\/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
+                        "raw": "ЛЕГ.А\\/М HONDA CR-X 3OZ53/NXY8, 2007Г.В., БЕНЗИН, V=ДВ.2904СМ3, МОД.ДВ.LLT, 362КВТ, ЕВРО 0, КУЗОВ \"КУПЕ\", ФУКСИЯ, VIN: XSCMHTAT75L1N3467, ДВИГ.1KB6860064, ПР.120КМ."
                     },
                     "owner": {
                         "type": "LEGAL",
@@ -1026,7 +1026,7 @@
                 "date": {
                     "event": "2013-05-30 00:00:00"
                 },
-                "number": "2013-001-406288-623\/241",
+                "number": "2013-001-406288-623/241",
                 "pledgors": [
                     {
                         "name": "Евгения Сергеевна Дроздова",
@@ -1058,7 +1058,7 @@
                 "date": {
                     "event": "2013-06-27 00:00:00"
                 },
-                "number": "2013-001-406288-623\/242",
+                "number": "2013-001-406288-623/242",
                 "pledgors": [
                     {
                         "name": "REFUSE",
@@ -1309,15 +1309,11 @@
                             "last_name": "С********",
                             "middle_name": "Д*********"
                         },
-                        "vehicle": {
-                            "brand": "Опель",
-                            "model": "Монтарей"
-                        },
                         "statements": {
                             "items": [
                                 {
                                     "accident": {
-                                        "address": "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж\/Р)",
+                                        "address": "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж/Р)",
                                         "date": "2022-09-14 20:12:00",
                                         "is_europrotocol": true
                                     },
@@ -1351,12 +1347,6 @@
                                                 "chassis": "LFPVBM6819793",
                                                 "reg_num": "A111AA196",
                                                 "vin": "Z94C251BBLR111455"
-                                            },
-                                            "brand": {
-                                                "name": "Kia"
-                                            },
-                                            "model": {
-                                                "name": "Rio"
                                             }
                                         }
                                     },
@@ -1369,16 +1359,35 @@
                                                         "chassis": "LFPVBM6819793",
                                                         "reg_num": "А332АВ177",
                                                         "vin": "EXAMPL0V1N1000000"
-                                                    },
-                                                    "brand": {
-                                                        "name": "Опель"
-                                                    },
-                                                    "model": {
-                                                        "name": "Монтарей"
                                                     }
                                                 }
                                             }
                                         ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vehicle": {
+                            "identifiers": {
+                                "body": "KCA275-9673180",
+                                "chassis": "LFPVBM6819793",
+                                "vin": "EXAMPL0V1N1000000"
+                            }
+                        },
+                        "drivers": {
+                            "items": [
+                                {
+                                    "last_name": "Иванов",
+                                    "first_name": "Иван",
+                                    "middle_name": "Иванович",
+                                    "dob": "****-01-01",
+                                    "country_info": {
+                                        "countryCode": "643",
+                                        "countryName": "Россия"
+                                    },
+                                    "doc_type_info": {
+                                        "docType": "01",
+                                        "docTypeName": "Национальное ВУ"
                                     }
                                 }
                             ]
@@ -1390,7 +1399,7 @@
                 "items": [
                     {
                         "accident": {
-                            "address": "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж\/Р)",
+                            "address": "Иркутская обл.,г.Братск,прд Строитель (Центральный Ж/Р)",
                             "date": "2022-09-14 20:12:00",
                             "is_europrotocol": true
                         },
@@ -1424,12 +1433,6 @@
                                     "chassis": "LFPVBM6819793",
                                     "reg_num": "A111AA196",
                                     "vin": "Z94C251BBLR111455"
-                                },
-                                "brand": {
-                                    "name": "Kia"
-                                },
-                                "model": {
-                                    "name": "Rio"
                                 }
                             }
                         },
@@ -1442,12 +1445,6 @@
                                             "chassis": "LFPVBM6819793",
                                             "reg_num": "А332АВ177",
                                             "vin": "EXAMPL0V1N1000000"
-                                        },
-                                        "brand": {
-                                            "name": "Опель"
-                                        },
-                                        "model": {
-                                            "name": "Монтарей"
                                         }
                                     }
                                 }
@@ -1478,7 +1475,8 @@
                                     "vehicle_role": "contract_vehicle",
                                     "accident": {
                                         "date": "2020-05-28 12:30:00",
-                                        "type": "ДТП"
+                                        "type": "ДТП",
+                                        "address": "г. Москва, ул. Примерная, д. 1"
                                     },
                                     "decision": {
                                         "description": "Выплата"
@@ -1513,12 +1511,6 @@
                                             "chassis": "LFPVBM6819793",
                                             "reg_num": "А332АВ177",
                                             "vin": "EXAMPL0V1N1000000"
-                                        },
-                                        "brand": {
-                                            "name": "Опель"
-                                        },
-                                        "model": {
-                                            "name": "Монтарей"
                                         }
                                     },
                                     "other_vehicles": {
@@ -1526,13 +1518,21 @@
                                             {
                                                 "identifiers": {
                                                     "reg_num": "A111AA196"
-                                                },
-                                                "brand": {
-                                                    "name": "Kia"
-                                                },
-                                                "model": {
-                                                    "name": "Rio"
                                                 }
+                                            }
+                                        ]
+                                    },
+                                    "loss_types": {
+                                        "items": [
+                                            {
+                                                "name": "Ущерб ТС"
+                                            }
+                                        ]
+                                    },
+                                    "vehicle_damaged_parts": {
+                                        "items": [
+                                            {
+                                                "name": "Иное"
                                             }
                                         ]
                                     }
@@ -1554,8 +1554,6 @@
                                         "reg_num": "А332АВ177",
                                         "vin": "EXAMPL0V1N1000000"
                                     },
-                                    "brand": "Опель",
-                                    "model": "Монтарей",
                                     "risks_by_insurance_kind": {
                                         "items": [
                                             {
@@ -1566,12 +1564,31 @@
                                                             "type_info": {
                                                                 "items": [
                                                                     {
-                                                                        "type_name": "Ущерб"
+                                                                        "type_name": "Ущерб",
+                                                                        "type": "1"
                                                                     }
                                                                 ]
                                                             }
                                                         }
                                                     ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "drivers": {
+                                        "items": [
+                                            {
+                                                "last_name": "Петров",
+                                                "first_name": "Пётр",
+                                                "middle_name": "Петрович",
+                                                "dob": "****-02-02",
+                                                "country_info": {
+                                                    "countryCode": "643",
+                                                    "countryName": "Россия"
+                                                },
+                                                "doc_type_info": {
+                                                    "docType": "01",
+                                                    "docTypeName": "Национальное ВУ"
                                                 }
                                             }
                                         ]
@@ -1623,12 +1640,6 @@
                             "identifiers": {
                                 "reg_num": "А332АВ177",
                                 "vin": "EXAMPL0V1N1000000"
-                            },
-                            "brand": {
-                                "name": "Опель"
-                            },
-                            "model": {
-                                "name": "Монтарей"
                             }
                         }
                     }
@@ -2048,7 +2059,7 @@
                     "type": "Диагностическая карта"
                 },
                 "inspection": {
-                    "place": "ГОРОД ЩЁЛКОВО\/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
+                    "place": "ГОРОД ЩЁЛКОВО/ОАО БАШКИРCИБ (005302, Ленинградская область, город Волоколамск, пл. Балканская, 19)"
                 },
                 "reg_num": "А332АВ177",
                 "actuality": {
@@ -2096,7 +2107,7 @@
                     "date": {
                         "issued": "2017-06-17 22:14:41"
                     },
-                    "uri": "https:\/\/lorempixel.com\/1024\/740\/transport\/?73445"
+                    "uri": "https://lorempixel.com/1024/740/transport/?73445"
                 }
             ],
             "date": {
@@ -2133,20 +2144,20 @@
                     },
                     "photos": {
                         "local": [
-                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73445",
-                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73441",
-                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73442"
+                            "https://lorempixel.com/1024/740/transport/?73445",
+                            "https://lorempixel.com/1024/740/transport/?73441",
+                            "https://lorempixel.com/1024/740/transport/?73442"
                         ],
                         "board": [
-                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73243",
-                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73645",
-                            "https:\/\/lorempixel.com\/1024\/740\/transport\/?73347"
+                            "https://lorempixel.com/1024/740/transport/?73243",
+                            "https://lorempixel.com/1024/740/transport/?73645",
+                            "https://lorempixel.com/1024/740/transport/?73347"
                         ],
                         "grz": {
                             "X874CC64": [
-                                "https:\/\/lorempixel.com\/1024\/740\/transport\/?73443",
-                                "https:\/\/lorempixel.com\/1024\/740\/transport\/?73444",
-                                "https:\/\/lorempixel.com\/1024\/740\/transport\/?73754"
+                                "https://lorempixel.com/1024/740/transport/?73443",
+                                "https://lorempixel.com/1024/740/transport/?73444",
+                                "https://lorempixel.com/1024/740/transport/?73754"
                             ]
                         }
                     },
@@ -2585,7 +2596,7 @@
     "executive_procedures": {
         "items": [
             {
-                "number": "231948\/23\/38030-ИП",
+                "number": "231948/23/38030-ИП",
                 "description": "Задолженность по платежам за услуги связи",
                 "debt": {
                     "amount": {
@@ -2617,4 +2628,3 @@
         }
     }
 }
-

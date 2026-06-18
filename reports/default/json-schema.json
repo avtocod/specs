@@ -2264,7 +2264,7 @@
                                                 ],
                                                 "minimum": 0,
                                                 "examples": [
-                                                    100.0
+                                                    100
                                                 ],
                                                 "fillable_by": [
                                                     "references.transdekra"
@@ -2484,7 +2484,7 @@
                                                                             "null"
                                                                         ],
                                                                         "examples": [
-                                                                            180.0
+                                                                            180
                                                                         ],
                                                                         "fillable_by": [
                                                                             "references.rsa"
@@ -2499,7 +2499,7 @@
                                                                     "null"
                                                                 ],
                                                                 "examples": [
-                                                                    1800.0
+                                                                    1800
                                                                 ],
                                                                 "fillable_by": [
                                                                     "references.rsa"
@@ -2841,7 +2841,7 @@
                                                                             "null"
                                                                         ],
                                                                         "examples": [
-                                                                            104.0
+                                                                            104
                                                                         ],
                                                                         "fillable_by": []
                                                                     },
@@ -2852,7 +2852,7 @@
                                                                             "null"
                                                                         ],
                                                                         "examples": [
-                                                                            77.0
+                                                                            77
                                                                         ],
                                                                         "fillable_by": []
                                                                     }
@@ -2865,7 +2865,7 @@
                                                                     "null"
                                                                 ],
                                                                 "examples": [
-                                                                    1800.0
+                                                                    1800
                                                                 ],
                                                                 "fillable_by": []
                                                             }
@@ -4241,7 +4241,7 @@
                                             "null"
                                         ],
                                         "examples": [
-                                            4200.0
+                                            4200
                                         ],
                                         "fillable_by": [
                                             "fines.base",
@@ -4257,7 +4257,7 @@
                                             "null"
                                         ],
                                         "examples": [
-                                            4200.0
+                                            4200
                                         ],
                                         "fillable_by": [
                                             "fines.base",
@@ -4281,7 +4281,7 @@
                                             "null"
                                         ],
                                         "examples": [
-                                            50.0
+                                            50
                                         ],
                                         "minimum": 0,
                                         "fillable_by": [
@@ -8780,16 +8780,34 @@
                                                         "type": "object",
                                                         "properties": {
                                                             "body": {
-                                                                "type": "string",
-                                                                "nullable": true
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "description": "История страхования ОСАГО: Номер кузова ТС",
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
                                                             },
                                                             "chassis": {
-                                                                "type": "string",
-                                                                "nullable": true
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "description": "История страхования ОСАГО: Номер шасси ТС",
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
                                                             },
                                                             "vin": {
-                                                                "type": "string",
-                                                                "nullable": true
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ],
+                                                                "description": "История страхования ОСАГО: VIN ТС",
+                                                                "fillable_by": [
+                                                                    "insurance.history.base"
+                                                                ]
                                                             }
                                                         }
                                                     }
@@ -8804,28 +8822,64 @@
                                                             "type": "object",
                                                             "properties": {
                                                                 "last_name": {
-                                                                    "type": "string",
-                                                                    "nullable": true
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "description": "История страхования ОСАГО: Фамилия водителя",
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
                                                                 },
                                                                 "first_name": {
-                                                                    "type": "string",
-                                                                    "nullable": true
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "description": "История страхования ОСАГО: Имя водителя",
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
                                                                 },
                                                                 "middle_name": {
-                                                                    "type": "string",
-                                                                    "nullable": true
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "description": "История страхования ОСАГО: Отчество водителя",
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
                                                                 },
                                                                 "dob": {
-                                                                    "type": "string",
-                                                                    "nullable": true
+                                                                    "type": [
+                                                                        "string",
+                                                                        "null"
+                                                                    ],
+                                                                    "description": "История страхования ОСАГО: Дата рождения водителя",
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
                                                                 },
                                                                 "country_info": {
-                                                                    "type": "object",
-                                                                    "nullable": true
+                                                                    "type": [
+                                                                        "object",
+                                                                        "null"
+                                                                    ],
+                                                                    "description": "История страхования ОСАГО: Страна водительского удостоверения",
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
                                                                 },
                                                                 "doc_type_info": {
-                                                                    "type": "object",
-                                                                    "nullable": true
+                                                                    "type": [
+                                                                        "object",
+                                                                        "null"
+                                                                    ],
+                                                                    "description": "История страхования ОСАГО: Тип водительского удостоверения",
+                                                                    "fillable_by": [
+                                                                        "insurance.history.base"
+                                                                    ]
                                                                 }
                                                             }
                                                         }
@@ -9340,8 +9394,14 @@
                                                                             ]
                                                                         },
                                                                         "address": {
-                                                                            "type": "string",
-                                                                            "nullable": true
+                                                                            "type": [
+                                                                                "string",
+                                                                                "null"
+                                                                            ],
+                                                                            "description": "История страхования КАСКО: Адрес страхового случая",
+                                                                            "fillable_by": [
+                                                                                "insurance.history.base"
+                                                                            ]
                                                                         }
                                                                     }
                                                                 },
@@ -9599,8 +9659,14 @@
                                                                                 "type": "object",
                                                                                 "properties": {
                                                                                     "name": {
-                                                                                        "type": "string",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Наименование типа ущерба",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     }
                                                                                 }
                                                                             }
@@ -9616,8 +9682,14 @@
                                                                                 "type": "object",
                                                                                 "properties": {
                                                                                     "name": {
-                                                                                        "type": "string",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Наименование поврежденной части ТС",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     }
                                                                                 }
                                                                             }
@@ -9793,8 +9865,14 @@
                                                                                                                                 ]
                                                                                                                             },
                                                                                                                             "type": {
-                                                                                                                                "type": "string",
-                                                                                                                                "nullable": true
+                                                                                                                                "type": [
+                                                                                                                                    "string",
+                                                                                                                                    "null"
+                                                                                                                                ],
+                                                                                                                                "description": "История страхования КАСКО: Код типа риска",
+                                                                                                                                "fillable_by": [
+                                                                                                                                    "insurance.history.base"
+                                                                                                                                ]
                                                                                                                             }
                                                                                                                         }
                                                                                                                     }
@@ -9820,28 +9898,64 @@
                                                                                 "type": "object",
                                                                                 "properties": {
                                                                                     "last_name": {
-                                                                                        "type": "string",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Фамилия водителя",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     },
                                                                                     "first_name": {
-                                                                                        "type": "string",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Имя водителя",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     },
                                                                                     "middle_name": {
-                                                                                        "type": "string",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Отчество водителя",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     },
                                                                                     "dob": {
-                                                                                        "type": "string",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "string",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Дата рождения водителя",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     },
                                                                                     "country_info": {
-                                                                                        "type": "object",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "object",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Страна водительского удостоверения",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     },
                                                                                     "doc_type_info": {
-                                                                                        "type": "object",
-                                                                                        "nullable": true
+                                                                                        "type": [
+                                                                                            "object",
+                                                                                            "null"
+                                                                                        ],
+                                                                                        "description": "История страхования КАСКО: Тип водительского удостоверения",
+                                                                                        "fillable_by": [
+                                                                                            "insurance.history.base"
+                                                                                        ]
                                                                                     }
                                                                                 }
                                                                             }
@@ -16593,7 +16707,7 @@
                                                     "null"
                                                 ],
                                                 "examples": [
-                                                    130.0
+                                                    130
                                                 ],
                                                 "fillable_by": [
                                                     "fssp.base.executive"

@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Fixed
+
+- Consistency [json-schema.json](reports/default/json-schema.json) and [fields_list.json](fields/default/fields_list.json)
+
 ## v5.24.0
 
 ### Added

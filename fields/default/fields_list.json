@@ -8793,5 +8793,295 @@
         "fillable_by": [
             "insurance.history.base"
         ]
+    },
+    {
+        "path": "pledge_pledgors.date.update",
+        "description": "Одновременные залоги: Дата актуальности базы залогов",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.latest_pledgors[].name",
+        "description": "Одновременные залоги: Актуальный залогодатель, ФИО/название; для person маскируем, оставляем первые буквы и 5 звездочек",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.latest_pledgors[].type",
+        "description": "Одновременные залоги: Актуальный залогодатель, тип участника",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.latest_pledgors[].dob",
+        "description": "Одновременные залоги: Актуальный залогодатель, дата рождения; для person маскируем, оставляем первые 3 цифры, остальное звездочки",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.latest_pledgors[].tin",
+        "description": "Одновременные залоги: Актуальный залогодатель, ИНН",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.latest_pledgors[].is_multi_pledgor",
+        "description": "Одновременные залоги: Актуальный залогодатель, является ли наборщиком",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.multi_pledged_vehicles[].identifiers.vin",
+        "description": "Одновременные залоги: ТС наборщика в нескольких залогах, VIN",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.multi_pledged_vehicles[].identifiers.body",
+        "description": "Одновременные залоги: ТС наборщика в нескольких залогах, номер кузова",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.multi_pledged_vehicles[].identifiers.chassis",
+        "description": "Одновременные залоги: ТС наборщика в нескольких залогах, номер шасси",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.multi_pledged_vehicles[].identifiers.pin",
+        "description": "Одновременные залоги: ТС наборщика в нескольких залогах, PIN",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgors[].name",
+        "description": "Одновременные залоги: Залогодатель, ФИО/название; для person маскируем, оставляем первые буквы и 5 звездочек",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgors[].type",
+        "description": "Одновременные залоги: Залогодатель, тип участника",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgors[].dob",
+        "description": "Одновременные залоги: Залогодатель, дата рождения; для person маскируем, оставляем первые 3 цифры, остальное звездочки",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgors[].tin",
+        "description": "Одновременные залоги: Залогодатель, ИНН",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgors[].is_multi_pledgor",
+        "description": "Одновременные залоги: Залогодатель, является ли наборщиком",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgees[].name",
+        "description": "Одновременные залоги: Залогодержатель, ФИО/название",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgees[].type",
+        "description": "Одновременные залоги: Залогодержатель, тип участника",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgees[].dob",
+        "description": "Одновременные залоги: Залогодержатель, дата рождения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgees[].tin",
+        "description": "Одновременные залоги: Залогодержатель, ИНН",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledgees[].is_multi_pledgor",
+        "description": "Одновременные залоги: Залогодержатель, является ли наборщиком",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].vehicle[].identifiers.vin",
+        "description": "Одновременные залоги: Субъект залога ТС, VIN",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].vehicle[].identifiers.body",
+        "description": "Одновременные залоги: Субъект залога ТС, номер кузова",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].vehicle[].identifiers.chassis",
+        "description": "Одновременные залоги: Субъект залога ТС, номер шасси",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].vehicle[].identifiers.pin",
+        "description": "Одновременные залоги: Субъект залога ТС, PIN",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].vehicle[].date.from",
+        "description": "Одновременные залоги: Субъект залога ТС, когда ТС впервые попало в залог",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledge_histories[].date",
+        "description": "Одновременные залоги: История уведомления, дата",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledge_histories[].type",
+        "description": "Одновременные залоги: История уведомления, тип",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledge_histories[].type_description",
+        "description": "Одновременные залоги: История уведомления, описание",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
+    },
+    {
+        "path": "pledge_pledgors.items[].pledge_histories[].refrence_number",
+        "description": "Одновременные залоги: История уведомления, uid",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "pledgors.registry"
+        ]
     }
 ]

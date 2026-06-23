@@ -7219,6 +7219,414 @@
                 }
             }
         },
+        "pledge_pledgors": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Реестр наборщиков залоговых ТС",
+            "properties": {
+                "date": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "update": {
+                            "description": "Дата актуальности базы залогов",
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "$ref": "#/definitions/datetime"
+                                }
+                            ],
+                            "examples": [
+                                "2026-06-21 00:00:00"
+                            ],
+                            "fillable_by": [
+                                "pledgors.registry"
+                            ]
+                        }
+                    }
+                },
+                "latest_pledgors": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "name": {
+                                "description": "Актуальный залогодатель, ФИО/название",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "К Е Б*****"
+                                ],
+                                "fillable_by": [
+                                    "pledgors.registry"
+                                ]
+                            },
+                            "type": {
+                                "description": "Актуальный залогодатель, тип участника",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "person"
+                                ],
+                                "fillable_by": [
+                                    "pledgors.registry"
+                                ]
+                            },
+                            "dob": {
+                                "description": "Актуальный залогодатель, дата рождения",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "examples": [
+                                    "195*******"
+                                ],
+                                "fillable_by": [
+                                    "pledgors.registry"
+                                ]
+                            },
+                            "tin": {
+                                "description": "Актуальный залогодатель, ИНН",
+                                "type": [
+                                    "string",
+                                    "null"
+                                ],
+                                "fillable_by": [
+                                    "pledgors.registry"
+                                ]
+                            },
+                            "is_multi_pledgor": {
+                                "description": "Актуальный залогодатель, является ли наборщиком",
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ],
+                                "examples": [
+                                    false
+                                ],
+                                "fillable_by": [
+                                    "pledgors.registry"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "multi_pledged_vehicles": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "identifiers": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "vin": {
+                                        "description": "ТС наборщика в нескольких залогах, VIN",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "fillable_by": [
+                                            "pledgors.registry"
+                                        ]
+                                    },
+                                    "body": {
+                                        "description": "ТС наборщика в нескольких залогах, номер кузова",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "fillable_by": [
+                                            "pledgors.registry"
+                                        ]
+                                    },
+                                    "chassis": {
+                                        "description": "ТС наборщика в нескольких залогах, номер шасси",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "fillable_by": [
+                                            "pledgors.registry"
+                                        ]
+                                    },
+                                    "pin": {
+                                        "description": "ТС наборщика в нескольких залогах, PIN",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "fillable_by": [
+                                            "pledgors.registry"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "pledgors": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Залогодатель, ФИО/название",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "type": {
+                                            "description": "Залогодатель, тип участника",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "dob": {
+                                            "description": "Залогодатель, дата рождения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "tin": {
+                                            "description": "Залогодатель, ИНН",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "is_multi_pledgor": {
+                                            "description": "Залогодатель, является ли наборщиком",
+                                            "type": [
+                                                "boolean",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "pledgees": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "description": "Залогодержатель, ФИО/название",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "type": {
+                                            "description": "Залогодержатель, тип участника",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "dob": {
+                                            "description": "Залогодержатель, дата рождения",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "tin": {
+                                            "description": "Залогодержатель, ИНН",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "is_multi_pledgor": {
+                                            "description": "Залогодержатель, является ли наборщиком",
+                                            "type": [
+                                                "boolean",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "vehicle": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "identifiers": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "vin": {
+                                                    "description": "Субъект залога ТС, VIN",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "pledgors.registry"
+                                                    ]
+                                                },
+                                                "body": {
+                                                    "description": "Субъект залога ТС, номер кузова",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "pledgors.registry"
+                                                    ]
+                                                },
+                                                "chassis": {
+                                                    "description": "Субъект залога ТС, номер шасси",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "pledgors.registry"
+                                                    ]
+                                                },
+                                                "pin": {
+                                                    "description": "Субъект залога ТС, PIN",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "pledgors.registry"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "date": {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "from": {
+                                                    "description": "Субъект залога ТС, когда ТС впервые попало в залог",
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "fillable_by": [
+                                                        "pledgors.registry"
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "pledge_histories": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "date": {
+                                            "description": "История уведомления, дата",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "type": {
+                                            "description": "История уведомления, тип",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "type_description": {
+                                            "description": "История уведомления, описание",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        },
+                                        "refrence_number": {
+                                            "description": "История уведомления, uid",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "fillable_by": [
+                                                "pledgors.registry"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": {
+                    "description": "Количество вхождений",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
         "insurance": {
             "type": "object",
             "additionalProperties": false,

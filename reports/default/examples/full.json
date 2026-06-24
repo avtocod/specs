@@ -1165,6 +1165,73 @@
         },
         "count": 1
     },
+    "pledge_pledgors": {
+        "date": {
+            "update": "2026-06-21 00:00:00"
+        },
+        "latest_pledgors": [
+            {
+                "name": "К Е Б*****",
+                "type": "person",
+                "dob": "195*******",
+                "tin": null,
+                "is_multi_pledgor": false
+            }
+        ],
+        "multi_pledged_vehicles": [
+            {
+                "identifiers": {
+                    "vin": "XTC652200B1198533",
+                    "body": null,
+                    "chassis": null,
+                    "pin": null
+                }
+            }
+        ],
+        "items": [
+            {
+                "pledgors": [
+                    {
+                        "name": "К Е Б*****",
+                        "type": "person",
+                        "dob": "195*******",
+                        "tin": null,
+                        "is_multi_pledgor": false
+                    }
+                ],
+                "pledgees": [
+                    {
+                        "name": "Общество с ограниченной ответственностью \"Русфинанс банк\"",
+                        "type": "org",
+                        "dob": null,
+                        "tin": "5012003647",
+                        "is_multi_pledgor": null
+                    }
+                ],
+                "vehicle": [
+                    {
+                        "identifiers": {
+                            "vin": "Z6F4XXEEC4JT51437",
+                            "body": null,
+                            "chassis": null,
+                            "pin": null
+                        },
+                        "date": {
+                            "from": "2018-08-14T15:45:00"
+                        }
+                    }
+                ],
+                "pledge_histories": [
+                    {
+                        "date": "2018-08-14",
+                        "type": "Возникновение",
+                        "type_description": "Возникновение залога",
+                        "refrence_number": "2018-002-540478-465"
+                    }
+                ]
+            }
+        ]
+    },
     "insurance": {
         "osago": {
             "items": [

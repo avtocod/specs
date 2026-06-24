@@ -903,6 +903,73 @@
         },
         "count": 1
     },
+    "pledge_pledgors": {
+        "date": {
+            "update": null
+        },
+        "latest_pledgors": [
+            {
+                "name": null,
+                "type": null,
+                "dob": null,
+                "tin": null,
+                "is_multi_pledgor": null
+            }
+        ],
+        "multi_pledged_vehicles": [
+            {
+                "identifiers": {
+                    "vin": null,
+                    "body": null,
+                    "chassis": null,
+                    "pin": null
+                }
+            }
+        ],
+        "items": [
+            {
+                "pledgors": [
+                    {
+                        "name": null,
+                        "type": null,
+                        "dob": null,
+                        "tin": null,
+                        "is_multi_pledgor": null
+                    }
+                ],
+                "pledgees": [
+                    {
+                        "name": null,
+                        "type": null,
+                        "dob": null,
+                        "tin": null,
+                        "is_multi_pledgor": null
+                    }
+                ],
+                "vehicle": [
+                    {
+                        "identifiers": {
+                            "vin": null,
+                            "body": null,
+                            "chassis": null,
+                            "pin": null
+                        },
+                        "date": {
+                            "from": null
+                        }
+                    }
+                ],
+                "pledge_histories": [
+                    {
+                        "date": null,
+                        "type": null,
+                        "type_description": null,
+                        "refrence_number": null
+                    }
+                ]
+            }
+        ]
+    },
     "insurance": {
         "osago": {
             "items": [

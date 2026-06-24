@@ -338,5 +338,10 @@
         "name": "insurance.history.base",
         "description": "История страхования",
         "enabled": true
+    },
+    {
+        "name": "pledgors.registry",
+        "description": "Реестр наборщиков залоговых ТС",
+        "enabled": true
     }
 ]

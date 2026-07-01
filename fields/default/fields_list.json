@@ -8935,16 +8935,6 @@
         ]
     },
     {
-        "path": "pledge_pledgors.items[].pledgors[].is_multi_pledgor",
-        "description": "Одновременные залоги: Залогодатель, является ли наборщиком",
-        "types": [
-            "boolean"
-        ],
-        "fillable_by": [
-            "pledgors.registry"
-        ]
-    },
-    {
         "path": "pledge_pledgors.items[].pledgees[].name",
         "description": "Одновременные залоги: Залогодержатель, ФИО/название",
         "types": [
@@ -8979,16 +8969,6 @@
         "description": "Одновременные залоги: Залогодержатель, ИНН",
         "types": [
             "string"
-        ],
-        "fillable_by": [
-            "pledgors.registry"
-        ]
-    },
-    {
-        "path": "pledge_pledgors.items[].pledgees[].is_multi_pledgor",
-        "description": "Одновременные залоги: Залогодержатель, является ли наборщиком",
-        "types": [
-            "boolean"
         ],
         "fillable_by": [
             "pledgors.registry"

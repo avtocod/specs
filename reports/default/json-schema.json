@@ -7424,16 +7424,6 @@
                                             "fillable_by": [
                                                 "pledgors.registry"
                                             ]
-                                        },
-                                        "is_multi_pledgor": {
-                                            "description": "Залогодатель, является ли наборщиком",
-                                            "type": [
-                                                "boolean",
-                                                "null"
-                                            ],
-                                            "fillable_by": [
-                                                "pledgors.registry"
-                                            ]
                                         }
                                     }
                                 }
@@ -7478,16 +7468,6 @@
                                             "description": "Залогодержатель, ИНН",
                                             "type": [
                                                 "string",
-                                                "null"
-                                            ],
-                                            "fillable_by": [
-                                                "pledgors.registry"
-                                            ]
-                                        },
-                                        "is_multi_pledgor": {
-                                            "description": "Залогодержатель, является ли наборщиком",
-                                            "type": [
-                                                "boolean",
                                                 "null"
                                             ],
                                             "fillable_by": [

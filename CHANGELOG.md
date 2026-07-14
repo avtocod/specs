@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `wanted.restrict.basalt`
+- Field with path `stealings.is_wanted` also fillable by `wanted.restrict.basalt`
+- Field with path `stealings.date.update` also fillable by `wanted.restrict.basalt`
+- Field with path `restrictions.registration_actions.date.update` also fillable by `wanted.restrict.basalt`
+- Field with path `restrictions.registration_actions.has_restrictions` also fillable by `wanted.restrict.basalt`
+
 ## v5.27.0
 
 ### Removed

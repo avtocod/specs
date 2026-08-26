@@ -260,6 +260,11 @@
         "enabled": true
     },
     {
+        "name": "customs.fts.fee",
+        "description": "Утилизационный сбор (ФТС)",
+        "enabled": true
+    },
+    {
         "name": "owner.taxi.history",
         "description": "История такси владельца ТС",
         "enabled": false

@@ -5062,7 +5062,38 @@
             "string"
         ],
         "fillable_by": [
-            "base.basalt"
+            "base.basalt",
+            "customs.fts.fee"
+        ]
+    },
+    {
+        "path": "customs.history.items[].utilization_tax.office.code",
+        "description": "История по таможне: Код таможенного органа, зарегистрировавшего таможенный приходный ордер",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.fts.fee"
+        ]
+    },
+    {
+        "path": "customs.history.items[].utilization_tax.date",
+        "description": "История по таможне: Дата оплаты утилизационного сбора",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "customs.fts.fee"
+        ]
+    },
+    {
+        "path": "customs.history.items[].utilization_tax.is_personal_use",
+        "description": "История по таможне: Признак ввоза транспортного средства физическим лицом для личного пользования",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "customs.fts.fee"
         ]
     },
     {
@@ -5121,7 +5152,8 @@
         ],
         "fillable_by": [
             "customs.fts",
-            "base.basalt"
+            "base.basalt",
+            "customs.fts.fee"
         ]
     },
     {

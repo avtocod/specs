@@ -715,7 +715,12 @@
                         }
                     },
                     "utilization_tax": {
-                        "status": null
+                        "status": null,
+                        "office": {
+                            "code": null
+                        },
+                        "date": null,
+                        "is_personal_use": null
                     },
                     "sender": {
                         "name": null,

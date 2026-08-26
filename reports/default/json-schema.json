@@ -5737,7 +5737,53 @@
                                                     "Уплачен"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.basalt"
+                                                    "base.basalt",
+                                                    "customs.fts.fee"
+                                                ]
+                                            },
+                                            "office": {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "properties": {
+                                                    "code": {
+                                                        "description": "Код таможенного органа, зарегистрировавшего таможенный приходный ордер",
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ],
+                                                        "examples": [
+                                                            "10608050"
+                                                        ],
+                                                        "fillable_by": [
+                                                            "customs.fts.fee"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "date": {
+                                                "description": "Дата оплаты утилизационного сбора",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "2024-08-19T00:00:00.000Z"
+                                                ],
+                                                "fillable_by": [
+                                                    "customs.fts.fee"
+                                                ]
+                                            },
+                                            "is_personal_use": {
+                                                "description": "Признак ввоза транспортного средства физическим лицом для личного пользования",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "customs.fts.fee"
                                                 ]
                                             }
                                         }
@@ -5827,7 +5873,8 @@
                                     ],
                                     "fillable_by": [
                                         "customs.fts",
-                                        "base.basalt"
+                                        "base.basalt",
+                                        "customs.fts.fee"
                                     ]
                                 }
                             }

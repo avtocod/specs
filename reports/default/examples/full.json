@@ -933,7 +933,12 @@
                         }
                     },
                     "utilization_tax": {
-                        "status": "Уплачен"
+                        "status": "Уплачен",
+                        "office": {
+                            "code": "10608050"
+                        },
+                        "date": "2024-08-19T00:00:00.000Z",
+                        "is_personal_use": false
                     },
                     "sender": {
                         "name": "ООО Автоторг",

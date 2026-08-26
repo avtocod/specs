@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `customs.fts.fee`
+- Fields `customs.history.items[].utilization_tax.office.code`, `customs.history.items[].utilization_tax.date`, `customs.history.items[].utilization_tax.is_personal_use`
+- Field `customs.history.items[].utilization_tax.status` also fillable by `customs.fts.fee`
+- Field `customs.history.date.update` also fillable by `customs.fts.fee`
+
 ## v5.30.0
 
 ### Changed

@@ -9005,6 +9005,42 @@
                                                                                                 }
                                                                                             }
                                                                                         }
+                                                                                    },
+                                                                                    "extent_of_damage": {
+                                                                                        "type": "object",
+                                                                                        "additionalProperties": false,
+                                                                                        "properties": {
+                                                                                            "value": {
+                                                                                                "description": "История страхования ОСАГО: Степень повреждения",
+                                                                                                "type": [
+                                                                                                    "string",
+                                                                                                    "null"
+                                                                                                ],
+                                                                                                "examples": [
+                                                                                                    "LIGHT",
+                                                                                                    "MEDIUM",
+                                                                                                    "HEAVY"
+                                                                                                ],
+                                                                                                "fillable_by": [
+                                                                                                    "insurance.history.base"
+                                                                                                ]
+                                                                                            },
+                                                                                            "description": {
+                                                                                                "description": "История страхования ОСАГО: Описание степени повреждения",
+                                                                                                "type": [
+                                                                                                    "string",
+                                                                                                    "null"
+                                                                                                ],
+                                                                                                "examples": [
+                                                                                                    "ДТП с легким повреждением",
+                                                                                                    "ДТП со средним повреждением",
+                                                                                                    "ДТП с тяжелым повреждением"
+                                                                                                ],
+                                                                                                "fillable_by": [
+                                                                                                    "insurance.history.base"
+                                                                                                ]
+                                                                                            }
+                                                                                        }
                                                                                     }
                                                                                 }
                                                                             }

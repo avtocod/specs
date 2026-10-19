@@ -2475,6 +2475,26 @@
         ]
     },
     {
+        "path": "insurance_history.osago.contracts.items[].statements.items[].decisions.items[].extent_of_damage.value",
+        "description": "История страхования ОСАГО: Степень повреждения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "insurance_history.osago.contracts.items[].statements.items[].decisions.items[].extent_of_damage.description",
+        "description": "История страхования ОСАГО: Описание степени повреждения",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
         "path": "insurance_history.osago.contracts.items[].statements.items[].insurer.name",
         "description": "История страхования ОСАГО: Наименование страховщика по страховому случаю",
         "types": [

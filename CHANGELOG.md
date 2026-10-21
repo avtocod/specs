@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Removed
+
+- Source `base.basalt`
+- Fields with path `identifiers.vehicle.*` not fillable by `base.basalt`
+- Fields with path `identifiers_masked.vehicle.*` not fillable by `base.basalt`
+- Fields with path `tech_data.*` not fillable by `base.basalt`
+- Fields with path `additional_info.vehicle.*` not fillable by `base.basalt`
+- Fields with path `ownership.history.*` not fillable by `base.basalt`
+- Fields with path `stealings.*` not fillable by `base.basalt`
+- Fields with path `restrictions.registration_actions.*` not fillable by `base.basalt`
+- Fields with path `customs.history.*` not fillable by `base.basalt`
+
 ## v5.33.0
 
 ### Added

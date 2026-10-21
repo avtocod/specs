@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `insurance_history.osago.contracts.items[].statements.items[].decisions.items[].extent_of_damage.value`
+- Field with path `insurance_history.osago.contracts.items[].statements.items[].decisions.items[].extent_of_damage.description`
+
 ## v5.32.0
 
 ### Added

@@ -17,6 +17,17 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Fields with path `stealings.*` not fillable by `base.basalt`
 - Fields with path `restrictions.registration_actions.*` not fillable by `base.basalt`
 - Fields with path `customs.history.*` not fillable by `base.basalt`
+- Fields with path `identifiers.vehicle.*` not fillable by `base.granit`
+- Fields with path `identifiers_masked.vehicle.*` not fillable by `base.granit`
+- Fields with path `tech_data.*` not fillable by `base.granit`
+- Fields with path `additional_info.vehicle.*` not fillable by `base.granit`
+- Fields with path `ownership.history.*` not fillable by `base.granit`
+- Fields with path `restrictions.registration_actions.items[].*` not fillable by `base.granit`
+
+### Changed
+
+- Source `base.granit` fills the same fields as `wanted.restrict.basalt`: `stealings.is_wanted`, `stealings.date.update`, `restrictions.registration_actions.has_restrictions`, `restrictions.registration_actions.date.update`
+- Description of source `base.granit`
 
 ## v5.33.0
 

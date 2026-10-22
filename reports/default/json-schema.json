@@ -357,7 +357,6 @@
                                 "base",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -427,7 +426,6 @@
                             "fillable_by": [
                                 "base",
                                 "gibdd.history",
-                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -486,7 +484,6 @@
                                 "base",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -547,7 +544,6 @@
                             "fillable_by": [
                                 "base",
                                 "gibdd.history",
-                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry"
@@ -595,9 +591,7 @@
                             "examples": [
                                 "N/A"
                             ],
-                            "fillable_by": [
-                                "base.granit"
-                            ]
+                            "fillable_by": []
                         }
                     }
                 },
@@ -640,7 +634,6 @@
                                         "base",
                                         "gibdd.history",
                                         "gibdd.eaisto",
-                                        "base.granit",
                                         "regactions.registry",
                                         "eaisto.registry",
                                         "gibdd.history.registry",
@@ -734,7 +727,6 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "gibdd.eaisto",
-                                        "base.granit",
                                         "eaisto.registry",
                                         "vin.decoder"
                                     ]
@@ -773,7 +765,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "gibdd.history",
                                 "gibdd.history.registry"
                             ]
@@ -793,7 +784,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "gibdd.history",
                                 "gibdd.history.registry"
                             ]
@@ -809,7 +799,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -854,7 +843,6 @@
                                     "fillable_by": [
                                         "base",
                                         "gibdd.history",
-                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 },
@@ -889,7 +877,6 @@
                         "base",
                         "gibdd.eaisto",
                         "gibdd.history",
-                        "base.granit",
                         "eaisto.registry",
                         "regactions.registry",
                         "gibdd.history.registry",
@@ -942,7 +929,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
@@ -963,7 +949,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
@@ -988,7 +973,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry"
                             ]
@@ -1026,7 +1010,6 @@
                             "fillable_by": [
                                 "base",
                                 "gibdd.history",
-                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry",
                                 "vin.decoder"
@@ -1049,7 +1032,6 @@
                                     "fillable_by": [
                                         "base",
                                         "gibdd.history",
-                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry",
                                         "vin.decoder"
@@ -1068,7 +1050,6 @@
                                     "fillable_by": [
                                         "base",
                                         "gibdd.history",
-                                        "base.granit",
                                         "gibdd.history.registry",
                                         "vin.decoder"
                                     ]
@@ -1094,7 +1075,6 @@
                                             ],
                                             "fillable_by": [
                                                 "base",
-                                                "base.granit",
                                                 "regactions.registry",
                                                 "gibdd.history.registry"
                                             ]
@@ -1122,7 +1102,6 @@
                             "fillable_by": [
                                 "base",
                                 "gibdd.eaisto",
-                                "base.granit",
                                 "regactions.registry"
                             ]
                         },
@@ -1139,7 +1118,6 @@
                             "fillable_by": [
                                 "base",
                                 "gibdd.eaisto",
-                                "base.granit",
                                 "regactions.registry"
                             ]
                         }
@@ -1164,7 +1142,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -1183,7 +1160,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -1211,7 +1187,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         },
@@ -1230,7 +1205,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "gibdd.history.registry"
                             ]
                         }
@@ -1255,7 +1229,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry",
                                 "vin.decoder"
@@ -1276,7 +1249,6 @@
                             ],
                             "fillable_by": [
                                 "base",
-                                "base.granit",
                                 "regactions.registry",
                                 "gibdd.history.registry",
                                 "vin.decoder"
@@ -1601,7 +1573,6 @@
                                 "base",
                                 "gibdd.history",
                                 "gibdd.eaisto",
-                                "base.granit",
                                 "regactions.registry",
                                 "eaisto.registry",
                                 "gibdd.history.registry",
@@ -1658,7 +1629,6 @@
                                     "fillable_by": [
                                         "base",
                                         "gibdd.eaisto",
-                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry"
                                     ]
@@ -1676,7 +1646,6 @@
                                         "base",
                                         "gibdd.eaisto",
                                         "regactions.registry",
-                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 }
@@ -2153,7 +2122,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.granit",
                                         "eaisto.registry"
                                     ]
                                 },
@@ -2168,7 +2136,6 @@
                                     ],
                                     "fillable_by": [
                                         "base",
-                                        "base.granit",
                                         "eaisto.registry"
                                     ]
                                 }
@@ -12116,8 +12083,7 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict",
-                                                    "base.granit"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "start": {
@@ -12209,8 +12175,7 @@
                                                     "Судебные Органы"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict",
-                                                    "base.granit"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "region": {
@@ -12227,8 +12192,7 @@
                                                             "Брянская"
                                                         ],
                                                         "fillable_by": [
-                                                            "gibdd.restrict",
-                                                            "base.granit"
+                                                            "gibdd.restrict"
                                                         ]
                                                     }
                                                 }
@@ -12249,8 +12213,7 @@
                                                     "Запрет на регистрационные действия"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict",
-                                                    "base.granit"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "reason": {
@@ -12263,8 +12226,7 @@
                                                     "Документ: 90129308-0060 от 13.07.2015, Тамара Романовна Маслова, спи: 92322670812143, ип: 90129308-0060-ип от 13.07.2015"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict",
-                                                    "base.granit"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "number": {
@@ -12277,8 +12239,7 @@
                                                     "90129308-0060"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict",
-                                                    "base.granit"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "executive_procedure": {
@@ -12291,8 +12252,7 @@
                                                     "90129308/0060-ИП"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.restrict",
-                                                    "base.granit"
+                                                    "gibdd.restrict"
                                                 ]
                                             },
                                             "contact": {
@@ -12304,9 +12264,7 @@
                                                 "examples": [
                                                     "652050, Россия, Кемеровская обл., г. Юрга, ул. Ленинградская, д. 31"
                                                 ],
-                                                "fillable_by": [
-                                                    "base.granit"
-                                                ]
+                                                "fillable_by": []
                                             }
                                         }
                                     },
@@ -12328,7 +12286,6 @@
                                                     "2015-07-13 00:00:00"
                                                 ],
                                                 "fillable_by": [
-                                                    "base.granit",
                                                     "gibdd.restrict"
                                                 ]
                                             }
@@ -12868,7 +12825,6 @@
                                                 "fillable_by": [
                                                     "gibdd.history",
                                                     "base",
-                                                    "base.granit",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
                                                 ]
@@ -12889,7 +12845,6 @@
                                                 "fillable_by": [
                                                     "gibdd.history",
                                                     "base",
-                                                    "base.granit",
                                                     "gibdd.history.registry"
                                                 ]
                                             }
@@ -12919,7 +12874,6 @@
                                                 "fillable_by": [
                                                     "gibdd.history",
                                                     "base",
-                                                    "base.granit",
                                                     "regactions.registry",
                                                     "gibdd.history.registry"
                                                 ]
@@ -13013,7 +12967,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.granit",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
                                                 ]
@@ -13029,7 +12982,6 @@
                                                 ],
                                                 "fillable_by": [
                                                     "base",
-                                                    "base.granit",
                                                     "gibdd.history",
                                                     "gibdd.history.registry"
                                                 ]
@@ -13048,7 +13000,6 @@
                                         "fillable_by": [
                                             "gibdd.history",
                                             "base",
-                                            "base.granit",
                                             "gibdd.history.registry"
                                         ]
                                     },
@@ -13065,7 +13016,6 @@
                                         "fillable_by": [
                                             "gibdd.history",
                                             "base",
-                                            "base.granit",
                                             "gibdd.history.registry"
                                         ]
                                     }
@@ -13088,7 +13038,6 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "base",
-                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 },
@@ -13105,7 +13054,6 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "base",
-                                        "base.granit",
                                         "gibdd.history.registry"
                                     ]
                                 }
@@ -13130,7 +13078,6 @@
                                     "fillable_by": [
                                         "gibdd.history",
                                         "base",
-                                        "base.granit",
                                         "regactions.registry",
                                         "gibdd.history.registry"
                                     ]

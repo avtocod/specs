@@ -2480,9 +2480,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "insurance.history.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "insurance_history.osago.contracts.items[].statements.items[].decisions.items[].extent_of_damage.description",
@@ -2490,9 +2488,7 @@
         "types": [
             "string"
         ],
-        "fillable_by": [
-            "insurance.history.base"
-        ]
+        "fillable_by": []
     },
     {
         "path": "insurance_history.osago.contracts.items[].statements.items[].insurer.name",
@@ -4036,6 +4032,86 @@
         ],
         "fillable_by": [
             "insurance.vehicle.registry"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.date.update",
+        "description": "ДТП. Выплаты по страховым событиям: Дата обновления данных",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.items[].accident.date",
+        "description": "ДТП. Выплаты по страховым событиям: Дата страхового события",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.items[].accident.address",
+        "description": "ДТП. Выплаты по страховым событиям: Адрес страхового события",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.items[].accident.is_europrotocol",
+        "description": "ДТП. Выплаты по страховым событиям: Оформление по европротоколу",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.items[].accident.vehicle_role",
+        "description": "ДТП. Выплаты по страховым событиям: Роль участника [CULPRIT, VICTIM]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.items[].accident.extent_of_damage",
+        "description": "ДТП. Выплаты по страховым событиям: Степень повреждения [LIGHT, MEDIUM, HEAVY]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.items[].insurance_type",
+        "description": "ДТП. Выплаты по страховым событиям: Тип страхования [OSAGO]",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
+        ]
+    },
+    {
+        "path": "accidents.insurance_statements.items[].is_total",
+        "description": "ДТП. Выплаты по страховым событиям: Признак тотального ущерба",
+        "types": [
+            "boolean"
+        ],
+        "fillable_by": [
+            "insurance.history.base"
         ]
     },
     {

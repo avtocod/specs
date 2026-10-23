@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `accidents.insurance_statements.date.update`
+- Field with path `accidents.insurance_statements.items[].accident.date`
+- Field with path `accidents.insurance_statements.items[].accident.address`
+- Field with path `accidents.insurance_statements.items[].accident.is_europrotocol`
+- Field with path `accidents.insurance_statements.items[].accident.vehicle_role`
+- Field with path `accidents.insurance_statements.items[].accident.extent_of_damage`
+- Field with path `accidents.insurance_statements.items[].insurance_type`
+- Field with path `accidents.insurance_statements.items[].is_total`
+
+### Changed
+
+- Field with path `insurance_history.osago.contracts.items[].statements.items[].decisions.items[].extent_of_damage.value` is not fillable by `insurance.history.base`
+- Field with path `insurance_history.osago.contracts.items[].statements.items[].decisions.items[].extent_of_damage.description` is not fillable by `insurance.history.base`
+
 ## v5.33.0
 
 ### Added

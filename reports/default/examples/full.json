@@ -1957,6 +1957,25 @@
             ],
             "count": 2
         },
+        "insurance_statements": {
+            "date": {
+                "update": "2026-10-22 10:00:00"
+            },
+            "items": [
+                {
+                    "accident": {
+                        "date": "2026-05-22 23:20:00",
+                        "address": "Россия, Пермский край, г.Пермский",
+                        "is_europrotocol": false,
+                        "vehicle_role": "CULPRIT",
+                        "extent_of_damage": "HEAVY"
+                    },
+                    "insurance_type": "OSAGO",
+                    "is_total": false
+                }
+            ],
+            "count": 1
+        },
         "has_accidents": true
     },
     "restrictions": {

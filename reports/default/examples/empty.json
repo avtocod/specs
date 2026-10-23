@@ -1652,6 +1652,25 @@
             ],
             "count": 1
         },
+        "insurance_statements": {
+            "date": {
+                "update": null
+            },
+            "items": [
+                {
+                    "accident": {
+                        "date": null,
+                        "address": null,
+                        "is_europrotocol": null,
+                        "vehicle_role": null,
+                        "extent_of_damage": null
+                    },
+                    "insurance_type": null,
+                    "is_total": null
+                }
+            ],
+            "count": 1
+        },
         "has_accidents": null
     },
     "restrictions": {

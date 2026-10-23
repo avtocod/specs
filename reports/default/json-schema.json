@@ -9021,9 +9021,7 @@
                                                                                                     "MEDIUM",
                                                                                                     "HEAVY"
                                                                                                 ],
-                                                                                                "fillable_by": [
-                                                                                                    "insurance.history.base"
-                                                                                                ]
+                                                                                                "fillable_by": []
                                                                                             },
                                                                                             "description": {
                                                                                                 "description": "История страхования ОСАГО: Описание степени повреждения",
@@ -9036,9 +9034,7 @@
                                                                                                     "ДТП со средним повреждением",
                                                                                                     "ДТП с тяжелым повреждением"
                                                                                                 ],
-                                                                                                "fillable_by": [
-                                                                                                    "insurance.history.base"
-                                                                                                ]
+                                                                                                "fillable_by": []
                                                                                             }
                                                                                         }
                                                                                     }
@@ -12076,6 +12072,153 @@
                                                 ]
                                             }
                                         }
+                                    }
+                                }
+                            }
+                        },
+                        "count": {
+                            "description": "Количество вхождений",
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                },
+                "insurance_statements": {
+                    "description": "Выплаты по страховым событиям",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "date": {
+                            "type": "object",
+                            "properties": {
+                                "update": {
+                                    "description": "Дата обновления данных",
+                                    "oneOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/datetime"
+                                        }
+                                    ],
+                                    "examples": [
+                                        "2026-10-22 10:00:00"
+                                    ],
+                                    "fillable_by": [
+                                        "insurance.history.base"
+                                    ]
+                                }
+                            }
+                        },
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "accident": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "date": {
+                                                "description": "Дата страхового события",
+                                                "oneOf": [
+                                                    {
+                                                        "type": "null"
+                                                    },
+                                                    {
+                                                        "$ref": "#/definitions/datetime"
+                                                    }
+                                                ],
+                                                "examples": [
+                                                    "2026-05-22 23:20:00"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "address": {
+                                                "description": "Адрес страхового события",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "Россия, Пермский край, г.Пермский"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "is_europrotocol": {
+                                                "description": "Оформление по европротоколу",
+                                                "type": [
+                                                    "boolean",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    false
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "vehicle_role": {
+                                                "description": "Роль участника",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "CULPRIT",
+                                                    "VICTIM"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            },
+                                            "extent_of_damage": {
+                                                "description": "Степень повреждения",
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ],
+                                                "examples": [
+                                                    "LIGHT",
+                                                    "MEDIUM",
+                                                    "HEAVY"
+                                                ],
+                                                "fillable_by": [
+                                                    "insurance.history.base"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "insurance_type": {
+                                        "description": "Тип страхования",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "OSAGO"
+                                        ],
+                                        "fillable_by": [
+                                            "insurance.history.base"
+                                        ]
+                                    },
+                                    "is_total": {
+                                        "description": "Признак тотального ущерба",
+                                        "type": [
+                                            "boolean",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            false
+                                        ],
+                                        "fillable_by": [
+                                            "insurance.history.base"
+                                        ]
                                     }
                                 }
                             }

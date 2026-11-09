@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Source `base.yukonit`
+
+### Changed
+
+- Fields `accidents.history.*` and `accidents.has_accidents` are fillable by `base.yukonit`
+- Field with path `accidents.history.items[].other_participants[].vehicle.identifiers.vin` is fillable by `base.yukonit`
+
 ## v5.34.0
 
 ### Added

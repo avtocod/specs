@@ -11400,7 +11400,8 @@
                                     ],
                                     "fillable_by": [
                                         "gibdd.dtp",
-                                        "dtp.registry"
+                                        "dtp.registry",
+                                        "base.yukonit"
                                     ]
                                 }
                             }
@@ -11422,7 +11423,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.dtp",
-                                            "dtp.registry"
+                                            "dtp.registry",
+                                            "base.yukonit"
                                         ]
                                     },
                                     "accident": {
@@ -11444,7 +11446,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "dtp.registry",
+                                                    "base.yukonit"
                                                 ]
                                             }
                                         }
@@ -11464,7 +11467,8 @@
                                                     null
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp"
+                                                    "gibdd.dtp",
+                                                    "base.yukonit"
                                                 ]
                                             }
                                         }
@@ -11481,7 +11485,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.dtp",
-                                            "dtp.registry"
+                                            "dtp.registry",
+                                            "base.yukonit"
                                         ]
                                     },
                                     "state": {
@@ -11495,7 +11500,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.dtp",
-                                            "dtp.registry"
+                                            "dtp.registry",
+                                            "base.yukonit"
                                         ]
                                     },
                                     "org": {
@@ -11529,7 +11535,8 @@
                                                     "Перед справа, перед слева"
                                                 ],
                                                 "fillable_by": [
-                                                    "gibdd.dtp"
+                                                    "gibdd.dtp",
+                                                    "base.yukonit"
                                                 ]
                                             },
                                             "points": {
@@ -11556,7 +11563,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "dtp.registry",
+                                                    "base.yukonit"
                                                 ]
                                             },
                                             "codes": {
@@ -11582,7 +11590,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "dtp.registry",
+                                                    "base.yukonit"
                                                 ]
                                             }
                                         }
@@ -11606,7 +11615,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "gibdd.dtp",
-                                                            "dtp.registry"
+                                                            "dtp.registry",
+                                                            "base.yukonit"
                                                         ]
                                                     }
                                                 }
@@ -11626,7 +11636,8 @@
                                                         ],
                                                         "fillable_by": [
                                                             "gibdd.dtp",
-                                                            "dtp.registry"
+                                                            "dtp.registry",
+                                                            "base.yukonit"
                                                         ]
                                                     }
                                                 }
@@ -11643,7 +11654,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "dtp.registry",
+                                                    "base.yukonit"
                                                 ]
                                             }
                                         }
@@ -11660,7 +11672,8 @@
                                         ],
                                         "fillable_by": [
                                             "gibdd.dtp",
-                                            "dtp.registry"
+                                            "dtp.registry",
+                                            "base.yukonit"
                                         ]
                                     },
                                     "actuality": {
@@ -11682,7 +11695,8 @@
                                                 ],
                                                 "fillable_by": [
                                                     "gibdd.dtp",
-                                                    "dtp.registry"
+                                                    "dtp.registry",
+                                                    "base.yukonit"
                                                 ]
                                             }
                                         }
@@ -11883,7 +11897,8 @@
                                                                         "EXAMPL0V1N1000000"
                                                                     ],
                                                                     "fillable_by": [
-                                                                        "dtp.registry"
+                                                                        "dtp.registry",
+                                                                        "base.yukonit"
                                                                     ]
                                                                 },
                                                                 "body": {
@@ -12241,6 +12256,7 @@
                         null
                     ],
                     "fillable_by": [
+                        "base.yukonit",
                         "gibdd.dtp",
                         "dtp.registry",
                         "insurance.vehicle.registry",

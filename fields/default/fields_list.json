@@ -3692,7 +3692,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3703,7 +3704,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3714,7 +3716,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3724,7 +3727,8 @@
             "integer"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "base.yukonit"
         ]
     },
     {
@@ -3735,7 +3739,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3746,7 +3751,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3765,7 +3771,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3776,7 +3783,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3787,7 +3795,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3798,7 +3807,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3809,7 +3819,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3820,7 +3831,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3830,7 +3842,8 @@
             "string"
         ],
         "fillable_by": [
-            "gibdd.dtp"
+            "gibdd.dtp",
+            "base.yukonit"
         ]
     },
     {
@@ -3841,7 +3854,8 @@
         ],
         "fillable_by": [
             "gibdd.dtp",
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -3951,7 +3965,8 @@
             "string"
         ],
         "fillable_by": [
-            "dtp.registry"
+            "dtp.registry",
+            "base.yukonit"
         ]
     },
     {
@@ -4121,6 +4136,7 @@
             "boolean"
         ],
         "fillable_by": [
+            "base.yukonit",
             "gibdd.dtp",
             "dtp.registry",
             "insurance.vehicle.registry",

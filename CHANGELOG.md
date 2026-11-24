@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Field with path `recall_campaigns.items[].recall_campaign_works.status`
+- Field with path `recall_campaigns.items[].recall_campaign_works.date`
+
 ## v5.36.0
 
 ### Changed

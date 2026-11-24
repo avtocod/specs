@@ -16787,6 +16787,43 @@
                                         ]
                                     }
                                 }
+                            },
+                            "recall_campaign_works": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "status": {
+                                        "description": "Статус прохождения ТС отзывных работ",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "examples": [
+                                            "Пройдено",
+                                            "Не пройдено"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    },
+                                    "date": {
+                                        "description": "Дата прохождения ТС отзывных работ",
+                                        "oneOf": [
+                                            {
+                                                "type": "null"
+                                            },
+                                            {
+                                                "$ref": "#/definitions/date"
+                                            }
+                                        ],
+                                        "examples": [
+                                            "2019-02-26"
+                                        ],
+                                        "fillable_by": [
+                                            "recall.campaigns.registry"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }

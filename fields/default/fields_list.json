@@ -8374,6 +8374,26 @@
         ]
     },
     {
+        "path": "recall_campaigns.items[].recall_campaign_works.status",
+        "description": "Отзывные кампании: Статус прохождения ТС отзывных работ",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
+        "path": "recall_campaigns.items[].recall_campaign_works.date",
+        "description": "Отзывные кампании: Дата прохождения ТС отзывных работ",
+        "types": [
+            "string"
+        ],
+        "fillable_by": [
+            "recall.campaigns.registry"
+        ]
+    },
+    {
         "path": "recall_campaigns.date.update",
         "description": "Отзывные кампании: Дата обновления данных",
         "types": [
